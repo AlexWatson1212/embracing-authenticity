@@ -1,11 +1,43 @@
 ---
 layout: post
-title: "I Am Not Here To Be Understood By Everyone"
+title: "I Am Not Here to Be Understood by Everyone"
 date: 2025-05-31
-description: "Authentic reflection from a personal journey of healing and growth."
-thumbnail: /images/posts/i-am-not-here-to-be-understood-by-everyone.jpg
+description: "Some people just won’t get me—and that doesn’t mean I’m wrong."
+thumbnail: /images/posts/understood-by-everyone.jpg
 ---
 
-This is the markdown content for post titled: *I Am Not Here To Be Understood By Everyone*.
+There was a time I spent too much energy explaining myself.
 
-This post was written from the perspective of a man learning to heal, grow, and live more authentically—one day at a time.
+Why I thought the way I did.  
+Why I needed space.  
+Why I cared so deeply about things others brushed off.
+
+I wanted to be understood—because I thought that meant I belonged.
+
+But now I get it:
+
+**I’m not here to be understood by everyone.**
+
+Some people just won’t get me.  
+They’ll misread my quiet.  
+They’ll question my values.  
+They’ll resist the depth I bring.
+
+And that’s okay.
+
+I’m not for everyone.  
+And everyone’s not for me.
+
+The ones who *do* understand?  
+They feel like breath. Like ease. Like home.
+
+They don’t need the full explanation.  
+They feel my presence—and that’s enough.
+
+So I’ll stop diluting myself just to be more palatable.
+
+I’d rather be real than understood by the wrong people.
+
+Because the right ones?
+
+They’ll see me—and stay.

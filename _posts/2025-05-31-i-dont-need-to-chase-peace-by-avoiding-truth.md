@@ -1,11 +1,42 @@
 ---
 layout: post
-title: "I Dont Need To Chase Peace By Avoiding Truth"
+title: "I Don’t Need to Chase Peace by Avoiding Truth"
 date: 2025-05-31
-description: "Authentic reflection from a personal journey of healing and growth."
-thumbnail: /images/posts/i-dont-need-to-chase-peace-by-avoiding-truth.jpg
+description: "Real peace doesn’t come from pretending everything’s fine—it comes from living aligned."
+thumbnail: /images/posts/peace-and-truth.jpg
 ---
 
-This is the markdown content for post titled: *I Dont Need To Chase Peace By Avoiding Truth*.
+I used to avoid hard conversations.
 
-This post was written from the perspective of a man learning to heal, grow, and live more authentically—one day at a time.
+Avoid saying how I really felt.  
+Avoid setting boundaries.  
+Avoid rocking the boat—just to keep the peace.
+
+But the peace I was keeping?
+
+**Wasn’t real.**
+
+It was tension tucked under a polite smile.  
+Discomfort I swallowed to protect other people’s feelings—at the cost of my own.
+
+Now, I know better.
+
+**Real peace includes truth.**
+
+It includes honesty.  
+It includes saying no.  
+It includes walking away from what doesn’t feel good, even if it looks “fine” on the surface.
+
+Peace isn’t about silence.
+
+It’s about alignment.
+
+And when I speak what’s real—with care, but also with clarity—I feel it.
+
+That deeper peace.
+
+The kind that doesn’t rely on pretending.
+
+The kind that comes from standing in who I am.
+
+Grounded. Honest. Free.
