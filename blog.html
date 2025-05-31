@@ -1,0 +1,36 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="blog-intro">
+  <h2>Blog</h2>
+  <p>This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically.</p>
+</section>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search blog posts...">
+</div>
+
+<section class="blog-posts" id="blogPosts">
+  {% for post in site.posts %}
+    <article class="post">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+      <a href="{{ post.url }}" class="button">Read More</a>
+    </article>
+  {% endfor %}
+</section>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const posts = document.querySelectorAll('.post');
+
+  searchInput?.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    posts.forEach(post => {
+      const text = post.textContent.toLowerCase();
+      post.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+</script>

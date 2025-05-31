@@ -1,0 +1,9 @@
+title: Embracing Authenticity
+description: A space to grow, reflect, and be your true self.
+baseurl: "" # keep this empty unless your site is in a subfolder
+url: ""     # set your domain here later if hosting live
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
