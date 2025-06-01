@@ -1,148 +1,42 @@
+---
+layout: default
+title: Contact
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Helping you reconnect with your authentic self through gentle reflection, storytelling, and healing insight." />
-  <meta name="robots" content="index, follow" />
-  <title>Contact - Embracing Authenticity</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .contact-intro {
-      text-align: center;
-      padding: 3rem 1rem 1rem;
-    }
-
-    .contact-container {
-      max-width: 700px;
-      margin: 0 auto 4rem;
-      padding: 2.5rem;
-      background-color: #ffffff;
-      border-radius: 18px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .contact-container p {
-      font-size: 1.15rem;
-      margin-bottom: 2.5rem;
-      text-align: center;
-      color: #1A2D41;
-    }
-
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.75rem;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-      color: #1A2D41;
-      font-size: 1.05rem;
-    }
-
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 0.85rem;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      background-color: #F8F4EC;
-      transition: border-color 0.3s ease;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-      border-color: #B6753A;
-      outline: none;
-    }
-
-    .button {
-      align-self: center;
-      background-color: #B6753A;
-      color: white;
-      padding: 0.75rem 1.75rem;
-      font-size: 1rem;
-      border-radius: 10px;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .button:hover {
-      background-color: #995B2D;
-      transform: translateY(-1px);
-    }
-  </style>
+  <title>Contact Us | Embracing Authenticity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Embracing Authenticity Logo" class="logo" />
-    <div>
-      <h1>Embracing Authenticity</h1>
-      <p class="tagline">A space to grow, reflect, and be your true self.</p>
-    </div>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  {% include header.html %}
 
   <main>
-    <section class="contact-intro">
-      <h2>Contact</h2>
-      <p>If something here resonated with you, I’d truly love to hear from you. Whether it’s a kind word, a shared moment, or simply a hello — this is a space made for honest connection.</p>
+    <section class="blog-intro">
+      <h1>Contact Us</h1>
+      <p>If something here resonates, if you have a question, or if you'd simply like to connect — you’re welcome to reach out using the form below.</p>
     </section>
 
-    <section class="contact-container">
-      <form action="mailto:your.email@example.com" method="POST" enctype="text/plain" class="contact-form">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
+    <section class="contact-form-section">
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-        </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
         <button type="submit" class="button">Send Message</button>
       </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Embracing Authenticity. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-      </nav>
-      <div class="social-icons">
-        <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">
-          <img src="icons/youtube.svg" alt="YouTube" />
-        </a>
-        <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
-          <img src="icons/instagram.svg" alt="Instagram" />
-        </a>
-      </div>
-    </div>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>
