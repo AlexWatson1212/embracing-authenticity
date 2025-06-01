@@ -3,18 +3,18 @@ layout: default
 title: Blog
 ---
 
-<section class="blog-intro">
+<section class="blog-intro fade-in">
   <h2>Blog</h2>
   <p>This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically.</p>
 </section>
 
-<div class="search-bar">
+<div class="search-bar fade-in">
   <input type="text" id="searchInput" placeholder="Search for what's on your mind..." />
 </div>
 
 <section class="blog-list" id="blogPosts">
   {% for post in site.posts %}
-    <article class="blog-card">
+    <article class="blog-card fade-in">
       <div class="blog-card-content">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
@@ -35,5 +35,24 @@ title: Blog
       const text = post.textContent.toLowerCase();
       post.style.display = text.includes(query) ? 'block' : 'none';
     });
+  });
+
+  // Optional JS fade-in trigger (for extra control, if you want delay effects later)
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("appear");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
   });
 </script>
