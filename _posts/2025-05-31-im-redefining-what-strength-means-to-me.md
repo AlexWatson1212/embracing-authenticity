@@ -1,11 +1,42 @@
 ---
 layout: post
-title: "Im Redefining What Strength Means To Me"
+title: "I’m Redefining What Strength Means to Me"
 date: 2025-05-31
-description: "Authentic reflection from a personal journey of healing and growth."
-thumbnail: /images/posts/im-redefining-what-strength-means-to-me.jpg
+description: "True strength isn’t about how much I can carry—it’s about how honestly I can live."
+thumbnail: /images/posts/redefining-strength.jpg
 ---
 
-This is the markdown content for post titled: *Im Redefining What Strength Means To Me*.
+Growing up, I thought strength meant holding everything in.
 
-This post was written from the perspective of a man learning to heal, grow, and live more authentically—one day at a time.
+Don’t cry.  
+Don’t break.  
+Don’t ask for help.
+
+Just keep going.
+
+But I see now—  
+That wasn’t strength.  
+That was survival.
+
+And I’m not surviving anymore.  
+I’m living.
+
+**And that means redefining what strength looks like for me.**
+
+Sometimes, strength means pausing.  
+Sometimes, it means saying, *“I need support.”*  
+Sometimes, it means laying down the armour and letting someone see what’s real.
+
+Not to be saved—  
+But to be witnessed.
+
+That takes courage.
+
+It’s not weak to feel deeply.  
+It’s not weak to care.  
+It’s not weak to rest when I’m tired.
+
+That’s wisdom.
+
+And that’s the kind of strength I choose now—  
+Honest. Human. Whole.
