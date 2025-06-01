@@ -1,11 +1,38 @@
 ---
 layout: post
-title: "I Dont Need To Rush My Journey"
+title: "I Don’t Need to Rush My Journey"
 date: 2025-05-31
-description: "Authentic reflection from a personal journey of healing and growth."
-thumbnail: /images/posts/i-dont-need-to-rush-my-journey.jpg
+description: "Growth unfolds in its own time—and that’s okay."
+thumbnail: /images/posts/dont-rush.jpg
 ---
 
-This is the markdown content for post titled: *I Dont Need To Rush My Journey*.
+There’s a part of me that gets impatient.
 
-This post was written from the perspective of a man learning to heal, grow, and live more authentically—one day at a time.
+I want the healing to be done.  
+The answers to be clear.  
+The next chapter to finally begin.
+
+But when I look back, I can see something clearly:
+
+**The most important shifts in my life didn’t happen overnight.**
+
+They happened in the pauses.  
+In the quiet efforts no one saw.  
+In the seasons where it felt like nothing was changing—but *everything* was growing beneath the surface.
+
+So I’m learning to honour the pace I’m at.
+
+To stop forcing clarity.  
+To stop comparing timelines.  
+To stop sprinting through something that deserves to be felt.
+
+I’m not behind.
+
+I’m not late.
+
+I’m exactly where I need to be—even if it’s slower than I expected.
+
+This is *my* pace.  
+This is *my* journey.
+
+And I’ll walk it with patience, presence, and trust.

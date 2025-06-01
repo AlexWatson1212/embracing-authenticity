@@ -1,11 +1,36 @@
 ---
 layout: post
-title: "I Dont Owe Anyone My Explanation"
+title: "I Don’t Owe Anyone My Explanation"
 date: 2025-05-31
-description: "Authentic reflection from a personal journey of healing and growth."
-thumbnail: /images/posts/i-dont-owe-anyone-my-explanation.jpg
+description: "Choosing peace doesn’t require permission slips."
+thumbnail: /images/posts/no-explanation.jpg
 ---
 
-This is the markdown content for post titled: *I Dont Owe Anyone My Explanation*.
+I used to explain everything.
 
-This post was written from the perspective of a man learning to heal, grow, and live more authentically—one day at a time.
+Why I said no.  
+Why I needed space.  
+Why I didn’t want to go to the event, reply to the message, or stay in that dynamic.
+
+I felt like I needed a watertight reason to honour my own needs.
+
+But here’s what I’ve realised:
+
+**I don’t owe anyone my explanation.**
+
+If something feels off, that’s enough.  
+If I need rest, that’s enough.  
+If I walk away from a person, habit, or environment that drains me—*that’s enough.*
+
+I don’t need to justify my boundaries to people who benefit from me having none.
+
+I can be kind *and* clear.  
+Grounded *and* unapologetic.
+
+My peace doesn’t require a permission slip.
+
+And my worth isn’t dependent on how well I explain myself to people who were never really listening anyway.
+
+I know what I need now.
+
+And that’s enough.
