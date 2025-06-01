@@ -40,6 +40,7 @@ main h2 {
   max-width: 1100px;
   margin: 0 auto;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .logo-wrapper {
@@ -355,5 +356,44 @@ footer nav {
 
   .logo {
     max-height: 60px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #F8F4EC;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    z-index: 1100;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+    background-color: #1A2D41;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
