@@ -1,101 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Helping you reconnect with your authentic self through gentle reflection, storytelling, and healing insight.">
-  <meta name="robots" content="index, follow" />
-  <title>Embracing Authenticity</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-  {% include header.html %}
+---
+layout: default
+---
 
-  <main>
-    <section class="hero-content">
-      <div class="text-block">
-        <h2>Welcome</h2>
-        <p>This space was created to document the journey of healing, fatherhood, and discovering what it means to live authentically.</p>
-        <p>Hi, I’m Alex. I created this space to hold the truths I wish I’d heard when I felt most alone. I hope something here meets you where you are.</p>
-        <div class="cta-buttons">
-          <a href="/about.html" class="button">Start Here</a>
-          <a href="/blog.html" class="button">Read the Blog</a>
-        </div>
-      </div>
-    </section>
+{% include header.html %}
 
-    <section class="intro">
-      <div class="container">
-        <h2>Why I Built This</h2>
-        <p class="intro-reflection">
-          For a long time, I was afraid to share this part of me — the part that sees deeply, feels fully, and wants to leave something meaningful behind. But over time, a quieter, clearer voice grew stronger — not from ego, but from truth.
-        </p>
-        <p class="intro-reflection">
-          This site isn’t about perfection, performance, or proving anything. It’s about presence. It’s a space I’ve built to leave something behind for my son, Victor — and for anyone who might need a reminder that they’re not alone. These are the words I’d want him to read if I wasn’t here to say them myself. And maybe, in offering them, they’ll help others find their way back to themselves too.
-        </p>
-      </div>
-    </section>
+<h2>Welcome</h2>
+<p>This space was created to document the journey of healing, fatherhood, and discovering what it means to live authentically.</p>
 
-    <section class="video">
-      <h2>Watch the Introduction</h2>
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/xfb2ac7sUE8" title="Introduction Video" allowfullscreen></iframe>
-      </div>
-    </section>
+<p>Hi, I’m Alex. I created this space to hold the truths I wish I’d heard when I felt most alone. I hope something here meets you where you are.</p>
 
-    <section class="quote-carousel" id="carousel" onmouseover="pauseCarousel()" onmouseout="resumeCarousel()">
-      <button class="arrow arrow-left" onclick="showPreviousQuote()">❮</button>
-      <blockquote>
-        <p id="quote-text"><em>"You do not have to be good. You only have to let the soft animal of your body love what it loves."</em></p>
-        <footer id="quote-author">— Mary Oliver</footer>
-      </blockquote>
-      <button class="arrow arrow-right" onclick="showNextQuote()">❯</button>
-    </section>
-  </main>
+<p><a href="/about.html">Start Here</a> <a href="/blog.html">Read the Blog</a></p>
 
-  {% include footer.html %}
+<h2>Why I Built This</h2>
+<p>For a long time, I was afraid to share this part of me — the part that sees deeply, feels fully, and wants to leave something meaningful behind. But over time, a quieter, clearer voice grew stronger — not from ego, but from truth.</p>
 
-  <script>
-    const quotes = [
-      { text: "The curious paradox is that when I accept myself just as I am, then I can change.", author: "— Carl Rogers" },
-      { text: "What we don’t need in the midst of struggle is shame for being human.", author: "— Brené Brown" },
-      { text: "Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.", author: "— Rumi" },
-      { text: "Sometimes the most important thing in a whole day is the rest we take between two deep breaths.", author: "— Etty Hillesum" }
-    ];
+<p>This site isn’t about perfection, performance, or proving anything. It’s about presence. It’s a space I’ve built to leave something behind for my son, Victor — and for anyone who might need a reminder that they’re not alone. These are the words I’d want him to read if I wasn’t here to say them myself. And maybe, in offering them, they’ll help others find their way back to themselves too.</p>
 
-    let index = 0;
-    let intervalId;
+<h2>Watch the Introduction</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video" frameborder="0" allowfullscreen></iframe>
 
-    const quoteText = document.getElementById("quote-text");
-    const quoteAuthor = document.getElementById("quote-author");
+<blockquote>
+  <em>“Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.”</em>
+  <br>— Rumi
+</blockquote>
 
-    function updateQuote() {
-      quoteText.innerHTML = `<em>"${quotes[index].text}"</em>`;
-      quoteAuthor.textContent = quotes[index].author;
-    }
-
-    function showNextQuote() {
-      index = (index + 1) % quotes.length;
-      updateQuote();
-    }
-
-    function showPreviousQuote() {
-      index = (index - 1 + quotes.length) % quotes.length;
-      updateQuote();
-    }
-
-    function pauseCarousel() {
-      clearInterval(intervalId);
-    }
-
-    function resumeCarousel() {
-      intervalId = setInterval(showNextQuote, 6000);
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      intervalId = setInterval(showNextQuote, 6000);
-    });
-  </script>
-</body>
-</html>
+{% include footer.html %}
