@@ -51,7 +51,7 @@ main h2 {
 }
 
 .logo {
-  max-height: 60px;
+  max-height: 75px; /* was 60px – increased ~25% */
   height: auto;
   width: auto;
   display: block;
@@ -91,7 +91,8 @@ main h2 {
 }
 
 /* Highlighted Nav Button */
-.nav-button {
+.nav-button,
+.main-nav .start-here {
   background-color: #B6753A;
   padding: 0.45rem 1.1rem;
   border-radius: 6px;
@@ -101,7 +102,8 @@ main h2 {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.nav-button:hover {
+.nav-button:hover,
+.main-nav .start-here:hover {
   background-color: #a15f2c;
   transform: translateY(-2px);
 }
@@ -366,7 +368,7 @@ blockquote {
   }
 
   .logo {
-    max-height: 60px;
+    max-height: 75px;
   }
 
   main {
