@@ -1,44 +1,118 @@
 ---
 layout: default
+title: Home
 ---
 
-<section class="hero">
+<section class="hero fade-in">
   <h2>Welcome</h2>
   <p>This space was created to document the journey of healing, fatherhood, and discovering what it means to live authentically.</p>
 
   <p>Hi, I’m Alex. I created this space to hold the truths I wish I’d heard when I felt most alone. I hope something here meets you where you are.</p>
 
   <div class="button-group">
-    <a href="/about.html" class="button">Start Here</a>
-    <a href="/blog.html" class="button">Read the Blog</a>
+    <a href="/self-discovery.html" class="button nav-button">Start Here</a>
+    <a href="/blog.html" class="button nav-button">Read the Blog</a>
   </div>
 </section>
 
-<section class="vision-section">
-  <h2>This Isn't Therapy. But It’s Something.</h2>
-  <p><strong>Therapy isn’t always available. But healing can’t always wait.</strong></p>
-  <p><em>Embracing Authenticity</em> is a space for those in-between moments — between support systems, between clarity and confusion, between who you were and who you're becoming.</p>
-  <p>This project doesn’t aim to replace therapy — it’s here to hold you while you wait for it, work alongside it, or continue after it ends. A bridge. A companion. A reminder that you’re not broken — just becoming.</p>
-  <p>Whether you're rebuilding from grief, questioning everything, or simply trying to feel more alive — this is your space. Stay as long as you need.</p>
-</section>
+<section class="spacer"></section>
 
-<section class="why-built">
+<section class="why-built fade-in">
   <h2>Why I Built This</h2>
   <p>For a long time, I was afraid to share this part of me — the part that sees deeply, feels fully, and wants to leave something meaningful behind. But over time, a quieter, clearer voice grew stronger — not from ego, but from truth.</p>
 
   <p>This site isn’t about perfection, performance, or proving anything. It’s about presence. It’s a space I’ve built to leave something behind for my son, Victor — and for anyone who might need a reminder that they’re not alone. These are the words I’d want him to read if I wasn’t here to say them myself. And maybe, in offering them, they’ll help others find their way back to themselves too.</p>
 </section>
 
-<section class="video-section">
+<section class="spacer"></section>
+
+<section class="video-section fade-in">
   <h2>Watch the Introduction</h2>
   <div class="responsive-video">
     <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
 
-<section class="quote-section">
-  <blockquote>
-    <p><em>“Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.”</em></p>
-    <footer>— Rumi</footer>
-  </blockquote>
+<section class="spacer"></section>
+
+<section class="quote-carousel fade-in">
+  <div class="carousel">
+    <div class="quote-slide active">
+      <blockquote>"Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it."<footer>— Rumi</footer></blockquote>
+    </div>
+    <div class="quote-slide">
+      <blockquote>"Owning our story and loving ourselves through that process is the bravest thing that we’ll ever do."<footer>— Brené Brown</footer></blockquote>
+    </div>
+    <div class="quote-slide">
+      <blockquote>"The curious paradox is that when I accept myself just as I am, then I can change."<footer>— Carl Rogers</footer></blockquote>
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button onclick="prevQuote()">‹</button>
+    <button onclick="nextQuote()">›</button>
+  </div>
 </section>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.quote-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextQuote() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevQuote() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextQuote, 8000);
+</script>
+
+<style>
+  .spacer {
+    height: 2.5rem;
+  }
+
+  .quote-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .quote-slide {
+    display: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .quote-slide.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .carousel-controls button {
+    background-color: transparent;
+    border: 2px solid #1A2D41;
+    color: #1A2D41;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .carousel-controls button:hover {
+    background-color: #1A2D41;
+    color: #fff;
+  }
+</style>
