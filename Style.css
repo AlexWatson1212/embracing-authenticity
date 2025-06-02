@@ -51,7 +51,7 @@ main h2 {
 }
 
 .logo {
-  max-height: 75px; /* was 60px – increased ~25% */
+  max-height: 75px;
   height: auto;
   width: auto;
   display: block;
@@ -258,16 +258,89 @@ main {
   animation: bounceHover 0.3s ease;
 }
 
-/* Quote Styling */
-blockquote {
+/* Quote Carousel */
+.quote-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #F4D3D8;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 900px;
+  text-align: center;
+  position: relative;
+}
+
+.quote-container {
+  flex: 1;
+  position: relative;
+  min-height: 120px;
+}
+
+.quote-container blockquote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
   font-size: 1.1rem;
   font-style: italic;
-  background-color: #F4D3D8;
-  border-left: 4px solid #B6753A;
-  padding: 1.2rem 1.5rem;
-  margin: 2rem 0;
   color: #1A2D41;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.quote-container blockquote.active {
+  opacity: 1;
+  position: relative;
+}
+
+.quote-carousel footer {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1A2D41;
+}
+
+.quote-carousel .quote-btn {
+  background-color: #B6753A;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
   border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-carousel .quote-btn:hover {
+  background-color: #995B2D;
+}
+
+.quote-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.quote-dots .dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #B6753A;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.quote-dots .dot.active {
+  background-color: #1A2D41;
+  opacity: 1;
 }
 
 /* Footer */
@@ -377,6 +450,15 @@ blockquote {
 
   .search-bar input {
     width: 90%;
+  }
+
+  .quote-carousel {
+    flex-direction: column;
+  }
+
+  .quote-btn {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
   }
 }
 
