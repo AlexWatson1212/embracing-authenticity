@@ -437,3 +437,10 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Why I Built Section */
+.why-built {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
