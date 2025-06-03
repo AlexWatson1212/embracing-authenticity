@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Embracing Authenticity</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#1A2D41">
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#1A2D41">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#1A2D41">
+</head>
+
+<body>
+
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="logo-wrapper" aria-label="Embracing Authenticity Home">
+      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo" />
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('active')">
+      ☰
+    </button>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/self-discovery.html" class="start-here">Start Here</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <section class="hero">
+  <h2>Welcome</h2>
+  <p>This space was created to document the journey of healing, fatherhood, and discovering what it means to live authentically.</p>
+
+  <p>Hi, I’m Alex. I created this space to hold the truths I wish I’d heard when I felt most alone. I hope something here meets you where you are.</p>
+
+  <div class="button-group">
+    <a href="/self-discovery.html" class="button">Start Here</a>
+    <a href="/blog.html" class="button">Read the Blog</a>
+  </div>
+</section>
+
+<section class="why-built">
+  <h2>This Isn’t Therapy. But It’s Something.</h2>
+  <p><strong>Therapy isn’t always available. But healing can’t always wait.</strong></p>
+  <p><em>Embracing Authenticity</em> is a space for those in-between moments — between support systems, between clarity and confusion, between who you were and who you’re becoming.</p>
+  <p>This project doesn’t aim to replace therapy — it’s here to hold you while you wait for it, work alongside it, or continue after it ends. A bridge. A companion. A reminder that you’re not broken — just becoming.</p>
+</section>
+
+<section class="video-section">
+  <h2>Watch the Introduction</h2>
+  <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="quote-carousel">
+  <div class="quote-container">
+    <blockquote>
+      <p><em>“Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.”</em></p>
+      <footer>— Rumi</footer>
+    </blockquote>
+    <blockquote>
+      <p><em>“Owning our story and loving ourselves through that process is the bravest thing that we’ll ever do.”</em></p>
+      <footer>— Brené Brown</footer>
+    </blockquote>
+    <blockquote>
+      <p><em>“The curious paradox is that when I accept myself just as I am, then I can change.”</em></p>
+      <footer>— Carl Rogers</footer>
+    </blockquote>
+  </div>
+</section>
+
+<div class="quote-dots">
+  <span class="dot" onclick="goToQuote(0)"></span>
+  <span class="dot" onclick="goToQuote(1)"></span>
+  <span class="dot" onclick="goToQuote(2)"></span>
+</div>
+
+<script>
+  const quotes = document.querySelectorAll(".quote-container blockquote");
+  const dots = document.querySelectorAll(".quote-dots .dot");
+  const quoteContainer = document.querySelector(".quote-carousel");
+  let current = 0;
+  let quoteInterval;
+
+  function showQuote(index) {
+    quotes.forEach((quote, i) => {
+      quote.classList.toggle("active", i === index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
+  function nextQuote() {
+    current = (current + 1) % quotes.length;
+    showQuote(current);
+    resetAutoRotate();
+  }
+
+  function goToQuote(index) {
+    current = index;
+    showQuote(current);
+    resetAutoRotate();
+  }
+
+  function startAutoRotate() {
+    quoteInterval = setInterval(nextQuote, 5000);
+  }
+
+  function resetAutoRotate() {
+    clearInterval(quoteInterval);
+    startAutoRotate();
+  }
+
+  quoteContainer.addEventListener("mouseenter", () => clearInterval(quoteInterval));
+  quoteContainer.addEventListener("mouseleave", startAutoRotate);
+
+  let startX = 0;
+  quoteContainer.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+  });
+
+  quoteContainer.addEventListener("touchend", e => {
+    const endX = e.changedTouches[0].clientX;
+    const delta = startX - endX;
+    if (delta > 50) nextQuote();
+    else if (delta < -50) {
+      current = (current - 1 + quotes.length) % quotes.length;
+      showQuote(current);
+      resetAutoRotate();
+    }
+  });
+
+  showQuote(current);
+  startAutoRotate();
+</script>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-nav">
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Service</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.youtube.com/@yourchannel" target="_blank">
+      <img src="/icons/youtube.svg" alt="YouTube" />
+    </a>
+    <a href="https://www.instagram.com/yourhandle" target="_blank">
+      <img src="/icons/instagram.svg" alt="Instagram" />
+    </a>
+    <a href="/contact.html">
+      <img src="/icons/contact.png" alt="Contact Us" />
+    </a>
+  </div>
+  <p>&copy; 2025 Embracing Authenticity. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+/* Reset and Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F8F4EC;
+  color: #1A2D41;
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #1A2D41;
+}
+
+main h2 {
+  color: #B6753A;
+}
+
+/* Header */
+.site-header {
+  background-color: #1A2D41;
+  color: #F8F4EC;
+  padding: 0.75rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  max-height: 75px;
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+/* Navigation */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #F8F4EC;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.main-nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #F8F4EC;
+  width: 0;
+  transition: width 0.3s ease;
+  margin: auto;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.nav-button,
+.main-nav .start-here {
+  background-color: transparent;
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  color: #F8F4EC !important;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+
+.nav-button:hover,
+.main-nav .start-here:hover {
+  color: #B6753A !important;
+  transform: translateY(-2px);
+}
+
+/* Button Group */
+.button-group {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F8F4EC;
+  background-color: #1A2D41;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #B6753A;
+  transform: translateY(-2px);
+}
+
+/* Main Container */
+main {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(26, 45, 65, 0.1);
+}
+
+/* Quote Carousel */
+.quote-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+}
+
+.quote-container {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  flex: 1;
+}
+
+.quote-carousel blockquote {
+  display: none;
+  font-size: 1.2rem;
+  font-style: italic;
+  background-color: #F4D3D8;
+  border-left: 4px solid #B6753A;
+  padding: 1.5rem;
+  color: #1A2D41;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.quote-carousel blockquote.active {
+  display: block;
+}
+
+.quote-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #B6753A;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.quote-btn:hover {
+  transform: scale(1.2);
+}
+
+.quote-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.quote-dots .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-dots .dot.active {
+  background-color: #B6753A;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceHover {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
