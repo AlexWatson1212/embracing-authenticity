@@ -8,13 +8,24 @@ title: Blog
   <p>This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically.</p>
 </section>
 
-<div class="search-bar fade-in">
+<div class="search-filter-container fade-in">
   <input type="text" id="searchInput" placeholder="Search for what's on your mind..." />
+
+  <div class="tag-filter">
+    <button class="tag-button active" data-tag="all">All</button>
+    {% assign all_tags = site.tags | sort %}
+    {% for tag in all_tags %}
+      <button class="tag-button" data-tag="{{ tag[0] }}">{{ tag[0] }}</button>
+    {% endfor %}
+  </div>
 </div>
 
 <section class="blog-list fade-in" id="blogPosts">
   {% for post in site.posts %}
-    <article class="blog-card">
+    <article class="blog-card" data-tags="{{ post.tags | join: ',' }}">
+      {% if post.thumbnail %}
+        <img src="{{ post.thumbnail }}" alt="Thumbnail for {{ post.title }}" class="blog-thumbnail" />
+      {% endif %}
       <div class="blog-card-content">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
@@ -24,3 +35,34 @@ title: Blog
     </article>
   {% endfor %}
 </section>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const posts = document.querySelectorAll('.blog-card');
+  const tagButtons = document.querySelectorAll('.tag-button');
+
+  searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    posts.forEach(post => {
+      const text = post.innerText.toLowerCase();
+      post.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+
+  tagButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      tagButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const tag = button.dataset.tag;
+
+      posts.forEach(post => {
+        const tags = post.dataset.tags.split(',');
+        if (tag === 'all' || tags.includes(tag)) {
+          post.style.display = 'block';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
