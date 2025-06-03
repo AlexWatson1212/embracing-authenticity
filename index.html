@@ -30,8 +30,6 @@ title: Home
 </section>
 
 <section class="quote-carousel">
-  <button class="quote-btn" onclick="prevQuote()" aria-label="Previous Quote">‹</button>
-
   <div class="quote-container">
     <blockquote>
       <p><em>“Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.”</em></p>
@@ -46,8 +44,6 @@ title: Home
       <footer>— Carl Rogers</footer>
     </blockquote>
   </div>
-
-  <button class="quote-btn" onclick="nextQuote()" aria-label="Next Quote">›</button>
 </section>
 
 <div class="quote-dots">
@@ -72,12 +68,6 @@ title: Home
     });
   }
 
-  function prevQuote() {
-    current = (current - 1 + quotes.length) % quotes.length;
-    showQuote(current);
-    resetAutoRotate();
-  }
-
   function nextQuote() {
     current = (current + 1) % quotes.length;
     showQuote(current);
@@ -99,11 +89,9 @@ title: Home
     startAutoRotate();
   }
 
-  // Pause auto-rotation on hover
   quoteContainer.addEventListener("mouseenter", () => clearInterval(quoteInterval));
   quoteContainer.addEventListener("mouseleave", startAutoRotate);
 
-  // Swipe support on touch devices
   let startX = 0;
   quoteContainer.addEventListener("touchstart", e => {
     startX = e.touches[0].clientX;
@@ -113,10 +101,13 @@ title: Home
     const endX = e.changedTouches[0].clientX;
     const delta = startX - endX;
     if (delta > 50) nextQuote();
-    else if (delta < -50) prevQuote();
+    else if (delta < -50) {
+      current = (current - 1 + quotes.length) % quotes.length;
+      showQuote(current);
+      resetAutoRotate();
+    }
   });
 
-  // Init
   showQuote(current);
   startAutoRotate();
 </script>
