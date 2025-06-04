@@ -27,14 +27,21 @@
 
   <header class="site-header">
   <div class="header-container">
+    <!-- Logo -->
     <a href="/" class="logo-wrapper" aria-label="Embracing Authenticity Home">
       <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo" />
     </a>
 
-    <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('active')">
+    <!-- Hamburger Menu Button -->
+    <button
+      class="menu-toggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >
       ☰
     </button>
 
+    <!-- Navigation -->
     <nav class="main-nav" aria-label="Main navigation">
       <ul>
         <li><a href="/blog.html" class="">Blog</a></li>
@@ -112,6 +119,22 @@
   </div>
 </footer>
 
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector(".main-nav ul");
+
+      if (toggleButton && navMenu) {
+        toggleButton.addEventListener("click", function () {
+          const expanded = this.getAttribute("aria-expanded") === "true";
+          this.setAttribute("aria-expanded", !expanded);
+          navMenu.classList.toggle("active");
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>

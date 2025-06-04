@@ -33,5 +33,21 @@
 
   {% include footer.html %}
 
+  <!-- Hamburger Menu Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector(".main-nav ul");
+
+      if (toggleButton && navMenu) {
+        toggleButton.addEventListener("click", function () {
+          const expanded = this.getAttribute("aria-expanded") === "true";
+          this.setAttribute("aria-expanded", !expanded);
+          navMenu.classList.toggle("active");
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>
