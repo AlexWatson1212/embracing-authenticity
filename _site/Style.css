@@ -255,6 +255,32 @@ main h2 {
   color: #fff;
 }
 
+/* Post Footer Navigation */
+.blog-post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.blog-post-footer .button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #B6753A;
+  background-color: transparent;
+  color: #B6753A;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-post-footer .button:hover {
+  background-color: #B6753A;
+  color: #fff;
+}
+
 /* Footer */
 .site-footer {
   background: #1A2D41;

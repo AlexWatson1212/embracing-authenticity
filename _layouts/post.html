@@ -24,6 +24,13 @@
       <div class="post-body">
         {{ content }}
       </div>
+
+      <div class="blog-post-footer">
+        <a href="/blog" class="button back-button">← Back to Blog</a>
+        {% if page.next %}
+          <a href="{{ page.next.url }}" class="button next-button">Next: {{ page.next.title }} →</a>
+        {% endif %}
+      </div>
     </article>
   </main>
 
