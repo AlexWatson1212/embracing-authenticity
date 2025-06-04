@@ -145,6 +145,22 @@ main h2 {
   .menu-toggle {
     display: block;
   }
+
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 2rem;
+    background-color: #1A2D41;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .main-nav ul.active {
+    display: flex;
+  }
 }
 
 /* Quote Slideshow */
@@ -164,6 +180,7 @@ main h2 {
   display: none;
   border-left: 4px solid #B6753A;
   padding-left: 1rem;
+  color: #1A2D41;
 }
 
 .quote-carousel blockquote.active {
