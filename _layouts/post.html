@@ -27,13 +27,13 @@
         {{ content }}
       </div>
 
-      <div class="blog-post-footer">
-        <a href="/blog" class="button back-button">← Back to Blog</a>
+      <div class="blog-post-footer two-links">
+        <a href="/blog" class="back-button">← Back to Blog</a>
 
         {% if page.previous %}
-          <div class="post-footer-nav">
-            <a href="{{ page.previous.url }}" class="previous-post-link">← {{ page.previous.title }}</a>
-          </div>
+          <a href="{{ page.previous.url }}" class="previous-post-link right">
+            Next: {{ page.previous.title }} →
+          </a>
         {% endif %}
       </div>
     </article>
