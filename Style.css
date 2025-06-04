@@ -118,131 +118,114 @@ main h2 {
   transform: translateY(-2px);
 }
 
-.menu-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #F8F4EC;
-    cursor: pointer;
-  }
-}
-
-/* Button Group */
-.button-group {
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #1A2D41;
-  background-color: transparent;
-  border: 2px solid #1A2D41;
-  border-radius: 8px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  margin-bottom: 1.5rem;
-}
-
-.button:hover {
-  background-color: #1A2D41;
-  color: #F8F4EC;
-}
-
-/* Main */
-main {
-  max-width: 1100px;
-  margin: 3rem auto;
-  padding: 3rem 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(26, 45, 65, 0.1);
-}
-
-/* Quote Carousel */
-.quote-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem 1rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
+/* Blog Enhancements */
+.blog-intro {
   text-align: center;
-  position: relative;
+  margin-bottom: 2rem;
 }
 
-.quote-container {
-  max-width: 700px;
-  margin: 0 auto;
-  position: relative;
-  flex: 1;
-}
-
-.quote-carousel blockquote {
-  display: none;
-  font-size: 1.2rem;
-  font-style: italic;
-  background-color: #F4D3D8;
-  border-left: 4px solid #B6753A;
-  padding: 1.5rem;
-  color: #1A2D41;
-  border-radius: 8px;
-  line-height: 1.6;
-  margin-top: 1rem;
-}
-
-.quote-carousel blockquote.active {
-  display: block;
-}
-
-.quote-btn {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #B6753A;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.quote-btn:hover {
-  transform: scale(1.2);
-}
-
-.quote-dots {
+.search-filter-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+#searchInput {
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.tag-filter {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
-  margin-top: 1rem;
+  gap: 0.5rem;
 }
 
-.quote-dots .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 50%;
+.tag-button {
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #eee;
+  color: #1A2D41;
+  font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.quote-dots .dot.active {
+.tag-button:hover,
+.tag-button.active {
   background-color: #B6753A;
+  color: #fff;
+}
+
+.blog-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #FDFDFD;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(26, 45, 65, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(26, 45, 65, 0.15);
+}
+
+.blog-card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.blog-card-content h3 a {
+  text-decoration: none;
+  color: #1A2D41;
+}
+
+.blog-card-content h3 a:hover {
+  color: #B6753A;
+}
+
+.blog-card-content .post-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card-content .excerpt {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.read-more {
+  align-self: flex-start;
+  padding: 0.4rem 1rem;
+  border: 2px solid #B6753A;
+  background-color: transparent;
+  color: #B6753A;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.read-more:hover {
+  background-color: #B6753A;
+  color: #fff;
 }
 
 /* Footer */
@@ -315,6 +298,7 @@ main {
 @media (max-width: 500px) {
   .contact-label {
     display: none;
+  }
 }
 
 /* Animations */
