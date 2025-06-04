@@ -14,9 +14,11 @@
   <main class="post-content">
     <article class="post">
       <h1>{{ page.title }}</h1>
+
       {% if page.date %}
         <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
       {% endif %}
+
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
       {% endif %}
@@ -27,8 +29,11 @@
 
       <div class="blog-post-footer">
         <a href="/blog" class="button back-button">← Back to Blog</a>
-        {% if page.next %}
-          <a href="{{ page.next.url }}" class="button next-button">Next: {{ page.next.title }} →</a>
+
+        {% if page.previous %}
+          <div class="post-footer-nav">
+            <a href="{{ page.previous.url }}" class="previous-post-link">← {{ page.previous.title }}</a>
+          </div>
         {% endif %}
       </div>
     </article>
