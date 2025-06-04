@@ -141,9 +141,18 @@ main h2 {
   z-index: 1100;
 }
 
+/* Mobile Adjustments */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+  }
+
+  .logo {
+    max-height: 60px; /* 20% smaller logo */
+  }
+
+  .header-container {
+    padding-right: 2.5rem; /* Create space between logo and hamburger */
   }
 
   .main-nav ul {
