@@ -1,8 +1,12 @@
 title: Embracing Authenticity
 description: A space to grow, reflect, and be your true self.
-baseurl: "" # keep this empty unless your site is in a subfolder
-url: ""     # set your domain here later if hosting live
+
+url: "https://embracingauthenticity.co.uk"
+baseurl: "" # Keep empty if not in a subdirectory
 
 markdown: kramdown
+permalink: /blog/:title/
+future: true
+
 plugins:
   - jekyll-feed
