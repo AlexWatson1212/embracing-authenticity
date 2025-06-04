@@ -152,7 +152,7 @@ main h2 {
   }
 
   .header-container {
-    padding-right: 2.5rem; /* Create space between logo and hamburger */
+    padding-right: 2.5rem; /* Extra space between logo and hamburger */
   }
 
   .main-nav ul {
@@ -316,6 +316,29 @@ main h2 {
 .social-icons a:hover img {
   transform: scale(1.15);
   opacity: 0.85;
+}
+
+/* Post Footer Nav */
+.post-footer-nav {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.previous-post-link {
+  display: inline-block;
+  background-color: #F4D3D8;
+  color: #1A2D41;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.previous-post-link:hover {
+  background-color: #B6753A;
+  color: #fff;
+  transform: translateX(-3px);
 }
 
 /* Animations */
