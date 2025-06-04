@@ -12,31 +12,33 @@
   {% include header.html %}
 
   <main class="post-content">
-    <article class="post">
-      <h1>{{ page.title }}</h1>
+    <div class="container">
+      <article class="post">
+        <h1>{{ page.title }}</h1>
 
-      {% if page.date %}
-        <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
-      {% endif %}
-
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-
-      <div class="post-body">
-        {{ content }}
-      </div>
-
-      <div class="blog-post-footer two-links">
-        <a href="/blog" class="back-button">← Back to Blog</a>
-
-        {% if page.previous %}
-          <a href="{{ page.previous.url }}" class="previous-post-link right">
-            Next: {{ page.previous.title }} →
-          </a>
+        {% if page.date %}
+          <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
         {% endif %}
-      </div>
-    </article>
+
+        {% if page.description %}
+          <p class="post-description">{{ page.description }}</p>
+        {% endif %}
+
+        <div class="post-body">
+          {{ content }}
+        </div>
+
+        <div class="blog-post-footer two-links">
+          <a href="/blog" class="back-button">← Back to Blog</a>
+
+          {% if page.previous %}
+            <a href="{{ page.previous.url }}" class="previous-post-link right">
+              {{ page.previous.title }} →
+            </a>
+          {% endif %}
+        </div>
+      </article>
+    </div>
   </main>
 
   {% include footer.html %}
