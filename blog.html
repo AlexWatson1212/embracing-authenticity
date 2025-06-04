@@ -8,13 +8,22 @@ title: Blog
   <p>This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically.</p>
 </section>
 
-<div class="search-bar fade-in">
+<div class="search-filter-container fade-in">
   <input type="text" id="searchInput" placeholder="Search for what's on your mind..." />
+
+  <div class="tag-filter">
+    {% assign tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+    {% for tag in tags %}
+      {% unless tag == "" %}
+        <button class="tag-button" data-tag="{{ tag }}">{{ tag }}</button>
+      {% endunless %}
+    {% endfor %}
+  </div>
 </div>
 
 <section class="blog-list" id="blogPosts">
   {% for post in site.posts %}
-    <article class="blog-card fade-in">
+    <article class="blog-card fade-in" data-tags="{{ post.tags | join: ',' }}">
       <div class="blog-card-content">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
@@ -28,12 +37,26 @@ title: Blog
 <script>
   const searchInput = document.getElementById('searchInput');
   const posts = document.querySelectorAll('.blog-card');
+  const tagButtons = document.querySelectorAll('.tag-button');
 
   searchInput?.addEventListener('input', () => {
     const query = searchInput.value.toLowerCase();
     posts.forEach(post => {
       const text = post.textContent.toLowerCase();
-      post.style.display = text.includes(query) ? 'block' : 'none';
+      const matches = text.includes(query);
+      post.style.display = matches ? 'block' : 'none';
+    });
+  });
+
+  tagButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      tagButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const tag = button.getAttribute('data-tag');
+      posts.forEach(post => {
+        const tags = post.getAttribute('data-tags');
+        post.style.display = tags.includes(tag) ? 'block' : 'none';
+      });
     });
   });
 
@@ -43,7 +66,7 @@ title: Blog
     rootMargin: "0px 0px -50px 0px"
   };
 
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add("in-view");
