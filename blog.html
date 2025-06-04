@@ -8,17 +8,14 @@ title: Blog
   <p>This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically.</p>
 </section>
 
-<div class="search-filter-container fade-in">
-  <input type="text" id="searchInput" placeholder="Search for what's on your mind..." />
-
-  <div class="tag-filter">
-    {% assign tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
-    {% for tag in tags %}
-      {% unless tag == "" %}
-        <button class="tag-button" data-tag="{{ tag }}">{{ tag }}</button>
-      {% endunless %}
-    {% endfor %}
-  </div>
+<div class="tag-filter fade-in">
+  <button class="post-tag clear-tag-filter" id="clearTags">Clear Filters</button>
+  {% assign tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+  {% for tag in tags %}
+    {% unless tag == "" %}
+      <a href="/tag/{{ tag | slugify }}/" class="post-tag" data-tag="{{ tag }}">{{ tag }}</a>
+    {% endunless %}
+  {% endfor %}
 </div>
 
 <section class="blog-list" id="blogPosts">
@@ -35,21 +32,13 @@ title: Blog
 </section>
 
 <script>
-  const searchInput = document.getElementById('searchInput');
+  const tagButtons = document.querySelectorAll('.post-tag[data-tag]');
+  const clearButton = document.getElementById('clearTags');
   const posts = document.querySelectorAll('.blog-card');
-  const tagButtons = document.querySelectorAll('.tag-button');
-
-  searchInput?.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase();
-    posts.forEach(post => {
-      const text = post.textContent.toLowerCase();
-      const matches = text.includes(query);
-      post.style.display = matches ? 'block' : 'none';
-    });
-  });
 
   tagButtons.forEach(button => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', e => {
+      e.preventDefault();
       tagButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
       const tag = button.getAttribute('data-tag');
@@ -60,13 +49,14 @@ title: Blog
     });
   });
 
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
-  };
+  clearButton?.addEventListener('click', () => {
+    tagButtons.forEach(btn => btn.classList.remove('active'));
+    posts.forEach(post => post.style.display = 'block');
+  });
 
-  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add("in-view");

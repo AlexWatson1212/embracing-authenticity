@@ -10,3 +10,7 @@ future: true
 
 plugins:
   - jekyll-feed
+collections:
+  tag:
+    output: true
+    permalink: /tag/:name/

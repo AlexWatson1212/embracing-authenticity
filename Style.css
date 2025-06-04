@@ -378,3 +378,47 @@ main h2 {
   opacity: 1;
   transform: translateY(0);
 }
+/* Tag Filter Section */
+.tag-filter {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.post-tag {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #B6753A;
+  background-color: #F4D3D8;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  margin: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post-tag:hover,
+.post-tag.active {
+  background-color: #B6753A;
+  color: #fff;
+}
+
+.clear-tag-filter {
+  background-color: #EDEDED;
+  color: #1A2D41;
+  font-size: 0.95rem;
+}
+
+.clear-tag-filter:hover {
+  background-color: #B6753A;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .post-tag {
+    font-size: 1.15rem;
+  }
+}
