@@ -55,18 +55,28 @@
 
   <main>
     <div class="container">
-      <section class="hero">
-  <!-- Hero Image -->
-        <div class="hero-image">
-          <img src="/assets/images/van-hero.jpg" alt="Black Transit Van Driving through Norwegian Mountains" style="width: 100%; height: auto; border-radius: 12px;" />
-        </div>
+      <!-- Hero Section with Overlay -->
+<section class="hero-banner">
+  <img src="/assets/images/van-hero.jpg" alt="Black Transit Van Driving through Norwegian Mountains" />
+
+  <div class="hero-overlay">
+    <div class="hero-text">Welcome to the journey back to yourself.</div>
+    <div class="hero-buttons">
+      <a href="/start-here" class="hero-button">Start Here</a>
+      <a href="/blog" class="hero-button">Blog</a>
+    </div>
+  </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="hero">
   <h2>Welcome</h2>
   <p>This space was created to document the journey of healing, fatherhood, and discovering what it means to live authentically.</p>
 
   <p>Hi, I’m Alex. I created this space to hold the truths I wish I’d heard when I felt most alone. I hope something here meets you where you are.</p>
-
 </section>
 
+<!-- Why Built Section -->
 <section class="why-built">
   <h2>This Isn’t Therapy. But It’s Something.</h2>
   <p><strong>Therapy isn’t always available. But healing can’t always wait.</strong></p>
@@ -76,6 +86,7 @@
   <p>It’s also a resource for those who don’t know where to begin — who feel a little lost, a little tired, or a little overwhelmed by all the noise out there. This site exists to offer one thing: a sense of quiet clarity. A sense that you’re not the only one who feels this way. And that maybe, just maybe, you’re already enough.</p>
 </section>
 
+<!-- Why I Built This -->
 <section class="why-built">
   <h2>Why I Built This Site</h2>
   <p>I didn’t build this site to prove anything or teach anyone how to live.<br>
@@ -86,6 +97,7 @@
   <p>If you’re reading this, you’re not just seeing a website. You’re seeing the parts of me I’ve never fully shown before. And in doing so, I hope it gives others permission to do the same — to be more honest with themselves, more gentle, more free.</p>
 </section>
 
+<!-- Video Section -->
 <section class="video-section">
   <h2>Watch the Introduction</h2>
   <div class="responsive-video">
@@ -93,6 +105,7 @@
   </div>
 </section>
 
+<!-- Quote Carousel -->
 <section class="quote-carousel">
   <div class="quote-container">
     <blockquote>
@@ -116,6 +129,7 @@
   <span class="dot" onclick="goToQuote(2)"></span>
 </div>
 
+<!-- Quote Carousel Script -->
 <script>
   const quotes = document.querySelectorAll(".quote-container blockquote");
   const dots = document.querySelectorAll(".quote-dots .dot");
