@@ -16,14 +16,14 @@ body {
 }
 
 p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #1A2D41;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 main h2 {
@@ -34,7 +34,7 @@ main h2 {
 .site-header {
   background-color: #1A2D41;
   color: #F8F4EC;
-  padding: 1.2rem 2rem;
+  padding: 0.75rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -137,7 +137,8 @@ main h2 {
 
 /* Button Group */
 .button-group {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -145,13 +146,13 @@ main h2 {
 
 .button {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   font-size: 1rem;
   font-weight: 500;
   color: #1A2D41;
   background-color: transparent;
   border: 2px solid #1A2D41;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -202,6 +203,7 @@ main {
   color: #1A2D41;
   border-radius: 8px;
   line-height: 1.6;
+  margin-top: 1rem;
 }
 
 .quote-carousel blockquote.active {
@@ -318,12 +320,6 @@ main {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes bounceHover {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.04); }
-  100% { transform: scale(1); }
 }
 
 .fade-in {
