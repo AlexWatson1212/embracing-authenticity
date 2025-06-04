@@ -162,6 +162,8 @@ main h2 {
   font-style: italic;
   margin-bottom: 1rem;
   display: none;
+  border-left: 4px solid #B6753A;
+  padding-left: 1rem;
 }
 
 .quote-carousel blockquote.active {
@@ -229,6 +231,14 @@ main h2 {
 .read-more:hover {
   background-color: #B6753A;
   color: #fff;
+}
+
+/* About Image */
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1.5rem;
 }
 
 /* Footer */
