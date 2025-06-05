@@ -387,7 +387,7 @@ main h2 {
 
 .post-tag {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: 600;
   color: #B6753A;
   background-color: #F4D3D8;
@@ -420,63 +420,6 @@ main h2 {
 
 @media (min-width: 768px) {
   .post-tag {
-    font-size: 1.15rem;
-  }
-}
-
-/* Hero Banner Overlay Styles */
-.hero-banner {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 0;
-}
-
-.hero-overlay {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: white;
-  text-align: left;
-  z-index: 10;
-  max-width: 80%;
-}
-
-.hero-text {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.hero-button {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #1A2D41;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.hero-button:hover {
-  background-color: rgba(255, 255, 255, 1);
-  transform: scale(1.05);
-}
-
-/* Hide hero overlay on mobile */
-@media (max-width: 768px) {
-  .hero-overlay {
-    display: none;
+    font-size: 0.575rem;
   }
 }
