@@ -3,7 +3,9 @@ layout: post
 title: "I Can Feel Disappointed and Still Trust the Path"
 date: 2025-05-31
 description: "Every setback isn’t a sign I’m lost—sometimes it’s just a redirection."
+excerpt: "Disappointment doesn’t mean I’m off track. It means I was brave enough to care — and I can still trust where I’m going."
 thumbnail: /images/posts/trust-through-disappointment.jpg
+tags: [Resilience, Trust, Emotional Growth, Self-Compassion, Life Lessons]
 ---
 
 Disappointment used to derail me.
@@ -34,7 +36,7 @@ The sting of the moment *and* the bigger picture.
 The letdown *and* the trust that something else will come.  
 The ache *and* the quiet knowing that my life is still unfolding.
 
-Even this—especially this—is part of the path.
+Even this — especially this — is part of the path.
 
 I haven’t been knocked off course.
 

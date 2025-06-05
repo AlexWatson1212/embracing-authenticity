@@ -3,7 +3,9 @@ layout: post
 title: "I Don’t Have to Earn My Own Kindness"
 date: 2025-05-31
 description: "I don’t need to wait until I’ve done enough to be gentle with myself."
+excerpt: "Kindness isn’t something I have to earn. It’s a starting point—and the more I offer it, especially in hard moments, the more I rebuild trust within myself."
 thumbnail: /images/posts/self-kindness.jpg
+tags: [Self-Compassion, Inner Critic, Emotional Health, Healing]
 ---
 
 There’s a voice in me that still thinks I have to *earn* kindness.

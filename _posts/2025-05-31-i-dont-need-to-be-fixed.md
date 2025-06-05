@@ -4,6 +4,8 @@ title: "I Don’t Need to Be Fixed"
 date: 2025-05-31
 description: "Growth isn’t about fixing who I am—it’s about remembering who I’ve always been."
 thumbnail: /images/posts/not-broken.jpg
+excerpt: "I’m not broken—I’m just unlearning the things that made me forget who I am."
+tags: [Healing, Self-Acceptance, Personal Growth, Inner Child]
 ---
 
 There was a time I saw myself as broken.
@@ -29,8 +31,7 @@ It’s about meeting it with compassion.
 Integrating the lessons.  
 And remembering that I’ve always been worthy—even before the work began.
 
-There’s nothing wrong with me.
-
+There’s nothing wrong with me.  
 There never was.
 
 I’m not a problem to solve.  

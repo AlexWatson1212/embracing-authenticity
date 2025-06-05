@@ -4,6 +4,8 @@ title: "I Don’t Have to Make Sense All the Time"
 date: 2025-05-31
 description: "Sometimes I feel things I can’t explain. That doesn’t make them less real."
 thumbnail: /images/posts/dont-have-to-make-sense.jpg
+excerpt: "There’s no need to rush into understanding. Sometimes the kindest thing I can do is feel it, even if I don’t know why."
+tags: [Emotional Awareness, Self-Compassion, Uncertainty, Healing]
 ---
 
 There are days when I feel off and I don’t know why.

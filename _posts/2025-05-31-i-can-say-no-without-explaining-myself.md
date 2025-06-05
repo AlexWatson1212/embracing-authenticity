@@ -3,7 +3,9 @@ layout: post
 title: "I Can Say No Without Explaining Myself"
 date: 2025-05-31
 description: "My boundaries don’t require permission slips."
+excerpt: "Saying no isn’t about rejection — it’s about alignment and self-respect."
 thumbnail: /images/posts/no-without-explaining.jpg
+tags: [Boundaries, Self-Respect, Assertiveness, Personal Growth]
 ---
 
 For most of my life, my “no” came wrapped in guilt.

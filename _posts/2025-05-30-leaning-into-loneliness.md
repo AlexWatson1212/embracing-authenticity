@@ -2,6 +2,8 @@
 layout: post
 title: "Why I Fell in Love with the Puzzle, Not the Prize"
 date: 2025-05-30
+tags: [Growth, Mindset, Self-Discovery, Poker, Process-Oriented Living]
+description: "I used to chase wins to prove something. Now I show up for the process — the puzzle — and that, in itself, is the win."
 thumbnail: /assets/images/blog/puzzle-not-prize.jpg
 ---
 

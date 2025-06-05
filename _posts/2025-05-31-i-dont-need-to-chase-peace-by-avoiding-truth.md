@@ -4,6 +4,8 @@ title: "I Don’t Need to Chase Peace by Avoiding Truth"
 date: 2025-05-31
 description: "Real peace doesn’t come from pretending everything’s fine—it comes from living aligned."
 thumbnail: /images/posts/peace-and-truth.jpg
+excerpt: "The peace I was protecting wasn’t peace—it was avoidance. True peace requires honesty, even when it’s uncomfortable."
+tags: [Authenticity, Boundaries, Truth, Emotional Health, Inner Peace]
 ---
 
 I used to avoid hard conversations.

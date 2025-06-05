@@ -4,6 +4,8 @@ title: "I Don’t Need to Prove I’m a Good Man"
 date: 2025-05-31
 description: "The right people will feel it—not because I perform, but because I live it."
 thumbnail: /images/posts/good-man.jpg
+excerpt: "Being a good man isn’t about convincing others—it’s about living with quiet integrity, especially when no one’s watching."
+tags: [Masculinity, Integrity, Self-Worth, Emotional Growth, Authenticity]
 ---
 
 There was a time I thought I had to prove I was good.

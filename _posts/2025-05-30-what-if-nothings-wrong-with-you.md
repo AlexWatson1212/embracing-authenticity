@@ -2,7 +2,9 @@
 layout: post
 title: "What If Nothing’s Wrong With You?"
 date: 2025-05-30
+tags: [Self-Compassion, Mental Health, Healing, Emotional Awareness]
 excerpt: "So much of healing begins with the radical question: what if I’m not broken, just deeply misunderstood — even by myself?"
+description: "Maybe your struggles aren’t flaws — just reasonable responses to unmet needs. This post invites you to question the belief that something’s wrong with you at all."
 ---
 
 What if the thing that’s been weighing you down isn’t a flaw… but a misunderstanding?

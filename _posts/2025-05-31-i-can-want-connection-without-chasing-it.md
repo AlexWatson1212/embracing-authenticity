@@ -3,7 +3,9 @@ layout: post
 title: "I Can Want Connection Without Chasing It"
 date: 2025-05-31
 description: "Desire doesn’t have to turn into pursuit. I can hold space for what I long for—without running after it."
+excerpt: "I used to chase connection, hoping it would prove my worth. Now I let my longing exist without turning it into a pursuit. Real connection doesn’t need convincing."
 thumbnail: /images/posts/want-without-chase.jpg
+tags: [Connection, Self-Worth, Boundaries, Emotional Health]
 ---
 
 There’s a delicate balance I’m learning:  

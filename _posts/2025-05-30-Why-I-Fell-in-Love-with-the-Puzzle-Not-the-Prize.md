@@ -2,7 +2,10 @@
 layout: post
 title: "Why I Fell in Love with the Puzzle, Not the Prize"
 date: 2025-05-30
+tags: [Poker, Mindset, Growth, Decision-Making]
 thumbnail: /assets/images/blog/puzzle-not-prize.jpg
+excerpt: "At some point, the game stopped being about winning — and became about learning, growing, and making peace with uncertainty."
+description: "What started as a pursuit of wins became something deeper: a reflection of life, decision-making, and personal growth. A story about poker — and everything it taught me beyond the table."
 ---
 
 I used to play a game that involved a lot of decision-making under pressure.

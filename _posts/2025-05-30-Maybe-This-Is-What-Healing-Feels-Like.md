@@ -2,6 +2,8 @@
 layout: post
 title: "Maybe This Is What Healing Feels Like"
 date: 2025-05-30
+tags: [Healing, Self-Love, Inner Peace, Growth]
+description: "Not a grand transformation — just a quiet, joyful return to myself."
 thumbnail: /assets/images/blog/puzzle-not-prize.jpg
 ---
 
@@ -35,4 +37,4 @@ And from this place? If someone comes into my life, they’ll be met with my who
 
 Because I’m not broken.
 
-I’m free.
+**I’m free.**

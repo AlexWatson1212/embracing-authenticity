@@ -4,6 +4,8 @@ title: "I Used to Think Peace Was Boring"
 date: 2025-05-31
 description: "Turns out, I was just addicted to chaos that felt familiar."
 thumbnail: /images/posts/peace-isnt-boring.jpg
+excerpt: "I used to crave chaos because peace felt foreign. But now, calm feels like freedom—and I’m learning to let it be enough."
+tags: [Healing, Nervous System, Peace, Emotional Regulation]
 ---
 
 I used to mistake peace for boredom.

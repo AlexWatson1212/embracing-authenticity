@@ -3,7 +3,9 @@ layout: post
 title: "I Can Love Them and Let Them Go"
 date: 2025-05-31
 description: "Love doesn’t always mean holding on. Sometimes the kindest thing I can do is release."
+excerpt: "Letting go doesn’t mean the love wasn’t real — it means I’m honouring what is real now."
 thumbnail: /images/posts/love-and-letting-go.jpg
+tags: [Letting Go, Relationships, Self-Respect, Healing, Emotional Maturity]
 ---
 
 There’s a quiet kind of heartbreak in letting go of someone you still care about.

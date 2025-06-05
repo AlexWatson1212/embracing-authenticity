@@ -3,7 +3,9 @@ layout: post
 title: "I Can Trust My Quiet Knowing"
 date: 2025-05-31
 description: "Even without a loud voice, some truths just feel solid in my bones."
+excerpt: "That quiet, steady feeling inside — the one that whispers instead of shouts — is worth trusting. It’s not random. It’s wisdom I’ve earned."
 thumbnail: /images/posts/trust-my-knowing.jpg
+tags: [Intuition, Self-Trust, Inner Wisdom, Personal Growth]
 ---
 
 There’s a kind of knowing that doesn’t shout.

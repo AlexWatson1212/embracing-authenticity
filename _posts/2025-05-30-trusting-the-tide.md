@@ -2,7 +2,9 @@
 layout: post
 title: "Trusting the Tide"
 date: 2025-05-30
+tags: [Surrender, Healing, Self-Compassion, Life Rhythms]
 excerpt: "There’s wisdom in surrendering to the rhythm of life — even when the tide pulls you somewhere unfamiliar."
+description: "Sometimes healing isn’t about moving forward — it’s about flowing with the natural rhythm of life and learning to trust where it takes you."
 ---
 
 Not everything needs to be controlled.

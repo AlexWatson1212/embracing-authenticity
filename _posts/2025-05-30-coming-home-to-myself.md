@@ -2,7 +2,9 @@
 layout: post
 title: "Coming Home to Myself"
 date: 2025-05-30
-excerpt: "Healing, for me, hasn't been about becoming someone new — it's been about remembering who I was before the world told me I wasn’t enough."
+tags: [Healing, Self-Reclamation, Authenticity, Inner Work, Wholeness]
+description: "Healing, for me, hasn't been about becoming someone new — it's been about remembering who I was before the world told me I wasn’t enough."
+thumbnail: /images/posts/coming-home-to-myself.jpg
 ---
 
 For most of my life, I thought healing meant *becoming better* — more confident, more successful, more in control.
@@ -20,18 +22,19 @@ The one beneath the masks.
 The one I tucked away to survive.  
 The one who feels deeply, even when it’s inconvenient.
 
-Coming home to myself has looked like:
-- Saying no without guilt.
-- Crying without apology.
-- Laughing too loud.
-- Needing people, and letting them know.
+Coming home to myself has looked like:  
+- Saying no without guilt.  
+- Crying without apology.  
+- Laughing too loud.  
+- Needing people, and letting them know.  
 - Listening to the soft parts I used to silence.
 
 It hasn’t been tidy. It hasn’t been linear. But it’s been real.
 
 And maybe that’s what makes it feel like home — not that it’s perfect, but that it’s *mine*.
 
-The world will always try to convince us to perform — to become more palatable, more productive, more “together.” But the real journey is returning to who we were before we learned to perform at all.
+The world will always try to convince us to perform — to become more palatable, more productive, more “together.”  
+But the real journey is returning to who we were before we learned to perform at all.
 
 ---
 

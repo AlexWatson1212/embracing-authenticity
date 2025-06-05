@@ -2,7 +2,9 @@
 layout: post
 title: "Letting Go of Who You Thought You Had to Be"
 date: 2025-05-30
-excerpt: "Sometimes growth isn't becoming someone new — it's releasing who you were never meant to be in the first place."
+tags: [Healing, Identity, Growth, Self-Acceptance]
+description: "Sometimes growth isn't becoming someone new — it's releasing who you were never meant to be in the first place."
+thumbnail: /images/posts/letting-go-who-you-had-to-be.jpg
 ---
 
 For so long, I tried to be the person I thought I was supposed to be.

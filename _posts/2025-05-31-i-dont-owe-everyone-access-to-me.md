@@ -4,6 +4,8 @@ title: "I Don’t Owe Everyone Access to Me"
 date: 2025-05-31
 description: "Just because someone wants your energy doesn’t mean they’re entitled to it."
 thumbnail: /images/posts/boundaries-access.jpg
+excerpt: "I can care about someone and still choose distance. My energy is finite—and I’m allowed to give it with discernment."
+tags: [Boundaries, Self-Respect, Emotional Energy, Relationships]
 ---
 
 I used to feel obligated to reply. To be available. To answer messages, even from people who rarely made me feel seen or safe.

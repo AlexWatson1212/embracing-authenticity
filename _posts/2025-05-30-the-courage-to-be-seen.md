@@ -2,7 +2,9 @@
 layout: post
 title: "The Courage to Be Seen"
 date: 2025-05-30
+tags: [Vulnerability, Authenticity, Courage, Connection]
 excerpt: "Being seen for who you truly are can feel terrifying — but it’s also where real connection and freedom begin."
+description: "Letting yourself be seen — even in your fear, even when it’s messy — is one of the bravest things you can do."
 ---
 
 There’s a quiet kind of fear that lives beneath the surface of many of us:

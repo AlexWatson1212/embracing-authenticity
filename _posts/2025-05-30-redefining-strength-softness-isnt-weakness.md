@@ -2,7 +2,8 @@
 layout: post
 title: "Redefining Strength: Softness Isn’t Weakness"
 date: 2025-05-30
-excerpt: "Real strength isn’t always loud, sharp, or unbreakable — sometimes, it looks like softness that chooses to stay open, even after being hurt."
+tags: [Strength, Vulnerability, Healing, Emotional Resilience]
+description: "Real strength isn’t always loud, sharp, or unbreakable — sometimes, it looks like softness that chooses to stay open, even after being hurt."
 ---
 
 For a long time, I thought being strong meant being unaffected.

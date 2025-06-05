@@ -2,8 +2,10 @@
 layout: post
 title: "I Am Learning to Feel Safe in My Own Company"
 date: 2025-05-31
-description: "Being alone isn’t the same as being lonely—and I’m learning to love the difference."
+description: "Being alone isn’t the same as being lonely — and I’m learning to love the difference."
+excerpt: "I used to fill silence with distractions. Now, I find something peaceful in simply being with myself."
 thumbnail: /images/posts/safe-in-my-company.jpg
+tags: [Solitude, Self-Connection, Healing, Inner Peace]
 ---
 
 There was a time I filled every silence.
@@ -11,7 +13,7 @@ There was a time I filled every silence.
 Music. Messages. Movement.  
 Anything to avoid sitting alone with myself.
 
-Not because I didn’t like being alone—  
+Not because I didn’t like being alone —  
 But because I didn’t yet feel *safe* there.
 
 Now, that’s changing.
@@ -25,7 +27,7 @@ To enjoy my own presence without needing an audience, a distraction, or a plan.
 It doesn’t mean I don’t want connection.  
 It just means I don’t need it to feel okay.
 
-Because I’m building a relationship with the one person I’ll spend every moment of my life with—myself.
+Because I’m building a relationship with the one person I’ll spend every moment of my life with — myself.
 
 And the more I listen, the more I like who I’m becoming.
 

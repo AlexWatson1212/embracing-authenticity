@@ -3,7 +3,9 @@ layout: post
 title: "I Can Let Go Without Hating"
 date: 2025-05-31
 description: "Closure doesn’t require resentment—it just requires release."
+excerpt: "Letting go doesn’t have to come from anger. It can come from clarity, growth, and peace."
 thumbnail: /images/posts/let-go-without-hate.jpg
+tags: [Letting Go, Closure, Emotional Maturity, Healing, Boundaries]
 ---
 
 I used to think I needed to be angry to walk away.

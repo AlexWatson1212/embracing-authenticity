@@ -4,6 +4,8 @@ title: "I Don’t Need to Prove I’m Doing Well"
 date: 2025-05-31
 description: "There’s a quiet confidence in letting progress be private."
 thumbnail: /images/posts/proving-progress.jpg
+excerpt: "Some of the most meaningful growth doesn’t make noise—and that’s okay. I know I’m healing because I feel it, not because I prove it."
+tags: [Healing, Growth, Self-Worth, Authenticity, Emotional Maturity]
 ---
 
 There was a time when I wanted people to see that I was healing. That I was thriving. That I was rising from the ashes with something to show for it.

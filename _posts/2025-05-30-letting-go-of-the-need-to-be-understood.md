@@ -2,6 +2,7 @@
 layout: post
 title: "Letting Go of the Need to Be Understood"
 date: 2025-05-31
+tags: [Healing, Self-Worth, Boundaries, Personal Growth]
 description: "Not everyone will get me—and that’s no longer a threat to my worth."
 thumbnail: /images/posts/need-to-be-understood.jpg
 ---

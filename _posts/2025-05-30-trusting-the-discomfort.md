@@ -2,7 +2,9 @@
 layout: post
 title: "Trusting the Discomfort"
 date: 2025-05-30
+tags: [Growth, Healing, Nervous System, Self-Awareness]
 excerpt: "Discomfort doesn’t always mean something’s wrong — sometimes, it’s the feeling of growth unfolding in real time."
+description: "Discomfort isn’t always a warning — sometimes, it’s an invitation to stay present with the growing pains of change."
 ---
 
 Discomfort is rarely welcome.

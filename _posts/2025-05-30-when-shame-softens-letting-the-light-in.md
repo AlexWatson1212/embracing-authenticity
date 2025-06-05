@@ -2,7 +2,9 @@
 layout: post
 title: "When Shame Softens: Letting the Light In"
 date: 2025-05-30
+tags: [Shame, Healing, Self-Compassion, Vulnerability]
 excerpt: "Shame loses its grip when we stop running from ourselves and start offering compassion to the parts we were taught to hide."
+description: "Shame thrives in secrecy — but healing begins when we meet it with kindness. This post explores how self-acceptance dissolves shame’s hold and opens us to light."
 ---
 
 Shame often lives in silence.  

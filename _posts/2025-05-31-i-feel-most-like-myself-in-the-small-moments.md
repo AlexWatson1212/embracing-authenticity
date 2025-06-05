@@ -4,6 +4,8 @@ title: "I Feel Most Like Myself in the Small Moments"
 date: 2025-05-31
 description: "It’s not the big wins that make me feel alive—it’s the quiet, ordinary presence."
 thumbnail: /images/posts/small-moments.jpg
+excerpt: "Success isn’t always loud. Sometimes it looks like peace, presence, and feeling like myself in the quiet moments."
+tags: [Presence, Simplicity, Self-Connection, Daily Life]
 ---
 
 The world celebrates big moments.

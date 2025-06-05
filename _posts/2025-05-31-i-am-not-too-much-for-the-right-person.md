@@ -3,7 +3,9 @@ layout: post
 title: "I Am Not Too Much for the Right Person"
 date: 2025-05-31
 description: "The right person won’t need me to shrink to be loved."
+excerpt: "I used to dim my light to be accepted — but now I know I’m not too much. I’m just waiting for someone who’s ready for the real me."
 thumbnail: /images/posts/not-too-much.jpg
+tags: [Self-Worth, Authenticity, Relationships, Boundaries]
 ---
 
 At some point, I internalised the idea that I was too much.
@@ -31,7 +33,7 @@ I don’t need to hide to be chosen.
 
 And I don’t want to be loved for a version of me that isn’t whole.
 
-So I’ll keep showing up—as I am.
+So I’ll keep showing up — as I am.
 
 Full-hearted. Curious. Caring.
 

@@ -4,6 +4,8 @@ title: "I Stopped Chasing and Started Choosing"
 date: 2025-05-31
 description: "There’s a different kind of power in choosing what chooses you back."
 thumbnail: /images/posts/stopped-chasing.jpg
+excerpt: "I stopped chasing love that made me shrink—and started choosing what felt safe, steady, and real."
+tags: [Self-Worth, Relationships, Boundaries, Emotional Growth]
 ---
 
 I used to chase connection.

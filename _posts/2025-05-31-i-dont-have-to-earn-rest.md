@@ -4,6 +4,8 @@ title: "I Don’t Have to Earn Rest"
 date: 2025-05-31
 description: "Rest isn’t a reward for burnout—it’s a birthright."
 thumbnail: /images/posts/earn-rest.jpg
+excerpt: "I used to think I had to finish the list before I could rest. Now I know rest is something I’m worthy of—no matter what I did today."
+tags: [Self-Care, Rest, Burnout Recovery, Nervous System]
 ---
 
 I used to treat rest like it was something I had to earn.

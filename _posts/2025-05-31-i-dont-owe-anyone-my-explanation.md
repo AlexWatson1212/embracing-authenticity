@@ -4,6 +4,8 @@ title: "I Don’t Owe Anyone My Explanation"
 date: 2025-05-31
 description: "Choosing peace doesn’t require permission slips."
 thumbnail: /images/posts/no-explanation.jpg
+excerpt: "I don’t need to justify my boundaries to people who benefit from me having none. What I feel is valid—and that’s enough."
+tags: [Boundaries, Self-Trust, Emotional Clarity, Inner Peace]
 ---
 
 I used to explain everything.

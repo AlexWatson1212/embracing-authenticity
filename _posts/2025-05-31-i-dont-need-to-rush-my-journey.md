@@ -4,6 +4,8 @@ title: "I Don’t Need to Rush My Journey"
 date: 2025-05-31
 description: "Growth unfolds in its own time—and that’s okay."
 thumbnail: /images/posts/dont-rush.jpg
+excerpt: "Some of the biggest shifts happen slowly, quietly, and beneath the surface. I’m allowed to grow at my own pace."
+tags: [Healing, Patience, Self-Compassion, Personal Growth]
 ---
 
 There’s a part of me that gets impatient.

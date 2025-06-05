@@ -4,6 +4,8 @@ title: "I Don’t Have to Explain My Boundaries"
 date: 2025-05-31
 description: "A boundary is a statement of self-trust—not an invitation to negotiate."
 thumbnail: /images/posts/boundaries-no-explanation.jpg
+excerpt: "A boundary isn’t rude or cold—it’s a statement of what you’re available for. And you don’t owe anyone an emotional essay to justify it."
+tags: [Boundaries, Self-Trust, Emotional Health, Growth]
 ---
 
 For a long time, I felt like I had to explain my boundaries.

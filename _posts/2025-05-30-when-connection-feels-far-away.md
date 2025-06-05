@@ -2,7 +2,9 @@
 layout: post
 title: "When Connection Feels Far Away"
 date: 2025-05-30
+tags: [Loneliness, Healing, Emotional Awareness, Self-Compassion]
 excerpt: "There are seasons where closeness feels out of reach — not because you’re broken, but because you’re learning to belong to yourself first."
+description: "Connection isn’t always present — but disconnection doesn’t mean something is wrong. This post explores the quiet in-between moments of belonging and what they can teach us."
 ---
 
 There are moments — sometimes long stretches — where connection feels like a distant thing.

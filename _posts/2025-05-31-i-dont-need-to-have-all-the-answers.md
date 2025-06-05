@@ -4,6 +4,8 @@ title: "I Don’t Need to Have All the Answers"
 date: 2025-05-31
 description: "Uncertainty isn’t failure—it’s part of the path."
 thumbnail: /images/posts/dont-need-all-answers.jpg
+excerpt: "Clarity isn’t a prerequisite for moving forward. Sometimes, the answers come as we go—and sometimes they don’t need to."
+tags: [Uncertainty, Trust, Self-Compassion, Emotional Growth, Presence]
 ---
 
 There’s a part of me that used to panic in the unknown.

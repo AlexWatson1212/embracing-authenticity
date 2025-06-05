@@ -4,6 +4,8 @@ title: "I Don’t Need to Respond Right Away"
 date: 2025-05-31
 description: "Creating space before replying has become a form of self-respect."
 thumbnail: /images/posts/responding-later.jpg
+excerpt: "I used to respond instantly out of fear. Now I pause out of self-trust. A thoughtful reply is worth the wait."
+tags: [Boundaries, Self-Respect, Communication, Emotional Regulation]
 ---
 
 For most of my life, I felt like I had to reply immediately.

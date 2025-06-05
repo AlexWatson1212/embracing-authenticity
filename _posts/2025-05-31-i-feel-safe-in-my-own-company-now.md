@@ -4,6 +4,8 @@ title: "I Feel Safe in My Own Company Now"
 date: 2025-05-31
 description: "Solitude used to feel like absence. Now it feels like home."
 thumbnail: /images/posts/safe-alone.jpg
+excerpt: "There was a time when silence felt like punishment. Now, being alone feels like peace, not absence."
+tags: [Solitude, Self-Compassion, Emotional Safety, Inner Peace]
 ---
 
 There was a time when being alone felt like a punishment.

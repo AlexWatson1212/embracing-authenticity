@@ -2,7 +2,8 @@
 layout: post
 title: "Learning to Trust Again"
 date: 2025-05-30
-excerpt: "Trust doesn’t always come back in a flood. Sometimes it returns in whispers — small moments where we let ourselves be seen again."
+tags: [Healing, Trust, Self-Compassion, Trauma Recovery, Relationships]
+description: "Trust doesn’t always come back in a flood. Sometimes it returns in whispers — small moments where we let ourselves be seen again."
 ---
 
 Trust is a fragile thing.

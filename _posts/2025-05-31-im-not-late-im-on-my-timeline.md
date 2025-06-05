@@ -4,6 +4,8 @@ title: "I’m Not Late — I’m On My Timeline"
 date: 2025-05-31
 description: "Comparison will tell me I’m behind. But presence reminds me I’m exactly where I need to be."
 thumbnail: /images/posts/my-timeline.jpg
+excerpt: "I used to feel like I was falling behind—but the more I listen inward, the more I realise I’m exactly where I’m meant to be."
+tags: [Self-Compassion, Personal Growth, Healing, Comparison]
 ---
 
 There are days I feel behind.

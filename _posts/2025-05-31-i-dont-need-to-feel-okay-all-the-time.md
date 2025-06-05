@@ -4,6 +4,8 @@ title: "I Don’t Need to Feel Okay All the Time"
 date: 2025-05-31
 description: "Wholeness isn’t about constant joy—it’s about allowing the full range of being human."
 thumbnail: /images/posts/not-always-okay.jpg
+excerpt: "Healing isn’t about always being okay—it’s about being real, present, and gentle with whatever arises."
+tags: [Healing, Emotional Resilience, Self-Compassion, Mental Health, Humanity]
 ---
 
 I used to believe that healing meant finally feeling okay.
@@ -14,7 +16,9 @@ But that belief became another burden—another standard I could never reach.
 
 Because the truth is, **I’m not always okay.**
 
-Some mornings I wake up flat. Some nights I feel anxious for no clear reason. Sometimes I doubt myself. Sometimes I feel low. And that doesn’t mean I’ve failed. It means I’m *alive*.
+Some mornings I wake up flat. Some nights I feel anxious for no clear reason.  
+Sometimes I doubt myself. Sometimes I feel low.  
+And that doesn’t mean I’ve failed. It means I’m *alive*.
 
 Being human comes with waves.
 

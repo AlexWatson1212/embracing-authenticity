@@ -2,7 +2,9 @@
 layout: post
 title: "Remember: You’re Not Broken"
 date: 2025-05-30
-excerpt: "Sometimes healing begins with the radical idea that nothing is wrong with you — you're just unlearning what never belonged."
+tags: [Healing, Self-Worth, Trauma Recovery, Inner Child, Authenticity]
+description: "Sometimes healing begins with the radical idea that nothing is wrong with you — you're just unlearning what never belonged."
+thumbnail: /images/posts/youre-not-broken.jpg
 ---
 
 There’s a quiet lie that so many of us carry.
