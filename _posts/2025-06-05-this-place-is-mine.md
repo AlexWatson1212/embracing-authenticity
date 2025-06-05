@@ -4,7 +4,6 @@ title: "This Place Is Mine"
 date: 2025-06-05
 tags: Reflection, Purpose, Privacy, Truth, Self-Expression
 description: I don’t know who this is for, or if it ever needs to be for anyone else. But I know what it is: mine.
-published: false
 ---
 
 I don’t think anyone knows this website exists.  
