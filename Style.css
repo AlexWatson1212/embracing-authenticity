@@ -479,3 +479,15 @@ main h2 {
     display: none;
   }
 }
+.scroll-link {
+  font-weight: 500;
+  color: #B6753A;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.scroll-link:hover {
+  color: #8a502a;
+}

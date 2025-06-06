@@ -5,7 +5,10 @@ title: Blog
 
 <section class="blog-intro fade-in">
   <h2>Blog</h2>
-  <p>This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically. click on the topic that best suits where you are right now. Scroll down to view my latest posts and to view the blogs within the tag you've chosen.</p>
+  <p>
+    This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically. 
+    <a href="#blogPosts" class="scroll-link">Click here to skip to the blogs</a> or click on a topic below to filter.
+  </p>
 </section>
 
 <div class="tag-filter fade-in">
@@ -13,7 +16,7 @@ title: Blog
   {% assign tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
   {% for tag in tags %}
     {% unless tag == "" %}
-      <a href="/tag/{{ tag | slugify }}/" class="post-tag" data-tag="{{ tag }}">{{ tag }}</a>
+      <a href="#blogPosts" class="post-tag scroll-link" data-tag="{{ tag }}">{{ tag }}</a>
     {% endunless %}
   {% endfor %}
 </div>
@@ -35,6 +38,7 @@ title: Blog
   const tagButtons = document.querySelectorAll('.post-tag[data-tag]');
   const clearButton = document.getElementById('clearTags');
   const posts = document.querySelectorAll('.blog-card');
+  const blogSection = document.getElementById('blogPosts');
 
   tagButtons.forEach(button => {
     button.addEventListener('click', e => {
@@ -46,12 +50,22 @@ title: Blog
         const tags = post.getAttribute('data-tags');
         post.style.display = tags.includes(tag) ? 'block' : 'none';
       });
+      blogSection.scrollIntoView({ behavior: 'smooth' });
     });
   });
 
   clearButton?.addEventListener('click', () => {
     tagButtons.forEach(btn => btn.classList.remove('active'));
     posts.forEach(post => post.style.display = 'block');
+    blogSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  const scrollLinks = document.querySelectorAll('.scroll-link');
+  scrollLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      blogSection.scrollIntoView({ behavior: 'smooth' });
+    });
   });
 
   const faders = document.querySelectorAll('.fade-in');
