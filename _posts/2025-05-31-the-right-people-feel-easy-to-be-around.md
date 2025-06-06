@@ -2,6 +2,7 @@
 layout: post
 title: "The Right People Feel Easy to Be Around"
 date: 2025-05-31
+tags: [Connection, Relationships, Nervous System, Self-Awareness, Boundaries, Authenticity, Emotional Safety]
 description: "Connection shouldn’t feel like a performance."
 thumbnail: /images/posts/right-people-easy.jpg
 ---

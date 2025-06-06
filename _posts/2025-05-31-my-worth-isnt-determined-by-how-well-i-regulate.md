@@ -2,6 +2,7 @@
 layout: post
 title: "My Worth Isn’t Determined by How Well I Regulate"
 date: 2025-05-31
+tags: [Self-Worth, Emotional Regulation, Self-Compassion, Healing, Being Human]
 description: "Even on messy days, I still deserve kindness—from myself most of all."
 thumbnail: /images/posts/worth-and-regulation.jpg
 ---

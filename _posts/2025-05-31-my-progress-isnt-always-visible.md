@@ -2,6 +2,7 @@
 layout: post
 title: "My Progress Isn’t Always Visible"
 date: 2025-05-31
+tags: [Growth, Self-Awareness, Emotional Resilience, Healing, Inner Change]
 description: "Sometimes the biggest shifts happen in silence, not celebration."
 thumbnail: /images/posts/progress-in-silence.jpg
 ---

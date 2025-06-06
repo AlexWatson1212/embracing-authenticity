@@ -2,6 +2,7 @@
 layout: post
 title: "When I’m Triggered by Kindness"
 date: 2025-05-31
+tags: [Triggers, Kindness, Attachment, Nervous System, Trauma Healing, Inner Child, Relationships, Self-Compassion]
 description: "Sometimes kindness feels unfamiliar—and that’s okay."
 thumbnail: /images/posts/triggered-by-kindness.jpg
 ---

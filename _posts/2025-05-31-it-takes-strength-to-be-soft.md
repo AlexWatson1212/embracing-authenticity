@@ -2,6 +2,7 @@
 layout: post
 title: "It Takes Strength to Be Soft"
 date: 2025-05-31
+tags: [Vulnerability, Resilience, Healing, Emotional Strength, Authenticity]
 description: "Softness isn’t weakness. It’s what kept me open when I had every reason to shut down."
 thumbnail: /images/posts/strength-in-softness.jpg
 ---

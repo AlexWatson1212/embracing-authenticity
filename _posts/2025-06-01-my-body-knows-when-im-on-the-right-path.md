@@ -4,6 +4,7 @@ title: "My Body Knows When I'm on the Right Path"
 date: 2025-06-01
 description: "When I stop hiding and speak honestly, something in me lights up. My energy rises. My nervous system settles. This is how I know I’m aligned."
 thumbnail: /images/posts/right-path-body.jpg
+tags: [Authenticity, Nervous System, Energy, Self-Expression, Healing, Integrity, Personal Growth, Fatherhood, Vulnerability]
 ---
 
 Something remarkable happened today.

@@ -2,6 +2,7 @@
 layout: post
 title: "The Days I Feel Quiet"
 date: 2025-05-31
+tags: [Stillness, Integration, Slow Growth, Self-Awareness, Emotional Rhythm]
 description: "Not every season of growth is loud. Some arrive in stillness."
 thumbnail: /images/posts/quiet-days.jpg
 ---

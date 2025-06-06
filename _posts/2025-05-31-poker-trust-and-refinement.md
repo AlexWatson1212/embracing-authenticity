@@ -2,7 +2,9 @@
 layout: post
 title: "Poker, Trust, and the Long Game of Refinement"
 date: 2025-05-31
+tags: [Poker, Self-Trust, Emotional Resilience, Long-Term Thinking, Refinement]
 description: A reflection on self-trust, poker variance, and integrating lessons from both the highs and the lows.
+thumbnail: /images/posts/poker-long-game.jpg
 ---
 
 There was a time not long ago where I won almost every tournament I played. It wasn’t luck. It wasn’t even volume. It was a run — a genuine heater — and I didn’t take it in.
@@ -46,5 +48,3 @@ If poker becomes my main source of income, it won’t be because I had no other 
 That’s the real prize.
 
 And today, I’m not chasing it. I’m already living it.
-
----

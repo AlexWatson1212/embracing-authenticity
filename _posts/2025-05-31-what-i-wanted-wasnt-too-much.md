@@ -2,6 +2,7 @@
 layout: post
 title: "What I Wanted Wasn’t Too Much"
 date: 2025-05-31
+tags: [Self-Worth, Relationships, Emotional Needs, Healing, Sensitivity, Self-Acceptance, Boundaries, Longing]
 description: "It just wasn’t met by the right people."
 thumbnail: /images/posts/not-too-much.jpg
 ---

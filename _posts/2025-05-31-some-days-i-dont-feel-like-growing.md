@@ -2,6 +2,7 @@
 layout: post
 title: "Some Days I Don’t Feel Like Growing"
 date: 2025-05-31
+tags: [Healing, Rest, Self-Compassion, Emotional Honesty, Growth Fatigue]
 description: "Healing isn’t a performance. I’m allowed to have off days too."
 thumbnail: /images/posts/no-growth-days.jpg
 ---

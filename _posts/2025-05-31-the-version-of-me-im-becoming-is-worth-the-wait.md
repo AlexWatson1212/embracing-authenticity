@@ -2,6 +2,7 @@
 layout: post
 title: "The Version of Me I’m Becoming Is Worth the Wait"
 date: 2025-05-31
+tags: [Growth, Self-Compassion, Healing, Transformation, Patience, Emotional Resilience, Becoming]
 description: "Not everything blooms fast. Some transformations take their time—and that’s okay."
 thumbnail: /images/posts/becoming-me.jpg
 ---

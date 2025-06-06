@@ -2,6 +2,7 @@
 layout: post
 title: "It Doesn’t Have to Make Sense to Anyone Else"
 date: 2025-05-31
+tags: [Boundaries, Self-Worth, Healing, Authenticity, Validation]
 description: "My healing, my pace, and my choices don’t need approval to be valid."
 thumbnail: /images/posts/doesnt-have-to-make-sense.jpg
 ---
@@ -14,7 +15,7 @@ Why I’m saying no to things that used to drain me.
 
 Like I need to justify it. Like I need people to *understand* my healing before I can trust it myself.
 
-But lately, I’m realising:
+But lately, I’m realising:  
 > It doesn’t have to make sense to anyone else.
 
 Not everyone will get the choices I’m making. Not everyone needs to. The people who truly respect me won’t demand a full emotional audit every time I change direction.

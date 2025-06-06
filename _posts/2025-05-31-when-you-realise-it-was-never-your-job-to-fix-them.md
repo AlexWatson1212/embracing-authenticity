@@ -2,6 +2,7 @@
 layout: post
 title: "When You Realise It Was Never Your Job to Fix Them"
 date: 2025-05-31
+tags: [Boundaries, Emotional Labor, Relationships, Self-Worth, Burnout, People-Pleasing, Self-Respect, Reciprocity]
 description: "I was playing therapist in so many friendships—and it drained me."
 thumbnail: /images/posts/not-your-job.jpg
 ---

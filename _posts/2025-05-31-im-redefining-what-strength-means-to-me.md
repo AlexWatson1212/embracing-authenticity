@@ -2,6 +2,7 @@
 layout: post
 title: "I’m Redefining What Strength Means to Me"
 date: 2025-05-31
+tags: [Healing, Resilience, Emotional Honesty, Self-Compassion, Growth]
 description: "True strength isn’t about how much I can carry—it’s about how honestly I can live."
 thumbnail: /images/posts/redefining-strength.jpg
 ---

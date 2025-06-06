@@ -2,6 +2,7 @@
 layout: post
 title: "What My Triggered Self Needs to Hear"
 date: 2025-05-31
+tags: [Emotional Regulation, Triggers, Inner Voice, Healing, Self-Compassion, Nervous System, Self-Soothing, Presence]
 description: "In the heat of the moment, logic doesn’t help—but presence does."
 thumbnail: /images/posts/triggered-self.jpg
 ---

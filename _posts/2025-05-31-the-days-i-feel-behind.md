@@ -2,6 +2,7 @@
 layout: post
 title: "The Days I Feel Behind"
 date: 2025-05-31
+tags: [Self-Compassion, Productivity Pressure, Mental Health, Gentle Living, Emotional Awareness]
 description: "Not every day needs to be productive. Some just need to be honest."
 thumbnail: /images/posts/feeling-behind.jpg
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "Why I’m Not Forcing Connection Anymore"
 date: 2025-05-31
+tags: [Connection, Authenticity, Self-Worth, Boundaries, Letting Go, Emotional Maturity, Relationships, Presence]
 description: "Connection means more when it happens naturally."
 thumbnail: /images/posts/not-forcing-connection.jpg
 ---

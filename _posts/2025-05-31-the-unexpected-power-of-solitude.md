@@ -2,6 +2,7 @@
 layout: post
 title: "The Unexpected Power of Solitude"
 date: 2025-05-31
+tags: [Solitude, Self-Connection, Emotional Regulation, Authenticity, Intentional Living, Healing, Relationships]
 description: "I used to fear being alone. Now, it’s one of my greatest sources of strength."
 thumbnail: /images/posts/power-of-solitude.jpg
 ---

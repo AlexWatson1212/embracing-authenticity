@@ -2,6 +2,7 @@
 layout: post
 title: "It’s Okay to Not Know What Comes Next"
 date: 2025-05-31
+tags: [Uncertainty, Trust, Growth, Self-Compassion, Presence]
 description: "Clarity will come when it’s ready—until then, I can walk without a map."
 thumbnail: /images/posts/not-knowing.jpg
 ---

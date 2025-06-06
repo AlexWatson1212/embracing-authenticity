@@ -2,6 +2,7 @@
 layout: post
 title: "When Someone Doesn’t Choose Me"
 date: 2025-05-31
+tags: [Rejection, Self-Worth, Relationships, Attachment, Emotional Healing, Vulnerability, Grief, Self-Love]
 description: "It hurts—but it doesn’t mean I’m not worthy of being chosen."
 thumbnail: /images/posts/not-chosen.jpg
 ---

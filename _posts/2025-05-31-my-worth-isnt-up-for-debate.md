@@ -2,6 +2,7 @@
 layout: post
 title: "My Worth Isn’t Up for Debate"
 date: 2025-05-31
+tags: [Self-Worth, Authenticity, Boundaries, Inner Strength, Validation]
 description: "Other people’s opinions might sting—but they don’t define me."
 thumbnail: /images/posts/worth-not-debate.jpg
 ---

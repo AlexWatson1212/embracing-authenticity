@@ -2,10 +2,11 @@
 layout: post
 title: "A Letter from the One Who Never Left"
 date: 2025-06-01
+tags: [Healing, Inner Child, Therapy, Self-Compassion, Survival, Mental Health, Emotional Resilience, Hope, Trauma Recovery]
 description: "A gentle message to the version of me who didn’t know why life was worth living — and the quiet voice that stayed."
-tags: Healing, Inner Child, Therapy, Self-Compassion, Survival
 thumbnail: /images/posts/a-letter-from-the-one-who-never-left.jpg
 ---
+
 For most of my life, I didn’t know why I was alive.
 
 Not in a dramatic way — more in that slow, aching, quiet kind of way. The kind that drifts in like fog. The kind that makes you wonder what the point of it all is, if it’s just going to be this — disconnection, loneliness, a constant ache for something deeper.

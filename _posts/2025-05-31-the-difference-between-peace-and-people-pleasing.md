@@ -2,6 +2,7 @@
 layout: post
 title: "The Difference Between Peace and People-Pleasing"
 date: 2025-05-31
+tags: [Boundaries, People-Pleasing, Authenticity, Nervous System, Assertiveness]
 description: "Keeping the peace shouldn’t come at the cost of losing myself."
 thumbnail: /images/posts/peace-vs-pleasing.jpg
 ---

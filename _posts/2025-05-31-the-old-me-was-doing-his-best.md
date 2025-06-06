@@ -2,6 +2,7 @@
 layout: post
 title: "The Old Me Was Doing His Best"
 date: 2025-05-31
+tags: [Self-Compassion, Inner Child, Growth, Healing, Emotional Awareness, Reflection]
 description: "Even if it was messy. Even if it didn’t look like healing."
 thumbnail: /images/posts/old-me-best.jpg
 ---

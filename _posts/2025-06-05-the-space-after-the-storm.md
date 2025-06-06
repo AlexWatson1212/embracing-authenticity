@@ -1,13 +1,12 @@
-Filename: 2025-06-05-the-space-after-the-storm.md
-Frontmatter:
-
 ---
 layout: post
 title: "The Space After the Storm"
 date: 2025-06-05
-tags: Freedom, Healing, Fatherhood, Identity, Uncertainty
+tags: [Freedom, Healing, Fatherhood, Identity, Uncertainty, Transition, Emotional Recovery]
 description: A reflection on the liberation that comes after shedding old expectations—and the quiet questions that remain.
+thumbnail: /images/posts/the-space-after-the-storm.jpg
 ---
+
 What happens now?
 
 That question used to terrify me. But now... it just *is*. Like Noel Gallagher sang, "I'm free to be whatever I, whatever I choose." And for once, I believe it.

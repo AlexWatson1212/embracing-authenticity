@@ -2,6 +2,7 @@
 layout: post
 title: "Slow Days Are Still Valuable"
 date: 2025-05-31
+tags: [Rest, Self-Compassion, Slow Living, Emotional Wellness, Sustainable Growth]
 description: "Not every day needs to be productive to be meaningful."
 thumbnail: /images/posts/slow-days.jpg
 ---

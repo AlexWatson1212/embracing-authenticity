@@ -2,6 +2,7 @@
 layout: post
 title: "Self-Parenting on Days I Feel Invisible"
 date: 2025-05-31
+tags: [Self-Parenting, Emotional Loneliness, Inner Child, Self-Compassion, Visibility]
 description: "Some days I don’t need fixing—I just need to be seen. Even by me."
 thumbnail: /images/posts/self-parenting.jpg
 ---

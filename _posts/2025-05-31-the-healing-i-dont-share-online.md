@@ -2,6 +2,7 @@
 layout: post
 title: "The Healing I Don’t Share Online"
 date: 2025-05-31
+tags: [Private Healing, Inner Work, Authenticity, Solitude, Self-Validation]
 description: "Some of the most meaningful growth doesn’t get posted—and that’s exactly how it should be."
 thumbnail: /images/posts/private-healing.jpg
 ---

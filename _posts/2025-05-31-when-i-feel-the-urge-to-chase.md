@@ -2,6 +2,7 @@
 layout: post
 title: "When I Feel the Urge to Chase"
 date: 2025-05-31
+tags: [Attachment, Triggers, Emotional Healing, Worthiness, Inner Child, Relationships, Self-Worth, Nervous System]
 description: "The desire to pursue often comes from an old wound, not a present truth."
 thumbnail: /images/posts/urge-to-chase.jpg
 ---

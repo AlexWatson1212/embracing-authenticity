@@ -2,6 +2,7 @@
 layout: post
 title: "My Life Isn’t On Pause Just Because I’m Alone"
 date: 2025-05-31
+tags: [Solitude, Self-Discovery, Independence, Wholeness, Personal Growth]
 description: "Alone doesn’t mean waiting—it can mean living fully, just differently."
 thumbnail: /images/posts/life-not-on-pause.jpg
 ---

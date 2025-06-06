@@ -2,6 +2,7 @@
 layout: post
 title: "The Healing Power of Doing Nothing"
 date: 2025-05-31
+tags: [Rest, Nervous System, Self-Care, Stillness, Productivity Myths, Slow Living]
 description: "Sometimes stillness is the medicine. Not the reward."
 thumbnail: /images/posts/healing-stillness.jpg
 ---

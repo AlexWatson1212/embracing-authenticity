@@ -2,6 +2,7 @@
 layout: post
 title: "Reclaiming the Wheel: My Relationship with the Inner Critic"
 date: 2025-05-31
+tags: [Inner Critic, Self-Worth, Emotional Healing, Self-Compassion, Personal Empowerment]
 description: "I used to let that little voice of self-doubt drive everything. Now, I’m learning to let it speak—but not steer."
 thumbnail: /images/posts/reclaiming-the-wheel.jpg
 ---
@@ -34,8 +35,8 @@ I’m not trying to kill off that voice. It still has a role. It can offer a **p
 
 Now, I choose which voice takes the wheel.
 
-> The one that sees my effort.
-> The one that recognizes my emotional growth.
+> The one that sees my effort.  
+> The one that recognizes my emotional growth.  
 > The one that values steady improvement over sudden success.
 
 I trust that as I keep walking this path—whether in poker, in life, or in the quiet moments alone—that voice will grow quieter. Not because it’s wrong, but because it’s no longer needed in the same way.
@@ -54,4 +55,4 @@ Let it ride in the backseat. Smile at it in the rearview. But you’re the one a
 That’s how it changes.
 
 —  
-*Thanks for reading. If this resonates, feel free to share or reach out. You're not alone in this.*  
+*Thanks for reading. If this resonates, feel free to share or reach out. You're not alone in this.*

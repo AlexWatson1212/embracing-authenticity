@@ -2,6 +2,7 @@
 layout: post
 title: "My Emotions Aren’t Inconvenient"
 date: 2025-05-31
+tags: [Emotional Intelligence, Validation, Authenticity, Self-Acceptance, Depth]
 description: "I’ve stopped apologising for feeling things deeply."
 thumbnail: /images/posts/emotions-are-valid.jpg
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "The Moment I Stopped Apologising for My Needs"
 date: 2025-05-31
+tags: [Boundaries, Self-Worth, Emotional Needs, Assertiveness, Healing, Relationships]
 description: "It’s not selfish to ask for what keeps me emotionally well. It’s self-respecting."
 thumbnail: /images/posts/needs-are-valid.jpg
 ---

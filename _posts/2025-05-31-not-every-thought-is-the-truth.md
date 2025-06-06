@@ -2,6 +2,7 @@
 layout: post
 title: "Not Every Thought Is the Truth"
 date: 2025-05-31
+tags: [Mindfulness, Cognitive Awareness, Emotional Regulation, Inner Dialogue, Self-Awareness]
 description: "My mind can speak in fear, in memory, in stories—and I don’t have to believe all of it."
 thumbnail: /images/posts/thoughts-arent-truth.jpg
 ---
@@ -27,7 +28,7 @@ But I also don’t have to let them drive the car.
 
 I can notice them, name them, and choose a different response.
 
-I can ask:
+I can ask:  
 > “Is this thought kind?”  
 > “Is it true?”  
 > “Is it helpful?”

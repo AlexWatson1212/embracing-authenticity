@@ -2,6 +2,7 @@
 layout: post
 title: "The Days I Miss My Son"
 date: 2025-05-31
+tags: [Parenting, Emotional Presence, Missing Someone, Solitude, Love Without Clinging]
 description: "Even when I know I need the space, there’s a quiet ache when he’s not here."
 thumbnail: /images/posts/missing-my-son.jpg
 ---

@@ -1,8 +1,3 @@
-
-Alexander Watson <alexanderclivewatson@gmail.com>
-8:13 PM (2 hours ago)
-to me
-
 ---
 layout: post
 title: "The Day I Started Seeing Myself"

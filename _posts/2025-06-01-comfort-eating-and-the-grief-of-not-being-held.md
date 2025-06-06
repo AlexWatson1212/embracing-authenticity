@@ -2,7 +2,9 @@
 layout: post
 title: "Comfort Eating and the Grief of Not Being Held"
 date: 2025-06-01
-tags: Grief, Emotional Eating, Self-Compassion, Loneliness, Inner Child
+tags: [Grief, Emotional Eating, Self-Compassion, Loneliness, Inner Child, Coping Mechanisms, Healing]
+description: "Comfort eating isn’t about willpower—it’s about the quiet grief of unmet emotional needs. A reflection on food, loneliness, and the tenderness we all deserve."
+thumbnail: /images/posts/comfort-eating-grief.jpg
 ---
 
 It’s a rainy Sunday.
@@ -66,15 +68,15 @@ It still comes from the part of me trying to survive.
 If I could say something to myself right now, it would be this:
 
 > *You’re not bad for wanting comfort.  
-You’re not weak for needing something.  
-You’re just someone who’s carried a lot alone.*  
->  
+> You’re not weak for needing something.  
+> You’re just someone who’s carried a lot alone.*  
+>
 > *You’ve been your own source of care for a long time.  
-And sometimes, that care looks like a pastry and a blanket.  
-That’s okay.*  
->  
+> And sometimes, that care looks like a pastry and a blanket.  
+> That’s okay.*  
+>
 > *But you also deserve to be held — not just fed.  
-And that hunger deserves to be seen.*
+> And that hunger deserves to be seen.*
 
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "The Emotional Weight of a Knock on the Door"
 date: 2025-05-31
+tags: [Trauma Healing, Nervous System, Somatic Awareness, Boundaries, Self-Protection]
 description: "Old wounds show up in unexpected ways."
 thumbnail: /images/posts/knock-on-door.jpg
 ---

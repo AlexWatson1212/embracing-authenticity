@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2025-05-31-it's-a-new-world-letting-go-of-the-one-sided-relationship-i-survived
+title: "It's a New World: Letting Go of the One-Sided Relationship I Survived"
 date: 2025-05-31
 description: A deep reflection on leaving an emotionally draining relationship, reclaiming peace, and learning to live unfinished, unpolished, and free.
 thumbnail: /assets/images/new-world.jpg

@@ -2,6 +2,7 @@
 layout: post
 title: "Playing Poker With a Regulated Nervous System"
 date: 2025-05-31
+tags: [Emotional Regulation, Poker, Mindfulness, Self-Awareness, Growth Under Pressure]
 description: "Tilt used to own me. Now I use poker as a mirror for emotional growth."
 thumbnail: /images/posts/poker-nervous-system.jpg
 ---

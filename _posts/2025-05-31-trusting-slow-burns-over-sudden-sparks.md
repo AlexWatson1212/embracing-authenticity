@@ -2,6 +2,7 @@
 layout: post
 title: "Trusting Slow Burns Over Sudden Sparks"
 date: 2025-05-31
+tags: [Relationships, Emotional Safety, Nervous System Healing, Attachment, Love, Slow Living, Intimacy, Self-Awareness]
 description: "I used to crave instant chemistry. Now, I look for steady warmth."
 thumbnail: /images/posts/slow-burns.jpg
 ---
