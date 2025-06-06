@@ -40,6 +40,15 @@ title: Blog
   const posts = document.querySelectorAll('.blog-card');
   const blogSection = document.getElementById('blogPosts');
 
+  function scrollToBlogWithOffset() {
+    const offset = 80; // Adjust this for more or less spacing
+    const elementPosition = blogSection.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  }
+
   tagButtons.forEach(button => {
     button.addEventListener('click', e => {
       e.preventDefault();
@@ -50,21 +59,21 @@ title: Blog
         const tags = post.getAttribute('data-tags');
         post.style.display = tags.includes(tag) ? 'block' : 'none';
       });
-      blogSection.scrollIntoView({ behavior: 'smooth' });
+      scrollToBlogWithOffset();
     });
   });
 
   clearButton?.addEventListener('click', () => {
     tagButtons.forEach(btn => btn.classList.remove('active'));
     posts.forEach(post => post.style.display = 'block');
-    blogSection.scrollIntoView({ behavior: 'smooth' });
+    scrollToBlogWithOffset();
   });
 
   const scrollLinks = document.querySelectorAll('.scroll-link');
   scrollLinks.forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      blogSection.scrollIntoView({ behavior: 'smooth' });
+      scrollToBlogWithOffset();
     });
   });
 
