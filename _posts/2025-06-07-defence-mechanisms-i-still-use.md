@@ -3,7 +3,7 @@ layout: post
 title: "The Defence Mechanisms I Still Use"
 date: 2025-06-07
 tags: Self-Awareness, Inner Work, Defence Mechanisms, Healing, Personal Growth
-description: Even with all the work I’ve done, I still catch myself slipping into old defences. But now I can see them for what they are: survival strategies that once served me, but no longer need to run the show.
+description: Ehe survival strategies that once protected me no longer run the show.
 ---
 
 I’ve done a lot of work.  
