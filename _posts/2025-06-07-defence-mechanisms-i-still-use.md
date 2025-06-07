@@ -3,7 +3,7 @@ layout: post
 title: "The Defence Mechanisms I Still Use"
 date: 2025-06-07
 tags: Self-Awareness, Inner Work, Defence Mechanisms, Healing, Personal Growth
-description: Ehe survival strategies that once protected me no longer run the show.
+description: The survival strategies that once protected me no longer run the show.
 ---
 
 I’ve done a lot of work.  
