@@ -636,3 +636,19 @@ main h2 {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(26, 45, 65, 0.15);
 }
+.blog-button {
+  display: inline-block;
+  background-color: #F4D3D8;
+  color: #1A2D41;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blog-button:hover {
+  background-color: #e7b3bb;
+  transform: translateY(-2px);
+}
