@@ -32,3 +32,9 @@ The thing is, my mum wasn’t perfect. She didn’t love me the way I needed. Bu
 And yet somehow, through all of that, he tried to show me how to carry it without letting it destroy me.
 
 I think that’s the part I’m just now beginning to understand.
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/fJ9rUzIMcZQ" 
+  title="Bohemian Rhapsody by Queen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
