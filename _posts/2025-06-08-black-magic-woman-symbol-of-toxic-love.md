@@ -15,6 +15,21 @@ But *wounded* love—the kind that feels powerful, seductive, even spiritual… 
 
 ---
 
+### 🎤 A Song My Dad Sang With Fire
+
+My dad used to sing this song emphatically—like it meant something deeper than the lyrics let on.
+
+He didn’t just sing it.  
+He *inhabited* it.  
+Like he knew what it meant to be caught up in someone’s spell… or maybe to cast one of his own.
+
+Back then, I didn’t understand the words.  
+But I felt the heat in his voice. The ache. The seduction. The warning.
+
+Now I wonder if that song was echoing something unspoken in him—and if it echoed in me too.
+
+---
+
 ### 🖤 “Got me so blind I can’t see…”
 
 This is what happens when love becomes obsession.  
