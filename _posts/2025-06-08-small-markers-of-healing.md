@@ -7,6 +7,20 @@ thumbnail: /images/posts/markers-of-healing.jpg
 tags: [healing, self-trust, emotional growth, trauma recovery, self-compassion]
 ---
 
+<!-- Self-Mothering Playlist Widget -->
+<div style="max-width: 360px; margin: 1rem auto; text-align: center;">
+  <iframe
+    width="100%"
+    height="80"
+    src="https://www.youtube.com/embed/videoseries?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&shuffle=1"
+    title="Self‑Mothering Playlist"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <p style="font-size: 0.85rem; color: #555;">A random song from my self‑mothering playlist</p>
+</div>
+
 Healing doesn’t always look like strength.  
 Sometimes it looks like *barely getting through the day*.  
 Or walking away from something that hurts, even when you want it to work.  
