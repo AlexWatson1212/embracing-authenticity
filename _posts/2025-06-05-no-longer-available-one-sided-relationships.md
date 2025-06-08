@@ -7,6 +7,13 @@ description: Ending a long-standing friendship wasn’t about anger—it was abo
 thumbnail: /images/posts/ending-dynamic.jpg
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 There’s a friendship I’ve held onto since I was about 12 or 13.  
 
 It’s spanned continents and years. He’s in Australia now, and still reaches out from time to time. But lately, when I see his messages or missed calls, I feel nothing but drained.

@@ -6,6 +6,13 @@ tags: Values, Authenticity, Health, Connection, Freedom, Kaizen, Self-Reflection
 description: The five values that keep me grounded — not as a checklist to perfect, but as a compass to return to when life feels unclear.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 When everything gets loud —  
 when I feel pulled in different directions,  
 when I lose sight of what actually matters —  

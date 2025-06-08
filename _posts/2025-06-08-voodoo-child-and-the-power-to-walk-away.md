@@ -7,6 +7,15 @@ thumbnail: /images/posts/voodoo-child.jpg
 tags: [fatherhood, music, identity, guitar, breaking-free]
 ---
 
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/BN2g5TvNBs0"
+    title="Jimi Hendrix - Voodoo Child (Slight Return) [Live]" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+</div>
+
+
 I remember the first time I heard it — Hendrix tearing through the amp with that opening wah pedal like he was pulling thunder from the earth.
 
 *“I’m a voodoo child, Lord knows I’m a voodoo child.”*

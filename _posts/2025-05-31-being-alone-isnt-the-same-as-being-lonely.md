@@ -8,6 +8,13 @@ excerpt: "There’s a quiet kind of peace that comes with being alone — once y
 description: "I used to fill space just to avoid silence. Now, I find something sacred in it. A reflection on the beauty of solitude and learning to be with yourself."
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 There’s a difference between being alone — and feeling lonely.
 
 For a long time, I didn’t know that.  

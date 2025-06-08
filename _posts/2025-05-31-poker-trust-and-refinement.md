@@ -7,6 +7,13 @@ description: A reflection on self-trust, poker variance, and integrating lessons
 thumbnail: /images/posts/poker-long-game.jpg
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 There was a time not long ago where I won almost every tournament I played. It wasn’t luck. It wasn’t even volume. It was a run — a genuine heater — and I didn’t take it in.
 
 I made nearly $20,000 in three months playing low-stakes tournaments with an average buy-in of $35. And at the time, I didn’t shout about it. I didn’t feel arrogant. But maybe I didn’t fully *absorb* it either. I kept playing, thinking the run would last forever. When it didn’t, I wasn’t prepared for how hard the downswing would hit.

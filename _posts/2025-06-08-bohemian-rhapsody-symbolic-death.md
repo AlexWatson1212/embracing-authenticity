@@ -13,6 +13,10 @@ Not for someone else—but for a version of *ourselves* we had to let die.
 
 ---
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allowfullscreen style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
 ### 🎭 “Mama, just killed a man…”
 
 This line hits hard if you've ever faced the unbearable truth that your mother never really loved *you*—only the version of you she could use or control.

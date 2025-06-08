@@ -6,6 +6,13 @@ tags: Grief, Boundaries, Mother Wound, Healing, Shame, Reclamation
 description: I’m starting to see what it truly cost me to stay loyal to someone who never loved me. And while I grieve that, I’m also learning not to carry shame for surviving the only way I knew how.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 It’s hard to admit how long I let it go on for.
 
 How long I held onto the hope that maybe — just maybe — she’d change. That if I was good enough, quiet enough, kind enough, she’d finally meet me where I needed her to.

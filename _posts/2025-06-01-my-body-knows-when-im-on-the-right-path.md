@@ -7,6 +7,13 @@ thumbnail: /images/posts/right-path-body.jpg
 tags: [Authenticity, Nervous System, Energy, Self-Expression, Healing, Integrity, Personal Growth, Fatherhood, Vulnerability]
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 Something remarkable happened today.
 
 I spoke honestly — not just surface-level truth, but the kind of raw, unfiltered truth I’ve protected for years. I let it out.  

@@ -6,6 +6,13 @@ tags: Boundaries, Healing, Power, Authenticity, Awareness
 description: Sometimes what looks like care is actually control. A reflection on reclaiming truth from disguised intentions.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 Not all kindness is kind.
 
 Some of it is sharp underneath—  

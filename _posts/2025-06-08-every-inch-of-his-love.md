@@ -10,6 +10,14 @@ tags: [fatherhood, music, masculinity, longing, emotional-expression]
 Led Zeppelin’s *“Whole Lotta Love”* was never just about sex for my dad.  
 It was about **expression**. **Power**. **Feeling something fully — and not being punished for it**.
 
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/HQmmM_qwG4k"
+    title="Led Zeppelin - Whole Lotta Love (Official Audio)" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+</div>
+
 He came from a world where love was conditional.  
 Where affection was rationed like money.  
 Where being loud, passionate, or full of want was frowned upon — especially if you were a boy.

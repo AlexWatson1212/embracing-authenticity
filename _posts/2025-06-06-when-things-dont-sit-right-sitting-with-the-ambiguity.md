@@ -6,6 +6,13 @@ tags: Self-Awareness, Growth, Boundaries, Ambiguity, Inner Wisdom
 description: Some moments don’t make sense. And maybe they’re not meant to. But I’m learning to trust myself anyway.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 Sometimes things just don’t sit right.
 
 You walk away from a moment—an interaction, a conversation, an experience—and something lingers. A question. A discomfort. A subtle sense that something was… off.

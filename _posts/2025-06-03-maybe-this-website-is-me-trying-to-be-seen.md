@@ -6,6 +6,13 @@ tags: Self-Discovery, Healing, Vulnerability, Authenticity, Expression
 description: A quiet reflection on why creating this website might be more than a project — it might be an act of healing, of finally allowing myself to be seen.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 Maybe this website is a way of healing myself.
 
 Maybe it’s not about building something “impressive” or useful to others — maybe it’s about finally expressing who I really am. And if anyone were to read it, they wouldn’t be seeing a curated version of me. They’d be seeing the *real* parts — the ones I’ve kept hidden, the ones I’ve struggled to reveal, even to myself.

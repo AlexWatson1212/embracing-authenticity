@@ -7,6 +7,13 @@ thumbnail: /images/posts/music-mirror.jpg
 tags: [self-awareness, healing, music, reflection, emotion, growth]
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 There’s something quietly astonishing about how music moves through us.
 
 The same song can follow us for years — and yet we *never* hear it the same way twice. One verse might once have felt uplifting, and later ache with a truth we didn’t know we were carrying. Another line might drift by unnoticed until one day, it stops us cold.

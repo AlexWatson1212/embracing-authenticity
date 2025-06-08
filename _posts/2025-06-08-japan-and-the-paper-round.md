@@ -7,6 +7,13 @@ thumbnail: /images/posts/japan-paper-round.jpg
 tags: [fatherhood, travel, friendship, childhood, belonging, cross-cultural]
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 I was twelve or thirteen years old when I flew to Japan by myself.
 
 My best friend’s family had moved back there after we’d grown up together through primary school. His parents didn’t speak much English, and mine didn’t speak Japanese—but the connection between our families was deep. Real. Loving. When they moved, they gave me an open invitation: they’d pay for everything. All I had to do was get myself there.

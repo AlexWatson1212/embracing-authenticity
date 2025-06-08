@@ -7,6 +7,13 @@ description: "Tilt used to own me. Now I use poker as a mirror for emotional gro
 thumbnail: /images/posts/poker-nervous-system.jpg
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 There was a time when losing a big hand would throw my entire day off. I’d replay it over and over, curse the river card, question my ability, and spiral into self-doubt.
 
 But something’s changed.

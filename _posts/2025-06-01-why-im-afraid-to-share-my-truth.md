@@ -7,6 +7,13 @@ tags: Inner Child, Fear of Rejection, Authenticity, Mother Wound, Self-Expressio
 thumbnail: /images/posts/why-im-afraid-to-share-my-truth.jpg
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 I’ve been noticing a resistance lately — this deep, quiet fear around sharing the Embracing Authenticity project fully. Around letting myself be seen. Around letting people know who I really am.
 
 At first, I thought maybe it was just perfectionism. Or timing. Or not feeling “ready.”

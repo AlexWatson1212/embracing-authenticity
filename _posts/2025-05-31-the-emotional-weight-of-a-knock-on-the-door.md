@@ -7,6 +7,13 @@ description: "Old wounds show up in unexpected ways."
 thumbnail: /images/posts/knock-on-door.jpg
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 My heart still jumps when someone knocks hard on the door.
 
 It’s an involuntary reaction—tight chest, shallow breath, alert body. On the surface, it seems small. But underneath, it carries a deeper story. A body memory from years ago, when the sound of a knock wasn’t neutral. It meant tension. Conflict. Sometimes fear.

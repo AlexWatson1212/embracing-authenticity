@@ -7,6 +7,13 @@ description: "I used to fear being alone. Now, it’s one of my greatest sources
 thumbnail: /images/posts/power-of-solitude.jpg
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 Solitude isn’t loneliness. I used to blur the two. But lately, being alone has given me space to reconnect with who I really am.
 
 I used to fear silence. I’d fill every gap with stimulation—social media, conversations, distractions—anything to avoid being alone with myself. But over time, I’ve come to realise that solitude is where the most important conversations happen: the ones I have with myself.

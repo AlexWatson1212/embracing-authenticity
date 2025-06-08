@@ -7,6 +7,13 @@ thumbnail: /images/posts/love-almost-killed-me.jpg
 tags: [grief, father wound, self-trust, emotional survival, anger, healing]
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 I’ve been trying to make peace with a question I never asked out loud for most of my life:
 
 > **If that was love… why did it almost kill me?**

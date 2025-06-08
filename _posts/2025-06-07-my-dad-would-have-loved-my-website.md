@@ -5,6 +5,13 @@ date: 2025-06-07
 tags: Fatherhood, Expression, Truth, Legacy, Healing
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 I think my dad would be proud of my website.
 
 Not just the look of it — though he’d probably enjoy the design, the fact that I built it myself, the way it functions — but what it represents. The truth in it. The quiet rebellion of it. The decision to tell my story openly, honestly, without shame. I think he’d see it as a continuation of something he never quite got to do himself.

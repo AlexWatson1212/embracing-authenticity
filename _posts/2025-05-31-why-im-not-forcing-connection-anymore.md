@@ -7,6 +7,13 @@ description: "Connection means more when it happens naturally."
 thumbnail: /images/posts/not-forcing-connection.jpg
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 There’s a big difference between *seeking connection* and *forcing it*. I used to blur that line. I’d try to make something happen—start conversations, hold space, extend myself—just to feel a sense of closeness, even if the energy wasn’t mutual.
 
 These days, I’ve stopped chasing. I say hello. I show up. I remain open. But I don’t twist myself into something I’m not just to fit into someone else’s world.

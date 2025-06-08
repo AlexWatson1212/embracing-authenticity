@@ -6,6 +6,13 @@ tags: Creativity, Parenting, Self-Acceptance, Emotional Honesty, Presence
 description: A reflection on creating without pressure, trusting what already exists, and learning to parent from a place of honesty and faith.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 Maybe this whole project was never about creating something for anyone else.  
 Maybe it was always about creating a space for *me*.  
 A quiet corner of the internet where I could speak freely, feel what I feel, and connect with myself without needing to prove anything.

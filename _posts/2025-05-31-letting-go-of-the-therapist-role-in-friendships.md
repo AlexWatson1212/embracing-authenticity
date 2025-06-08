@@ -7,6 +7,13 @@ description: "Not everyone deserves access to my emotional labour."
 thumbnail: /images/posts/therapist-role.jpg
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 Being a good listener used to be my identity. I was the one people came to when they were hurting, confused, or overwhelmed. And for a while, I took pride in that.
 
 But something started to feel off.

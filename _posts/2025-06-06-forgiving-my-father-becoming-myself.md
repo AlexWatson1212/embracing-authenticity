@@ -6,6 +6,13 @@ tags: Fatherhood, Forgiveness, Inner Child, Generational Healing, Self-Reflectio
 description: What if my dad did love me? And what if the way I show up for my son is how I forgive the parts of him that couldn’t show up for me?
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 I’ve spent years holding my dad at a distance — not just physically, but emotionally.
 
 I told myself he didn’t love me. That he was absent. That he shouted because he was cruel. That he didn’t care because he wasn’t there.

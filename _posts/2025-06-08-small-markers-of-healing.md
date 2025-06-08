@@ -11,7 +11,7 @@ tags: [healing, self-trust, emotional growth, trauma recovery, self-compassion]
    target="_blank" 
    class="back-button"
    style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Shuffle Self‑Mothering Playlist →
+  Self‑Mothering Playlist →
 </a>
 
 

@@ -7,6 +7,13 @@ thumbnail: /images/posts/family-that-wasn’t.jpg
 tags: [family, grief, emotional-truth, boundaries, childhood]
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 My uncle Mark told me I shouldn’t be crying at my dad’s funeral.
 
 That moment has never left me. It didn’t just sting—it confirmed something I’d always felt: he never saw me. Never cared. He made fun of me growing up. And maybe—just maybe—that was his way of projecting his hatred for my mother onto me. Maybe she hurt him, or belittled him, and I became the extension of her he could punish.

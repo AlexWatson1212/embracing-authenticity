@@ -7,6 +7,13 @@ description: Some pain is too big for words. But I’m beginning to let it speak
 published: false
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 There’s a pain in me that words can barely hold.  
 It’s not just anger anymore. It’s not even just betrayal.  
 It’s **grief** — deep, old, and frightening.

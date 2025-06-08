@@ -5,6 +5,14 @@ date: 2025-06-04
 tags: Inner Child, Healing, Shame, Self-Parenting, Emotional Growth
 description: Learning to hold space for the parts of us that never got what they needed — without trying to fix or shame them.
 ---
+
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 There are parts of me that still ache.  
 Not loudly — but quietly. Like an old bruise that flinches when pressed.
 

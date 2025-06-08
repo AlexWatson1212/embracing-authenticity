@@ -6,8 +6,12 @@ tags: Inner Child, Relationships, Shame, Healing, Self-Parenting
 description: I used to unconsciously search for a nurturing parent in others — and often found the critical one instead. Now I see the pattern clearly, and I’m learning to meet myself with the compassion I was never given.
 ---
 
-Body:
-
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
 I’ve started to see a pattern that has run through most of my relationships.
 
 At some level, I think I’ve been searching for a part of myself in other people — the part that was never fully met in childhood. The nurturing parent. The one who sees me gently, holds space, offers warmth without judgment.

@@ -6,6 +6,13 @@ tags: Healing, Family, Grief, Visibility, Truth, Emotional Freedom
 description: I spent years hiding the truth to protect people who never protected me. But silence has a cost — and I’m no longer willing to pay it.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 I used to be terrified of being seen.  
 Not just in the surface-level, social kind of way — but in the deep, soul-exposing kind of way.  
 The kind of being seen that says, “Here’s who I really am. Here’s what I really went through.”

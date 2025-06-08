@@ -7,6 +7,13 @@ excerpt: "So much of healing begins with the radical question: what if I’m not
 description: "Maybe your struggles aren’t flaws — just reasonable responses to unmet needs. This post invites you to question the belief that something’s wrong with you at all."
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 What if the thing that’s been weighing you down isn’t a flaw… but a misunderstanding?
 
 What if you’ve been trying to fix parts of yourself that were never broken — just wounded, unheard, or forced to adapt?

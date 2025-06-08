@@ -6,6 +6,13 @@ tags: Parenting, Boundaries, Energy, Inner Child, Authenticity
 description: How denying my truth drained my energy—and how reclaiming it is helping me show up for my son.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 For a long time, I thought I was protecting my son by shielding him from my moods, my tiredness, my darker sides. I thought that being a “good dad” meant being upbeat, saying yes, keeping the energy flowing—even when I had none.
 
 But lately, I’ve come to realise something powerful: **my energy doesn’t disappear because I’m a bad parent. It disappears when I’m not being honest.**

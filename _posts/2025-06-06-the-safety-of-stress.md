@@ -6,6 +6,13 @@ tags: Healing, Childhood Wounds, Nervous System, DIY, Vulnerability, Trauma
 description: Sometimes the tasks that stress us the most feel oddly familiar — because our nervous system learned to equate uncertainty with danger. But healing means staying with it, and choosing a different response.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 I was just trying to fix a curtain rail.
 
 That was the task. Straightforward in theory. But there I was, stress levels through the roof, body buzzing like I was under threat, fumbling with screws and wondering why something so minor felt so overwhelming.

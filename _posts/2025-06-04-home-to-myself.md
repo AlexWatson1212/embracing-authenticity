@@ -6,6 +6,13 @@ tags: Self-Discovery, Intuition, Healing, Authenticity, Soul Work
 description: A quiet reflection on creating something for myself — and realising that I am enough.
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 I’ve spent so long searching — for meaning, for direction, for something outside myself to give me the feeling I now carry quietly within.
 
 And the truth is, I thought I was building this website for my son.  

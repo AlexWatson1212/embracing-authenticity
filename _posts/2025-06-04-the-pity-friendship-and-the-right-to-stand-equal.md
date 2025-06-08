@@ -6,7 +6,12 @@ tags: Healing, Friendship, Boundaries, Self-Worth, Personal Growth
 description: For years I stayed in a friendship that made me feel safe but small. I see now that it was never equal — and that healing means stepping into the relationships where I can finally stand tall.
 ---
 
-Body:
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
 
 I’ve just realised something hard to admit, but freeing.
 

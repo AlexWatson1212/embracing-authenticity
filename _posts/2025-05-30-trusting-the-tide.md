@@ -7,6 +7,13 @@ excerpt: "There’s wisdom in surrendering to the rhythm of life — even when t
 description: "Sometimes healing isn’t about moving forward — it’s about flowing with the natural rhythm of life and learning to trust where it takes you."
 ---
 
+<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
+   target="_blank" 
+   class="back-button"
+   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+  Self‑Mothering Playlist →
+</a>
+
 Not everything needs to be controlled.
 
 Not every moment needs to be productive.  
