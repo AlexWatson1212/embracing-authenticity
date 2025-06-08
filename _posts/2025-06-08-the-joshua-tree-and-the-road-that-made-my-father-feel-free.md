@@ -99,7 +99,7 @@ That craving for freedom and meaning, even when the road ahead feels foggy.
 ### 🎶 Listen to the Full Album
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/i3X2FJ2_y3U" frameborder="0" allowfullscreen style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"></iframe>
+  <iframe src="https://www.youtube.com/embed/watch?v=sT-n6aEeKh8" frameborder="0" allowfullscreen style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
 
 ---
