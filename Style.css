@@ -604,3 +604,35 @@ main h2 {
   opacity: 1;
   transform: translateY(0);
 }
+.latest-posts a {
+  text-decoration: none;
+}
+
+.latest-posts .read-more {
+  background-color: transparent;
+  border: 2px solid #B6753A;
+  color: #B6753A;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.latest-posts .read-more:hover {
+  background-color: #B6753A;
+  color: #fff;
+}
+
+.latest-posts .blog-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(26, 45, 65, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.latest-posts .blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(26, 45, 65, 0.15);
+}

@@ -47,9 +47,10 @@ title: Home
 
 <section class="latest-posts container">
   <h2 class="text-2xl font-bold mb-6">Latest Reflections</h2>
-  <div class="grid gap-8"> <!-- increased gap from 6 to 8 for more spacing -->
+
+  <div class="grid gap-10">
     {% for post in site.posts limit:3 %}
-    <div class="blog-card animate-on-scroll">
+    <div class="blog-card animate-on-scroll" style="margin-bottom: 1.5rem;">
       <div class="blog-card-content">
         <h3 class="text-xl font-semibold italic text-[#1A2D41] mb-1">{{ post.title }}</h3>
         <p class="text-sm text-gray-600 mb-2">{{ post.date | date: "%B %d, %Y" }}</p>
@@ -60,16 +61,13 @@ title: Home
     {% endfor %}
   </div>
 
-  <!-- Pink button -->
+  <!-- Blog Button -->
   <div class="mt-10 text-center">
-    <a href="/blog" class="inline-block bg-[#F4D3D8] text-[#1A2D41] py-2 px-6 rounded-xl shadow hover:bg-[#e7b3bb] transition font-semibold">
+    <a href="/blog" class="inline-block bg-[#F4D3D8] text-[#1A2D41] py-2 px-6 rounded-xl shadow hover:bg-[#e7b3bb] transition font-semibold no-underline">
       Explore the Full Blog
     </a>
   </div>
 </section>
-
-
-
 
 <!-- Quote Carousel -->
 <section class="quote-carousel">
