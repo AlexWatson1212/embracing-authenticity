@@ -45,6 +45,28 @@ title: Home
   <p>If you’re reading this, you’re not just seeing a website. You’re seeing the parts of me I’ve never fully shown before. And in doing so, I hope it gives others permission to do the same — to be more honest with themselves, more gentle, more free.</p>
 </section>
 
+<section class="latest-posts container">
+  <h2 class="text-2xl font-bold mb-4">Latest Reflections</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    {% for post in site.posts limit:3 %}
+    <a href="{{ post.url | relative_url }}" class="block rounded-2xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+      <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
+      <div class="p-4 bg-white">
+        <h3 class="text-xl font-semibold mb-1">{{ post.title }}</h3>
+        <p class="text-gray-600 text-sm">{{ post.description }}</p>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
+
+  <div class="mt-6 text-center">
+    <a href="/blog" class="inline-block bg-[#B6753A] text-white py-2 px-6 rounded-xl shadow hover:bg-opacity-90 transition">Read More Reflections</a>
+  </div>
+</section>
+
+
 <!-- Quote Carousel -->
 <section class="quote-carousel">
   <div class="quote-container">
