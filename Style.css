@@ -191,7 +191,7 @@ main h2 {
   padding-left: 1rem;
   color: #1A2D41;
   background-color: transparent; /* 👈 This clears the box */
-
+}
 
 .quote-carousel blockquote.active {
   display: block;
