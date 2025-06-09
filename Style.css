@@ -697,3 +697,9 @@ main h2 {
   width: 100%;
   background-color: #B6753A;
 }
+nav a:visited,
+nav a:focus,
+nav a:active {
+  background-color: transparent; /* or whatever color you want */
+  outline: none;
+}
