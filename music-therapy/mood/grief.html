@@ -1,0 +1,18 @@
+---
+layout: default
+title: Songs for Grief
+---
+
+<div class="container">
+  <h1>{{ page.title }}</h1>
+  {% for song in site.music %}
+    {% if song.mood contains "grief" %}
+      <div class="music-card">
+        <a href="{{ song.url }}">
+          <h2>{{ song.title }}</h2>
+          <p>{{ song.artist }}</p>
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

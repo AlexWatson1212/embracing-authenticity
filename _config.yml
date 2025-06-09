@@ -14,3 +14,7 @@ collections:
   tag:
     output: true
     permalink: /tag/:name/
+collections:
+  music:
+    output: true
+    permalink: /music-therapy/:title/
