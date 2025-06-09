@@ -127,6 +127,18 @@ main h2 {
   transform: translateY(-2px);
 }
 
+/* Clean up active nav link (e.g., Music Therapy) */
+.main-nav a:focus,
+.main-nav a:active,
+.main-nav a[aria-current="page"] {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  color: #F8F4EC;
+  font-weight: bold;
+  border-bottom: 2px solid #B6753A;
+}
+
 .menu-toggle {
   display: none;
   position: absolute;
