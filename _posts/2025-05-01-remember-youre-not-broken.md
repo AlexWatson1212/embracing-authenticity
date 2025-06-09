@@ -5,6 +5,7 @@ date: 2025-05-30
 tags: [Healing, Self-Worth, Trauma Recovery, Inner Child, Authenticity]
 description: "Sometimes healing begins with the radical idea that nothing is wrong with you — you're just unlearning what never belonged."
 thumbnail: /images/posts/youre-not-broken.jpg
+emotions: [grief, loneliness]
 ---
 
 <a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
