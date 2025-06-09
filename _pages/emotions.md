@@ -14,6 +14,17 @@ Sometimes naming it is the first step.
 
 ---
 
+These ten core emotions were chosen not to represent everything we feel — but to offer a simple and meaningful starting point.  
+Each one opens a door to deeper self-understanding without overwhelming you with complexity.
+
+You may notice emotions like **pride**, **regret**, or **compassion** aren’t listed here.  
+That’s intentional. These are often *blends* of the core ten — and may surface naturally as part of your reflection or healing.
+
+In the future, I may expand the emotional map.  
+But for now, these ten are enough.
+
+---
+
 <ul class="emotion-list">
   {% assign emotions = "grief,shame,fear,anger,loneliness,hope,love,joy,longing,acceptance" | split: "," %}
   {% for emotion in emotions %}
