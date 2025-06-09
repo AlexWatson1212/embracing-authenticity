@@ -280,14 +280,14 @@ main h2 {
   margin-top: 1.5rem;
 }
 
+/* footer */
 .site-footer {
-  background-color: #f9f9f9;
-  color: #1A2D41;
-  text-align: left;
+  background: #1A2D41;
+  color: #F8F4EC;
+  text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
   margin-top: 4rem;
-  border-top: 1px solid #ddd;
 }
 
 .footer-content {
@@ -298,14 +298,14 @@ main h2 {
 .footer-nav {
   margin-bottom: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .footer-nav a {
-  color: #1A2D41;
+  color: #F8F4EC;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .footer-nav a:hover {
@@ -313,34 +313,30 @@ main h2 {
 }
 
 .social-icons {
+  margin-top: 1rem;
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.2s ease, opacity 0.3s ease;
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s ease;
 }
 
 .social-icons a:hover img {
-  transform: scale(1.1);
-  opacity: 0.8;
+  transform: scale(1.15);
+  opacity: 0.85;
 }
 
 .footer-manifesto {
   font-style: italic;
-  color: #444;
-  font-size: 0.95rem;
+  color: #F8F4EC;
   white-space: pre-line;
   margin-top: 1.5rem;
-}
-
-.site-footer p:last-child {
-  font-size: 0.85rem;
-  color: #888;
-  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Blog Post Footer Buttons */
