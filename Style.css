@@ -703,3 +703,13 @@ nav a:active {
   background-color: transparent; /* or whatever color you want */
   outline: none;
 }
+.tag {
+  background-color: #e0e6ed;
+  color: #1A2D41;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  margin: 0 0.3rem 0.3rem 0;
+  border-radius: 999px;
+  display: inline-block;
+  font-weight: 500;
+}

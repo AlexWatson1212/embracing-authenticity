@@ -28,13 +28,25 @@ title: Blog
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
         <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 24 }}</p>
+        
+        <!-- Tag Bubbles -->
+        <div class="tag-list">
+          {% assign shown_tags = post.tags | slice: 0, 2 %}
+          {% for tag in shown_tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+          {% if post.tags.size > 2 %}
+            <span class="tag">+{{ post.tags.size | minus: 2 }} more</span>
+          {% endif %}
+        </div>
+
         <a href="{{ post.url }}" class="read-more">Read More →</a>
       </div>
     </article>
   {% endfor %}
   <div class="back-to-top fade-in">
-  <a href="#" class="scroll-link">Back to Top ↑</a>
-</div>
+    <a href="#" class="scroll-link">Back to Top ↑</a>
+  </div>
 </section>
 
 <script>
@@ -44,7 +56,7 @@ title: Blog
   const blogSection = document.getElementById('blogPosts');
 
   function scrollToBlogWithOffset() {
-    const offset = 80; // Adjust this for more or less spacing
+    const offset = 80;
     const elementPosition = blogSection.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({
       top: elementPosition - offset,
