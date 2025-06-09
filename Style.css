@@ -664,3 +664,36 @@ main h2 {
   background-color: #e7b3bb;
   transform: translateY(-2px);
 }
+/* Fix active/focus/visited link styling in nav */
+.main-nav a {
+  outline: none;
+}
+
+.main-nav a:focus,
+.main-nav a:active,
+.main-nav a[aria-current="page"] {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  border: none;
+  color: #F8F4EC;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Clean and subtle underline on hover only */
+.main-nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #F8F4EC;
+  width: 0;
+  transition: width 0.3s ease;
+  margin: auto;
+}
+
+.main-nav a:hover::after,
+.main-nav a[aria-current="page"]::after {
+  width: 100%;
+  background-color: #B6753A;
+}
