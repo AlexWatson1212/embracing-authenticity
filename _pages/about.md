@@ -4,36 +4,27 @@ title: About
 permalink: /about/
 ---
 
-<section class="hero-content">
-  <div class="text-block container">
-    <h2>About</h2>
-    <p>This is where I share the deeper story behind Embracing Authenticity and what this space is truly about.</p>
-  </div>
-</section>
+## About
 
-<section class="about-container container">
-  <p><strong>Welcome.</strong></p>
+This is where I share the deeper story behind Embracing Authenticity and what this space is truly about.
 
-  <p>This space began from a deeply personal place — as a father, a therapist-in-training, a human being learning to live without masks. It grew from the realisation that so many of us carry silent stories — of not feeling enough, of being misunderstood, of always trying to perform.</p>
+---
 
-  <p><strong>Embracing Authenticity</strong> is not just a name — it’s a way of being. It’s about releasing the need to be perfect, and instead learning to be present. It’s about sitting with discomfort instead of escaping it. It’s about letting go of who you thought you had to be… and honouring who you already are.</p>
+**Welcome.**
 
-  <figure class="quote-block">
-    <blockquote>
-      “Let go of who you think you're supposed to be; embrace who you are.”
-    </blockquote>
-    <figcaption>— Brené Brown</figcaption>
-  </figure>
+This space began from a deeply personal place — as a father, a therapist-in-training, a human being learning to live without masks. It grew from the realisation that so many of us carry silent stories — of not feeling enough, of being misunderstood, of always trying to perform.
 
-  <div class="image-section">
-    <img src="/assets/images/about-journey-optimized.jpg" alt="Path through a quiet forest" class="about-image" />
-  </div>
+**Embracing Authenticity** is not just a name — it’s a way of being. It’s about releasing the need to be perfect, and instead learning to be present. It’s about sitting with discomfort instead of escaping it. It’s about letting go of who you thought you had to be… and honouring who you already are.
 
-  <p>Here, you’ll find personal reflections, emotional insights, and reminders that you’re not alone in what you feel. I write and share from a place of lived experience — navigating estrangement, rebuilding trust, facing grief, and rediscovering joy in the smallest moments with my son.</p>
+> “Let go of who you think you're supposed to be; embrace who you are.”  
+> — *Brené Brown*
 
-  <p>This is a quiet corner of the internet that invites you to <em>slow down</em>, <em>listen in</em>, and <em>feel more freely</em>. Whether you’re healing from something painful, searching for meaning, or simply craving honesty — you are welcome here.</p>
+![Path through a quiet forest](/assets/images/about-journey-optimized.jpg)
 
-  <p><strong>This site is for you if you long to live more gently, connect more deeply, and build a life that feels true to your values.</strong></p>
+Here, you’ll find personal reflections, emotional insights, and reminders that you’re not alone in what you feel. I write and share from a place of lived experience — navigating estrangement, rebuilding trust, facing grief, and rediscovering joy in the smallest moments with my son.
 
-  <p>Thank you for being here. Your presence matters.</p>
-</section>
+This is a quiet corner of the internet that invites you to _slow down_, _listen in_, and _feel more freely_. Whether you’re healing from something painful, searching for meaning, or simply craving honesty — you are welcome here.
+
+**This site is for you if you long to live more gently, connect more deeply, and build a life that feels true to your values.**
+
+Thank you for being here. Your presence matters.

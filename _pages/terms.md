@@ -1,38 +1,57 @@
 ---
 layout: default
-title: terms
+title: Terms of Service
 permalink: /terms/
 ---
 
-<main>
-  <div class="container">
-    <section class="terms">
-      <h1>Terms of Service</h1>
-      <p><strong>Effective Date:</strong> May 2025</p>
+# Terms of Service
 
-      <p><strong>1. Acceptance of Terms</strong><br />
-      By visiting or using this website, you agree to these terms. If you don’t agree, that’s okay — but please don’t use the site.</p>
+**Effective Date:** May 2025
 
-      <p><strong>2. Content Intention</strong><br />
-      Everything shared here — reflections, blog posts, quotes — is offered for gentle self-inquiry and emotional insight. Nothing on this site should be taken as medical or psychological advice. If you are in distress, please reach out to a licensed professional.</p>
+---
 
-      <p><strong>3. Copyright and Ownership</strong><br />
-      All content (including words, designs, and imagery) is owned by the creator unless credited otherwise. You are welcome to share posts or excerpts — but please do so respectfully, and always link back with proper credit.</p>
+### 1. Acceptance of Terms
 
-      <p><strong>4. Kind Use</strong><br />
-      This is a space rooted in safety and sincerity. Please don’t misuse the site, send spam, or share anything harmful. Let’s keep this a compassionate corner of the internet.</p>
+By visiting or using this website, you agree to these terms. If you don’t agree, that’s okay — but please don’t use the site.
 
-      <p><strong>5. External Links</strong><br />
-      Sometimes, posts include links to external resources (like YouTube or helpful articles). I can't be responsible for the content or privacy practices of those third-party sites.</p>
+---
 
-      <p><strong>6. Changes to These Terms</strong><br />
-      These terms may evolve as the site grows. If they do, I’ll update this page. Continued use of the site means you accept those changes.</p>
+### 2. Content Intention
 
-      <p><strong>7. Jurisdiction</strong><br />
-      This site is created in the UK and follows the laws of England and Wales.</p>
+Everything shared here — reflections, blog posts, quotes — is offered for gentle self-inquiry and emotional insight. Nothing on this site should be taken as medical or psychological advice. If you are in distress, please reach out to a licensed professional.
 
-      <p><strong>8. Questions?</strong><br />
-      If you ever want to talk about anything here, including these terms, you can reach out via email at <strong>contactembracingauthenticity@gmail.com</strong>.</p>
-    </section>
-  </div>
-</main>
+---
+
+### 3. Copyright and Ownership
+
+All content (including words, designs, and imagery) is owned by the creator unless credited otherwise. You are welcome to share posts or excerpts — but please do so respectfully, and always link back with proper credit.
+
+---
+
+### 4. Kind Use
+
+This is a space rooted in safety and sincerity. Please don’t misuse the site, send spam, or share anything harmful. Let’s keep this a compassionate corner of the internet.
+
+---
+
+### 5. External Links
+
+Sometimes, posts include links to external resources (like YouTube or helpful articles). I can't be responsible for the content or privacy practices of those third-party sites.
+
+---
+
+### 6. Changes to These Terms
+
+These terms may evolve as the site grows. If they do, I’ll update this page. Continued use of the site means you accept those changes.
+
+---
+
+### 7. Jurisdiction
+
+This site is created in the UK and follows the laws of England and Wales.
+
+---
+
+### 8. Questions?
+
+If you ever want to talk about anything here, including these terms, you can reach out via email at **contactembracingauthenticity@gmail.com**.

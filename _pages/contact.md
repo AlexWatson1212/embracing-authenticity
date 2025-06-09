@@ -78,22 +78,20 @@ permalink: /contact/
   }
 </style>
 
-<main>
-  <section class="contact-container">
-    <h1>Contact Us</h1>
-    <p>If something here resonates, if you have a question, or if you'd simply like to connect — you’re welcome to reach out using the form below.</p>
+<section class="contact-container">
+  <h1>Contact Us</h1>
+  <p>If something here resonates, if you have a question, or if you'd simply like to connect — you’re welcome to reach out using the form below.</p>
 
-    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
+  <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-</main>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
