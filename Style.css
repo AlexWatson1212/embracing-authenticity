@@ -757,3 +757,27 @@ nav a:active {
   display: inline-block;
   font-weight: 500;
 }
+.emotion-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.emotion-list li {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.emotion-list h3 a {
+  font-size: 1.4rem;
+  color: #B6753A;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.emotion-list p {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
