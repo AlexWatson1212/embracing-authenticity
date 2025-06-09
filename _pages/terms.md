@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Terms of Service
+title: terms
+permalink: /terms/
 ---
 
 <main>
