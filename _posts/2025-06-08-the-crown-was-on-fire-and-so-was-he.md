@@ -70,7 +70,7 @@ But it was also **truth in costume**.
 Truth set alight.  
 Truth screaming back at a world that wanted silence — or savings, or shame — instead of love.
 
-I think that’s why my dad still lights up when he talks about it.  
+I think that’s why my dad lit up when he talked about it.  
 Because for the first time, *he* was lit up too.
 
 ---
