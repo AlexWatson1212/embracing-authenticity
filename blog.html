@@ -57,9 +57,7 @@ title: Blog
 </section>
 
 <script>
-  const tagButtons = document.querySelectorAll('.post-tag[data-tag]');
   const emotionButtons = document.querySelectorAll('.emotion-button[data-emotion]');
-  const clearButton = document.getElementById('clearTags');
   const clearEmotionButton = document.getElementById('clearEmotions');
   const posts = document.querySelectorAll('.blog-card');
   const blogSection = document.getElementById('blogPosts');
@@ -72,26 +70,6 @@ title: Blog
       behavior: 'smooth'
     });
   }
-
-  tagButtons.forEach(button => {
-    button.addEventListener('click', e => {
-      e.preventDefault();
-      tagButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-      const tag = button.getAttribute('data-tag');
-      posts.forEach(post => {
-        const tags = post.getAttribute('data-tags');
-        post.style.display = tags.includes(tag) ? 'block' : 'none';
-      });
-      scrollToBlogWithOffset();
-    });
-  });
-
-  clearButton?.addEventListener('click', () => {
-    tagButtons.forEach(btn => btn.classList.remove('active'));
-    posts.forEach(post => post.style.display = 'block');
-    scrollToBlogWithOffset();
-  });
 
   emotionButtons.forEach(button => {
     button.addEventListener('click', e => {
@@ -136,5 +114,5 @@ title: Blog
   });
 </script>
 
-<!-- Link to your external search script -->
+<!-- ✅ Search script -->
 <script src="/assets/js/search.js"></script>
