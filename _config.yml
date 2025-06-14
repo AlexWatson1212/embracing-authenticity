@@ -33,3 +33,5 @@ collections:
   music:
     output: true
     permalink: /music-therapy/:title/
+
+image: /images/default-social.jpg
