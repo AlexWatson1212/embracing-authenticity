@@ -1,51 +1,66 @@
 ---
 layout: post
-title: "This Is Enough (For Now)"
+title: "They Were Never My Family"
 date: 2025-06-04
-tags: Creativity, Parenting, Self-Acceptance, Emotional Honesty, Presence
-description: A reflection on creating without pressure, trusting what already exists, and learning to parent from a place of honesty and faith.
+tags: Family, Truth, Boundaries, Acceptance, Emotional Abuse
+description: They share my blood, but they were never truly there for me. And I no longer need to pretend they were.
+emotions: [grief, acceptance]
 ---
 
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
+The more stable I become, the more I see it clearly:
 
-Maybe this whole project was never about creating something for anyone else.  
-Maybe it was always about creating a space for *me*.  
-A quiet corner of the internet where I could speak freely, feel what I feel, and connect with myself without needing to prove anything.
+> **They were never my family.**
 
-And if my son ever wants to know more about who I was — if I’m not around someday — it’s all here. Waiting for him. No pressure. Just presence.
+Not in the way that matters.  
+Not in the way that shows up.  
+Not in the way that *loves*.
 
-That’s enough.
+They shared my blood, but never my truth.  
+They gave me a name, but never a home.  
+They labelled me — *bipolar*, *mad*, *difficult* — not because it was true, but because it was easier than facing what they did, or didn’t do.
 
-I don’t need to force this into something bigger right now.  
-I don’t need to make it serve some huge purpose or help thousands of people.  
-It’s already helped the one person who needed it most — *me*.
+They needed me to stay unstable.  
+Because if I became grounded, aware, and whole —  
+**the narrative would crumble**.
 
-This project has given me something I didn’t know I needed:  
-A creative outlet that keeps me grounded.  
-A space where I don’t have to cope or escape.  
-A space where everything feels like it’s falling into place — naturally.
+And now? It is crumbling.
 
-And because of that, I feel less pressure with my son.  
-I’m more honest with him. I don’t feel the need to protect him from everything anymore.  
-I trust him. I trust that he’ll be okay.
+Because I’m not afraid anymore.  
+I’m not trying to be accepted anymore.  
+I’m not playing the role of the “broken one” to make them feel better about their own disconnection.
 
-He’s a strong lad.  
-He’s had me — maybe not perfect, but present. Learning. Regulating. Showing up.  
-And he’s had his mum too. She’s a pretty good mum, to be honest.
+---
 
-That’s more than I had growing up.  
-And it’s enough.
+I’ve had better, truer connections with people I’ve met once in a park than with any of them.
 
-This isn’t the end of anything.  
-But for now, this is enough.  
-I don’t need to push. I don’t need to prove.
+And that’s not exaggeration.  
+That’s not bitterness.  
+That’s **the truth**.
 
-I’m just letting this space hold what it needs to hold — without pressure.
+Because **real family shows up.**  
+They listen. They see you. They care.
 
-And for the first time in a long time,  
-That feels like peace.
+My biological family never did that.  
+And I’ve finally stopped waiting for them to.
+
+---
+
+It doesn’t hurt like it used to.  
+It just… is.
+
+Not resentment.  
+Not rage.  
+Just **acceptance.**  
+And, yeah — a bit of sadness. A quiet disappointment.
+
+Because I wanted it to be different.  
+I tried.  
+I stayed open.  
+I kept hoping.
+
+But they were never really there.  
+And I no longer need to pretend they were.
+
+**They were never my family.**
+
+And I’m free now.

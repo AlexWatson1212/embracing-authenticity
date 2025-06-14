@@ -4,14 +4,8 @@ title: "I Thought This Would Break Me — But It Set Me Free"
 date: 2025-06-06
 tags: Boundaries, Healing, Mother Wound, Self-Trust, Freedom, Emotional Growth
 description: I expected collapse. I expected chaos. But all I got was peace — and the realization that the power I once feared was never real.
+emotions: [fear, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I thought this would be the moment that unraveled me.
 
@@ -82,5 +76,3 @@ This wasn’t a breakdown.
 It was a breakthrough.
 
 And I’m finally on the other side.
-
----

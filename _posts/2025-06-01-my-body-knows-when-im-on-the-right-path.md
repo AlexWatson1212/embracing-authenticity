@@ -5,14 +5,8 @@ date: 2025-06-01
 description: "When I stop hiding and speak honestly, something in me lights up. My energy rises. My nervous system settles. This is how I know I’m aligned."
 thumbnail: /images/posts/right-path-body.jpg
 tags: [Authenticity, Nervous System, Energy, Self-Expression, Healing, Integrity, Personal Growth, Fatherhood, Vulnerability]
+emotions: [hope, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Something remarkable happened today.
 

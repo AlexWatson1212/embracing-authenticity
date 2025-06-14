@@ -5,14 +5,8 @@ date: 2025-06-01
 description: "This time, the tears didn’t come from the man holding it all together — but from the boy who finally felt safe enough to feel."
 tags: Inner Child, Emotional Healing, Grief, Masculinity, Vulnerability
 thumbnail: /images/posts/when-the-boy-finally-cried.jpg
+emotions: [grief, hope]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I was walking behind a couple this morning — arms linked, quietly connected. Not loud. Not performative. Just *there.* A kind of simple, steady companionship.
 

@@ -4,14 +4,8 @@ title: "Not a Lifeline, But a Light"
 date: 2025-06-04
 tags: Parenting, Trust, Legacy, Healing, Self-Compassion
 description: A reflection on trusting my son’s resilience, releasing control, and allowing this website to be a quiet offering—not a manual.
+emotions: [hope, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Maybe part of me created this website as a last-ditch attempt to keep parenting, just in case I couldn't be here someday.  
 A way to pass something down. To leave guidance. To try and protect my son from pain or confusion or loss.

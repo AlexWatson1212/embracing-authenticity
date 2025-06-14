@@ -5,14 +5,8 @@ date: 2025-06-05
 tags: [Reflection, Privacy, Truth, Self-Expression, Personal Growth]
 description: I don’t know who this is for, or if it ever needs to be for anyone else. But I know what it is: mine.
 thumbnail: /images/posts/this-place-is-mine.jpg
+emotions: [loneliness, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I don’t think anyone knows this website exists.  
 I haven’t shared it.  
@@ -62,7 +56,7 @@ A quiet refuge that reminds me:
 
 I could make another site one day — something more “professional,” something more outward-facing.
 
-But this?
+But this?  
 
 This is sacred.
 

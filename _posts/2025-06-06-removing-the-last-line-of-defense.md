@@ -4,14 +4,8 @@ title: "Removing the Last Line of Defense"
 date: 2025-06-06
 tags: Healing, Trust, Projection, Therapy, Nervous System, Inner Child
 description: When you grow up protecting yourself from the people who were meant to protect you, trust doesn’t come easy. But healing invites you to lower the guard — slowly, honestly.
+emotions: [fear, vulnerability]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There’s a part of me that still scans for danger — even when I’m safe.  
 Especially when someone shows me care.

@@ -4,16 +4,10 @@ title: "Trusting the Process: When Good Decisions Still Hurt"
 date: 2025-06-04
 tags: Poker, Decision-Making, Mindset, Variance, Emotional Regulation
 description: A reflection on a tough poker hand that reminds me why trusting sound logic — not results — is the real mark of growth.
+emotions: [grief, fear]
 ---
 
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
-
-Sometimes, poker doesn’t punish bad decisions.
+Sometimes, poker doesn’t punish bad decisions.  
 Sometimes, it punishes good ones.
 
 We were six-handed in an $88 tournament. I had 40 big blinds in the small blind. The button min-raised, and I flatted with pocket nines.
@@ -34,15 +28,14 @@ Suited aces and connectors
 
 And of course, value hands — TT+
 
-
 In other words, his iso-jam range is wide.
 
 So I called with 99, thinking I’m ahead of most of that.
 
 And I was.
 
-The big blind had pocket eights.
-The board ran out 8-9-10.
+The big blind had pocket eights.  
+The board ran out 8-9-10.  
 Flopped middle set. But it didn’t hold.
 
 It’s easy to feel stupid after a hand like that. Easy to doubt myself.
@@ -57,10 +50,8 @@ Button’s iso range should be wide given my perceived weakness.
 
 Calling with 99 against that range is profitable.
 
-
-I made the right call.
+I made the right call.  
 It just didn’t work out this time.
-
 
 ---
 
@@ -68,8 +59,8 @@ That’s the hardest part of poker — separating decision quality from outcome.
 
 But it’s also the most important.
 
-This hand didn’t teach me that I misplayed.
+This hand didn’t teach me that I misplayed.  
 It taught me that I’m learning to trust myself, even when the board doesn’t go my way.
 
-Because sometimes good decisions still hurt.
+Because sometimes good decisions still hurt.  
 And that’s okay.

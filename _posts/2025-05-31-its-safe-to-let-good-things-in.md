@@ -5,14 +5,8 @@ date: 2025-05-31
 tags: [Joy, Self-Worth, Healing, Emotional Safety, Trust]
 description: "I used to brace for the worst—even when life was finally going right."
 thumbnail: /images/posts/let-good-in.jpg
+emotions: [joy, fear]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Sometimes, when things are finally going well… I tense up.
 

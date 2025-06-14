@@ -6,14 +6,8 @@ description: "Even without a loud voice, some truths just feel solid in my bones
 excerpt: "That quiet, steady feeling inside — the one that whispers instead of shouts — is worth trusting. It’s not random. It’s wisdom I’ve earned."
 thumbnail: /images/posts/trust-my-knowing.jpg
 tags: [Intuition, Self-Trust, Inner Wisdom, Personal Growth]
+emotions: [trust, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There’s a kind of knowing that doesn’t shout.
 

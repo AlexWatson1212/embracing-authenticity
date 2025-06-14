@@ -4,14 +4,8 @@ title: "Not Everything That’s Respectful Is Safe"
 date: 2025-06-06
 tags: Boundaries, Co-Parenting, Self-Respect, Emotional Clarity, Healing, Growth
 description: Sometimes, people who’ve hurt you learn how to treat you respectfully — but that doesn’t mean you can let them back in. Respect is not the same as safety.
+emotions: [trust, self-respect]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Today I realised something I’ve never been able to see clearly before:
 

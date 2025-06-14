@@ -4,14 +4,8 @@ title: "Forgiving My Father, Becoming Myself"
 date: 2025-06-06
 tags: Fatherhood, Forgiveness, Inner Child, Generational Healing, Self-Reflection
 description: What if my dad did love me? And what if the way I show up for my son is how I forgive the parts of him that couldn’t show up for me?
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I’ve spent years holding my dad at a distance — not just physically, but emotionally.
 
@@ -71,14 +65,4 @@ And I want to give him what my dad couldn’t give me clearly: safety, consisten
 But maybe the most healing realization?
 
 My dad wasn’t the villain.  
-He was a man doing his best, in a broken system, with very few tools and very little support.
-
-And in choosing to see him with compassion —  
-I choose to parent myself with compassion, too.
-
-That’s how it ends.  
-That’s how it heals.  
-That’s how the cycle breaks.
-
-And maybe, just maybe —  
-That’s how I become the father I always needed.
+He

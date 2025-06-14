@@ -5,14 +5,8 @@ date: 2025-06-05
 tags: Presence, Healing, Self-Worth, Emotional Growth, Nervous System
 description: A quiet but powerful morning of choosing rest, presence, and wholeness over old patterns.
 thumbnail: /images/posts/today-i-didnt-run.jpg
+emotions: [loneliness, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I didn’t sleep well—maybe four hours, if that. My body feels the truth of it today. I used to override days like this. Power through. Do the jobs. Prove I’m productive.
 

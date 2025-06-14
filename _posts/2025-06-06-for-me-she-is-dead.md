@@ -4,14 +4,8 @@ title: "For Me, She Is Dead"
 date: 2025-06-06
 tags: Mother Wound, Boundaries, Grief, Emotional Survival, Healing, Letting Go
 description: Some people don't leave through death — they leave through betrayal, denial, and the slow erosion of trust. And one day, you realise you're grieving someone who's still alive.
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 For me, she is dead.
 
@@ -81,5 +75,3 @@ Not cold.
 Just clear.
 
 And that’s enough.
-
----

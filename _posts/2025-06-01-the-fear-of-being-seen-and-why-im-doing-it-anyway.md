@@ -4,14 +4,9 @@ title: "The Fear of Being Seen — and Why I’m Doing It Anyway"
 date: 2025-06-01
 description: "If even one person finds a glimmer of hope in my words, then the fear of exposure becomes irrelevant. This is why I’ll keep showing up."
 thumbnail: /images/posts/fear-of-being-seen.jpg
+tags: [Authenticity, Vulnerability, Self-Worth, Healing, Fear, Emotional Growth]
+emotions: [fear, hope]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There’s a part of me that still gets scared of the spotlight.
 

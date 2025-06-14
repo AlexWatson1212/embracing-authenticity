@@ -4,14 +4,8 @@ title: "Used as a Weapon"
 date: 2025-06-04
 tags: Mother Wound, Shame, Control, Mental Health, Authenticity
 description: The shame of being used by someone who claimed to love me—and what it means to see it clearly now.
+emotions: [shame, grief]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I think one of the hardest things to admit is how deeply I was used.
 

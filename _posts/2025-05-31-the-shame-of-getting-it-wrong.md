@@ -5,14 +5,8 @@ date: 2025-05-31
 tags: [Healing, Self-Compassion, Reflection, Shame, Growth]
 description: "Sometimes growth means looking back at a past version of me and cringing a bit—but loving them anyway."
 thumbnail: /images/posts/getting-it-wrong.jpg
+emotions: [shame, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There are moments when I look back at something I said or did and feel the sting of shame.
 

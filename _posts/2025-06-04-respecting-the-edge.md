@@ -4,14 +4,8 @@ title: "Respecting the Edge"
 date: 2025-06-04
 tags: Nervous System, Self-Trust, Rest, Acceptance, Relationships
 description: A reflection on slowing down, letting go of old survival patterns, and building trust in the self again.
+emotions: [acceptance, hope]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I woke up at 3 a.m. today with only a few hours of sleep.  
 By all accounts, I should be pushing through.  

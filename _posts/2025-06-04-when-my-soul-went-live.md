@@ -4,14 +4,8 @@ title: "When My Soul Went Live"
 date: 2025-06-04
 tags: Self-Expression, Shame, Healing, Authenticity, Vulnerability
 description: A reflection on sharing personal truth, navigating shame, and the quiet power of expressing the soul through a website no one may ever read.
+emotions: [shame, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 It’s an odd feeling — talking about masturbation, or sharing things I used to feel deep shame around — and not feeling shame flood my system like it used to.  
 Even writing that out feels like something I couldn’t have done before.  
@@ -49,4 +43,4 @@ But it’s *live*.
 And that means… part of my soul is live too.
 
 It feels right. It feels good. And I don’t need to explain why.  
-I’m letting myself lean into what feels healing — without performance.  
+I’m letting myself lean into what feels healing — without performance.

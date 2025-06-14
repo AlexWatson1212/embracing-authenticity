@@ -4,14 +4,8 @@ title: "Rewriting My Origin Story"
 date: 2025-06-01
 tags: Healing, Trauma, Mental Health, Reflection, Self-Compassion
 description: A raw reflection on psychosis, fantasy, and how my mind tried to protect me from the truth of abandonment.
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 When I reflect back on when I went manic, I think it was a steady, progressive realization of the lack of connection and the depth of my emptiness — despite being surrounded by people who were supposed to be my friends.
 

@@ -5,14 +5,8 @@ date: 2025-05-31
 tags: [Vulnerability, Resilience, Healing, Emotional Strength, Authenticity]
 description: "Softness isn’t weakness. It’s what kept me open when I had every reason to shut down."
 thumbnail: /images/posts/strength-in-softness.jpg
+emotions: [vulnerability, strength]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There were times I thought I had to be hard to survive.
 

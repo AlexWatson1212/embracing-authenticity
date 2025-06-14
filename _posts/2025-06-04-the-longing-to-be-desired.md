@@ -4,14 +4,8 @@ title: "The Longing to Be Desired"
 date: 2025-06-04
 tags: Desire, Shame, Healing, Self-Acceptance, Vulnerability
 description: Exploring the quiet ache of wanting to be desired — and why it’s not something to be ashamed of.
+emotions: [longing, shame]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There’s a part of me I don’t often talk about.
 

@@ -1,39 +1,72 @@
 ---
 layout: post
-title: "Listening to the Shadow"
+title: "Letting the Anger Speak"
 date: 2025-06-04
-tags: Healing, Self-Compassion, Integration, Shadow Work, Parenting
-description: What if the exhaustion isn’t burnout—but a call from within?
+tags: Mother Wound, Anger, Healing, Boundaries, Authenticity
+description: Not everything has to be calm to be true. Sometimes healing sounds like rage.
+emotions: [anger, grief]
 ---
 
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
+I keep coming back to it.  
+The same wound. The same grief. The same rage.
 
-It’s just after midnight. My body battery was at 18 earlier—utterly drained. But now… I’m at 27. I haven’t done anything physically intense today. But emotionally? Yeah. I’ve been through a lot.
+And I think that’s because I was never allowed to feel it. Not really.
 
-And oddly enough, I feel better now.  
-Not because something outside changed, but because I finally sat down with myself. No distractions. No noise. Just me.
+I spent years trying to convince myself it wasn’t that bad — that my mother was just a bit difficult, or misunderstood, or trying her best. But the truth is, **she wasn’t a mother to me**. She was controlling, manipulative, cold, and emotionally dangerous.
 
-It hit me that maybe this exhaustion I’ve been feeling for years isn't just about poor sleep or stress—maybe it's the voice of my shadow self. Not a villain. Not some saboteur. But the younger parts of me crying out to be heard.
+I remember when I had my bathroom redone. I chose someone **I trusted** — my friend’s dad — because the person she recommended didn’t call back. But even then, she couldn’t stand it. She questioned his workmanship, nitpicked every detail, made me second-guess myself — when in reality, **he did a good job**. He was fair, honest, and reliable.
 
-> “If I drain your energy… will you finally sit with me?”
+And now I see it for what it was.  
+It wasn’t about tiles.  
+It wasn’t about standards.  
+It was about **control**.
 
-It’s not manipulation. It’s a survival strategy. The most sensitive, unseen parts of me found the only way to get attention: shut down everything else until I finally stop and listen.
+Because I was making decisions without her.  
+Because I was becoming **my own man**.  
+And that terrified her.
 
-And here’s the strange thing: when I do, I start to feel whole. It’s quiet, but it’s real.  
-Not some dopamine rush from figuring something out. Not some insight to file away.  
-Just *me*, being with *me*.
+---
 
-I’ve been neglecting that for a long time—especially when parenting. I love my son more than anything, but I’ve also felt tension there. Resentment even. Because being with him often requires me to put myself aside. And that’s hard when there are parts of me that are *begging* not to be put aside anymore.
+I’ve realised something else, too — something harder to admit.
 
-So I’m starting to understand something:
+I think she liked it when I was unwell.  
+When I was hospitalised, psychotic, sedated — I was easier to manage. Easier to manipulate. Easier to keep under her thumb.
 
-This isn’t manipulation.  
-This is a homecoming.
+That is not love. That is **possession**.
 
-And maybe that’s enough for now. To know that, when I feel depleted… the answer isn’t always to push through.  
-Sometimes, the answer is to *return*—to myself.
+She didn’t want children. She admitted that, laughed it off like it was funny. Like my very existence was a joke. And yet, somehow, she still thinks she’s entitled to my time, my energy, my loyalty — **after everything**.
+
+She’s not.
+
+---
+
+Every time I revisit this, I feel the hate rise up again.  
+And yeah — I hate her.  
+That’s just the truth of it.
+
+It’s not graceful. It’s not poetic.  
+But it’s **honest**.
+
+I spent decades trying to protect her image — in my mind, in the world, even in my own healing. But the more I see her clearly, the more I understand just how damaging she was. How much of my soul she tried to own. How many parts of myself I had to bury just to survive.
+
+And now?  
+I’m angry.  
+I’m *done*.  
+And I don’t need to censor that anymore.
+
+---
+
+Letting this out isn’t staying stuck. It’s **releasing**.  
+It’s unhooking myself from the shame and the silence.  
+It’s saying:
+
+> “I didn’t deserve that. I was never the problem. She was.”
+
+And if I circle back to this again, that’s okay.  
+Because it wasn’t one wound — it was *a thousand small cuts over decades*.
+
+This is me healing.  
+This is me reclaiming.
+
+And this is me saying — finally —  
+**Fuck her.**

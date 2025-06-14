@@ -6,14 +6,8 @@ description: "Growth unfolds in its own time—and that’s okay."
 thumbnail: /images/posts/dont-rush.jpg
 excerpt: "Some of the biggest shifts happen slowly, quietly, and beneath the surface. I’m allowed to grow at my own pace."
 tags: [Healing, Patience, Self-Compassion, Personal Growth]
+emotions: [hope, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There’s a part of me that gets impatient.
 

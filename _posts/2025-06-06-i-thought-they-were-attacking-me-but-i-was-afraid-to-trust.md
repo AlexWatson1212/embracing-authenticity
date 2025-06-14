@@ -4,14 +4,8 @@ title: "I Thought They Were Attacking Me — But I Was Afraid to Trust"
 date: 2025-06-06
 tags: Trust, Projection, Nervous System, Inner Child, Healing, Relationships
 description: Sometimes I think people are judging or attacking me — but what I’m really feeling is the fear of being seen. And maybe that fear comes from the past, not the present.
+emotions: [fear, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 For a while, I thought my tutors were projecting onto me.  
 That maybe they had something against me. That they didn’t like how I expressed myself. That they were subtly judging me or trying to catch me out.
@@ -69,5 +63,3 @@ I thought they were attacking me.
 But really, I was just afraid to trust.
 
 And maybe… I’m ready to start learning how.
-
----

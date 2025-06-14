@@ -5,14 +5,8 @@ date: 2025-06-06
 tags: [Relationships, Vulnerability, Safety, Connection, Boundaries]
 description: When someone truly sees us, it can feel overwhelming. But learning to receive that is a powerful part of becoming whole.
 thumbnail: /images/posts/learning-to-be-met.jpg
+emotions: [fear, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I wasn’t used to it.
 

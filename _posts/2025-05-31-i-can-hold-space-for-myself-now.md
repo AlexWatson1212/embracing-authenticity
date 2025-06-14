@@ -6,14 +6,8 @@ description: "I used to need someone else to make my feelings feel valid. Now, I
 excerpt: "I used to reach for others to make my emotions feel real. Now, I know how to sit with myself — and that changes everything."
 thumbnail: /images/posts/holding-space-for-self.jpg
 tags: [Self-Compassion, Emotional Resilience, Healing, Inner Work, Vulnerability]
+emotions: [vulnerability, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There were times I’d feel something heavy and immediately reach outward.
 

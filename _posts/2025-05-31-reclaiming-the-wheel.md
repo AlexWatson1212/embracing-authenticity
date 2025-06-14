@@ -5,14 +5,8 @@ date: 2025-05-31
 tags: [Inner Critic, Self-Worth, Emotional Healing, Self-Compassion, Personal Empowerment]
 description: "I used to let that little voice of self-doubt drive everything. Now, I’m learning to let it speak—but not steer."
 thumbnail: /images/posts/reclaiming-the-wheel.jpg
+emotions: [fear, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There’s this little voice that shows up sometimes.
 

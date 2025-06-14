@@ -5,14 +5,8 @@ date: 2025-05-31
 tags: [Boundaries, Emotional Labor, Relationships, Self-Worth, Burnout, People-Pleasing, Self-Respect, Reciprocity]
 description: "I was playing therapist in so many friendships—and it drained me."
 thumbnail: /images/posts/not-your-job.jpg
+emotions: [anger, grief]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Someone messaged me recently after months of silence—straight into their struggles, asking for help. No real “How are you?” No curiosity about what’s been happening in my world.
 

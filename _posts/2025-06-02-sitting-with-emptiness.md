@@ -3,14 +3,8 @@ layout: post
 title: "Sitting With Emptiness"
 date: 2025-06-01
 tags: [Loneliness, Emotional Healing, Self-Reflection, Authenticity, Connection]
+emotions: [loneliness, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Lately I’ve been sitting with something I usually try to avoid:  
 That deep, quiet feeling of **emptiness**.

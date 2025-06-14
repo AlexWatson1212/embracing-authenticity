@@ -5,14 +5,8 @@ date: 2025-06-01
 description: "The fear of being seen runs deep when love once depended on hiding. This is what I’m learning to face."
 tags: Inner Child, Fear of Rejection, Authenticity, Mother Wound, Self-Expression
 thumbnail: /images/posts/why-im-afraid-to-share-my-truth.jpg
+emotions: [fear, hope]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I’ve been noticing a resistance lately — this deep, quiet fear around sharing the Embracing Authenticity project fully. Around letting myself be seen. Around letting people know who I really am.
 
@@ -67,7 +61,7 @@ And the cautious hope that maybe this time, it could be different.
 ### 🕯️ A Truth I’m Holding Onto
 
 I already feel unseen by most people.  
-So what is it I’m really afraid of losing?
+So what is it I’m really afraid of losing?  
 
 Not everyone will get it.  
 But the right people might.  

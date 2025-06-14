@@ -5,14 +5,8 @@ date: 2025-06-01
 tags: [Grief, Emotional Eating, Self-Compassion, Loneliness, Inner Child, Coping Mechanisms, Healing]
 description: "Comfort eating isn’t about willpower—it’s about the quiet grief of unmet emotional needs. A reflection on food, loneliness, and the tenderness we all deserve."
 thumbnail: /images/posts/comfort-eating-grief.jpg
+emotions: [grief, loneliness]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 It’s a rainy Sunday.
 
