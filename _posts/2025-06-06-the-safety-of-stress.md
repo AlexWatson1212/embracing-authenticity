@@ -4,14 +4,8 @@ title: "The Safety of Stress: Why Familiar Dysregulation Can Feel Like Home"
 date: 2025-06-06
 tags: Healing, Childhood Wounds, Nervous System, DIY, Vulnerability, Trauma
 description: Sometimes the tasks that stress us the most feel oddly familiar — because our nervous system learned to equate uncertainty with danger. But healing means staying with it, and choosing a different response.
+emotions: [fear, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I was just trying to fix a curtain rail.
 
@@ -20,8 +14,6 @@ That was the task. Straightforward in theory. But there I was, stress levels thr
 And then it hit me: **maybe I don’t get stressed by these tasks just because they’re unfamiliar. Maybe I’m drawn to them because they feel familiar.** Not the tasks themselves — but the dysregulation they bring up. The not-knowing. The self-doubt. The shame of getting it wrong.
 
 It’s not that I love the feeling of stress. It’s that part of me is still trying to **work something through** — something old, something deep.
-
----
 
 ### Childhood didn’t give me room to not know
 
@@ -38,8 +30,6 @@ And now, even though I’m no longer in that environment, my body still flares u
 
 That’s when it whispers, *Careful. You’re being seen.*
 
----
-
 ### But here’s what’s different now
 
 This time, no one is mocking me.  
@@ -52,16 +42,12 @@ But I’m staying with it. I’m breathing through it.
 I’m choosing to believe that **this moment of not knowing is not a threat.**  
 It’s an invitation — to meet myself differently.
 
----
-
 ### Words I say to myself now:
 
-- “This feels familiar, but it’s not dangerous.”
-- “No one’s watching me fail. I’m allowed to learn.”
+- “This feels familiar, but it’s not dangerous.”  
+- “No one’s watching me fail. I’m allowed to learn.”  
 - “I am not small — I’m growing.”
 
 And maybe, just maybe, **every screw I drive is an act of rebellion against the shame that once silenced me.**
 
 Even if it’s just a curtain rail.
-
----

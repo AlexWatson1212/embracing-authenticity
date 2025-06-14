@@ -3,14 +3,9 @@ layout: post
 title: "Letting It Breathe: What It Feels Like to Finally Let Myself Be Seen"
 date: 2025-06-07
 tags: Vulnerability, Visibility, Healing, Self-Trust, Counselling, Growth
+description: A reflection on the courage to let myself be seen and the quiet power of letting go of perfectionism.
+emotions: [vulnerability, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I recently shared my website with a group of counselling peers — and while it might not seem like a huge act on the outside, it stirred something much deeper within me.
 

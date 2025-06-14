@@ -4,14 +4,8 @@ title: "The Defence Mechanisms I Still Use"
 date: 2025-06-07
 tags: Self-Awareness, Inner Work, Defence Mechanisms, Healing, Personal Growth
 description: The survival strategies that once protected me no longer run the show.
+emotions: [fear, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I’ve done a lot of work.  
 But I’m still human.  
@@ -61,5 +55,3 @@ But intentionally.
 
 Because that’s how I learn to stay open — even when it’s hard.  
 That’s how I come home to myself.
-
----

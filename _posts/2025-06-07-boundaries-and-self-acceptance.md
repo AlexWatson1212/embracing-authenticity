@@ -4,14 +4,8 @@ title: "Boundaries and Self-Acceptance: A Quiet Rebellion"
 date: 2025-06-07
 tags: Boundaries, ADHD, Self-Acceptance, Emotional Health, Growth
 description: Boundaries aren’t just about keeping others out — they’re about protecting what’s sacred within. Here’s what I’m learning about honouring myself and accepting my own imperfections along the way.
+emotions: [acceptance, fear]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There’s a quiet kind of revolution that happens when you begin to honour your own space.  
 Not with drama. Not with defensiveness.  
