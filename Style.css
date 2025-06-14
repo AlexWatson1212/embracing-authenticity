@@ -280,11 +280,10 @@ main h2 {
   margin-top: 1.5rem;
 }
 
-/* footer */
-/* Footer - Clean Final Version */
+/* Footer - Updated to Match Header Style */
 .site-footer {
-  background-color: #f8f8f8;
-  color: #1A2D41;
+  background-color: #1A2D41;
+  color: #F8F4EC;
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
@@ -306,7 +305,7 @@ main h2 {
 }
 
 .footer-nav a {
-  color: #555;
+  color: #F8F4EC;
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -325,6 +324,7 @@ main h2 {
 .social-icons img {
   width: 24px;
   height: 24px;
+  filter: brightness(0) invert(1);
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
@@ -339,6 +339,7 @@ main h2 {
   line-height: 1.6;
   margin-bottom: 1rem;
   white-space: pre-line;
+  color: #F8F4EC;
 }
 
 @media (max-width: 600px) {
@@ -349,7 +350,6 @@ main h2 {
     align-items: center;
   }
 }
-
 
 /* Animations */
 @keyframes fadeIn {
