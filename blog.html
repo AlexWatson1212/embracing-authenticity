@@ -6,22 +6,12 @@ pagination:
 ---
 
 <section class="blog-intro fade-in">
-  <h2>Blog</h2>
+  <h2>{{ page.title }}{% if paginator.page > 1 %} - Page {{ paginator.page }}{% endif %}</h2>
   <p>
     This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically. 
     <a href="#blogPosts" class="scroll-link">Click here to skip to the blogs</a> or search by emotion below.
   </p>
 </section>
-
-<!-- 🌸 Self-Mothering Playlist -->
-<div style="text-align: center; margin-bottom: 2rem;">
-  <a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-     target="_blank" 
-     class="back-button"
-     style="display:inline-block; background-color: #F4D3D8; color: #1A2D41; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-    🎧 Self‑Mothering Playlist
-  </a>
-</div>
 
 <!-- Search Function -->
 <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
@@ -30,7 +20,7 @@ pagination:
 </div>
 <ul id="search-results"></ul>
 
-<!-- Emotion Filter (Simplified) -->
+<!-- Emotion Filter -->
 <div class="emotion-filter fade-in">
   <p>Search by emotion:</p>
   {% assign simple_emotions = "grief,shame,fear,anger,loneliness,hope,love,joy,longing,acceptance" | split: "," %}
@@ -47,10 +37,13 @@ pagination:
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
         <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 24 }}</p>
-        
-        <!-- Emotion Bubbles -->
-        {% assign shown_emotions = post.emotions | slice: 0, 2 %}
+
+        {% if post.thumbnail %}
+        <img src="{{ post.thumbnail }}" loading="lazy" alt="{{ post.title }}" style="max-width: 100%; margin: 10px 0;" />
+        {% endif %}
+
         <div class="tag-list">
+          {% assign shown_emotions = post.emotions | slice: 0, 2 %}
           {% for emotion in shown_emotions %}
             <span class="tag">{{ emotion | capitalize }}</span>
           {% endfor %}
@@ -64,13 +57,12 @@ pagination:
     </article>
   {% endfor %}
 
-  <!-- Pagination Controls -->
   <div class="pagination fade-in">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}">&larr; Previous</a>
+      <a href="{{ paginator.previous_page_path }}" class="pagination-link">&larr; Previous</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}">Next &rarr;</a>
+      <a href="{{ paginator.next_page_path }}" class="pagination-link">Next &rarr;</a>
     {% endif %}
   </div>
 
@@ -88,10 +80,7 @@ pagination:
   function scrollToBlogWithOffset() {
     const offset = 80;
     const elementPosition = blogSection.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: elementPosition - offset,
-      behavior: 'smooth'
-    });
+    window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
   }
 
   emotionButtons.forEach(button => {
@@ -136,5 +125,4 @@ pagination:
     appearOnScroll.observe(fader);
   });
 </script>
-
 <script src="/assets/js/search.js"></script>
