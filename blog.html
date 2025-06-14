@@ -38,10 +38,6 @@ pagination:
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
         <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 24 }}</p>
 
-        {% if post.thumbnail %}
-        <img src="{{ post.thumbnail }}" loading="lazy" alt="{{ post.title }}" style="max-width: 100%; margin: 10px 0;" />
-        {% endif %}
-
         <div class="tag-list">
           {% assign shown_emotions = post.emotions | slice: 0, 2 %}
           {% for emotion in shown_emotions %}
