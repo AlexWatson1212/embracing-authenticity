@@ -1,8 +1,11 @@
 ---
 layout: default
-title: Terms of Service
+title: Terms & Conditions
 permalink: /terms/
+redirect_from:
+  - /terms.html
 ---
+
 
 # Terms of Service
 

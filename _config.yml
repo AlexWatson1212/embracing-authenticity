@@ -18,3 +18,5 @@ collections:
   music:
     output: true
     permalink: /music-therapy/:title/
+plugins:
+  - jekyll-redirect-from

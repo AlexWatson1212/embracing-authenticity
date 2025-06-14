@@ -2,7 +2,10 @@
 layout: default
 title: Contact
 permalink: /contact/
+redirect_from:
+  - /contact.html
 ---
+
 
 <style>
   .contact-container {
