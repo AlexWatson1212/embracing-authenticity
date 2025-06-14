@@ -4,7 +4,9 @@ title: "Trusting the Quiet Work"
 date: 2025-06-10
 tags: [rest, creativity, nervous-system, integration]
 emotions: [peace, trust]
+excerpt: A reminder that even in stillness, the work is unfolding. Sometimes the most honest creation happens not through force, but in quiet moments of trust and presence.
 ---
+
 
 There's been a quiet voice in me whispering, *“You should be working on the website.”* But instead, I'm here — sat on the sofa, cup of tea in hand, dog at my side, music playing in the background. And honestly, I’m just enjoying the moment.
 

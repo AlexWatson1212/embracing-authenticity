@@ -1,9 +1,9 @@
-Filename: 2025-06-14-let-the-love-in.md
 ---
 layout: post
 title: Let the Love In
 tags: [grief, love, healing]
 emotions: [grief, hope]
+excerpt: A reflection on the love we didn’t know how to receive — and the grief, growth, and quiet hope that come with finally learning to let it in.
 ---
 
 There were so many moments I was loved and didn’t know how to receive it.
