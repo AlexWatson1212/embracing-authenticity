@@ -25,3 +25,7 @@ plugins:
 
 paginate: 12
 paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap

@@ -787,4 +787,16 @@ nav a:active {
 #search-results a:hover {
   text-decoration: underline;
 }
+.pagination-link {
+  background: #F4D3D8;
+  color: #1A2D41;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.pagination-link:hover {
+  background: #eac0cb;
+}
 
