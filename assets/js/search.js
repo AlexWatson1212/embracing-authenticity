@@ -9,14 +9,24 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .then(data => {
       posts = data;
-      console.log("Search data loaded:", posts); // Optional for debugging
+      console.log("✅ Search data loaded:", posts);
     })
     .catch(error => {
-      console.error('Error loading search data:', error);
+      console.error('❌ Error loading search data:', error);
     });
 
   function runSearch() {
-    const query = document.getElementById('search-input').value.trim().toLowerCase();
+    const queryInput = document.getElementById('search-input');
+    const resultsList = document.getElementById('search-results');
+
+    if (!queryInput || !resultsList) {
+      console.error("❌ Search input or results container not found");
+      return;
+    }
+
+    const query = queryInput.value.trim().toLowerCase();
+    console.log("🔍 Search query:", query);
+
     if (!query || posts.length === 0) return;
 
     const results = posts.filter(post =>
@@ -24,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       post.content.toLowerCase().includes(query)
     );
 
+    console.log("🔎 Search results:", results);
     displayResults(results);
   }
 
@@ -44,6 +55,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Attach listeners after DOM is ready
-  document.getElementById('search-input').addEventListener('input', runSearch);
-  document.getElementById('search-button').addEventListener('click', runSearch);
+  setTimeout(() => {
+    const inputEl = document.getElementById('search-input');
+    const buttonEl = document.getElementById('search-button');
+
+    if (inputEl && buttonEl) {
+      inputEl.addEventListener('input', runSearch);
+      buttonEl.addEventListener('click', runSearch);
+    } else {
+      console.warn("⚠️ Search elements not found. Make sure they exist in the DOM.");
+    }
+  }, 100); // Delay to ensure DOM is ready
 });
