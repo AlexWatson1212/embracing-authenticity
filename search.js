@@ -4,21 +4,29 @@
 
     // Load search data
     fetch('/search.json')
-      .then(response => response.json())
-      .then(data => posts = data);
+      .then(response => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.json();
+      })
+      .then(data => {
+        posts = data;
+        console.log("Search data loaded:", posts); // Optional: remove in production
+      })
+      .catch(error => {
+        console.error('Error loading search data:', error);
+      });
 
     function runSearch() {
       const query = document.getElementById('search-input').value.trim().toLowerCase();
+      if (!query || posts.length === 0) return;
+
       const results = posts.filter(post =>
         post.title.toLowerCase().includes(query) ||
         post.content.toLowerCase().includes(query)
       );
+
       displayResults(results);
     }
-
-    // Attach event listeners once DOM is ready
-    document.getElementById('search-input').addEventListener('input', runSearch);
-    document.getElementById('search-button').addEventListener('click', runSearch);
 
     function displayResults(results) {
       const resultsList = document.getElementById('search-results');
@@ -35,5 +43,9 @@
         resultsList.appendChild(item);
       });
     }
+
+    // Attach listeners after DOM is ready
+    document.getElementById('search-input').addEventListener('input', runSearch);
+    document.getElementById('search-button').addEventListener('click', runSearch);
   });
 </script>
