@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "What do you do with the kind of love that leaves you shattered, confused, and doubting whether it was ever real at all?"
 thumbnail: /images/posts/love-almost-killed-me.jpg
 tags: [grief, father wound, self-trust, emotional survival, anger, healing]
+emotions: [grief, anger]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I’ve been trying to make peace with a question I never asked out loud for most of my life:
 
@@ -124,6 +118,3 @@ And if I’ve learned anything from this, it’s that **love only counts when it
 
 If it almost killed me, it wasn’t the kind of love I needed.  
 And I won’t pass that silence on to anyone else.
-
-
----

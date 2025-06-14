@@ -4,14 +4,8 @@ title: "Truths Revealed Through Psychosis"
 date: 2025-06-07
 tags: Mental Health, Psychosis, Healing, Family Dynamics, Reflection
 description: How my breakdown uncovered the truths I wasn’t ready to face—and became a breakthrough.
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Psychosis is often seen as madness. But what if, instead, it's a last-resort signal from the psyche—a cry from the soul when truth becomes too much to bear?
 
@@ -32,3 +26,5 @@ Now, I see psychosis as my ego's attempt to protect me. If I had been handed the
 It wasn’t real. But it was true.
 
 And that, I’m learning, is the difference between madness and meaning.
+
+---

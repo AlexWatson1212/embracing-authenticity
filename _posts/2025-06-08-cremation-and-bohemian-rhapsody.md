@@ -5,6 +5,7 @@ date: 2025-06-08
 description: "Reflections on my father, his mother, and the unspoken legacy of pain passed down through silence and symbolism."
 thumbnail: /images/posts/cremation-rhapsody.jpg
 tags: [family, grief, trauma, generational-patterns, masculinity]
+emotions: [grief, acceptance]
 ---
 
 I think my dad enjoyed cremating his mother.

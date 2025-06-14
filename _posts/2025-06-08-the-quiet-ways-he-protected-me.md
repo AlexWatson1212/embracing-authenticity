@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "He couldn't show love loudly. So he showed it sideways. In donuts. In freedom. In silence."
 thumbnail: /images/posts/quiet-protection.jpg
 tags: [grief, fatherhood, emotional-intelligence, love, freedom, family]
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 My mum always wanted to be seen as the loving, caring one. That was her image. But it never felt real. She showed love by buying things, by trying to be perceived a certain way. Emotional connection wasn’t something she knew how to do. And it always felt like she *hated* how deeply my dad could connect with us.
 

@@ -5,6 +5,7 @@ date: 2025-06-08
 description: "This wasn’t just a song. It was the sound of something waking up inside me. Something my dad heard too."
 thumbnail: /images/posts/voodoo-child.jpg
 tags: [fatherhood, music, identity, guitar, breaking-free]
+emotions: ["anger", "acceptance"]
 ---
 
 <div class="video-container">
@@ -14,7 +15,6 @@ tags: [fatherhood, music, identity, guitar, breaking-free]
     encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen></iframe>
 </div>
-
 
 I remember the first time I heard it — Hendrix tearing through the amp with that opening wah pedal like he was pulling thunder from the earth.
 
@@ -62,7 +62,7 @@ As if to say: *You’ve got it too.*
 
 ---
 
-*“I didn’t mean to take up all your sweet time… I’ll give it right back one of these days.”*  
+*“I didn’t mean to take up all your sweet time… I’ll give it right back one of these days.”*
 
 Maybe not today.  
 But one of these days — I’ll play this song for my son.  

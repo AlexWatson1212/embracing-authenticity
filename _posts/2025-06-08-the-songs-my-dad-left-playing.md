@@ -5,6 +5,7 @@ date: 2025-06-08
 description: "Adele. Coldplay. Evanescence. My dad didn’t sing these songs—but he played them over and over again. And I think they were saying what he couldn’t."
 thumbnail: /images/posts/my-dad-sang-with-fire.jpg
 tags: [father wound, music, emotional repression, healing, symbolic language, grief]
+emotions: [grief, longing]
 ---
 
 My dad wasn’t the kind of man who talked about his emotions.  

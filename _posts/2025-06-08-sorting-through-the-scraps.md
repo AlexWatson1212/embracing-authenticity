@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "Sometimes we revisit a past relationship not to rewrite it, but to understand the pieces — so we can build something healthier next time."
 thumbnail: /images/posts/sorting-scraps.jpg
 tags: [relationships, healing, emotional awareness, self-reflection, projection, growth]
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I’ve been noticing something lately.
 
@@ -79,6 +73,5 @@ Not just for me. For you.
 So you'd grow up seeing that love doesn’t mean losing yourself.
 
 We can always begin again — but this time, from truth.
-
 
 ---

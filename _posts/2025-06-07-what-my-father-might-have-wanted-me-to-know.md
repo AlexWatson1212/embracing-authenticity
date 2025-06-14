@@ -3,14 +3,8 @@ layout: post
 title: "What My Father Might Have Wanted Me To Know"
 date: 2025-06-07
 tags: Healing, Fatherhood, Grief, Legacy, Family, Forgiveness
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 In the quiet of my reflections, I’ve started to wonder not just about what happened — but what *he* might have wanted me to understand. My father. A complicated man. A man who perhaps didn’t always know how to love in the way I needed, but did in the way he could.
 

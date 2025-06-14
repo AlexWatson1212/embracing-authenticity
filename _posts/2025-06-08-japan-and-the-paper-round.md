@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "At twelve years old, I flew to Japan to visit my best friend’s family. But the story behind that trip says everything about who my father really was."
 thumbnail: /images/posts/japan-paper-round.jpg
 tags: [fatherhood, travel, friendship, childhood, belonging, cross-cultural]
+emotions: [gratitude, love]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I was twelve or thirteen years old when I flew to Japan by myself.
 

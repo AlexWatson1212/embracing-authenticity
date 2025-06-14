@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "You didn’t do anything wrong. I just didn’t know how to be close without fear. And I’m sorry if my silence ever made you feel small."
 thumbnail: /images/posts/pushed-away-letter.jpg
 tags: [relationships, forgiveness, apology, self-awareness, letter, emotional healing]
+emotions: ["loneliness", "acceptance"]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 To the people I pulled away from,  
 went quiet on,  
@@ -77,6 +71,5 @@ Please know this:
 
 Thank you for the space you gave me — even if it wasn’t a choice.  
 And if you’re reading this now… thank you for still being here.
-
 
 ---

@@ -5,6 +5,7 @@ date: 2025-06-08
 description: "Is Santana's 'Black Magic Woman' really about a woman—or the way desire can blind us to our own wounding?"
 thumbnail: /images/posts/black-magic-woman.jpg
 tags: [toxic love, symbolism, music, archetypes, healing, emotional entanglement]
+emotions: [fear, acceptance]
 ---
 
 What if *Black Magic Woman* isn’t just a sultry rock song with Latin flair—but a hypnotic spell about being consumed by the wrong kind of love?

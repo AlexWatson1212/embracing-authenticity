@@ -5,6 +5,7 @@ date: 2025-06-08
 description: "What if Bohemian Rhapsody isn’t just a song—but a grief-soaked farewell to the boy who tried to be loved by someone who never could?"
 thumbnail: /images/posts/bohemian-symbolic-death.jpg
 tags: [mother wound, symbolism, music, healing, letting go, emotional rebirth]
+emotions: [grief, acceptance]
 ---
 
 What if *Bohemian Rhapsody* isn’t just an operatic rock ballad, but a grief-soaked eulogy?

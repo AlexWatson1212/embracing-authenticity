@@ -5,6 +5,7 @@ date: 2025-06-08
 description: "For my dad, this wasn’t just a song about lust. It was about love without apology — the kind he never got to show growing up."
 thumbnail: /images/posts/whole-lotta-love.jpg
 tags: [fatherhood, music, masculinity, longing, emotional-expression]
+emotions: [love, longing]
 ---
 
 Led Zeppelin’s *“Whole Lotta Love”* was never just about sex for my dad.  

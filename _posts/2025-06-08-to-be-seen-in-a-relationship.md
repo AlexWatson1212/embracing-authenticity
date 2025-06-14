@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "Being seen is more than being looked at. It's being understood, felt, and accepted — even in the parts of ourselves we've learned to hide."
 thumbnail: /images/posts/to-be-seen.jpg
 tags: [relationships, connection, emotional intimacy, authenticity, self-worth]
+emotions: ["loneliness", "acceptance"]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 We often talk about wanting to be loved.  
 But more than that — *we want to be seen.*
@@ -79,6 +73,3 @@ And more importantly — you’ll be ready to receive it.
 Being seen is rare.  
 But not impossible.  
 And once you feel it, truly — you’ll never again settle for anything less.
-
-
----

@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "This isn’t about blame. It’s about naming what I needed — and never got. Because only by naming it can I stop searching for it in the wrong places."
 thumbnail: /images/posts/love-i-deserved.jpg
 tags: [inner child, self-worth, grief, parenting, healing, unmet needs, clarity]
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 This isn’t about blame.  
 This isn’t even about them.
@@ -78,6 +72,5 @@ This is the love I deserved.
 And this is the love I’m learning to give — to myself, to my child, to the future.
 
 One clear truth at a time.
-
 
 ---

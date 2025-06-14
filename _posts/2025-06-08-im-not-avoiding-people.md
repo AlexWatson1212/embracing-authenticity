@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "There was a time I thought I was pulling away out of fear. But now I see it differently. I’m not isolating — I’m finally choosing myself."
 thumbnail: /images/posts/trusting-myself.jpg
 tags: [healing, self-trust, boundaries, relationships, emotional growth, self-worth]
+emotions: [self-worth, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There was a time I thought I was avoiding people.  
 That maybe I was still running from closeness.  
@@ -106,6 +100,5 @@ But open.
 
 Because I’m not avoiding people anymore.  
 I’m just building a world where I can finally show up *as myself* — and not apologise for it.
-
 
 ---

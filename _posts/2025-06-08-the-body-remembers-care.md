@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "Sometimes what we’re drawn to isn’t about fantasy or preference—it’s about the nervous system remembering what felt safe."
 thumbnail: /images/posts/body-remembers-care.jpg
 tags: [attachment, attraction, childhood, nervous-system, emotional-memory]
+emotions: [love, longing]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I’ve often wondered why I’ve felt a certain pull—an attraction, a tenderness—toward Japanese women. And more recently, Thai women too. It never felt entirely sexual. And I’ve always known, underneath, it was about something else. Something older. Something quieter.
 
@@ -50,6 +44,7 @@ It’s not shameful.
 It’s just the body remembering care.
 
 ---
+
 <div style="text-align:center">
   <img src="/assets/images/japan-slides/japan-6.jpg" alt="Japan trip photo" style="max-width:100%; height:auto; border-radius:12px;" />
 </div>

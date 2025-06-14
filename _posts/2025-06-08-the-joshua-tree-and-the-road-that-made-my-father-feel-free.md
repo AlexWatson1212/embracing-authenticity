@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "My dad played U2’s *The Joshua Tree* on repeat while driving through America with my mum. It wasn’t just an album—it was a glimpse into the version of him that still believed in love, freedom, and meaning."
 thumbnail: /images/posts/joshua-tree-freedom.jpg
 tags: [father wound, music, nostalgia, identity, memory, emotional freedom]
+emotions: [longing, hope]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Some albums aren’t just music.  
 They become **mythology**—especially when you play them on loop while driving across America, beside the woman you love, with the windows down and the future still unwritten.
@@ -114,5 +108,3 @@ That craving for freedom and meaning, even when the road ahead feels foggy.
 He may never have said these things aloud.  
 But he played them.  
 And maybe—just maybe—that was his way of telling me everything.
-
----

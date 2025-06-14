@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "You face the pain. You speak the truth. You grieve what never was. And then... you’re just tired. Not healed. Not free. Just empty."
 thumbnail: /images/posts/after-the-truth.jpg
 tags: [grief, healing, exhaustion, father wound, emotional fatigue, truth, numbness]
+emotions: ["grief", "loneliness"]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 You face the truth.  
 You name the wound.  
@@ -117,6 +111,5 @@ I don’t feel healed.
 
 I just feel like I’ve finally stopped lying to myself.  
 And that has to count for something.
-
 
 ---

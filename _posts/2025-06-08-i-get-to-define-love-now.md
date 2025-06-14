@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "They might have thought they loved me. But I get to decide what love really means — and what I’ll never settle for again."
 thumbnail: /images/posts/define-love.jpg
 tags: [healing, love, inner child, self-worth, boundaries, clarity, emotional growth]
+emotions: [love, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 They both thought they loved me.  
 My father.  
@@ -78,7 +72,7 @@ But now I get to tell him:
 > *You weren’t wrong.  
 > You were right to want to be held.  
 > You were right to want to feel safe.  
-> You were right to want something softer than silence and shame.*  
+> You were right to want something softer than silence and shame.*
 
 ---
 

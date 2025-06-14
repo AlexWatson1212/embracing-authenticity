@@ -5,14 +5,8 @@ date: 2025-06-08
 description: "We thought we were building a life together. But it turns out, we were building a fantasy. And when I started wanting something real, I realised it wasn’t there."
 thumbnail: /images/posts/fantasy-fall-apart.jpg
 tags: [relationships, grief, clarity, emotional connection, fantasy vs reality, healing]
+emotions: ["grief", "longing"]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There’s a strange kind of grief that hits you when you realise the life you were building with someone wasn’t really built on connection — but on *projection*.
 
@@ -102,6 +96,5 @@ But I grieve what we tried to make out of loneliness and longing.
 
 And I honour the part of me that stopped pretending —  
 even when it cost me the story I thought I wanted.
-
 
 ---

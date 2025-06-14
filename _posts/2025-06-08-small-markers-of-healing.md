@@ -5,15 +5,8 @@ date: 2025-06-08
 description: "Sometimes healing doesn’t feel like progress. It feels like exhaustion, doubt, or stillness. Here are some quiet signs you’re still moving forward — even when it doesn’t feel like it."
 thumbnail: /images/posts/markers-of-healing.jpg
 tags: [healing, self-trust, emotional growth, trauma recovery, self-compassion]
+emotions: [grief, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
-
 
 Healing doesn’t always look like strength.  
 Sometimes it looks like *barely getting through the day*.  
@@ -67,6 +60,5 @@ Not linearly.
 But steadily.
 
 One small marker at a time.
-
 
 ---

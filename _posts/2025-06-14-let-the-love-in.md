@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let the Love In
+title: "Let the Love In"
 tags: [grief, love, healing]
 emotions: [grief, hope]
 excerpt: A reflection on the love we didn’t know how to receive — and the grief, growth, and quiet hope that come with finally learning to let it in.
