@@ -6,14 +6,8 @@ tags: [Energy Management, Self-Care, Emotional Health, Mindfulness]
 thumbnail: /images/posts/body-battery.jpg
 excerpt: "Using a smartwatch taught me more than data — it taught me how to finally listen to what my body has been saying all along."
 description: "I use a smartwatch to track my energy, but the real lesson is in how I treat myself."
+emotions: [acceptance, self-compassion]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 I’ve started using a smartwatch to track my energy — what it calls my “body battery.” At first, it was just data. A number. But over time, it’s become something more meaningful.
 

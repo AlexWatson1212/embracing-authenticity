@@ -4,6 +4,8 @@ title: "Redefining Strength: Softness Isn’t Weakness"
 date: 2025-05-30
 tags: [Strength, Vulnerability, Healing, Emotional Resilience]
 description: "Real strength isn’t always loud, sharp, or unbreakable — sometimes, it looks like softness that chooses to stay open, even after being hurt."
+thumbnail: /images/posts/redefining-strength.jpg
+emotions: [fear, hope]
 ---
 
 <a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 

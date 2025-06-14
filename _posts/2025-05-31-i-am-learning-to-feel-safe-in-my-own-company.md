@@ -6,14 +6,8 @@ description: "Being alone isn’t the same as being lonely — and I’m learnin
 excerpt: "I used to fill silence with distractions. Now, I find something peaceful in simply being with myself."
 thumbnail: /images/posts/safe-in-my-company.jpg
 tags: [Solitude, Self-Connection, Healing, Inner Peace]
+emotions: [acceptance, love]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 There was a time I filled every silence.
 

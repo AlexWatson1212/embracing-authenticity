@@ -6,14 +6,8 @@ description: "Loneliness doesn’t mean I’ve failed—it means I’m human."
 excerpt: "Loneliness doesn’t mean something’s wrong with me. It means I’m human — and I can hold that feeling without shame."
 thumbnail: /images/posts/lonely-and-okay.jpg
 tags: [Loneliness, Self-Compassion, Mental Health, Emotional Awareness, Healing]
+emotions: [loneliness, acceptance]
 ---
-
-<a href="https://music.youtube.com/playlist?list=PLuO5E1rh5RqIzePJeOjdXo62gwnYJ748_&si=NvtF0mzI9Sx2IoPu&shuffle=1" 
-   target="_blank" 
-   class="back-button"
-   style="display:inline-block; margin: 1rem auto; background-color: #F4D3D8; color: #1A2D41; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
-  Self‑Mothering Playlist →
-</a>
 
 Sometimes I feel lonely.  
 Even when life is going well. Even when I’m grounded. Even when I’ve done all the “right” things for myself.
