@@ -25,7 +25,7 @@ pagination:
   <p>Search by emotion:</p>
   {% assign simple_emotions = "grief,shame,fear,anger,loneliness,hope,love,joy,longing,acceptance" | split: "," %}
   {% for emotion in simple_emotions %}
-    <a href="#blogPosts" class="emotion-button scroll-link" data-emotion="{{ emotion }}">{{ emotion | capitalize }}</a>
+    <a href="/emotion/{{ emotion }}/" class="emotion-button">{{ emotion | capitalize }}</a>
   {% endfor %}
   <button class="emotion-button clear-emotion-filter" id="clearEmotions">Clear</button>
 </div>
