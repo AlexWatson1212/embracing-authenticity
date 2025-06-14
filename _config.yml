@@ -8,24 +8,28 @@ markdown: kramdown
 permalink: /blog/:title/
 future: true
 
+# ✅ Plugins - Clean and Correct
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-paginate-v2
+
+# ✅ Pagination Settings (jekyll-paginate-v2)
+pagination:
+  enabled: true
+  per_page: 12
+  permalink: /blog/page/:num/
+  title: ":title - Page :num"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+
+# ✅ Collections
 collections:
   tag:
     output: true
     permalink: /tag/:name/
-collections:
   music:
     output: true
     permalink: /music-therapy/:title/
-plugins:
-  - jekyll-redirect-from
-plugins:
-  - jekyll-paginate
-
-paginate: 12
-paginate_path: "/blog/page:num/"
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
