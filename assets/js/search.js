@@ -29,10 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!query || posts.length === 0) return;
 
-    const results = posts.filter(post =>
-      post.title.toLowerCase().includes(query) ||
-      post.content.toLowerCase().includes(query)
-    );
+    const results = posts.filter(post => {
+      const title = post.title || '';
+      const content = post.content || '';
+      return title.toLowerCase().includes(query) || content.toLowerCase().includes(query);
+    });
 
     console.log("🔎 Search results:", results);
     displayResults(results);
