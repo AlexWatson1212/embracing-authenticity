@@ -892,3 +892,13 @@ nav a:active {
 .footer-content p {
   margin: 0.5rem 0;
 }
+#search-results li {
+  margin-bottom: 0.5rem;
+}
+#search-results a {
+  text-decoration: none;
+  color: #3366cc;
+}
+#search-results a:hover {
+  text-decoration: underline;
+}
