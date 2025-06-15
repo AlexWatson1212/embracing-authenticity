@@ -2,26 +2,24 @@
 layout: default
 ---
 
-<section class="blog-intro fade-in">
+<section class="emotion-header fade-in">
   <h2>{{ page.title }}</h2>
-  <p>{{ page.description }}</p>
+  <p>Here you'll find all posts connected to the emotional theme of <strong>{{ page.title | downcase }}</strong>.</p>
 </section>
 
 <section class="blog-list fade-in">
-  {% assign emotion = page.title | downcase %}
-  {% assign filtered_posts = site.posts | where_exp: "post", "post.emotions contains emotion" %}
+  {% assign emotion_tag = page.tag %}
+  {% assign filtered_posts = site.posts | where_exp: "post", "post.tags contains emotion_tag" %}
+  
   {% if filtered_posts.size > 0 %}
     {% for post in filtered_posts %}
-      <article class="blog-card fade-in">
-        <div class="blog-card-content">
-          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-          <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 24 }}</p>
-          <a href="{{ post.url }}" class="read-more">Read More →</a>
-        </div>
+      <article class="blog-card">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description }}</p>
+        <p><small>{{ post.date | date: "%B %-d, %Y" }}</small></p>
       </article>
     {% endfor %}
   {% else %}
-    <p>No posts found for this emotion yet.</p>
+    <p>No posts found for this emotion yet. Check back soon.</p>
   {% endif %}
 </section>

@@ -34,4 +34,14 @@ collections:
     output: true
     permalink: /music-therapy/:title/
 
+# ✅ Defaults to enable tag filtering on emotion pages
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      tags: []
+
+# ✅ Add optional image fallback
 image: /images/default-social.jpg
