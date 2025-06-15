@@ -33,6 +33,9 @@ collections:
   music:
     output: true
     permalink: /music-therapy/:title/
+  pages:
+    output: true
+    permalink: /:name/
 
 # ✅ Defaults to enable tag filtering on emotion pages
 defaults:
