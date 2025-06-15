@@ -9,7 +9,7 @@ pagination:
   <h2>{{ page.title }}{% if paginator.page > 1 %} - Page {{ paginator.page }}{% endif %}</h2>
   <p>
     This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically. 
-    <a href="#blogPosts" class="scroll-link">Click here to skip to the blogs</a> or search by emotion below.
+    <a href="#blogPosts" class="scroll-link">Click here to skip to the blogs</a> or search below.
   </p>
 </section>
 
@@ -19,16 +19,6 @@ pagination:
   <button id="search-button" style="padding: 8px 12px;">Search</button>
 </div>
 <ul id="search-results"></ul>
-
-<!-- Emotion Filter -->
-<div class="emotion-filter fade-in">
-  <p>Search by emotion:</p>
-  {% assign simple_emotions = "grief,shame,fear,anger,loneliness,hope,love,joy,longing,acceptance" | split: "," %}
-  {% for emotion in simple_emotions %}
-    <a href="/emotion/{{ emotion }}/" class="emotion-button">{{ emotion | capitalize }}</a>
-  {% endfor %}
-  <button class="emotion-button clear-emotion-filter" id="clearEmotions">Clear</button>
-</div>
 
 <section class="blog-list" id="blogPosts">
   {% for post in paginator.posts %}
@@ -68,42 +58,13 @@ pagination:
 </section>
 
 <script>
-  const emotionButtons = document.querySelectorAll('.emotion-button[data-emotion]');
-  const clearEmotionButton = document.getElementById('clearEmotions');
-  const posts = document.querySelectorAll('.blog-card');
-  const blogSection = document.getElementById('blogPosts');
-
-  function scrollToBlogWithOffset() {
-    const offset = 80;
-    const elementPosition = blogSection.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
-  }
-
-  emotionButtons.forEach(button => {
-    button.addEventListener('click', e => {
-      e.preventDefault();
-      emotionButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-      const emotion = button.getAttribute('data-emotion');
-      posts.forEach(post => {
-        const emotions = post.getAttribute('data-emotions') || '';
-        post.style.display = emotions.includes(emotion) ? 'block' : 'none';
-      });
-      scrollToBlogWithOffset();
-    });
-  });
-
-  clearEmotionButton?.addEventListener('click', () => {
-    emotionButtons.forEach(btn => btn.classList.remove('active'));
-    posts.forEach(post => post.style.display = 'block');
-    scrollToBlogWithOffset();
-  });
-
   const scrollLinks = document.querySelectorAll('.scroll-link');
   scrollLinks.forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      scrollToBlogWithOffset();
+      const offset = 80;
+      const elementPosition = document.getElementById('blogPosts').getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
     });
   });
 
