@@ -2,8 +2,6 @@
 layout: page
 title: Privacy Policy
 permalink: /privacy/
-redirect_from:
-  - /privacy.html
 ---
 
 

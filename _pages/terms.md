@@ -2,8 +2,6 @@
 layout: page
 title: Terms & Conditions
 permalink: /terms/
-redirect_from:
-  - /terms.html
 ---
 
 
