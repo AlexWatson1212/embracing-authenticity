@@ -45,3 +45,8 @@ Even if it still feels heavy sometimes.
 This is the work.  
 This is love.
 
+---
+
+<div style="margin-top: 2rem;">
+  <img src="/assets/images/love-tightrope.jpg" alt="The Tightrope of Guilt and Love" style="width: 100%; max-width: 800px; display: block; margin: 0 auto; border-radius: 8px;" />
+</div>
