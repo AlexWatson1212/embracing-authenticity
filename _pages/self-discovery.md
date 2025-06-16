@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Start Here
-permalink: /start-here/
+permalink: /self-discovery/
 ---
 
 <main>
