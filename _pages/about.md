@@ -4,9 +4,6 @@ title: About
 permalink: /about/
 ---
 
-
-## About
-
 This is where I share the deeper story behind Embracing Authenticity and what this space is truly about.
 
 ---

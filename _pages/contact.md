@@ -4,7 +4,6 @@ title: Contact
 permalink: /contact/
 ---
 
-
 <style>
   .contact-container {
     max-width: 600px;

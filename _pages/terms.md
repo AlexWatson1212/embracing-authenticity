@@ -4,9 +4,6 @@ title: Terms & Conditions
 permalink: /terms/
 ---
 
-
-# Terms of Service
-
 **Effective Date:** May 2025
 
 ---

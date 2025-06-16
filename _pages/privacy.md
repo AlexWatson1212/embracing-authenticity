@@ -4,9 +4,6 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-
-# Privacy Policy
-
 **Effective Date:** May 2025
 
 ---

@@ -4,7 +4,6 @@ title: Start Here
 permalink: /start-here/
 ---
 
-
 <main>
   <section class="blog-intro">
     <h1>Start Here</h1>
