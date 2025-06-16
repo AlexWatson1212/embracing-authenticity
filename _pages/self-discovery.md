@@ -6,7 +6,7 @@ permalink: /self-discovery/
 
 <main>
   <section class="blog-intro">
-    <h1>Self-Discovery: A Grounded Guide for the Journey Home</h1>
+    <h2>Self-Discovery: A Grounded Guide for the Journey Home</h2>
     <div style="background: #f2f2f2; padding: 1rem; border-left: 4px solid #333; margin-bottom: 1rem;">
       <p><strong>Who this is for:</strong><br>
       This page is for anyone who feels like they’ve been surviving, not living — whether you're 12 or 45.  
