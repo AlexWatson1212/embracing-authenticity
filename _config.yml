@@ -46,5 +46,5 @@ defaults:
       layout: post
       tags: []
 
-# ✅ Add optional image fallback
+# ✅ Add optional image fallback for social previews
 image: /images/default-social.jpg
