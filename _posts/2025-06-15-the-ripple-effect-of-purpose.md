@@ -114,5 +114,5 @@ And I trust that someone, somewhere, might need to hear it.
 ---
 
 <div style="text-align: center; margin-top: 2rem;">
-  <img src="/assets/images/ripple-of-purpose-image.png" alt="A contemplative figure by a misty lake" style="max-width: 100%; height: auto; border-radius: 12px;">
+  <img src="/assets/images/ripple-of-purpose-image.jpg" alt="A contemplative figure by a misty lake" style="max-width: 100%; height: auto; border-radius: 12px;">
 </div>
