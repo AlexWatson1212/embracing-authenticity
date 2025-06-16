@@ -811,14 +811,15 @@ nav a:active {
   margin-bottom: 1.5rem;
   font-size: 2rem;
 }
+/* Blog Post Footer Navigation */
 .post-nav {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid #ddd;
-  flex-wrap: wrap;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .post-nav a {
@@ -829,50 +830,9 @@ nav a:active {
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   font-weight: 500;
-  transition: background-color 0.3s ease;
-  flex: 1 1 auto;
-  text-align: center;
-}
-
-.post-nav a:hover {
-  background-color: #f2aabb;
-  color: #111;
-}
-/* Sticky Post Navigation for Mobile */
-@media (max-width: 768px) {
-  .post-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #fdfdfd;
-    border-top: 1px solid #ccc;
-    z-index: 999;
-    padding: 0.8rem 1rem;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
-  }
-}
-
-/* Shared Post Navigation Styling */
-.post-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.post-nav a {
-  display: inline-block;
-  background-color: #f7c4d2;
-  color: #1f2f3c;
-  text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-weight: 500;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  flex: 1 1 auto;
   text-align: center;
+  white-space: nowrap;
 }
 
 .post-nav a:hover {
@@ -881,7 +841,6 @@ nav a:active {
   transform: translateY(-1px);
 }
 
-/* Optional: Add subtle arrow effect using unicode */
 .post-nav a.prev::before {
   content: "← ";
 }
@@ -890,3 +849,14 @@ nav a:active {
   content: " →";
 }
 
+/* Mobile Layout Fix */
+@media (max-width: 768px) {
+  .post-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .post-nav a {
+    width: 100%;
+  }
+}
