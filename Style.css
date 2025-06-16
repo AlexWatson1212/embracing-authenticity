@@ -899,3 +899,15 @@ nav a:active {
     margin-right: 1rem;
   }
 }
+.page-content,
+.footer-content,
+.blog-list,
+.latest-posts,
+.post,
+.content-area,
+.page-article {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
