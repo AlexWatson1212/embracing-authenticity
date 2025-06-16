@@ -4,6 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Embracing Authenticity</title>
+  
+<!-- SEO Meta -->
+<meta name="description" content="A space to grow, reflect, and be your true self.">
+<meta property="og:title" content="Home">
+<meta property="og:description" content="A space to grow, reflect, and be your true self.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4000/">
+
+
+<!-- Twitter Meta -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Home">
+<meta name="twitter:description" content="A space to grow, reflect, and be your true self.">
+
+
+<!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet" />
@@ -12,15 +29,34 @@
   <link rel="stylesheet" href="/style.css" />
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#1A2D41">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="/assets/favicons/favicon-128.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="/assets/favicons/favicon-196x196.png">
   <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#1A2D41">
+  <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
   <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#1A2D41">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1G5FKYL0R4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1G5FKYL0R4');
+  </script>
 </head>
 
 <body>
@@ -42,13 +78,13 @@
     </button>
 
     <!-- Navigation -->
-    <nav class="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="/blog.html" class="">Blog</a></li>
-        <li><a href="/about.html" class="">About</a></li>
-        <li><a href="/self-discovery.html" class="start-here ">Start Here</a></li>
-      </ul>
-    </nav>
+   <nav class="main-nav" aria-label="Main navigation">
+  <ul>
+    <li><a href="/music-therapy" class="">Music Therapy</a></li>
+    <li><a href="/blog.html" class="">Blog</a></li>
+    <li><a href="/self-discovery.html" class="start-here ">Start Here</a></li>
+  </ul>
+</nav>
   </div>
 </header>
 
@@ -97,14 +133,6 @@
   <p>If you’re reading this, you’re not just seeing a website. You’re seeing the parts of me I’ve never fully shown before. And in doing so, I hope it gives others permission to do the same — to be more honest with themselves, more gentle, more free.</p>
 </section>
 
-<!-- Video Section -->
-<section class="video-section">
-  <h2>Watch the Introduction</h2>
-  <div class="responsive-video">
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-  </div>
-</section>
-
 <!-- Quote Carousel -->
 <section class="quote-carousel">
   <div class="quote-container">
@@ -128,6 +156,63 @@
   <span class="dot" onclick="goToQuote(1)"></span>
   <span class="dot" onclick="goToQuote(2)"></span>
 </div>
+
+<!-- Frank Said It Best Section -->
+<section class="container" style="margin-top: 4rem;">
+  <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: #B6753A; margin-bottom: 1.5rem;">
+    Frank said it best.
+  </h2>
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+    <iframe 
+      src="https://www.youtube.com/embed/qQzdAsjWGPg" 
+      title="Frank Sinatra - My Way" 
+      style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0;" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<section class="latest-posts container">
+  <h2 class="text-2xl font-bold mb-6">Latest Reflections</h2>
+
+  <div class="grid gap-10">
+    
+    <div class="blog-card animate-on-scroll" style="margin-bottom: 1.5rem;">
+      <div class="blog-card-content">
+        <h3 class="text-xl font-semibold italic text-[#1A2D41] mb-1">Why Would Anyone Want to Love Me?</h3>
+        <p class="text-sm text-gray-600 mb-2">June 16, 2025</p>
+        <p class="text-gray-700 mb-4">Sitting with the painful belief that no one could ever want to love someone like me — and beginning to question whether that’s the whole truth.</p>
+        <a href="/blog/why-would-anyone-want-to-love-me/" class="read-more">Read More →</a>
+      </div>
+    </div>
+    
+    <div class="blog-card animate-on-scroll" style="margin-bottom: 1.5rem;">
+      <div class="blog-card-content">
+        <h3 class="text-xl font-semibold italic text-[#1A2D41] mb-1">What If That Wasn’t Love?</h3>
+        <p class="text-sm text-gray-600 mb-2">June 16, 2025</p>
+        <p class="text-gray-700 mb-4">For years I tried to make sense of how my mother and sister treated me. I tried to believe it was love. But what if it wasn’t?</p>
+        <a href="/blog/what-if-that-wasnt-love/" class="read-more">Read More →</a>
+      </div>
+    </div>
+    
+    <div class="blog-card animate-on-scroll" style="margin-bottom: 1.5rem;">
+      <div class="blog-card-content">
+        <h3 class="text-xl font-semibold italic text-[#1A2D41] mb-1">Trying to Belong in a Family That Can’t Hear Me</h3>
+        <p class="text-sm text-gray-600 mb-2">June 16, 2025</p>
+        <p class="text-gray-700 mb-4">What happens when every joke I make gets taken the wrong way — and I'm left wondering if I ever really belonged at all?</p>
+        <a href="/blog/trying-to-belong-in-a-family-that-cant-hear-me/" class="read-more">Read More →</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Blog Button -->
+  <div class="mt-6 text-center">
+  <a href="/blog" class="blog-button">Explore the Full Blog</a>
+</div>
+
+
+</section>
 
 <!-- Quote Carousel Script -->
 <script>
@@ -196,8 +281,10 @@
   <footer class="site-footer">
   <div class="footer-content">
     <div class="footer-nav">
-      <a href="/privacy.html">Privacy Policy</a>
-      <a href="/terms.html">Terms of Service</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
     </div>
 
     <div class="social-icons">
@@ -207,13 +294,19 @@
       <a href="https://www.instagram.com/instawats/" target="_blank" aria-label="Instagram">
         <img src="/icons/instagram.svg" alt="Instagram" />
       </a>
-      <a href="/contact.html" aria-label="Contact">
+      <a href="/contact/" aria-label="Contact">
         <img src="/icons/contact.svg" alt="Contact" />
-        <span class="contact-label"></span>
       </a>
     </div>
 
-    <p>&copy; 2025 Embracing Authenticity. All rights reserved.</p>
+    <p class="footer-manifesto">
+      This project is mine.  
+      I don’t owe it to anyone.  
+      I do it because it heals me.  
+      — Myself
+    </p>
+
+    <p style="margin-top: 1rem;">&copy; 2025 Embracing Authenticity. All rights reserved.</p>
   </div>
 </footer>
 
@@ -233,6 +326,24 @@
       }
     });
   </script>
+<div style="margin-bottom: 4rem;"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
 
 </body>
 </html>

@@ -800,3 +800,15 @@ nav a:active {
   background: #eac0cb;
 }
 
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  line-height: 1.6;
+}
+
+.page-article h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
