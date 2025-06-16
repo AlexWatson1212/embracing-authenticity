@@ -29,14 +29,10 @@
         </div>
 
         <div class="post-footer-nav">
-          {% if page.previous %}
-            <a href="{{ page.previous.url }}" class="button">← Back to Blog</a>
-          {% else %}
-            <a href="/blog" class="button">← Back to Blog</a>
-          {% endif %}
+          <a href="/blog" class="button">← Back to Blog</a>
 
-          {% if page.next %}
-            <a href="{{ page.next.url }}" class="button">Next Blog →</a>
+          {% if page.previous %}
+            <a href="{{ page.previous.url }}" class="button">Next Blog →</a>
           {% endif %}
         </div>
       </article>
