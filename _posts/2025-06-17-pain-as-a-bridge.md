@@ -30,4 +30,6 @@ Funny how the logo for *Embracing Authenticity* is a tree. Because that’s what
 2. What kind of impact did that connection have on how you see yourself?
 3. In what ways are you beginning to offer that same kind of love or safety to others?
 
+---
+
 ![Bridge, Tree, and Water – Connection and Growth](/assets/images/bridge-tree-water.jpg)
