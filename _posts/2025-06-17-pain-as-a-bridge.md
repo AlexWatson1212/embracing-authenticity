@@ -32,4 +32,3 @@ Funny how the logo for *Embracing Authenticity* is a tree. Because that’s what
 
 ---
 
-![Bridge, Tree, and Water – Connection and Growth](/assets/images/bridge-tree-water.jpg)
