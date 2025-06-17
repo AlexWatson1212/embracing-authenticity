@@ -50,6 +50,20 @@ But the part of me that earned it — the version of me that showed up to win �
 
 ---
 
+I’ve shared a lot on this site about the struggles — the emotional weight, the rebuilding, the slow journey back to wholeness.  
+So it only feels right to also share what’s working.
+
+I’m not shouting about this win.  
+I’m just letting it stand alongside everything else — not as proof of success, but as part of the truth.  
+
+And that’s what I want this space to hold:  
+All of it.  
+The lows, the learning, the wins.  
+
+Quietly. Honestly. Fully.
+
+---
+
 <div style="text-align: center;">
   <img src="/assets/images/10k-PokerWin.jpg" alt="10K Poker Win" style="max-width: 100%; height: auto; border-radius: 8px;" />
 </div>
