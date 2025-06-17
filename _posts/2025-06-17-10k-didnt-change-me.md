@@ -47,3 +47,9 @@ That’s what I get to carry forward.
 
 The $10K will be spent, eventually.  
 But the part of me that earned it — the version of me that showed up to win — *he’s here to stay*.
+
+---
+
+<div style="text-align: center;">
+  <img src="/assets/images/10k-PokerWin.jpg" alt="10K Poker Win" style="max-width: 100%; height: auto; border-radius: 8px;" />
+</div>
