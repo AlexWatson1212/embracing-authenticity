@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Music Therapy
 permalink: /music-therapy/
 ---
 
@@ -8,7 +7,7 @@ permalink: /music-therapy/
 
   <!-- SECTION: Full Guide Text First -->
   <section class="full-guide">
-    <h1>Music Therapy: A Soundtrack to Your Inner World</h1>
+    <h2>Music Therapy: A Soundtrack to Your Inner World</h2>
 
     <div class="callout-box">
       <strong>Who this is for:</strong><br>
