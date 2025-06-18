@@ -913,6 +913,6 @@ nav a:active {
 }
 @media (max-width: 768px) {
   .hero-image {
-    margin-top: 1.5rem; /* Adjust this value as needed */
+    margin-top: 3rem; /* Adjust this value as needed */
   }
 }
