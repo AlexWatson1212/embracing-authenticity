@@ -918,3 +918,11 @@ nav a:active {
   }
 }
 
+.footer-quote {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-quote p {
+  margin: 0.5rem 0;
+}
