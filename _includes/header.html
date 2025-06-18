@@ -1,26 +1,64 @@
-<header class="site-header">
-  <div class="header-container">
-    <!-- Logo -->
-    <a href="/" class="logo-wrapper" aria-label="Embracing Authenticity Home">
-      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo" />
-    </a>
+---
+layout: page
+title: Music Therapy
+permalink: /music-therapy/
+---
 
-    <!-- Hamburger Menu Button -->
-    <button
-      class="menu-toggle"
-      aria-label="Toggle navigation"
-      aria-expanded="false"
-    >
-      ☰
-    </button>
+<main>
+  <section class="blog-intro">
+    <h1>Music Therapy: A Soundtrack to Your Inner World</h1>
+    <div style="background: #f2f2f2; padding: 1rem; border-left: 4px solid #333; margin-bottom: 1rem;">
+      <p><strong>How to Use This Page:</strong><br>
+      Music has a way of revealing what words can't. This space isn't about fixing yourself or overanalyzing—it’s about tuning in. Notice the songs you’re drawn to. What’s happening in your life when you reach for them? How do they feel in your body?</p>
+    </div>
 
-    <!-- Navigation -->
-    <nav class="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="/blog.html" class="{% if page.url == '/blog.html' %}active{% endif %}">Blog</a></li>
-        <li><a href="/self-discovery" class="start-here {% if page.url == '/self-discovery.html' %}active{% endif %}">Start Here</a></li>
-        <li><a href="/music-therapy" class="{% if page.url == '/music-therapy/' %}active{% endif %}">Music Therapy</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <p>
+      We're not trying to diagnose or dissect—just pay attention. Make a note of what tracks you keep going back to, then return later and reflect. What emotions are showing up in those songs? What might that say about your inner world?
+    </p>
+
+    <p>
+      Over time, this simple act of noticing can become a guide. It’s like training wheels for emotional awareness—helping you understand who you are and who you’re becoming.
+    </p>
+
+    <p>
+      Below, you’ll find reflections on songs that hit something deep. Each entry stands alone but may help you learn to explore your own musical connections more honestly. You can search by emotion or keyword.
+    </p>
+  </section>
+
+  <section class="search-bar">
+    <input type="text" id="music-search" placeholder="Search for what's on your mind" onkeyup="filterMusicPosts()" />
+  </section>
+
+  <section class="blog-list" id="music-posts">
+    {% assign music_posts = site.music | sort: 'date' | reverse %}
+    {% for post in music_posts %}
+      <article class="post">
+        <a href="{{ post.url }}">
+          {% if post.thumbnail %}
+            <img src="{{ post.thumbnail }}" alt="{{ post.title }} thumbnail" class="post-thumbnail">
+          {% endif %}
+          <h3>{{ post.title }}</h3>
+          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p class="post-description">{{ post.description }}</p>
+        </a>
+      </article>
+    {% endfor %}
+  </section>
+</main>
+
+<script>
+function filterMusicPosts() {
+  const input = document.getElementById('music-search');
+  const filter = input.value.toLowerCase();
+  const posts = document.querySelectorAll('#music-posts .post');
+  posts.forEach(post => {
+    const title = post.querySelector('h3').textContent.toLowerCase();
+    const description = post.querySelector('.post-description').textContent.toLowerCase();
+    if (title.includes(filter) || description.includes(filter)) {
+      post.style.display = '';
+    } else {
+      post.style.display = 'none';
+    }
+  });
+}
+</script>
