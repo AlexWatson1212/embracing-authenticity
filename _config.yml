@@ -30,7 +30,7 @@ collections:
   tag:
     output: true
     permalink: /tag/:name/
-  music:
+  music_music:
     output: true
     permalink: /music-therapy/:title/
   pages:

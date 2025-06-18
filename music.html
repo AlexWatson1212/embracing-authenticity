@@ -1,0 +1,60 @@
+---
+layout: default
+title: Music Therapy
+permalink: /music-therapy/
+---
+
+<section class="blog-intro">
+  <h1>Music Therapy: A Soundtrack to Your Inner World</h1>
+  <p>Each post reflects how music can reveal what’s going on beneath the surface. These aren’t reviews — they’re emotional reflections through sound. Use the search bar below to explore by artist, theme, or feeling.</p>
+</section>
+
+<section>
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search by artist, song, or theme..."
+    style="width: 100%; padding: 1rem; font-size: 1rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
+  />
+  <button
+    id="search-button"
+    style="width: 100%; padding: 0.75rem; font-size: 1rem; background-color: #333; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+  >
+    Search
+  </button>
+</section>
+
+<section id="music-posts-list" style="margin-top: 2rem;">
+  {% assign sorted_music = site.music_music | sort: "date" | reverse %}
+  {% for post in sorted_music limit: 12 %}
+    <article class="post" style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
+      {% if post.thumbnail %}
+        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; margin-bottom: 0.75rem;" />
+      {% endif %}
+      <h2 style="margin-bottom: 0.3rem;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p style="margin: 0; font-size: 0.95rem;"><strong>Artist:</strong> {{ post.artist }}</p>
+      <p style="font-size: 0.9rem; color: #666;">{{ post.date | date: "%B %d, %Y" }}</p>
+      <p style="margin-top: 0.5rem;">{{ post.description }}</p>
+      {% if post.mood %}
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Theme:</strong> {{ post.mood | join: ", " }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>
+
+<script>
+  document.getElementById('search-button').addEventListener('click', function () {
+    const input = document.getElementById('search-input').value.toLowerCase();
+    const posts = document.querySelectorAll('#music-posts-list article');
+
+    posts.forEach((post) => {
+      post.style.display = post.innerText.toLowerCase().includes(input) ? '' : 'none';
+    });
+  });
+
+  document.getElementById('search-input').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      document.getElementById('search-button').click();
+    }
+  });
+</script>

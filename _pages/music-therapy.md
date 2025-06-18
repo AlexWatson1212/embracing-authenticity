@@ -2,7 +2,6 @@
 layout: page
 permalink: /music-therapy/
 ---
-
 <main class="music-therapy-main">
 
   <!-- SECTION: Full Guide Text First -->
