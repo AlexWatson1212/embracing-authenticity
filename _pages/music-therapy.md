@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /music-therapy/
 ---
 <main class="music-therapy-main">
 
