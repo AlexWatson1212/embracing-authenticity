@@ -1,8 +1,9 @@
 ---
 layout: page
-title: About
 permalink: /about/
 ---
+
+ <h2>About</h2>
 
 This is where I share the deeper story behind Embracing Authenticity and what this space is truly about.
 

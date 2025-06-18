@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Start Here
 permalink: /self-discovery/
 ---
 

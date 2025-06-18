@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Privacy Policy
+title: 
 permalink: /privacy/
 ---
+
+<h2>Privacy Policy</h2>
 
 **Effective Date:** May 2025
 
