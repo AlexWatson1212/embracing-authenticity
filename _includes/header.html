@@ -4,12 +4,12 @@ title: Music Therapy
 permalink: /music-therapy/
 ---
 
-<main>
+<main class="music-therapy-main">
   <section class="blog-intro">
     <h1>Music Therapy: A Soundtrack to Your Inner World</h1>
-    <div style="background: #f2f2f2; padding: 1rem; border-left: 4px solid #333; margin-bottom: 1rem;">
+    <div class="intro-box">
       <p><strong>How to Use This Page:</strong><br>
-      Music has a way of revealing what words can't. This space isn't about fixing yourself or overanalyzing—it’s about tuning in. Notice the songs you’re drawn to. What’s happening in your life when you reach for them? How do they feel in your body?</p>
+        Music has a way of revealing what words can't. This space isn't about fixing yourself or overanalyzing—it’s about tuning in. Notice the songs you’re drawn to. What’s happening in your life when you reach for them? How do they feel in your body?</p>
     </div>
 
     <p>
@@ -21,7 +21,7 @@ permalink: /music-therapy/
     </p>
 
     <p>
-      Below, you’ll find reflections on songs that hit something deep. Each entry stands alone but may help you learn to explore your own musical connections more honestly. You can search by emotion or keyword.
+      Below, you’ll find reflections on songs that hit something deep. Each entry stands alone but may help you explore your own musical connections more honestly.
     </p>
   </section>
 
@@ -30,19 +30,22 @@ permalink: /music-therapy/
   </section>
 
   <section class="blog-list" id="music-posts">
-    {% assign music_posts = site.music | sort: 'date' | reverse %}
-    {% for post in music_posts %}
-      <article class="post">
-        <a href="{{ post.url }}">
-          {% if post.thumbnail %}
-            <img src="{{ post.thumbnail }}" alt="{{ post.title }} thumbnail" class="post-thumbnail">
-          {% endif %}
-          <h3>{{ post.title }}</h3>
-          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-          <p class="post-description">{{ post.description }}</p>
-        </a>
-      </article>
-    {% endfor %}
+    <h2>Latest Music Therapy Posts</h2>
+    <div class="music-posts-grid">
+      {% assign music_posts = site.music | sort: 'date' | reverse %}
+      {% for post in music_posts limit: 3 %}
+        <article class="post">
+          <a href="{{ post.url }}">
+            {% if post.thumbnail %}
+              <img src="{{ post.thumbnail }}" alt="{{ post.title }} thumbnail" class="post-thumbnail">
+            {% endif %}
+            <h3>{{ post.title }}</h3>
+            <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p class="post-description">{{ post.description }}</p>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
   </section>
 </main>
 

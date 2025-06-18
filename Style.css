@@ -926,3 +926,70 @@ nav a:active {
 .footer-quote p {
   margin: 0.5rem 0;
 }
+
+.music-therapy-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.intro-box {
+  background: #f2f2f2;
+  padding: 1rem;
+  border-left: 4px solid #333;
+  margin-bottom: 1.5rem;
+}
+
+.search-bar {
+  margin: 2rem auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+#music-search {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.blog-list h2 {
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+}
+
+.music-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.post {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-4px);
+}
+
+.post-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.post-description {
+  font-size: 1rem;
+}
