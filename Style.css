@@ -911,3 +911,8 @@ nav a:active {
   margin-right: auto;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .hero-image {
+    margin-top: 1.5rem; /* Adjust this value as needed */
+  }
+}
