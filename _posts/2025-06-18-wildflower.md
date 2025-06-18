@@ -58,7 +58,7 @@ And so do I.
 
 ---
 
-<img src="/assets/images/posts/wildflower.jpg" 
+<img src="/assets/images/wildflower.jpg" 
      alt="A delicate wildflower growing through stone at dusk" 
      style="max-width: 100%; height: auto; display: block; margin: 2rem auto;" 
      loading="lazy">
