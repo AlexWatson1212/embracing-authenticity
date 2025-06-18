@@ -913,9 +913,8 @@ nav a:active {
 }
 
 @media (max-width: 768px) {
-  .hero-image {
+  .hero-container {
     padding-top: 3rem;
-    display: block;
   }
 }
 
