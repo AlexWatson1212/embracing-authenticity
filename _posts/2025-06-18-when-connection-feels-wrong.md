@@ -42,3 +42,20 @@ This isn’t a clean answer. It’s not an “aha” moment tied with a bow.
 It’s just me, in the middle of something real, whispering to myself:
 
 > “I’m not broken. I’m just thawing. And that’s enough for today.”
+
+---
+
+### A Note on Mornings
+
+The funny thing is—when I’ve had a decent sleep, or even just a tolerable night—I often find it quite easy to connect with people in the morning. I think it goes well. Even after a rough night, I can usually manage the morning walk without too much difficulty. And what’s more, I can always *leave* if it gets unclear or overwhelming.
+
+It’s not performative. I’m not forcing anything. It just feels… safe enough.
+
+I think those morning walks might be quietly saving me. They bring rhythm. Familiarity. Soft human contact. And even though I missed it yesterday, and it may have led to me seeking comfort in food later, it reminds me that **gentle, steady connection is possible**—when I meet myself with a little more kindness.
+
+So maybe that’s the invitation for now:  
+Protect what grounds you.  
+Return to what feels soft and real.  
+And remember—sometimes healing looks like walking your dog and just letting yourself be part of the world for a few minutes.
+
+That’s enough. Really.
