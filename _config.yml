@@ -33,13 +33,13 @@ collections:
   music_music:
     output: true
     permalink: /music-therapy/:title/
-    sort_by: date         # ✅ ensures music posts sort by date in Liquid
+    sort_by: date
     sort_order: descending
   pages:
     output: true
     permalink: /:name/
 
-# ✅ Defaults to enable tag filtering on emotion pages
+# ✅ Defaults
 defaults:
   - scope:
       path: ""
@@ -47,6 +47,14 @@ defaults:
     values:
       layout: post
       tags: []
+
+  - scope:
+      path: ""
+      type: music_music
+    values:
+      layout: music
+      tags: []
+      sitemap: true
 
 # ✅ Add optional image fallback for social previews
 image: /images/default-social.jpg

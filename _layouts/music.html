@@ -2,19 +2,27 @@
 layout: default
 ---
 
-<article class="container">
-  <h1>{{ page.title }}</h1>
-  <p><strong>Artist:</strong> {{ page.artist }}</p>
-  <p><strong>Mood:</strong> {{ page.mood | join: ", " }}</p>
-  <p>{{ page.description }}</p>
+<main class="post-content">
+  <div class="container">
+    <article class="post">
+      <h1>{{ page.title }}</h1>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+      <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+      {% if page.artist %}
+        <p><strong>Artist:</strong> {{ page.artist }}</p>
+      {% endif %}
+      <p>{{ page.description }}</p>
 
-  {% if page.youtube %}
-  <div class="youtube-embed" style="margin-top: 2rem;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe>
+      <div class="post-body">
+        {{ content }}
+      </div>
+
+      {% if page.youtube %}
+        <div class="youtube-embed">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      {% endif %}
+
+    </article>
   </div>
-  {% endif %}
-</article>
+</main>
