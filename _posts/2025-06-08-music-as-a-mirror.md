@@ -8,56 +8,93 @@ tags: [self-awareness, healing, music, reflection, emotion, growth]
 emotions: [self-reflection, growth, healing]
 ---
 
-There’s something quietly astonishing about how music moves through us.
+Music hasn’t necessarily healed me.
 
-The same song can follow us for years — and yet we *never* hear it the same way twice. One verse might once have felt uplifting, and later ache with a truth we didn’t know we were carrying. Another line might drift by unnoticed until one day, it stops us cold.
-
-It’s not the music that’s changed.  
-It’s *us*.
-
----
-
-### 🎵 A Mirror, Not a Message
-
-Music, in many ways, is a mirror.
-
-We project our longings, memories, wounds, and healing onto it — sometimes without even realizing it. It doesn’t tell us what to feel. It reveals what’s already there, quietly waiting to be heard.
-
-You can listen to the same song at twelve, twenty-five, and forty, and each time, it lands differently — *because you are different*. It’s like that Heraclitus quote:
-
-> “No man ever steps in the same river twice,  
-> for it’s not the same river, and he’s not the same man.”
-
-Music doesn’t just evoke memories. It helps *make sense of them*. It becomes a companion on the journey — not to distract us, but to reflect us.
+But it’s **comforted me**,  
+**Remembered me**,  
+And helped me rediscover parts of my soul I didn’t know were still alive.
 
 ---
 
-### 🎶 The Shifting Lens of Meaning
+There’s something about music that lets me see into myself.  
+Not just who I am now—but who I’ve been. Who I tried to be. Who I had to be to survive.
 
-There’s a beauty in that.
+When I hear a song that resonated deeply with me at one point in life, it’s like looking into an old mirror.  
+It shines a light on what I was feeling back then—even if I couldn’t name it at the time.
 
-A break-up song isn’t always about another person.  
-A victory anthem isn’t always about triumph.  
-Sometimes, what we hear in a lyric is exactly what our soul is whispering — we just needed someone else to sing it aloud.
+Sometimes I listen and think,  
+> *“God, I must have been in so much pain to feel this so deeply.”*
 
-And sometimes, we return to an old song and realize:  
-“I never knew this was what it really meant… until now.”
-
----
-
-### 🪞 Music as Self-Understanding
-
-Music connects us to ourselves not through logic, but through feeling.  
-It bypasses the overthinking mind and goes straight to the heart.  
-And it teaches us — again and again — that growth isn’t always loud or obvious.
-
-Sometimes, growth is just hearing the same song and finally understanding what it was always trying to show you.
+And the music responds:  
+**Yes. You were. And someone else felt it too.**
 
 ---
 
-So the next time a song hits you differently, pause.  
-Not because the music changed — but because *you have*.
+I’ve come to realise that music often knows how I feel before I do.
 
-And that’s something worth listening to.
+There have been moments where a song undid me—completely.  
+Where I found myself crying, or aching, or remembering something I didn’t know I’d buried.  
+Not because the lyrics told me to. But because something inside the sound *mirrored* something inside me.
+
+> Music doesn’t need explanation.  
+It bypasses logic and goes straight to the place where the soul lives.
 
 ---
+
+Looking back now, I see how devastatingly lonely my childhood really was.
+
+I used to **dance to keep from falling apart**.  
+I used to **convince myself I was loved when my body knew I wasn’t**.  
+And sometimes, I lost my sanity trying to maintain that illusion.
+
+But music…  
+Music remembered what I couldn’t.  
+It held it for me until I was ready to return to it with more compassion.
+
+---
+
+Music is a kind of time-travel.  
+It brings up memories held in my nervous system long before I had the tools to understand them.  
+And when I’m drawn to a certain song—especially one I loop endlessly—I ask:
+
+- *What is this reflecting back to me?*  
+- *What part of me is being seen right now?*  
+- *What’s surfacing that I haven’t said out loud?*
+
+---
+
+It turns out this isn’t just personal—it’s primal.
+
+Science now confirms what we’ve always known intuitively:  
+Music activates the emotional centres of the brain.  
+It bypasses the rational mind and goes straight to the limbic system, where feeling lives.  
+It allows what’s *true*—but perhaps *unspoken*—to rise to the surface.
+
+> Music can act like a mirror.  
+And sometimes, it reflects the parts of us that haven’t been fully seen.
+
+---
+
+So no—music didn’t fix me.  
+But it **sat beside me in silence**.  
+It **held me without needing me to make sense**.  
+It said, quietly:  
+> *“You’re not alone in this.”*
+
+And sometimes, that was enough.
+
+---
+
+Because music is older than shame.  
+Older than suppression.  
+Older than forgetting.
+
+It’s a rhythm that reminds us we’re still here.  
+That we’ve always been here.  
+And that our feelings are worth listening to.
+
+So if you’ve ever had a moment where a song finds you—really finds you—don’t rush past it.
+
+Let it speak.
+
+It might be saying what you’ve been carrying all along.
