@@ -28,28 +28,24 @@ permalink: /music-therapy/
 <section id="music-search-results"></section>
 
 <!-- Most Recent Posts -->
-<section id="music-posts-list" class="recent-posts" style="margin-top: 3rem;">
-  <h3 style="text-align: center; margin-bottom: 1.5rem;">Recent Music Reflections</h3>
+<section id="music-posts-list" class="post-list">
   {% assign music_posts = site.music_music | sort: "date" | reverse %}
   {% for post in music_posts limit: 12 %}
-    <article class="post-card" style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
-      {% if post.thumbnail %}
-        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; margin-bottom: 0.75rem;" />
-      {% endif %}
+    <article class="post-card">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {% if post.artist %}
-        <p style="margin: 0; font-size: 0.95rem;"><strong>Artist:</strong> {{ post.artist }}</p>
+        <p class="post-meta"><strong>Artist:</strong> {{ post.artist }}</p>
       {% endif %}
-      <p style="font-size: 0.9rem; color: #666;">{{ post.date | date: "%B %d, %Y" }}</p>
-      <p style="margin-top: 0.5rem;">{{ post.description }}</p>
+      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      <p class="post-description">{{ post.description }}</p>
       {% if post.mood %}
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Theme:</strong> {{ post.mood | join: ", " }}</p>
+        <p class="post-tags"><strong>Theme:</strong> {{ post.mood | join: ", " }}</p>
       {% endif %}
     </article>
   {% endfor %}
 </section>
 
-<!-- Styling for Search Bar -->
+<!-- Styling for Blog Layout -->
 <style>
   .search-bar {
     display: flex;
@@ -77,6 +73,33 @@ permalink: /music-therapy/
   .search-bar button:hover {
     background-color: #555;
   }
+
+  .post-list {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .post-card {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .post-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: -0.3rem;
+  }
+
+  .post-description {
+    margin-top: 0.5rem;
+  }
+
+  .post-tags {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
 </style>
 
 <!-- JavaScript: Fetch from music.json -->
@@ -103,12 +126,12 @@ permalink: /music-therapy/
         } else {
           results.forEach(post => {
             resultsContainer.innerHTML += `
-              <article class="post-card" style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
+              <article class="post-card">
                 <h2><a href="${post.url}">${post.title}</a></h2>
-                <p style="margin: 0; font-size: 0.95rem;"><strong>Artist:</strong> ${post.artist}</p>
-                <p style="font-size: 0.9rem; color: #666;">${post.date}</p>
-                <p style="margin-top: 0.5rem;">${post.description}</p>
-                <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Theme:</strong> ${post.mood}</p>
+                <p class="post-meta"><strong>Artist:</strong> ${post.artist}</p>
+                <p class="post-date">${post.date}</p>
+                <p class="post-description">${post.description}</p>
+                <p class="post-tags"><strong>Theme:</strong> ${post.mood}</p>
               </article>
             `;
           });
