@@ -79,7 +79,7 @@ permalink: /music-therapy/
   }
 </style>
 
-<!-- JavaScript: Simple Client-Side Search -->
+<!-- JavaScript: Fetch from music.json -->
 <script>
   document.getElementById('music-search-form').addEventListener('submit', function (e) {
     e.preventDefault();
@@ -88,23 +88,34 @@ permalink: /music-therapy/
     const recentPostsSection = document.getElementById('music-posts-list');
     resultsContainer.innerHTML = '';
 
-    const posts = [...recentPostsSection.querySelectorAll('article')];
-    let matches = 0;
+    fetch('/music.json')
+      .then(response => response.json())
+      .then(data => {
+        const results = data.filter(post =>
+          post.title.toLowerCase().includes(input) ||
+          post.artist.toLowerCase().includes(input) ||
+          post.description.toLowerCase().includes(input) ||
+          post.mood.toLowerCase().includes(input)
+        );
 
-    posts.forEach(post => {
-      const text = post.innerText.toLowerCase();
-      if (text.includes(input)) {
-        resultsContainer.appendChild(post.cloneNode(true));
-        matches++;
-      }
-    });
+        if (results.length === 0) {
+          resultsContainer.innerHTML = '<p style="text-align: center; margin-top: 2rem;">No results found.</p>';
+        } else {
+          results.forEach(post => {
+            resultsContainer.innerHTML += `
+              <article class="post-card" style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
+                <h2><a href="${post.url}">${post.title}</a></h2>
+                <p style="margin: 0; font-size: 0.95rem;"><strong>Artist:</strong> ${post.artist}</p>
+                <p style="font-size: 0.9rem; color: #666;">${post.date}</p>
+                <p style="margin-top: 0.5rem;">${post.description}</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Theme:</strong> ${post.mood}</p>
+              </article>
+            `;
+          });
+        }
 
-    if (matches === 0) {
-      resultsContainer.innerHTML = '<p style="text-align: center; margin-top: 2rem;">No results found.</p>';
-    }
-
-    // Hide the recent posts section when searching
-    recentPostsSection.style.display = input.trim() === '' ? 'block' : 'none';
-    resultsContainer.scrollIntoView({ behavior: 'smooth' });
+        recentPostsSection.style.display = input.trim() === '' ? 'block' : 'none';
+        resultsContainer.scrollIntoView({ behavior: 'smooth' });
+      });
   });
 </script>
