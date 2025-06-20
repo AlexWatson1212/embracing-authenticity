@@ -9,29 +9,27 @@ permalink: /music-therapy/
   <p>Each post reflects how music can reveal what’s going on beneath the surface. These aren’t reviews — they’re emotional reflections through sound. Use the search bar below to explore by artist, theme, or feeling.</p>
 </section>
 
-<section>
+<form id="music-search-form" class="search-bar" role="search">
   <input
     type="text"
-    id="search-input"
-    placeholder="Search by artist, song, or theme..."
-    style="width: 100%; padding: 1rem; font-size: 1rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
+    id="music-search-input"
+    placeholder="Search by artist, theme, or feeling..."
+    aria-label="Search music therapy posts"
   />
-  <button
-    id="search-button"
-    style="width: 100%; padding: 0.75rem; font-size: 1rem; background-color: #333; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
-  >
-    Search
-  </button>
-</section>
+  <button type="submit">Search</button>
+</form>
 
-<section id="music-posts-list" style="margin-top: 2rem;">
-  {% assign sorted_music = site.music_music | sort: "date" | reverse %}
-  {% for post in sorted_music limit: 12 %}
-    <article class="post" style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
+<section id="music-search-results"></section>
+
+<section class="recent-posts" style="margin-top: 3rem;">
+  <h3 style="text-align: center; margin-bottom: 1.5rem;">Recent Music Reflections</h3>
+  {% assign music_posts = site.categories.music-therapy | sort: "date" | reverse %}
+  {% for post in music_posts limit:12 %}
+    <article class="post-card" style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
       {% if post.thumbnail %}
         <img src="{{ post.thumbnail }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; margin-bottom: 0.75rem;" />
       {% endif %}
-      <h2 style="margin-bottom: 0.3rem;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p style="margin: 0; font-size: 0.95rem;"><strong>Artist:</strong> {{ post.artist }}</p>
       <p style="font-size: 0.9rem; color: #666;">{{ post.date | date: "%B %d, %Y" }}</p>
       <p style="margin-top: 0.5rem;">{{ post.description }}</p>
@@ -42,19 +40,59 @@ permalink: /music-therapy/
   {% endfor %}
 </section>
 
+<style>
+  .search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+
+  .search-bar input[type="text"] {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+  }
+
+  .search-bar button {
+    padding: 0.75rem 1.25rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+
+  .search-bar button:hover {
+    background-color: #555;
+  }
+</style>
+
 <script>
-  document.getElementById('search-button').addEventListener('click', function () {
-    const input = document.getElementById('search-input').value.toLowerCase();
-    const posts = document.querySelectorAll('#music-posts-list article');
+  document.getElementById('music-search-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const input = document.getElementById('music-search-input').value.toLowerCase();
+    const posts = document.querySelectorAll('.recent-posts article');
+    const resultsContainer = document.getElementById('music-search-results');
+    resultsContainer.innerHTML = '';
 
-    posts.forEach((post) => {
-      post.style.display = post.innerText.toLowerCase().includes(input) ? '' : 'none';
+    let matches = 0;
+    posts.forEach(post => {
+      const text = post.innerText.toLowerCase();
+      if (text.includes(input)) {
+        resultsContainer.appendChild(post.cloneNode(true));
+        matches++;
+      }
     });
-  });
 
-  document.getElementById('search-input').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      document.getElementById('search-button').click();
+    if (matches === 0) {
+      resultsContainer.innerHTML = '<p style="text-align: center; margin-top: 2rem;">No results found.</p>';
+    }
+
+    // Scroll to results if found
+    if (input.trim() !== '') {
+      resultsContainer.scrollIntoView({ behavior: 'smooth' });
     }
   });
 </script>
