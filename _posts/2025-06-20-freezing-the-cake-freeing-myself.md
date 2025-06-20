@@ -83,4 +83,5 @@ One slice at a time.
 
 ---
 
-![A slice of lemon cake on a white plate](/assets/images/lemon-cake.jpg){: .img-fluid }
+<img src="/assets/images/lemon-cake.jpg" alt="A slice of lemon cake on a white plate" style="max-width: 100%; height: auto; display: block; margin: 1rem auto;" />
+
