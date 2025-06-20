@@ -6,9 +6,14 @@ permalink: /music-therapy/
 
 <section class="blog-intro">
   <h2>Music Therapy: A Soundtrack to Your Inner World</h2>
-  <p>Each post reflects how music can reveal what’s going on beneath the surface. These aren’t reviews — they’re emotional reflections through sound. Use the search bar below to explore by artist, theme, or feeling.</p>
+  <p>
+    Each post reflects how music can reveal what’s going on beneath the surface.
+    These aren’t reviews — they’re emotional reflections through sound.
+    Use the search bar below to explore by artist, theme, or feeling.
+  </p>
 </section>
 
+<!-- Search Bar -->
 <form id="music-search-form" class="search-bar" role="search">
   <input
     type="text"
@@ -19,18 +24,22 @@ permalink: /music-therapy/
   <button type="submit">Search</button>
 </form>
 
+<!-- Search Results -->
 <section id="music-search-results"></section>
 
-<section class="recent-posts" style="margin-top: 3rem;">
+<!-- Most Recent Posts -->
+<section id="music-posts-list" class="recent-posts" style="margin-top: 3rem;">
   <h3 style="text-align: center; margin-bottom: 1.5rem;">Recent Music Reflections</h3>
-  {% assign music_posts = site.categories.music-therapy | sort: "date" | reverse %}
-  {% for post in music_posts limit:12 %}
+  {% assign music_posts = site.music_music | sort: "date" | reverse %}
+  {% for post in music_posts limit: 12 %}
     <article class="post-card" style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
       {% if post.thumbnail %}
         <img src="{{ post.thumbnail }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; margin-bottom: 0.75rem;" />
       {% endif %}
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p style="margin: 0; font-size: 0.95rem;"><strong>Artist:</strong> {{ post.artist }}</p>
+      {% if post.artist %}
+        <p style="margin: 0; font-size: 0.95rem;"><strong>Artist:</strong> {{ post.artist }}</p>
+      {% endif %}
       <p style="font-size: 0.9rem; color: #666;">{{ post.date | date: "%B %d, %Y" }}</p>
       <p style="margin-top: 0.5rem;">{{ post.description }}</p>
       {% if post.mood %}
@@ -40,6 +49,7 @@ permalink: /music-therapy/
   {% endfor %}
 </section>
 
+<!-- Styling for Search Bar -->
 <style>
   .search-bar {
     display: flex;
@@ -69,15 +79,18 @@ permalink: /music-therapy/
   }
 </style>
 
+<!-- JavaScript: Simple Client-Side Search -->
 <script>
   document.getElementById('music-search-form').addEventListener('submit', function (e) {
     e.preventDefault();
     const input = document.getElementById('music-search-input').value.toLowerCase();
-    const posts = document.querySelectorAll('.recent-posts article');
     const resultsContainer = document.getElementById('music-search-results');
+    const recentPostsSection = document.getElementById('music-posts-list');
     resultsContainer.innerHTML = '';
 
+    const posts = [...recentPostsSection.querySelectorAll('article')];
     let matches = 0;
+
     posts.forEach(post => {
       const text = post.innerText.toLowerCase();
       if (text.includes(input)) {
@@ -90,9 +103,8 @@ permalink: /music-therapy/
       resultsContainer.innerHTML = '<p style="text-align: center; margin-top: 2rem;">No results found.</p>';
     }
 
-    // Scroll to results if found
-    if (input.trim() !== '') {
-      resultsContainer.scrollIntoView({ behavior: 'smooth' });
-    }
+    // Hide the recent posts section when searching
+    recentPostsSection.style.display = input.trim() === '' ? 'block' : 'none';
+    resultsContainer.scrollIntoView({ behavior: 'smooth' });
   });
 </script>

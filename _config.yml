@@ -33,6 +33,8 @@ collections:
   music_music:
     output: true
     permalink: /music-therapy/:title/
+    sort_by: date         # ✅ ensures music posts sort by date in Liquid
+    sort_order: descending
   pages:
     output: true
     permalink: /:name/
