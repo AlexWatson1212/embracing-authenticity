@@ -4,15 +4,15 @@ permalink: /music.json
 ---
 
 [
-  {% assign music_posts = site.music_music | sort: "date" | reverse %}
-  {% for post in music_posts %}
-    {
-      "title": {{ post.title | jsonify }},
-      "artist": {{ post.artist | default: "" | jsonify }},
-      "description": {{ post.description | default: "" | jsonify }},
-      "url": "{{ post.url }}",
-      "mood": {{ post.mood | join: " " | jsonify }},
-      "date": "{{ post.date | date: '%B %d, %Y' }}"
-    }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
+{% assign music_posts = site.music_music | sort: "date" | reverse %}
+{% for post in music_posts %}
+  {
+    "title": {{ post.title | jsonify }},
+    "artist": {{ post.artist | default: "" | jsonify }},
+    "mood": {{ post.mood | join: ", " | jsonify }},
+    "description": {{ post.description | default: "" | jsonify }},
+    "url": "{{ site.baseurl }}{{ post.url }}",
+    "date": "{{ post.date | date: '%B %d, %Y' }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
 ]
