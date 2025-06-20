@@ -6,6 +6,7 @@ description: "John Denver’s ‘Take Me Home, Country Roads’ feels like more 
 thumbnail: /images/posts/take-me-home.jpg
 tags: [music, belonging, nostalgia, emotional-resonance, inner-child]
 emotions: [longing, hope]
+categories: [music-therapy]
 ---
 
 <div class="video-wrapper">

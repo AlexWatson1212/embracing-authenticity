@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-afterlife.jpg
 date: 2025-06-09
 description: "An imagined track about what he might leave behind."
 youtube: "na"
+categories: [music-therapy]
 ---
 
 This track doesn’t exist. But it does in me.

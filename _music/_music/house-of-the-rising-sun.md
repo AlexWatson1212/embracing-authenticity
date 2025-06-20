@@ -6,6 +6,7 @@ description: "A reflection on generational pain, inherited grief, and the haunti
 thumbnail: /images/posts/howls-rising-sun.jpg
 tags: [music, grief, ancestral, reflection, healing]
 emotions: [grief, acceptance]
+categories: [music-therapy]
 ---
 
 <div class="video-wrapper">

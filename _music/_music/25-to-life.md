@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-25-to-life.jpg
 date: 2025-06-09
 description: "A song about toxic devotion—and finally walking away."
 youtube: "8aXHniHEtVg"
+categories: [music-therapy]
 ---
 
 This one felt like the moment you realise you’ve been imprisoned by your own loyalty.

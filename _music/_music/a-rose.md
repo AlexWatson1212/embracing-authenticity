@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-a-rose.jpg
 date: 2025-06-09
 description: "A goodbye letter that made me want to live better."
 youtube: "MLFho8QMj3I"
+categories: [music-therapy]
 ---
 
 This song felt like the moment before death—when you realise what actually mattered.

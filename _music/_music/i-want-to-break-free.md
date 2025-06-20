@@ -6,6 +6,7 @@ description: "Queen's anthem hits something deep inside me — the longing to li
 thumbnail: /images/posts/i-want-to-break-free.jpg
 tags: [music, emotional-resonance, liberation, grief, identity]
 emotions: [grief, freedom]
+categories: [music-therapy]
 ---
 
 <div class="video-wrapper">

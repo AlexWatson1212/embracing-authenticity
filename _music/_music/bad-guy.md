@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-bad-guy.jpg
 date: 2025-06-09
 description: "A haunting sequel to Stan that reveals the cycle of pain and retaliation."
 youtube: "Z9l1mWBt-Hs"
+categories: [music-therapy]
 ---
 
 This one gave me chills.

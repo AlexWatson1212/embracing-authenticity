@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-3am.jpg
 date: 2025-06-09
 description: "The sound of his demons talking when the world goes quiet."
 youtube: "1wYNFfgrXTI"
+categories: [music-therapy]
 ---
 
 Dark. Disturbing. Symbolic.

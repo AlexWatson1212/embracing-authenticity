@@ -6,6 +6,7 @@ description: "A reflection on why ACDC’s iconic anthem resonates with the resi
 thumbnail: /images/posts/back-in-black.jpg
 tags: [music, emotional-resonance, self-expression, grief, resilience]
 emotions: [resilience, acceptance]
+categories: [music-therapy]
 ---
 
 <div class="video-wrapper">

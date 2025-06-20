@@ -6,6 +6,7 @@ description: "My personal reflection on why Let It Be by The Beatles resonates s
 thumbnail: /images/posts/let-it-be.jpg
 tags: [music, healing, surrender, acceptance, emotional-resonance]
 emotions: [acceptance, peace]
+categories: [music-therapy]
 ---
 
 There’s something about *Let It Be* that reaches a place inside me I usually try to keep hidden.  

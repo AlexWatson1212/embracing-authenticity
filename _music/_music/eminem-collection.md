@@ -6,6 +6,7 @@ mood: ['anger', 'grief', 'fatherhood', 'defiance', 'truth', 'healing']
 thumbnail: /images/music/eminem-collection.jpg
 date: 2025-06-09
 description: "A full reflection on the songs by Eminem that mirrored my pain, fatherhood, rage, and survival."
+categories: [music-therapy]
 ---
 
 Eminem’s music wasn’t background noise—it was *a lifeline*.  

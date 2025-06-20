@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-beautiful-pain.jpg
 date: 2025-06-09
 description: "Grief and healing can co-exist. This song helped me see that."
 youtube: "ZThXAcwts_0"
+categories: [music-therapy]
 ---
 
 This song didn’t hit me right away.

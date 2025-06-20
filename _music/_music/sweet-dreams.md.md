@@ -6,6 +6,7 @@ description: "Eurythmics' 'Sweet Dreams' feels like an anthem for those of us wh
 thumbnail: /images/posts/sweet-dreams.jpg
 tags: [music, emotional-resonance, survival, longing, identity]
 emotions: [longing, resilience]
+categories: [music-therapy]
 ---
 
 <div class="video-wrapper">

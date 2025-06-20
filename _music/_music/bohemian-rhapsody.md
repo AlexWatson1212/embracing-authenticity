@@ -7,6 +7,7 @@ thumbnail: /images/music/queen-bohemian-rhapsody.jpg
 date: 2025-06-08
 description: "This song mirrored the chaos inside me—and gave it a soundtrack."
 youtube: "fJ9rUzIMcZQ"
+categories: [music-therapy]
 ---
 
 Bohemian Rhapsody always felt like the story of my inner world—so many voices, so many moods, all crashing together.

@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-no-apologies.jpg
 date: 2025-06-09
 description: "The song that reminded me I don’t need to shrink myself to be accepted."
 youtube: "N8T7uSvnYSk"
+categories: [music-therapy]
 ---
 
 There’s something deeply satisfying about a song that doesn’t try to please anyone.

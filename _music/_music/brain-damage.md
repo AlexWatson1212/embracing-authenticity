@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-brain-damage.jpg
 date: 2025-06-09
 description: "An exaggerated retelling that hit too close to home for comfort."
 youtube: "yHMSnEJqLsY"
+categories: [music-therapy]
 ---
 
 This song is laced with dark humor, but behind it is the sting of real childhood pain.

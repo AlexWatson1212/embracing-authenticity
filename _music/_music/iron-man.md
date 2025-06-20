@@ -6,6 +6,7 @@ description: "A misunderstood figure, punished for his pain — Iron Man is more
 thumbnail: /images/posts/iron-man.jpg
 tags: [music, trauma, childhood, projection, grief, misunderstood]
 emotions: [grief, loneliness]
+categories: [music-therapy]
 ---
 
 <div class="video-wrapper">

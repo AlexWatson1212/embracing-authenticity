@@ -6,6 +6,7 @@ description: "Some songs sound like war cries. Others feel like one. 'Seven Nati
 thumbnail: /images/posts/seven-nation-army.jpg
 tags: [music, identity, trauma, emotional-resilience, healing, defiance]
 emotions: [grief, resilience]
+categories: [music-therapy]
 ---
 
 <div class="video-wrapper">

@@ -6,6 +6,7 @@ description: "Toto’s ‘Hold the Line’ hits differently when you’ve loved 
 thumbnail: /images/posts/hold-the-line.jpg
 tags: [music, emotional-resonance, love, boundaries, relationships]
 emotions: [resilience, boundaries]
+categories: [music-therapy]
 ---
 
 <div class="video-wrapper">

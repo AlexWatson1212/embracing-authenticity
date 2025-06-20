@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-castle.jpg
 date: 2025-06-09
 description: "A letter to his daughter that felt like one to mine too."
 youtube: "LdOM0x0XDMo"
+categories: [music-therapy]
 ---
 
 This one broke me open.

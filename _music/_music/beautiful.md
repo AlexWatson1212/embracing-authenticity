@@ -7,6 +7,7 @@ thumbnail: /images/music/eminem-beautiful.jpg
 date: 2025-06-09
 description: "The whisper that said, 'You are not broken beyond repair.'"
 youtube: "lgT1AidzRWM"
+categories: [music-therapy]
 ---
 
 When I felt like a ghost of myself, this song reminded me there was still something worth saving.

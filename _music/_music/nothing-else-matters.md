@@ -6,6 +6,7 @@ description: "What Metallica’s Nothing Else Matters means to me — the quiet 
 thumbnail: /images/posts/nothing-else-matters.jpg
 tags: [music, vulnerability, intimacy, healing, truth]
 emotions: [grief, love]
+categories: [music-therapy]
 ---
 
 <!-- Metallica - Nothing Else Matters Video -->
