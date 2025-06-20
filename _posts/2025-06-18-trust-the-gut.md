@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trust the Gut, Even When It Feels Dirty
+title: Trust the Gut
 date: 2025-06-18
 tags: [intuition, trust, poker, emotional-awareness]
 description: A painful hand taught me something far more important than strategy: how to trust my gut, not just in poker, but in life.
