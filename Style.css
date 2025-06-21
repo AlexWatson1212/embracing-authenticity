@@ -1122,3 +1122,35 @@ nav a:active {
 .search-bar button:hover {
   background-color: #555;
 }
+.main-nav a:focus {
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.main-nav a {
+  position: relative;
+  text-decoration: none;
+  color: #fff; /* or whatever your current nav link color is */
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #f0c674; /* a soft golden highlight or change this to your accent color */
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #f0c674; /* same accent color */
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after,
+.main-nav a:focus::after {
+  width: 100%;
+}
