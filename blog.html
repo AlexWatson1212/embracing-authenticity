@@ -25,8 +25,8 @@ pagination:
 
 <!-- Why This Works Link -->
 <p style="margin-bottom: 1.5rem; text-align: center;">
-  <a href="/blog/why-writing-helps-us-heal.html" style="font-weight: 500; text-decoration: underline;">
-    Want to know why this helps? Read the science behind expressive writing.
+  <a href="/blog/why-writing-helps-us-heal.html" class="why-link">
+    ✍️ Want to know why this helps? Read the science behind expressive writing.
   </a>
 </p>
 
@@ -73,6 +73,19 @@ pagination:
     <a href="#" class="scroll-link">Back to Top ↑</a>
   </div>
 </section>
+
+<style>
+  .why-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .why-link:hover {
+    color: #ff6600;
+  }
+</style>
 
 <script>
   const scrollLinks = document.querySelectorAll('.scroll-link');
