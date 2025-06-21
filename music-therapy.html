@@ -4,141 +4,113 @@ title: Music Therapy
 permalink: /music-therapy/
 ---
 
-<section class="blog-intro">
-  <h2>Music Therapy: A Soundtrack to Your Inner World</h2>
+<section class="blog-intro fade-in">
+  <h2>{{ page.title }}</h2>
   <p>
     Each post reflects how music can reveal what’s going on beneath the surface.
     These aren’t reviews — they’re emotional reflections through sound.
-    Use the search bar below to explore by artist, theme, or feeling.
+    <a href="#musicPosts" class="scroll-link">Click here to skip to the songs</a> or search below.
   </p>
 </section>
 
-<!-- Search Bar -->
-<form id="music-search-form" class="search-bar" role="search">
-  <input
-    type="text"
-    id="music-search-input"
-    placeholder="Search by artist, theme, or feeling..."
-    aria-label="Search music therapy posts"
-  />
-  <button type="submit">Search</button>
-</form>
+<!-- Disclaimer -->
+<p style="font-style: italic; margin-bottom: 1rem; color: #555;">
+  These reflections are just me exploring what music means to me. You might find your own truth in them too.
+</p>
 
-<!-- Search Results -->
-<section id="music-search-results"></section>
+<!-- Search -->
+<div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+  <input type="text" id="music-search-input" placeholder="Search by artist, theme, or feeling..." style="flex: 1; padding: 8px;" />
+  <button id="music-search-button" style="padding: 8px 12px;">Search</button>
+</div>
+<ul id="music-search-results"></ul>
 
-<!-- Most Recent Posts -->
-<section id="music-posts-list" class="post-list">
+<section class="blog-list" id="musicPosts">
   {% assign music_posts = site.music_music | sort: "date" | reverse %}
   {% for post in music_posts limit: 12 %}
-    <article class="post-card">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {% if post.artist %}
-        <p class="post-meta"><strong>Artist:</strong> {{ post.artist }}</p>
-      {% endif %}
-      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-      <p class="post-description">{{ post.description }}</p>
-      {% if post.mood %}
-        <p class="post-tags"><strong>Theme:</strong> {{ post.mood | join: ", " }}</p>
-      {% endif %}
+    <article class="blog-card fade-in">
+      <div class="blog-card-content">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p class="excerpt">{{ post.description }}</p>
+
+        {% if post.artist %}
+          <p><strong>Artist:</strong> {{ post.artist }}</p>
+        {% endif %}
+
+        {% if post.mood %}
+          <div class="tag-list">
+            {% assign moods = post.mood | split: "," %}
+            {% assign shown = moods | slice: 0, 2 %}
+            {% for tag in shown %}
+              <span class="tag">{{ tag | strip | capitalize }}</span>
+            {% endfor %}
+            {% if moods.size > 2 %}
+              <span class="tag">+{{ moods.size | minus: 2 }} more</span>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <a href="{{ post.url }}" class="read-more">Read More →</a>
+      </div>
     </article>
   {% endfor %}
 </section>
 
-<!-- Styling for Blog Layout -->
-<style>
-  .search-bar {
-    display: flex;
-    max-width: 600px;
-    margin: 2rem auto;
-  }
-
-  .search-bar input[type="text"] {
-    flex: 1;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    font-size: 1rem;
-  }
-
-  .search-bar button {
-    padding: 0.75rem 1.25rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-  }
-
-  .search-bar button:hover {
-    background-color: #555;
-  }
-
-  .post-list {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
-
-  .post-card {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .post-date {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: -0.3rem;
-  }
-
-  .post-description {
-    margin-top: 0.5rem;
-  }
-
-  .post-tags {
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-  }
-</style>
-
-<!-- JavaScript: Fetch from music.json -->
+<!-- Fade-in + Search Script -->
 <script>
-  document.getElementById('music-search-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const input = document.getElementById('music-search-input').value.toLowerCase();
-    const resultsContainer = document.getElementById('music-search-results');
-    const recentPostsSection = document.getElementById('music-posts-list');
-    resultsContainer.innerHTML = '';
+  const musicInput = document.getElementById("music-search-input");
+  const musicButton = document.getElementById("music-search-button");
+  const musicResults = document.getElementById("music-search-results");
+  const musicList = document.getElementById("musicPosts");
 
-    fetch('/music.json')
-      .then(response => response.json())
+  musicButton.addEventListener("click", () => {
+    const input = musicInput.value.toLowerCase().trim();
+    musicResults.innerHTML = "";
+
+    fetch("/music.json")
+      .then(res => res.json())
       .then(data => {
-        const results = data.filter(post =>
+        const filtered = data.filter(post =>
           post.title.toLowerCase().includes(input) ||
           post.artist.toLowerCase().includes(input) ||
           post.description.toLowerCase().includes(input) ||
           post.mood.toLowerCase().includes(input)
         );
 
-        if (results.length === 0) {
-          resultsContainer.innerHTML = '<p style="text-align: center; margin-top: 2rem;">No results found.</p>';
+        if (filtered.length === 0) {
+          musicResults.innerHTML = "<p style='text-align:center;margin-top:2rem;'>No results found.</p>";
         } else {
-          results.forEach(post => {
-            resultsContainer.innerHTML += `
-              <article class="post-card">
-                <h2><a href="${post.url}">${post.title}</a></h2>
-                <p class="post-meta"><strong>Artist:</strong> ${post.artist}</p>
-                <p class="post-date">${post.date}</p>
-                <p class="post-description">${post.description}</p>
-                <p class="post-tags"><strong>Theme:</strong> ${post.mood}</p>
+          filtered.forEach(post => {
+            musicResults.innerHTML += `
+              <article class="blog-card fade-in">
+                <div class="blog-card-content">
+                  <h3><a href="${post.url}">${post.title}</a></h3>
+                  <p class="post-date">${post.date}</p>
+                  <p class="excerpt">${post.description}</p>
+                  ${post.artist ? `<p><strong>Artist:</strong> ${post.artist}</p>` : ""}
+                  ${post.mood ? `<div class="tag-list">${post.mood.split(",").slice(0, 2).map(tag => `<span class="tag">${tag.trim()}</span>`).join("")}${post.mood.split(",").length > 2 ? `<span class="tag">+${post.mood.split(",").length - 2} more</span>` : ""}</div>` : ""}
+                  <a href="${post.url}" class="read-more">Read More →</a>
+                </div>
               </article>
             `;
           });
         }
 
-        recentPostsSection.style.display = input.trim() === '' ? 'block' : 'none';
-        resultsContainer.scrollIntoView({ behavior: 'smooth' });
+        musicList.style.display = input === "" ? "block" : "none";
+        musicResults.scrollIntoView({ behavior: "smooth" });
       });
   });
+
+  // Optional: Fade-in Animation Support
+  const faders = document.querySelectorAll(".fade-in");
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("in-view");
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.1 });
+
+  faders.forEach(fader => observer.observe(fader));
 </script>
