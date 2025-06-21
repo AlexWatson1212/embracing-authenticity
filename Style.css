@@ -1158,3 +1158,14 @@ nav a:active {
   outline: none;
   box-shadow: none;
 }
+.main-nav a:focus,
+.main-nav a:focus-visible,
+.main-nav a:target {
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+.main-nav a {
+  background: none !important;
+  border: none !important;
+}
