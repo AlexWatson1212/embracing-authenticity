@@ -1154,3 +1154,7 @@ nav a:active {
 .main-nav a:focus::after {
   width: 100%;
 }
+.main-nav a:focus {
+  outline: none;
+  box-shadow: none;
+}
