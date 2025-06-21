@@ -30,6 +30,19 @@ It’s helped me rediscover parts of myself—memories and feelings held in my n
 
 ---
 
+There’s science behind this too.
+
+Music activates the amygdala and hippocampus—regions of the brain tied to emotion and memory.  
+That’s why a single melody can bring back not just a moment, but a whole emotional landscape.  
+Studies in neuroscience suggest that music can even help regulate the autonomic nervous system, soothing us when we’re dysregulated or overwhelmed.
+
+In trauma research, music is seen as a way to access “implicit memory” — experiences that are stored in the body rather than in words.  
+When talk therapy isn’t enough, music becomes a bridge.  
+It doesn’t ask us to explain—it just lets us feel.  
+And sometimes, that’s the most therapeutic thing of all.
+
+---
+
 Looking back now, I realise just how devastatingly lonely my childhood really was.  
 I used to dance to keep from falling apart.  
 I used to convince myself I was loved when my body knew I wasn’t.  
@@ -43,7 +56,10 @@ It held it for me until I was ready to return to it with more compassion.
 Music, to me, is one of the most beautiful forms of human communication.  
 It doesn’t need explanation.  
 It just *is*—it bypasses logic and goes straight to the place where the soul lives.  
-It unearths something primal in us. Our power to feel. Our capacity to love. Our connection to ourselves and each other.
+It unearths something primal in us.  
+Our power to feel.  
+Our capacity to love.  
+Our connection to ourselves and each other.
 
 This has existed for thousands, maybe millions of years—long before this capitalist machine we’re all navigating now.  
 Music is older than shame.  
