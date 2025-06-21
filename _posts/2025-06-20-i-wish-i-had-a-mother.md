@@ -3,7 +3,7 @@ layout: post
 title: I Wish I Had a Mother
 date: 2025-06-20
 tags: mother wound, grief, therapy
-description: In today’s therapy session, I touched the raw grief of something I’ve always carried but rarely said aloud: I wish I had a mother.
+description: In today’s therapy session, I touched the raw grief of something I’ve always carried but rarely said aloud
 emotions: [grief, longing]
 ---
 
