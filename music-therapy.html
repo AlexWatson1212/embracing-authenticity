@@ -38,19 +38,6 @@ permalink: /music-therapy/
           <p><strong>Artist:</strong> {{ post.artist }}</p>
         {% endif %}
 
-        {% if post.mood %}
-          <div class="tag-list">
-            {% assign moods = post.mood | split: "," %}
-            {% assign shown = moods | slice: 0, 2 %}
-            {% for tag in shown %}
-              <span class="tag">{{ tag | strip | capitalize }}</span>
-            {% endfor %}
-            {% if moods.size > 2 %}
-              <span class="tag">+{{ moods.size | minus: 2 }} more</span>
-            {% endif %}
-          </div>
-        {% endif %}
-
         <a href="{{ post.url }}" class="read-more">Read More →</a>
       </div>
     </article>
@@ -89,7 +76,6 @@ permalink: /music-therapy/
                   <p class="post-date">${post.date}</p>
                   <p class="excerpt">${post.description}</p>
                   ${post.artist ? `<p><strong>Artist:</strong> ${post.artist}</p>` : ""}
-                  ${post.mood ? `<div class="tag-list">${post.mood.split(",").slice(0, 2).map(tag => `<span class="tag">${tag.trim()}</span>`).join("")}${post.mood.split(",").length > 2 ? `<span class="tag">+${post.mood.split(",").length - 2} more</span>` : ""}</div>` : ""}
                   <a href="${post.url}" class="read-more">Read More →</a>
                 </div>
               </article>
