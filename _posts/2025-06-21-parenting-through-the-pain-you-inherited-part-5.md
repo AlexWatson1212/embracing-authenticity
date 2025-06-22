@@ -1,7 +1,7 @@
 ---
-filename: 2025-06-21-parenting-through-the-pain-part-5.md
+filename: 2025-06-21-parenting-through-part-5.md
 layout: post
-title: Parenting Through the Pain You Inherited – Part 5
+title: Parenting Through – Part 5
 date: 2025-06-21
 tags: parenting, repair, vulnerability
 description: No one breaks the cycle without breaking down sometimes. But the difference now is: I repair.

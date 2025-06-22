@@ -1,7 +1,7 @@
 ---
-filename: 2025-06-21-parenting-through-the-pain-part-1.md
+filename: 2025-06-21-parenting-through-part-1.md
 layout: post
-title: Parenting Through the Pain You Inherited – Part 1
+title: Parenting Through – Part 1
 date: 2025-06-21
 tags: parenting, fatherhood, generational trauma
 description: This isn’t a theory. It’s a lived moment — standing in the emotional weight of parenting, and suddenly seeing my father not as the man who failed me, but as someone who didn’t have the strength to keep trying.

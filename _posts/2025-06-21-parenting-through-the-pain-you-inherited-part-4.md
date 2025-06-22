@@ -1,7 +1,7 @@
 ---
-filename: 2025-06-21-parenting-through-the-pain-part-4.md
+filename: 2025-06-21-parenting-through-part-4.md
 layout: post
-title: Parenting Through the Pain You Inherited – Part 4
+title: Parenting Through – Part 4
 date: 2025-06-21
 tags: parenting, joy, healing
 description: When the weight lifts, even just a little, something unexpected starts to grow in the space it left behind — joy.

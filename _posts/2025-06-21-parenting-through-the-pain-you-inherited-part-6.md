@@ -1,7 +1,7 @@
 ---
-filename: 2025-06-21-parenting-through-the-pain-part-6.md
+filename: 2025-06-21-parenting-trhough-part-6.md
 layout: post
-title: Parenting Through the Pain You Inherited – Part 6
+title: Parenting Through– Part 6
 date: 2025-06-21
 tags: parenting, perseverance, self-compassion
 description: There’s no neat bow at the end of this journey — just a quiet truth: I’m still here. I’m still trying. And for today, that’s enough.
