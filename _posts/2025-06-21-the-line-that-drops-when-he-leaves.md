@@ -1,7 +1,7 @@
 ---
 filename: 2025-06-21-the-line-that-drops-when-he-leaves.md
 layout: post
-title: When the Line That Drops
+title: When the Line Drops
 date: 2025-06-21
 tags: nervous system, parenting, grief
 description: I didn’t even need to say anything today. My body told the truth for me. The graph says it all.
