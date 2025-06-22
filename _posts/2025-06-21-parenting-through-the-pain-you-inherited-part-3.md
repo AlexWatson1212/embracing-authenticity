@@ -1,7 +1,7 @@
 ---
-filename: 2025-06-21-parenting-through-the-pain-you-inherited-part-3.md
+filename: 2025-06-21-parenting-through-the-pain-part-3.md
 layout: post
-title: Parenting Through the Pain You Inherited – Part 3: The Voice That Says I Should Be Able to Handle This
+title: Parenting Through the Pain You Inherited – Part 3
 date: 2025-06-21
 tags: parenting, guilt, self-worth
 description: Even after making the right choice, the guilt doesn’t disappear. Part 3 explores the inner voice that tells me I should be able to do more — and why I’m learning to ignore it.

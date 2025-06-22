@@ -1,7 +1,7 @@
 ---
-filename: 2025-06-21-parenting-through-the-pain-you-inherited-part-2.md
+filename: 2025-06-21-parenting-through-the-pain-part-2.md
 layout: post
-title: Parenting Through the Pain You Inherited – Part 2: The Weight of What No One Sees
+title: Parenting Through the Pain You Inherited – Part 2
 date: 2025-06-21
 tags: parenting, exhaustion, emotional labour
 description: Part 2 of this series explores the burnout that doesn’t come from chaos, but from the slow grind of invisible emotional labour — and why I’m choosing to change the structure of how I parent.
