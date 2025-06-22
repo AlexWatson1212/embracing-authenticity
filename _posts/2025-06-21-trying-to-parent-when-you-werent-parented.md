@@ -1,7 +1,7 @@
 ---
 filename: 2025-06-21-trying-to-parent-when-you-werent-parented.md
 layout: post
-title: Trying to Parent When You Weren’t ParentED
+title: Parenting When You Weren’t ParentED
 date: 2025-06-21
 tags: parenting, burnout, boundaries
 description: Some days you barely move, and still feel completely spent. This is one of those days — a quiet reminder of the emotional toll that isn’t always visible.

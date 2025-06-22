@@ -1,7 +1,7 @@
 ---
 filename: 2025-06-21-seeing-my-father-through-my-own-exhaustion.md
 layout: post
-title: Seeing My Father Through My Own Exhaustion
+title: Seeing My Father Through Exhaustion
 date: 2025-06-21
 tags: fatherhood, reflection, generational patterns
 description: In the depths of my own burnout, I caught a glimpse of the pain my father must have carried. It doesn’t justify everything — but it softens something.

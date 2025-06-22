@@ -1,7 +1,7 @@
 ---
 filename: 2025-06-21-what-matters-now-a-pause-thats-not-a-step-back.md
 layout: post
-title: What Matters Now: A Pause That’s Not a Step Back
+title: A Pause That’s Not a Step Back
 date: 2025-06-21
 tags: parenting, priorities, life choices
 description: Sometimes growth isn’t about pushing forward — it’s about choosing what matters most, even if that means stepping away from something you thought you needed.

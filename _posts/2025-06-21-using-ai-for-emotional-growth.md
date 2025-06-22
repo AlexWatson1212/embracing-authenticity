@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using AI as a Tool for Emotional Growth
+title: AI a Tool for Emotional Growth
 date: 2025-06-21
 tags: self-discovery, writing, technology
 description: How I use ChatGPT to write and reflect more efficiently — not as a shortcut to avoid emotions, but as a companion that helps me move through them with more clarity and agency.
