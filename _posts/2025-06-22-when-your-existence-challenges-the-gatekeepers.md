@@ -94,5 +94,21 @@ I’m proud of what I held.
 
 And I won’t shrink just to keep other people comfortable anymore.
 
+**Postscript:**  
+What’s funny is, that comment I made — about her being like a six-year-old going to a birthday party — that was a bid for connection.  
+It wasn’t meant as disrespect.  
+Just a moment of truth, said out loud.  
+But when I show up authentically like that, it stirs something in people — especially those who haven’t made peace with themselves.  
+Until I meet people who’ve done the work, I think I’ll keep making people uncomfortable.  
+And that’s okay.
+
 > **Reflective Question for You:**  
-> Have you ever felt quietly pushed out of a space — not for what you did, but simply for who you were?  
+> Have you ever felt quietly pushed out of a space — not for what you did, but simply for who you were?
+
+
+
+
+
+
+
+
