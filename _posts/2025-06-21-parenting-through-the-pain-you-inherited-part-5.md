@@ -4,7 +4,7 @@ layout: post
 title: Parenting Through – Part 5
 date: 2025-06-21
 tags: parenting, repair, vulnerability
-description: No one breaks the cycle without breaking down sometimes. But the difference now is: I repair.
+description: No one breaks the cycle without breaking down sometimes.I repair.
 emotions: [shame, love]
 ---
 

@@ -4,7 +4,7 @@ layout: post
 title: Parenting Through– Part 6
 date: 2025-06-21
 tags: parenting, perseverance, self-compassion
-description: There’s no neat bow at the end of this journey — just a quiet truth: I’m still here. I’m still trying. And for today, that’s enough.
+description: I’m still here. I’m still trying. And for today, that’s enough.
 emotions: [hope, acceptance]
 ---
 
