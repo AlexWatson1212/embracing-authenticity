@@ -4,7 +4,7 @@ layout: post
 title: The Year I Chose Myself
 date: 2025-06-24
 tags: soul-work, growth, education
-description: I thought getting rejected from Level 4 would break me — but instead, it gave me the clarity to choose something far more important: myself.
+description: I thought getting rejected from Level 4 would break me — but instead, it gave me the clarity to choose something far more important
 emotions: [grief, acceptance]
 ---
 

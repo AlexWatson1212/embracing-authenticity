@@ -5,7 +5,7 @@ Layout: post
 Title: The House You Build
 Date: 2025-06-23
 Tags: choice, identity, james-hollis
-Description: Every life is built — piece by piece — through our choices. The question is: are we building out of fear and habit, or from a place of freedom?
+Description: Every life is built — piece by piece — through our choices.
 Emotions: [grief, hope]
 
 
