@@ -1,9 +1,9 @@
 ---
 
-Filename: 2025-06-24-a-year-of-symphony.md
+Filename: 2025-06-25-a-year-of-symphony.md
 Layout: post
 Title: A Year of Symphony
-Date: 2025-06-24
+Date: 2025-06-25
 Tags: healing, inner-child, purpose
 Description: This isn't a pause from life — it's the life I’ve been working toward. A year to integrate, to slow down, to trust what I already know.
 Emotions: [acceptance, hope]
