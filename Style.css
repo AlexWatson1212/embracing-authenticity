@@ -1169,3 +1169,7 @@ nav a:active {
   background: none !important;
   border: none !important;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
