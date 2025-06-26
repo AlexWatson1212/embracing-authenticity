@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Poker Is Teaching Me I Deserve Good Things
-date: 2025-06-25
+date: 2025-06-26
 tags: poker, emotional-growth, self-worth, variance
 description: A reflection on how poker is helping me internalize that success isn't random — sometimes, I truly earned it.
 emotions: [hope, acceptance]
