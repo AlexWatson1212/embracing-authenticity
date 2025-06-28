@@ -4,7 +4,7 @@ title: For Victor
 permalink: /victor/
 ---
 
-# For Victor
+<h2>For Victor</h2>
 
 If you’ve found this page, it probably means I’m not around — or maybe I’m just not able to be there for you in the way you need. Either way, I wanted to make sure you had something from me. Something real. Something you can return to, when the world feels confusing or heavy or lonely.
 
@@ -23,14 +23,14 @@ Dad
 
 ---
 
-## Posts that mention you
+## Want to find more?
 
-Below are all the blog entries that include you — in thought, in memory, or in love.
+Most of this site is, in some way, about you — even if I don’t always say it directly.
 
-<ul>
-  {% for post in site.posts %}
-    {% if post.tags contains "victor" %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}</li>
-    {% endif %}
-  {% endfor %}
-</ul>
+If you're ever curious which posts mention you by name, go to the main [blog page](/blog/) and use the search bar. Just type:
+
+**`Victor`**
+
+That will show you everything where I've written your name — the memories, the thoughts, the love, the stories.
+
+Even when I didn’t know how to say it clearly… I was writing with you in mind.
