@@ -11,7 +11,6 @@ I took this photo today — a snapshot of my recent results. It was more than ju
 
 That with enough volume, even the hardest moments soften.
 
-![Poker graph progress]
 <picture>
   <source srcset="/assets/images/poker-graph-28-6-25.jpg" type="image/jpeg">
   <img src="/assets/images/poker-graph-28-6-25.jpg" alt="Poker Tournament Graph" style="max-width: 100%; height: auto; border-radius: 8px;">
