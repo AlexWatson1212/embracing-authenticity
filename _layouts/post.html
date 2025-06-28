@@ -78,14 +78,20 @@
 
   <!-- Mobile Menu Script -->
   <script>
-    const menuToggle = document.getElementById("mobile-menu-toggle");
-    const navMenu = document.getElementById("mobile-nav");
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector(".main-nav");
 
-    if (menuToggle && navMenu) {
-      menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("hidden");
-      });
-    }
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("hidden");
+          menuToggle.setAttribute(
+            "aria-expanded",
+            navMenu.classList.contains("hidden") ? "false" : "true"
+          );
+        });
+      }
+    });
   </script>
 
 </body>
