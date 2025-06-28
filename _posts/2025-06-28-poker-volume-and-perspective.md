@@ -11,7 +11,12 @@ I took this photo today — a snapshot of my recent results. It was more than ju
 
 That with enough volume, even the hardest moments soften.
 
-![Poker graph progress](/assets/images/pokergraph0628.jpg)
+![Poker graph progress]
+<picture>
+  <source srcset="/assets/images/poker-graph-28-6-25.jpg" type="image/jpeg">
+  <img src="/assets/images/poker-graph-28-6-25.jpg" alt="Poker Tournament Graph" style="max-width: 100%; height: auto; border-radius: 8px;">
+</picture>
+
 
 That last jagged edge — the mini downswing — felt *huge* in real time. It had me questioning things, wondering if I’d lost my edge or if I was pushing too hard. And yet… when I zoom out, when I *actually* look at the big picture — I see growth. I see that I’ve made money. That I’ve made it through.
 
