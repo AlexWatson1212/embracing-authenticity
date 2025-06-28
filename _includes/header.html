@@ -7,6 +7,7 @@
 
     <!-- Hamburger Menu Button -->
     <button
+      id="mobile-menu-toggle"
       class="menu-toggle"
       aria-label="Toggle navigation"
       aria-expanded="false"
@@ -15,7 +16,7 @@
     </button>
 
     <!-- Navigation -->
-    <nav class="main-nav" aria-label="Main navigation">
+    <nav id="mobile-nav" class="main-nav hidden" aria-label="Main navigation">
       <ul>
         <li><a href="/music-therapy" class="{% if page.url == '/music-therapy/' %}active{% endif %}">Music Therapy</a></li>
         <li><a href="/blog.html" class="{% if page.url == '/blog.html' %}active{% endif %}">Blog</a></li>

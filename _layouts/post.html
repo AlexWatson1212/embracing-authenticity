@@ -43,44 +43,48 @@
 
   <!-- Slideshow Script -->
   <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      const container = document.querySelector(".slideshow-container");
-      if (!container) return;
-      const slides = container.querySelectorAll(".mySlides");
-      const dots = container.querySelectorAll(".dot");
-
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].classList.remove("active");
-      }
-
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].classList.add("active");
-    }
-  </script>
-
-  <!-- Mobile Menu Script -->
-  <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navMenu = document.querySelector(".main-nav");
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        const container = document.querySelector(".slideshow-container");
+        if (!container) return;
+        const slides = container.querySelectorAll(".mySlides");
+        const dots = container.querySelectorAll(".dot");
+
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].classList.remove("active");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        if (dots.length > 0) {
+          dots[slideIndex - 1].classList.add("active");
+        }
+      }
+
+      // Attach slideshow functions globally if needed
+      window.plusSlides = plusSlides;
+      window.currentSlide = currentSlide;
+
+      // Mobile menu
+      const menuToggle = document.getElementById("mobile-menu-toggle");
+      const navMenu = document.getElementById("mobile-nav");
 
       if (menuToggle && navMenu) {
         menuToggle.addEventListener("click", () => {
