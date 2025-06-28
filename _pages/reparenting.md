@@ -5,7 +5,7 @@ permalink: /reparenting/
 description: A slow and sacred journey of becoming the parent you always needed.
 ---
 
-# Reparenting
+<h2>Reparenting</h2>
 
 **Reparenting** is the slow, compassionate process of becoming the caregiver you always needed.  
 It’s not about blaming our parents — it’s about understanding what we missed, and learning how to provide it for ourselves now.
