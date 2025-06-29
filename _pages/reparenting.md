@@ -118,10 +118,10 @@ And every word I publish, every layer I acknowledge, adds something solid and re
 > Maybe it’s less like building a tower…  
 > and more like uncovering one — brushing the dust off something ancient and sacred that’s been buried inside me.
 
-<div class="lego-animation-section">
+<div class="lego-animation-section" role="region" aria-label="LEGO-style healing animation">
   <h3>Your Healing in Progress</h3>
   <p>Each block represents a moment of care, growth, or healing.</p>
-  <div class="lego-silhouette">
+  <div class="lego-silhouette" role="img" aria-hidden="true">
     <!-- Animated blocks inside the silhouette -->
     <div class="block" style="top: 70%; left: 45%; animation-delay: 0s;"></div>
     <div class="block" style="top: 65%; left: 40%; animation-delay: 0.2s;"></div>
@@ -132,6 +132,9 @@ And every word I publish, every layer I acknowledge, adds something solid and re
     <div class="block" style="top: 50%; left: 50%; animation-delay: 1.2s;"></div>
     <div class="block" style="top: 45%; left: 45%; animation-delay: 1.4s;"></div>
   </div>
+  <noscript>
+    <p>This visual represents your healing journey. Enable JavaScript to see the animation.</p>
+  </noscript>
 </div>
 
 ---
@@ -141,17 +144,18 @@ And every word I publish, every layer I acknowledge, adds something solid and re
 You don’t need to do everything at once.  
 Start small. Come back often.
 
-<section class="reparenting-tools">
+<section class="reparenting-tools" role="region" aria-label="Self-reparenting tools">
+
   <!-- DAILY RITUAL TRACKER -->
   <div class="tracker">
     <h2>🌊 Daily Ritual Tracker</h2>
     <p>Tick off small moments of care each day. Build your inner foundation, brick by brick.</p>
     <form id="daily-checklist">
-      <label><input type="checkbox" /> Morning check-in completed</label><br>
-      <label><input type="checkbox" /> Gentle phrase spoken</label><br>
-      <label><input type="checkbox" /> Body scan or grounding exercise</label><br>
-      <label><input type="checkbox" /> One small act of self-kindness</label><br>
-      <label><input type="checkbox" /> Evening reflection or journal note</label>
+      <label><input type="checkbox"> Morning check-in completed</label><br>
+      <label><input type="checkbox"> Gentle phrase spoken</label><br>
+      <label><input type="checkbox"> Body scan or grounding exercise</label><br>
+      <label><input type="checkbox"> One small act of self-kindness</label><br>
+      <label><input type="checkbox"> Evening reflection or journal note</label>
     </form>
     <p class="note">(Note: This tracker resets on page refresh. A full version with saving is coming soon.)</p>
   </div>
@@ -160,8 +164,8 @@ Start small. Come back often.
   <div class="video-checkin">
     <h2>🎥 Guided Check-In Video</h2>
     <p>This video was created to offer a simple way to pause, breathe, and reconnect with yourself. You can return to it anytime you need a gentle reminder of your worth.</p>
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-      <iframe src="https://www.youtube.com/embed/8gLpFjzHzYQ" frameborder="0" allowfullscreen style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"></iframe>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+      <iframe src="https://www.youtube.com/embed/8gLpFjzHzYQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
   </div>
 </section>

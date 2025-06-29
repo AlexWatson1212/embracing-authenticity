@@ -1238,3 +1238,67 @@ img {
     transform: scale(1) translateY(0);
   }
 }
+.lego-animation-section {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: var(--color-light-bg, #fdfdfd);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+}
+
+.lego-animation-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-dark, #153250);
+}
+
+.lego-animation-section p {
+  font-size: 1rem;
+  color: var(--color-text-mid, #444);
+  margin-bottom: 2rem;
+}
+
+.lego-silhouette {
+  position: relative;
+  width: 180px;
+  height: 400px;
+  margin: 0 auto;
+  background: url('/assets/images/lego-silhouette-outline.png') no-repeat center center;
+  background-size: contain;
+}
+
+.block {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background-color: var(--color-accent, #f89e4f);
+  border-radius: 4px;
+  opacity: 0;
+  animation: riseIn 1s ease-out forwards;
+}
+
+@keyframes riseIn {
+  0% {
+    transform: translateY(20px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Scaling */
+@media screen and (max-width: 480px) {
+  .lego-silhouette {
+    width: 120px;
+    height: 280px;
+  }
+
+  .block {
+    width: 20px;
+    height: 14px;
+  }
+}
