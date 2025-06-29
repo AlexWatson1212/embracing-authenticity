@@ -1173,3 +1173,68 @@ img {
   max-width: 100%;
   height: auto;
 }
+.lego-widget {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+}
+
+.lego-widget-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lego-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.lego-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.lego-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.lego-animation-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f7f7f7;
+}
+
+.lego-silhouette {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  margin: 2rem auto;
+  background: url('/assets/images/reparenting-silhouette-base.png') no-repeat center center;
+  background-size: contain;
+}
+
+.block {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background-color: #f9a825;
+  opacity: 0;
+  animation: buildBlock 0.4s forwards;
+}
+
+@keyframes buildBlock {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

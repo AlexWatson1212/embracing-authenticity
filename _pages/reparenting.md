@@ -118,6 +118,22 @@ And every word I publish, every layer I acknowledge, adds something solid and re
 > Maybe it’s less like building a tower…  
 > and more like uncovering one — brushing the dust off something ancient and sacred that’s been buried inside me.
 
+<div class="lego-animation-section">
+  <h3>Your Healing in Progress</h3>
+  <p>Each block represents a moment of care, growth, or healing.</p>
+  <div class="lego-silhouette">
+    <!-- Animated blocks inside the silhouette -->
+    <div class="block" style="top: 70%; left: 45%; animation-delay: 0s;"></div>
+    <div class="block" style="top: 65%; left: 40%; animation-delay: 0.2s;"></div>
+    <div class="block" style="top: 65%; left: 50%; animation-delay: 0.4s;"></div>
+    <div class="block" style="top: 60%; left: 45%; animation-delay: 0.6s;"></div>
+    <div class="block" style="top: 55%; left: 45%; animation-delay: 0.8s;"></div>
+    <div class="block" style="top: 50%; left: 40%; animation-delay: 1.0s;"></div>
+    <div class="block" style="top: 50%; left: 50%; animation-delay: 1.2s;"></div>
+    <div class="block" style="top: 45%; left: 45%; animation-delay: 1.4s;"></div>
+  </div>
+</div>
+
 ---
 
 ## 🧰 Reparenting Tools
@@ -148,37 +164,6 @@ Start small. Come back often.
       <iframe src="https://www.youtube.com/embed/8gLpFjzHzYQ" frameborder="0" allowfullscreen style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
   </div>
-
-  <!-- LEGO TOWER ANIMATION -->
-  <div class="lego-metaphor">
-    <h2>🧱 Rebuilding Your Inner Tower</h2>
-    <p>Each time you show up for yourself, you place another brick. Click below to symbolically add a block to your inner structure.</p>
-    <div id="lego-tower">
-      <div class="block"></div>
-    </div>
-    <button onclick="addBlock()">Add Brick</button>
-    <p class="note">(Visual metaphor only — your real tower is inside you.)</p>
-  </div>
-
-  <style>
-    .reparenting-tools { padding: 2rem 0; border-top: 1px solid #ccc; margin-top: 2rem; }
-    .tracker, .video-checkin, .lego-metaphor { margin-bottom: 2rem; }
-    #daily-checklist label { display: block; margin: 0.5rem 0; }
-    #lego-tower { width: 100%; min-height: 120px; background: #f4f4f4; padding: 10px; display: flex; flex-wrap: wrap; border: 1px solid #ddd; margin-bottom: 1rem; }
-    .block { width: 20px; height: 20px; background-color: #c58f43; margin: 2px; border-radius: 3px; transition: transform 0.2s ease; }
-    button { padding: 0.5rem 1rem; background: #444; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
-    button:hover { background: #222; }
-    .note { font-size: 0.85rem; color: #666; }
-  </style>
-
-  <script>
-    function addBlock() {
-      const tower = document.getElementById('lego-tower');
-      const block = document.createElement('div');
-      block.classList.add('block');
-      tower.appendChild(block);
-    }
-  </script>
 </section>
 
 ---
@@ -202,5 +187,3 @@ You don’t have to be perfect.
 You just have to keep showing up.
 
 > *“You’re not behind. You’re rebuilding.”*
-
----
