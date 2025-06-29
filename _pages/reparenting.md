@@ -5,7 +5,7 @@ title: Reparenting
 description: Tools, rituals, and resources to help you reparent your inner child and grow a wise, loving inner adult.
 ---
 
-# Reparenting
+<h2>Reparenting</h2>
 
 **Reparenting** is the slow, compassionate process of becoming the caregiver you always needed.
 
@@ -189,7 +189,7 @@ Start small. Come back often.
 Explore reflections, stories, and practices that deepen this journey:
 
 <ul class="blog-card-list">
-  <li><a href="/blog/reparenting-when-no-one-did">Reparenting When No One Ever Did</a></li>
+  <li><a href="/blog/reparenting-when-no-one-ever-did/">Reparenting When No One Ever Did</a></li>
   <li><a href="/blog/the-voice-inside-me">The Voice Inside Me</a></li>
   <li><a href="/blog/building-the-wise-adult">Building the Wise Adult</a></li>
 </ul>
