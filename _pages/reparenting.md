@@ -140,14 +140,13 @@ Start small. Come back often.
     <p class="note">(Note: This tracker resets on page refresh. A full version with saving is coming soon.)</p>
   </div>
 
-  <!-- AUDIO CHECK-IN -->
-  <div class="audio-checkin">
-    <h2>🎧 Guided Audio Check-In</h2>
-    <p>Use this 2-minute guided voice note to reconnect with your inner child. Try it each morning or whenever you feel distant from yourself.</p>
-    <audio controls>
-      <source src="/assets/audio/morning-checkin.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+  <!-- EMBEDDED VIDEO CHECK-IN -->
+  <div class="video-checkin">
+    <h2>🎥 Guided Check-In Video</h2>
+    <p>This video was created to offer a simple way to pause, breathe, and reconnect with yourself. You can return to it anytime you need a gentle reminder of your worth.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+      <iframe src="https://www.youtube.com/embed/8gLpFjzHzYQ" frameborder="0" allowfullscreen style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
   </div>
 
   <!-- LEGO TOWER ANIMATION -->
@@ -163,7 +162,7 @@ Start small. Come back often.
 
   <style>
     .reparenting-tools { padding: 2rem 0; border-top: 1px solid #ccc; margin-top: 2rem; }
-    .tracker, .audio-checkin, .lego-metaphor { margin-bottom: 2rem; }
+    .tracker, .video-checkin, .lego-metaphor { margin-bottom: 2rem; }
     #daily-checklist label { display: block; margin: 0.5rem 0; }
     #lego-tower { width: 100%; min-height: 120px; background: #f4f4f4; padding: 10px; display: flex; flex-wrap: wrap; border: 1px solid #ddd; margin-bottom: 1rem; }
     .block { width: 20px; height: 20px; background-color: #c58f43; margin: 2px; border-radius: 3px; transition: transform 0.2s ease; }
