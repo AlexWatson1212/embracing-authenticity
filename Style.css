@@ -1401,16 +1401,46 @@ img {
   display: block;
 }
 
-/* Adjust for mobile - show dropdown always inside toggled nav */
+/* Mobile only */
 @media (max-width: 768px) {
   .dropdown-menu {
     display: block;
-    position: relative;
-    background-color: #243a50;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    border-left: 2px solid #3d5b7f;
     padding-left: 1rem;
-    box-shadow: none;
-    border-radius: 0;
   }
+}
+
+/* Desktop default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1A2D41;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  border-radius: 0 0 8px 8px;
+  z-index: 999;
+  min-width: 180px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 0;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  text-decoration: underline;
+}
+
 
   .main-nav ul.nav {
     flex-direction: column;
