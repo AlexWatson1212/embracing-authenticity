@@ -20,6 +20,9 @@ permalink: /self-discovery/
       Self-discovery can stir up memories, emotions, or trauma that have been buried for years. If you don’t have much support right now, we encourage you to be gentle with yourself. Take your time. There’s no rush. And if possible, consider walking this path with a therapist, guide, or trusted support. You don’t have to do this alone — and we wouldn’t recommend it.</p>
     </div>
 
+    <p><strong>This isn’t a course. It’s not something you “complete.”</strong><br>
+    It’s a path to walk at your own pace — gently, honestly, and with enough space to actually feel. Along the way, you’ll meet tools, reflections, and insights I’ve gathered on my own healing path. Use what helps. Leave what doesn’t.</p>
+
     <div style="margin: 2rem 0;">
       <h3>📔 Downloadable Notion Template</h3>
       <p>If you'd like a companion to help track your journey and gently guide your reflections, here’s a Notion template you can use or duplicate:</p>
@@ -32,108 +35,92 @@ permalink: /self-discovery/
 
   <section class="blog-list">
     <article class="post">
-      <h3>🔯 Step 1: Awareness</h3>
-      <p>Begin by noticing. What parts of yourself have you been hiding? When do you feel most disconnected — and most alive? Awareness is the first light that leads us home.</p>
-      <div style="background:#f9f9f9; border-left: 3px solid #ccc; padding: 0.75rem; margin-top: 0.5rem;">
-        <strong>Try This:</strong> Sit quietly and ask yourself: <em>When did I last feel most like myself?</em>
-      </div>
-      <details style="margin-top: 0.75rem;">
-        <summary>✏️ Journal Prompts</summary>
-        <ul>
-          <li>What have I been pretending not to know about myself?</li>
-          <li>What do I notice when I slow down?</li>
-        </ul>
-      </details>
-    </article>
-
-    <article class="post">
-      <h3>🎭 Step 2: Conditioning & the False Self</h3>
-      <p>We all wear masks. Explore what beliefs or behaviors were handed to you rather than chosen by you. Who did you have to be in order to be loved?</p>
-      <div style="background:#f9f9f9; border-left: 3px solid #ccc; padding: 0.75rem; margin-top: 0.5rem;">
-        <strong>Try This:</strong> Ask: <em>Who did I have to become to feel safe in childhood?</em>
-      </div>
-      <details style="margin-top: 0.75rem;">
-        <summary>✏️ Journal Prompts</summary>
-        <ul>
-          <li>What behaviours earned me praise growing up?</li>
-          <li>Where do I still perform instead of being?</li>
-        </ul>
-      </details>
-    </article>
-
-    <article class="post">
-      <h3>💧 Step 3: Reconnecting with Emotion</h3>
-      <p>Emotions aren't problems to fix — they're messages to listen to. Try body scans, name your feelings, or simply breathe with what's here. This space will hold you.</p>
-      <div style="background:#f9f9f9; border-left: 3px solid #ccc; padding: 0.75rem; margin-top: 0.5rem;">
-        <strong>Try This:</strong> Take 3 deep breaths. Name what you're feeling — even if it's "numb."</div>
-      <details style="margin-top: 0.75rem;">
-        <summary>✏️ Journal Prompts</summary>
-        <ul>
-          <li>Which emotions do I avoid most?</li>
-          <li>What might my anxiety be trying to protect me from?</li>
-        </ul>
-      </details>
-    </article>
-
-    <article class="post">
-      <h3>🪰 Step 4: Tools for the Journey</h3>
-      <p>Discover gentle tools: journaling, mindfulness, breathwork, boundaries. There's no rush. Pick one that feels light and begin there. We'll keep walking with you.</p>
-      <div style="background:#f9f9f9; border-left: 3px solid #ccc; padding: 0.75rem; margin-top: 0.5rem;">
-        <strong>Try This:</strong> Choose one tool and try it for 5 minutes today — even just noticing your breath.</div>
-      <details style="margin-top: 0.75rem;">
-        <summary>✏️ Journal Prompts</summary>
-        <ul>
-          <li>What practices help me feel grounded?</li>
-          <li>What boundaries am I afraid to set?</li>
-        </ul>
-      </details>
-    </article>
-
-    <article class="post">
-      <h3>🎤 Step 5: Expression & Authentic Living</h3>
-      <p>Once you begin reconnecting, expression naturally follows. Your story matters. Share it, shape it, or live it quietly — but let it be yours.</p>
-      <div style="background:#f9f9f9; border-left: 3px solid #ccc; padding: 0.75rem; margin-top: 0.5rem;">
-        <strong>Try This:</strong> Say or write one honest thing today, just for yourself.</div>
-      <details style="margin-top: 0.75rem;">
-        <summary>✏️ Journal Prompts</summary>
-        <ul>
-          <li>What feels true for me right now?</li>
-          <li>What parts of my story still feel unfinished?</li>
-        </ul>
-      </details>
-    </article>
-
-    <article class="post">
-      <h3>🔀 Ongoing Path: A Quiet Revolution</h3>
-      <p>This journey isn’t linear. It’s a spiral. You’ll revisit the same places with more clarity. Keep showing up. This site will grow with you.</p>
-    </article>
-
-    <hr style="margin: 2rem 0;">
-
-    <article class="post">
-      <h2>✨ From Survival Roles to Real Connection</h2>
-      <p>A path for those who gave too much, asked too little, and are learning how to receive.</p>
-      <p>Some of us grew up learning that love meant being useful. That connection required caretaking. That our needs didn’t matter as much as keeping the peace. This journey is for those of us unlearning that. It’s a gentle roadmap — messy, human, and real.</p>
-
+      <h3>🧸 Step 1: Reparenting – Laying the Foundation</h3>
+      <p><em>Before anything else, we learn to become a safe place for ourselves.</em></p>
       <ul>
-        <li>🚩 <strong><a href="/blog/leaving-the-roles-behind">Step 1: Leaving the Roles Behind</a></strong></li>
-        <li>💔 <strong><a href="/blog/what-i-never-got-to-say-to-my-dad">Step 2: The Grief of Not Being Seen</a></strong></li>
-        <li>🌫️ <strong><a href="/blog/sitting-in-the-in-between">Step 3: Sitting in the In-Between</a></strong></li>
-        <li>🌱 <strong><a href="/blog/learning-to-be-met">Step 4: Learning to Be Met</a></strong></li>
-        <li>🤝 <strong><a href="/blog/being-truly-held">Step 5: Being Truly Held</a></strong></li>
+        <li>What is reparenting?</li>
+        <li>Why emotional safety is the starting point</li>
+        <li>The inner child metaphor</li>
+        <li>Creating structure: soothing routines, check-ins, gentle habits</li>
+        <li><a href="/blog/when-the-urges-return">When the Urges Return: A Gentle Map</a></li>
+        <li>Optional: LEGO animation metaphor</li>
+        <li>Suggested practices: morning check-ins, watching diggers, small acts of care</li>
       </ul>
-
-      <p>🔁 This journey isn't linear. You may return to old roles. You may feel the grief all over again. That’s okay. The path forward is a spiral, not a straight line. But each step brings you closer to connection that’s real.</p>
-      <p>🛍️ <strong>Want to go deeper?</strong> You can explore more paths on this page, or join the journey through the latest blog posts.</p>
+      <p>🔗 Linked posts:<br>
+        <a href="/blog/reparenting-when-no-one-ever-did">Reparenting When No One Ever Did</a><br>
+        <a href="/blog/building-the-wise-adult">Building the Wise Adult</a>
+      </p>
     </article>
 
-    <hr style="margin: 2rem 0;">
+    <article class="post">
+      <h3>🎵 Step 2: Feeling Safely – Learning to Feel Again</h3>
+      <p><em>Most of us weren’t taught how to feel. Music helped me learn.</em></p>
+      <ul>
+        <li>The role of music in emotional attunement</li>
+        <li>Why many people stay in their head</li>
+        <li>How songs can unlock frozen parts of us</li>
+        <li>Optional: a few song reflections with emotional guidance (e.g., Eminem, Lauryn Hill)</li>
+        <li>Suggested practice: create your own emotional playlist, journal with a track</li>
+      </ul>
+      <p>🔗 Linked posts:<br>
+        <a href="/blog/cleaning-out-my-closet">Cleaning Out My Closet – Music Therapy</a><br>
+        <a href="/blog/intentional">Intentional – Lauryn Hill Reflection</a>
+      </p>
+    </article>
 
     <article class="post">
-      <h2>🌓 Bonus Step: Shadow Integration and Wholeness</h2>
-      <p>True self-discovery isn't just about embracing the light. It's about holding space for our shadow, too. The rejected, repressed, misunderstood parts of us — they’re not the enemy. They’re the keys to wholeness.</p>
-      <p>In this bonus step, we explore the paradox of duality and learn how to integrate the dark with the light.</p>
-      <p>🖤 <strong><a href="/blog/shadow-integration-and-wholeness">Read the Full Blog Post → Shadow Integration and Wholeness</a></strong></p>
+      <h3>🪞 Step 3: Identity – The Real You Beneath the Performance</h3>
+      <p><em>You can be mature and still not know who you are.</em></p>
+      <ul>
+        <li>“The Maturity Trap” — intellectual growth without emotional connection</li>
+        <li>The cost of performing insight instead of embodying it</li>
+        <li>Learning to recognize your emotions, your voice, your needs</li>
+        <li>Reframing what it means to grow “the right way around”</li>
+      </ul>
+      <p>🔗 Linked posts:<br>
+        <a href="/blog/the-maturity-trap">The Maturity Trap</a>
+      </p>
+    </article>
+
+    <article class="post">
+      <h3>🔥 Step 4: Being Seen – Grief, Anger, and Longing</h3>
+      <p><em>The hardest parts to feel are usually the ones that bring us home.</em></p>
+      <ul>
+        <li>Why connection feels scary when you weren’t seen safely</li>
+        <li>Naming grief and shame without drowning in them</li>
+        <li>Boundaries and the fear of being too much</li>
+        <li>Learning to sit in the “in-between”</li>
+      </ul>
+      <p>🔗 Linked posts:<br>
+        <a href="/blog/sitting-in-the-in-between">Sitting in the In-Between</a><br>
+        <a href="/blog/letting-go-of-validation">Letting Go of Validation</a>
+      </p>
+    </article>
+
+    <article class="post">
+      <h3>✨ Step 5: Integration – Becoming Who You Always Were</h3>
+      <p><em>You don’t have to become someone new. You’re remembering.</em></p>
+      <ul>
+        <li>Trusting the slow unfolding</li>
+        <li>Noticing the glimmers</li>
+        <li>Finding peace in solitude, strength in authenticity</li>
+        <li>Giving from a full cup</li>
+      </ul>
+      <p>🔗 Linked posts:<br>
+        <a href="/blog/a-gap-in-the-culture">A Gap in the Culture</a><br>
+        <a href="/blog/the-quiet-revolution">The Quiet Revolution</a>
+      </p>
+    </article>
+
+    <article class="post">
+      <h3>🧭 Bookmarking Your Place</h3>
+      <p>This page is long. That’s intentional. Healing takes time, and you don’t need to rush.</p>
+      <p>Tip: You can bookmark a section by right-clicking on any headline and copying its link. Or just return when you feel ready.</p>
+    </article>
+
+    <article class="post">
+      <h3>❤️ Final Message</h3>
+      <p>You’re not broken. You’re not behind. You’re just beginning to feel again — and that is the most courageous thing in the world.</p>
     </article>
   </section>
 </main>
