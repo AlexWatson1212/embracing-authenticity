@@ -34,6 +34,7 @@ permalink: /self-discovery/
   </section>
 
   <section class="blog-list">
+
     <article class="post">
       <h3>🧸 Step 1: Reparenting – Laying the Foundation</h3>
       <p><em>Before anything else, we learn to become a safe place for ourselves.</em></p>
@@ -50,22 +51,24 @@ permalink: /self-discovery/
         <a href="/blog/reparenting-when-no-one-ever-did">Reparenting When No One Ever Did</a><br>
         <a href="/blog/building-the-wise-adult">Building the Wise Adult</a>
       </p>
+      <p><a href="/reparenting" class="cta-link">→ Explore Reparenting in depth</a></p>
     </article>
 
     <article class="post">
-      <h3>🎵 Step 2: Feeling Safely – Learning to Feel Again</h3>
-      <p><em>Most of us weren’t taught how to feel. Music helped me learn.</em></p>
+      <h3>🎵 Step 2: Music Therapy – Letting the Feelings Move</h3>
+      <p><em>Sometimes, music understands what words cannot.</em></p>
       <ul>
         <li>The role of music in emotional attunement</li>
         <li>Why many people stay in their head</li>
         <li>How songs can unlock frozen parts of us</li>
-        <li>Optional: a few song reflections with emotional guidance (e.g., Eminem, Lauryn Hill)</li>
-        <li>Suggested practice: create your own emotional playlist, journal with a track</li>
+        <li>Reflective song entries (Eminem, Lauryn Hill, and more)</li>
+        <li>Suggested practices: Create your own playlist, journal to music, sit with a lyric</li>
       </ul>
       <p>🔗 Linked posts:<br>
         <a href="/blog/cleaning-out-my-closet">Cleaning Out My Closet – Music Therapy</a><br>
         <a href="/blog/intentional">Intentional – Lauryn Hill Reflection</a>
       </p>
+      <p><a href="/music-therapy" class="cta-link">→ Explore the full Music Therapy space</a></p>
     </article>
 
     <article class="post">
@@ -122,5 +125,6 @@ permalink: /self-discovery/
       <h3>❤️ Final Message</h3>
       <p>You’re not broken. You’re not behind. You’re just beginning to feel again — and that is the most courageous thing in the world.</p>
     </article>
+
   </section>
 </main>
