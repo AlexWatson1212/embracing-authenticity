@@ -5,7 +5,7 @@ permalink: /self-discovery/
 
 <main>
   <section class="blog-intro">
-    <h2>Self-Discovery: A Grounded Guide for the Journey Home</h2>
+    <h2>Self-Discovery: A Quiet Journey Home to Yourself</h2>
 
     <div style="background: #f2f2f2; padding: 1rem; border-left: 4px solid #333; margin-bottom: 1rem;">
       <p><strong>Who this is for:</strong><br>
@@ -56,7 +56,7 @@ permalink: /self-discovery/
 
     <article class="post">
       <h3>🎵 Step 2: Music Therapy – Letting the Feelings Move</h3>
-      <p><em>Sometimes, music understands what words cannot.</em></p>
+      <p><em>Sometimes, the most honest mirror is a song.</em></p>
       <ul>
         <li>The role of music in emotional attunement</li>
         <li>Why many people stay in their head</li>
@@ -68,7 +68,7 @@ permalink: /self-discovery/
         <a href="/blog/cleaning-out-my-closet">Cleaning Out My Closet – Music Therapy</a><br>
         <a href="/blog/intentional">Intentional – Lauryn Hill Reflection</a>
       </p>
-      <p><a href="/music-therapy" class="cta-link">→ Explore the full Music Therapy space</a></p>
+      <p><a href="/music-therapy" class="cta-link">→ Explore the full Music Therapy space 🎧</a></p>
     </article>
 
     <article class="post">
