@@ -16,7 +16,7 @@
     </button>
 
     <!-- Navigation -->
-    <nav id="mobile-nav" class="main-nav" aria-label="Main navigation">
+    <nav id="mobile-nav" class="main-nav hidden" aria-label="Main navigation">
       <ul class="nav">
         <li class="dropdown">
           <a href="/self-discovery" class="nav-link">Self-Discovery</a>
@@ -26,9 +26,7 @@
             <li><a href="/music-therapy">Music Therapy</a></li>
           </ul>
         </li>
-        <li>
-          <a href="/blog.html" class="{% if page.url == '/blog.html' %}active{% endif %} nav-link">Blog</a>
-        </li>
+        <li><a href="/blog.html" class="{% if page.url == '/blog.html' %}active{% endif %} nav-link">Blog</a></li>
       </ul>
     </nav>
   </div>

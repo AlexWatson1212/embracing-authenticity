@@ -75,22 +75,23 @@
 
   {% include footer.html %}
 
-  <!-- Hamburger Menu Script -->
+  <!-- ✅ Mobile Menu Toggle Script (updated) -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const toggleButton = document.querySelector(".menu-toggle");
-      const navMenu = document.querySelector(".main-nav ul");
+      const toggleButton = document.getElementById("mobile-menu-toggle");
+      const navMenu = document.getElementById("mobile-nav");
 
       if (toggleButton && navMenu) {
         toggleButton.addEventListener("click", function () {
           const expanded = this.getAttribute("aria-expanded") === "true";
           this.setAttribute("aria-expanded", !expanded);
-          navMenu.classList.toggle("active");
+          navMenu.classList.toggle("show");
         });
       }
     });
   </script>
-  <div style="margin-bottom: 4rem;"></div>
+
+  <!-- ✅ Fade-in observer (unchanged) -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const elements = document.querySelectorAll('.fade-in');
@@ -109,5 +110,6 @@
     });
   </script>
 
+  <div style="margin-bottom: 4rem;"></div>
 </body>
 </html>
