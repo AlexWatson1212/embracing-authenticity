@@ -159,6 +159,55 @@ What I need is to be emotionally seen — and if that isn’t available, I’ll 
 
 ---
 
+### 🕯️ Closure Ritual: When They Disappear Without a Word
+
+For when someone ghosts you. For when they fade without explanation. For when you’re left wondering why.
+
+---
+
+🫶 **Step 1: Speak the Truth You Know**
+
+> “They didn’t say goodbye. They didn’t tell me why.  
+But I know it wasn’t because I was unworthy.  
+It was because they couldn’t face the discomfort of being honest.”
+
+Ghosting is a reflection of their emotional avoidance, not your value.
+
+---
+
+🧠 **Step 2: Say What You Wish They Had Said**
+
+Speak it out loud or write it down — not because they’ll hear it, but because you need to. Something like:
+
+> “Hey, I’ve decided to step away. I’m sorry I didn’t have the courage to tell you that directly.  
+You didn’t do anything wrong. This is about me not being able to meet you where you are.”
+
+Now read that back and say:
+
+> “Even if they didn’t say it, I deserved to hear that. I deserved clarity.”
+
+---
+
+📝 **Step 3: Give Yourself the Closure**
+
+You can say this gently to yourself — or write it down, fold it, and burn or bury it if that feels meaningful.
+
+> “I release the need for answers.  
+I don’t need to chase or explain myself.  
+I deserve relationships where communication is mutual and respect is consistent.  
+If someone disappears from my life without care, they don’t belong in my future.”
+
+---
+
+🌱 **Step 4: A Grounding Reminder**
+
+> “I may feel rejected, but I am not worthless.  
+I may feel disappointed, but I am still open-hearted.  
+I will not ghost myself.  
+I will stay with me.”
+
+---
+
 ### 🧱 Rebuilding from Within
 
 Each post I write, each truth I speak, it feels like I’m placing a block onto some kind of internal LEGO structure.
