@@ -1355,3 +1355,17 @@ img {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #1A2D41;
+  padding: 0.5rem 0;
+  border-radius: 0 0 8px 8px;
+  z-index: 1000;
+  min-width: 180px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
