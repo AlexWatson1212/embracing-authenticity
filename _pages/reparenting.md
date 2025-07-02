@@ -105,6 +105,60 @@ Write it down. Read it back out loud.
 
 ---
 
+### 🛑 When I Feel Shut Out or Unseen
+
+A grounding script from my Wise Adult to my inner child
+
+> "I know this hurts. It feels like you’re invisible again — like something must be wrong with you, because people seem cold, distant, or uninterested. But let’s pause. Let’s not turn against ourselves. Let’s check in gently instead."
+
+✅ **Emotional Check-In:**
+
+- Did this person actually reject me… or are they just not available for depth?  
+- Could this be their discomfort, not a reflection of my worth?  
+- Am I tired, hungry, lonely, or overexposed right now?  
+- Did I put pressure on this moment to meet a deeper need (like being seen or understood)?  
+- Can I remember anyone today who did meet me, even for a moment?
+
+🫶 **Grounding Truth:**
+
+> “You’re not too much — you’re deep.  
+You’re not broken — you’re sensitive.  
+You’re not failing — you’re healing in a world that hasn’t yet remembered how to feel.”
+
+We don’t need to win everyone over.  
+We just need to keep showing up with love for ourselves — and trust that the right people will feel the invitation.
+
+For now, let’s stay close to us.
+
+---
+
+### 🌿 Choosing Myself Over Crumbs
+
+> "Not all connection is nourishing.  
+Some leaves me more drained than before."
+
+I used to think I needed connection to feel okay. That if I could just get someone to respond, affirm me, or stay close, I’d feel better. But I’ve learned something deeper:
+
+> Connection that isn’t mutual isn’t worth my energy.  
+Validation that’s occasional, one-sided, or shallow doesn’t feed me — it depletes me.
+
+I don’t miss people who never really met me.  
+I miss being met.  
+And now I know I can do that for myself.
+
+I’d rather meet my own emotional needs than keep chasing people who can only offer fragments of attention.  
+I no longer have to settle for being needed, admired, or tolerated.  
+What I need is to be emotionally seen — and if that isn’t available, I’ll stay with myself instead.
+
+🧘‍♂️ **Grounding Reminder:**
+
+> “I am not hard to love — I’m just done begging for it.”  
+“If it’s not mutual, it’s not nourishing.”  
+“Peace is better than proximity.”  
+“I no longer settle for crumbs. I sit at my own table.”
+
+---
+
 ### 🧱 Rebuilding from Within
 
 Each post I write, each truth I speak, it feels like I’m placing a block onto some kind of internal LEGO structure.
