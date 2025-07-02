@@ -125,11 +125,6 @@ A grounding script from my Wise Adult to my inner child
 You’re not broken — you’re sensitive.  
 You’re not failing — you’re healing in a world that hasn’t yet remembered how to feel.”
 
-We don’t need to win everyone over.  
-We just need to keep showing up with love for ourselves — and trust that the right people will feel the invitation.
-
-For now, let’s stay close to us.
-
 ---
 
 ### 🌿 Choosing Myself Over Crumbs
@@ -145,10 +140,6 @@ Validation that’s occasional, one-sided, or shallow doesn’t feed me — it d
 I don’t miss people who never really met me.  
 I miss being met.  
 And now I know I can do that for myself.
-
-I’d rather meet my own emotional needs than keep chasing people who can only offer fragments of attention.  
-I no longer have to settle for being needed, admired, or tolerated.  
-What I need is to be emotionally seen — and if that isn’t available, I’ll stay with myself instead.
 
 🧘‍♂️ **Grounding Reminder:**
 
@@ -171,26 +162,18 @@ For when someone ghosts you. For when they fade without explanation. For when yo
 But I know it wasn’t because I was unworthy.  
 It was because they couldn’t face the discomfort of being honest.”
 
-Ghosting is a reflection of their emotional avoidance, not your value.
-
 ---
 
 🧠 **Step 2: Say What You Wish They Had Said**
 
-Speak it out loud or write it down — not because they’ll hear it, but because you need to. Something like:
-
 > “Hey, I’ve decided to step away. I’m sorry I didn’t have the courage to tell you that directly.  
 You didn’t do anything wrong. This is about me not being able to meet you where you are.”
-
-Now read that back and say:
 
 > “Even if they didn’t say it, I deserved to hear that. I deserved clarity.”
 
 ---
 
 📝 **Step 3: Give Yourself the Closure**
-
-You can say this gently to yourself — or write it down, fold it, and burn or bury it if that feels meaningful.
 
 > “I release the need for answers.  
 I don’t need to chase or explain myself.  
@@ -208,15 +191,37 @@ I will stay with me.”
 
 ---
 
+### 🧸 Inner Child Journal
+
+A place to listen, respond, and build trust from within.
+
+We all carry stories, feelings, and needs that were never fully heard. This journal isn’t about writing perfectly. It’s about turning toward the parts of you that were once left alone. The child who waited for someone to notice. Someone who finally does—you.
+
+This is where I return, again and again. To check in. To feel. To soothe. To celebrate.
+
+**Journal Prompts You Can Use:**
+
+- “Hey little one, how are you feeling today?”  
+- “What are you scared of right now?”  
+- “What would you love to do together?”  
+- “I see you're feeling ____. I'm here with you now.”  
+- “What do you wish someone had said to you back then?”  
+- “What are we proud of today?”
+
+**My Personal Entries (examples you can share if you're ready):**
+
+- That time I felt smarter than everyone in the room, and just wanted to go home.  
+- The moment I felt my body recharge—like it knew I was finally safe.  
+- Why it's okay to not be okay when others don't get me.
+
+---
+
 ### 🧱 Rebuilding from Within
 
 Each post I write, each truth I speak, it feels like I’m placing a block onto some kind of internal LEGO structure.
 
 Not to build up in some grand way — but to repair.  
 To piece myself back together, one honest moment at a time.
-
-It’s like I’m reconstructing a self that was once scattered — by fear, by shame, by silence.  
-And every word I publish, every layer I acknowledge, adds something solid and real to the foundation.
 
 > Maybe it’s less like building a tower…  
 > and more like uncovering one — brushing the dust off something ancient and sacred that’s been buried inside me.
