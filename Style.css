@@ -1371,11 +1371,6 @@ img {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Show on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
 /* Mobile: force dropdown to show inside menu */
 @media (max-width: 768px) {
   .dropdown-menu {
@@ -1385,5 +1380,43 @@ img {
     padding-left: 1rem;
     box-shadow: none;
     border-radius: 0;
+  }
+}
+/* Hide dropdown menu by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1A2D41;
+  padding: 0.5rem 0;
+  border-radius: 0 0 8px 8px;
+  z-index: 1000;
+  min-width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show menu on hover (desktop only) */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Adjust for mobile - show dropdown always inside toggled nav */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    display: block;
+    position: relative;
+    background-color: #243a50;
+    padding-left: 1rem;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .main-nav ul.nav {
+    flex-direction: column;
+  }
+
+  .main-nav ul.nav > li {
+    margin-bottom: 1rem;
   }
 }
