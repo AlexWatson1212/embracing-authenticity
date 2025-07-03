@@ -1538,3 +1538,31 @@ img {
   visibility: visible;
   transform: translateY(0);
 }
+/* Hide/show navs based on screen size */
+.desktop-nav {
+  display: flex;
+}
+
+.mobile-nav,
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+  }
+}

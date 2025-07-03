@@ -15,20 +15,28 @@
       ☰
     </button>
 
-    <!-- Navigation -->
-    <nav id="mobile-nav" class="main-nav hidden" aria-label="Main navigation">
+    <!-- Desktop Navigation with Dropdowns -->
+    <nav class="main-nav desktop-nav" aria-label="Main navigation">
       <ul class="nav">
         <li class="dropdown">
-         <a href="/self-discovery" class="nav-link">
-  Self-Discovery <span style="font-size: 0.7em;">▼</span>
-</a>
+          <a href="/self-discovery" class="nav-link">Self-Discovery ▼</a>
           <ul class="dropdown-menu">
             <li><a href="/self-discovery">Full Journey</a></li>
             <li><a href="/reparenting">Reparenting</a></li>
             <li><a href="/music-therapy">Music Therapy</a></li>
           </ul>
         </li>
-        <li><a href="/blog.html" class="{% if page.url == '/blog.html' %}active{% endif %} nav-link">Blog</a></li>
+        <li><a href="/blog.html" class="nav-link">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Navigation (simplified links) -->
+    <nav id="mobile-nav" class="mobile-nav hidden" aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="/self-discovery">Self-Discovery</a></li>
+        <li><a href="/reparenting">Reparenting</a></li>
+        <li><a href="/music-therapy">Music Therapy</a></li>
+        <li><a href="/blog.html">Blog</a></li>
       </ul>
     </nav>
   </div>
