@@ -7,6 +7,15 @@ permalink: /self-discovery/
   <section class="blog-intro">
     <h2>Self-Discovery: A Quiet Journey Home to Yourself</h2>
 
+    <div style="margin: 1rem 0; text-align: center;">
+      <strong>Jump to a section:</strong><br>
+      <a href="#step1" class="underline hover:text-orange-600">🧸 Reparenting</a> |
+      <a href="#step2" class="underline hover:text-orange-600">🎵 Music Therapy</a> |
+      <a href="#step3" class="underline hover:text-orange-600">🪞 Identity</a> |
+      <a href="#step4" class="underline hover:text-orange-600">🔥 Being Seen</a> |
+      <a href="#step5" class="underline hover:text-orange-600">✨ Integration</a>
+    </div>
+
     <div style="background: #f2f2f2; padding: 1rem; border-left: 4px solid #333; margin-bottom: 1rem;">
       <p><strong>Who this is for:</strong><br>
       This page is for anyone who feels like they’ve been surviving, not living — whether you're 12 or 112.  
@@ -35,7 +44,7 @@ permalink: /self-discovery/
 
   <section class="blog-list">
 
-    <article class="post">
+    <article class="post" id="step1">
       <h3>🧸 Step 1: Reparenting – Laying the Foundation</h3>
       <p><em>Before anything else, we learn to become a safe place for ourselves.</em></p>
       <ul>
@@ -54,7 +63,7 @@ permalink: /self-discovery/
       <p><a href="/reparenting" class="cta-link">→ Explore Reparenting in depth</a></p>
     </article>
 
-    <article class="post">
+    <article class="post" id="step2">
       <h3>🎵 Step 2: Music Therapy – Letting the Feelings Move</h3>
       <p><em>Sometimes, the most honest mirror is a song.</em></p>
       <ul>
@@ -71,7 +80,7 @@ permalink: /self-discovery/
       <p><a href="/music-therapy" class="cta-link">→ Explore the full Music Therapy space 🎧</a></p>
     </article>
 
-    <article class="post">
+    <article class="post" id="step3">
       <h3>🪞 Step 3: Identity – The Real You Beneath the Performance</h3>
       <p><em>You can be mature and still not know who you are.</em></p>
       <ul>
@@ -85,7 +94,7 @@ permalink: /self-discovery/
       </p>
     </article>
 
-    <article class="post">
+    <article class="post" id="step4">
       <h3>🔥 Step 4: Being Seen – Grief, Anger, and Longing</h3>
       <p><em>The hardest parts to feel are usually the ones that bring us home.</em></p>
       <ul>
@@ -100,7 +109,7 @@ permalink: /self-discovery/
       </p>
     </article>
 
-    <article class="post">
+    <article class="post" id="step5">
       <h3>✨ Step 5: Integration – Becoming Who You Always Were</h3>
       <p><em>You don’t have to become someone new. You’re remembering.</em></p>
       <ul>
