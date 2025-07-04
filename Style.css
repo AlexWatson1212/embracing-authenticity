@@ -72,45 +72,121 @@ main h2 {
 /* ================================
    🧭 Header & Navigation (Mobile-First)
 ================================== */
+/* Header Container */
 .site-header {
-  background-color: var(--color-footer-bg);
-  color: var(--color-footer-text);
-  padding: 1.2rem 2rem;
-  position: sticky;
-  top: 0;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 1rem 0;
+  position: relative;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.6s ease forwards;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 0 1.5rem;
 }
 
-.logo-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  color: inherit;
-}
-
+/* Logo */
 .logo {
   max-height: 60px;
   width: auto;
-  display: block;
 }
-@media (min-width: 769px) {
+
+/* Toggle Button */
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--color-light);
+  display: block;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Desktop Nav (hidden on mobile) */
+.desktop-nav {
+  display: none;
+}
+
+/* Mobile Nav Dropdown */
+#mobile-nav {
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1050;
+}
+
+#mobile-nav.hidden {
+  display: none;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-list a {
+  color: var(--color-light);
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.mobile-nav-list a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    transition: background 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
   .logo {
     max-height: 75px;
   }
 }
+
 
 /* Hamburger (mobile toggle) */
 .menu-toggle {

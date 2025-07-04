@@ -1,45 +1,35 @@
 <header class="site-header">
   <div class="header-container">
-    <!-- Logo -->
-    <a href="/" class="logo-wrapper" aria-label="Embracing Authenticity Home">
-      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo" />
+    <a href="/" class="logo-wrapper" aria-label="Home">
+      <img src="/assets/images/logo.png" alt="Logo" class="logo" />
     </a>
 
-    <!-- Hamburger Menu Button -->
-    <button
-      id="mobile-menu-toggle"
-      class="menu-toggle"
-      aria-label="Toggle navigation"
-      aria-expanded="false"
-    >
+    <button id="mobile-menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
       ☰
     </button>
 
-    <!-- Navigation (both desktop and mobile) -->
-    <nav class="main-nav" aria-label="Main navigation">
+    <nav class="main-nav desktop-nav">
       <ul class="nav">
-        <li><a href="/self-discovery" class="nav-link">Self-Discovery</a></li>
         <li><a href="/blog.html" class="nav-link">Blog</a></li>
+        <li><a href="/self-discovery" class="nav-link">Self-Discovery</a></li>
       </ul>
     </nav>
   </div>
 
-  <!-- Mobile Menu (outside nav for separation) -->
-  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+  <nav id="mobile-nav" class="mobile-nav hidden">
     <ul class="mobile-nav-list">
-      <li><a href="/self-discovery">Self-Discovery</a></li>
       <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/self-discovery">Self-Discovery</a></li>
     </ul>
   </nav>
 
   <script>
-    const toggleButton = document.getElementById('mobile-menu-toggle');
-    const mobileNav = document.getElementById('mobile-nav');
+    const toggle = document.getElementById("mobile-menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
 
-    toggleButton.addEventListener('click', () => {
-      mobileNav.classList.toggle('show');
-      const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
-      toggleButton.setAttribute('aria-expanded', !expanded);
+    toggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("hidden");
+      toggle.setAttribute("aria-expanded", mobileNav.classList.contains("hidden") ? "false" : "true");
     });
   </script>
 </header>
