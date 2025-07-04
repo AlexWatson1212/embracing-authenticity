@@ -64,8 +64,25 @@
 
 <body>
 
-  {% include header.html %}
+  <!-- HEADER -->
+  <header class="site-header z-50 bg-white shadow-md sticky top-0">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="{{ '/' | relative_url }}" class="text-xl font-bold">Embracing Authenticity</a>
+      <button id="mobile-menu-toggle" class="lg:hidden text-2xl" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      <nav class="hidden lg:flex space-x-6 text-base">
+        <a href="{{ '/blog' | relative_url }}" class="hover:underline">Blog</a>
+        <a href="{{ '/self-discovery' | relative_url }}" class="hover:underline">Self-Discovery</a>
+      </nav>
+    </div>
 
+    <!-- Mobile Menu -->
+    <nav id="mobile-nav" class="lg:hidden hidden px-4 pb-4 bg-white border-t">
+      <a href="{{ '/blog' | relative_url }}" class="block py-2">Blog</a>
+      <a href="{{ '/self-discovery' | relative_url }}" class="block py-2">Self-Discovery</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
   <main class="page-content wrapper">
     <article class="page-article">
       {{ content }}
@@ -74,10 +91,9 @@
 
   {% include footer.html %}
 
-  <!-- ✅ Combined JavaScript -->
+  <!-- JS: Mobile Nav & Animation -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      // Mobile nav toggle
       const toggle = document.getElementById("mobile-menu-toggle");
       const nav = document.getElementById("mobile-nav");
       if (toggle && nav) {
@@ -87,20 +103,7 @@
         });
       }
 
-      // Dropdown menu logic (mobile only)
-      const dropdowns = document.querySelectorAll(".dropdown");
-      dropdowns.forEach(dropdown => {
-        const link = dropdown.querySelector("a.nav-link");
-        link.addEventListener("click", (e) => {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            const menu = dropdown.querySelector(".dropdown-menu");
-            menu.classList.toggle("show");
-          }
-        });
-      });
-
-      // Fade-in animation observer
+      // Fade-in animation
       const elements = document.querySelectorAll('.fade-in');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {

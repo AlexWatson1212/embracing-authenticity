@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title }} | Embracing Authenticity</title>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
@@ -30,7 +34,6 @@
 
         <div class="post-footer-nav">
           <a href="/blog" class="button">← Back to Blog</a>
-
           {% if page.previous %}
             <a href="{{ page.previous.url }}" class="button">Next Blog →</a>
           {% endif %}
@@ -41,9 +44,10 @@
 
   {% include footer.html %}
 
-  <!-- Slideshow Script -->
+  <!-- JS: Slideshow + Mobile Nav -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      // Slideshow
       let slideIndex = 1;
       showSlides(slideIndex);
 
@@ -56,7 +60,6 @@
       }
 
       function showSlides(n) {
-        let i;
         const container = document.querySelector(".slideshow-container");
         if (!container) return;
         const slides = container.querySelectorAll(".mySlides");
@@ -65,12 +68,8 @@
         if (n > slides.length) { slideIndex = 1 }
         if (n < 1) { slideIndex = slides.length }
 
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].classList.remove("active");
-        }
+        slides.forEach(slide => slide.style.display = "none");
+        dots.forEach(dot => dot.classList.remove("active"));
 
         slides[slideIndex - 1].style.display = "block";
         if (dots.length > 0) {
@@ -78,21 +77,17 @@
         }
       }
 
-      // Attach slideshow functions globally if needed
       window.plusSlides = plusSlides;
       window.currentSlide = currentSlide;
 
-      // Mobile menu
+      // Mobile nav toggle
       const menuToggle = document.getElementById("mobile-menu-toggle");
       const navMenu = document.getElementById("mobile-nav");
 
       if (menuToggle && navMenu) {
         menuToggle.addEventListener("click", () => {
           navMenu.classList.toggle("hidden");
-          menuToggle.setAttribute(
-            "aria-expanded",
-            navMenu.classList.contains("hidden") ? "false" : "true"
-          );
+          menuToggle.setAttribute("aria-expanded", navMenu.classList.contains("hidden") ? "false" : "true");
         });
       }
     });
