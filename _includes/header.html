@@ -1,35 +1,22 @@
 <header class="site-header">
-  <div class="header-container">
-    <a href="/" class="logo-wrapper" aria-label="Home">
-      <img src="/assets/images/logo.png" alt="Logo" class="logo" />
+  <div class="nav-container">
+    <a href="/" class="logo" aria-label="Home">
+      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo" />
     </a>
 
-    <button id="mobile-menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      ☰
-    </button>
-
-    <nav class="main-nav desktop-nav">
-      <ul class="nav">
-        <li><a href="/blog.html" class="nav-link">Blog</a></li>
-        <li><a href="/self-discovery" class="nav-link">Self-Discovery</a></li>
-      </ul>
+    <nav class="site-nav" id="nav-menu">
+      <a href="/blog.html">Blog</a>
+      <a href="/self-discovery">Self-Discovery</a>
     </nav>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
   </div>
 
-  <nav id="mobile-nav" class="mobile-nav hidden">
-    <ul class="mobile-nav-list">
-      <li><a href="/blog.html">Blog</a></li>
-      <li><a href="/self-discovery">Self-Discovery</a></li>
-    </ul>
-  </nav>
-
   <script>
-    const toggle = document.getElementById("mobile-menu-toggle");
-    const mobileNav = document.getElementById("mobile-nav");
-
-    toggle.addEventListener("click", () => {
-      mobileNav.classList.toggle("hidden");
-      toggle.setAttribute("aria-expanded", mobileNav.classList.contains("hidden") ? "false" : "true");
-    });
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      const isOpen = nav.classList.toggle("open");
+      document.querySelector('.menu-toggle').setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
   </script>
 </header>
