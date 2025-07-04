@@ -129,7 +129,16 @@ main h2 {
 
 /* Mobile Navigation */
 #mobile-nav {
- z-index: 1050;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
 }
 
 #mobile-nav.show {
