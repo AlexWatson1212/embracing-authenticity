@@ -66,6 +66,7 @@ h1, h2, h3 {
 main h2 {
   color: var(--color-accent);
 }
+
 /* ================================
    🧭 Header & Navigation (Mobile-First)
 ================================== */
@@ -87,7 +88,13 @@ main h2 {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
   max-height: 60px;
+  height: auto;
   width: auto;
 }
 
@@ -155,7 +162,7 @@ main h2 {
     display: none;
   }
 
-  .logo {
+  .logo img {
     max-height: 75px;
   }
 }
@@ -240,6 +247,7 @@ main h2 {
     align-items: center;
   }
 }
+
 /* ================================
    📰 Blog Cards
 ================================== */
@@ -308,7 +316,6 @@ main h2 {
 .latest-posts a {
   text-decoration: none;
 }
-
 /* ================================
    💬 Quote Carousel
 ================================== */
@@ -355,6 +362,7 @@ main h2 {
 .quote-dots .dot.active {
   background-color: var(--color-accent);
 }
+
 /* ================================
    🖼️ Hero Banner
 ================================== */
@@ -432,306 +440,52 @@ main h2 {
   transform: translateY(0);
 }
 /* ================================
-   🏷️ Tags & Emotion Filters
+   🎵 Music Therapy Grid
 ================================== */
-.tag-filter {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.post-tag,
-.emotion-button {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 0.4rem 1rem;
-  border-radius: 6px;
-  margin: 0.3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color var(--transition), color var(--transition);
-}
-
-.post-tag {
-  color: var(--color-accent);
-  background-color: var(--color-highlight);
-}
-
-.post-tag:hover,
-.post-tag.active,
-.emotion-button.active {
-  background-color: var(--color-accent);
-  color: white;
-}
-
-.emotion-button {
-  background-color: #dbe5ea;
-  color: var(--color-primary);
-}
-
-.clear-tag-filter,
-.clear-emotion-filter {
-  background-color: #EDEDED;
-  color: var(--color-primary);
-  font-size: 0.95rem;
-}
-
-.clear-tag-filter:hover,
-.clear-emotion-filter:hover {
-  background-color: var(--color-accent);
-  color: white;
-}
-
-@media (min-width: 768px) {
-  .post-tag {
-    font-size: 0.75rem;
-  }
-}
-
-/* Emotion List Layout */
-.emotion-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 2rem;
-}
-
-.emotion-list li {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.emotion-list h3 a {
-  font-size: 1.4rem;
-  color: var(--color-accent);
-  text-decoration: none;
-  font-family: var(--font-heading);
-}
-
-.emotion-list p {
-  font-size: 1rem;
-  color: #444;
-  margin-top: 0.5rem;
-}
-/* ================================
-   📄 Pagination
-================================== */
-.pagination-link {
-  background: var(--color-highlight);
-  color: var(--color-primary);
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.pagination-link:hover {
-  background: #eac0cb;
-}
-
-/* ================================
-   🎞️ Slideshow
-================================== */
-.slideshow-container {
-  position: relative;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@keyframes fade {
-  from { opacity: .4; }
-  to { opacity: 1; }
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding: 16px;
-  margin-top: -22px;
-  color: var(--color-primary);
-  font-weight: bold;
-  font-size: 20px;
-  user-select: none;
-  background-color: rgba(255,255,255,0.6);
-  border-radius: 50%;
-  transition: background-color var(--transition);
-}
-
-.next {
-  right: 0;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(255,255,255,0.9);
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 4px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color var(--transition);
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* ================================
-   🎥 Responsive Video Embed
-================================== */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  border-radius: var(--radius);
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* ================================
-   📄 Page Layout Elements
-================================== */
-.page-content,
-.footer-content,
-.blog-list,
-.latest-posts,
-.post,
-.content-area,
-.page-article {
-  max-width: 1100px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-@media (max-width: 768px) {
-  .page-content,
-  .footer-content,
-  .blog-list,
-  .latest-posts {
-    padding: 0 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-.page-content {
-  line-height: 1.6;
+.music-therapy-main {
+  max-width: 900px;
+  margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-.page-article h1 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
+.music-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-/* Blog Post Footer Navigation */
-.post-footer-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid #ddd;
-  gap: 1rem;
-  flex-wrap: wrap;
+.post {
+  background: var(--color-light);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
 }
 
-.post-footer-nav a {
-  display: inline-block;
-  background-color: #f7c4d2;
-  color: #1f2f3c;
-  text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background-color var(--transition), transform 0.2s ease;
-  text-align: center;
-  white-space: nowrap;
+.post:hover {
+  transform: translateY(-4px);
 }
 
-.post-footer-nav a:hover {
-  background-color: #f2aabb;
-  color: #111;
-  transform: translateY(-1px);
+.post-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.post-footer-nav a.prev::before {
-  content: "← ";
+.post-date {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
 }
 
-.post-footer-nav a.next::after {
-  content: " →";
+.post-description {
+  font-size: 1rem;
 }
 
-@media (max-width: 768px) {
-  .post-footer-nav {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .post-footer-nav a {
-    width: 100%;
-  }
-}
 /* ================================
    🧱 LEGO Animation Section
 ================================== */
-.lego-widget {
-  padding: 2rem 1rem;
-  background-color: #f9f9f9;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
-  text-align: center;
-}
-
-.lego-widget-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.lego-title {
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.lego-description {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #555;
-}
-
-.lego-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
 .lego-animation-section {
   text-align: center;
   margin: 4rem auto;
@@ -796,173 +550,106 @@ main h2 {
   }
 }
 /* ================================
-   🎵 Music Therapy Grid
+   🏷️ Tags & Emotion Filters
 ================================== */
-.music-therapy-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.music-posts-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.post {
-  background: var(--color-light);
-  padding: 1rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  transition: transform var(--transition);
-}
-
-.post:hover {
-  transform: translateY(-4px);
-}
-
-.post-thumbnail {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.post-date {
-  font-size: 0.9rem;
-  color: var(--color-muted);
-  margin-bottom: 0.5rem;
-}
-
-.post-description {
-  font-size: 1rem;
-}
-
-/* Intro / Callouts */
-.intro-box,
-.callout-box {
-  background: #f2f2f2;
-  padding: 1rem;
-  border-left: 4px solid #333;
-  margin-bottom: 1.5rem;
-}
-
-.full-guide p,
-.full-guide ul {
-  margin-bottom: 1.25rem;
-  line-height: 1.7;
-}
-
-.full-guide h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.tag-filter {
   text-align: center;
+  margin: 2rem 0;
 }
 
-.full-guide h3 {
-  font-size: 1.25rem;
+.post-tag,
+.emotion-button {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  margin: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--color-highlight);
+  color: var(--color-accent);
+  transition: background-color var(--transition), color var(--transition), transform 0.2s ease;
+}
+
+.post-tag:hover,
+.post-tag.active,
+.emotion-button.active {
+  background-color: var(--color-accent);
+  color: white;
+  transform: scale(1.05);
+}
+
+.emotion-button {
+  background-color: #dbe5ea;
+  color: var(--color-primary);
+}
+
+.emotion-button:hover {
+  transform: scale(1.05);
+}
+
+.clear-tag-filter,
+.clear-emotion-filter {
+  background-color: #EDEDED;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.clear-tag-filter:hover,
+.clear-emotion-filter:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* Emotion List Layout */
+.emotion-list {
+  list-style: none;
+  padding: 0;
   margin-top: 2rem;
-  color: #aa5a00;
+}
+
+.emotion-list li {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.emotion-list h3 a {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: var(--font-heading);
+}
+
+.emotion-list p {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.5rem;
 }
 
 /* ================================
-   🔎 Search Bars
+   📄 Pagination
 ================================== */
-.search-bar {
-  display: flex;
-  max-width: 600px;
-  margin: 2rem auto;
-}
-
-.search-bar input[type="text"] {
-  flex: 1;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
-  font-size: 1rem;
-}
-
-.search-bar button {
-  padding: 0.75rem 1.25rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  transition: background-color var(--transition);
-}
-
-.search-bar button:hover {
-  background-color: #555;
-}
-
-.music-search-section {
-  text-align: center;
-  margin-top: 4rem;
-}
-
-.search-form {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 1rem 0 3rem;
-}
-
-.search-form input,
-#music-search {
-  width: 300px;
-  max-width: 80%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.search-form button {
-  padding: 0.75rem 1.5rem;
-  background-color: #2e5a88;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background var(--transition);
-}
-
-.search-form button:hover {
-  background-color: #204166;
-}
-
-#search-results {
-  margin-top: 1rem;
-  padding: 0;
-  list-style: none;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
-#search-results li {
-  margin-bottom: 0.75rem;
-  font-size: 1rem;
-  color: var(--color-text);
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(26, 45, 65, 0.06);
-}
-
-#search-results a {
-  color: var(--color-accent);
-  font-weight: bold;
+.pagination-link {
+  background: var(--color-highlight);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-#search-results a:hover {
-  text-decoration: underline;
+.pagination-link:hover {
+  background: #eac0cb;
 }
 
 /* ================================
@@ -990,9 +677,3 @@ main h2 {
   font-weight: 600;
   font-size: 1rem;
 }
-
-/* ================================
-   ✅ End
-================================== */
-
-
