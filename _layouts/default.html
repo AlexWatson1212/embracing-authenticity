@@ -23,16 +23,8 @@
     <meta name="twitter:image" content="{{ site.url }}{{ page.thumbnail }}">
   {% endif %}
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/style.css" />
-
   <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
@@ -52,6 +44,12 @@
   <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#1A2D41">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css" />
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1G5FKYL0R4"></script>
   <script>
@@ -64,25 +62,8 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header z-50 bg-white shadow-md sticky top-0">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="{{ '/' | relative_url }}" class="text-xl font-bold">Embracing Authenticity</a>
-      <button id="mobile-menu-toggle" class="lg:hidden text-2xl" aria-label="Toggle Menu" aria-expanded="false">☰</button>
-      <nav class="hidden lg:flex space-x-6 text-base">
-        <a href="{{ '/blog' | relative_url }}" class="hover:underline">Blog</a>
-        <a href="{{ '/self-discovery' | relative_url }}" class="hover:underline">Self-Discovery</a>
-      </nav>
-    </div>
+  {% include header.html %}
 
-    <!-- Mobile Menu -->
-    <nav id="mobile-nav" class="lg:hidden hidden px-4 pb-4 bg-white border-t">
-      <a href="{{ '/blog' | relative_url }}" class="block py-2">Blog</a>
-      <a href="{{ '/self-discovery' | relative_url }}" class="block py-2">Self-Discovery</a>
-    </nav>
-  </header>
-
-  <!-- MAIN CONTENT -->
   <main class="page-content wrapper">
     <article class="page-article">
       {{ content }}
@@ -91,19 +72,51 @@
 
   {% include footer.html %}
 
-  <!-- JS: Mobile Nav & Animation -->
+  <!-- JS: Slideshow + Mobile Nav + Fade-in -->
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("mobile-menu-toggle");
-      const nav = document.getElementById("mobile-nav");
-      if (toggle && nav) {
-        toggle.addEventListener("click", () => {
-          nav.classList.toggle("hidden");
-          toggle.setAttribute("aria-expanded", nav.classList.contains("hidden") ? "false" : "true");
+    document.addEventListener("DOMContentLoaded", () => {
+      // Slideshow
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        const container = document.querySelector(".slideshow-container");
+        if (!container) return;
+        const slides = container.querySelectorAll(".mySlides");
+        const dots = container.querySelectorAll(".dot");
+
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+
+        slides.forEach(slide => slide.style.display = "none");
+        dots.forEach(dot => dot.classList.remove("active"));
+
+        slides[slideIndex - 1].style.display = "block";
+        if (dots.length > 0) {
+          dots[slideIndex - 1].classList.add("active");
+        }
+      }
+
+      // Mobile nav toggle
+      const menuToggle = document.getElementById("mobile-menu-toggle");
+      const navMenu = document.getElementById("mobile-nav");
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("hidden");
+          menuToggle.setAttribute("aria-expanded", navMenu.classList.contains("hidden") ? "false" : "true");
         });
       }
 
-      // Fade-in animation
+      // Fade-in
       const elements = document.querySelectorAll('.fade-in');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {

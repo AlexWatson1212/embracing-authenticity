@@ -1,22 +1,39 @@
 <header class="site-header">
-  <div class="nav-container">
-    <a href="/" class="logo" aria-label="Home">
-      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo" />
+  <div class="nav-container flex items-center justify-between px-4 py-3 max-w-6xl mx-auto">
+    <!-- Logo -->
+    <a href="/" class="logo flex items-center" aria-label="Home">
+      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="h-10" />
     </a>
 
-    <nav class="site-nav" id="nav-menu">
-      <a href="/blog.html">Blog</a>
-      <a href="/self-discovery">Self-Discovery</a>
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-base" id="nav-menu">
+      <a href="/blog.html" class="hover:underline">Blog</a>
+      <a href="/self-discovery" class="hover:underline">Self-Discovery</a>
     </nav>
 
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+    <!-- Mobile Toggle -->
+    <button
+      class="menu-toggle md:hidden text-2xl"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+    >
+      ☰
+    </button>
   </div>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile-nav" class="md:hidden hidden px-4 pb-4">
+    <a href="/blog.html" class="block py-2">Blog</a>
+    <a href="/self-discovery" class="block py-2">Self-Discovery</a>
+  </nav>
 
   <script>
     function toggleMenu() {
-      const nav = document.getElementById("nav-menu");
-      const isOpen = nav.classList.toggle("open");
-      document.querySelector('.menu-toggle').setAttribute("aria-expanded", isOpen ? "true" : "false");
+      const nav = document.getElementById("mobile-nav");
+      const toggle = document.querySelector(".menu-toggle");
+      const isOpen = nav.classList.toggle("hidden") === false;
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     }
   </script>
 </header>
