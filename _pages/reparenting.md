@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 permalink: /reparenting/
 title: Reparenting
 description: Tools, rituals, and resources to help you reparent your inner child and grow a wise, loving inner adult.
