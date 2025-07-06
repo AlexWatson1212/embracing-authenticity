@@ -15,31 +15,29 @@
 
   {% include header.html %}
 
-  <main class="post-content">
-    <div class="container">
-      <article class="post">
-        <h1>{{ page.title }}</h1>
+  <main class="post-content px-4 py-10 max-w-3xl mx-auto">
+    <article class="post">
+      <h1 class="text-3xl font-serif mb-2">{{ page.title }}</h1>
 
-        {% if page.date %}
-          <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+      {% if page.date %}
+        <p class="post-date text-sm text-gray-600 mb-4">{{ page.date | date: "%B %d, %Y" }}</p>
+      {% endif %}
+
+      {% if page.description %}
+        <p class="post-description text-lg text-gray-700 mb-6">{{ page.description }}</p>
+      {% endif %}
+
+      <div class="post-body prose prose-lg max-w-none">
+        {{ content }}
+      </div>
+
+      <div class="post-footer-nav mt-10 flex justify-between flex-wrap gap-4">
+        <a href="/blog" class="button">← Back to Blog</a>
+        {% if page.previous %}
+          <a href="{{ page.previous.url }}" class="button">Next Blog →</a>
         {% endif %}
-
-        {% if page.description %}
-          <p class="post-description">{{ page.description }}</p>
-        {% endif %}
-
-        <div class="post-body">
-          {{ content }}
-        </div>
-
-        <div class="post-footer-nav">
-          <a href="/blog" class="button">← Back to Blog</a>
-          {% if page.previous %}
-            <a href="{{ page.previous.url }}" class="button">Next Blog →</a>
-          {% endif %}
-        </div>
-      </article>
-    </div>
+      </div>
+    </article>
   </main>
 
   {% include footer.html %}

@@ -6,17 +6,17 @@
     </a>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6 text-base" id="nav-menu">
-      <a href="/blog.html" class="hover:underline">Blog</a>
+    <nav class="hidden md:flex space-x-6 text-base" id="desktop-nav">
+      <a href="/blog" class="hover:underline">Blog</a>
       <a href="/self-discovery" class="hover:underline">Self-Discovery</a>
     </nav>
 
     <!-- Mobile Toggle -->
     <button
-      class="menu-toggle md:hidden text-2xl"
+      id="mobile-menu-toggle"
+      class="md:hidden text-2xl"
       aria-label="Toggle navigation"
       aria-expanded="false"
-      onclick="toggleMenu()"
     >
       ☰
     </button>
@@ -24,16 +24,20 @@
 
   <!-- Mobile Nav -->
   <nav id="mobile-nav" class="md:hidden hidden px-4 pb-4">
-    <a href="/blog.html" class="block py-2">Blog</a>
+    <a href="/blog" class="block py-2">Blog</a>
     <a href="/self-discovery" class="block py-2">Self-Discovery</a>
   </nav>
 
   <script>
-    function toggleMenu() {
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("mobile-menu-toggle");
       const nav = document.getElementById("mobile-nav");
-      const toggle = document.querySelector(".menu-toggle");
-      const isOpen = nav.classList.toggle("hidden") === false;
-      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    }
+      if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("hidden");
+          toggle.setAttribute("aria-expanded", nav.classList.contains("hidden") ? "false" : "true");
+        });
+      }
+    });
   </script>
 </header>

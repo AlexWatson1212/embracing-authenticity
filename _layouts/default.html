@@ -50,7 +50,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/style.css" />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1G5FKYL0R4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -64,10 +64,8 @@
 
   {% include header.html %}
 
-  <main class="page-content wrapper">
-    <article class="page-article">
-      {{ content }}
-    </article>
+  <main class="px-4 py-10 max-w-4xl mx-auto">
+    {{ content }}
   </main>
 
   {% include footer.html %}
@@ -116,7 +114,7 @@
         });
       }
 
-      // Fade-in
+      // Fade-in animation
       const elements = document.querySelectorAll('.fade-in');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
