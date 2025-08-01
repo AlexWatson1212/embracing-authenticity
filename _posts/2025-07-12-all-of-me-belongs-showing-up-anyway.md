@@ -71,4 +71,4 @@ All I can do is **show up** — honestly, gently, as I am.
 
 And that version of me?  
 He belongs.  
-Everywhere he goes.
+Everywhere he goes. 
