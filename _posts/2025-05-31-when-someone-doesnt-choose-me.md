@@ -36,4 +36,4 @@ They won’t need convincing.
 
 They’ll choose me freely—because they *want* to.
 
-Until then, I’ll keep choosing myself.
+Until then, I’ll keep choosing myself
