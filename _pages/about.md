@@ -6,7 +6,7 @@ permalink: /about/
  <h2>About</h2>
 
 This is where I share the deeper story behind Embracing Authenticity and what this space is truly about.
-
+ 
 ---
 
 **Welcome.**
@@ -60,4 +60,4 @@ This is a quiet corner of the internet that invites you to _slow down_, _listen 
 
 **This site is for you if you long to live more gently, connect more deeply, and build a life that feels true to your values.**
 
-Thank you for being here. Your presence matters.
+Thank you for being here. Your presence matter.
