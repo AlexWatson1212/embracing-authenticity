@@ -862,3 +862,27 @@ main h2 {
   .mobile-menu-toggle{ display:none; }
   .mobile-nav{ display:none !important; }
 }
+/* ===== Mobile header alignment fix ===== */
+.nav-container {
+  display: flex;
+  align-items: center;       /* center logo + hamburger vertically */
+  justify-content: space-between; /* logo left, hamburger right */
+}
+
+/* Ensure logo image scales consistently */
+.logo-img {
+  height: 36px;              /* tweak if needed */
+  width: auto;
+  display: block;
+}
+
+/* Hamburger button (center vertically, same height zone as logo) */
+.mobile-menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;              /* match logo height */
+  width: 36px;               /* square click target */
+  font-size: 1.8rem;          /* adjust icon size inside */
+  line-height: 1;
+}
