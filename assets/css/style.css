@@ -136,36 +136,30 @@ main h2 {
 }
 
 /* Desktop Nav */
-@media (min-width: 768px) {
-  .site-nav {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background: none;
-    padding: 0;
-    gap: 2rem;
-  }
-
-  .site-nav a {
-    font-size: 1rem;
-    color: var(--color-footer-text);
-    padding: 0.5rem;
-    border-radius: var(--radius);
-    transition: background 0.3s ease;
-  }
-
-  .site-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-
-  .logo img {
-    max-height: 75px;
-  }
+.desktop-nav {
+  display: flex;
+  justify-content: flex-end; /* push links to the right */
+  align-items: center;
+  gap: 1.1rem;
 }
+
+.desktop-nav a {
+  color: #ffffff; /* pure white */
+  text-decoration: none;
+  font-weight: 500;
+  padding: .45rem .6rem;
+  border-radius: .5rem;
+  transition: color .15s ease, background .15s ease;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus {
+  color: #ffffff;
+  background: rgba(255,255,255,.12); /* subtle hover */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(233,162,111,.35);
+}
+
 /* ================================
    🦶 Footer
 ================================== */
