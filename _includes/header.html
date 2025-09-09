@@ -1,19 +1,20 @@
-<header class="site-header bg-[var(--color-primary)] text-[var(--color-footer-text)]">
-  <div class="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3">
+<header class="site-header">
+  <div class="nav-container">
     <!-- Logo -->
-    <a href="/" class="logo flex items-center" aria-label="Home">
-      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="h-10" />
+    <a href="/" class="logo" aria-label="Home">
+      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo-img" />
     </a>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center space-x-6 text-base font-medium">
-      <a href="/self-discovery" class="hover:underline">Self-Discovery</a>
+    <nav id="desktop-nav" class="desktop-nav">
+      <a href="/blog">Blog</a>
+      <a href="/self-discovery">Self-Discovery</a>
     </nav>
 
     <!-- Mobile Toggle -->
     <button
       id="mobile-menu-toggle"
-      class="md:hidden text-3xl"
+      class="mobile-menu-toggle"
       aria-label="Toggle navigation"
       aria-expanded="false"
     >
@@ -22,20 +23,8 @@
   </div>
 
   <!-- Mobile Nav -->
-  <nav id="mobile-nav" class="md:hidden hidden px-4 pb-4 space-y-2">
-    <a href="/self-discovery" class="block">Self-Discovery</a>
+  <nav id="mobile-nav" class="mobile-nav hidden">
+    <a href="/blog">Blog</a>
+    <a href="/self-discovery">Self-Discovery</a>
   </nav>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("mobile-menu-toggle");
-      const nav = document.getElementById("mobile-nav");
-      if (toggle && nav) {
-        toggle.addEventListener("click", () => {
-          nav.classList.toggle("hidden");
-          toggle.setAttribute("aria-expanded", nav.classList.contains("hidden") ? "false" : "true");
-        });
-      }
-    });
-  </script>
 </header>

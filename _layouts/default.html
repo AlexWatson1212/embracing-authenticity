@@ -28,36 +28,7 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="nav-container">
-      <!-- Logo -->
-      <a href="/" class="logo" aria-label="Home">
-        <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo-img" />
-      </a>
-
-      <!-- Desktop Nav -->
-      <nav id="desktop-nav" class="desktop-nav">
-        <a href="/blog">Blog</a>
-        <a href="/self-discovery">Self-Discovery</a>
-      </nav>
-
-      <!-- Mobile Toggle -->
-      <button
-        id="mobile-menu-toggle"
-        class="mobile-menu-toggle"
-        aria-label="Toggle navigation"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
-    </div>
-
-    <!-- Mobile Nav -->
-    <nav id="mobile-nav" class="mobile-nav hidden">
-      <a href="/blog">Blog</a>
-      <a href="/self-discovery">Self-Discovery</a>
-    </nav>
-  </header>
+  {% include header.html %}
 
   <main class="container">
     {{ content }}
@@ -67,7 +38,7 @@
     <p>&copy; {{ site.time | date: "%Y" }} Embracing Authenticity. All rights reserved.</p>
   </footer>
 
-  <!-- Improved toggle script -->
+  <!-- Mobile nav toggle script -->
   <script>
     (function () {
       const toggle = document.getElementById('mobile-menu-toggle');
