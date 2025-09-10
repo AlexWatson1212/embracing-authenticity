@@ -38,26 +38,23 @@
     <p>&copy; {{ site.time | date: "%Y" }} Embracing Authenticity. All rights reserved.</p>
   </footer>
 
-  <!-- Mobile nav toggle script -->
-  <script>
-    (function () {
-      const btn = document.querySelector('.nav__toggle');
-      const menu = document.querySelector('.nav__links');
-      if (!btn || !menu) return;
+ <!-- Mobile nav toggle script (final) -->
+<script>
+  (function () {
+    var btn = document.querySelector('.nav__toggle');
+    var menu = document.querySelector('.nav__links');
+    if (!btn || !menu) return;
 
-      btn.addEventListener('click', function () {
-        const active = menu.classList.toggle('is-active');
-        btn.setAttribute('aria-expanded', active ? 'true' : 'false');
-      });
+    btn.addEventListener('click', function(){
+      var active = menu.classList.toggle('is-active');
+      btn.setAttribute('aria-expanded', active ? 'true' : 'false');
+    });
 
-      // Close with Escape key
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && menu.classList.contains('is-active')) {
-          menu.classList.remove('is-active');
-          btn.setAttribute('aria-expanded', 'false');
-        }
-      });
-    })();
-  </script>
-</body>
-</html>
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+</script>

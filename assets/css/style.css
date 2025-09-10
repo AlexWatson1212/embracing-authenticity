@@ -1038,4 +1038,28 @@ main h2 {
   display:block; color:var(--nav-fg); text-decoration:none;
   padding:14px clamp(16px,4vw,20px);
 }
-.nav__links a:hover, .n
+.nav__links a:hover, .nav__links a:focus{text-decoration:underline;}
+.nav__links.is-active{display:flex;}
+
+@media (prefers-reduced-motion:no-preference){
+  .nav__links{transition:opacity .12s ease;}
+  .nav__links.is-active{opacity:1;}
+}
+
+/* desktop breakpoint */
+@media (min-width:768px){
+  /* hide hamburger on desktop */
+  .nav__toggle{display:none !important;}
+
+  /* show links inline */
+  .nav__links{
+    position:static; display:flex !important;
+    flex-direction:row; gap:clamp(16px,3vw,28px);
+    background:transparent; border-top:0;
+  }
+  .nav__links a{padding:10px 0;}
+}
+
+/* --- Legacy kill-switches (safe overrides) --- */
+/* If these exist in your old CSS, neutralize them */
+.desktop-nav, .mobile-nav, #mobile-nav, #desktop-nav, #mobile-menu-toggle{display:none !important;}
