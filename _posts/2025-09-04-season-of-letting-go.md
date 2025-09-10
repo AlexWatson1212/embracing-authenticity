@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Season of Letting Go"
-date: 2025-09-07
+date: 2025-09-04
 tags: [reflection, healing, glimmers, nervous-system, process]
 description: "A sunrise-and-moon morning, glimmers, and the quiet power of the pause after a reaction — my season of letting go."
 emotions: ["Acceptance", "Hope"]
