@@ -1116,3 +1116,83 @@ main h2 {
 
 /* Kill old nav artifacts if they exist */
 .desktop-nav,.mobile-nav,#desktop-nav,#mobile-nav,#mobile-menu-toggle{ display:none !important; }
+/* ================= EA NAV (namespaced, mobile-first) ================ */
+:root{
+  --ea-nav-bg:#0f2638;
+  --ea-nav-fg:#fff;
+  --ea-tap:44px;
+  --ea-container: 1200px;         /* adjust to your site’s container width */
+  --ea-brand-size: clamp(18px, 2vw, 22px);
+  --ea-link-size: clamp(15px, 1.8vw, 17px);
+  --ea-font: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+}
+
+/* Module reset to avoid collisions */
+.ea-header, .ea-header * { box-sizing: border-box; }
+.ea-header *::before, .ea-header *::after { box-sizing: inherit; }
+.ea-header { background:var(--ea-nav-bg); color:var(--ea-nav-fg); font-family: var(--ea-font); }
+
+/* Align header content to same max-width as site content */
+.ea-nav{
+  display:flex; align-items:center; justify-content:space-between;
+  min-height:68px;
+  padding:0 clamp(12px,3vw,24px);
+  max-width: var(--ea-container);
+  margin-inline: auto;
+}
+
+/* Brand */
+.ea-nav__brand{ display:inline-flex; align-items:center; gap:10px; color:var(--ea-nav-fg); text-decoration:none; }
+.ea-nav__logo{ height:28px; width:auto; display:block; }
+.ea-nav__brand-text{ font-weight:800; font-size: var(--ea-brand-size); line-height:1; white-space:nowrap; }
+
+/* a11y helper */
+.ea-sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+/* Hamburger */
+.ea-nav__toggle{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:var(--ea-tap); height:var(--ea-tap); padding:0; border:0; background:transparent; cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.ea-nav__toggle:focus{ outline:2px solid rgba(255,255,255,.45); outline-offset:2px; }
+
+/* The three bars — force to be bars, not text/bullets */
+.ea-nav__bar{
+  display:block; width:26px; height:3px; background:var(--ea-nav-fg); border-radius:2px;
+  margin:0; padding:0; box-shadow:none; border:0;
+  font-size:0; line-height:0; color:transparent; text-shadow:none;
+}
+.ea-nav__bar + .ea-nav__bar{ margin-top:5px; }
+/* Nuke any rogue pseudo-content from global styles */
+.ea-nav__bar::before, .ea-nav__bar::after { content:none !important; }
+
+/* Links (mobile default: hidden; in-flow dropdown) */
+.ea-nav__links{
+  list-style:none; margin:0; padding:0;
+  display:none; flex-direction:column; width:100%;
+  background:var(--ea-nav-bg);
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.ea-nav__links li{ margin:0; padding:0; }
+.ea-nav__links a{
+  display:block; padding:14px clamp(16px,4vw,20px);
+  color:var(--ea-nav-fg); text-decoration:none;
+  font-size: var(--ea-link-size); font-weight:600; text-transform:none; letter-spacing:0.2px;
+}
+.ea-nav__links a:hover, .ea-nav__links a:focus{ text-decoration:underline; }
+.ea-nav__links.is-active{ display:flex; }
+
+@media (min-width:768px){
+  .ea-nav__toggle{ display:none !important; }
+  .ea-nav__links{
+    display:flex !important; position:static;
+    flex-direction:row; gap:clamp(16px,3vw,28px);
+    background:transparent; border-top:0; width:auto;
+  }
+  .ea-nav__links a{ padding:10px 0; }
+}
+
+/* Kill old nav artifacts if they exist */
+.desktop-nav,.mobile-nav,#desktop-nav,#mobile-nav,#mobile-menu-toggle,
+.nav, .nav-container, .mobile-menu-toggle { display:none !important; }
