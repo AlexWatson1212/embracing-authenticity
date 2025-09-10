@@ -1,32 +1,23 @@
-<header class="site-header">
-  <div class="nav-container">
-    <!-- Logo -->
-    <a href="/" class="logo" aria-label="Home">
-      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo-img" />
+<header class="site-header" role="banner">
+  <div class="nav" role="navigation" aria-label="Main">
+    <!-- Logo / Brand -->
+    <a class="nav__brand" href="/" aria-label="Home">
+      <img src="/assets/images/logo.png" alt="Embracing Authenticity Logo" class="logo-img" style="height:28px; vertical-align:middle; margin-right:8px;">
+      <span>Embracing Authenticity</span>
     </a>
 
-    <!-- Desktop Nav -->
-    <nav id="desktop-nav" class="desktop-nav">
-      <a href="/blog">Blog</a>
-      <a href="/self-discovery">Self-Discovery</a>
-    </nav>
+    <!-- Hamburger Toggle (mobile only) -->
+    <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav__bar"></span>
+      <span class="nav__bar"></span>
+      <span class="nav__bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
 
-    <!-- Mobile Toggle -->
-     <button
-  id="mobile-menu-toggle"
-  class="mobile-menu-toggle"
-  aria-label="Toggle navigation"
-  aria-expanded="false"
->
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
-</button>
+    <!-- Navigation Links -->
+    <ul id="primary-nav" class="nav__links">
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/self-discovery">Self-Discovery</a></li>
+    </ul>
   </div>
-
-  <!-- Mobile Nav -->
-  <nav id="mobile-nav" class="mobile-nav hidden">
-    <a href="/blog">Blog</a>
-    <a href="/self-discovery">Self-Discovery</a>
-  </nav>
 </header>

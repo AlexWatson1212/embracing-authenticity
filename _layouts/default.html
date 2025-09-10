@@ -41,19 +41,20 @@
   <!-- Mobile nav toggle script -->
   <script>
     (function () {
-      const toggle = document.getElementById('mobile-menu-toggle');
-      const nav = document.getElementById('mobile-nav');
+      const btn = document.querySelector('.nav__toggle');
+      const menu = document.querySelector('.nav__links');
+      if (!btn || !menu) return;
 
-      toggle.addEventListener('click', () => {
-        const isHidden = nav.classList.toggle('hidden');
-        toggle.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
-        document.body.classList.toggle('nav-open', !isHidden);
+      btn.addEventListener('click', function () {
+        const active = menu.classList.toggle('is-active');
+        btn.setAttribute('aria-expanded', active ? 'true' : 'false');
       });
 
-      // Close with Escape
+      // Close with Escape key
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !nav.classList.contains('hidden')) {
-          toggle.click();
+        if (e.key === 'Escape' && menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+          btn.setAttribute('aria-expanded', 'false');
         }
       });
     })();
