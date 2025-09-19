@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Embracing Authenticity</title>
+  <style>
+    /* ====== Design Tokens (YOUR IDENTITY) ====== */
+    :root{
+      --brand-bg: #0e1a2b;        /* dark earthy blue */
+      --brand-surface: #111a2a;   /* slightly darker for header */
+      --brand-text: #f4f7fb;      /* near-white */
+      --brand-accent: #ff9e57;    /* soft orange/peach */
+      --brand-muted: #8fa0b8;     /* subtle text */
+      --max-width: 1100px;
+      --radius: 16px;
+      --gap: 16px;
+      --font: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    /* ====== Base ====== */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin:0;
+      font-family: var(--font);
+      color: var(--brand-text);
+      background: var(--brand-bg);
+      line-height: 1.5;
+    }
+    a{ color: var(--brand-accent); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    .container{ max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+
+    /* ====== Header / Nav ====== */
+    header{
+      background: var(--brand-surface);
+      position: sticky;
+      top:0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .nav{
+      display: flex; align-items: center; justify-content: space-between;
+      min-height: 64px;
+      gap: var(--gap);
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+    }
+    .brand img{
+      display:block; height:40px; width:auto; /* keeps logo crisp */
+    }
+    .brand .title{
+      font-size: 1.1rem; font-weight: 600; letter-spacing:.2px;
+    }
+
+    /* desktop nav links */
+    .links{ display:flex; gap: 18px; align-items:center; }
+    .links a{
+      color: var(--brand-text);
+      padding: 8px 10px; border-radius: 10px;
+    }
+    .links a:hover{
+      background: rgba(255,255,255,.06);
+      text-decoration: none;
+    }
+
+    /* hamburger (mobile only) */
+    .hamburger{
+      display:none;
+      background:none; border:none; color: var(--brand-text);
+      font-size: 28px; line-height: 1; padding: 8px; cursor:pointer;
+    }
+    .hamburger:focus{ outline: 2px solid var(--brand-accent); outline-offset: 2px; }
+
+    /* mobile menu panel */
+    .mobile{
+      display:none;
+      flex-direction: column;
+      gap: 8px;
+      padding: 12px 0 16px;
+    }
+    .mobile a{
+      padding:10px 12px; border-radius: 10px; background: rgba(255,255,255,.04);
+      color: var(--brand-text);
+    }
+    .mobile a:hover{ background: rgba(255,255,255,.08); text-decoration:none; }
+
+    /* ====== Hero ====== */
+    .hero{
+      position: relative; overflow: hidden;
+      margin: 20px auto; border-radius: var(--radius);
+      background: #000;
+      max-width: var(--max-width);
+    }
+    .hero img{
+      width:100%; height: clamp(220px, 40vw, 420px); object-fit: cover; display:block;
+      opacity:.9;
+    }
+    .hero .overlay{
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.55));
+    }
+    .hero .content{
+      position:absolute; inset:0; display:grid; place-items:center; text-align:center; padding: 0 24px;
+    }
+    .hero h1{ margin:0 0 8px; font-size: clamp(28px, 5vw, 56px); }
+    .hero p{ margin:0; color: var(--brand-muted); font-size: clamp(14px, 2.2vw, 18px); }
+
+    /* ====== Sections ====== */
+    .section{ max-width: var(--max-width); margin: 28px auto; padding: 0 20px; }
+    .card{
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+
+    /* ====== Responsive ====== */
+    @media (max-width: 860px){
+      .links{ display:none; }
+      .hamburger{ display:block; }
+      .mobile.open{ display:flex; }
+      .brand .title{ font-size: 1rem; }
+      .brand img{ height:36px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Main">
+      <div class="brand">
+        <!-- Replace src with your logo -->
+        <img src="logo.png" alt="Embracing Authenticity logo" />
+        <span class="title">Embracing Authenticity</span>
+      </div>
+
+      <!-- Desktop links -->
+      <nav class="links" aria-label="Primary">
+        <a href="/index.html">Home</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/self-discovery.html">Self-Discovery</a>
+        <a href="/music-therapy.html">Music Therapy</a>
+        <a href="/about.html">About</a>
+      </nav>
+
+      <!-- Mobile toggle -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="container mobile" hidden>
+      <a href="/index.html">Home</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/self-discovery.html">Self-Discovery</a>
+      <a href="/music-therapy.html">Music Therapy</a>
+      <a href="/about.html">About</a>
+    </div>
+  </header>
+
+  <!-- Optional hero -->
+  <section class="hero">
+    <!-- Replace with your banner image -->
+    <img src="hero.jpg" alt="Norway mountain road and fjord" />
+    <div class="overlay"></div>
+    <div class="content">
+      <div>
+        <h1>A quiet revolution of self</h1>
+        <p>Simple, honest tools for healing, reflection, and becoming.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>Swap this content with your homepage sections. This scaffold is intentionally minimal so your writing and visuals lead.</p>
+    </div>
+  </main>
+
+  <script>
+    // Accessible mobile menu toggle (tiny & robust)
+    const btn = document.querySelector('.hamburger');
+    const panel = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const open = panel.classList.toggle('open');
+      panel.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+</body>
+</html>
