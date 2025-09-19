@@ -94,4 +94,3 @@ body::after{
 
 /* Accessibility focus */
 :focus{outline:2px dashed var(--accent-2);outline-offset:2px}
-s
