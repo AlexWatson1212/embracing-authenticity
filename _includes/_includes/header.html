@@ -1,0 +1,26 @@
+{% assign c = site.data.theme.colors %}
+{% assign f = site.data.theme.fonts %}
+{% assign l = site.data.theme.layout %}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="{{ c.bg }}" />
+{% seo %}
+<link rel="icon" href="{{ "/favicon.svg" | relative_url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | relative_url }}" />
+<link href="{{ "/assets/css/main.css" | relative_url }}" rel="stylesheet" />
+<style>
+  :root{
+    --bg: {{ c.bg }};
+    --surface: {{ c.surface }};
+    --text: {{ c.text }};
+    --muted: {{ c.muted }};
+    --accent: {{ c.accent }};
+    --accent-2: {{ c["accent-2"] }};
+    --link: {{ c.link }};
+    --border: {{ c.border }};
+    --radius: {{ l.radius }};
+    --maxw: {{ l.max_width }};
+    --font-base: {{ f.base }};
+    --font-mono: {{ f.mono }};
+  }
+</style>
