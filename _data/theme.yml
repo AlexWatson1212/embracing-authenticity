@@ -1,0 +1,17 @@
+colors:
+  bg: "#0f172a"        # dark navy
+  surface: "#0b1223"   # slightly darker panel
+  text: "#e5e7eb"      # light text
+  muted: "#94a3b8"     # muted text
+  accent: "#ffb38a"    # peach
+  accent-2: "#ffd6c2"  # light peach
+  link: "#ffd6c2"
+  border: "#23314f"
+
+fonts:
+  base: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+  mono: "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+
+layout:
+  max_width: "1200px"
+  radius: "1.25rem"

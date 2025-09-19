@@ -1,15 +1,19 @@
 title: "Embracing Authenticity"
 description: "Simple, soulful, professional."
-url: "https://embracingauthenticity.co.uk"  # or your domain
+url: "https://embracingauthenticity.co.uk"  # your domain (or leave blank locally)
 baseurl: ""                                 # "" if at root
+
 author:
   name: "Alex Watson"
   email: ""
+
 markdown: kramdown
 theme: null
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
 nav:
   - text: Home
     url: /
@@ -17,5 +21,6 @@ nav:
     url: /blog/
   - text: About
     url: /about/
+
 feed:
   path: feed.xml
