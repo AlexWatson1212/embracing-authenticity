@@ -1,7 +1,16 @@
 [build]
-  command = "bundle exec jekyll build"
-  publish = "_site"
+  command = ""          # no build; just serve files
+  publish = "."         # root folder is the site
 
-[build.environment]
-  RUBY_VERSION = "3.2.2"
-  JEKYLL_ENV = "production"
+# Optional: set proper 404 if you add a 404.html later
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# Optional: long-cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

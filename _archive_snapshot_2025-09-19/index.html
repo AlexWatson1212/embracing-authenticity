@@ -1,0 +1,36 @@
+---
+layout: default
+title: Embracing Authenticity
+subtitle: A clean, replicable framework for websites that feel like home.
+hero: true
+cta_text: Explore the Blog
+cta_url: /blog/
+---
+
+<section class="cards">
+  <article class="card">
+    <h2>Welcome</h2>
+    <p>Simple, soulful, professional. A clean framework you can brand and replicate.</p>
+    <a class="btn" href="{{ '/about/' | relative_url }}">Learn more</a>
+  </article>
+
+  <article class="card">
+    <h2>Latest Posts</h2>
+    <ul class="list">
+      {% assign recent_posts = site.posts | slice: 0, 5 %}
+      {% for post in recent_posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="muted"> · {{ post.date | date: "%b %d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <a class="link" href="{{ '/blog/' | relative_url }}">View all →</a>
+  </article>
+
+  <article class="card">
+    <h2>Work With Me</h2>
+    <p>Build a simple, beautiful site that lets your voice shine. No noise, just essence.</p>
+    <a class="btn btn--ghost" href="mailto:{{ site.author.email }}">Get in touch</a>
+  </article>
+</section>
