@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Themes · Embracing Authenticity</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="logo" src="assets/img/logo.svg" alt="Embracing Authenticity" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'" />
+        <span class="brand-text" style="display:none">Embracing Authenticity</span>
+      </a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle menu"><span class="hamburger"></span></button>
+      <nav class="nav">
+  <a class="brand" href="index.html">Embracing Authenticity</a>
+  <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+  <ul class="nav__links">
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="active" href="themes.html" aria-current="page">Themes</a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
+  <main>
+    <section class="page">
+      <div class="container">
+        <h1>Theme Gallery</h1>
+        <p>Switch between looks instantly. These are pure‑CSS themes (no framework). Copy a theme’s variables to create a custom client brand in minutes.</p>
+
+        <div class="theme-picker">
+          <label for="theme-select">Choose theme:</label>
+          <select id="theme-select" aria-label="Site theme">
+            <option value="aurora">Aurora (Navy/Peach)</option>
+            <option value="paper">Paper (Light Minimal)</option>
+            <option value="forest">Forest (Deep Green)</option>
+          </select>
+        </div>
+
+        <div class="demo-blocks">
+          <article class="card"><h2>Card Title</h2><p>Clean surfaces, balanced contrast, accessible type.</p><a class="btn" href="#">Primary Action</a></article>
+          <article class="card"><h2>Another Card</h2><p>Use this to showcase how blog cards / components look across themes.</p><a class="btn btn-ghost" href="#">Secondary</a></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img class="logo small" src="assets/img/logo.svg" alt="" onerror="this.style.display='none'" /><span>Embracing Authenticity</span></div>
+      <div></div><div></div>
+      <div class="right"><p class="muted">© <span id="year"></span> · All rights reserved.</p></div>
+    </div>
+  </footer>
+  <!-- Persist theme: apply saved theme on load -->
+<script>
+  (function () {
+    var t = localStorage.getItem('ea-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+
+<!-- Mobile nav toggle -->
+<script>
+  (function () {
+    var btn = document.querySelector('.nav__toggle');
+    var list = document.querySelector('.nav__links');
+    if (!btn || !list) return;
+    btn.addEventListener('click', function () {
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+  <script>
+  // Apply saved theme (if any)
+  (function () {
+    var t = localStorage.getItem('ea-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+  <script>
+    // restore theme
+    const saved = localStorage.getItem('ea-theme') || 'aurora';
+    document.documentElement.setAttribute('data-theme', saved);
+
+    // nav toggle
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    btn?.addEventListener('click', () => { const open = nav.classList.toggle('open'); btn.setAttribute('aria-expanded', open); });
+
+    // picker
+    const sel = document.getElementById('theme-select');
+    sel.value = saved;
+    sel.addEventListener('change', e => {
+      const v = e.target.value; 
+      document.documentElement.setAttribute('data-theme', v);
+      localStorage.setItem('ea-theme', v);
+    });
+
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -10,15 +10,15 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav">
-      <a class="brand" href="/">Embracing Authenticity</a>
-      <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
-      <ul class="nav__links">
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-      </ul>
-    </nav>
-
+   <nav class="nav">
+  <a class="brand" href="index.html">Embracing Authenticity</a>
+  <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+  <ul class="nav__links">
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="themes.html">Themes</a></li>
+  </ul>
+</nav>
     <section class="hero">
       <div class="container">
         <h1>Welcome</h1>
@@ -56,7 +56,33 @@
       <div><p class="muted">Made with care. <a class="link" href="/blog.html">RSS coming soon</a></p></div>
     </div>
   </footer>
+  <!-- Persist theme: apply saved theme on load -->
+<script>
+  (function () {
+    var t = localStorage.getItem('ea-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
 
+<!-- Mobile nav toggle -->
+<script>
+  (function () {
+    var btn = document.querySelector('.nav__toggle');
+    var list = document.querySelector('.nav__links');
+    if (!btn || !list) return;
+    btn.addEventListener('click', function () {
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+<script>
+  // Apply saved theme (if any)
+  (function () {
+    var t = localStorage.getItem('ea-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
   <script>
     // mobile nav
     const btn = document.querySelector('.nav__toggle');
