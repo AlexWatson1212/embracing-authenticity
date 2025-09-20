@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Embracing Authenticity</title>
+  <meta name="description" content="Simple, soulful, professional." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2310172a'/><circle cx='32' cy='32' r='18' fill='%23ffb38a'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="/">Embracing Authenticity</a>
+      <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome</h1>
+        <p class="lead">Simple, soulful, professional. A clean framework you can replicate for clients.</p>
+        <a class="btn" href="/blog.html">Explore the Blog</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="content" class="site-main">
+    <div class="container cards">
+      <article class="card">
+        <h2>Why This Works</h2>
+        <p>Fast, mobile-first, accessible. Edit one CSS file to rebrand in minutes.</p>
+      </article>
+      <article class="card">
+        <h2>Latest Posts</h2>
+        <ul class="list">
+          <li><a href="#">Hello, World</a> <span class="muted">· Sep 19, 2025</span></li>
+          <li><a href="#">Finding Quiet Confidence</a> <span class="muted">· Sep 12, 2025</span></li>
+        </ul>
+        <a class="link" href="/blog.html">View all →</a>
+      </article>
+      <article class="card">
+        <h2>Work With Me</h2>
+        <p>Build a simple, beautiful site that lets your voice shine.</p>
+        <a class="btn btn--ghost" href="mailto:">Get in touch</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container grid">
+      <div><strong>Embracing Authenticity</strong><p class="muted">© <span id="year"></span> · All rights reserved.</p></div>
+      <div><p class="muted">Made with care. <a class="link" href="/blog.html">RSS coming soon</a></p></div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile nav
+    const btn = document.querySelector('.nav__toggle');
+    const list = document.querySelector('.nav__links');
+    if (btn && list) btn.addEventListener('click', () => {
+      const open = getComputedStyle(list).display !== 'none';
+      list.style.display = open ? 'none' : 'block';
+      btn.setAttribute('aria-expanded', (!open).toString());
+    });
+    // year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About – Embracing Authenticity</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head><body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="/">Embracing Authenticity</a>
+    <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <ul class="nav__links">
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a class="active" href="/about.html">About</a></li>
+    </ul>
+  </nav>
+  <section class="hero"><div class="container">
+    <h1>About</h1><p class="lead">The purpose, the person, and the path forward.</p>
+  </div></section>
+</header>
+<main class="site-main"><div class="container prose">
+  <p>I’m Alex. I build simple, grounded websites and write about the inner journey.</p>
+</div></main>
+<footer class="site-footer"><div class="container grid">
+  <div><strong>Embracing Authenticity</strong></div><div><p class="muted">© <span id="year"></span></p></div>
+</div></footer>
+<script>
+  const btn=document.querySelector('.nav__toggle');const list=document.querySelector('.nav__links');
+  if(btn&&list)btn.addEventListener('click',()=>{const o=getComputedStyle(list).display!=='none';list.style.display=o?'none':'block';btn.setAttribute('aria-expanded',(!o).toString());});
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
