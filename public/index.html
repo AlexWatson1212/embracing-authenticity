@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Embracing Authenticity</title>
 
-  <!-- Main CSS (make sure this includes the container + nav styles I sent) -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <!-- Main CSS (relative path + cache-buster) -->
+  <link rel="stylesheet" href="./assets/css/styles.css?v=1">
 
   <!-- Persist theme: apply saved theme on load -->
   <script>
@@ -21,18 +21,18 @@
   <!-- Header / Nav -->
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand" href="index.html" aria-label="Embracing Authenticity — Home">
+      <a class="brand" href="./index.html" aria-label="Embracing Authenticity — Home">
         <!-- Prefer a light-on-dark SVG -->
-        <img src="/assets/logo.svg" alt="Embracing Authenticity">
+        <img src="./assets/logo.svg" alt="Embracing Authenticity">
       </a>
 
       <nav class="site-nav" aria-label="Primary">
         <!-- Hidden on desktop via CSS; toggles mobile dropdown -->
         <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">☰</button>
         <ul id="primary-nav" class="nav-list">
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="themes.html">Themes</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./themes.html">Themes</a></li>
         </ul>
       </nav>
     </div>
@@ -43,7 +43,7 @@
     <section class="container section hero">
       <h1>Welcome</h1>
       <p class="lead">Simple, soulful, professional. A clean framework you can replicate for clients.</p>
-      <a class="btn" href="blog.html">Explore the Blog</a>
+      <a class="btn" href="./blog.html">Explore the Blog</a>
     </section>
 
     <!-- Cards row -->
@@ -59,7 +59,7 @@
           <li><a href="#">Hello, World</a> <span class="muted">· Sep 19, 2025</span></li>
           <li><a href="#">Finding Quiet Confidence</a> <span class="muted">· Sep 12, 2025</span></li>
         </ul>
-        <a class="link" href="blog.html">View all →</a>
+        <a class="link" href="./blog.html">View all →</a>
       </article>
 
       <article class="card">
@@ -78,7 +78,7 @@
         <p class="muted">© <span id="year"></span> · All rights reserved.</p>
       </div>
       <div>
-        <p class="muted">Made with care. <a class="link" href="blog.html">RSS coming soon</a></p>
+        <p class="muted">Made with care. <a class="link" href="./blog.html">RSS coming soon</a></p>
       </div>
     </div>
   </footer>
