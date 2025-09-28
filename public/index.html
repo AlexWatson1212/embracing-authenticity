@@ -5,10 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Embracing Authenticity</title>
 
-  <!-- Main CSS (relative path + cache-buster) -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Persist theme: apply saved theme on load -->
+  <!-- Header/Menu minimal styles (safe to move into style.css later) -->
+  <style>
+    .site-header{
+      position: sticky; top: 0; z-index: 1000;
+      background:#0b1324; /* matches your palette */
+    }
+    .header-row{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem;}
+    .brand img{height:28px;width:auto;display:block;object-fit:contain}
+    .site-nav{display:flex;align-items:center;gap:0.5rem}
+    .nav-toggle{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:40px;height:40px;border-radius:.75rem;border:1px solid rgba(255,255,255,.2);
+      background:rgba(255,255,255,.06);color:#fff; /* makes icon white */
+    }
+    /* slide-down list (mobile first) */
+    .nav-list{
+      position: absolute; left:0; right:0; top:calc(100% + .25rem);
+      margin:0 auto; list-style:none; padding:.25rem 0;
+      width:min(680px, calc(100% - 1.5rem)); background:#0f1a33; border-radius:1rem;
+      overflow:hidden; max-height:0; transition:max-height .28s ease;
+      box-shadow:0 10px 24px rgba(0,0,0,.35);
+    }
+    .nav-list li{border-top:1px solid rgba(255,255,255,.06)}
+    .nav-list li:first-child{border-top:none}
+    .nav-list a{display:block;padding:.9rem 1rem;color:#e8eefc;text-decoration:none}
+    .nav-list a:hover,.nav-list a:focus{background:rgba(255,255,255,.06)}
+    .nav-list.open{max-height:420px}
+    /* desktop */
+    @media (min-width:768px){
+      .nav-toggle{display:none}
+      .site-nav{position:static}
+      .nav-list{all:unset;display:flex;gap:1rem;list-style:none}
+      .nav-list a{padding:.25rem .5rem;border-radius:.5rem}
+      .nav-list a:hover{background:rgba(255,255,255,.08)}
+    }
+  </style>
+
+  <!-- Persist theme -->
   <script>
     (function () {
       var t = localStorage.getItem('ea-theme');
@@ -20,23 +57,27 @@
 
   <!-- Header / Nav -->
   <header class="site-header">
-  <div class="container header-row">
-    <a class="brand" href="./index.html" aria-label="Embracing Authenticity — Home">
-      <img src="./assets/images/logo.svg" alt="Embracing Authenticity">
-    </a>
+    <div class="container header-row">
+      <a class="brand" href="./index.html" aria-label="Embracing Authenticity — Home">
+        <!-- PNG logo -->
+        <img src="./assets/images/logo.png" alt="Embracing Authenticity">
+      </a>
 
-    <!-- Mobile-first nav: hamburger on small, inline on desktop -->
-    <nav class="site-nav" aria-label="Primary">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">☰</button>
-      <ul id="primary-nav" class="nav-list">
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./themes.html">Themes</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+      <!-- Mobile-first nav -->
+      <nav class="site-nav" aria-label="Primary">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+      <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <ul id="primary-nav" class="nav-list" hidden>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/themes.html">Themes</a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
 
   <!-- Hero -->
   <main id="content" class="site-main">
@@ -92,7 +133,14 @@
       btn.addEventListener('click', () => {
         const open = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!open));
-        list.classList.toggle('open', !open);
+        if(open){
+          list.classList.remove('open');
+          list.hidden = true;
+        } else {
+          list.hidden = false;
+          // allow paint before animating
+          requestAnimationFrame(() => list.classList.add('open'));
+        }
       });
     })();
   </script>

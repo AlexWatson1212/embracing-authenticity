@@ -4,15 +4,19 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head><body>
 <header class="site-header">
-  <nav class="nav">
-  <a class="brand" href="index.html">Embracing Authenticity</a>
-  <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
-  <ul class="nav__links">
-    <li><a class="active" href="blog.html">Blog</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="themes.html">Themes</a></li>
+  <nav class="site-nav" aria-label="Primary">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+      <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <ul id="primary-nav" class="nav-list" hidden>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/themes.html">Themes</a></li>
   </ul>
 </nav>
+
   <section class="hero"><div class="container">
     <h1>Blog</h1><p class="lead">Notes on healing, craft, and clarity.</p>
   </div></section>
@@ -58,4 +62,5 @@
   if(btn&&list)btn.addEventListener('click',()=>{const o=getComputedStyle(list).display!=='none';list.style.display=o?'none':'block';btn.setAttribute('aria-expanded',(!o).toString());});
   document.getElementById('year').textContent=new Date().getFullYear();
 </script>
+<script src="./assets/js/main.js"></script>
 </body></html>
