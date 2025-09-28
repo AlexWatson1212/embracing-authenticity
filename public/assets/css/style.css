@@ -338,3 +338,10 @@ body::after {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+/* Logo size (works for <img>, inline <svg>, or an element with .brand-logo) */
+.brand :is(img, svg, .brand-logo) {
+  height: 64px !important;   /* set your target size here (e.g., 48px, 64px) */
+  width: auto !important;
+  display: block;
+  object-fit: contain;
+}
