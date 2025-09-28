@@ -113,7 +113,7 @@ body::after {
 /* Support either <img> or a .brand-logo element */
 .brand img,
 .brand-logo {
-  height: 48px;
+  height: 64px;
   width: auto;
   display: block;
   object-fit: contain;
