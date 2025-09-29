@@ -8,10 +8,18 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- Header/Menu minimal styles (same as other pages; move into style.css later) -->
+  <!-- Header/Menu minimal styles (same as other pages; can be moved to style.css) -->
   <style>
-    .site-header{ position:sticky; top:0; z-index:1000; background:#0b1324; }
-    .header-row{ display:flex; align-items:center; justify-content:space-between; padding:.75rem 1rem; }
+    .site-header{
+      position: sticky; top: 0; z-index: 1000;
+      background:#0b1324;
+      border-bottom:1px solid var(--border); /* clear break from page */
+    }
+    .header-row{
+      display:flex; align-items:center; justify-content:space-between;
+      padding-block:10px;               /* same vertical rhythm */
+      padding-inline:var(--gutter);     /* align with container rail */
+    }
     .brand img{ height:28px; width:auto; display:block; object-fit:contain; }
     .site-nav{ display:flex; align-items:center; gap:.5rem; }
     .nav-toggle{
@@ -41,9 +49,6 @@
       .nav-list a{ padding:.25rem .5rem; border-radius:.5rem; }
       .nav-list a:hover{ background:rgba(255,255,255,.08); }
     }
-
-    /* Align header’s left edge with the site container gutter */
-    .header-row{ padding-block:10px; padding-inline:var(--gutter); }
   </style>
 
   <!-- Persist theme on load -->
@@ -76,16 +81,17 @@
         </ul>
       </nav>
     </div>
-
-    <!-- Hero -->
-    <section class="container section hero">
-      <h1>Themes</h1>
-      <p class="lead">Switch looks instantly. Pure-CSS themes you can copy and brand in minutes.</p>
-    </section>
   </header>
 
   <!-- Main -->
   <main id="content" class="site-main">
+    <!-- Hero now OUTSIDE the header (matches other pages) -->
+    <section class="container section hero">
+      <h1>Themes</h1>
+      <p class="lead">Switch looks instantly. Pure-CSS themes you can copy and brand in minutes.</p>
+    </section>
+
+    <!-- Picker -->
     <section class="container prose">
       <div class="theme-picker" style="margin:1rem 0">
         <label for="theme-select" class="muted">Choose theme:</label>
@@ -97,6 +103,7 @@
       </div>
     </section>
 
+    <!-- Cards -->
     <section class="container cards">
       <article class="card">
         <h2>Card Title</h2>
@@ -125,7 +132,7 @@
     </div>
   </footer>
 
-  <!-- Mobile nav toggle (same as other pages) -->
+  <!-- Mobile nav toggle -->
   <script>
     (function(){
       const btn  = document.querySelector('.nav-toggle');
@@ -150,9 +157,9 @@
     (function(){
       const key = 'ea-theme';
       const root = document.documentElement;
-      const sel = document.getElementById('theme-select');
+      const sel  = document.getElementById('theme-select');
 
-      // initialize picker from storage (default to 'aurora' if missing)
+      // initialize from storage (default 'aurora')
       const saved = localStorage.getItem(key) || 'aurora';
       root.setAttribute('data-theme', saved);
       if (sel) sel.value = saved;
