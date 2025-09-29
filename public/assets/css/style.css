@@ -345,3 +345,19 @@ body::after {
   display: block;
   object-fit: contain;
 }
+/* Make left edges line up everywhere (logo, hero, cards, footer) */
+.header-row {
+  /* keep vertical padding for height */
+  padding-block: 10px;
+
+  /* use the same horizontal gutter as every .container */
+  padding-inline: var(--gutter);
+}
+
+/* Ensure all major sections use the container with the same gutter */
+.site-header > .container,
+.hero.container,
+.cards.container,
+.site-footer > .container {
+  padding-inline: var(--gutter);
+}
