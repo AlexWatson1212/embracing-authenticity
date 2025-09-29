@@ -361,3 +361,47 @@ body::after {
 .site-footer > .container {
   padding-inline: var(--gutter);
 }
+/* === Page rails: keep left/right edges perfectly aligned === */
+:root{
+  /* If you want a slightly narrower content width than the header, lower this: */
+  --content-maxw: var(--maxw);
+}
+
+/* Make every major row use the same rails (left/right padding + max width) */
+.site-header > .container,
+.section.container,
+.site-footer > .container {
+  max-width: var(--content-maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Ensure the header uses the same horizontal padding as .container */
+.header-row { padding-block: 10px; padding-inline: var(--gutter); }
+
+/* === Card grids: align to rails and prevent any overflow === */
+/* Home + Themes both use .cards as the grid container */
+.section.cards {
+  max-width: var(--content-maxw);
+  margin-inline: auto;          /* center within rails */
+  padding-inline: var(--gutter);/* same left edge as logo/hero */
+}
+
+/* Grid that fits nicely inside the rails on any screen */
+.cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* Remove any accidental extra spacing on the grid container */
+  margin-left: 0; margin-right: 0;
+}
+
+/* Cards themselves shouldn’t add outside gaps */
+.cards > .card {
+  margin: 0;            /* no external offset */
+  width: 100%;          /* stay inside the rail */
+  box-sizing: border-box;
+}
+
+/* Optional: the thin rule under the hero should align too */
+.hero { padding-inline: var(--gutter); max-width: var(--content-maxw); margin-inline: auto; }
