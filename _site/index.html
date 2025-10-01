@@ -1,0 +1,173 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section with Overlay -->
+<section class="hero-banner">
+  <div class="hero-image-wrapper">
+    <img src="/assets/images/van-hero.jpg" alt="Black Transit Van Driving through Norwegian Mountains" />
+  </div>
+
+  <div class="hero-overlay">
+    <div class="hero-text">Welcome to the journey back to yourself.</div>
+    <div class="hero-buttons">
+      <a href="/self-discovery" class="hero-button">Start Here</a>
+    </div>
+  </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="hero">
+  <h2>Welcome</h2>
+  <p>This space was created to document the journey of healing, fatherhood, and discovering what it means to live authentically.</p>
+  <p>Hi, I’m Alex. I created this space to hold the truths I wish I’d heard when I felt most alone. I hope something here meets you where you are.</p>
+</section>
+
+<!-- Ethical Caution Section -->
+<section class="why-built">
+  <h2>This Isn’t Therapy. And That Matters.</h2>
+  <p><strong>Therapy isn’t always available. But healing can’t always wait.</strong></p>
+
+  <p><em>Embracing Authenticity</em> is a space for those in-between moments — between support systems, between clarity and confusion, between who you were and who you’re becoming. But we want to be clear:</p>
+
+  <p><strong>If you’re reading this and don’t have any support right now, please go gently.</strong></p>
+
+  <p>Some of the reflections shared here may stir up deep emotions — old wounds, unprocessed grief, or forgotten memories. This is normal. But it can also be overwhelming.</p>
+
+  <p><strong>We strongly recommend walking this journey with a qualified therapist or mental health professional if possible.</strong> Healing is not a solo sport. You deserve support. And no one should have to hold these things alone.</p>
+
+  <p>This site isn’t here to replace therapy. It’s here to sit beside it. To hold space while you wait for it, reflect after it, or reconnect with yourself in the quiet moments in between.</p>
+</section>
+
+<!-- Why I Built This -->
+<section class="why-built">
+  <h2>Why I Built This Site</h2>
+  <p>I didn’t build this site to prove anything or teach anyone how to live.<br>
+  I built it as a way of learning how to truly see myself.</p>
+
+  <p>For most of my life, I’ve hidden parts of myself — out of shame, fear, or simply not knowing how to express them. This space is an attempt to stop hiding. To let what’s real speak. To document what healing actually looks like — not as a linear process, but as a series of quiet reckonings.</p>
+
+  <p>If you’re reading this, you’re not just seeing a website. You’re seeing the parts of me I’ve never fully shown before. And in doing so, I hope it gives others permission to do the same — to be more honest with themselves, more gentle, more free.</p>
+</section>
+
+<!-- Quote Carousel -->
+<section class="quote-carousel">
+  <div class="quote-container">
+    <blockquote>
+      <p><em>“Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.”</em></p>
+      <footer>— Rumi</footer>
+    </blockquote>
+    <blockquote>
+      <p><em>“Owning our story and loving ourselves through that process is the bravest thing that we’ll ever do.”</em></p>
+      <footer>— Brené Brown</footer>
+    </blockquote>
+    <blockquote>
+      <p><em>“The curious paradox is that when I accept myself just as I am, then I can change.”</em></p>
+      <footer>— Carl Rogers</footer>
+    </blockquote>
+  </div>
+</section>
+
+<div class="quote-dots">
+  <span class="dot" onclick="goToQuote(0)"></span>
+  <span class="dot" onclick="goToQuote(1)"></span>
+  <span class="dot" onclick="goToQuote(2)"></span>
+</div>
+
+<!-- Frank Said It Best Section -->
+<section class="container" style="margin-top: 4rem;">
+  <h2>Frank said it best.</h2>
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+    <iframe 
+      src="https://www.youtube.com/embed/qQzdAsjWGPg" 
+      title="Frank Sinatra - My Way" 
+      style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0;" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- Latest Blog Posts -->
+<section class="latest-posts container">
+  <h2 class="text-2xl font-bold mb-6">Latest Reflections</h2>
+
+  <div class="grid gap-10">
+    {% for post in site.posts limit:3 %}
+    <div class="blog-card animate-on-scroll" style="margin-bottom: 1.5rem;">
+      <div class="blog-card-content">
+        <h3 class="text-xl font-semibold italic text-[#1A2D41] mb-1">{{ post.title }}</h3>
+        <p class="text-sm text-gray-600 mb-2">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p class="text-gray-700 mb-4">{{ post.description }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Blog Button -->
+  <div class="mt-6 text-center">
+    <a href="/blog" class="blog-button">Explore the Full Blog</a>
+  </div>
+</section>
+
+<!-- Quote Carousel Script -->
+<script>
+  const quotes = document.querySelectorAll(".quote-container blockquote");
+  const dots = document.querySelectorAll(".quote-dots .dot");
+  const quoteContainer = document.querySelector(".quote-carousel");
+  let current = 0;
+  let quoteInterval;
+
+  function showQuote(index) {
+    quotes.forEach((quote, i) => {
+      quote.classList.toggle("active", i === index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
+  function nextQuote() {
+    current = (current + 1) % quotes.length;
+    showQuote(current);
+    resetAutoRotate();
+  }
+
+  function goToQuote(index) {
+    current = index;
+    showQuote(current);
+    resetAutoRotate();
+  }
+
+  function startAutoRotate() {
+    quoteInterval = setInterval(nextQuote, 5000);
+  }
+
+  function resetAutoRotate() {
+    clearInterval(quoteInterval);
+    startAutoRotate();
+  }
+
+  quoteContainer.addEventListener("mouseenter", () => clearInterval(quoteInterval));
+  quoteContainer.addEventListener("mouseleave", startAutoRotate);
+
+  let startX = 0;
+  quoteContainer.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+  });
+
+  quoteContainer.addEventListener("touchend", e => {
+    const endX = e.changedTouches[0].clientX;
+    const delta = startX - endX;
+    if (delta > 50) nextQuote();
+    else if (delta < -50) {
+      current = (current - 1 + quotes.length) % quotes.length;
+      showQuote(current);
+      resetAutoRotate();
+    }
+  });
+
+  showQuote(current);
+  startAutoRotate();
+</script>

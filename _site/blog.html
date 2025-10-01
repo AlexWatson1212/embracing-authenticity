@@ -1,0 +1,115 @@
+---
+layout: default
+title: Blog
+pagination:
+  enabled: true
+---
+
+<section class="blog-intro fade-in">
+  <h2>{{ page.title }}{% if paginator.page > 1 %} - Page {{ paginator.page }}{% endif %}</h2>
+  <p>
+    This is where I share thoughts, stories, and reflections on what it means to live more honestly and authentically.
+    <a href="#blogPosts" class="scroll-link">Click here to skip to the blogs</a> or search below.
+  </p>
+</section>
+
+<!-- Emotional Truth Disclaimer -->
+<p style="font-style: italic; margin-bottom: 0.25rem; color: #555;">
+  These blogs reflect personal experiences and emotional truths. They aren’t about blame — they’re about healing, reflection, and reclaiming meaning through honest expression.
+</p>
+
+<!-- Safety & Support Note -->
+<p style="color: #800; font-weight: 500; margin-bottom: 1rem;">
+  If you’re exploring painful or confusing emotions and don’t have support right now, please be gentle with yourself. We strongly recommend working with a therapist as some discoveries may be difficult to process alone.
+</p>
+
+<!-- Why This Works Link -->
+<p style="margin-bottom: 1.5rem; text-align: center;">
+  <a href="/blog/why-writing-helps-us-heal.html" class="why-link">
+    ✍️ Want to know why this helps? Read the science behind expressive writing.
+  </a>
+</p>
+
+<!-- Search Function -->
+<div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+  <input type="text" id="search-input" placeholder="Search for what's on your mind..." style="flex: 1; padding: 8px;" />
+  <button id="search-button" style="padding: 8px 12px;">Search</button>
+</div>
+<ul id="search-results"></ul>
+
+<section class="blog-list" id="blogPosts">
+  {% for post in paginator.posts %}
+    <article class="blog-card fade-in" data-tags="{{ post.tags | join: ',' }}" data-emotions="{{ post.emotions | join: ',' }}">
+      <div class="blog-card-content">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 24 }}</p>
+
+        <div class="tag-list">
+          {% assign shown_emotions = post.emotions | slice: 0, 2 %}
+          {% for emotion in shown_emotions %}
+            <span class="tag">{{ emotion | capitalize }}</span>
+          {% endfor %}
+          {% if post.emotions.size > 2 %}
+            <span class="tag">+{{ post.emotions.size | minus: 2 }} more</span>
+          {% endif %}
+        </div>
+
+        <a href="{{ post.url }}" class="read-more">Read More →</a>
+      </div>
+    </article>
+  {% endfor %}
+
+  <div class="pagination fade-in">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="pagination-link">&larr; Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="pagination-link">Next &rarr;</a>
+    {% endif %}
+  </div>
+
+  <div class="back-to-top fade-in">
+    <a href="#" class="scroll-link">Back to Top ↑</a>
+  </div>
+</section>
+
+<style>
+  .why-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .why-link:hover {
+    color: #ff6600;
+  }
+</style>
+
+<script>
+  const scrollLinks = document.querySelectorAll('.scroll-link');
+  scrollLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const offset = 80;
+      const elementPosition = document.getElementById('blogPosts').getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
+    });
+  });
+
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("in-view");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+<script src="/assets/js/search.js"></script>

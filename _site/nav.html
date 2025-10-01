@@ -1,0 +1,21 @@
+<nav class="nav">
+  <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <ul class="nav__links">
+    {% for item in site.nav %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.text }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+<script>
+  (function(){
+    const btn = document.currentScript.previousElementSibling.querySelector('.nav__toggle');
+    const list = document.currentScript.previousElementSibling.querySelector('.nav__links');
+    if(!btn || !list) return;
+    btn.addEventListener('click', () => {
+      const open = getComputedStyle(list).display !== 'none';
+      list.style.display = open ? 'none' : 'block';
+      btn.setAttribute('aria-expanded', (!open).toString());
+    });
+  })();
+</script>

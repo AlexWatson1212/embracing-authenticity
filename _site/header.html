@@ -1,0 +1,18 @@
+<header class="site-header">
+  {% include nav.html %}
+  {% if page.hero != false %}
+  <section class="hero">
+    <div class="container">
+      <h1>{{ page.title | default: site.title }}</h1>
+      {% if page.subtitle %}
+        <p class="lead">{{ page.subtitle }}</p>
+      {% elsif site.description %}
+        <p class="lead">{{ site.description }}</p>
+      {% endif %}
+      {% if page.cta_text %}
+        <a href="{{ page.cta_url | default: '/about/' | relative_url }}" class="btn">{{ page.cta_text }}</a>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
+</header>

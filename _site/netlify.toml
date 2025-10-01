@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+  command = ""
+
+# optional, but helps local consistency
+[build.environment]
+  NODE_VERSION = "20"
