@@ -3,6 +3,7 @@ layout: default
 title: Blog
 pagination:
   enabled: true
+  collection: posts
 ---
 
 <section class="blog-intro fade-in">
@@ -13,24 +14,20 @@ pagination:
   </p>
 </section>
 
-<!-- Emotional Truth Disclaimer -->
 <p style="font-style: italic; margin-bottom: 0.25rem; color: #555;">
   These blogs reflect personal experiences and emotional truths. They aren’t about blame — they’re about healing, reflection, and reclaiming meaning through honest expression.
 </p>
 
-<!-- Safety & Support Note -->
 <p style="color: #800; font-weight: 500; margin-bottom: 1rem;">
   If you’re exploring painful or confusing emotions and don’t have support right now, please be gentle with yourself. We strongly recommend working with a therapist as some discoveries may be difficult to process alone.
 </p>
 
-<!-- Why This Works Link -->
 <p style="margin-bottom: 1.5rem; text-align: center;">
-  <a href="/blog/why-writing-helps-us-heal.html" class="why-link">
+  <a href="{{ '/blog/why-writing-helps-us-heal.html' | relative_url }}" class="why-link">
     ✍️ Want to know why this helps? Read the science behind expressive writing.
   </a>
 </p>
 
-<!-- Search Function -->
 <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
   <input type="text" id="search-input" placeholder="Search for what's on your mind..." style="flex: 1; padding: 8px;" />
   <button id="search-button" style="padding: 8px 12px;">Search</button>
@@ -41,7 +38,7 @@ pagination:
   {% for post in paginator.posts %}
     <article class="blog-card fade-in" data-tags="{{ post.tags | join: ',' }}" data-emotions="{{ post.emotions | join: ',' }}">
       <div class="blog-card-content">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
         <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 24 }}</p>
 
@@ -50,22 +47,22 @@ pagination:
           {% for emotion in shown_emotions %}
             <span class="tag">{{ emotion | capitalize }}</span>
           {% endfor %}
-          {% if post.emotions.size > 2 %}
+          {% if post.emotions and post.emotions.size > 2 %}
             <span class="tag">+{{ post.emotions.size | minus: 2 }} more</span>
           {% endif %}
         </div>
 
-        <a href="{{ post.url }}" class="read-more">Read More →</a>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
       </div>
     </article>
   {% endfor %}
 
   <div class="pagination fade-in">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="pagination-link">&larr; Previous</a>
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link">&larr; Previous</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="pagination-link">Next &rarr;</a>
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link">Next &rarr;</a>
     {% endif %}
   </div>
 
@@ -75,41 +72,34 @@ pagination:
 </section>
 
 <style>
-  .why-link {
-    text-decoration: none;
-    font-weight: 500;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-
-  .why-link:hover {
-    color: #ff6600;
-  }
+  .why-link { text-decoration: none; font-weight: 500; color: #333; transition: color .3s; }
+  .why-link:hover { color: #ff6600; }
 </style>
 
 <script>
-  const scrollLinks = document.querySelectorAll('.scroll-link');
-  scrollLinks.forEach(link => {
+  // Smooth scroll
+  document.querySelectorAll('.scroll-link').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
+      const el = document.getElementById('blogPosts');
+      if (!el) return;
       const offset = 80;
-      const elementPosition = document.getElementById('blogPosts').getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
     });
   });
 
+  // Fade-in observer
   const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  const appearOnScroll = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add("in-view");
-      observer.unobserve(entry.target);
+      obs.unobserve(entry.target);
     });
-  }, appearOptions);
-
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
+  }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+  faders.forEach(el => appearOnScroll.observe(el));
 </script>
-<script src="/assets/js/search.js"></script>
+
+<!-- Guard this if /assets/js/search.js doesn’t exist yet -->
+<script src="{{ '/assets/js/search.js' | relative_url }}"></script>

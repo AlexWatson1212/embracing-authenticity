@@ -1,20 +1,20 @@
+# ---- Site basics
 title: Embracing Authenticity
 description: A space to grow, reflect, and be your true self.
-
 url: "https://embracingauthenticity.co.uk"
-baseurl: ""   # keep empty
-
+baseurl: ""          # keep empty on Netlify
 markdown: kramdown
 permalink: /blog/:title/
 future: true
 
-# Plugins (Netlify needs these in Gemfile too)
+# ---- Plugins (make sure these are also in your Gemfile)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-paginate-v2
 
+# ---- Pagination (jekyll-paginate-v2)
 pagination:
   enabled: true
   per_page: 12
@@ -24,19 +24,24 @@ pagination:
   sort_field: "date"
   sort_reverse: true
 
+# ---- Collections
 collections:
-  tag:
+  # Pages live in /_pages
+  pages:
     output: true
-    permalink: /tag/:name/
+    permalink: /:title/
+  # Only keep this if you actually have a folder named _music_music
   music_music:
     output: true
     permalink: /music-therapy/:title/
     sort_by: date
     sort_order: descending
-  pages:
+  # Remove this block if you don't have a /_tag folder
+  tag:
     output: true
-    permalink: /:name/
+    permalink: /tag/:name/
 
+# ---- Defaults
 defaults:
   - scope:
       path: ""
@@ -44,7 +49,6 @@ defaults:
     values:
       layout: post
       tags: []
-
   - scope:
       path: ""
       type: music_music
@@ -53,13 +57,28 @@ defaults:
       tags: []
       sitemap: true
 
-image: /images/default-social.jpg
-title: Embracing Authenticity
-markdown: kramdown
-plugins:
-  - jekyll-feed
+# ---- Navigation for _includes/nav.html
+nav:
+  - text: Blog
+    url: /blog/
+  - text: Self-Discovery
+    url: /self-discovery/
+  - text: About
+    url: /about/
+  - text: Contact
+    url: /contact/
 
-collections:
-  pages:
-    output: true
-    permalink: /:title/
+# ---- Misc
+image: /images/default-social.jpg
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Don’t publish these files/folders to _site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - netlify.toml
+  - _archive_snapshot_2025-09-19
