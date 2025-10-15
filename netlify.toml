@@ -1,7 +1,7 @@
 [build]
-  publish = "."
-  command = ""
+  command = "bundle exec jekyll build"
+  publish = "_site"
 
-# optional, but helps local consistency
 [build.environment]
+  RUBY_VERSION = "3.2.2"
   NODE_VERSION = "20"

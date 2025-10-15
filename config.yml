@@ -2,20 +2,19 @@ title: Embracing Authenticity
 description: A space to grow, reflect, and be your true self.
 
 url: "https://embracingauthenticity.co.uk"
-baseurl: "" # Keep empty if not in a subdirectory
+baseurl: ""   # keep empty
 
 markdown: kramdown
 permalink: /blog/:title/
 future: true
 
-# ✅ Plugins - Clean and Correct
+# Plugins (Netlify needs these in Gemfile too)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-paginate-v2
 
-# ✅ Pagination Settings (jekyll-paginate-v2)
 pagination:
   enabled: true
   per_page: 12
@@ -25,7 +24,6 @@ pagination:
   sort_field: "date"
   sort_reverse: true
 
-# ✅ Collections
 collections:
   tag:
     output: true
@@ -39,7 +37,6 @@ collections:
     output: true
     permalink: /:name/
 
-# ✅ Defaults
 defaults:
   - scope:
       path: ""
@@ -56,5 +53,4 @@ defaults:
       tags: []
       sitemap: true
 
-# ✅ Add optional image fallback for social previews
 image: /images/default-social.jpg
