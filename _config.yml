@@ -54,3 +54,12 @@ defaults:
       sitemap: true
 
 image: /images/default-social.jpg
+title: Embracing Authenticity
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+collections:
+  pages:
+    output: true
+    permalink: /:title/
