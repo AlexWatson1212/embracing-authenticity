@@ -1,19 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- DEFAULT layout -->
   {% include head.html %}
 </head>
 <body>
   {% include header.html %}
   <main id="content" class="site-content">
-    <div class="container">
+    <article class="post">
+      <h1>{{ page.title }}</h1>
+      {% if page.date %}<p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>{% endif %}
       {{ content }}
-    </div>
+    </article>
   </main>
   {% include footer.html %}
- {% if site.google_analytics %}
-  {% include analytics.html %}
-{% endif %}
 </body>
 </html>
