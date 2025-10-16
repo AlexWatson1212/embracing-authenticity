@@ -1,22 +1,26 @@
-<header class="ea-header" role="banner">
-  <div class="ea-nav container" role="navigation" aria-label="Main">
-    <!-- Brand (logo only) -->
-    <a class="ea-nav__brand" href="/" aria-label="Home">
-      <img src="/assets/images/logo.png" alt="Embracing Authenticity" class="ea-nav__logo">
+<!-- _includes/header.html -->
+<div class="top-accent" aria-hidden="true"></div>
+<header class="site-header" role="banner">
+  <div class="shell">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <!-- swap the src to your real logo path -->
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" />
+      <span class="brand-text">Embracing Authenticity</span>
     </a>
 
-    <!-- Hamburger (mobile only) -->
-    <button class="ea-nav__toggle" aria-expanded="false" aria-controls="ea-primary-nav">
-      <span class="ea-nav__bar"></span>
-      <span class="ea-nav__bar"></span>
-      <span class="ea-nav__bar"></span>
-      <span class="ea-sr-only">Menu</span>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+      <span class="sr-only">Menu</span>
+      <!-- accessible hamburger -->
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
     </button>
 
-    <!-- Links -->
-    <ul id="ea-primary-nav" class="ea-nav__links">
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/self-discovery">Self-Discovery</a></li>
-    </ul>
+    <nav id="site-menu" class="site-nav" role="navigation">
+      <ul>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/self-discovery/' | relative_url }}">Self-Discovery</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
