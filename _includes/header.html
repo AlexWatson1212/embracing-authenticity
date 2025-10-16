@@ -1,38 +1,22 @@
-<header class="site-header">
-  <a class="brand" href="{{ '/' | relative_url }}">
-    {%- if site.logo -%}
-      <img class="brand-mark" src="{{ site.logo | relative_url }}" alt="{{ site.title | default: 'Embracing Authenticity' }}">
-    {%- else -%}
-      <img class="brand-mark" src="{{ '/assets/logo.svg' | relative_url }}" alt="Embracing Authenticity">
-    {%- endif -%}
-    <span class="brand-name">{{ site.title | default: 'Embracing Authenticity' }}</span>
-  </a>
+<header class="ea-header" role="banner">
+  <div class="ea-nav container" role="navigation" aria-label="Main">
+    <!-- Brand (logo only) -->
+    <a class="ea-nav__brand" href="/" aria-label="Home">
+      <img src="/assets/images/logo.png" alt="Embracing Authenticity" class="ea-nav__logo">
+    </a>
 
-  <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
-    <span class="sr-only">Menu</span>
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-      <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
-    </svg>
-  </button>
+    <!-- Hamburger (mobile only) -->
+    <button class="ea-nav__toggle" aria-expanded="false" aria-controls="ea-primary-nav">
+      <span class="ea-nav__bar"></span>
+      <span class="ea-nav__bar"></span>
+      <span class="ea-nav__bar"></span>
+      <span class="ea-sr-only">Menu</span>
+    </button>
 
-  <nav id="site-nav" class="nav" role="navigation">
-    <ul>
-      <!-- You have blog.html at the root, so link to it directly -->
-      <li><a href="{{ '/blog.html' | relative_url }}">Blog</a></li>
-      <!-- Update/remove this if/when you add the page -->
-      <li><a href="{{ '/self-discovery/' | relative_url }}">Self-Discovery</a></li>
+    <!-- Links -->
+    <ul id="ea-primary-nav" class="ea-nav__links">
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/self-discovery">Self-Discovery</a></li>
     </ul>
-  </nav>
+  </div>
 </header>
-
-<script>
-  (function(){
-    const btn = document.querySelector('.nav-toggle');
-    const nav = document.getElementById('site-nav');
-    if (!btn || !nav) return;
-    btn.addEventListener('click', function(){
-      const open = nav.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  })();
-</script>
