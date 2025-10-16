@@ -90,13 +90,13 @@ a:hover { color: var(--color-accent); }
 }
 
 /* ==================================================================
-PART 2/5 — Header / Navigation (final, no accent line)
+PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
 ================================================================== */
 
-/* remove top accent line completely */
+/* No accent line */
 .top-accent { display: none; }
 
-/* Sticky header — full-bleed, thicker on desktop */
+/* Sticky header — full-bleed */
 .site-header{
   position: sticky; top: 0; z-index: 1000;
   background: var(--ea-navy);
@@ -105,10 +105,11 @@ PART 2/5 — Header / Navigation (final, no accent line)
   width: 100%;
 }
 
+/* Inner container keeps content aligned to site width */
 .site-header .shell{
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0.9rem 1rem;             /* slightly taller than before on mobile */
+  padding: 0.9rem 1rem;             /* comfy mobile height */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -121,13 +122,19 @@ PART 2/5 — Header / Navigation (final, no accent line)
   text-decoration: none; color: inherit;
 }
 
-/* Bigger logo */
+/* Use height-only so rectangular logos keep their aspect ratio */
+:root{
+  --logo-h-mobile: 48px;
+  --logo-h-desktop: 72px; /* bump this up/down to taste */
+}
 .brand-mark{
-  width: 48px; height: 48px;        /* was 40x40 */
+  height: var(--logo-h-mobile);
+  width: auto;                 /* keep original aspect ratio */
+  max-width: 100%;
   object-fit: contain;
 }
 
-/* Hide brand text (keep for structure/SEO) */
+/* Hide brand text (we’ll rely on aria-label on the link) */
 .brand-text{ display: none; }
 
 /* ---- Nav links ---- */
@@ -167,16 +174,14 @@ PART 2/5 — Header / Navigation (final, no accent line)
     flex-direction: column; align-items: flex-start;
     padding: .5rem 0 .75rem; gap: .75rem;
   }
-  /* Slightly smaller logo for tight screens */
-  .brand-mark{ width: 44px; height: 44px; }
 }
 
-/* ---- Desktop tweaks: thicker bar + larger logo ---- */
+/* ---- Desktop: thicker bar + larger logo ---- */
 @media (min-width: 861px){
   .nav-toggle{ display: none; }
   .site-nav{ max-height: none !important; }
-  .site-header .shell{ padding: 1.15rem 1.5rem; } /* thicker bar on desktop */
-  .brand-mark{ width: 60px; height: 60px; }       /* bigger logo on desktop */
+  .site-header .shell{ padding: 1.15rem 1.5rem; }      /* thicker bar */
+  .brand-mark{ height: var(--logo-h-desktop); }        /* larger logo */
 }
 
 /* Current page highlight */
@@ -184,7 +189,7 @@ PART 2/5 — Header / Navigation (final, no accent line)
   border-bottom-color: var(--ea-accent);
 }
 
-/* Kill any leftover huge masthead title */
+/* Hide any leftover huge masthead title */
 .masthead, .site-title, header .site-title{ display: none !important; }
 
 /* ==================================================================
