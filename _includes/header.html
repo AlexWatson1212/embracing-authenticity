@@ -3,23 +3,29 @@
   <div class="shell">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="Embracing Authenticity">
       <!-- swap the src to your real logo path -->
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="" class="brand-mark" />
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Embracing Authenticity Logo" class="brand-mark" />
       <!-- brand text hidden in CSS, but kept for SEO/backup -->
       <span class="brand-text">Embracing Authenticity</span>
     </a>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
-      <span class="sr-only">Menu</span>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
       <!-- accessible hamburger -->
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M3 6h18M3 12h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round" />
       </svg>
     </button>
 
-    <nav id="site-menu" class="site-nav" role="navigation">
+    <nav id="site-menu" class="site-nav" role="navigation" hidden>
       <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
         <li><a href="{{ '/self-discovery/' | relative_url }}">Self-Discovery</a></li>
+        <li><a href="{{ '/music-therapy/' | relative_url }}">Music Therapy</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
       </ul>
     </nav>
   </div>
