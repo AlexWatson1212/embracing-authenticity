@@ -28,11 +28,15 @@ pagination:
   </a>
 </p>
 
-<div style="display: flex; gap: 10px; margin-bottom: 1rem;">
-  <input type="text" id="search-input" placeholder="Search for what's on your mind..." style="flex: 1; padding: 8px;" />
-  <button id="search-button" style="padding: 8px 12px;">Search</button>
-</div>
-<ul id="search-results"></ul>
+<!-- Search UI -->
+<form class="blog-search" role="search" aria-label="Blog Search" onsubmit="return false;">
+  <input id="blog-search-input" type="search" placeholder="Search for what's on your mind…" />
+  <button id="blog-search-button">Search</button>
+  <span id="blog-search-count" class="search-count" aria-live="polite"></span>
+</form>
+
+<!-- Live results (populated by /assets/js/search.js) -->
+<ul id="blog-search-results" class="blog-search-results"></ul>
 
 <section class="blog-list" id="blogPosts">
   {% for post in paginator.posts %}
@@ -74,6 +78,22 @@ pagination:
 <style>
   .why-link { text-decoration: none; font-weight: 500; color: #333; transition: color .3s; }
   .why-link:hover { color: #ff6600; }
+
+  /* Search UI (matches your design tokens) */
+  .blog-search { display: flex; gap: .5rem; align-items: center; margin: 1rem 0 1.5rem; }
+  .blog-search input[type="search"] { flex: 1; padding: .6rem .8rem; border: 1px solid var(--color-mid); border-radius: 6px; }
+  .blog-search button { padding: .6rem 1rem; border: 2px solid var(--color-accent); color: var(--color-accent); background: transparent; border-radius: 6px; font-weight: 600; cursor: pointer; }
+  .blog-search button:hover { background: var(--color-accent); color: #fff; }
+  .search-count { margin-left: .5rem; color: var(--color-muted); font-size: .95rem; }
+
+  .blog-search-results { list-style: none; margin: 1rem 0 2rem; padding: 0; display: grid; gap: 1rem; }
+  .search-result { background: var(--color-light); border-radius: var(--radius); padding: 1rem 1.25rem; box-shadow: var(--shadow); }
+  .search-title { font-weight: 700; text-decoration: none; color: var(--color-primary); }
+  .search-title:hover { color: var(--color-accent); }
+  .search-snippet { margin: .5rem 0 .25rem; }
+  .search-meta { color: var(--color-muted); font-size: .9rem; }
+  .chip { display: inline-block; margin-left: .35rem; padding: .1rem .5rem; background: var(--color-highlight); color: var(--color-accent); border-radius: 999px; font-size: .75rem; }
+  .chip.emo { background: #dbe5ea; color: var(--color-primary); }
 </style>
 
 <script>
@@ -99,7 +119,17 @@ pagination:
     });
   }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
   faders.forEach(el => appearOnScroll.observe(el));
+
+  // Hide the static list when a query is present (the search.js drives results)
+  (function(){
+    var input = document.querySelector('#blog-search-input');
+    var list  = document.querySelector('.blog-list');
+    if (!input || !list) return;
+    input.addEventListener('input', function(){
+      list.style.display = this.value.trim() ? 'none' : '';
+    });
+  })();
 </script>
 
-<!-- Guard this if /assets/js/search.js doesn’t exist yet -->
-<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+<!-- Load search AFTER nav.js; this page loads it directly -->
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
