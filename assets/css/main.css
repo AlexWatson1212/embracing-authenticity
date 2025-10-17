@@ -6,6 +6,14 @@ Copy this whole chunk as your first ~200 lines.
 ====================================================================
 */
 
+/*
+====================================================================
+Embracing Authenticity — Consolidated CSS (Part 1/5)
+--------------------------------------------------------------------
+Replace your entire PART 1/5 with this block.
+====================================================================
+*/
+
 /* ==================================================================
 PART 1/5 — Base, Variables, Resets, Layout, Typography
 ================================================================== */
@@ -25,7 +33,7 @@ PART 1/5 — Base, Variables, Resets, Layout, Typography
 
   /* Header/Nav palette (unified) */
   --ea-navy: #0e2a3b;              /* header bg */
-  --ea-accent: #ff9e66;            /* top accent line + active link */
+  --ea-accent: #ff9e66;            /* active/brand accent */
   --ea-text: #f4f6f8;              /* header text */
   --ea-link: #ffd2b3;              /* hover underline color */
   --ea-shadow: 0 6px 16px rgba(0,0,0,.12);
@@ -41,6 +49,10 @@ PART 1/5 — Base, Variables, Resets, Layout, Typography
 
   /* Layout */
   --container-max: 1100px;
+
+  /* Logo sizing */
+  --logo-h-mobile: 48px;
+  --logo-h-desktop: 72px;
 }
 
 /* Reset & Box Model */
@@ -56,15 +68,32 @@ body {
   color: var(--color-primary);
   line-height: 1.6;
   text-align: left;
+  margin: 0;
 }
 
 img { max-width: 100%; height: auto; display: block; }
 
-/* Global container */
+/* Global container (site content wrapper) */
 .container {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 2rem 1rem;
+}
+
+/* Keep header (.shell) aligned with content (.container) */
+.shell {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Safety: constrain single-post pages even if not wrapped in .container */
+.site-content > .post {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -79,8 +108,8 @@ h1, h2, h3, h4, h5, h6 {
 
 main h2 { color: var(--color-accent); }
 
-/* Utility link styles (general) */
-a { color: var(--color-primary); }
+/* Links (general) */
+a { color: var(--color-primary); text-decoration: none; }
 a:hover { color: var(--color-accent); }
 
 /* Screen-reader only helper */
@@ -138,9 +167,11 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
 .brand-text{ display: none; }
 
 /* ---- Nav links ---- */
+.site-nav { width: auto; }
 .site-nav ul{
   display: flex; align-items: center; gap: 1.25rem;
   list-style: none; margin: 0; padding: 0;
+  flex-wrap: wrap; /* avoid pushing past the logo on mid widths */
 }
 .site-nav a{
   color: var(--ea-text);
@@ -150,6 +181,9 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
 }
 .site-nav a:hover,
 .site-nav a:focus{ border-bottom-color: var(--ea-link); }
+
+/* Optional: active link class (added via JS or templating) */
+.site-nav a.is-active { border-bottom-color: var(--ea-accent); }
 
 /* ---- Hamburger (mobile) ---- */
 .nav-toggle{
@@ -169,7 +203,7 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
     max-height: 0;
     transition: max-height .3s ease;
   }
-  .site-header.is-open .site-nav{ max-height: 220px; }
+  .site-header.is-open .site-nav{ max-height: 240px; }
   .site-nav ul{
     flex-direction: column; align-items: flex-start;
     padding: .5rem 0 .75rem; gap: .75rem;
@@ -182,11 +216,6 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
   .site-nav{ max-height: none !important; }
   .site-header .shell{ padding: 1.15rem 1.5rem; }      /* thicker bar */
   .brand-mark{ height: var(--logo-h-desktop); }        /* larger logo */
-}
-
-/* Current page highlight */
-.site-nav a[href="{{ page.url | relative_url }}"]{
-  border-bottom-color: var(--ea-accent);
 }
 
 /* Hide any leftover huge masthead title */
