@@ -8,9 +8,8 @@
   function toggle(open) {
     btn.setAttribute('aria-expanded', String(open));
     btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    if (open) menu.removeAttribute('hidden');
-    else menu.setAttribute('hidden', '');
     header.classList.toggle('is-open', open);
+    menu.classList.toggle('is-open', open);
   }
 
   btn.addEventListener('click', () => {
@@ -18,12 +17,12 @@
     toggle(open);
   });
 
-  // Close menu when clicking a link
+  // Close menu after clicking a link
   menu.addEventListener('click', e => {
     if (e.target.tagName === 'A') toggle(false);
   });
 
-  // Close on Escape
+  // Close on Escape key
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') toggle(false);
   });

@@ -2,14 +2,11 @@
 <header class="site-header" role="banner">
   <div class="shell">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="Embracing Authenticity">
-      <!-- swap the src to your real logo path -->
       <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Embracing Authenticity Logo" class="brand-mark" />
-      <!-- brand text hidden in CSS, but kept for SEO/backup -->
       <span class="brand-text">Embracing Authenticity</span>
     </a>
 
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
-      <!-- accessible hamburger -->
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
         <path d="M3 6h18M3 12h18M3 18h18"
               stroke="currentColor"
@@ -19,7 +16,7 @@
       </svg>
     </button>
 
-    <nav id="site-menu" class="site-nav" role="navigation" hidden>
+    <nav id="site-menu" class="site-nav" role="navigation">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
