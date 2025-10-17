@@ -7,8 +7,6 @@ tags: ["projects", "shed", "victor"]
 filename: 2025-10-17-the-shed-dream.md
 ---
 
-# The Shed Dream  
-
 There’s this picture I keep coming back to in my mind: a proper shed, a workshop that’s not just for storage but for me. A place to weld, paint, make things, lose myself in the rhythm of creating without neighbours peering in or the weather cutting it short. Right now my shed is small, functional, and ugly — it does the job, but it doesn’t give me that sense of pride or privacy. It feels temporary.  
 
 What I really want is something lasting. Timber, solid, something I build on a proper base that will stand for twenty-five years. Something that adds to the garden, adds to the home, but also adds to me — a space to retreat, recharge, and express.  
