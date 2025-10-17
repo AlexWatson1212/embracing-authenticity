@@ -346,15 +346,15 @@ PART 4/5 — Music Therapy Grid, LEGO Animation, Tags/Emotions
 .emotion-list h3 a { font-size: 1.4rem; color: var(--color-accent); text-decoration: none; font-family: var(--font-heading); }
 .emotion-list p { font-size: 1rem; color: #444; margin-top: .5rem; }
 /* ==================================================================
-PART 5/5 — Accent Band + Global Footer
+PART 5/5 — Accent Band + Global Footer (CLEAN/WHITE ICONS)
 ================================================================== */
 
-/* Accent band (sits under hero or anywhere you place it) */
+/* Accent band (optional, under hero) */
 .accent-band {
   background: var(--ea-navy);
   color: var(--ea-text);
   padding: 22px 0;
-  margin-top: -8px; /* optional: tucks slightly under the hero */
+  margin-top: -8px;
   box-shadow: var(--ea-shadow);
 }
 .accent-band .container {
@@ -384,8 +384,7 @@ PART 5/5 — Accent Band + Global Footer
 }
 
 /* -----------------------------
-   Global footer (include on all pages)
-   HTML lives in _includes/footer.html
+   Global footer
 ------------------------------ */
 
 .site-footer {
@@ -402,39 +401,35 @@ PART 5/5 — Accent Band + Global Footer
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  text-align: center;
+  text-align: left;   /* left for a sharper look */
 }
 
 @media (min-width: 640px) {
   .site-footer .container.grid {
-    grid-template-columns: 1fr 1fr 1fr; /* title/copyright | nav | notes */
-    text-align: left;
+    grid-template-columns: 1fr 1fr 1fr; /* brand | nav | socials/note */
     align-items: start;
   }
 }
 
-/* Title + copyright inherited from your markup */
 .site-footer strong { color: var(--ea-text); }
 .site-footer .muted {
-  color: rgba(255,255,255,.85);
+  color: rgba(255,255,255,.92);
   font-size: 0.95rem;
-  margin: 0.2rem 0;
+  margin: 0.25rem 0 0;
 }
 
-/* Footer nav (legal links etc) */
+/* Footer nav */
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 16px;
-  justify-content: center;
-}
-@media (min-width: 640px) {
-  .footer-nav { justify-content: flex-start; }
+  gap: 10px 16px;
+  align-items: center;
+  margin-top: 2px;
 }
 .footer-nav a {
   color: var(--ea-text);
   text-decoration: none;
-  opacity: 0.9;
+  opacity: 0.95;
   font-size: 0.95rem;
   border-bottom: 2px solid transparent;
   transition: opacity var(--transition), border-color var(--transition);
@@ -445,66 +440,73 @@ PART 5/5 — Accent Band + Global Footer
   border-bottom-color: var(--ea-link);
 }
 
-/* Footer note (made with love + email + RSS) */
+/* Footer note + links */
 .footer-note {
   font-size: 0.95rem;
-  color: rgba(255,255,255,.9);
+  color: rgba(255,255,255,.92);
 }
 .footer-note a {
   color: var(--ea-text);
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(255,255,255,.5);
-  transition: border-color var(--transition), opacity var(--transition);
+  text-decoration: none;          /* remove dashed underline */
+  border: 0;
+  transition: opacity var(--transition);
 }
 .footer-note a:hover,
-.footer-note a:focus {
-  border-bottom-color: var(--ea-link);
-  opacity: 1;
-}
+.footer-note a:focus { opacity: 1; }
 
-/* Give links in footer a consistent hover feel */
-.site-footer a { opacity: 0.95; }
+/* Consistent link feel in footer */
+.site-footer a { opacity: .95; }
 .site-footer a:hover { opacity: 1; }
 
-/* Nice spacing before/after footer on narrow pages with little content */
-body > footer.site-footer { margin-top: clamp(32px, 6vw, 64px); }
-
-/* Print-friendly tweaks: simplify footer background when printing */
+/* Print */
 @media print {
   .site-footer, .accent-band {
-    background: #ffffff !important;
+    background: #fff !important;
     color: #000 !important;
     box-shadow: none !important;
   }
   .footer-nav a, .footer-note a { color: #000 !important; border: 0 !important; }
 }
 
-/* Footer social icons */
+/* -----------------------------
+   Social icons — WHITE + MINIMAL
+------------------------------ */
+
+:root {
+  --footer-icon-size: 22px;
+}
+
 .footer-social {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-  margin-bottom: 8px;
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  margin: 0 0 8px 0;
 }
-@media (min-width: 640px) {
-  .footer-social { justify-content: flex-start; }
-}
+
 .footer-social .social {
-  width: 38px;
-  height: 38px;
   display: inline-grid;
   place-items: center;
-  border-radius: 999px;
-  background: rgba(255,255,255,.08);
-  transition: transform var(--transition), background-color var(--transition);
-  color: var(--ea-text); /* icons use currentColor */
+  width: var(--footer-icon-size);
+  height: var(--footer-icon-size);
+  color: #fff;                     /* icons use currentColor */
+  text-decoration: none;
+  opacity: .9;
+  transition: transform var(--transition), opacity var(--transition);
 }
+
 .footer-social .social:hover {
-  transform: translateY(-2px);
-  background: rgba(255,255,255,.16);
+  transform: translateY(-1px);
+  opacity: 1;
 }
+
 .footer-social .icon {
-  width: 20px;
-  height: 20px;
+  width: var(--footer-icon-size);
+  height: var(--footer-icon-size);
   display: block;
 }
+
+/* Tighter email link styling to feel cleaner */
+.footer-email {
+  text-underline-offset: 3px;
+}
+
