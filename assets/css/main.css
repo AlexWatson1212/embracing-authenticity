@@ -478,7 +478,8 @@ body > footer.site-footer { margin-top: clamp(32px, 6vw, 64px); }
   }
   .footer-nav a, .footer-note a { color: #000 !important; border: 0 !important; }
 }
-/* --- Footer social icons --- */
+
+/* Footer social icons */
 .footer-social {
   display: flex;
   gap: 14px;
@@ -489,13 +490,21 @@ body > footer.site-footer { margin-top: clamp(32px, 6vw, 64px); }
   .footer-social { justify-content: flex-start; }
 }
 .footer-social .social {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   display: inline-grid;
   place-items: center;
   border-radius: 999px;
   background: rgba(255,255,255,.08);
-  transition: transform var(--transition), background-color var(--transition), opacity var(--transition);
+  transition: transform var(--transition), background-color var(--transition);
 }
-.footer-social .social:hover { transform: translateY(-2px); background: rgba(255,255,255,.16); }
-.footer-social .social svg { width: 18px; height: 18px; fill: var(--ea-text); opacity: .95; }
+.footer-social .social:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,.16);
+}
+.footer-social .social svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--ea-text);
+}
+
