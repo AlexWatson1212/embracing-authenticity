@@ -78,10 +78,10 @@ permalink: /contact/
 </style>
 
 <section class="contact-container">
-  <h1>Contact Us</h1>
+  <h1>Contact</h1>
   <p>If something here resonates, if you have a question, or if you'd simply like to connect — you’re welcome to reach out using the form below.</p>
 
-  <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+  <form action="https://formspree.io/f/xpwybnnb" method="POST" class="contact-form">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" required />
 
