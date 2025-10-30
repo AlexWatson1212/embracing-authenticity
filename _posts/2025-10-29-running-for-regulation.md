@@ -19,4 +19,3 @@ I think I’ve found a simple formula: **a hard sprint + a cold shower = reset**
 
 It’s not about being the fittest runner. It’s about being able to return to my life regulated, present, and ready. Sometimes that’s all I need.
 
-Would you like me to also add a little closing reflection line — like a compass point to remind you next time you feel the “bubble” rising?
