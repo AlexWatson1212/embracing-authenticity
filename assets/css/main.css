@@ -108,6 +108,27 @@ h1, h2, h3, h4, h5, h6 {
 
 main h2 { color: var(--color-accent); }
 
+/* Post navigation */
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-mid);
+  font-size: 0.95rem;
+}
+
+.post-navigation a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.post-navigation a:hover {
+  color: var(--color-primary);
+}
+
 /* Links (general) */
 a { color: var(--color-primary); text-decoration: none; }
 a:hover { color: var(--color-accent); }
