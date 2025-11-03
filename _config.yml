@@ -59,14 +59,15 @@ defaults:
 
 # ---- Navigation for _includes/nav.html
 nav:
-  - text: Blog
-    url: /blog/
-  - text: Self-Discovery
-    url: /self-discovery/
   - text: About
-    url: /about/
-  - text: Contact
-    url: /contact/
+    url: /about
+  - text: Blog
+    url: /blog
+  - text: Self-Discovery
+    url: /self-discovery
+  - text: Neurodivergent Lens
+    url: /neurodivergent-lens
+
 
 # ---- Misc
 image: /images/default-social.jpg

@@ -155,13 +155,13 @@ a:hover { color: var(--color-accent); }
 }
 
 /* ==================================================================
-PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
+PART 2/5 — Header / Navigation (REPLACED: full-bleed + nav__links support)
 ================================================================== */
 
 /* No accent line */
 .top-accent { display: none; }
 
-/* Sticky header — full-bleed */
+/* ---------- Sticky header — full-bleed (brand + legacy .site-nav) ---------- */
 .site-header{
   position: sticky; top: 0; z-index: 1000;
   background: var(--ea-navy);
@@ -202,7 +202,7 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
 /* Hide brand text (we’ll rely on aria-label on the link) */
 .brand-text{ display: none; }
 
-/* ---- Nav links ---- */
+/* ---- Legacy .site-nav links ---- */
 .site-nav { width: auto; }
 .site-nav ul{
   display: flex; align-items: center; gap: 1.25rem;
@@ -214,6 +214,8 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
   text-decoration: none;
   padding: .45rem 0;
   border-bottom: 2px solid transparent;
+  font-weight: 600;
+  transition: color var(--transition), border-color var(--transition);
 }
 .site-nav a:hover,
 .site-nav a:focus{ border-bottom-color: var(--ea-link); }
@@ -229,7 +231,7 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
   border-radius: .6rem; padding: .45rem; cursor: pointer;
 }
 
-/* ---- Mobile slide-down ---- */
+/* ---- Mobile slide-down (legacy .site-nav) ---- */
 @media (max-width: 860px){
   .site-header .shell{ flex-wrap: wrap; }
   .nav-toggle{ display: inline-flex; }
@@ -256,6 +258,91 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
 
 /* Hide any leftover huge masthead title */
 .masthead, .site-title, header .site-title{ display: none !important; }
+
+/* ==================================================================
+NEW: Minimal nav system styles for <nav class="nav"> + .nav__links
+(Used by your alternate header snippet with #primary-nav and hidden attr)
+================================================================== */
+
+.nav {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav__brand {
+  color: var(--ea-text);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+/* Toggle button */
+.nav__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,.25);
+  background: transparent;
+  color: var(--ea-text);
+  border-radius: .6rem;
+  padding: .45rem .55rem;
+  cursor: pointer;
+  transition: background-color var(--transition), border-color var(--transition);
+}
+.nav__toggle:hover { background: rgba(255,255,255,.06); }
+
+/* Simple hamburger icon block */
+.nav__icon {
+  width: 20px; height: 2px; background: currentColor; position: relative; display: block;
+}
+.nav__icon::before, .nav__icon::after{
+  content:""; position: absolute; left: 0; right: 0; height: 2px; background: currentColor;
+}
+.nav__icon::before{ top: -6px; }
+.nav__icon::after{ top: 6px; }
+
+/* Links list (spacing-consistent) */
+.nav__links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__links a{
+  color: var(--ea-text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: .45rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+.nav__links a:hover{ color: var(--ea-link); border-bottom-color: var(--ea-link); }
+
+/* Mobile behavior for .nav__links using [hidden] attribute */
+@media (max-width: 860px){
+  .nav { flex-wrap: wrap; }
+  .nav__toggle{ display: inline-flex; }
+  .nav__links[hidden] { display: none !important; }
+  .nav__links{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .5rem 0 .75rem;
+    gap: .75rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 861px){
+  .nav__toggle{ display: none; }
+}
 
 /* ==================================================================
 PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
