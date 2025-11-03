@@ -6,23 +6,15 @@ Copy this whole chunk as your first ~200 lines.
 ====================================================================
 */
 
-/*
-====================================================================
-Embracing Authenticity — Consolidated CSS (Part 1/5)
---------------------------------------------------------------------
-Replace your entire PART 1/5 with this block.
-====================================================================
-*/
-
 /* ==================================================================
-PART 1/5 — Base, Variables, Resets, Layout, Typography
+PART 1/5 — Base, Variables, Resets, Layout, Typography (UPDATED)
 ================================================================== */
 
 /* Variables (site-wide palette + tokens) */
 :root {
   /* Core palette */
   --color-bg: #F8F4EC;             /* paper background */
-  --color-primary: #1A2D41;        /* body text + headings default */
+  --color-primary: #1A2D41;        /* default text + headings */
   --color-accent: #B6753A;         /* warm accent for links/buttons */
   --color-highlight: #F4D3D8;      /* soft highlight (cards/chips) */
   --color-light: #FFFFFF;          /* white */
@@ -31,11 +23,11 @@ PART 1/5 — Base, Variables, Resets, Layout, Typography
   --color-footer-bg: #1A2D41;      /* footer navy */
   --color-footer-text: #F8F4EC;    /* footer text */
 
-  /* Header/Nav palette (unified) */
-  --ea-navy: #0e2a3b;              /* header bg */
-  --ea-accent: #ff9e66;            /* active/brand accent */
-  --ea-text: #f4f6f8;              /* header text */
-  --ea-link: #ffd2b3;              /* hover underline color */
+  /* Header/Nav palette */
+  --ea-navy: #0e2a3b;
+  --ea-accent: #ff9e66;
+  --ea-text: #f4f6f8;
+  --ea-link: #ffd2b3;
   --ea-shadow: 0 6px 16px rgba(0,0,0,.12);
 
   /* Fonts */
@@ -49,15 +41,31 @@ PART 1/5 — Base, Variables, Resets, Layout, Typography
 
   /* Layout */
   --container-max: 1100px;
+  --container-pad-x: 1rem;   /* easy global tweak for side padding */
+  --section-pad-y: 2rem;      /* vertical rhythm */
 
   /* Logo sizing */
   --logo-h-mobile: 48px;
   --logo-h-desktop: 72px;
+
+  /* Hero/text helpers (used in Part 3) */
+  --hero-title-size-min: 1.6rem;
+  --hero-title-size-max: 3rem;
+  --hero-sub-size-min: .95rem;
+  --hero-sub-size-max: 1.25rem;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root { --transition: 0s; }
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
 }
 
 /* Reset & Box Model */
-* { box-sizing: border-box; }
-*::before, *::after { box-sizing: inherit; }
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -69,6 +77,8 @@ body {
   line-height: 1.6;
   text-align: left;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -77,14 +87,14 @@ img { max-width: 100%; height: auto; display: block; }
 .container {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: var(--section-pad-y) var(--container-pad-x);
 }
 
 /* Keep header (.shell) aligned with content (.container) */
 .shell {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 var(--container-pad-x);
   box-sizing: border-box;
 }
 
@@ -92,7 +102,7 @@ img { max-width: 100%; height: auto; display: block; }
 .site-content > .post {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: var(--section-pad-y) var(--container-pad-x);
   box-sizing: border-box;
 }
 
@@ -104,9 +114,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--color-primary);
   margin: 2rem 0 1rem;
+  line-height: 1.2;
 }
 
 main h2 { color: var(--color-accent); }
+
+p { color: var(--color-primary); }
+small, .muted { color: var(--color-muted); }
+
+/* Links (general) */
+a { color: var(--color-primary); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--color-accent); }
 
 /* Post navigation */
 .post-navigation {
@@ -117,26 +135,23 @@ main h2 { color: var(--color-accent); }
   border-top: 1px solid var(--color-mid);
   font-size: 0.95rem;
 }
-
 .post-navigation a {
   color: var(--color-accent);
   font-weight: 600;
   text-decoration: none;
   transition: color var(--transition);
 }
-
-.post-navigation a:hover {
-  color: var(--color-primary);
-}
-
-/* Links (general) */
-a { color: var(--color-primary); text-decoration: none; }
-a:hover { color: var(--color-accent); }
+.post-navigation a:hover { color: var(--color-primary); }
 
 /* Screen-reader only helper */
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* Responsive rhythm tweaks */
+@media (min-width: 860px) {
+  :root { --section-pad-y: 2.5rem; }
 }
 
 /* ==================================================================
@@ -243,10 +258,10 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
 .masthead, .site-title, header .site-title{ display: none !important; }
 
 /* ==================================================================
-PART 3/5 — Cards, Hero, Quotes, Animations
+PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
 ================================================================== */
 
-/* Blog cards (shared for home + lists) */
+/* -------- Blog cards (home + lists) -------- */
 .blog-list, .latest-posts .blog-list { display: grid; gap: 2rem; }
 
 .blog-card, .latest-posts .blog-card {
@@ -256,15 +271,12 @@ PART 3/5 — Cards, Hero, Quotes, Animations
   box-shadow: var(--shadow);
   transition: transform var(--transition), box-shadow var(--transition);
 }
-
 .blog-card:hover, .latest-posts .blog-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(26, 45, 65, 0.15);
 }
-
 .blog-card-content h3 a { text-decoration: none; color: var(--color-primary); }
 .blog-card-content h3 a:hover { color: var(--color-accent); }
-
 .read-more, .latest-posts .read-more {
   display: inline-block;
   padding: 0.4rem 1rem;
@@ -280,7 +292,6 @@ PART 3/5 — Cards, Hero, Quotes, Animations
   background-color: var(--color-accent);
   color: var(--color-light);
 }
-
 /* Ensure no rogue backgrounds in cards */
 .blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) {
   background: transparent !important;
@@ -290,37 +301,161 @@ PART 3/5 — Cards, Hero, Quotes, Animations
 .blog-card a:hover { color: var(--color-accent); }
 .blog-card mark { background: rgba(232,143,58,.15); color: inherit; }
 
-/* Quote carousel */
+/* -------- HERO (short + mobile-safe) -------- */
+/* Structure */
+.hero-banner { position: relative; width: 100%; overflow: hidden; }
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  /* maintain a soft, roomy aspect ratio on wide screens */
+  aspect-ratio: 16 / 7;
+  background: var(--color-bg);
+}
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;        /* handles abstract or photographic heroes */
+  object-position: center;
+  border-radius: 0;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: end;       /* bottom on desktop */
+  justify-items: start;
+  gap: .6rem;
+  padding: 2rem;
+  color: var(--color-light);
+  text-align: left;
+  z-index: 10;
+  /* subtle readability on photos; turns nearly invisible on gradients */
+  background: linear-gradient(to top, rgba(0,0,0,.22) 0%, rgba(0,0,0,0) 40%);
+}
+
+.hero-text { max-width: min(820px, 90vw); }
+
+/* Compact, responsive type */
+.hero-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  font-size: clamp(1.6rem, 3.5vw, 3rem);
+}
+.hero-subtitle {
+  margin: .15rem 0 0;
+  opacity: .95;
+  font-size: clamp(.95rem, 2.2vw, 1.25rem);
+}
+
+/* CTA */
+.hero-buttons { display: flex; gap: .75rem; margin-top: .25rem; }
+.hero-button {
+  background: rgba(255,255,255,.9);
+  color: var(--color-primary);
+  padding: .6rem 1.1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color var(--transition), transform .18s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+.hero-button:hover { background: #fff; transform: translateY(-1px); }
+
+/* Mobile treatment: center content, remove heavy gradient */
+@media (max-width: 768px){
+  .hero-image-wrapper { aspect-ratio: 4 / 5; } /* taller for phones */
+  .hero-overlay{
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,.12) 0%, rgba(0,0,0,0) 60%);
+    padding: 1.25rem;
+  }
+  .hero-text { max-width: 92vw; }
+}
+
+/* -------- “Neurodivergent Lens” preview -------- */
+.nd-lens {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 2.5rem 1rem 1.5rem;
+  background: transparent;
+}
+.nd-lens h2 { margin-top: 0; }
+.nd-lens .nd-points {
+  margin: .5rem 0 0 1.25rem;
+  line-height: 1.7;
+}
+.nd-lens .inline-link {
+  color: var(--color-accent);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition), color var(--transition);
+}
+.nd-lens .inline-link:hover { border-bottom-color: var(--color-accent); }
+
+/* -------- Pause & Breathe interlude -------- */
+.breathe {
+  display: grid;
+  place-items: center;
+  padding: 2.5rem 1rem;
+}
+.breathe-card{
+  max-width: 740px;
+  padding: 1.4rem 1.1rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,.06);
+  text-align: center;
+}
+.breathe-card h3{ margin: 0 0 .35rem; }
+
+/* -------- Quote carousel -------- */
 .quote-carousel {
-  margin: 4rem auto; max-width: 800px;
+  margin: 3rem auto;
+  max-width: 800px;
   background-color: var(--color-highlight);
-  padding: 2rem; border-radius: var(--radius);
+  padding: 2rem;
+  border-radius: var(--radius);
   position: relative;
 }
 .quote-carousel blockquote {
-  font-size: 1.2rem; font-style: italic; margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0 0 1rem;
   border-left: 4px solid var(--color-accent);
-  padding-left: 1rem; color: var(--color-primary);
-  display: none; background-color: transparent;
+  padding-left: 1rem;
+  color: var(--color-primary);
+  display: none;
+  background-color: transparent;
 }
 .quote-carousel blockquote.active { display: block; }
-.quote-dots { display: flex; justify-content: center; gap: .75rem; margin-top: 1rem; }
-.quote-dots .dot { width: 12px; height: 12px; background: #ccc; border-radius: 50%; cursor: pointer; transition: background-color var(--transition); }
+.quote-dots {
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+.quote-dots .dot {
+  width: 12px; height: 12px; background: #ccc; border-radius: 50%;
+  cursor: pointer; transition: background-color var(--transition);
+}
 .quote-dots .dot.active { background: var(--color-accent); }
 
-/* Hero banner */
-.hero-banner { position: relative; overflow: hidden; }
-.hero-banner img { width: 100%; height: auto; display: block; border-radius: 0; }
-.hero-overlay { position: absolute; bottom: 2rem; left: 2rem; color: #fff; text-align: left; z-index: 10; max-width: 80%; }
-.hero-text { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 1px 1px 4px rgba(0,0,0,.6); }
-.hero-buttons { display: flex; gap: 1rem; }
-.hero-button { background: rgba(255,255,255,.8); color: var(--color-primary); padding: .6rem 1.2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: background-color var(--transition), transform .2s ease; }
-.hero-button:hover { background: #fff; transform: scale(1.05); }
-@media (max-width: 768px) { .hero-overlay { display: none; } }
-
-/* Simple fade-in utility */
-@keyframes fadeIn { from { opacity:0; transform: translateY(-10px); } to { opacity:1; transform: translateY(0); } }
-.fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease-out, transform .6s ease-out; }
+/* -------- Simple fade-in utility -------- */
+@keyframes fadeIn { from { opacity:0; transform: translateY(-10px); }
+                    to   { opacity:1; transform: translateY(0); } }
+.fade-in {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .6s ease-out, transform .6s ease-out;
+}
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
 
 /* ==================================================================
