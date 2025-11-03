@@ -257,7 +257,7 @@ PART 2/5 — Header / Navigation (final: full-bleed, rect logo)
 /* Hide any leftover huge masthead title */
 .masthead, .site-title, header .site-title{ display: none !important; }
 
-/* ==================================================================
+//* ==================================================================
 PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
 ================================================================== */
 
@@ -302,12 +302,10 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
 .blog-card mark { background: rgba(232,143,58,.15); color: inherit; }
 
 /* -------- HERO (short + mobile-safe) -------- */
-/* Structure */
-.hero-banner { position: relative; width: 100%; overflow: hidden; }
+.hero-banner { position: relative; width: 100%; }
 .hero-image-wrapper {
   position: relative;
   width: 100%;
-  /* maintain a soft, roomy aspect ratio on wide screens */
   aspect-ratio: 16 / 7;
   background: var(--color-bg);
 }
@@ -315,7 +313,7 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;        /* handles abstract or photographic heroes */
+  object-fit: cover;
   object-position: center;
   border-radius: 0;
 }
@@ -332,10 +330,8 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
   color: var(--color-light);
   text-align: left;
   z-index: 10;
-  /* subtle readability on photos; turns nearly invisible on gradients */
   background: linear-gradient(to top, rgba(0,0,0,.22) 0%, rgba(0,0,0,0) 40%);
 }
-
 .hero-text { max-width: min(820px, 90vw); }
 
 /* Compact, responsive type */
@@ -344,12 +340,12 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
   font-weight: 700;
   line-height: 1.1;
   margin: 0;
-  font-size: clamp(1.6rem, 3.5vw, 3rem);
+  font-size: clamp(var(--hero-title-size-min, 1.6rem), 3.5vw, var(--hero-title-size-max, 3rem));
 }
 .hero-subtitle {
   margin: .15rem 0 0;
   opacity: .95;
-  font-size: clamp(.95rem, 2.2vw, 1.25rem);
+  font-size: clamp(var(--hero-sub-size-min, .95rem), 2.2vw, var(--hero-sub-size-max, 1.25rem));
 }
 
 /* CTA */
@@ -366,9 +362,9 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
 }
 .hero-button:hover { background: #fff; transform: translateY(-1px); }
 
-/* Mobile treatment: center content, remove heavy gradient */
+/* Mobile treatment: center content, slight taller image */
 @media (max-width: 768px){
-  .hero-image-wrapper { aspect-ratio: 4 / 5; } /* taller for phones */
+  .hero-image-wrapper { aspect-ratio: 4 / 5; }
   .hero-overlay{
     align-content: center;
     justify-items: center;
@@ -379,13 +375,24 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
   .hero-text { max-width: 92vw; }
 }
 
-/* -------- “Neurodivergent Lens” preview -------- */
-.nd-lens {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 2.5rem 1rem 1.5rem;
+/* -------- Contained hero variant (aligns to content width) -------- */
+.hero-contained .shell { padding-top: 1.25rem; }
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  margin: 0 auto 1.5rem;
   background: transparent;
 }
+.hero-contained .hero-image-wrapper { aspect-ratio: 16/7; }
+@media (max-width: 768px){
+  .hero-contained .hero-image-wrapper { aspect-ratio: 4 / 5; }
+}
+
+/* -------- ND Lens preview -------- */
+.nd-lens { background: transparent; }
+.nd-lens .container { padding-top: 2.5rem; padding-bottom: 1.5rem; }
 .nd-lens h2 { margin-top: 0; }
 .nd-lens .nd-points {
   margin: .5rem 0 0 1.25rem;
@@ -401,11 +408,7 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
 .nd-lens .inline-link:hover { border-bottom-color: var(--color-accent); }
 
 /* -------- Pause & Breathe interlude -------- */
-.breathe {
-  display: grid;
-  place-items: center;
-  padding: 2.5rem 1rem;
-}
+.breathe { display: grid; place-items: center; padding: 2.5rem 1rem; }
 .breathe-card{
   max-width: 740px;
   padding: 1.4rem 1.1rem;
@@ -457,6 +460,75 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
   transition: opacity .6s ease-out, transform .6s ease-out;
 }
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
+
+/* ==================================================================
+Neurodivergent Lens — Page Styles
+================================================================== */
+
+.nd-landing { padding-top: 2rem; padding-bottom: 2.5rem; }
+.nd-landing .lead { font-size: 1.05rem; opacity: .95; margin-top: .25rem; }
+
+.nd-hero, .ndl-hero { margin-bottom: 1.25rem; }
+.ndl-hero h1 { margin-bottom: .35rem; }
+
+.ndl-tools {
+  display: flex; gap: .6rem; flex-wrap: wrap; margin-top: .75rem;
+}
+.ndl-toggle {
+  appearance: none;
+  border: 2px solid var(--color-accent);
+  background: transparent;
+  color: var(--color-accent);
+  font-weight: 700;
+  padding: .45rem .9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), transform .18s ease;
+}
+.ndl-toggle:hover { background: var(--color-accent); color: var(--color-light); transform: translateY(-1px); }
+
+.ndl-toc {
+  display: flex; flex-wrap: wrap; gap: .65rem 1rem;
+  align-items: center; padding: .75rem 0 1rem;
+  border-top: 1px solid var(--color-mid);
+  border-bottom: 1px solid var(--color-mid);
+  margin: 1rem 0 1.25rem;
+  font-size: .98rem;
+}
+.ndl-toc strong { margin-right: .25rem; color: var(--color-primary); }
+.ndl-toc a {
+  color: var(--color-accent); text-decoration: none; font-weight: 700;
+  border-bottom: 2px solid transparent; transition: border-color var(--transition);
+}
+.ndl-toc a:hover { border-bottom-color: var(--color-accent); }
+
+/* Collapsibles */
+.ndl-collapse {
+  background: var(--color-light);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1rem 1rem 1rem 1.1rem;
+  margin: 1rem 0 1.25rem;
+}
+.ndl-collapse h2 { margin-top: .25rem; }
+
+/* Checklist */
+.checklist { list-style: none; padding-left: 0; margin: .5rem 0 0; }
+.checklist li { display: flex; gap: .55rem; align-items: flex-start; margin-bottom: .65rem; }
+.checklist input[type="checkbox"] { transform: translateY(3px); }
+
+/* Links library */
+.ndl-links { padding-left: 1.1rem; margin: .35rem 0 0; }
+.ndl-links li { margin-bottom: .4rem; }
+.ndl-links a { color: var(--color-primary); text-decoration: none; border-bottom: 2px solid transparent; }
+.ndl-links a:hover { border-bottom-color: var(--color-accent); }
+
+.ndl-footer { margin-top: 1.25rem; }
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .ndl-toc { font-size: .95rem; }
+}
 
 /* ==================================================================
 PART 4/5 — Music Therapy Grid, LEGO Animation, Tags/Emotions

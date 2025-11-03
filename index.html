@@ -3,25 +3,29 @@ layout: default
 title: Home
 ---
 
-<!-- Hero Section (short + mobile-safe) -->
-<section class="hero-banner" aria-label="Intro">
-  <div class="hero-image-wrapper" role="img" aria-label="Calm gradient background suggesting quiet and safety">
-    <img src="/assets/images/hero-soft-gradient.png" alt="" />
-  </div>
+<!-- Hero Section (contained + mobile-safe) -->
+<section class="hero-banner hero-contained" aria-label="Intro">
+  <div class="shell">
+    <div class="hero-card">
+      <div class="hero-image-wrapper" role="img" aria-label="Calm gradient background suggesting quiet and safety">
+        <img src="/assets/images/hero-soft-gradient.png" alt="">
+      </div>
 
-  <div class="hero-overlay">
-    <div class="hero-text">
-      <h1 class="hero-title">Unmask. Regulate. Belong.</h1>
-      <p class="hero-subtitle">A quiet corner for autistic & ADHD adults.</p>
-    </div>
-    <div class="hero-buttons">
-      <a href="/neurodivergent-lens" class="hero-button" aria-label="Begin here">Begin</a>
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h1 class="hero-title">Unmask. Regulate. Belong.</h1>
+          <p class="hero-subtitle">A quiet corner for autistic & ADHD adults.</p>
+        </div>
+        <div class="hero-buttons">
+          <a href="/neurodivergent-lens" class="hero-button" aria-label="Begin here">Begin</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Welcome Section -->
-<section class="hero">
+<section class="hero container">
   <h2>Welcome</h2>
   <p>I’m Alex — counsellor-in-training, father, and writer exploring what it means to live gently in a fast world.</p>
   <p><em>Embracing Authenticity</em> began as my way of healing after years of masking. Now it’s a space for others wired this way too — people who feel deeply, think in spirals, and need permission to go slowly.</p>
@@ -29,18 +33,20 @@ title: Home
 
 <!-- Neurodivergent Lens (preview) -->
 <section class="nd-lens">
-  <h2>The Neurodivergent Lens</h2>
-  <p>We look at life through a different rhythm. Instead of pushing to be “normal,” we listen to the nervous system — and make room for authentic communication, sensory needs, and spacious pacing.</p>
-  <ul class="nd-points">
-    <li>Sensory overwhelm & emotional regulation</li>
-    <li>Unmasking & kinder communication</li>
-    <li>Slow living, rest, and meaning in the in-between</li>
-  </ul>
-  <p><a class="inline-link" href="/neurodivergent-lens">Read the full guide →</a></p>
+  <div class="container">
+    <h2>The Neurodivergent Lens</h2>
+    <p>We look at life through a different rhythm. Instead of pushing to be “normal,” we listen to the nervous system — and make room for authentic communication, sensory needs, and spacious pacing.</p>
+    <ul class="nd-points">
+      <li>Sensory overwhelm & emotional regulation</li>
+      <li>Unmasking & kinder communication</li>
+      <li>Slow living, rest, and meaning in the in-between</li>
+    </ul>
+    <p><a class="inline-link" href="/neurodivergent-lens">Read the full guide →</a></p>
+  </div>
 </section>
 
 <!-- Ethical Caution Section -->
-<section class="why-built" aria-label="Ethical note">
+<section class="why-built container" aria-label="Ethical note">
   <h2>This Isn’t Therapy. And That Matters.</h2>
   <p><strong>Therapy isn’t always available. But healing can’t always wait.</strong></p>
   <p><em>Embracing Authenticity</em> is for those in-between moments — while you wait for support, after sessions, or when you’re reconnecting with yourself. If you’re without support right now, please go gently.</p>
@@ -57,7 +63,7 @@ title: Home
 </section>
 
 <!-- Why I Built This -->
-<section class="why-built">
+<section class="why-built container">
   <h2>Why I Built This Site</h2>
   <p>I didn’t build this to prove anything or teach you how to live. I built it to see myself honestly — and to offer that honesty to anyone who needs it.</p>
   <p>For years I hid parts of me to cope. This space documents what healing actually looks like — not linear progress, but a series of quiet reckonings.</p>
@@ -65,23 +71,25 @@ title: Home
 </section>
 
 <!-- Latest Blog Posts -->
-<section class="latest-posts container">
-  <h2 class="text-2xl font-bold mb-6">Recent Writings from the Quiet In-Between</h2>
+<section class="latest-posts">
+  <div class="container">
+    <h2 class="text-2xl font-bold mb-6">Recent Writings from the Quiet In-Between</h2>
 
-  <div class="grid gap-10">
-    {% for post in site.posts limit:3 %}
-    <div class="blog-card animate-on-scroll" style="margin-bottom: 1.5rem;">
-      <div class="blog-card-content">
-        <h3 class="text-xl font-semibold italic text-[#1A2D41] mb-1">{{ post.title }}</h3>
-        <p class="text-sm text-gray-600 mb-2">{{ post.date | date: "%B %d, %Y" }}</p>
-        <p class="text-gray-700 mb-4">{{ post.description }}</p>
-        <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+    <div class="grid gap-10">
+      {% for post in site.posts limit:3 %}
+      <div class="blog-card animate-on-scroll" style="margin-bottom: 1.5rem;">
+        <div class="blog-card-content">
+          <h3 class="text-xl font-semibold italic text-[#1A2D41] mb-1">{{ post.title }}</h3>
+          <p class="text-sm text-gray-600 mb-2">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p class="text-gray-700 mb-4">{{ post.description }}</p>
+          <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+        </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
 
-  <div class="mt-6 text-center">
-    <a href="/blog" class="blog-button">Explore the Full Blog</a>
+    <div class="mt-6 text-center">
+      <a href="/blog" class="blog-button">Explore the Full Blog</a>
+    </div>
   </div>
 </section>
