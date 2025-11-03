@@ -6,24 +6,45 @@
             aria-label="Open menu"
             aria-controls="primary-nav"
             aria-expanded="false">
-      <!-- hamburger -->
       <span aria-hidden="true" class="nav__icon"></span>
     </button>
 
     <ul id="primary-nav" class="nav__links" hidden>
+      {% comment %}
+      Render links from site.nav with active-state.
+      {% endcomment %}
       {% for item in site.nav %}
-        <li><a href="{{ item.url | relative_url }}">{{ item.text }}</a></li>
+        {% assign is_active = page.url == item.url or page.url == item.url | append: '/' %}
+        <li>
+          <a href="{{ item.url | relative_url }}"
+             {% if is_active %}aria-current="page" class="is-active"{% endif %}>
+            {{ item.text }}
+          </a>
+        </li>
       {% endfor %}
+
+      {% comment %}
+      Ensure "Neurodivergent Lens" appears even if not in site.nav.
+      {% endcomment %}
+      {% assign lens_matches = site.nav | where: 'url', '/neurodivergent-lens' | size %}
+      {% if lens_matches == 0 %}
+        {% assign lens_active = page.url == '/neurodivergent-lens' or page.url == '/neurodivergent-lens/' %}
+        <li>
+          <a href="{{ '/neurodivergent-lens' | relative_url }}"
+             {% if lens_active %}aria-current="page" class="is-active"{% endif %}>
+            Neurodivergent Lens
+          </a>
+        </li>
+      {% endif %}
     </ul>
   </nav>
 </header>
 
 <script>
   (function () {
-    const nav = document.currentScript.previousElementSibling; // <header>
-    const btn = nav.querySelector('.nav__toggle');
-    const list = nav.querySelector('#primary-nav');
-
+    const headerEl = document.currentScript.previousElementSibling; // <header>
+    const btn = headerEl.querySelector('.nav__toggle');
+    const list = headerEl.querySelector('#primary-nav');
     if (!btn || !list) return;
 
     function toggle(open) {
@@ -37,12 +58,8 @@
       toggle(open);
     });
 
-    // Close on escape & when a link is chosen (mobile UX)
-    list.addEventListener('click', e => {
-      if (e.target.tagName === 'A') toggle(false);
-    });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') toggle(false);
-    });
+    // Close on Escape & when a link is chosen (mobile UX)
+    list.addEventListener('click', e => { if (e.target.tagName === 'A') toggle(false); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') toggle(false); });
   })();
 </script>
