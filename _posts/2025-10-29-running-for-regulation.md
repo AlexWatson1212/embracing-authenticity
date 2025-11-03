@@ -7,8 +7,6 @@ description: "Discovering that sprinting, more than jogging, helps me regulate m
 emotions: ["acceptance", "hope"]
 ---
 
-# Running for Regulation
-
 I went out tonight thinking I needed to be seen, but what I really needed was to be regulated.  
 
 Sprinting gave me that. Not a slow jog, not a long run — just a fast kilometre under the clear night sky. It tired me out quickly, reset my nerves, and left me calmer. Jogging might help with cardio, but when it comes to emotional regulation, sprinting gets me there much faster.  
