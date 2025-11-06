@@ -126,6 +126,25 @@ small, .muted { color: var(--color-muted); }
 a { color: var(--color-primary); text-decoration: none; transition: color var(--transition); }
 a:hover { color: var(--color-accent); }
 
+/* Content inline links — underline by default (but not buttons/nav chips) */
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social) {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-accent);
+}
+
+/* Hover/focus — keep it obvious and accessible */
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):hover {
+  color: var(--color-accent);
+}
+
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 /* Post navigation */
 .post-navigation {
   display: flex;
