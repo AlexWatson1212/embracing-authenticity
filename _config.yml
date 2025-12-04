@@ -4,7 +4,9 @@ description: A space to grow, reflect, and be your true self.
 url: "https://embracingauthenticity.co.uk"
 baseurl: ""          # keep empty on Netlify
 markdown: kramdown
-permalink: /blog/:title/
+
+# All posts in _posts will now live at /journal/:title/
+permalink: /journal/:title/
 future: true
 
 # ---- Plugins (make sure these are also in your Gemfile)
@@ -15,10 +17,11 @@ plugins:
   - jekyll-paginate-v2
 
 # ---- Pagination (jekyll-paginate-v2)
+# This paginates over your _posts, now under /journal/
 pagination:
   enabled: true
   per_page: 12
-  permalink: /blog/page/:num/
+  permalink: /journal/page/:num/
   title: ":title - Page :num"
   limit: 0
   sort_field: "date"
@@ -61,13 +64,13 @@ defaults:
 nav:
   - text: About
     url: /about
-  - text: Blog
-    url: /blog
+  # Temporarily removing Blog from the nav so /journal stays private
+  # - text: Blog
+  #   url: /blog
   - text: Self-Discovery
     url: /self-discovery
   - text: Neurodivergent Lens
     url: /neurodivergent-lens
-
 
 # ---- Misc
 image: /images/default-social.jpg
