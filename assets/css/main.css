@@ -12,46 +12,53 @@ PART 1/5 — Base, Variables, Resets, Layout, Typography (UPDATED)
 
 /* Variables (site-wide palette + tokens) */
 :root {
-  /* Core palette */
-  --color-bg: #F8F4EC;             /* paper background */
-  --color-primary: #1A2D41;        /* default text + headings */
-  --color-accent: #B6753A;         /* warm accent for links/buttons */
-  --color-highlight: #F4D3D8;      /* soft highlight (cards/chips) */
-  --color-light: #FFFFFF;          /* white */
-  --color-mid: #CCCCCC;            /* borders */
-  --color-muted: #666666;          /* secondary text */
-  --color-footer-bg: #1A2D41;      /* footer navy */
-  --color-footer-text: #F8F4EC;    /* footer text */
+  /* Core palette — calm, grounded, therapeutic */
+  --color-bg: #F4F0EA;             /* warm sand */
+  --color-primary: #112234;        /* ink */
+  --color-accent: #C7773F;         /* copper */
+  --color-highlight: #F3E7DC;      /* soft warm highlight */
+  --color-light: #FFFFFF;
+  --color-mid: rgba(17,34,52,.12);
+  --color-muted: #526273;
 
-  /* Header/Nav palette */
-  --ea-navy: #0e2a3b;
-  --ea-accent: #ff9e66;
-  --ea-text: #f4f6f8;
-  --ea-link: #ffd2b3;
-  --ea-shadow: 0 6px 16px rgba(0,0,0,.12);
+  /* Footer */
+  --color-footer-bg: #0F2A3A;
+  --color-footer-text: #F4F0EA;
+
+  /* Header/Nav */
+  --ea-navy: #0F2A3A;
+  --ea-accent: #C7773F;
+  --ea-text: #F4F6F8;
+  --ea-link: #F3C6A6;
+  --ea-shadow: 0 10px 28px rgba(0,0,0,.16);
+
+  /* Shared surfaces */
+  --surface: rgba(255,255,255,.72);
+  --line: rgba(17,34,52,.10);
+  --shadow: 0 14px 38px rgba(0,0,0,.12);
+  --shadow-soft: 0 10px 28px rgba(0,0,0,.08);
 
   /* Fonts */
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
-  /* Rounding, motion, elevation */
-  --radius: 12px;
-  --shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  /* Motion & shape */
+  --radius: 14px;
   --transition: 0.3s ease;
 
   /* Layout */
   --container-max: 1100px;
-  --container-pad-x: 1rem;   /* easy global tweak for side padding */
-  --section-pad-y: 2rem;     /* vertical rhythm */
+  --container-pad-x: 1rem;
+  --section-pad-y: 2.25rem;
 
-  /* Logo sizing */
+  /* Logo */
   --logo-h-mobile: 48px;
   --logo-h-desktop: 72px;
 
-  /* Hero/text helpers (used in Part 3) */
-  --hero-title-size-min: 1.6rem;
-  --hero-title-size-max: 3rem;
-  --hero-sub-size-min: .95rem;
+  /* Hero sizing */
+  --hero-title-size-min: 1.7rem;
+  --hero-title-size-max: 3.1rem;
+  --hero-sub-size-min: 1rem;
   --hero-sub-size-max: 1.25rem;
 }
 
@@ -75,12 +82,24 @@ body {
   background-color: var(--color-bg);
   background-image: url('/assets/images/bg-texture.png');
   background-repeat: repeat;
+  background-size: auto;
   color: var(--color-primary);
-  line-height: 1.6;
+  line-height: 1.65;
   text-align: left;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Soft overlay to calm the texture */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: rgba(244,240,234,.55);
+  mix-blend-mode: multiply;
+  z-index: -1;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -308,87 +327,215 @@ PART 2/5 — Header / Navigation (REPLACED: full-bleed + nav__links support)
 PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
 ================================================================== */
 
-/* Blog cards (home + lists) */
-.blog-list, .latest-posts .blog-list { display: grid; gap: 2rem; }
+/* ================================================================
+Blog cards — softer, less “cardy”
+================================================================ */
 
-.blog-card, .latest-posts .blog-card {
-  background: var(--color-light); border-radius: var(--radius);
-  padding: 2rem; box-shadow: var(--shadow);
+.blog-list,
+.latest-posts .blog-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.blog-card,
+.latest-posts .blog-card {
+  background: rgba(255,255,255,.82);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--line);
   transition: transform var(--transition), box-shadow var(--transition);
 }
-.blog-card:hover, .latest-posts .blog-card:hover {
+
+.blog-card:hover,
+.latest-posts .blog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(26, 45, 65, 0.15);
+  box-shadow: var(--shadow);
 }
-.blog-card-content h3 a { text-decoration: none; color: var(--color-primary); }
-.blog-card-content h3 a:hover { color: var(--color-accent); }
-.read-more, .latest-posts .read-more {
-  display: inline-block; padding: 0.4rem 1rem;
-  border: 2px solid var(--color-accent); color: var(--color-accent);
-  background: transparent; border-radius: 6px; font-weight: 600;
-  text-decoration: none; transition: var(--transition);
-}
-.read-more:hover, .latest-posts .read-more:hover {
-  background-color: var(--color-accent); color: var(--color-light);
-}
-/* Ensure no rogue backgrounds in cards */
-.blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) { background: transparent !important; color: var(--color-primary); }
-.blog-card a { color: var(--color-primary); text-decoration: none; }
-.blog-card a:hover { color: var(--color-accent); }
-.blog-card mark { background: rgba(232,143,58,.15); color: inherit; }
 
-/* HERO (short + mobile-safe) */
-.hero-banner { position: relative; width: 100%; }
-.hero-image-wrapper { position: relative; width: 100%; aspect-ratio: 16 / 7; background: var(--color-bg); }
-.hero-banner img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; border-radius: 0; }
+.blog-card-content h3 a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
 
-/* Overlay */
+.blog-card-content h3 a:hover {
+  color: var(--color-accent);
+}
+
+.read-more,
+.latest-posts .read-more {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .18s ease, background-color var(--transition), color var(--transition);
+}
+
+.read-more:hover,
+.latest-posts .read-more:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  transform: translateY(-1px);
+}
+
+/* Ensure clean internals */
+.blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) {
+  background: transparent !important;
+}
+
+/* ================================================================
+HERO — calm, readable, emotionally safe
+================================================================ */
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  background: var(--color-bg);
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(.95) contrast(1.02);
+}
+
+/* Overlay ensures text is readable on any forest image */
 .hero-overlay {
-  position: absolute; inset: 0; display: grid;
-  align-content: end; justify-items: start; gap: .6rem; padding: 2rem;
-  color: var(--color-light); text-align: left; z-index: 10;
-  background: linear-gradient(to top, rgba(0,0,0,.22) 0%, rgba(0,0,0,0) 40%);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: .75rem;
+  padding: 2rem;
+  color: var(--color-light);
+  text-align: center;
+  z-index: 10;
+  background: linear-gradient(
+    90deg,
+    rgba(15,42,58,.65) 0%,
+    rgba(15,42,58,.35) 45%,
+    rgba(15,42,58,.55) 100%
+  );
 }
-.hero-text { max-width: min(820px, 90vw); }
 
-/* Compact, responsive type */
+.hero-text {
+  max-width: min(880px, 92vw);
+}
+
 .hero-title {
-  font-family: var(--font-heading); font-weight: 700; line-height: 1.1; margin: 0;
-  font-size: clamp(var(--hero-title-size-min, 1.6rem), 3.5vw, var(--hero-title-size-max, 3rem));
-}
-.hero-subtitle { margin: .15rem 0 0; opacity: .95;
-  font-size: clamp(var(--hero-sub-size-min, .95rem), 2.2vw, var(--hero-sub-size-max, 1.25rem));
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.08;
+  margin: 0;
+  color: #F7F3EE;
+  text-shadow: 0 14px 36px rgba(0,0,0,.35);
+  font-size: clamp(
+    var(--hero-title-size-min),
+    3.6vw,
+    var(--hero-title-size-max)
+  );
 }
 
-/* CTA */
-.hero-buttons { display: flex; gap: .75rem; margin-top: .25rem; }
+.hero-subtitle {
+  margin: .1rem 0 0;
+  color: rgba(247,243,238,.92);
+  font-size: clamp(
+    var(--hero-sub-size-min),
+    2.2vw,
+    var(--hero-sub-size-max)
+  );
+}
+
+/* CTA buttons */
+.hero-buttons {
+  display: flex;
+  gap: .75rem;
+  margin-top: .35rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .hero-button {
-  background: rgba(255,255,255,.9); color: var(--color-primary);
-  padding: .6rem 1.1rem; border-radius: 10px; font-weight: 700; text-decoration: none;
-  transition: background-color var(--transition), transform .18s ease;
-  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  background: rgba(247,243,238,.95);
+  color: var(--ea-navy);
+  padding: .62rem 1.15rem;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .18s ease, background-color var(--transition);
+  box-shadow: 0 10px 26px rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.35);
 }
-.hero-button:hover { background: #fff; transform: translateY(-1px); }
 
-/* Mobile treatment */
+.hero-button:hover {
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+/* Optional secondary CTA */
+.hero-button--ghost {
+  background: rgba(247,243,238,.12);
+  color: #F7F3EE;
+  border: 1px solid rgba(247,243,238,.35);
+  box-shadow: none;
+}
+
+.hero-button--ghost:hover {
+  background: rgba(247,243,238,.18);
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .hero-image-wrapper { aspect-ratio: 4 / 5; }
+
   .hero-overlay {
-    align-content: center; justify-items: center; text-align: center;
-    background: linear-gradient(to top, rgba(0,0,0,.12) 0%, rgba(0,0,0,0) 60%);
     padding: 1.25rem;
+    background: linear-gradient(
+      to top,
+      rgba(15,42,58,.65) 0%,
+      rgba(15,42,58,.35) 55%,
+      rgba(15,42,58,.55) 100%
+    );
   }
-  .hero-text { max-width: 92vw; }
 }
 
-/* Contained hero */
-.hero-contained .shell { padding-top: 1.25rem; }
-.hero-card {
-  position: relative; overflow: hidden; border-radius: 16px; box-shadow: var(--shadow);
-  margin: 0 auto 1.5rem; background: transparent;
+/* Contained hero card */
+.hero-contained .shell {
+  padding-top: 1.25rem;
 }
-.hero-contained .hero-image-wrapper { aspect-ratio: 16/7; }
-@media (max-width: 768px) { .hero-contained .hero-image-wrapper { aspect-ratio: 4 / 5; } }
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  margin: 0 auto 1.6rem;
+  border: 1px solid var(--line);
+}
+
+.hero-contained .hero-image-wrapper {
+  aspect-ratio: 16 / 7;
+}
+
+@media (max-width: 768px) {
+  .hero-contained .hero-image-wrapper {
+    aspect-ratio: 4 / 5;
+  }
+}
 
 /* ND Lens preview */
 .nd-lens { background: transparent; }
@@ -401,14 +548,36 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
 }
 .nd-lens .inline-link:hover { border-bottom-color: var(--color-accent); }
 
-/* Pause & Breathe interlude */
-.breathe { display: grid; place-items: center; padding: 2.5rem 1rem; }
-.breathe-card {
-  max-width: 740px; padding: 1.4rem 1.1rem; border-radius: 14px;
-  background: rgba(255,255,255,0.6); backdrop-filter: blur(3px);
-  box-shadow: 0 8px 30px rgba(0,0,0,.06); text-align: center;
+/* ================================================================
+Pause & Breathe — soft landing
+================================================================ */
+
+.breathe {
+  display: grid;
+  place-items: center;
+  padding: 2.75rem 1rem;
 }
-.breathe-card h3 { margin: 0 0 .35rem; }
+
+.breathe-card {
+  max-width: 760px;
+  padding: 1.55rem 1.25rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.breathe-card h3 {
+  margin: 0 0 .45rem;
+  color: var(--color-primary);
+}
+
+.breathe-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
 
 /* Quote carousel */
 .quote-carousel {
