@@ -1,13 +1,15 @@
 /*
 ====================================================================
-Embracing Authenticity — Consolidated CSS (Part 1/5)
+Embracing Authenticity — Consolidated CSS (Streamlined 5/5)
 --------------------------------------------------------------------
-Copy this whole chunk as your first ~200 lines.
+Removed: Neurodivergent Lens (all), LEGO animation, Pause & Breathe.
+Kept: base, header/nav (both legacy + new), blog, hero, accordion,
+music therapy grid, tags/emotions, footer.
 ====================================================================
 */
 
 /* ==================================================================
-PART 1/5 — Base, Variables, Resets, Layout, Typography (UPDATED)
+PART 1/5 — Base, Variables, Resets, Layout, Typography
 ================================================================== */
 
 /* Variables (site-wide palette + tokens) */
@@ -20,10 +22,6 @@ PART 1/5 — Base, Variables, Resets, Layout, Typography (UPDATED)
   --color-light: #FFFFFF;
   --color-mid: rgba(17,34,52,.12);
   --color-muted: #526273;
-
-  /* Footer */
-  --color-footer-bg: #0F2A3A;
-  --color-footer-text: #F4F0EA;
 
   /* Header/Nav */
   --ea-navy: #0F2A3A;
@@ -60,6 +58,9 @@ PART 1/5 — Base, Variables, Resets, Layout, Typography (UPDATED)
   --hero-title-size-max: 3.1rem;
   --hero-sub-size-min: 1rem;
   --hero-sub-size-max: 1.25rem;
+
+  /* Footer icons */
+  --footer-icon-size: 22px;
 }
 
 /* Respect reduced motion */
@@ -196,8 +197,9 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
   :root { --section-pad-y: 2.5rem; }
 }
 
+
 /* ==================================================================
-PART 2/5 — Header / Navigation (REPLACED: full-bleed + nav__links support)
+PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
 ================================================================== */
 
 .top-accent { display: none; }
@@ -218,7 +220,6 @@ PART 2/5 — Header / Navigation (REPLACED: full-bleed + nav__links support)
 }
 
 /* Brand (logo only) */
-:root { --logo-h-mobile: 48px; --logo-h-desktop: 72px; }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; }
 .brand-mark { height: var(--logo-h-mobile); width: auto; max-width: 100%; object-fit: contain; }
 .brand-text { display: none; }
@@ -323,21 +324,20 @@ PART 2/5 — Header / Navigation (REPLACED: full-bleed + nav__links support)
 /* Desktop */
 @media (min-width: 861px) { .nav__toggle { display: none; } }
 
+
 /* ==================================================================
-PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
+PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
 ================================================================== */
 
 /* ================================================================
-POST PAGE — Timeless header styling (UPDATED)
+POST PAGE — Timeless header styling
 ================================================================ */
 
-.post-header {
-  margin: 0 0 1.5rem;
-}
+.post-header { margin: 0 0 1.5rem; }
 
 .post-title {
   margin: 0 0 .65rem;
-  color: var(--color-accent); /* copper title (no need to re-add title in body) */
+  color: var(--color-accent);
   letter-spacing: .2px;
 }
 
@@ -354,7 +354,7 @@ POST PAGE — Timeless header styling (UPDATED)
 .post-content h3 { margin-top: 1.9rem; }
 
 /* ================================================================
-BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
+BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
 ================================================================ */
 
 /* Intro block (title + purpose text) */
@@ -364,11 +364,9 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
   text-align: center;
 }
 
-.blog-intro h2 {
-  margin: 0 0 .65rem;
-}
+.blog-intro h2 { margin: 0 0 .65rem; }
 
-/* Purpose text (father-to-son tone) */
+/* Purpose text */
 .blog-purpose {
   max-width: 680px;
   margin: 0.35rem auto 0.85rem;
@@ -448,10 +446,7 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
   text-decoration: none;
   color: var(--color-primary);
 }
-
-.search-title:hover {
-  color: var(--color-accent);
-}
+.search-title:hover { color: var(--color-accent); }
 
 .search-snippet {
   margin: .55rem 0 .35rem;
@@ -488,7 +483,7 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
   margin: 0 auto;
 }
 
-/* Cards — softer, less “cardy” */
+/* Cards */
 .blog-card,
 .latest-posts .blog-card {
   background: rgba(255,255,255,.82);
@@ -505,18 +500,13 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
   box-shadow: var(--shadow);
 }
 
-.blog-card-content h3 {
-  margin: 0 0 .35rem;
-}
+.blog-card-content h3 { margin: 0 0 .35rem; }
 
 .blog-card-content h3 a {
   text-decoration: none;
   color: var(--color-primary);
 }
-
-.blog-card-content h3 a:hover {
-  color: var(--color-accent);
-}
+.blog-card-content h3 a:hover { color: var(--color-accent); }
 
 /* Excerpt */
 .blog-card .excerpt {
@@ -525,9 +515,7 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
 }
 
 /* Hide dates in lists/cards for a timeless feel */
-.post-date {
-  display: none !important;
-}
+.post-date { display: none !important; }
 
 /* Read more button */
 .read-more,
@@ -550,7 +538,7 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
   transform: translateY(-1px);
 }
 
-/* Emotion tags shown on cards */
+/* Tag chips shown on cards */
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -599,10 +587,7 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
 }
 
 /* Back to top */
-.back-to-top {
-  text-align: center;
-  margin: 1.5rem 0 0;
-}
+.back-to-top { text-align: center; margin: 1.5rem 0 0; }
 
 .back-to-top a {
   color: var(--color-accent);
@@ -611,10 +596,7 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
   border-bottom: 2px solid transparent;
   transition: border-color var(--transition), color var(--transition);
 }
-
-.back-to-top a:hover {
-  border-bottom-color: var(--color-accent);
-}
+.back-to-top a:hover { border-bottom-color: var(--color-accent); }
 
 /* Ensure clean internals */
 .blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) {
@@ -623,26 +605,16 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
 
 /* Mobile tweaks */
 @media (max-width: 768px) {
-  .blog-search {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .blog-search button {
-    width: 100%;
-  }
-  .blog-card {
-    padding: 1.35rem;
-  }
+  .blog-search { flex-direction: column; align-items: stretch; }
+  .blog-search button { width: 100%; }
+  .blog-card { padding: 1.35rem; }
 }
 
 /* ================================================================
 HERO — calm, readable, emotionally safe
 ================================================================ */
 
-.hero-banner {
-  position: relative;
-  width: 100%;
-}
+.hero-banner { position: relative; width: 100%; }
 
 .hero-image-wrapper {
   position: relative;
@@ -660,7 +632,7 @@ HERO — calm, readable, emotionally safe
   filter: saturate(.95) contrast(1.02);
 }
 
-/* Overlay ensures text is readable on any forest image */
+/* Overlay ensures text is readable */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -680,9 +652,7 @@ HERO — calm, readable, emotionally safe
   );
 }
 
-.hero-text {
-  max-width: min(880px, 92vw);
-}
+.hero-text { max-width: min(880px, 92vw); }
 
 .hero-title {
   font-family: var(--font-heading);
@@ -691,21 +661,13 @@ HERO — calm, readable, emotionally safe
   margin: 0;
   color: #F7F3EE;
   text-shadow: 0 14px 36px rgba(0,0,0,.35);
-  font-size: clamp(
-    var(--hero-title-size-min),
-    3.6vw,
-    var(--hero-title-size-max)
-  );
+  font-size: clamp(var(--hero-title-size-min), 3.6vw, var(--hero-title-size-max));
 }
 
 .hero-subtitle {
   margin: .1rem 0 0;
   color: rgba(247,243,238,.92);
-  font-size: clamp(
-    var(--hero-sub-size-min),
-    2.2vw,
-    var(--hero-sub-size-max)
-  );
+  font-size: clamp(var(--hero-sub-size-min), 2.2vw, var(--hero-sub-size-max));
 }
 
 /* CTA buttons */
@@ -728,11 +690,7 @@ HERO — calm, readable, emotionally safe
   box-shadow: 0 10px 26px rgba(0,0,0,.18);
   border: 1px solid rgba(255,255,255,.35);
 }
-
-.hero-button:hover {
-  background: #fff;
-  transform: translateY(-1px);
-}
+.hero-button:hover { background: #fff; transform: translateY(-1px); }
 
 /* Optional secondary CTA */
 .hero-button--ghost {
@@ -741,15 +699,11 @@ HERO — calm, readable, emotionally safe
   border: 1px solid rgba(247,243,238,.35);
   box-shadow: none;
 }
-
-.hero-button--ghost:hover {
-  background: rgba(247,243,238,.18);
-}
+.hero-button--ghost:hover { background: rgba(247,243,238,.18); }
 
 /* Mobile */
 @media (max-width: 768px) {
   .hero-image-wrapper { aspect-ratio: 4 / 5; }
-
   .hero-overlay {
     padding: 1.25rem;
     background: linear-gradient(
@@ -762,9 +716,7 @@ HERO — calm, readable, emotionally safe
 }
 
 /* Contained hero card */
-.hero-contained .shell {
-  padding-top: 1.25rem;
-}
+.hero-contained .shell { padding-top: 1.25rem; }
 
 .hero-card {
   position: relative;
@@ -775,84 +727,53 @@ HERO — calm, readable, emotionally safe
   border: 1px solid var(--line);
 }
 
-.hero-contained .hero-image-wrapper {
-  aspect-ratio: 16 / 7;
-}
-
+.hero-contained .hero-image-wrapper { aspect-ratio: 16 / 7; }
 @media (max-width: 768px) {
-  .hero-contained .hero-image-wrapper {
-    aspect-ratio: 4 / 5;
-  }
-}
-
-/* ND Lens preview */
-.nd-lens { background: transparent; }
-.nd-lens .container { padding-top: 2.5rem; padding-bottom: 1.5rem; }
-.nd-lens h2 { margin-top: 0; }
-.nd-lens .nd-points { margin: .5rem 0 0 1.25rem; line-height: 1.7; }
-.nd-lens .inline-link {
-  color: var(--color-accent); font-weight: 700; text-decoration: none; border-bottom: 2px solid transparent;
-  transition: border-color var(--transition), color var(--transition);
-}
-.nd-lens .inline-link:hover { border-bottom-color: var(--color-accent); } 
-
-/* ================================================================
-Pause & Breathe — soft landing
-================================================================ */
-
-.breathe {
-  display: grid;
-  place-items: center;
-  padding: 2.75rem 1rem;
-}
-
-.breathe-card {
-  max-width: 760px;
-  padding: 1.55rem 1.25rem;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.72);
-  backdrop-filter: blur(4px);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid var(--line);
-  text-align: center;
-}
-
-.breathe-card h3 {
-  margin: 0 0 .45rem;
-  color: var(--color-primary);
-}
-
-.breathe-card p {
-  margin: 0;
-  color: var(--color-muted);
+  .hero-contained .hero-image-wrapper { aspect-ratio: 4 / 5; }
 }
 
 /* Quote carousel */
 .quote-carousel {
-  margin: 3rem auto; max-width: 800px; background-color: var(--color-highlight);
-  padding: 2rem; border-radius: var(--radius); position: relative;
+  margin: 3rem auto;
+  max-width: 800px;
+  background-color: var(--color-highlight);
+  padding: 2rem;
+  border-radius: var(--radius);
+  position: relative;
 }
+
 .quote-carousel blockquote {
-  font-size: 1.2rem; font-style: italic; margin: 0 0 1rem;
-  border-left: 4px solid var(--color-accent); padding-left: 1rem;
-  color: var(--color-primary); display: none; background-color: transparent;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0 0 1rem;
+  border-left: 4px solid var(--color-accent);
+  padding-left: 1rem;
+  color: var(--color-primary);
+  display: none;
+  background-color: transparent;
 }
+
 .quote-carousel blockquote.active { display: block; }
+
 .quote-dots { display: flex; justify-content: center; gap: .75rem; margin-top: 1rem; }
 .quote-dots .dot {
-  width: 12px; height: 12px; background: #ccc; border-radius: 50%;
-  cursor: pointer; transition: background-color var(--transition);
+  width: 12px; height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color var(--transition);
 }
 .quote-dots .dot.active { background: var(--color-accent); }
 
 /* Simple fade-in utility */
-@keyframes fadeIn { from { opacity:0; transform: translateY(-10px); } to { opacity:1; transform: translateY(0); } }
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(-10px); }
+  to   { opacity:1; transform: translateY(0); }
+}
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease-out, transform .6s ease-out; }
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
 
-/* ==================================================================
-ADDED: Accordion (Self-Discovery bullet explanations)
-================================================================== */
+/* Accordion (Self-Discovery bullet explanations) */
 .accordion-list { list-style: none; padding-left: 0; margin: 0.6rem 0 1rem; }
 .accordion-item { border-bottom: 1px solid var(--color-mid); }
 .accordion-button {
@@ -870,115 +791,78 @@ ADDED: Accordion (Self-Discovery bullet explanations)
 }
 .accordion-content.open { display: block; }
 
-/* ==================================================================
-Neurodivergent Lens — Page Styles
-================================================================== */
-.nd-landing { padding-top: 2rem; padding-bottom: 2.5rem; }
-.nd-landing .lead { font-size: 1.05rem; opacity: .95; margin-top: .25rem; }
-
-.nd-hero, .ndl-hero { margin-bottom: 1.25rem; }
-.ndl-hero h1 { margin-bottom: .35rem; }
-
-.ndl-tools { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: .75rem; }
-.ndl-toggle {
-  appearance: none; border: 2px solid var(--color-accent); background: transparent;
-  color: var(--color-accent); font-weight: 700; padding: .45rem .9rem;
-  border-radius: 10px; cursor: pointer;
-  transition: background-color var(--transition), color var(--transition), transform .18s ease;
-}
-.ndl-toggle:hover { background: var(--color-accent); color: var(--color-light); transform: translateY(-1px); }
-
-.ndl-toc {
-  display: flex; flex-wrap: wrap; gap: .65rem 1rem; align-items: center;
-  padding: .75rem 0 1rem; border-top: 1px solid var(--color-mid); border-bottom: 1px solid var(--color-mid);
-  margin: 1rem 0 1.25rem; font-size: .98rem;
-}
-.ndl-toc strong { margin-right: .25rem; color: var(--color-primary); }
-.ndl-toc a {
-  color: var(--color-accent); text-decoration: none; font-weight: 700;
-  border-bottom: 2px solid transparent; transition: border-color var(--transition);
-}
-.ndl-toc a:hover { border-bottom-color: var(--color-accent); }
-
-/* Collapsibles */
-.ndl-collapse {
-  background: var(--color-light); border-radius: 14px; box-shadow: var(--shadow);
-  padding: 1rem 1rem 1rem 1.1rem; margin: 1rem 0 1.25rem;
-}
-.ndl-collapse h2 { margin-top: .25rem; }
-
-/* Checklist */
-.checklist { list-style: none; padding-left: 0; margin: .5rem 0 0; }
-.checklist li { display: flex; gap: .55rem; align-items: flex-start; margin-bottom: .65rem; }
-.checklist input[type="checkbox"] { transform: translateY(3px); }
-
-/* Links library */
-.ndl-links { padding-left: 1.1rem; margin: .35rem 0 0; }
-.ndl-links li { margin-bottom: .4rem; }
-.ndl-links a { color: var(--color-primary); text-decoration: none; border-bottom: 2px solid transparent; }
-.ndl-links a:hover { border-bottom-color: var(--color-accent); }
-
-.ndl-footer { margin-top: 1.25rem; }
-
-/* Mobile tweaks */
-@media (max-width: 768px) { .ndl-toc { font-size: .95rem; } }
 
 /* ==================================================================
-PART 4/5 — Music Therapy Grid, LEGO Animation, Tags/Emotions
+PART 4/5 — Music Therapy Grid + Tags/Emotions
 ================================================================== */
 
 /* Music Therapy */
 .music-therapy-main { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
 .music-posts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-.post { background: var(--color-light); padding: 1rem; border-radius: var(--radius); box-shadow: var(--shadow); transition: transform var(--transition); }
+.post {
+  background: var(--color-light);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
+}
 .post:hover { transform: translateY(-4px); }
 .post-thumbnail { width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; }
-.post-date { font-size: .9rem; color: var(--color-muted); margin-bottom: .5rem; }
 .post-description { font-size: 1rem; }
-
-/* LEGO Animation section */
-.lego-animation-section {
-  text-align: center; margin: 4rem auto; padding: 2rem; background: #fdfdfd;
-  border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,.08); max-width: 600px;
-}
-.lego-animation-section h3 { font-size: 1.5rem; margin-bottom: .5rem; color: var(--color-primary); }
-.lego-animation-section p { font-size: 1rem; color: #444; margin-bottom: 2rem; }
-.lego-silhouette {
-  position: relative; width: 180px; height: 400px; margin: 0 auto;
-  background: url('/assets/images/lego-silhouette-outline.png') no-repeat center/contain;
-}
-.block { position: absolute; width: 30px; height: 20px; background: var(--color-accent); border-radius: 4px; opacity: 0; animation: riseIn 1s ease-out forwards; }
-@keyframes riseIn { 0% { transform: translateY(20px) scale(.8); opacity: 0; } 100% { transform: translateY(0) scale(1); opacity: 1; } }
-@media (max-width: 480px) {
-  .lego-silhouette { width: 120px; height: 280px; }
-  .block { width: 20px; height: 14px; }
-}
 
 /* Tags & Emotion Filters */
 .tag-filter { text-align: center; margin: 2rem 0; }
+
 .post-tag, .emotion-button {
-  display: inline-block; font-size: .7rem; font-weight: 600;
-  padding: .4rem 1rem; border-radius: 6px; margin: .3rem;
-  text-transform: uppercase; letter-spacing: .5px; cursor: pointer; text-decoration: none;
-  background: var(--color-highlight); color: var(--color-accent);
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .4rem 1rem;
+  border-radius: 6px;
+  margin: .3rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--color-highlight);
+  color: var(--color-accent);
   transition: background-color var(--transition), color var(--transition), transform .2s ease;
 }
-.post-tag:hover, .post-tag.active, .emotion-button.active { background: var(--color-accent); color: #fff; transform: scale(1.05); }
+
+.post-tag:hover,
+.post-tag.active,
+.emotion-button.active {
+  background: var(--color-accent);
+  color: #fff;
+  transform: scale(1.05);
+}
+
 .emotion-button { background: #dbe5ea; color: var(--color-primary); }
 .emotion-button:hover { transform: scale(1.05); }
 
 .clear-tag-filter, .clear-emotion-filter {
-  background: #EDEDED; color: var(--color-primary); font-size: .95rem;
-  padding: .4rem 1rem; border-radius: 6px; margin: .5rem; display: inline-block;
+  background: #EDEDED;
+  color: var(--color-primary);
+  font-size: .95rem;
+  padding: .4rem 1rem;
+  border-radius: 6px;
+  margin: .5rem;
+  display: inline-block;
   transition: background-color var(--transition), color var(--transition);
 }
 .clear-tag-filter:hover, .clear-emotion-filter:hover { background: var(--color-accent); color: #fff; }
 
-/* Emotion list */
+/* Emotion list (if used on emotion pages) */
 .emotion-list { list-style: none; padding: 0; margin-top: 2rem; }
 .emotion-list li { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
-.emotion-list h3 a { font-size: 1.4rem; color: var(--color-accent); text-decoration: none; font-family: var(--font-heading); }
+.emotion-list h3 a {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: var(--font-heading);
+}
 .emotion-list p { font-size: 1rem; color: #444; margin-top: .5rem; }
+
 
 /* ==================================================================
 PART 5/5 — Accent Band + Global Footer (Centered Layout, Clean Icons)
@@ -986,31 +870,51 @@ PART 5/5 — Accent Band + Global Footer (Centered Layout, Clean Icons)
 
 /* Accent band (optional, under hero) */
 .accent-band {
-  background: var(--ea-navy); color: var(--ea-text);
-  padding: 22px 0; margin-top: -8px; box-shadow: var(--ea-shadow);
+  background: var(--ea-navy);
+  color: var(--ea-text);
+  padding: 22px 0;
+  margin-top: -8px;
+  box-shadow: var(--ea-shadow);
 }
 .accent-band .container {
-  max-width: var(--container-max); margin: 0 auto; padding: 0 16px;
-  display: flex; align-items: center; justify-content: center;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .accent-band .btn, .accent-band .btn.btn-light {
-  display: inline-block; padding: 10px 16px; border-radius: 8px;
-  background: var(--color-light); color: var(--ea-navy);
-  text-decoration: none; font-weight: 600; border: 0;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--color-light);
+  color: var(--ea-navy);
+  text-decoration: none;
+  font-weight: 600;
+  border: 0;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .accent-band .btn:hover, .accent-band .btn.btn-light:hover {
-  transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,.12);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.12);
 }
 
 /* Global footer */
 .site-footer {
-  background: var(--ea-navy); color: var(--ea-text);
-  margin-top: 48px; padding: 36px 16px; text-align: center;
+  background: var(--ea-navy);
+  color: var(--ea-text);
+  margin-top: 48px;
+  padding: 36px 16px;
+  text-align: center;
 }
 .site-footer .footer-center {
-  max-width: var(--container-max); margin: 0 auto;
-  display: flex; flex-direction: column; align-items: center; gap: 16px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 /* Brand */
@@ -1018,31 +922,42 @@ PART 5/5 — Accent Band + Global Footer (Centered Layout, Clean Icons)
 .footer-brand .muted { color: rgba(255,255,255,.9); font-size: 0.95rem; margin-top: 4px; }
 
 /* Nav */
-.footer-nav { display: flex; gap: 16px; justify-content: center; }
+.footer-nav { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .footer-nav a {
-  color: var(--ea-text); text-decoration: none; opacity: 0.95; font-size: 0.95rem;
-  border-bottom: 2px solid transparent; transition: opacity var(--transition), border-color var(--transition);
+  color: var(--ea-text);
+  text-decoration: none;
+  opacity: 0.95;
+  font-size: 0.95rem;
+  border-bottom: 2px solid transparent;
+  transition: opacity var(--transition), border-color var(--transition);
 }
 .footer-nav a:hover { opacity: 1; border-bottom-color: var(--ea-link); }
 
 /* Social */
-:root { --footer-icon-size: 22px; }
-.footer-social { display: flex; gap: 20px; justify-content: center; }
+.footer-social { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
 .footer-social .social {
-  color: #fff; opacity: 0.9; transition: opacity var(--transition), transform var(--transition);
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity var(--transition), transform var(--transition);
 }
 .footer-social .social:hover { opacity: 1; transform: translateY(-1px); }
 .footer-social .icon { width: var(--footer-icon-size); height: var(--footer-icon-size); display: block; }
 
 /* Note */
 .footer-note {
-  font-size: 0.95rem; color: rgba(255,255,255,.9); max-width: 500px;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,.9);
+  max-width: 500px;
 }
 .footer-note a { color: var(--ea-text); text-decoration: none; transition: opacity var(--transition); }
 .footer-note a:hover { opacity: 1; }
 
 /* Print */
 @media print {
-  .site-footer, .accent-band { background: #fff !important; color: #000 !important; box-shadow: none !important; }
+  .site-footer, .accent-band {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
   .footer-nav a, .footer-note a { color: #000 !important; border: 0 !important; }
 }
