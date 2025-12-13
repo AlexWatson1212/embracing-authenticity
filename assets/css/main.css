@@ -12,13 +12,12 @@ music therapy grid, tags/emotions, footer.
 PART 1/5 — Base, Variables, Resets, Layout, Typography
 ================================================================== */
 
-/* Variables (site-wide palette + tokens) */
 :root {
-  /* Core palette — calm, grounded, therapeutic */
-  --color-bg: #F4F0EA;             /* warm sand */
-  --color-primary: #112234;        /* ink */
-  --color-accent: #C7773F;         /* copper */
-  --color-highlight: #F3E7DC;      /* soft warm highlight */
+  /* Core palette */
+  --color-bg: #F4F0EA;
+  --color-primary: #112234;
+  --color-accent: #C7773F;
+  --color-highlight: #F3E7DC;
   --color-light: #FFFFFF;
   --color-mid: rgba(17,34,52,.12);
   --color-muted: #526273;
@@ -30,7 +29,7 @@ PART 1/5 — Base, Variables, Resets, Layout, Typography
   --ea-link: #F3C6A6;
   --ea-shadow: 0 10px 28px rgba(0,0,0,.16);
 
-  /* Shared surfaces */
+  /* Surfaces */
   --surface: rgba(255,255,255,.72);
   --line: rgba(17,34,52,.10);
   --shadow: 0 14px 38px rgba(0,0,0,.12);
@@ -105,14 +104,12 @@ body::before {
 
 img { max-width: 100%; height: auto; display: block; }
 
-/* Global container (site content wrapper) */
 .container {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: var(--section-pad-y) var(--container-pad-x);
 }
 
-/* Keep header (.shell) aligned with content (.container) */
 .shell {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -120,7 +117,6 @@ img { max-width: 100%; height: auto; display: block; }
   box-sizing: border-box;
 }
 
-/* Safety: constrain single-post pages even if not wrapped in .container */
 .site-content > .post {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -128,7 +124,6 @@ img { max-width: 100%; height: auto; display: block; }
   box-sizing: border-box;
 }
 
-/* Typography */
 :where(p, ul, ol, blockquote) { margin-bottom: 1.6rem; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -144,11 +139,9 @@ main h2 { color: var(--color-accent); }
 p { color: var(--color-primary); }
 small, .muted { color: var(--color-muted); }
 
-/* Links (general) */
 a { color: var(--color-primary); text-decoration: none; transition: color var(--transition); }
 a:hover { color: var(--color-accent); }
 
-/* Content inline links — underline by default (but not buttons/nav chips) */
 main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social) {
   text-decoration-line: underline;
   text-underline-offset: 2px;
@@ -156,7 +149,6 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
   text-decoration-color: var(--color-accent);
 }
 
-/* Hover/focus — keep it obvious and accessible */
 main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):hover {
   color: var(--color-accent);
 }
@@ -166,7 +158,6 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
   border-radius: 2px;
 }
 
-/* Post navigation */
 .post-navigation {
   display: flex;
   justify-content: space-between;
@@ -183,7 +174,6 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
 }
 .post-navigation a:hover { color: var(--color-primary); }
 
-/* Screen-reader only helper */
 .sr-only {
   position: absolute;
   width: 1px; height: 1px;
@@ -192,26 +182,23 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
   white-space: nowrap; border: 0;
 }
 
-/* Responsive rhythm tweaks */
 @media (min-width: 860px) {
   :root { --section-pad-y: 2.5rem; }
 }
 
-
 /* ==================================================================
-PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
+PART 2/5 — Header / Navigation
+(DUPLICATE REMOVED: the extra :root logo vars were here)
 ================================================================== */
 
 .top-accent { display: none; }
 
-/* Sticky header — full-bleed */
 .site-header {
   position: sticky; top: 0; z-index: 1000;
   background: var(--ea-navy); color: var(--ea-text);
   box-shadow: var(--ea-shadow); width: 100%;
 }
 
-/* Inner container keeps content aligned to site width */
 .site-header .shell {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -219,12 +206,10 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
 }
 
-/* Brand (logo only) */
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; }
 .brand-mark { height: var(--logo-h-mobile); width: auto; max-width: 100%; object-fit: contain; }
 .brand-text { display: none; }
 
-/* Legacy .site-nav links */
 .site-nav { width: auto; }
 .site-nav ul {
   display: flex; align-items: center; gap: 1.25rem;
@@ -238,7 +223,6 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
 .site-nav a:hover, .site-nav a:focus { border-bottom-color: var(--ea-link); }
 .site-nav a.is-active { border-bottom-color: var(--ea-accent); }
 
-/* Hamburger (mobile) */
 .nav-toggle {
   display: inline-flex; align-items: center; justify-content: center;
   border: 1px solid rgba(255,255,255,.2);
@@ -246,7 +230,6 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
   border-radius: .6rem; padding: .45rem; cursor: pointer;
 }
 
-/* Mobile slide-down (legacy .site-nav) */
 @media (max-width: 860px) {
   .site-header .shell { flex-wrap: wrap; }
   .nav-toggle { display: inline-flex; }
@@ -261,7 +244,6 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
   }
 }
 
-/* Desktop: thicker bar + larger logo */
 @media (min-width: 861px) {
   .nav-toggle { display: none; }
   .site-nav { max-height: none !important; }
@@ -269,17 +251,15 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
   .brand-mark { height: var(--logo-h-desktop); }
 }
 
-/* Hide any leftover huge masthead title */
 .masthead, .site-title, header .site-title { display: none !important; }
 
-/* Minimal nav system styles for <nav class="nav"> + .nav__links */
+/* <nav class="nav"> system */
 .nav {
   max-width: var(--container-max); margin: 0 auto; padding: 0.9rem 1rem;
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
 }
 .nav__brand { color: var(--ea-text); text-decoration: none; font-weight: 800; letter-spacing: .2px; }
 
-/* Toggle button */
 .nav__toggle {
   display: inline-flex; align-items: center; justify-content: center;
   border: 1px solid rgba(255,255,255,.25);
@@ -289,7 +269,6 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
 }
 .nav__toggle:hover { background: rgba(255,255,255,.06); }
 
-/* Simple hamburger icon block */
 .nav__icon {
   width: 20px; height: 2px; background: currentColor; position: relative; display: block;
 }
@@ -299,7 +278,6 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
 .nav__icon::before { top: -6px; }
 .nav__icon::after  { top: 6px; }
 
-/* Links list */
 .nav__links {
   display: flex; flex-wrap: wrap; gap: 1.25rem;
   list-style: none; margin: 0; padding: 0;
@@ -310,7 +288,6 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
 }
 .nav__links a:hover { color: var(--ea-link); border-bottom-color: var(--ea-link); }
 
-/* Mobile behavior for .nav__links using [hidden] */
 @media (max-width: 860px) {
   .nav { flex-wrap: wrap; }
   .nav__toggle { display: inline-flex; }
@@ -321,18 +298,15 @@ PART 2/5 — Header / Navigation (Sticky full-bleed + nav__links support)
   }
 }
 
-/* Desktop */
 @media (min-width: 861px) { .nav__toggle { display: none; } }
 
 
 /* ==================================================================
 PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
+(DUPLICATE REMOVED: nothing duplicated here beyond what you intended)
 ================================================================== */
 
-/* ================================================================
-POST PAGE — Timeless header styling
-================================================================ */
-
+/* POST PAGE */
 .post-header { margin: 0 0 1.5rem; }
 
 .post-title {
@@ -349,24 +323,17 @@ POST PAGE — Timeless header styling
   line-height: 1.65;
 }
 
-/* Optional: slightly calmer content rhythm on post pages */
 .post-content h2 { margin-top: 2.25rem; }
 .post-content h3 { margin-top: 1.9rem; }
 
-/* ================================================================
-BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
-================================================================ */
-
-/* Intro block (title + purpose text) */
+/* BLOG */
 .blog-intro {
   max-width: 820px;
   margin: 0 auto 1.35rem;
   text-align: center;
 }
-
 .blog-intro h2 { margin: 0 0 .65rem; }
 
-/* Purpose text */
 .blog-purpose {
   max-width: 680px;
   margin: 0.35rem auto 0.85rem;
@@ -375,7 +342,6 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
   color: var(--color-muted);
 }
 
-/* Search UI */
 .blog-search {
   display: flex;
   gap: .6rem;
@@ -423,7 +389,6 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
   min-width: 3ch;
 }
 
-/* Search Results (search.js populates these) */
 .blog-search-results {
   list-style: none;
   margin: 0 auto 2rem;
@@ -441,22 +406,12 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
   border: 1px solid var(--line);
 }
 
-.search-title {
-  font-weight: 800;
-  text-decoration: none;
-  color: var(--color-primary);
-}
+.search-title { font-weight: 800; text-decoration: none; color: var(--color-primary); }
 .search-title:hover { color: var(--color-accent); }
 
-.search-snippet {
-  margin: .55rem 0 .35rem;
-  color: var(--color-primary);
-}
+.search-snippet { margin: .55rem 0 .35rem; color: var(--color-primary); }
 
-.search-meta {
-  color: var(--color-muted);
-  font-size: .9rem;
-}
+.search-meta { color: var(--color-muted); font-size: .9rem; }
 
 .chip {
   display: inline-block;
@@ -468,13 +423,8 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
   font-size: .75rem;
   font-weight: 700;
 }
+.chip.emo { background: rgba(17,34,52,.10); color: var(--color-primary); }
 
-.chip.emo {
-  background: rgba(17,34,52,.10);
-  color: var(--color-primary);
-}
-
-/* Blog list layout */
 .blog-list,
 .latest-posts .blog-list {
   display: grid;
@@ -483,7 +433,6 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
   margin: 0 auto;
 }
 
-/* Cards */
 .blog-card,
 .latest-posts .blog-card {
   background: rgba(255,255,255,.82);
@@ -501,23 +450,15 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
 }
 
 .blog-card-content h3 { margin: 0 0 .35rem; }
-
-.blog-card-content h3 a {
-  text-decoration: none;
-  color: var(--color-primary);
-}
+.blog-card-content h3 a { text-decoration: none; color: var(--color-primary); }
 .blog-card-content h3 a:hover { color: var(--color-accent); }
 
-/* Excerpt */
-.blog-card .excerpt {
-  margin: .65rem 0 1rem;
-  color: var(--color-primary);
-}
+.blog-card .excerpt { margin: .65rem 0 1rem; color: var(--color-primary); }
 
-/* Hide dates in lists/cards for a timeless feel */
-.post-date { display: none !important; }
+/* Hide dates in blog cards only */
+.blog-card .post-date,
+.latest-posts .blog-card .post-date { display: none !important; }
 
-/* Read more button */
 .read-more,
 .latest-posts .read-more {
   display: inline-block;
@@ -538,7 +479,6 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
   transform: translateY(-1px);
 }
 
-/* Tag chips shown on cards */
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -559,7 +499,6 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
   border: 1px solid rgba(199,119,63,.22);
 }
 
-/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;
@@ -586,9 +525,7 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
   border-color: rgba(199,119,63,.45);
 }
 
-/* Back to top */
 .back-to-top { text-align: center; margin: 1.5rem 0 0; }
-
 .back-to-top a {
   color: var(--color-accent);
   font-weight: 800;
@@ -598,22 +535,17 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination
 }
 .back-to-top a:hover { border-bottom-color: var(--color-accent); }
 
-/* Ensure clean internals */
 .blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) {
   background: transparent !important;
 }
 
-/* Mobile tweaks */
 @media (max-width: 768px) {
   .blog-search { flex-direction: column; align-items: stretch; }
   .blog-search button { width: 100%; }
   .blog-card { padding: 1.35rem; }
 }
 
-/* ================================================================
-HERO — calm, readable, emotionally safe
-================================================================ */
-
+/* HERO */
 .hero-banner { position: relative; width: 100%; }
 
 .hero-image-wrapper {
@@ -632,7 +564,6 @@ HERO — calm, readable, emotionally safe
   filter: saturate(.95) contrast(1.02);
 }
 
-/* Overlay ensures text is readable */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -670,7 +601,6 @@ HERO — calm, readable, emotionally safe
   font-size: clamp(var(--hero-sub-size-min), 2.2vw, var(--hero-sub-size-max));
 }
 
-/* CTA buttons */
 .hero-buttons {
   display: flex;
   gap: .75rem;
@@ -692,7 +622,6 @@ HERO — calm, readable, emotionally safe
 }
 .hero-button:hover { background: #fff; transform: translateY(-1px); }
 
-/* Optional secondary CTA */
 .hero-button--ghost {
   background: rgba(247,243,238,.12);
   color: #F7F3EE;
@@ -701,7 +630,6 @@ HERO — calm, readable, emotionally safe
 }
 .hero-button--ghost:hover { background: rgba(247,243,238,.18); }
 
-/* Mobile */
 @media (max-width: 768px) {
   .hero-image-wrapper { aspect-ratio: 4 / 5; }
   .hero-overlay {
@@ -715,7 +643,6 @@ HERO — calm, readable, emotionally safe
   }
 }
 
-/* Contained hero card */
 .hero-contained .shell { padding-top: 1.25rem; }
 
 .hero-card {
@@ -734,46 +661,28 @@ HERO — calm, readable, emotionally safe
 
 /* Quote carousel */
 .quote-carousel {
-  margin: 3rem auto;
-  max-width: 800px;
-  background-color: var(--color-highlight);
-  padding: 2rem;
-  border-radius: var(--radius);
-  position: relative;
+  margin: 3rem auto; max-width: 800px; background-color: var(--color-highlight);
+  padding: 2rem; border-radius: var(--radius); position: relative;
 }
-
 .quote-carousel blockquote {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin: 0 0 1rem;
-  border-left: 4px solid var(--color-accent);
-  padding-left: 1rem;
-  color: var(--color-primary);
-  display: none;
-  background-color: transparent;
+  font-size: 1.2rem; font-style: italic; margin: 0 0 1rem;
+  border-left: 4px solid var(--color-accent); padding-left: 1rem;
+  color: var(--color-primary); display: none; background-color: transparent;
 }
-
 .quote-carousel blockquote.active { display: block; }
-
 .quote-dots { display: flex; justify-content: center; gap: .75rem; margin-top: 1rem; }
 .quote-dots .dot {
-  width: 12px; height: 12px;
-  background: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color var(--transition);
+  width: 12px; height: 12px; background: #ccc; border-radius: 50%;
+  cursor: pointer; transition: background-color var(--transition);
 }
 .quote-dots .dot.active { background: var(--color-accent); }
 
-/* Simple fade-in utility */
-@keyframes fadeIn {
-  from { opacity:0; transform: translateY(-10px); }
-  to   { opacity:1; transform: translateY(0); }
-}
+/* Fade-in utility */
+@keyframes fadeIn { from { opacity:0; transform: translateY(-10px); } to { opacity:1; transform: translateY(0); } }
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease-out, transform .6s ease-out; }
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
 
-/* Accordion (Self-Discovery bullet explanations) */
+/* Accordion */
 .accordion-list { list-style: none; padding-left: 0; margin: 0.6rem 0 1rem; }
 .accordion-item { border-bottom: 1px solid var(--color-mid); }
 .accordion-button {
@@ -791,173 +700,100 @@ HERO — calm, readable, emotionally safe
 }
 .accordion-content.open { display: block; }
 
-
 /* ==================================================================
 PART 4/5 — Music Therapy Grid + Tags/Emotions
+(DUPLICATE FIX: removed the redundant .post-date styling here)
 ================================================================== */
 
 /* Music Therapy */
 .music-therapy-main { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
 .music-posts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-.post {
-  background: var(--color-light);
-  padding: 1rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  transition: transform var(--transition);
-}
+.post { background: var(--color-light); padding: 1rem; border-radius: var(--radius); box-shadow: var(--shadow); transition: transform var(--transition); }
 .post:hover { transform: translateY(-4px); }
 .post-thumbnail { width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; }
 .post-description { font-size: 1rem; }
 
 /* Tags & Emotion Filters */
 .tag-filter { text-align: center; margin: 2rem 0; }
-
 .post-tag, .emotion-button {
-  display: inline-block;
-  font-size: .7rem;
-  font-weight: 600;
-  padding: .4rem 1rem;
-  border-radius: 6px;
-  margin: .3rem;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  cursor: pointer;
-  text-decoration: none;
-  background: var(--color-highlight);
-  color: var(--color-accent);
+  display: inline-block; font-size: .7rem; font-weight: 600;
+  padding: .4rem 1rem; border-radius: 6px; margin: .3rem;
+  text-transform: uppercase; letter-spacing: .5px; cursor: pointer; text-decoration: none;
+  background: var(--color-highlight); color: var(--color-accent);
   transition: background-color var(--transition), color var(--transition), transform .2s ease;
 }
-
-.post-tag:hover,
-.post-tag.active,
-.emotion-button.active {
-  background: var(--color-accent);
-  color: #fff;
-  transform: scale(1.05);
-}
-
+.post-tag:hover, .post-tag.active, .emotion-button.active { background: var(--color-accent); color: #fff; transform: scale(1.05); }
 .emotion-button { background: #dbe5ea; color: var(--color-primary); }
 .emotion-button:hover { transform: scale(1.05); }
 
 .clear-tag-filter, .clear-emotion-filter {
-  background: #EDEDED;
-  color: var(--color-primary);
-  font-size: .95rem;
-  padding: .4rem 1rem;
-  border-radius: 6px;
-  margin: .5rem;
-  display: inline-block;
+  background: #EDEDED; color: var(--color-primary); font-size: .95rem;
+  padding: .4rem 1rem; border-radius: 6px; margin: .5rem; display: inline-block;
   transition: background-color var(--transition), color var(--transition);
 }
 .clear-tag-filter:hover, .clear-emotion-filter:hover { background: var(--color-accent); color: #fff; }
 
-/* Emotion list (if used on emotion pages) */
 .emotion-list { list-style: none; padding: 0; margin-top: 2rem; }
 .emotion-list li { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
-.emotion-list h3 a {
-  font-size: 1.4rem;
-  color: var(--color-accent);
-  text-decoration: none;
-  font-family: var(--font-heading);
-}
+.emotion-list h3 a { font-size: 1.4rem; color: var(--color-accent); text-decoration: none; font-family: var(--font-heading); }
 .emotion-list p { font-size: 1rem; color: #444; margin-top: .5rem; }
 
-
 /* ==================================================================
-PART 5/5 — Accent Band + Global Footer (Centered Layout, Clean Icons)
+PART 5/5 — Accent Band + Global Footer
+(DUPLICATE REMOVED: no extra :root block for --footer-icon-size)
 ================================================================== */
 
-/* Accent band (optional, under hero) */
 .accent-band {
-  background: var(--ea-navy);
-  color: var(--ea-text);
-  padding: 22px 0;
-  margin-top: -8px;
-  box-shadow: var(--ea-shadow);
+  background: var(--ea-navy); color: var(--ea-text);
+  padding: 22px 0; margin-top: -8px; box-shadow: var(--ea-shadow);
 }
 .accent-band .container {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: var(--container-max); margin: 0 auto; padding: 0 16px;
+  display: flex; align-items: center; justify-content: center;
 }
 .accent-band .btn, .accent-band .btn.btn-light {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 8px;
-  background: var(--color-light);
-  color: var(--ea-navy);
-  text-decoration: none;
-  font-weight: 600;
-  border: 0;
+  display: inline-block; padding: 10px 16px; border-radius: 8px;
+  background: var(--color-light); color: var(--ea-navy);
+  text-decoration: none; font-weight: 600; border: 0;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .accent-band .btn:hover, .accent-band .btn.btn-light:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0,0,0,.12);
+  transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,.12);
 }
 
-/* Global footer */
 .site-footer {
-  background: var(--ea-navy);
-  color: var(--ea-text);
-  margin-top: 48px;
-  padding: 36px 16px;
-  text-align: center;
+  background: var(--ea-navy); color: var(--ea-text);
+  margin-top: 48px; padding: 36px 16px; text-align: center;
 }
 .site-footer .footer-center {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  max-width: var(--container-max); margin: 0 auto;
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
 }
 
-/* Brand */
 .footer-brand strong { color: var(--ea-text); }
 .footer-brand .muted { color: rgba(255,255,255,.9); font-size: 0.95rem; margin-top: 4px; }
 
-/* Nav */
 .footer-nav { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .footer-nav a {
-  color: var(--ea-text);
-  text-decoration: none;
-  opacity: 0.95;
-  font-size: 0.95rem;
-  border-bottom: 2px solid transparent;
-  transition: opacity var(--transition), border-color var(--transition);
+  color: var(--ea-text); text-decoration: none; opacity: 0.95; font-size: 0.95rem;
+  border-bottom: 2px solid transparent; transition: opacity var(--transition), border-color var(--transition);
 }
 .footer-nav a:hover { opacity: 1; border-bottom-color: var(--ea-link); }
 
-/* Social */
 .footer-social { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
 .footer-social .social {
-  color: #fff;
-  opacity: 0.9;
-  transition: opacity var(--transition), transform var(--transition);
+  color: #fff; opacity: 0.9; transition: opacity var(--transition), transform var(--transition);
 }
 .footer-social .social:hover { opacity: 1; transform: translateY(-1px); }
 .footer-social .icon { width: var(--footer-icon-size); height: var(--footer-icon-size); display: block; }
 
-/* Note */
 .footer-note {
-  font-size: 0.95rem;
-  color: rgba(255,255,255,.9);
-  max-width: 500px;
+  font-size: 0.95rem; color: rgba(255,255,255,.9); max-width: 500px;
 }
 .footer-note a { color: var(--ea-text); text-decoration: none; transition: opacity var(--transition); }
 .footer-note a:hover { opacity: 1; }
 
-/* Print */
 @media print {
-  .site-footer, .accent-band {
-    background: #fff !important;
-    color: #000 !important;
-    box-shadow: none !important;
-  }
+  .site-footer, .accent-band { background: #fff !important; color: #000 !important; box-shadow: none !important; }
   .footer-nav a, .footer-note a { color: #000 !important; border: 0 !important; }
 }
