@@ -782,3 +782,79 @@ PART 5/5 — Accent Band + Global Footer (Centered Layout, Clean Icons)
   .site-footer, .accent-band { background: #fff !important; color: #000 !important; box-shadow: none !important; }
   .footer-nav a, .footer-note a { color: #000 !important; border: 0 !important; }
 }
+/* ==================================================================
+HOME HERO — restore classic full-bleed hero
+Paste at VERY END of CSS (override layer)
+================================================================== */
+
+/* Targets common hero wrapper names without breaking other pages */
+:where(.hero, .site-hero, .hero-section, .home-hero) {
+  position: relative;
+  width: 100vw;                        /* full-bleed */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow: hidden;
+  background: #000;                    /* prevents light gaps while image loads */
+}
+
+/* Hero image fills the banner */
+:where(.hero, .site-hero, .hero-section, .home-hero) :where(img, picture img) {
+  width: 100%;
+  height: clamp(320px, 46vw, 560px);
+  object-fit: cover;
+  display: block;
+}
+
+/* Gentle overlay so text can sit on top if your HTML supports it */
+:where(.hero, .site-hero, .hero-section, .home-hero)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15,42,58,.10) 0%,
+    rgba(15,42,58,.22) 55%,
+    rgba(15,42,58,.42) 100%
+  );
+  pointer-events: none;
+}
+
+/* If your HTML has a hero content wrapper, this will place it on the image */
+:where(.hero-content, .hero__content, .hero-text, .hero-inner) {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 2.25rem);
+  z-index: 2;
+}
+
+/* The text “card” (works if your content has an inner wrapper, otherwise harmless) */
+:where(.hero-content, .hero__content, .hero-text, .hero-inner) > * {
+  max-width: var(--container-max);
+  width: 100%;
+  background: rgba(244,240,234,.78);
+  border: 1px solid rgba(17,34,52,.12);
+  box-shadow: 0 14px 38px rgba(0,0,0,.12);
+  border-radius: 18px;
+  padding: clamp(1rem, 2.2vw, 1.6rem);
+  backdrop-filter: blur(6px);
+}
+
+/* Titles inside hero feel like a hero again */
+:where(.hero, .site-hero, .hero-section, .home-hero) h1,
+:where(.hero, .site-hero, .hero-section, .home-hero) .hero-title {
+  margin: 0 0 .45rem;
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
+  line-height: 1.12;
+}
+
+:where(.hero, .site-hero, .hero-section, .home-hero) p,
+:where(.hero, .site-hero, .hero-section, .home-hero) .hero-subtitle {
+  margin: 0;
+  max-width: 52ch;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
+}
