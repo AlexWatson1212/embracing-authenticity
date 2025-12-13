@@ -5,9 +5,7 @@ date: 2025-01-28
 tags: ["resilience", "self-worth", "relationships", "emotional-maturity"]
 description: "A guide to understanding and surviving rejection without letting it damage your self-worth or sense of identity."
 emotions: ["shame", "acceptance"]
----
-
-## How to Handle Rejection Without Losing Yourself  
+--- 
 *A guide to staying grounded when life, love, or opportunity says “no.”*
 
 Rejection is one of the most painful experiences we face as humans.  

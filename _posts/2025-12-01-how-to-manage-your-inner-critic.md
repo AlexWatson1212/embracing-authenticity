@@ -6,8 +6,6 @@ tags: ["self-compassion", "inner-critic", "mental-health", "self-discovery"]
 description: "A guide to softening harsh self-talk, understanding your inner critic, and cultivating a kinder, more supportive relationship with yourself."
 emotions: ["shame", "acceptance"]
 ---
-
-## How to Manage Your Inner Critic and Build Self-Compassion  
 *A guide to transforming the voice inside you from an enemy into an ally.*
 
 Every person carries two voices within them:

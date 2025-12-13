@@ -6,8 +6,6 @@ tags: ["boundaries", "assertiveness", "self-worth", "emotional-maturity"]
 description: "A guide to protecting your boundaries with clarity and strength—without losing your softness, empathy, or humanity."
 emotions: ["anger", "acceptance"]
 ---
-
-## How to Stand Up for Yourself Without Becoming Hard  
 *A guide to assertiveness that protects your dignity without sacrificing your kindness.*
 
 Standing up for yourself is one of the most important skills you will ever learn.  

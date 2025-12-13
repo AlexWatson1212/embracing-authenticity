@@ -6,8 +6,6 @@ tags: ["boundaries", "self-worth", "clarity", "emotional-maturity"]
 description: "A guide to recognising misalignment, protecting your peace, and knowing when to let go with dignity."
 emotions: ["acceptance", "anger"]
 ---
-
-## How to Know When to Walk Away  
 *A guide to recognising when a situation, relationship, or environment is no longer aligned with who you are.*
 
 One of the most important skills in life is knowing when to try harder—  

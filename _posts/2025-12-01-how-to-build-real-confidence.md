@@ -5,9 +5,7 @@ date: 2025-01-28
 tags: ["confidence", "self-worth", "authenticity", "inner-strength"]
 description: "A guide to building true confidence—from the inside out—without pretending, performing, or seeking approval."
 emotions: ["hope", "acceptance"]
----
-
-## How to Build Real Confidence (Not a Performance)  
+--- 
 *A guide to becoming grounded, self-assured, and authentic—without pretending to be someone you're not.*
 
 Most people misunderstand confidence.  

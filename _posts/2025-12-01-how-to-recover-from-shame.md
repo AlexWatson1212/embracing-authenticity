@@ -6,8 +6,6 @@ tags: ["shame", "emotional-regulation", "self-worth", "healing"]
 description: "A guide to understanding shame, dissolving its grip, and returning to your worth and wholeness."
 emotions: ["shame", "acceptance"]
 ---
-
-## How to Recover From Shame  
 *A guide to understanding shame and returning to your true self when it overwhelms you.*
 
 Shame is one of the most painful and misunderstood emotions we experience.  

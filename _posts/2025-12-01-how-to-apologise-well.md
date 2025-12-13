@@ -6,8 +6,6 @@ tags: ["relationships", "repair", "integrity", "emotional-maturity"]
 description: "A guide to the art of apology—how to repair trust, take responsibility, and strengthen your relationships through honesty and humility."
 emotions: ["acceptance", "love"]
 ---
-
-## How to Apologise Well (And Why It Matters)  
 *A guide to repairing trust, strengthening relationships, and taking responsibility with dignity.*
 
 Most people never learn how to apologise.  

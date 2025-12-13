@@ -6,8 +6,6 @@ tags: ["relationships", "dating", "values", "secure-attachment"]
 description: "A guide to choosing a partner who strengthens your life, respects your boundaries, and meets you with emotional maturity."
 emotions: ["love", "hope"]
 ---
-
-## How to Choose Your Partner Wisely  
 *A guide to finding someone who aligns with your values, supports your growth, and treats your heart with care.*
 
 Choosing a partner is one of the most significant decisions you will ever make.  

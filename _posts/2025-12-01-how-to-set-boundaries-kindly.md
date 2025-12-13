@@ -6,8 +6,6 @@ tags: ["boundaries", "relationships", "self-respect", "communication"]
 description: "A guide on creating healthy boundaries without losing kindness, compassion, or connection."
 emotions: ["acceptance", "hope"]
 ---
-
-## How to Set Boundaries While Staying Kind and Connected  
 *A guide to protecting your energy without pushing people away.*
 
 Boundaries are one of the clearest signs of emotional maturity.  

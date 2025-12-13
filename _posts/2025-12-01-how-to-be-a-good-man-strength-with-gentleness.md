@@ -5,9 +5,7 @@ date: 2025-01-28
 tags: ["masculinity", "values", "character", "self-discovery"]
 description: "A guide to living as a grounded, honourable, emotionally strong man without abandoning gentleness, vulnerability, and humanity."
 emotions: ["hope", "acceptance"]
----
-
-## How to Be a Good Man: Strength With Gentleness  
+--- 
 *A guide to manhood grounded in integrity, courage, and emotional depth.*
 
 The world gives a lot of mixed messages about what it means to be a man.  

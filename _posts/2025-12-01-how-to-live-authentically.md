@@ -6,8 +6,6 @@ tags: ["authenticity", "identity", "values", "emotional-maturity"]
 description: "A guide to staying true to yourself in a world shaped by pressure, comparison, and performance."
 emotions: ["hope", "acceptance"]
 ---
-
-## How to Live Authentically in a World That Rewards Pretending  
 *A guide to staying rooted in who you are—even when the world pulls you toward performance.*
 
 Modern life encourages pretending.

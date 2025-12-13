@@ -6,8 +6,6 @@ tags: ["healing", "resilience", "self-discovery", "inner-strength"]
 description: "A guide for navigating the hardest moments in life—how to rebuild, heal, and grow when everything feels like it has fallen apart."
 emotions: ["grief", "hope"]
 ---
-
-## How to Repair Yourself When Life Breaks You Open  
 *A guide to surviving and growing through the painful chapters we never asked for.*
 
 At some point in your life, you will break open.

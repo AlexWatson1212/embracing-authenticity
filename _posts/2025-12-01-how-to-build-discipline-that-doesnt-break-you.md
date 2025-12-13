@@ -5,9 +5,7 @@ date: 2025-01-28
 tags: ["discipline", "self-respect", "habits", "wellbeing"]
 description: "A guide to building sustainable discipline—rooted in respect, consistency, and compassion, not self-punishment."
 emotions: ["hope", "acceptance"]
----
-
-## How to Build Discipline That Doesn’t Break You  
+--- 
 *A guide to cultivating consistency and self-respect without falling into burnout, punishment, or perfectionism.*
 
 People talk about discipline like it’s simple:  

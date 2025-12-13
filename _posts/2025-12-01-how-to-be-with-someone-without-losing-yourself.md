@@ -5,9 +5,7 @@ date: 2025-01-28
 tags: ["relationships", "self-worth", "secure-attachment", "boundaries"]
 description: "A guide to maintaining your identity, boundaries, and emotional balance while building a healthy, connected relationship."
 emotions: ["love", "acceptance"]
----
-
-## How to Be With Someone Without Losing Yourself  
+--- 
 *A guide to staying whole, grounded, and authentic inside a relationship.*
 
 Relationships can be beautiful, meaningful, transformative—but they can also be confusing.  

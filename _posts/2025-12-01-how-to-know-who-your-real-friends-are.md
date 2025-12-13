@@ -6,8 +6,6 @@ tags: ["friendship", "relationships", "self-discovery", "boundaries"]
 description: "A guide to recognising true friendship—how to identify the people who add meaning, safety, and authenticity to your life."
 emotions: ["acceptance", "love"]
 ---
-
-## How to Know Who Your Real Friends Are  
 *A guide to recognising the people who truly belong in your life.*
 
 Friendship is one of the most important parts of being human.  

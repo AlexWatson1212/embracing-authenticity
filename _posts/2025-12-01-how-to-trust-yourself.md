@@ -6,8 +6,6 @@ tags: ["self-trust", "self-discovery", "inner-strength", "boundaries"]
 description: "A foundational guide on how to build inner trust—one of the most important skills a person can develop."
 emotions: ["hope", "acceptance"]
 ---
-
-## How to Trust Yourself  
 *A guide to building the inner compass that carries you through life.*
 
 Trusting yourself is one of the most important skills you will ever develop.  
@@ -256,4 +254,4 @@ It grows through hundreds of small decisions where you listen to yourself, stand
 
 And when you trust yourself deeply,  
 your entire life becomes clearer—  
-because your compass always points home.
+because your compass always points home. 
