@@ -858,3 +858,52 @@ Paste at VERY END of CSS (override layer)
   font-size: clamp(1rem, 1.6vw, 1.2rem);
   line-height: 1.6;
 }
+/* ==================================================================
+HERO FIX — remove the split “two-pill” layout and revert to stacked
+Paste at VERY END of CSS
+================================================================== */
+
+/* 1) Ensure the hero text area is ONE COLUMN (not 2-up) */
+:where(.hero, .site-hero, .home-hero, .hero-section)
+:where(.hero-text, .hero-content, .hero__content, .hero-inner, .hero-copy) {
+  display: block !important;
+}
+
+/* If your hero text wrapper was using grid/flex, kill it */
+:where(.hero, .site-hero, .home-hero, .hero-section)
+:where(.hero-text, .hero-content, .hero__content, .hero-inner, .hero-copy) > * {
+  width: 100%;
+  max-width: 760px;
+}
+
+/* 2) Remove the “pill cards” look from the individual blocks */
+:where(.hero, .site-hero, .home-hero, .hero-section)
+:where(.hero-text, .hero-content, .hero__content, .hero-inner, .hero-copy) > * {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+/* 3) Make the hero title + subtitle look like the old calm stack */
+:where(.hero, .site-hero, .home-hero, .hero-section) h1,
+:where(.hero, .site-hero, .home-hero, .hero-section) .hero-title {
+  margin: 0 0 .65rem !important;
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
+  line-height: 1.12;
+}
+
+:where(.hero, .site-hero, .home-hero, .hero-section) p,
+:where(.hero, .site-hero, .home-hero, .hero-section) .hero-subtitle {
+  margin: 0 !important;
+  max-width: 60ch;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
+}
+
+/* 4) Optional: if the hero text is currently centered and you want the old left-align */
+:where(.hero, .site-hero, .home-hero, .hero-section) {
+  text-align: left;
+}
