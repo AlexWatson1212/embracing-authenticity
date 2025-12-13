@@ -328,6 +328,32 @@ PART 3/5 — Cards, Hero, Quotes, Interludes, Animations (UPDATED)
 ================================================================== */
 
 /* ================================================================
+POST PAGE — Timeless header styling (UPDATED)
+================================================================ */
+
+.post-header {
+  margin: 0 0 1.5rem;
+}
+
+.post-title {
+  margin: 0 0 .65rem;
+  color: var(--color-accent); /* copper title (no need to re-add title in body) */
+  letter-spacing: .2px;
+}
+
+.post-subtitle {
+  margin: 0;
+  max-width: 760px;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+/* Optional: slightly calmer content rhythm on post pages */
+.post-content h2 { margin-top: 2.25rem; }
+.post-content h3 { margin-top: 1.9rem; }
+
+/* ================================================================
 BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
 ================================================================ */
 
@@ -492,16 +518,15 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
   color: var(--color-accent);
 }
 
-/* Excerpt + meta */
+/* Excerpt */
 .blog-card .excerpt {
   margin: .65rem 0 1rem;
   color: var(--color-primary);
 }
 
+/* Hide dates in lists/cards for a timeless feel */
 .post-date {
-  font-size: .9rem;
-  color: var(--color-muted);
-  margin: 0 0 .35rem;
+  display: none !important;
 }
 
 /* Read more button */
@@ -523,6 +548,27 @@ BLOG — Intro, Purpose, Search, Results, List, Cards, Pagination (UPDATED)
   background-color: var(--color-accent);
   color: var(--color-light);
   transform: translateY(-1px);
+}
+
+/* Emotion tags shown on cards */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0 0 1rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .3px;
+  background: var(--color-highlight);
+  color: var(--color-accent);
+  border: 1px solid rgba(199,119,63,.22);
 }
 
 /* Pagination */
