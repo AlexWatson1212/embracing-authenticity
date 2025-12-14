@@ -34,31 +34,25 @@ title: Home
     </div>
   </section>
 
-  <!-- Gentle orientation (short + not about you) -->
-  <section class="section" aria-label="Orientation">
+  <!-- Pathways (homepage core) -->
+  <section class="section section--alt" aria-label="Start here">
     <div class="container">
-      <p class="lead">
+
+      <h2 class="section-title">Start Here</h2>
+
+      <!-- Orientation now lives here (clean + contextual) -->
+      <p class="section-subtitle">
         This site isn’t here to tell you who to be. It’s here to help you listen more closely to who you already are.
       </p>
       <p class="small-note">
         Choose one doorway below and start gently. You don’t have to do it all.
-      </p>
-    </div>
-  </section>
-
-  <!-- Pathways (clean, minimal, spacious) -->
-  <section class="section section--alt" aria-label="Start here">
-    <div class="container">
-      <h2 class="section-title">Start Here</h2>
-      <p class="section-subtitle">
-        Three ways in — pick what supports you right now.
       </p>
 
       <div class="grid gap-8 home-cards">
         <div class="breathe-card">
           <h3>Self-Discovery</h3>
           <p>
-            Gentle tools and reflections for understanding your inner world — survival roles, patterns, and becoming more yourself.
+            Tools and reflections for understanding your inner world — patterns, survival roles, and becoming more yourself.
           </p>
           <p><a href="/self-discovery" class="inline-link">Explore Self-Discovery →</a></p>
         </div>
@@ -74,7 +68,7 @@ title: Home
         <div class="breathe-card">
           <h3>Reflections</h3>
           <p>
-            Honest writing from lived experience. Not instructions — just companions for the parts of you that feel alone.
+            Honest writing from lived experience — not instructions, just companionship for what you’re carrying.
           </p>
           <p><a href="/blog" class="inline-link">Read the Blog →</a></p>
         </div>
@@ -82,7 +76,7 @@ title: Home
     </div>
   </section>
 
-  <!-- Latest (moved up + becomes the “product”) -->
+  <!-- Recent reflections (cleaner + no extra instructional footer text) -->
   <section class="section latest-posts" aria-label="Recent reflections">
     <div class="container">
       <h2 class="section-title">Recent Reflections</h2>
@@ -94,7 +88,7 @@ title: Home
             <h3 class="blog-card-title">{{ post.title }}</h3>
             <p class="blog-card-meta">{{ post.date | date: "%B %d, %Y" }}</p>
             <p class="blog-card-excerpt">
-              {{ post.description | default: post.excerpt | strip_html | truncatewords: 26 }}
+              {{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}
             </p>
             <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
           </div>
@@ -102,8 +96,8 @@ title: Home
         {% endfor %}
       </div>
 
-      <p class="small-note center">
-        Take what resonates, leave what doesn’t, and bring anything important back into your own therapy or journaling.
+      <p class="small-note center" style="margin-top: 1.25rem;">
+        <a href="/blog" class="inline-link">Browse all reflections →</a>
       </p>
     </div>
   </section>
