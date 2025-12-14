@@ -527,7 +527,101 @@ POST PAGE — Hero + Readability (UPDATED for post-wrap/post-card layout)
   .post-card { padding: 1.25rem 1rem; }
   .post-content { font-size: 1.02rem; }
 }
+/* =========================================================
+POST PAGE — Elegant auto-numbered sections
+========================================================= */
 
+/* Reset counter for each post */
+.post-content {
+  counter-reset: section;
+}
+
+/* Numbered H2s */
+.post-content h2 {
+  counter-increment: section;
+  position: relative;
+  padding-left: 2.6rem; /* space for number */
+}
+
+/* The number itself */
+.post-content h2::before {
+  content: counter(section);
+  position: absolute;
+  left: 0;
+  top: .05em;
+
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  color: var(--color-muted);
+  opacity: 0.65;
+
+  width: 2rem;
+  text-align: right;
+}
+
+/* Optional: soften further on mobile */
+@media (max-width: 640px) {
+  .post-content h2 {
+    padding-left: 2.2rem;
+  }
+
+  .post-content h2::before {
+    font-size: 0.85rem;
+  }
+}
+/* =========================================================
+POST PAGE — Calm hierarchy + section rhythm (add-on)
+========================================================= */
+
+/* Slightly soften all post text rendering */
+.post-content {
+  text-rendering: optimizeLegibility;
+}
+
+/* Make H3s feel like “sub-reflections”, not competing headings */
+.post-content h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: .15px;
+  color: var(--color-primary);
+  margin-top: 1.35rem;
+}
+
+/* Add gentle separators between numbered sections (H2 blocks) */
+.post-content h2 {
+  padding-top: 1.35rem; /* creates air above each section */
+  border-top: 1px solid rgba(17,34,52,.12);
+}
+
+/* Don’t put a divider above the very first H2 */
+.post-content h2:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+/* Improve readability of long paragraphs a touch */
+.post-content p {
+  max-width: 72ch; /* keeps lines from becoming too long on wide screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep lists aligned with the paragraph width too */
+.post-content ul,
+.post-content ol,
+.post-content blockquote {
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Optional: make blockquotes slightly more “quote-like” */
+.post-content blockquote {
+  padding: 1.05rem 1.2rem;
+}
+a
 /* ================================================================
 PAGE HERO (Blog / internal pages)
 ================================================================ */
