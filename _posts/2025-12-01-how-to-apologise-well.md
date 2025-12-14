@@ -4,6 +4,7 @@ title: "How to Apologise Well (And Why It Matters)"
 date: 2025-01-28
 tags: ["relationships", "repair", "integrity", "emotional-maturity"]
 description: "A guide to the art of apology—how to repair trust, take responsibility, and strengthen your relationships through honesty and humility."
+hero_image: /assets/images/posts/How-to-Apologise-Well.png
 emotions: ["acceptance", "love"]
 ---
 *A guide to repairing trust, strengthening relationships, and taking responsibility with dignity.*
