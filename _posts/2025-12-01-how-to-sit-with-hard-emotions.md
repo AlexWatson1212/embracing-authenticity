@@ -4,6 +4,7 @@ title: "How to Sit With Hard Emotions Without Collapsing"
 date: 2025-01-28
 tags: ["emotions", "self-regulation", "inner-strength", "resilience"]
 description: "A guide to feeling difficult emotions without shutting down, drowning, or losing yourself—an essential skill for life."
+hero_image: /assets/images/posts/How-to-Handle-Rejection-Without-Losing-Yourself.png
 emotions: ["acceptance", "hope"]
 ---
 *A guide to emotional strength, written for those learning to feel instead of escape.*

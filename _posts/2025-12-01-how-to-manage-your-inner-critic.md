@@ -4,6 +4,7 @@ title: "How to Manage Your Inner Critic and Build Self-Compassion"
 date: 2025-01-28
 tags: ["self-compassion", "inner-critic", "mental-health", "self-discovery"]
 description: "A guide to softening harsh self-talk, understanding your inner critic, and cultivating a kinder, more supportive relationship with yourself."
+hero_image: /assets/images/posts/How-to-Handle-Rejection-Without-Losing-Yourself.png
 emotions: ["shame", "acceptance"]
 ---
 *A guide to transforming the voice inside you from an enemy into an ally.*

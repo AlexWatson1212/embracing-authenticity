@@ -4,6 +4,7 @@ title: "How to Repair Yourself When Life Breaks You Open"
 date: 2025-01-28
 tags: ["healing", "resilience", "self-discovery", "inner-strength"]
 description: "A guide for navigating the hardest moments in life—how to rebuild, heal, and grow when everything feels like it has fallen apart."
+hero_image: /assets/images/posts/How-to-Handle-Rejection-Without-Losing-Yourself.png
 emotions: ["grief", "hope"]
 ---
 *A guide to surviving and growing through the painful chapters we never asked for.*

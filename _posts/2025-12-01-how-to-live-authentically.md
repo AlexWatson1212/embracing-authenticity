@@ -4,6 +4,7 @@ title: "How to Live Authentically in a World That Rewards Pretending"
 date: 2025-01-28
 tags: ["authenticity", "identity", "values", "emotional-maturity"]
 description: "A guide to staying true to yourself in a world shaped by pressure, comparison, and performance."
+hero_image: /assets/images/posts/How-to-Live-Authentically-in-a-World-That-Rewards-Pretending.png
 emotions: ["hope", "acceptance"]
 ---
 *A guide to staying rooted in who you are—even when the world pulls you toward performance.*

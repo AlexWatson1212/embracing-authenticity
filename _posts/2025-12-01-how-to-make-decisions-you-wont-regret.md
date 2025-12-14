@@ -4,6 +4,7 @@ title: "How to Make Decisions You Won’t Regret"
 date: 2025-01-28
 tags: ["decision-making", "values", "self-trust", "inner-guidance"]
 description: "A guide to making grounded, regret-free decisions by aligning with your values, intuition, and long-term wellbeing."
+hero_image: /assets/images/posts/How-to-Handle-Rejection-Without-Losing-Yourself.png
 emotions: ["acceptance", "hope"]
 ---
 *A guide to choosing wisely, calmly, and in alignment with who you want to become.*

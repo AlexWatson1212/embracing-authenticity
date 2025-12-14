@@ -4,6 +4,7 @@ title: "How to Know When to Walk Away"
 date: 2025-01-28
 tags: ["boundaries", "self-worth", "clarity", "emotional-maturity"]
 description: "A guide to recognising misalignment, protecting your peace, and knowing when to let go with dignity."
+hero_image: /assets/images/posts/How-to-Know-When-to-walk-away.png
 emotions: ["acceptance", "anger"]
 ---
 *A guide to recognising when a situation, relationship, or environment is no longer aligned with who you are.*

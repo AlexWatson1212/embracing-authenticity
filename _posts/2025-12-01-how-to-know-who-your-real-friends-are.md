@@ -4,6 +4,7 @@ title: "How to Know Who Your Real Friends Are"
 date: 2025-01-28
 tags: ["friendship", "relationships", "self-discovery", "boundaries"]
 description: "A guide to recognising true friendship—how to identify the people who add meaning, safety, and authenticity to your life."
+hero_image: /assets/images/posts/How-to-Know-Who-Your-Real-Friends-Are.png
 emotions: ["acceptance", "love"]
 ---
 *A guide to recognising the people who truly belong in your life.*
