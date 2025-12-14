@@ -309,14 +309,6 @@ POST PAGE — Hero + Readability (UPDATED)
 ========================================================= */
 
 /* Post hero (new layout) */
-.post-hero {
-  position: relative;
-  width: 100%;
-  min-height: 240px;
-  border-bottom: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-  overflow: hidden;
-}
 
 .post-hero-bg {
   position: absolute;
@@ -853,11 +845,6 @@ HERO — Unified (Homepage + Internal “hero-card” + About match)
 
 /* “Hero contained” layout helper */
 .hero-contained .shell { padding-top: 1.25rem; }
-.hero-contained .hero-image-wrapper { aspect-ratio: 16 / 7; }
-
-@media (max-width: 768px) {
-  .hero-contained .hero-image-wrapper { aspect-ratio: 4 / 5; }
-}
 
 /* Internal page hero card (used on About, etc.) */
 .hero-card {
