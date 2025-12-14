@@ -545,7 +545,11 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
   .blog-card { padding: 1.35rem; }
 }
 
-/* HERO */
+/* ==================================================================
+HERO — Unified (Homepage + Internal “hero-card” + About match)
+================================================================== */
+
+/* Homepage hero */
 .hero-banner { position: relative; width: 100%; }
 
 .hero-image-wrapper {
@@ -630,6 +634,7 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
 }
 .hero-button--ghost:hover { background: rgba(247,243,238,.18); }
 
+/* Mobile: keep homepage hero proportions consistent */
 @media (max-width: 768px) {
   .hero-image-wrapper { aspect-ratio: 4 / 5; }
   .hero-overlay {
@@ -643,8 +648,15 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
   }
 }
 
+/* “Hero contained” layout helper */
 .hero-contained .shell { padding-top: 1.25rem; }
+.hero-contained .hero-image-wrapper { aspect-ratio: 16 / 7; }
 
+@media (max-width: 768px) {
+  .hero-contained .hero-image-wrapper { aspect-ratio: 4 / 5; }
+}
+
+/* Internal page hero card (used on About, etc.) */
 .hero-card {
   position: relative;
   overflow: hidden;
@@ -652,12 +664,36 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
   box-shadow: var(--shadow);
   margin: 0 auto 1.6rem;
   border: 1px solid var(--line);
+  width: 100%;
 }
 
-.hero-contained .hero-image-wrapper { aspect-ratio: 16 / 7; }
-@media (max-width: 768px) {
-  .hero-contained .hero-image-wrapper { aspect-ratio: 4 / 5; }
+/* ✅ About hero: match homepage proportions exactly */
+.hero-card.about-hero {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 7; /* match homepage desktop */
 }
+
+/* Make the image fill the card (prevents “tall” images) */
+.hero-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Optional: keep the same tone as the homepage hero image */
+.hero-card.about-hero img {
+  filter: saturate(.95) contrast(1.02);
+}
+
+@media (max-width: 768px) {
+  .hero-card.about-hero {
+    aspect-ratio: 4 / 5; /* match homepage mobile */
+  }
+}
+
 
 /* Quote carousel */
 .quote-carousel {
@@ -797,107 +833,7 @@ PART 5/5 — Accent Band + Global Footer
   .site-footer, .accent-band { background: #fff !important; color: #000 !important; box-shadow: none !important; }
   .footer-nav a, .footer-note a { color: #000 !important; border: 0 !important; }
 }
-/* =========================================================
-HOME — Cohesion pass: consistent widths, cards, spacing
-========================================================= */
 
-/* 1) Make the content feel intentionally narrow + centered */
-#content .section .container {
-  max-width: 980px;
-}
-
-#content .section p.lead,
-#content .section p.small-note {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* 2) Give sections a clearer vertical rhythm */
-#content .section {
-  padding-top: 3.25rem;
-  padding-bottom: 3.25rem;
-}
-
-#content .section .section-title {
-  margin-bottom: 0.75rem;
-}
-
-#content .section .section-subtitle {
-  max-width: 760px;
-  margin: 0 auto 2rem;
-}
-
-/* 3) Turn Start Here into real cards (this is the big win) */
-.home-cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-  align-items: stretch;
-  margin-top: 1.75rem;
-}
-
-@media (max-width: 900px) {
-  .home-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Unify card styling */
-.home-cards .breathe-card {
-  background: var(--color-light);
-  border: 1px solid var(--color-mid);
-  border-radius: 16px;
-  padding: 1.35rem 1.35rem 1.2rem;
-  box-shadow: 0 10px 30px rgba(17,34,52,0.08);
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.home-cards .breathe-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 40px rgba(17,34,52,0.12);
-}
-
-.home-cards .breathe-card h3 {
-  margin: 0 0 .55rem;
-  font-size: 1.15rem;
-  letter-spacing: .2px;
-}
-
-.home-cards .breathe-card p {
-  margin: 0 0 .9rem;
-  line-height: 1.65;
-}
-
-.home-cards .breathe-card .inline-link {
-  display: inline-flex;
-  gap: .35rem;
-  align-items: center;
-  font-weight: 650;
-}
-
-/* 4) Make Recent Reflections match the same width + spacing */
-.latest-posts .grid {
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.latest-posts .blog-card {
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-/* If your blog cards look “too tall”, tighten slightly */
-.latest-posts .blog-card-content {
-  padding: 1.15rem 1.25rem;
-}
-
-/* 5) Give the page a subtle “section break” feel without adding lines */
-.section--alt {
-  border-top: 1px solid rgba(17,34,52,0.06);
-  border-bottom: 1px solid rgba(17,34,52,0.06);
-}
 /* =========================================================
 HOME / SECTIONS — Missing utilities + spacing fixes (ADD)
 ========================================================= */
@@ -1001,12 +937,4 @@ HOME / SECTIONS — Missing utilities + spacing fixes (ADD)
 .latest-posts .small-note.center {
   margin-top: 1.35rem;
 }
-/* About page hero image — match homepage scale */
-.about-hero {
-  display: block;
-  width: 100%;
-  max-height: 55vh;        /* key line: stops it dominating */
-  object-fit: cover;
-  border-radius: 12px;
-  margin: 0 auto 3rem;    /* space before text */
-}
+
