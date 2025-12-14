@@ -621,7 +621,27 @@ POST PAGE — Calm hierarchy + section rhythm (add-on)
 .post-content blockquote {
   padding: 1.05rem 1.2rem;
 }
-a
+/* =========================================================
+POST PAGE — Lead paragraph (intro text)
+========================================================= */
+
+/* Style only the FIRST paragraph in the post */
+.post-content > p:first-of-type {
+  font-size: 1.12rem;
+  line-height: 1.85;
+  color: var(--color-primary);
+  margin-bottom: 1.6rem;
+  max-width: 74ch;
+}
+
+/* Slight softening on mobile */
+@media (max-width: 640px) {
+  .post-content > p:first-of-type {
+    font-size: 1.06rem;
+    line-height: 1.8;
+  }
+}
+
 /* ================================================================
 PAGE HERO (Blog / internal pages)
 ================================================================ */
