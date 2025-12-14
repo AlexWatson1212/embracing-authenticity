@@ -4,6 +4,7 @@ title: "How to Build a Life That Feels Like Yours"
 date: 2025-01-28
 tags: ["life-design", "values", "authenticity", "self-discovery"]
 description: "A guide to creating a life rooted in your values, your truth, and your inner alignment—rather than external expectations."
+hero_image: /assets/images/posts/How-to-Build-a-Life-That-Feels-Like-Yours.png
 emotions: ["hope", "acceptance"]
 --- 
 *A guide to designing a life that reflects your true self—not anyone else’s expectations.*

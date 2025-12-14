@@ -4,6 +4,7 @@ title: "How to Be With Someone Without Losing Yourself"
 date: 2025-01-28
 tags: ["relationships", "self-worth", "secure-attachment", "boundaries"]
 description: "A guide to maintaining your identity, boundaries, and emotional balance while building a healthy, connected relationship."
+hero_image: /assets/images/posts/How-to-Be-With-Someone-Without-Losing-Yourself.png
 emotions: ["love", "acceptance"]
 --- 
 *A guide to staying whole, grounded, and authentic inside a relationship.*
