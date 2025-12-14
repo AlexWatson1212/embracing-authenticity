@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "The Difference Between Being Alone and Being Lonely"
-date: 2025-01-28
+date: 2025-11-11
 tags: ["solitude", "emotional-health", "self-discovery", "inner-strength"]
 description: "A guide to understanding solitude, loneliness, and how to build a life where being alone feels grounding instead of frightening."
+hero_image: /assets/images/posts/The-Difference-Between-Being-Alone-and-Being-Lonely.jpg
 emotions: ["acceptance", "hope"]
 --- 
 *A guide to understanding solitude, connection, and the quiet strength of being at home in yourself.*
