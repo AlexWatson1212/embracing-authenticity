@@ -898,3 +898,106 @@ HOME — Cohesion pass: consistent widths, cards, spacing
   border-top: 1px solid rgba(17,34,52,0.06);
   border-bottom: 1px solid rgba(17,34,52,0.06);
 }
+/* =========================================================
+HOME / SECTIONS — Missing utilities + spacing fixes (ADD)
+========================================================= */
+
+/* 0) Utility classes used in templates (so they don’t “do nothing”) */
+.grid { display: grid; }
+.center { text-align: center; }
+
+.gap-8 { gap: 1.25rem; }   /* matches your home card gap */
+.gap-10 { gap: 1.75rem; }  /* slightly larger for recent reflections */
+
+/* Small text helpers */
+.small-note {
+  color: var(--color-muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+/* 1) Fix the “container has padding” issue on section layouts
+   - Keep container width control
+   - But let SECTION control vertical rhythm (not container) */
+#content .section .container,
+#content .section--alt .container,
+#content .latest-posts .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* 2) Section spacing (consistent, calm, professional) */
+#content .section {
+  padding: 3.25rem 0;
+}
+
+@media (max-width: 768px) {
+  #content .section {
+    padding: 2.5rem 0;
+  }
+}
+
+/* 3) Titles + subtitles (these were referenced but not defined) */
+.section-title {
+  margin: 0 0 0.75rem;
+  text-align: center;
+  color: var(--color-accent);
+}
+
+.section-subtitle {
+  max-width: 760px;
+  margin: 0 auto 0.9rem;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+/* Put the smaller note under the subtitle */
+#content .section .small-note {
+  max-width: 760px;
+  margin: 0.2rem auto 0;
+  text-align: center;
+}
+
+/* 4) Start Here cards — make sure they breathe */
+.home-cards {
+  margin-top: 1.6rem;
+}
+
+/* Avoid default global heading margins making cards feel “cramped” */
+.home-cards .breathe-card h3 {
+  margin: 0 0 0.55rem;
+}
+
+/* 5) Recent Reflections — reduce “stacked” feeling */
+.latest-posts .grid {
+  max-width: 860px;
+  margin: 1.25rem auto 0;
+}
+
+.latest-posts .blog-card {
+  margin: 0; /* ensure gap controls spacing, not random margins */
+}
+
+/* Nicer rhythm inside the recent reflection cards */
+.latest-posts .blog-card-title {
+  margin: 0 0 0.35rem;
+}
+
+.latest-posts .blog-card-meta {
+  margin: 0 0 0.75rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+/* Excerpt spacing */
+.latest-posts .blog-card-excerpt {
+  margin: 0 0 1rem;
+  color: var(--color-primary);
+}
+
+/* The “Browse all reflections” line */
+.latest-posts .small-note.center {
+  margin-top: 1.35rem;
+}
