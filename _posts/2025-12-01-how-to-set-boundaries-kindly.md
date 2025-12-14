@@ -4,7 +4,7 @@ title: "How to Set Boundaries While Staying Kind and Connected"
 date: 2025-01-28
 tags: ["boundaries", "relationships", "self-respect", "communication"]
 description: "A guide on creating healthy boundaries without losing kindness, compassion, or connection."
-hero_image: /assets/images/posts/How-to-Handle-Rejection-Without-Losing-Yourself.png
+hero_image: /assets/images/posts/How-to-Set-Boundaries-While-Staying-Kind-and-Connected.png
 emotions: ["acceptance", "hope"]
 ---
 *A guide to protecting your energy without pushing people away.*

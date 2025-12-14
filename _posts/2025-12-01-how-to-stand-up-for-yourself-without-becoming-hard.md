@@ -4,7 +4,7 @@ title: "How to Stand Up for Yourself Without Becoming Hard"
 date: 2025-01-28
 tags: ["boundaries", "assertiveness", "self-worth", "emotional-maturity"]
 description: "A guide to protecting your boundaries with clarity and strength—without losing your softness, empathy, or humanity."
-hero_image: /assets/images/posts/How-to-Handle-Rejection-Without-Losing-Yourself.png
+hero_image: /assets/images/posts/How-to-Stand-Up-for-Yourself-Without-Becoming-Hard.png
 emotions: ["anger", "acceptance"]
 ---
 *A guide to assertiveness that protects your dignity without sacrificing your kindness.*

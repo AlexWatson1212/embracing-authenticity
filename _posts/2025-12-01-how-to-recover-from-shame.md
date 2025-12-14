@@ -4,7 +4,7 @@ title: "How to Recover From Shame"
 date: 2025-01-28
 tags: ["shame", "emotional-regulation", "self-worth", "healing"]
 description: "A guide to understanding shame, dissolving its grip, and returning to your worth and wholeness."
-hero_image: /assets/images/posts/How-to-Handle-Rejection-Without-Losing-Yourself.png
+hero_image: /assets/images/posts/How-to-Recover-From-Shame.png
 emotions: ["shame", "acceptance"]
 ---
 *A guide to understanding shame and returning to your true self when it overwhelms you.*
