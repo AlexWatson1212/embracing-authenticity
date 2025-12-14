@@ -4,6 +4,7 @@ title: "How to Build Real Confidence (Not a Performance)"
 date: 2025-01-28
 tags: ["confidence", "self-worth", "authenticity", "inner-strength"]
 description: "A guide to building true confidence—from the inside out—without pretending, performing, or seeking approval."
+hero_image: /assets/images/posts/How-to-Build-real-confidence.png
 emotions: ["hope", "acceptance"]
 --- 
 *A guide to becoming grounded, self-assured, and authentic—without pretending to be someone you're not.*

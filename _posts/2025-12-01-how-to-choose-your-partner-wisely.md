@@ -4,6 +4,7 @@ title: "How to Choose Your Partner Wisely"
 date: 2025-01-28
 tags: ["relationships", "dating", "values", "secure-attachment"]
 description: "A guide to choosing a partner who strengthens your life, respects your boundaries, and meets you with emotional maturity."
+hero_image: /assets/images/posts/How-to-Choose-Your-Partner-Wisely.png
 emotions: ["love", "hope"]
 ---
 *A guide to finding someone who aligns with your values, supports your growth, and treats your heart with care.*
