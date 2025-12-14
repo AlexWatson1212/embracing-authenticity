@@ -237,6 +237,23 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
 @media (max-width: 640px){
   .post-nav-links{ grid-template-columns: 1fr; }
 }
+.post-content h2{
+  margin: 2rem 0 .75rem;
+  font-size: 1.25rem;          /* calmer */
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--color-primary);  /* less shouty than accent */
+  letter-spacing: .15px;
+}
+
+.post-content h3{
+  margin: 1.5rem 0 .6rem;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--color-muted);
+}
+
 
 /* ==================================================================
 PART 2 — Header / Navigation (supports BOTH systems)
