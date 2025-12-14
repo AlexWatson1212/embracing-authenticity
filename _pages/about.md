@@ -3,7 +3,13 @@ layout: default
 permalink: /about/
 ---
 
-![Path through a quiet forest](/assets/images/about-journey-optimized.jpg)
+<div class="hero-card about-hero">
+  <img
+    src="/assets/images/about-journey-optimized.jpg"
+    alt="Path through a quiet forest"
+    loading="lazy"
+  />
+</div>
 
 <h2>About</h2>
 
