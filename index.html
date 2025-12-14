@@ -1,111 +1,101 @@
----
-layout: default
-title: Home
----
+/* =========================================================
+HOME — Cohesion pass: consistent widths, cards, spacing
+========================================================= */
 
-<main id="content">
+/* 1) Make the content feel intentionally narrow + centered */
+#content .section .container {
+  max-width: 980px;
+}
 
-  <!-- Hero -->
-  <section class="hero-banner hero-contained" aria-label="Intro">
-    <div class="container">
-      <div class="hero-card">
-        <div class="hero-image-wrapper" aria-hidden="true">
-          <img src="/assets/images/hero-forest.png" alt="">
-        </div>
+#content .section p.lead,
+#content .section p.small-note {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-        <div class="hero-overlay">
-          <div class="hero-text">
-            <h1 class="hero-title">Slow Down. Feel More. Find Your Way.</h1>
-            <p class="hero-subtitle">
-              A quiet corner for people who think deeply, feel a lot, and want to live more honestly.
-            </p>
-          </div>
+/* 2) Give sections a clearer vertical rhythm */
+#content .section {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+}
 
-          <div class="hero-buttons">
-            <a href="/self-discovery" class="hero-button" aria-label="Begin with the self-discovery journey">
-              Begin the journey
-            </a>
-            <a href="/journal/the-commitment-to-being-authentic" class="hero-button hero-button--ghost">
-              Read the commitment
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+#content .section .section-title {
+  margin-bottom: 0.75rem;
+}
 
-  <!-- Gentle orientation (short + not about you) -->
-  <section class="section" aria-label="Orientation">
-    <div class="container">
-      <p class="lead">
-        This site isn’t here to tell you who to be. It’s here to help you listen more closely to who you already are.
-      </p>
-      <p class="small-note">
-        Choose one doorway below and start gently. You don’t have to do it all.
-      </p>
-    </div>
-  </section>
+#content .section .section-subtitle {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+}
 
-  <!-- Pathways (clean, minimal, spacious) -->
-  <section class="section section--alt" aria-label="Start here">
-    <div class="container">
-      <h2 class="section-title">Start Here</h2>
-      <p class="section-subtitle">
-        Three ways in — pick what supports you right now.
-      </p>
+/* 3) Turn Start Here into real cards (this is the big win) */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-top: 1.75rem;
+}
 
-      <div class="grid gap-8 home-cards">
-        <div class="breathe-card">
-          <h3>Self-Discovery</h3>
-          <p>
-            Gentle tools and reflections for understanding your inner world — survival roles, patterns, and becoming more yourself.
-          </p>
-          <p><a href="/self-discovery" class="inline-link">Explore Self-Discovery →</a></p>
-        </div>
+@media (max-width: 900px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+}
 
-        <div class="breathe-card">
-          <h3>Music Therapy</h3>
-          <p>
-            Songs as mirrors — a way to meet emotion, memory, and meaning through the music you already love.
-          </p>
-          <p><a href="/music-therapy" class="inline-link">Visit Music Therapy →</a></p>
-        </div>
+/* Unify card styling */
+.home-cards .breathe-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-mid);
+  border-radius: 16px;
+  padding: 1.35rem 1.35rem 1.2rem;
+  box-shadow: 0 10px 30px rgba(17,34,52,0.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
 
-        <div class="breathe-card">
-          <h3>Reflections</h3>
-          <p>
-            Honest writing from lived experience. Not instructions — just companions for the parts of you that feel alone.
-          </p>
-          <p><a href="/blog" class="inline-link">Read the Blog →</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
+.home-cards .breathe-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(17,34,52,0.12);
+}
 
-  <!-- Latest (moved up + becomes the “product”) -->
-  <section class="section latest-posts" aria-label="Recent reflections">
-    <div class="container">
-      <h2 class="section-title">Recent Reflections</h2>
+.home-cards .breathe-card h3 {
+  margin: 0 0 .55rem;
+  font-size: 1.15rem;
+  letter-spacing: .2px;
+}
 
-      <div class="grid gap-10">
-        {% for post in site.posts limit:3 %}
-        <div class="blog-card animate-on-scroll">
-          <div class="blog-card-content">
-            <h3 class="blog-card-title">{{ post.title }}</h3>
-            <p class="blog-card-meta">{{ post.date | date: "%B %d, %Y" }}</p>
-            <p class="blog-card-excerpt">
-              {{ post.description | default: post.excerpt | strip_html | truncatewords: 26 }}
-            </p>
-            <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+.home-cards .breathe-card p {
+  margin: 0 0 .9rem;
+  line-height: 1.65;
+}
 
-      <p class="small-note center">
-        Take what resonates, leave what doesn’t, and bring anything important back into your own therapy or journaling.
-      </p>
-    </div>
-  </section>
+.home-cards .breathe-card .inline-link {
+  display: inline-flex;
+  gap: .35rem;
+  align-items: center;
+  font-weight: 650;
+}
 
-</main>
+/* 4) Make Recent Reflections match the same width + spacing */
+.latest-posts .grid {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.latest-posts .blog-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* If your blog cards look “too tall”, tighten slightly */
+.latest-posts .blog-card-content {
+  padding: 1.15rem 1.25rem;
+}
+
+/* 5) Give the page a subtle “section break” feel without adding lines */
+.section--alt {
+  border-top: 1px solid rgba(17,34,52,0.06);
+  border-bottom: 1px solid rgba(17,34,52,0.06);
+}
