@@ -1,15 +1,15 @@
 /*
 ====================================================================
-Embracing Authenticity — Consolidated CSS (Streamlined 5/5)
+Embracing Authenticity — Consolidated CSS (Operational Clean)
 --------------------------------------------------------------------
-Removed: Neurodivergent Lens (all), LEGO animation, Pause & Breathe.
-Kept: base, header/nav (both legacy + new), blog, hero, accordion,
-music therapy grid, tags/emotions, footer.
+Kept: base, header/nav (legacy + new), blog, hero, accordion,
+music therapy grid, tags/emotions, footer, utilities.
+Removed: true duplicates + conflicting re-definitions.
 ====================================================================
 */
 
 /* ==================================================================
-PART 1/5 — Base, Variables, Resets, Layout, Typography
+PART 1 — Base, Variables, Resets, Layout, Typography
 ================================================================== */
 
 :root {
@@ -132,16 +132,21 @@ main h2 { color: var(--color-accent); }
 p { color: var(--color-primary); }
 small, .muted { color: var(--color-muted); }
 
-a { color: var(--color-primary); text-decoration: none; transition: color var(--transition); }
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
 a:hover { color: var(--color-accent); }
 
+/* Only underline content links (not buttons/tags/etc.) */
 main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social) {
   text-decoration-line: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 2px;
   text-decoration-color: var(--color-accent);
 }
-
 main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):hover {
   color: var(--color-accent);
 }
@@ -151,6 +156,7 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
   border-radius: 2px;
 }
 
+/* Post prev/next */
 .post-navigation {
   display: flex;
   justify-content: space-between;
@@ -167,6 +173,7 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
 }
 .post-navigation a:hover { color: var(--color-primary); }
 
+/* Screen-reader only */
 .sr-only {
   position: absolute;
   width: 1px; height: 1px;
@@ -180,23 +187,50 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
 }
 
 /* ==================================================================
-PART 2/5 — Header / Navigation
-(DUPLICATE REMOVED: the extra :root logo vars were here)
+PART 2 — Header / Navigation (supports BOTH systems)
 ================================================================== */
 
 .top-accent { display: none; }
+.masthead, .site-title, header .site-title { display: none !important; }
+
+/* Shared nav link styling helpers (prevents duplication) */
+.site-nav a,
+.nav__links a {
+  color: var(--ea-text);
+  text-decoration: none;
+  padding: .45rem 0;
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+  transition: color var(--transition), border-color var(--transition);
+}
+.site-nav a:hover,
+.nav__links a:hover {
+  color: var(--ea-link);
+  border-bottom-color: var(--ea-link);
+}
+
+/* ------------------------------
+A) .site-header system
+------------------------------ */
 
 .site-header {
-  position: sticky; top: 0; z-index: 1000;
-  background: var(--ea-navy); color: var(--ea-text);
-  box-shadow: var(--ea-shadow); width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--ea-navy);
+  color: var(--ea-text);
+  box-shadow: var(--ea-shadow);
+  width: 100%;
 }
 
 .site-header .shell {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0.9rem 1rem;
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; }
@@ -205,35 +239,45 @@ PART 2/5 — Header / Navigation
 
 .site-nav { width: auto; }
 .site-nav ul {
-  display: flex; align-items: center; gap: 1.25rem;
-  list-style: none; margin: 0; padding: 0; flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
-.site-nav a {
-  color: var(--ea-text); text-decoration: none; padding: .45rem 0;
-  border-bottom: 2px solid transparent; font-weight: 600;
-  transition: color var(--transition), border-color var(--transition);
-}
-.site-nav a:hover, .site-nav a:focus { border-bottom-color: var(--ea-link); }
+
 .site-nav a.is-active { border-bottom-color: var(--ea-accent); }
 
 .nav-toggle {
-  display: inline-flex; align-items: center; justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(255,255,255,.2);
-  background: transparent; color: var(--ea-text);
-  border-radius: .6rem; padding: .45rem; cursor: pointer;
+  background: transparent;
+  color: var(--ea-text);
+  border-radius: .6rem;
+  padding: .45rem;
+  cursor: pointer;
 }
 
+/* Mobile: collapsible */
 @media (max-width: 860px) {
   .site-header .shell { flex-wrap: wrap; }
   .nav-toggle { display: inline-flex; }
   .site-nav {
-    width: 100%; overflow: hidden; max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
     transition: max-height .3s ease;
   }
   .site-header.is-open .site-nav { max-height: 240px; }
   .site-nav ul {
-    flex-direction: column; align-items: flex-start;
-    padding: .5rem 0 .75rem; gap: .75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .5rem 0 .75rem;
+    gap: .75rem;
   }
 }
 
@@ -244,71 +288,106 @@ PART 2/5 — Header / Navigation
   .brand-mark { height: var(--logo-h-desktop); }
 }
 
-.masthead, .site-title, header .site-title { display: none !important; }
+/* ------------------------------
+B) <nav class="nav"> system
+(kept for templates that still use it)
+------------------------------ */
 
-/* <nav class="nav"> system */
 .nav {
-  max-width: var(--container-max); margin: 0 auto; padding: 0.9rem 1rem;
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
-.nav__brand { color: var(--ea-text); text-decoration: none; font-weight: 800; letter-spacing: .2px; }
+
+.nav__brand {
+  color: var(--ea-text);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
 
 .nav__toggle {
-  display: inline-flex; align-items: center; justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(255,255,255,.25);
-  background: transparent; color: var(--ea-text);
-  border-radius: .6rem; padding: .45rem .55rem; cursor: pointer;
+  background: transparent;
+  color: var(--ea-text);
+  border-radius: .6rem;
+  padding: .45rem .55rem;
+  cursor: pointer;
   transition: background-color var(--transition), border-color var(--transition);
 }
 .nav__toggle:hover { background: rgba(255,255,255,.06); }
 
 .nav__icon {
-  width: 20px; height: 2px; background: currentColor; position: relative; display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+  display: block;
 }
 .nav__icon::before, .nav__icon::after {
-  content:""; position: absolute; left: 0; right: 0; height: 2px; background: currentColor;
+  content:"";
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: currentColor;
 }
 .nav__icon::before { top: -6px; }
 .nav__icon::after  { top: 6px; }
 
 .nav__links {
-  display: flex; flex-wrap: wrap; gap: 1.25rem;
-  list-style: none; margin: 0; padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.nav__links a {
-  color: var(--ea-text); text-decoration: none; font-weight: 600; padding: .45rem 0;
-  border-bottom: 2px solid transparent; transition: color var(--transition), border-color var(--transition);
-}
-.nav__links a:hover { color: var(--ea-link); border-bottom-color: var(--ea-link); }
 
 @media (max-width: 860px) {
   .nav { flex-wrap: wrap; }
   .nav__toggle { display: inline-flex; }
   .nav__links[hidden] { display: none !important; }
   .nav__links {
-    width: 100%; flex-direction: column; align-items: flex-start;
-    padding: .5rem 0 .75rem; gap: .75rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .5rem 0 .75rem;
+    gap: .75rem;
   }
 }
 
 @media (min-width: 861px) { .nav__toggle { display: none; } }
 
-
 /* ==================================================================
-PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion (UPDATED)
-- Blog now uses a Page Hero (image + title) like Home/About.
-- Removed old centered .blog-intro / .blog-purpose styling.
-- Blog layout is now left-aligned and consistent with the rest of the site.
+PART 3 — Posts, Page Hero, Blog, Hero, Quotes, Utilities, Accordion
 ================================================================== */
 
 /* =========================================================
-POST PAGE — Hero + Readability (UPDATED)
-- Adds per-post hero banner (image + navy overlay + title)
-- Improves reading width + font + spacing
-- Keeps timeless posts (no date styling needed)
+POST PAGE — Hero + Readability
 ========================================================= */
 
-/* Post hero (new layout) */
+/* ✅ Restored missing base .post-hero block */
+.post-hero {
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+
+  /* card hero look */
+  max-width: 980px;
+  margin: 1.25rem auto 0;
+  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+}
 
 .post-hero-bg {
   position: absolute;
@@ -358,7 +437,7 @@ POST PAGE — Hero + Readability (UPDATED)
   line-height: 1.55;
 }
 
-/* Post container + content card feel (keeps your existing structure) */
+/* Post container + content */
 .post.container {
   max-width: 980px;
   margin: 0 auto;
@@ -366,15 +445,17 @@ POST PAGE — Hero + Readability (UPDATED)
   box-sizing: border-box;
 }
 
+/* If your templates still include old .post-header, hide it */
+.post.container .post-header { display: none; }
+
 /* Reading comfort */
 .post-content {
-  max-width: 760px;     /* controls line length */
+  max-width: 760px;
   margin: 0 auto;
-  font-size: 1.05rem;   /* slightly larger */
-  line-height: 1.75;    /* easier reading */
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
-/* Headings rhythm on post pages */
 .post-content h2 {
   margin: 2.1rem 0 .75rem;
   font-size: 1.35rem;
@@ -397,7 +478,6 @@ POST PAGE — Hero + Readability (UPDATED)
 
 .post-content li { margin: .35rem 0; }
 
-/* Blockquotes: calmer + on-brand */
 .post-content blockquote {
   margin: 1.2rem 0;
   padding: .9rem 1rem;
@@ -406,26 +486,6 @@ POST PAGE — Hero + Readability (UPDATED)
   border-radius: 10px;
 }
 
-.post-hero {
-  position: relative;
-  width: 100%;
-  min-height: 240px;
-
-  /* “card hero” look (matches your other heroes) */
-  max-width: 980px;
-  margin: 1.25rem auto 0;
-  border-radius: 18px;
-  overflow: hidden;
-
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-}
-
-/* Optional: keep any legacy post header styles harmless (layout no longer uses them) */
-.post.container .post-header { display: none; }
-
-
-/* Mobile */
 @media (max-width: 640px) {
   .post-hero-inner { padding: 3.1rem 1rem 2.3rem; }
   .post.container { padding: 1.35rem 1rem 2.4rem; }
@@ -435,6 +495,7 @@ POST PAGE — Hero + Readability (UPDATED)
 /* ================================================================
 PAGE HERO (Blog / internal pages)
 ================================================================ */
+
 .page-hero {
   position: relative;
   border-radius: var(--radius);
@@ -496,12 +557,11 @@ PAGE HERO (Blog / internal pages)
   line-height: 1.55;
 }
 
-
 /* ================================================================
-BLOG — Search + Results + Cards + Pagination (UPDATED)
+BLOG — Search + Results + Cards + Pagination
 ================================================================ */
 
-/* Top area wrapper (keeps Blog content aligned and tidy) */
+/* Top area wrapper */
 .blog-top {
   max-width: 980px;
   margin: 0 auto 1.25rem;
@@ -580,6 +640,7 @@ BLOG — Search + Results + Cards + Pagination (UPDATED)
 .search-snippet { margin: .55rem 0 .35rem; color: var(--color-primary); }
 .search-meta { color: var(--color-muted); font-size: .9rem; }
 
+/* Chips in search */
 .chip {
   display: inline-block;
   margin-left: .35rem;
@@ -641,7 +702,7 @@ BLOG — Search + Results + Cards + Pagination (UPDATED)
 
 .blog-card .excerpt { margin: .65rem 0 1rem; color: var(--color-primary); }
 
-/* Hide dates in blog cards only (you were already doing this) */
+/* Hide dates in blog cards only */
 .blog-card .post-date,
 .latest-posts .blog-card .post-date { display: none !important; }
 
@@ -665,6 +726,7 @@ BLOG — Search + Results + Cards + Pagination (UPDATED)
   transform: translateY(-1px);
 }
 
+/* Tag pills within cards */
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -723,12 +785,11 @@ BLOG — Search + Results + Cards + Pagination (UPDATED)
 }
 .back-to-top a:hover { border-bottom-color: var(--color-accent); }
 
-/* Prevent accidental “highlight blocks” inside cards */
+/* Prevent accidental highlight blocks inside cards */
 .blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) {
   background: transparent !important;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .page-hero { margin: 1rem auto 1rem; min-height: 200px; }
   .page-hero__inner { padding: 1.35rem 1.1rem; }
@@ -739,12 +800,10 @@ BLOG — Search + Results + Cards + Pagination (UPDATED)
   .blog-card { padding: 1.35rem; }
 }
 
-
 /* ==================================================================
-HERO — Unified (Homepage + Internal “hero-card” + About match)
+HERO — Unified (Homepage + Internal hero-card + About match)
 ================================================================== */
 
-/* Homepage hero */
 .hero-banner { position: relative; width: 100%; }
 
 .hero-image-wrapper {
@@ -829,7 +888,7 @@ HERO — Unified (Homepage + Internal “hero-card” + About match)
 }
 .hero-button--ghost:hover { background: rgba(247,243,238,.18); }
 
-/* Mobile: keep homepage hero proportions consistent */
+/* Mobile hero proportions */
 @media (max-width: 768px) {
   .hero-image-wrapper { aspect-ratio: 4 / 5; }
   .hero-overlay {
@@ -843,10 +902,10 @@ HERO — Unified (Homepage + Internal “hero-card” + About match)
   }
 }
 
-/* “Hero contained” layout helper */
+/* “Hero contained” helper */
 .hero-contained .shell { padding-top: 1.25rem; }
 
-/* Internal page hero card (used on About, etc.) */
+/* Internal hero card (About etc.) */
 .hero-card {
   position: relative;
   overflow: hidden;
@@ -857,14 +916,12 @@ HERO — Unified (Homepage + Internal “hero-card” + About match)
   width: 100%;
 }
 
-/* ✅ About hero: match homepage proportions exactly */
 .hero-card.about-hero {
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 16 / 7; /* match homepage desktop */
+  aspect-ratio: 16 / 7;
 }
 
-/* Make the image fill the card (prevents “tall” images) */
 .hero-card img {
   width: 100%;
   height: 100%;
@@ -873,129 +930,221 @@ HERO — Unified (Homepage + Internal “hero-card” + About match)
   object-position: center;
 }
 
-/* Optional: keep the same tone as the homepage hero image */
-.hero-card.about-hero img {
-  filter: saturate(.95) contrast(1.02);
-}
+.hero-card.about-hero img { filter: saturate(.95) contrast(1.02); }
 
 @media (max-width: 768px) {
-  .hero-card.about-hero {
-    aspect-ratio: 4 / 5; /* match homepage mobile */
-  }
+  .hero-card.about-hero { aspect-ratio: 4 / 5; }
 }
-
 
 /* Quote carousel */
 .quote-carousel {
-  margin: 3rem auto; max-width: 800px; background-color: var(--color-highlight);
-  padding: 2rem; border-radius: var(--radius); position: relative;
+  margin: 3rem auto;
+  max-width: 800px;
+  background-color: var(--color-highlight);
+  padding: 2rem;
+  border-radius: var(--radius);
+  position: relative;
 }
 .quote-carousel blockquote {
-  font-size: 1.2rem; font-style: italic; margin: 0 0 1rem;
-  border-left: 4px solid var(--color-accent); padding-left: 1rem;
-  color: var(--color-primary); display: none; background-color: transparent;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0 0 1rem;
+  border-left: 4px solid var(--color-accent);
+  padding-left: 1rem;
+  color: var(--color-primary);
+  display: none;
+  background-color: transparent;
 }
 .quote-carousel blockquote.active { display: block; }
 .quote-dots { display: flex; justify-content: center; gap: .75rem; margin-top: 1rem; }
 .quote-dots .dot {
-  width: 12px; height: 12px; background: #ccc; border-radius: 50%;
-  cursor: pointer; transition: background-color var(--transition);
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color var(--transition);
 }
 .quote-dots .dot.active { background: var(--color-accent); }
 
-
 /* Fade-in utility */
-@keyframes fadeIn { from { opacity:0; transform: translateY(-10px); } to { opacity:1; transform: translateY(0); } }
-.fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease-out, transform .6s ease-out; }
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(-10px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease-out, transform .6s ease-out;
+}
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
-
 
 /* Accordion */
 .accordion-list { list-style: none; padding-left: 0; margin: 0.6rem 0 1rem; }
 .accordion-item { border-bottom: 1px solid var(--color-mid); }
 .accordion-button {
-  background: none; border: none; width: 100%; text-align: left;
-  font-size: 1rem; padding: 0.6rem 0; cursor: pointer;
-  display: flex; align-items: center; justify-content: space-between;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition: color 0.25s ease;
 }
 .accordion-button:hover { color: var(--color-accent); }
 .accordion-arrow { transition: transform 0.25s ease; }
 .accordion-button.active .accordion-arrow { transform: rotate(90deg); }
 .accordion-content {
-  display: none; padding: 0 0 0.8rem 1rem;
-  color: var(--color-muted); font-size: 0.95rem; line-height: 1.55;
+  display: none;
+  padding: 0 0 0.8rem 1rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 .accordion-content.open { display: block; }
 
 /* ==================================================================
-PART 4/5 — Music Therapy Grid + Tags/Emotions
-(DUPLICATE FIX: removed the redundant .post-date styling here)
+PART 4 — Music Therapy + Tags/Emotions
 ================================================================== */
 
 /* Music Therapy */
 .music-therapy-main { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
-.music-posts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-.post { background: var(--color-light); padding: 1rem; border-radius: var(--radius); box-shadow: var(--shadow); transition: transform var(--transition); }
+
+.music-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.post {
+  background: var(--color-light);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
+}
 .post:hover { transform: translateY(-4px); }
+
 .post-thumbnail { width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; }
 .post-description { font-size: 1rem; }
 
 /* Tags & Emotion Filters */
 .tag-filter { text-align: center; margin: 2rem 0; }
-.post-tag, .emotion-button {
-  display: inline-block; font-size: .7rem; font-weight: 600;
-  padding: .4rem 1rem; border-radius: 6px; margin: .3rem;
-  text-transform: uppercase; letter-spacing: .5px; cursor: pointer; text-decoration: none;
-  background: var(--color-highlight); color: var(--color-accent);
+
+.post-tag,
+.emotion-button {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .4rem 1rem;
+  border-radius: 6px;
+  margin: .3rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--color-highlight);
+  color: var(--color-accent);
   transition: background-color var(--transition), color var(--transition), transform .2s ease;
 }
-.post-tag:hover, .post-tag.active, .emotion-button.active { background: var(--color-accent); color: #fff; transform: scale(1.05); }
-.emotion-button { background: #dbe5ea; color: var(--color-primary); }
+
+.post-tag:hover,
+.post-tag.active,
+.emotion-button.active {
+  background: var(--color-accent);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.emotion-button {
+  background: #dbe5ea;
+  color: var(--color-primary);
+}
 .emotion-button:hover { transform: scale(1.05); }
 
-.clear-tag-filter, .clear-emotion-filter {
-  background: #EDEDED; color: var(--color-primary); font-size: .95rem;
-  padding: .4rem 1rem; border-radius: 6px; margin: .5rem; display: inline-block;
+.clear-tag-filter,
+.clear-emotion-filter {
+  background: #EDEDED;
+  color: var(--color-primary);
+  font-size: .95rem;
+  padding: .4rem 1rem;
+  border-radius: 6px;
+  margin: .5rem;
+  display: inline-block;
   transition: background-color var(--transition), color var(--transition);
 }
-.clear-tag-filter:hover, .clear-emotion-filter:hover { background: var(--color-accent); color: #fff; }
+.clear-tag-filter:hover,
+.clear-emotion-filter:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
 
+/* Emotion list pages */
 .emotion-list { list-style: none; padding: 0; margin-top: 2rem; }
 .emotion-list li { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
-.emotion-list h3 a { font-size: 1.4rem; color: var(--color-accent); text-decoration: none; font-family: var(--font-heading); }
+.emotion-list h3 a {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: var(--font-heading);
+}
 .emotion-list p { font-size: 1rem; color: #444; margin-top: .5rem; }
 
 /* ==================================================================
-PART 5/5 — Accent Band + Global Footer
-(DUPLICATE REMOVED: no extra :root block for --footer-icon-size)
+PART 5 — Accent Band + Footer + Home/Sections Utilities
 ================================================================== */
 
 .accent-band {
-  background: var(--ea-navy); color: var(--ea-text);
-  padding: 22px 0; margin-top: -8px; box-shadow: var(--ea-shadow);
+  background: var(--ea-navy);
+  color: var(--ea-text);
+  padding: 22px 0;
+  margin-top: -8px;
+  box-shadow: var(--ea-shadow);
 }
 .accent-band .container {
-  max-width: var(--container-max); margin: 0 auto; padding: 0 16px;
-  display: flex; align-items: center; justify-content: center;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.accent-band .btn, .accent-band .btn.btn-light {
-  display: inline-block; padding: 10px 16px; border-radius: 8px;
-  background: var(--color-light); color: var(--ea-navy);
-  text-decoration: none; font-weight: 600; border: 0;
+.accent-band .btn,
+.accent-band .btn.btn-light {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--color-light);
+  color: var(--ea-navy);
+  text-decoration: none;
+  font-weight: 600;
+  border: 0;
   transition: transform var(--transition), box-shadow var(--transition);
 }
-.accent-band .btn:hover, .accent-band .btn.btn-light:hover {
-  transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,.12);
+.accent-band .btn:hover,
+.accent-band .btn.btn-light:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.12);
 }
 
 .site-footer {
-  background: var(--ea-navy); color: var(--ea-text);
-  margin-top: 48px; padding: 36px 16px; text-align: center;
+  background: var(--ea-navy);
+  color: var(--ea-text);
+  margin-top: 48px;
+  padding: 36px 16px;
+  text-align: center;
 }
 .site-footer .footer-center {
-  max-width: var(--container-max); margin: 0 auto;
-  display: flex; flex-direction: column; align-items: center; gap: 16px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .footer-brand strong { color: var(--ea-text); }
@@ -1003,50 +1152,58 @@ PART 5/5 — Accent Band + Global Footer
 
 .footer-nav { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .footer-nav a {
-  color: var(--ea-text); text-decoration: none; opacity: 0.95; font-size: 0.95rem;
-  border-bottom: 2px solid transparent; transition: opacity var(--transition), border-color var(--transition);
+  color: var(--ea-text);
+  text-decoration: none;
+  opacity: 0.95;
+  font-size: 0.95rem;
+  border-bottom: 2px solid transparent;
+  transition: opacity var(--transition), border-color var(--transition);
 }
 .footer-nav a:hover { opacity: 1; border-bottom-color: var(--ea-link); }
 
 .footer-social { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
 .footer-social .social {
-  color: #fff; opacity: 0.9; transition: opacity var(--transition), transform var(--transition);
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity var(--transition), transform var(--transition);
 }
 .footer-social .social:hover { opacity: 1; transform: translateY(-1px); }
 .footer-social .icon { width: var(--footer-icon-size); height: var(--footer-icon-size); display: block; }
 
 .footer-note {
-  font-size: 0.95rem; color: rgba(255,255,255,.9); max-width: 500px;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,.9);
+  max-width: 500px;
 }
 .footer-note a { color: var(--ea-text); text-decoration: none; transition: opacity var(--transition); }
 .footer-note a:hover { opacity: 1; }
 
 @media print {
-  .site-footer, .accent-band { background: #fff !important; color: #000 !important; box-shadow: none !important; }
+  .site-footer, .accent-band {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
   .footer-nav a, .footer-note a { color: #000 !important; border: 0 !important; }
 }
 
 /* =========================================================
-HOME / SECTIONS — Missing utilities + spacing fixes (ADD)
+HOME / SECTIONS — Utilities + spacing fixes
 ========================================================= */
 
-/* 0) Utility classes used in templates (so they don’t “do nothing”) */
 .grid { display: grid; }
 .center { text-align: center; }
 
-.gap-8 { gap: 1.25rem; }   /* matches your home card gap */
-.gap-10 { gap: 1.75rem; }  /* slightly larger for recent reflections */
+.gap-8 { gap: 1.25rem; }
+.gap-10 { gap: 1.75rem; }
 
-/* Small text helpers */
 .small-note {
   color: var(--color-muted);
   font-size: 0.98rem;
   line-height: 1.65;
 }
 
-/* 1) Fix the “container has padding” issue on section layouts
-   - Keep container width control
-   - But let SECTION control vertical rhythm (not container) */
+/* Let sections control vertical rhythm (not container padding) */
 #content .section .container,
 #content .section--alt .container,
 #content .latest-posts .container {
@@ -1054,18 +1211,14 @@ HOME / SECTIONS — Missing utilities + spacing fixes (ADD)
   padding-bottom: 0;
 }
 
-/* 2) Section spacing (consistent, calm, professional) */
-#content .section {
-  padding: 3.25rem 0;
-}
+/* Section spacing */
+#content .section { padding: 3.25rem 0; }
 
 @media (max-width: 768px) {
-  #content .section {
-    padding: 2.5rem 0;
-  }
+  #content .section { padding: 2.5rem 0; }
 }
 
-/* 3) Titles + subtitles (these were referenced but not defined) */
+/* Titles + subtitles */
 .section-title {
   margin: 0 0 0.75rem;
   text-align: center;
@@ -1081,37 +1234,25 @@ HOME / SECTIONS — Missing utilities + spacing fixes (ADD)
   line-height: 1.65;
 }
 
-/* Put the smaller note under the subtitle */
 #content .section .small-note {
   max-width: 760px;
   margin: 0.2rem auto 0;
   text-align: center;
 }
 
-/* 4) Start Here cards — make sure they breathe */
-.home-cards {
-  margin-top: 1.6rem;
-}
+/* Start Here cards */
+.home-cards { margin-top: 1.6rem; }
+.home-cards .breathe-card h3 { margin: 0 0 0.55rem; }
 
-/* Avoid default global heading margins making cards feel “cramped” */
-.home-cards .breathe-card h3 {
-  margin: 0 0 0.55rem;
-}
-
-/* 5) Recent Reflections — reduce “stacked” feeling */
+/* Recent reflections */
 .latest-posts .grid {
   max-width: 860px;
   margin: 1.25rem auto 0;
 }
 
-.latest-posts .blog-card {
-  margin: 0; /* ensure gap controls spacing, not random margins */
-}
+.latest-posts .blog-card { margin: 0; }
 
-/* Nicer rhythm inside the recent reflection cards */
-.latest-posts .blog-card-title {
-  margin: 0 0 0.35rem;
-}
+.latest-posts .blog-card-title { margin: 0 0 0.35rem; }
 
 .latest-posts .blog-card-meta {
   margin: 0 0 0.75rem;
@@ -1119,14 +1260,9 @@ HOME / SECTIONS — Missing utilities + spacing fixes (ADD)
   font-size: 0.95rem;
 }
 
-/* Excerpt spacing */
 .latest-posts .blog-card-excerpt {
   margin: 0 0 1rem;
   color: var(--color-primary);
 }
 
-/* The “Browse all reflections” line */
-.latest-posts .small-note.center {
-  margin-top: 1.35rem;
-}
-
+.latest-posts .small-note.center { margin-top: 1.35rem; }
