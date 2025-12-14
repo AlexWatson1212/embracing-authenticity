@@ -9,42 +9,22 @@ layout: default
   <div class="post-hero-overlay"></div>
 
   <div class="post-hero-inner">
-    <h1 class="post-hero-title">{{ page.title }}</h1>
-
-    {% if page.subtitle %}
-      <p class="post-hero-subtitle">{{ page.subtitle }}</p>
-    {% endif %}
-
-    <!-- Removed date + emotions from hero (moved below) -->
+    <h1 class="post-hero-title">
+      {{ page.title }}
+      {% if page.subtitle %}
+        <span class="post-hero-subtitle">— {{ page.subtitle }}</span>
+      {% elsif page.description %}
+        <span class="post-hero-subtitle">— {{ page.description }}</span>
+      {% endif %}
+    </h1>
   </div>
 </section>
 
 <!-- POST BODY -->
 <main class="post-wrap">
   <article class="post-card post-card--wide">
-
-    {% if page.date or page.emotions %}
-      <div class="post-meta-bar">
-        {% if page.date %}
-          <span class="post-meta-date">{{ page.date | date: "%-d %B %Y" }}</span>
-        {% endif %}
-
-        {% if page.emotions %}
-          <span class="post-meta-sep">•</span>
-          <span class="post-meta-emotions">
-            {% if page.emotions.size %}
-              {{ page.emotions | join: " • " }}
-            {% else %}
-              {{ page.emotions }}
-            {% endif %}
-          </span>
-        {% endif %}
-      </div>
-    {% endif %}
-
     <div class="post-content">
       {{ content }}
     </div>
-
   </article>
 </main>
