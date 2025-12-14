@@ -4,6 +4,7 @@ title: "How to Trust Yourself"
 date: 2025-01-28
 tags: ["self-trust", "self-discovery", "inner-strength", "boundaries"]
 description: "A foundational guide on how to build inner trust—one of the most important skills a person can develop."
+hero_image: /assets/images/posts/How-to-Trust-Yourself.png
 emotions: ["hope", "acceptance"]
 ---
 *A guide to building the inner compass that carries you through life.*
