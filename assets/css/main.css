@@ -190,6 +190,54 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
   :root { --section-pad-y: 2.5rem; }
 }
 
+.post-nav{
+  margin: 2.25rem auto 0;
+  padding: 1.25rem 1rem 0;
+  max-width: 760px;
+  border-top: 1px solid var(--color-mid);
+}
+
+.post-nav-back{
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.post-nav-back:hover{ text-decoration: underline; }
+
+.post-nav-links{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .9rem;
+}
+
+.post-nav-prev, .post-nav-next{
+  text-decoration: none;
+  background: var(--color-highlight);
+  border: 1px solid var(--color-mid);
+  border-radius: 16px;
+  padding: .9rem 1rem;
+}
+
+.post-nav-kicker{
+  display: block;
+  font-size: .85rem;
+  color: var(--color-muted);
+  margin-bottom: .25rem;
+}
+
+.post-nav-title{
+  display: block;
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@media (max-width: 640px){
+  .post-nav-links{ grid-template-columns: 1fr; }
+}
+
 /* ==================================================================
 PART 2 — Header / Navigation (supports BOTH systems)
 ================================================================== */
