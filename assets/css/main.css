@@ -1001,3 +1001,12 @@ HOME / SECTIONS — Missing utilities + spacing fixes (ADD)
 .latest-posts .small-note.center {
   margin-top: 1.35rem;
 }
+/* About page hero image — match homepage scale */
+.about-hero {
+  display: block;
+  width: 100%;
+  max-height: 55vh;        /* key line: stops it dominating */
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto 3rem;    /* space before text */
+}
