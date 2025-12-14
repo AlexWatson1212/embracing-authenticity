@@ -254,6 +254,8 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
   color: var(--color-muted);
 }
 
+.post-meta, .post-date, .post-emotions { display: none !important; }
+
 
 /* ==================================================================
 PART 2 — Header / Navigation (supports BOTH systems)

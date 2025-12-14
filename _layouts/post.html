@@ -26,5 +26,67 @@ layout: default
     <div class="post-content">
       {{ content }}
     </div>
+
+    {%- comment -%}
+    ======================================
+    POST NAV (Back / Prev / Next)
+    Works for posts + collections (journal)
+    ======================================
+    {%- endcomment -%}
+
+    {%- assign back_url = "/blog/" -%}
+    {%- if page.collection == "journal" -%}
+      {%- assign back_url = "/journal/" -%}
+    {%- endif -%}
+
+    {%- if page.collection -%}
+      {%- assign items = site[page.collection] | sort: "date" -%}
+    {%- else -%}
+      {%- assign items = site.posts | sort: "date" -%}
+    {%- endif -%}
+
+    {%- assign current_index = nil -%}
+    {%- for p in items -%}
+      {%- if p.url == page.url -%}
+        {%- assign current_index = forloop.index0 -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- assign prev_post = nil -%}
+    {%- assign next_post = nil -%}
+
+    {%- if current_index != nil -%}
+      {%- assign prev_index = current_index | minus: 1 -%}
+      {%- assign next_index = current_index | plus: 1 -%}
+
+      {%- if prev_index >= 0 -%}
+        {%- assign prev_post = items[prev_index] -%}
+      {%- endif -%}
+
+      {%- if next_index < items.size -%}
+        {%- assign next_post = items[next_index] -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    <nav class="post-nav" aria-label="Post navigation">
+      <a class="post-nav-back" href="{{ back_url }}">← Back</a>
+
+      <div class="post-nav-links">
+        {%- if prev_post -%}
+          <a class="post-nav-prev" href="{{ prev_post.url }}">
+            <span class="post-nav-kicker">Previous</span>
+            <span class="post-nav-title">{{ prev_post.title }}</span>
+          </a>
+        {%- endif -%}
+
+        {%- if next_post -%}
+          <a class="post-nav-next" href="{{ next_post.url }}">
+            <span class="post-nav-kicker">Next</span>
+            <span class="post-nav-title">{{ next_post.title }}</span>
+          </a>
+        {%- endif -%}
+      </div>
+    </nav>
+
   </article>
 </main>
