@@ -302,8 +302,10 @@ PART 2/5 — Header / Navigation
 
 
 /* ==================================================================
-PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
-(DUPLICATE REMOVED: nothing duplicated here beyond what you intended)
+PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion (UPDATED)
+- Blog now uses a Page Hero (image + title) like Home/About.
+- Removed old centered .blog-intro / .blog-purpose styling.
+- Blog layout is now left-aligned and consistent with the rest of the site.
 ================================================================== */
 
 /* POST PAGE */
@@ -323,31 +325,94 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
   line-height: 1.65;
 }
 
+/* Optional: slightly calmer content rhythm on post pages */
 .post-content h2 { margin-top: 2.25rem; }
 .post-content h3 { margin-top: 1.9rem; }
 
-/* BLOG */
-.blog-intro {
+
+/* ================================================================
+PAGE HERO (Blog / internal pages)
+================================================================ */
+.page-hero {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 980px;
+  margin: 1.25rem auto 1.25rem;
+  min-height: 220px;
+  background: #111;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--line);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05) contrast(1.05);
+  transform: scale(1.02);
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 42, 58, 0.55),
+    rgba(15, 42, 58, 0.78)
+  );
+}
+
+.page-hero__inner {
+  position: relative;
+  z-index: 1;
+  padding: 1.7rem 1.6rem;
   max-width: 820px;
-  margin: 0 auto 1.35rem;
-  text-align: center;
-}
-.blog-intro h2 { margin: 0 0 .65rem; }
-
-.blog-purpose {
-  max-width: 680px;
-  margin: 0.35rem auto 0.85rem;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: var(--color-muted);
 }
 
+.page-hero__title {
+  margin: 0 0 .45rem;
+  color: var(--color-light);
+  letter-spacing: .2px;
+}
+
+.page-hero__page {
+  font-weight: 700;
+  opacity: .9;
+  margin-left: .25rem;
+  font-size: .95em;
+}
+
+.page-hero__subtitle {
+  margin: 0;
+  max-width: 720px;
+  color: rgba(255,255,255,.92);
+  line-height: 1.55;
+}
+
+
+/* ================================================================
+BLOG — Search + Results + Cards + Pagination (UPDATED)
+================================================================ */
+
+/* Top area wrapper (keeps Blog content aligned and tidy) */
+.blog-top {
+  max-width: 980px;
+  margin: 0 auto 1.25rem;
+  padding: 0 1rem;
+}
+
+/* Search */
 .blog-search {
   display: flex;
   gap: .6rem;
   align-items: center;
-  max-width: 860px;
-  margin: 1rem auto 1.5rem;
+  max-width: 980px;
+  margin: 0 auto 1rem;
 }
 
 .blog-search input[type="search"] {
@@ -389,11 +454,12 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
   min-width: 3ch;
 }
 
+/* Live results list */
 .blog-search-results {
   list-style: none;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.5rem;
   padding: 0;
-  max-width: 860px;
+  max-width: 980px;
   display: grid;
   gap: 1rem;
 }
@@ -410,7 +476,6 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
 .search-title:hover { color: var(--color-accent); }
 
 .search-snippet { margin: .55rem 0 .35rem; color: var(--color-primary); }
-
 .search-meta { color: var(--color-muted); font-size: .9rem; }
 
 .chip {
@@ -425,11 +490,30 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
 }
 .chip.emo { background: rgba(17,34,52,.10); color: var(--color-primary); }
 
+/* Empty state */
+.empty-state {
+  max-width: 980px;
+  margin: 0 auto 1.75rem;
+  padding: 1.4rem 1.5rem;
+  background: rgba(255,255,255,.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+}
+.empty-state h3 { margin: 0 0 .5rem; }
+.empty-state p { margin: .35rem 0; }
+.empty-state code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: .95em;
+}
+
+/* Blog card list */
 .blog-list,
 .latest-posts .blog-list {
   display: grid;
   gap: 1.6rem;
-  max-width: 860px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -455,7 +539,7 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
 
 .blog-card .excerpt { margin: .65rem 0 1rem; color: var(--color-primary); }
 
-/* Hide dates in blog cards only */
+/* Hide dates in blog cards only (you were already doing this) */
 .blog-card .post-date,
 .latest-posts .blog-card .post-date { display: none !important; }
 
@@ -499,12 +583,13 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
   border: 1px solid rgba(199,119,63,.22);
 }
 
+/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;
   gap: .8rem;
   margin: 1.75rem auto 0;
-  max-width: 860px;
+  max-width: 980px;
 }
 
 .pagination-link {
@@ -525,6 +610,7 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
   border-color: rgba(199,119,63,.45);
 }
 
+/* Back to top */
 .back-to-top { text-align: center; margin: 1.5rem 0 0; }
 .back-to-top a {
   color: var(--color-accent);
@@ -535,15 +621,22 @@ PART 3/5 — Posts, Blog, Hero, Quotes, Utilities, Accordion
 }
 .back-to-top a:hover { border-bottom-color: var(--color-accent); }
 
+/* Prevent accidental “highlight blocks” inside cards */
 .blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) {
   background: transparent !important;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
+  .page-hero { margin: 1rem auto 1rem; min-height: 200px; }
+  .page-hero__inner { padding: 1.35rem 1.1rem; }
+
   .blog-search { flex-direction: column; align-items: stretch; }
   .blog-search button { width: 100%; }
+
   .blog-card { padding: 1.35rem; }
 }
+
 
 /* ==================================================================
 HERO — Unified (Homepage + Internal “hero-card” + About match)
@@ -713,10 +806,12 @@ HERO — Unified (Homepage + Internal “hero-card” + About match)
 }
 .quote-dots .dot.active { background: var(--color-accent); }
 
+
 /* Fade-in utility */
 @keyframes fadeIn { from { opacity:0; transform: translateY(-10px); } to { opacity:1; transform: translateY(0); } }
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease-out, transform .6s ease-out; }
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
+
 
 /* Accordion */
 .accordion-list { list-style: none; padding-left: 0; margin: 0.6rem 0 1rem; }
