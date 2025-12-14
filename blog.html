@@ -6,34 +6,33 @@ pagination:
   collection: posts
 ---
 
-<section class="blog-intro fade-in">
-  <h2>
-    {{ page.title }}
-    {% if paginator and paginator.page > 1 %}
-      – Page {{ paginator.page }}
-    {% endif %}
-  </h2>
+<!-- HERO (matches Home/About vibe) -->
+<section class="page-hero page-hero--blog fade-in" style="--hero-image: url('/assets/images/about-journey-optimized.jpg');">
+  <div class="page-hero__inner">
+    <h1 class="page-hero__title">
+      {{ page.title }}
+      {% if paginator and paginator.page > 1 %}
+        <span class="page-hero__page">— Page {{ paginator.page }}</span>
+      {% endif %}
+    </h1>
 
-  <p class="blog-purpose">
-    This is a collection of reflections on themes I believe matter deeply in life — solitude, fear,
-    trust, boundaries, and what it means to live with quiet integrity.
-  </p>
-
-  <p class="blog-purpose">
-    I write these with my son in mind, as principles I hope he carries with him as he grows.
-    If they help others along the way, that is welcome too.
-  </p>
+    <p class="page-hero__subtitle">
+      Browse reflections, search by topic, or follow what you’re feeling.
+    </p>
+  </div>
 </section>
 
-<!-- Search UI -->
-<form class="blog-search fade-in" role="search" aria-label="Blog Search" onsubmit="return false;">
-  <input id="blog-search-input" type="search" placeholder="Search for what's on your mind…" autocomplete="off" />
-  <button id="blog-search-button" type="button">Search</button>
-  <span id="blog-search-count" class="search-count" aria-live="polite"></span>
-</form>
+<!-- SEARCH UI -->
+<section class="blog-top fade-in">
+  <form class="blog-search" role="search" aria-label="Blog Search" onsubmit="return false;">
+    <input id="blog-search-input" type="search" placeholder="Search for what's on your mind…" autocomplete="off" />
+    <button id="blog-search-button" type="button">Search</button>
+    <span id="blog-search-count" class="search-count" aria-live="polite"></span>
+  </form>
 
-<!-- Live results (populated by /assets/js/search.js) -->
-<ul id="blog-search-results" class="blog-search-results fade-in" aria-live="polite"></ul>
+  <!-- Live results (populated by /assets/js/search.js) -->
+  <ul id="blog-search-results" class="blog-search-results" aria-live="polite"></ul>
+</section>
 
 <section class="blog-list" id="blogPosts">
 
@@ -115,61 +114,6 @@ pagination:
     <a href="#" class="scroll-link">Back to Top ↑</a>
   </div>
 </section>
-
-<!--
-IMPORTANT:
-Remove this <style> block once you've pasted the updated Blog styles into your consolidated CSS (Part 3/5).
-Keeping both will cause conflicts and "off" spacing.
--->
-<style>
-  .blog-intro { max-width: 820px; margin: 0 auto 1.35rem; text-align: center; }
-  .blog-intro h2 { margin: 0 0 .65rem; }
-  .blog-purpose { max-width: 680px; margin: .35rem auto .85rem; font-size: 1.05rem; line-height: 1.65; color: var(--color-muted); }
-
-  .blog-search { display: flex; gap: .6rem; align-items: center; max-width: 860px; margin: 1rem auto 1.5rem; }
-  .blog-search input[type="search"] {
-    flex: 1; padding: .65rem .9rem; border: 1px solid var(--color-mid); border-radius: 10px;
-    background: rgba(255,255,255,.78); box-shadow: 0 8px 22px rgba(0,0,0,.05); outline: none;
-  }
-  .blog-search input[type="search"]:focus { border-color: rgba(199,119,63,.55); box-shadow: 0 0 0 4px rgba(199,119,63,.14); }
-
-  .blog-search button {
-    padding: .65rem 1.05rem; border: 2px solid var(--color-accent); color: var(--color-accent);
-    background: transparent; border-radius: 10px; font-weight: 800; cursor: pointer;
-    transition: transform .18s ease, background-color var(--transition), color var(--transition);
-  }
-  .blog-search button:hover { background: var(--color-accent); color: var(--color-light); transform: translateY(-1px); }
-  .search-count { color: var(--color-muted); font-size: .95rem; margin-left: .1rem; min-width: 3ch; }
-
-  .blog-search-results { list-style: none; margin: 0 auto 2rem; padding: 0; max-width: 860px; display: grid; gap: 1rem; }
-  .search-result { background: rgba(255,255,255,.82); border-radius: var(--radius); padding: 1.25rem 1.4rem; box-shadow: var(--shadow-soft); border: 1px solid var(--line); }
-  .search-title { font-weight: 800; text-decoration: none; color: var(--color-primary); }
-  .search-title:hover { color: var(--color-accent); }
-  .search-snippet { margin: .55rem 0 .35rem; color: var(--color-primary); }
-  .search-meta { color: var(--color-muted); font-size: .9rem; }
-
-  .chip { display: inline-block; margin-left: .35rem; padding: .1rem .55rem; background: var(--color-highlight); color: var(--color-accent); border-radius: 999px; font-size: .75rem; font-weight: 700; }
-  .chip.emo { background: rgba(17,34,52,.10); color: var(--color-primary); }
-
-  .empty-state {
-    max-width: 860px;
-    margin: 0 auto 1.75rem;
-    padding: 1.4rem 1.5rem;
-    background: rgba(255,255,255,.72);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-soft);
-    text-align: left;
-  }
-  .empty-state h3 { margin: 0 0 .5rem; }
-  .empty-state p { margin: .35rem 0; }
-  .empty-state code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: .95em; }
-
-  @media (max-width: 768px) {
-    .blog-search { flex-direction: column; align-items: stretch; }
-    .blog-search button { width: 100%; }
-  }
-</style>
 
 <script>
   // Smooth scroll (Back to Top + any scroll links)
