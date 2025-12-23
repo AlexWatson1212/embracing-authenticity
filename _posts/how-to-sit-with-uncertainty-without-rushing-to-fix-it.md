@@ -23,8 +23,6 @@ They struggle because they feel they **must resolve uncertainty immediately** in
 
 This guide is about learning how to stay steady when you don’t yet know — without betraying yourself in the process.
 
-This is something I want my son to understand early, because it shapes nearly every decision you’ll ever make.
-
 ---
 
 ## **1. Uncertainty Is Not a Problem — It’s a State**
@@ -202,7 +200,7 @@ This alone can change the course of your life.
 
 ---
 
-## **10. The Guiding Principle:  
+## **10. The Orientation:  
 Let Uncertainty Be a Teacher, Not an Enemy**
 
 Uncertainty slows you down for a reason.
@@ -219,23 +217,23 @@ When you fight it, it exhausts you.
 
 ---
 
-## Final Words (for my son)
+## **Closing**
 
-There will be times in your life when you don’t know what to do.
+There will be periods in your life where you don’t know what to do.
 
 You won’t know whether to stay or leave.  
 Whether to commit or wait.  
-Whether something is right or just familiar.  
+Whether something is right or simply familiar.  
 
-When that happens, remember this:
+When that happens:
 
 You don’t need to rush your life into clarity.  
 You don’t need to panic your way into certainty.  
-And you don’t need to abandon yourself just to feel better.
+And you don’t need to abandon yourself to feel better.
 
 Sit.  
 Breathe.  
 Listen.  
 
 Clarity will come — not because you forced it,  
-but because you were patient enough to let it arrive.
+but because you were steady enough to let it arrive.

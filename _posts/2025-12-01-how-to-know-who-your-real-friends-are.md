@@ -3,260 +3,194 @@ layout: post
 title: "How to Know Who Your Real Friends Are"
 date: 2025-01-28
 tags: ["friendship", "relationships", "self-discovery", "boundaries"]
-description: "A guide to recognising true friendship—how to identify the people who add meaning, safety, and authenticity to your life."
+description: "A reflection on recognising which connections feel safe, mutual, and aligned — and which ones quietly ask you to disappear."
 hero_image: /assets/images/posts/How-to-Know-Who-Your-Real-Friends-Are.png
 emotions: ["acceptance", "love"]
 ---
-*A guide to recognising the people who truly belong in your life.*
+*A reflection on belonging, safety, and who you feel like when you’re with someone.*
 
-Friendship is one of the most important parts of being human.  
-The people you surround yourself with shape your values, your choices, your confidence, and even the direction your life takes.
+Friendship shapes us more than we often realise.
 
-But not everyone who spends time with you is a **friend**.  
-Some people are companions.  
-Some are conveniences.  
-Some are temporary.  
-Some are lessons.  
+The people we spend time with influence:
+- how safe we feel  
+- how honest we are  
+- how we see ourselves  
+- what we tolerate  
+- what we believe is normal  
 
-And a few—only a few—are real friends.
+But not every connection that lasts is meant to be carried forward.
 
-This guide explains how to recognise the difference.  
-It’s something I want my son to understand, because choosing the right people protects your heart and strengthens your future.
+Some people walk with us for a season.  
+Some are familiar but no longer nourishing.  
+Some belong to older versions of us.
 
----
-
-# **1. A Real Friend Makes You Feel Like Yourself**
-
-There’s a simple test for friendship:
-
-> **“Who do I feel like when I’m with them?”**
-
-With real friends, you feel:
-
-- relaxed  
-- safe  
-- understood  
-- seen  
-- accepted  
-- energised  
-
-You don’t perform.  
-You don’t shrink.  
-You don’t edit yourself to fit in.
-
-You feel like **you**.
-
-Anyone who requires you to be smaller, quieter, tougher, funnier, or someone you’re not  
-is not a friend—just an audience or a role.
+Learning who your real friends are is less about judgment  
+and more about noticing what helps you stay whole.
 
 ---
 
-# **2. Real Friends Are Present, Not Convenient**
+## **1. Notice Who You Feel Like When You’re With Them**
 
-Some people are only around when:
+A gentle place to start is this question:
 
-- they’re bored,  
-- they need something,  
-- or you’re easy company.
+> **“Who do I become around this person?”**
 
-Real friends show up because the **connection matters**, not because you’re filling a gap in their day.
+With certain people, you may notice:
+- ease in your body  
+- natural speech  
+- relaxed humour  
+- emotional safety  
+- a sense of being understood  
 
-Presence is the currency of friendship.  
-Convenience is the currency of acquaintances.
+With others, you may feel:
+- tense or guarded  
+- quieter than usual  
+- subtly on edge  
+- like you’re managing their reactions  
+- like you’re not fully yourself  
 
-Know the difference.
-
----
-
-# **3. Real Friends Want the Best for You**
-
-Here’s the truth:
-
-Not everyone wants you to grow.
-
-Some people secretly prefer you:
-
-- insecure,  
-- dependent,  
-- limited,  
-- or predictable.
-
-Real friends don’t feel threatened by your growth.  
-They celebrate it.
-
-They want you to:
-
-- meet good people,  
-- find meaningful love,  
-- pursue your dreams,  
-- overcome your fears,  
-- and become the best version of yourself.
-
-If someone feels competitive, resentful, or “off” when you succeed,  
-they are not a friend, no matter how long you’ve known them.
+Friendship doesn’t require performance.  
+It allows presence.
 
 ---
 
-# **4. Real Friends Tell You the Truth Without Wounding You**
+## **2. Pay Attention to How the Connection Feels Over Time**
 
-A real friend:
+Some connections feel fine in small doses  
+but leave you drained afterward.
 
-- doesn’t judge you harshly,  
-- doesn’t sugarcoat,  
-- doesn’t avoid the truth,  
-- doesn’t attack,  
-- doesn’t gossip about you,  
-- doesn’t shame you.
-
-Instead, they offer truth with *care*.
-
-They say:
-
-- “I don’t think that person treats you well.”  
-- “I’m worried you’re hurting yourself here.”  
-- “I know you can do better.”  
-
-Truth + compassion = friendship.  
-Truth + cruelty = control.  
-Avoidance + silence = distance.
-
----
-
-# **5. Real Friends Respect Your Boundaries**
-
-If someone becomes irritated, angry, or distant when you set a boundary,  
-you’re witnessing the truth of the relationship.
-
-A real friend understands:
-
-- you need space  
-- you need rest  
-- you need time  
-- you need honesty  
-- you need protection of your energy  
-
-And they don’t guilt you for it.
-
-People who respect your boundaries respect *you*.
-
----
-
-# **6. Real Friends Don’t Disappear in Your Hardest Moments**
-
-When life breaks you open, you find out who belongs there.
-
-Real friends will:
-
-- check in,  
-- sit with you,  
-- listen,  
-- support without fixing,  
-- help you get back on your feet,  
-- stay steady even when you’re struggling.
-
-They don’t turn away because it’s uncomfortable.  
-They don’t blame you for being human.
-
-They stay.
-
-That’s friendship.
-
----
-
-# **7. Real Friends Grow *with* You, Not Apart From You**
-
-As you grow:
-
-- your values shift  
-- your priorities change  
-- your emotional world deepens  
-- your boundaries strengthen  
-- your life becomes clearer
-
-Real friends adapt with you.
-
-They don’t pull you back into old patterns.  
-They don’t resist your evolution.  
-They don’t make you feel guilty for changing.
-
-They grow alongside you—  
-or they cheer from where they stand.
-
----
-
-# **8. Real Friendship Is Mutual Effort, Not One-Sided**
+Others may not be dramatic or intense,  
+yet leave you feeling steadier, clearer, or more grounded.
 
 Ask yourself:
+- Do I feel replenished or depleted afterward?  
+- Do I feel more like myself, or less?  
+- Do I feel seen, or merely tolerated?  
 
-- Who reaches out first?  
-- Who initiates plans?  
-- Who remembers the things that matter to you?  
-- Who checks in without being prompted?  
-- Who invests emotionally?  
-
-Friendship is not 50/50 all the time—life happens.  
-But over the long term, the balance should feel **fair**.
-
-If one person always gives and the other always takes,  
-that is not friendship.
-
-That is imbalance.
+The body often tells the truth before the mind explains it.
 
 ---
 
-# **9. Real Friends Make Your Life Bigger, Not Smaller**
+## **3. Notice Whether There Is Mutual Care**
 
-A real friend will expand your world.
+Real friendship doesn’t require perfect balance,  
+but it does tend to feel mutual over time.
 
-They bring:
+This shows up as:
+- shared interest  
+- reciprocal effort  
+- remembering what matters  
+- checking in without obligation  
+- giving without keeping score  
 
-- inspiration  
-- perspective  
-- comfort  
-- laughter  
-- honesty  
-- grounding  
-- energy  
+If one person is always adapting, reaching, or holding the emotional weight,  
+something is likely out of alignment.
 
-They help you become more of yourself, not less.
-
-People who limit you, drain you, or weigh you down are not friends—they are emotional obligations.
-
-Release them with compassion, but release them.
+Mutuality doesn’t feel heavy.  
+It feels natural.
 
 ---
 
-# **10. The Guiding Principle:  
-Choose People Who Bring You Peace and Belonging**
+## **4. Observe How Truth Is Handled Between You**
 
-Your real friends are the ones who:
+Friendship isn’t about constant agreement.
 
-- make you feel safe,  
-- make you feel valued,  
-- make you feel understood,  
-- make you feel energised,  
-- make you feel connected,  
-- make you feel like your true self.
+It’s about whether honesty can exist without harm.
 
-Friendship should not feel like work.  
-It should feel like **recognition**.
+Healthy connections allow:
+- gentle truth  
+- curiosity rather than accusation  
+- care alongside clarity  
+- disagreement without withdrawal  
+
+If you feel you must censor yourself to maintain closeness,  
+the connection may be conditional.
+
+Safety in friendship includes emotional honesty.
 
 ---
 
-## Final Words (for my son)
+## **5. See How Boundaries Are Met**
 
-Friendship is one of the greatest joys of life.  
-But only if you choose the right people.
+Boundaries reveal a great deal.
 
-Look for those who accept you without condition  
-and challenge you without judgment.  
+When you say no, need space, or slow things down:
+- Do they respect it?  
+- Do they adjust without resentment?  
+- Do they remain steady?  
 
-Look for those who show up, not just when it’s easy,  
-but when it matters.
+People who value you will not punish you for taking care of yourself.
 
-Hold close the people who bring you peace.  
-Be the kind of friend you want to find.  
-And remember:
+Friendship does not require self-erasure.
 
-A small circle of real friends  
-is worth more than a lifetime of near connections.
+---
+
+## **6. Notice Who Stays Present When Things Are Difficult**
+
+Hard seasons tend to clarify relationships.
+
+You may notice:
+- who checks in quietly  
+- who can sit without fixing  
+- who doesn’t disappear when things are uncomfortable  
+
+Presence matters more than perfect words.
+
+And absence, while sometimes understandable,  
+is still information.
+
+---
+
+## **7. Allow Relationships to Change Without Forcing Them**
+
+As you grow, some friendships naturally change shape.
+
+This doesn’t always mean something went wrong.
+
+Sometimes it means:
+- your values have shifted  
+- your nervous system has changed  
+- your capacity is different  
+- your needs are clearer  
+
+You don’t have to force closeness  
+where alignment no longer exists.
+
+Letting relationships evolve can be an act of respect —  
+for them and for yourself.
+
+---
+
+## **8. The Guiding Orientation:  
+Choose Connection That Allows You to Stay Whole**
+
+The friendships worth keeping are not perfect.
+
+They are simply the ones where:
+- you don’t have to disappear  
+- you don’t have to perform  
+- you don’t have to earn belonging  
+- you feel safe enough to be real  
+
+Belonging isn’t loud.  
+It’s recognisable.
+
+---
+
+## Final Reflection
+
+You don’t need a large circle.  
+You don’t need constant closeness.  
+You don’t need to label people as “good” or “bad.”
+
+You only need to notice:
+- where you feel safe  
+- where you feel respected  
+- where you feel like yourself  
+
+Friendship, at its best, feels like being met —  
+not managed, not moulded, not tolerated.
+
+Trust what allows you to remain present in your own life.
+
+That’s usually where real connection lives.
