@@ -13,14 +13,27 @@ permalink: /about/
 
 <h2>About</h2>
 
-This page isn’t about me. It’s about what *Embracing Authenticity* really means — and why it might matter for you.
+This site isn’t about me in the usual sense.
+It’s about what happens when someone stops abandoning themselves — and begins to live from a place of honesty, steadiness, and self-trust.
 
----
+Embracing Authenticity is a quiet space for people who feel lost in themselves, worn down by pressure, or disconnected from their own inner life. It’s for those who sense there must be another way to live — one that doesn’t require constant performance, proving, or self-erasure.
 
-**Embracing Authenticity** is a quiet corner of the internet for reflection, self-discovery, and healing. In a world that often asks us to perform, prove, or keep running, this space exists as an invitation to slow down — to listen inward and reconnect with yourself.
+In a world that moves fast and rewards appearances, this space is intentionally slow. It’s designed to help you calm your body, feel understood, and take one honest step at a time.
 
-Embracing authenticity isn’t about fixing who you are or striving to become someone new. It’s about releasing the need to be perfect, staying present with discomfort rather than escaping it, and letting go of who you thought you had to be in order to honour who you already are. When we abandon ourselves, we often feel fractured and unseen. When we begin to return to ourselves, trust and clarity follow — not because everything is solved, but because we are no longer at war with our own experience.
+Authenticity, as it’s explored here, isn’t about becoming someone new or “better.” It’s about releasing the need to perform, staying present with discomfort instead of escaping it, and learning to trust your own experience again. Many of us learned early on to survive by pleasing, adapting, or staying quiet. Over time, that survival strategy can turn into exhaustion, confusion, or a feeling of being unseen — even by ourselves.
 
-This site isn’t here to give you all the answers. It’s here to offer companionship — a steady place you can return to as you explore, reflect, and move at your own pace.
+This site exists to support the opposite movement:
+a gradual return to yourself.
 
-**You are welcome here, exactly as you are.**
+You won’t find quick fixes or rigid systems here. Instead, you’ll find reflections, guides, and frameworks grounded in lived experience — offered not as answers, but as companionship. Think of this as a place to orient yourself when things feel unclear, to remember what matters when you’ve drifted, and to move at a pace that your nervous system can actually sustain.
+
+Some people arrive here looking for healing.
+Others are rebuilding after loss or burnout.
+Some are simply trying to live more honestly.
+
+All of that belongs here.
+
+This is not a site about having everything figured out.
+It’s about learning how to stay present, grounded, and self-respecting — even when you don’t.
+
+You are welcome here exactly as you are.
