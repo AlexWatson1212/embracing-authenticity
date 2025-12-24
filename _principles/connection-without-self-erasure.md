@@ -3,8 +3,7 @@ title: "Connection Without Self-Erasure"
 description: "A grounded framework for adult relating: how to be alone without isolation, stay soft without naïveté, and walk away without collapse when something costs your dignity."
 emotions: ["love", "acceptance"]
 ---
-
-## Connection Without Self-Erasure  
+ 
 *A grounded framework for adult relating*
 
 A lot of relational pain doesn’t come from wanting connection.

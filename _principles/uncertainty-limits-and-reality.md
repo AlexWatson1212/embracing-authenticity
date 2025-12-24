@@ -3,8 +3,7 @@ title: "Uncertainty, Limits, and Reality"
 description: "A grounded framework for adult steadiness: how to stay present with uncertainty, accept limits without resentment, and live through chapters that don’t resolve into meaning."
 emotions: ["acceptance", "fear"]
 ---
-
-## Uncertainty, Limits, and Reality  
+  
 *A grounded framework for adult steadiness*
 
 A lot of suffering isn’t caused by pain itself —  

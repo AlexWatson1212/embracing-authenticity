@@ -4,7 +4,6 @@ description: "A grounded framework for emotional adulthood: how to stay with har
 emotions: ["acceptance", "hope"]
 ---
 
-## Emotion and Regulation  
 *A grounded framework for emotional adulthood*
 
 Adulthood doesn’t mean feeling less.  

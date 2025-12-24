@@ -3,7 +3,6 @@ title: "Boundaries, Responsibility, and Integrity"
 description: "A grounded framework for adult self-respect: how to hold boundaries kindly, take clean responsibility, and handle power without losing yourself."
 ---
 
-## Boundaries, Responsibility, and Integrity  
 *A grounded framework for adult self-respect*
 
 Adulthood isn’t a vibe.  

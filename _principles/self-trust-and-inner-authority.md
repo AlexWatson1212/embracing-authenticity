@@ -2,8 +2,7 @@
 title: "Self-Trust and Inner Authority"
 description: "A grounded orientation to adulthood built on self-trust, inner authority, and quiet integrity."
 ---
-
-## Self-Trust and Inner Authority  
+ 
 *A grounded orientation to adulthood*
 
 Self-trust is not confidence.  
