@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Self-Trust and Inner Authority"
 description: "A grounded orientation to adulthood built on self-trust, inner authority, and quiet integrity."
 ---

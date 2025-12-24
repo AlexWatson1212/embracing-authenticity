@@ -33,12 +33,19 @@ collections:
   pages:
     output: true
     permalink: /:title/
+
+  # Principles live in /_principles and publish to /principles/<filename>/
+  principles:
+    output: true
+    permalink: /principles/:name/
+
   # Only keep this if you actually have a folder named _music_music
   music_music:
     output: true
     permalink: /music-therapy/:title/
     sort_by: date
     sort_order: descending
+
   # Remove this block if you don't have a /_tag folder
   tag:
     output: true
@@ -52,6 +59,14 @@ defaults:
     values:
       layout: post
       tags: []
+
+  - scope:
+      path: ""
+      type: principles
+    values:
+      layout: page
+      sitemap: true
+
   - scope:
       path: ""
       type: music_music
@@ -64,6 +79,8 @@ defaults:
 nav:
   - text: About
     url: /about
+  - text: Principles
+    url: /principles
   # Temporarily removing Blog from the nav so /journal stays private
   # - text: Blog
   #   url: /blog

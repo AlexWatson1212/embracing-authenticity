@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Emotion and Regulation"
 description: "A grounded framework for emotional adulthood: how to stay with hard emotions, recover from shame, and repair after harm without collapsing or hardening."
 emotions: ["acceptance", "hope"]
