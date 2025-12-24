@@ -1,5 +1,5 @@
 ---
-layout: principle
+layout: page
 title: "Boundaries, Responsibility, and Integrity"
 description: "A grounded framework for adult self-respect: how to hold boundaries kindly, take clean responsibility, and handle power without losing yourself."
 ---
