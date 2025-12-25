@@ -133,6 +133,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent);
 }
 
+/* Page section headings (e.g. Writing Prompts, Principles) */
+.prose h2 {
+  color: var(--color-accent);
+}
+
+
 p { color: var(--color-primary); }
 small, .muted { color: var(--color-muted); }
 
