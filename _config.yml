@@ -39,13 +39,6 @@ collections:
     output: true
     permalink: /principles/:name/
 
-  # Only keep this if you actually have a folder named _music_music
-  music_music:
-    output: true
-    permalink: /music-therapy/:title/
-    sort_by: date
-    sort_order: descending
-
   # Remove this block if you don't have a /_tag folder
   tag:
     output: true
@@ -67,27 +60,16 @@ defaults:
       layout: page
       sitemap: true
 
-  - scope:
-      path: ""
-      type: music_music
-    values:
-      layout: music
-      tags: []
-      sitemap: true
-
-# ---- Navigation for _includes/nav.html
+# ---- Navigation for _includes/header.html
 nav:
-  - text: About
-    url: /about
+  - text: Start Here
+    url: /start-here
+  - text: Music & Meaning
+    url: /music-meaning
+  - text: Writing Prompts
+    url: /writing-prompts
   - text: Principles
     url: /principles
-  # Temporarily removing Blog from the nav so /journal stays private
-  # - text: Blog
-  #   url: /blog
-  - text: Self-Discovery
-    url: /self-discovery
-  - text: Neurodivergent Lens
-    url: /neurodivergent-lens
 
 # ---- Misc
 image: /images/default-social.jpg

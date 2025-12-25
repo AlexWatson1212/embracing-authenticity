@@ -1438,3 +1438,40 @@ HOME / SECTIONS — Utilities + spacing fixes
   height: 1px;
   background-color: var(--border-color, rgba(255, 255, 255, 0.2));
 }
+/* ===============================
+   Music & Meaning – Emotion Grid
+   =============================== */
+
+.emotion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 2.5rem;
+  padding: 0;
+}
+
+.emotion-grid li {
+  list-style: none;
+  padding: 1rem 1.25rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12));
+  background: var(--card-bg, rgba(255, 255, 255, 0.02));
+}
+
+.emotion-grid li strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.emotion-grid li a {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.emotion-grid li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
