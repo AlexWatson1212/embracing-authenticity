@@ -464,8 +464,8 @@ POST PAGE — Hero + Card + Readability (CLEAN / SINGLE SOURCE)
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(15,42,58,.43), /* was .28 */
-    rgba(15,42,58,.60)  /* was .45 */
+    rgba(15,42,58,.58), /* +.15 */
+    rgba(15,42,58,.75)  /* +.15 */
   );
 }
 
@@ -600,12 +600,12 @@ POST PAGE — Hero + Card + Readability (CLEAN / SINGLE SOURCE)
   .post-content{ font-size: 1.02rem; }
   .post-content > p:first-of-type{ font-size: 1.06rem; line-height: 1.8; }
 
-  /* ✅ On mobile, lighten slightly more (small screens crush images faster) */
+  /* Hero overlay (mobile) */
   .post-hero-overlay{
     background: linear-gradient(
       to bottom,
-      rgba(15,42,58,.39), /* was .24 */
-      rgba(15,42,58,.55)  /* was .40 */
+      rgba(15,42,58,.54), /* increased opacity */
+      rgba(15,42,58,.70)  /* increased opacity */
     );
   }
 }
