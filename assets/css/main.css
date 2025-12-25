@@ -464,8 +464,8 @@ POST PAGE — Hero + Card + Readability (CLEAN / SINGLE SOURCE)
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(15,42,58,.28),
-    rgba(15,42,58,.45)
+    rgba(15,42,58,.43), /* was .28 */
+    rgba(15,42,58,.60)  /* was .45 */
   );
 }
 
@@ -604,8 +604,8 @@ POST PAGE — Hero + Card + Readability (CLEAN / SINGLE SOURCE)
   .post-hero-overlay{
     background: linear-gradient(
       to bottom,
-      rgba(15,42,58,.24),
-      rgba(15,42,58,.40)
+      rgba(15,42,58,.39), /* was .24 */
+      rgba(15,42,58,.55)  /* was .40 */
     );
   }
 }
