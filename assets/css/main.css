@@ -1517,5 +1517,5 @@ HOME / SECTIONS — Utilities + spacing fixes
 }
 /* Offset in-page jump links so the sticky header doesn't cover headings */
 #content [id] {
-  scroll-margin-top: 114px;  /* tweak this number if needed */
+  scroll-margin-top: 70px;  /* tweak this number if needed */
 }
