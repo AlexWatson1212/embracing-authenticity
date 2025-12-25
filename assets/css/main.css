@@ -1515,3 +1515,7 @@ HOME / SECTIONS — Utilities + spacing fixes
 .section-subtitle--left {
   text-align: left;
 }
+/* Offset in-page jump links so the sticky header doesn't cover headings */
+#content [id] {
+  scroll-margin-top: 96px;  /* tweak this number if needed */
+}
