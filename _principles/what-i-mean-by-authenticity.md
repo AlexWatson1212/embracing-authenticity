@@ -3,9 +3,10 @@ layout: page
 title: "What I Mean by Authenticity"
 permalink: /principles/what-i-mean-by-authenticity/
 description: "How I understand authenticity in practice — less about performance, more about honest, sustainable alignment with yourself."
+order: 1
 ---
 
-<h2>What I Mean by Authenticity</h2>
+<p class="principle-progress">Principle 1 of 6</p>
 
 <p>
 When I talk about “authenticity” on this site, I don’t mean saying everything you think, sharing every feeling in public,

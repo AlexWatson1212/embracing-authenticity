@@ -1,8 +1,45 @@
 ---
 layout: default
 ---
-<article class="prose">
-  <h1>{{ page.title }}</h1>
-  {% if page.subtitle %}<p class="lead">{{ page.subtitle }}</p>{% endif %}
-  {{ content }}
-</article>
+
+<main id="content" class="page-layout">
+  <article class="container prose">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="lead">{{ page.subtitle }}</p>
+    {% endif %}
+
+    {{ content }}
+  </article>
+
+  <!-- Principles Navigation (only shows if "order" exists) -->
+  {% if page.order %}
+  <nav class="principle-nav container">
+    <hr class="section-divider" />
+
+    <div class="principle-nav-links">
+      <!-- Back to Principles -->
+      <a class="principle-nav-back" href="/principles/">← Back to Principles</a>
+
+      <div class="principle-step-links">
+
+        <!-- Previous Principle -->
+        {% assign previous_principles = site.pages | where: "order", page.order | first %}
+        {% for p in site.pages %}
+          {% if p.order == page.order | minus: 1 %}
+            <a class="principle-nav-prev" href="{{ p.url }}">← Previous Principle</a>
+          {% endif %}
+        {% endfor %}
+
+        <!-- Next Principle -->
+        {% for p in site.pages %}
+          {% if p.order == page.order | plus: 1 %}
+            <a class="principle-nav-next" href="{{ p.url }}">Next Principle →</a>
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+  </nav>
+  {% endif %}
+</main>

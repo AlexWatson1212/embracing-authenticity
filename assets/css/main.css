@@ -1394,3 +1394,47 @@ HOME / SECTIONS — Utilities + spacing fixes
 }
 
 .latest-posts .small-note.center { margin-top: 1.35rem; }
+/* ===============================
+   Principles Navigation
+   =============================== */
+
+.principle-nav {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.principle-nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Keeps layout clean on mobile */
+  gap: 1rem;
+}
+
+.principle-step-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.principle-step-links a,
+.principle-nav-back {
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.principle-step-links a:hover,
+.principle-nav-back:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.section-divider {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  height: 1px;
+  background-color: var(--border-color, rgba(255, 255, 255, 0.2));
+}

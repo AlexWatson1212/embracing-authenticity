@@ -1,299 +1,417 @@
 ---
-title: "Boundaries, Responsibility, and Integrity"
+layout: page
+title: "Boundaries, Responsibility & Integrity"
+permalink: /principles/boundaries-responsibility-and-integrity/
 description: "A grounded framework for adult self-respect: how to hold boundaries kindly, take clean responsibility, and handle power without losing yourself."
+order: 3
 ---
 
-*A grounded framework for adult self-respect*
+<p class="principle-progress">Principle 3 of 6</p>
 
+<p><em>A grounded framework for adult self-respect.</em></p>
+
+<p>
 Adulthood isn’t a vibe.  
 It’s a set of distinctions.
+</p>
 
-The main ones:
+<p>The main ones:</p>
 
-- **Boundaries vs. control**  
-- **Responsibility vs. guilt**  
-- **Accountability vs. self-blame**  
-- **Power vs. integrity**  
+<ul>
+  <li><strong>Boundaries vs. control</strong></li>
+  <li><strong>Responsibility vs. guilt</strong></li>
+  <li><strong>Accountability vs. self-blame</strong></li>
+  <li><strong>Power vs. integrity</strong></li>
+</ul>
 
+<p>
 When these get blurred, you end up over-functioning, apologising for existing, carrying what isn’t yours, or using leverage to avoid honesty.
+</p>
 
+<p>
 When they become clean, your life becomes simpler:
-- clearer relationships  
-- steadier nervous system  
-- fewer resentments  
-- more self-respect  
+</p>
+<ul>
+  <li>clearer relationships</li>
+  <li>steadier nervous system</li>
+  <li>fewer resentments</li>
+  <li>more self-respect</li>
+</ul>
 
-This is the principle.
+<p><strong>This is the principle.</strong></p>
 
 ---
 
-## **1. A Boundary Is Self-Protection, Not a Demand**
+<h3>1. A Boundary Is Self-Protection, Not a Demand</h3>
 
-A boundary is not:
-- a punishment  
-- a threat  
-- a way to control someone  
+<p>A boundary is not:</p>
+<ul>
+  <li>a punishment</li>
+  <li>a threat</li>
+  <li>a way to control someone</li>
+</ul>
 
+<p>
 A boundary is a statement of responsibility:
+</p>
 
-> **“This is what I can allow into my life, and this is what I can’t.”**
+<blockquote><p><strong>“This is what I can allow into my life, and this is what I can’t.”</strong></p></blockquote>
 
+<p>
 You don’t set boundaries because others are wrong.  
 You set them because your well-being matters.
+</p>
 
+<p>
 When boundaries come from self-respect rather than anger, they’re easier to hold and cleaner to communicate.
+</p>
 
 ---
 
-## **2. Clarity Matters More Than Explanation**
+<h3>2. Clarity Matters More Than Explanation</h3>
 
-A secure boundary is simple.
+<p>A secure boundary is simple.</p>
 
-Not:
-- “I’m sorry, it’s just that…”  
-- “I hope this doesn’t upset you…”  
-- “It’s only because I’m stressed…”  
+<p>Not:</p>
+<ul>
+  <li>“I’m sorry, it’s just that…”</li>
+  <li>“I hope this doesn’t upset you…”</li>
+  <li>“It’s only because I’m stressed…”</li>
+</ul>
 
-But:
-- “That doesn’t work for me.”  
-- “I’m not available for that.”  
-- “I need space right now.”  
-- “I won’t stay in conversations that become disrespectful.”  
+<p>But:</p>
+<ul>
+  <li>“That doesn’t work for me.”</li>
+  <li>“I’m not available for that.”</li>
+  <li>“I need space right now.”</li>
+  <li>“I won’t stay in conversations that become disrespectful.”</li>
+</ul>
 
+<p>
 Boundaries don’t need defence.  
 They need honesty.
+</p>
 
-Over-explaining is often a hidden request for permission.
+<p><em>Over-explaining is often a hidden request for permission.</em></p>
 
 ---
 
-## **3. Kindness Lives in the Tone, Not in Self-Sacrifice**
+<h3>3. Kindness Lives in the Tone, Not in Self-Sacrifice</h3>
 
-You can be firm without being harsh.
+<p>You can be firm without being harsh.</p>
 
+<p>
 Kindness does not require weakening your boundary.  
 It requires delivering the truth without contempt.
+</p>
 
-Examples:
-- “I care about you, and I need some time alone tonight.”  
-- “I want to stay connected, but I can’t continue this conversation in this tone.”  
-- “This matters to me, which is why I need us to speak respectfully.”  
+<p>Examples:</p>
+<ul>
+  <li>“I care about you, and I need some time alone tonight.”</li>
+  <li>“I want to stay connected, but I can’t continue this conversation in this tone.”</li>
+  <li>“This matters to me, which is why I need us to speak respectfully.”</li>
+</ul>
 
-Truth spoken calmly is stabilising.
+<p><strong>Truth spoken calmly is stabilising.</strong></p>
 
 ---
 
-## **4. Boundaries Are About Your Behaviour, Not Theirs**
+<h3>4. Boundaries Are About Your Behaviour, Not Theirs</h3>
 
-The cleanest boundaries focus on what **you** will do.
+<p>The cleanest boundaries focus on what <strong>you</strong> will do.</p>
 
-Not:
-- “You need to stop talking to me like that.”  
+<p>Not:</p>
+<ul>
+  <li>“You need to stop talking to me like that.”</li>
+</ul>
 
-But:
-> **“I won’t stay in conversations where I’m spoken to that way.”**
+<p>But:</p>
 
-Or:
-> **“I’m going to step away now and return when things are calmer.”**
+<blockquote><p><strong>“I won’t stay in conversations where I’m spoken to that way.”</strong></p></blockquote>
 
+<p>Or:</p>
+
+<blockquote><p><strong>“I’m going to step away now and return when things are calmer.”</strong></p></blockquote>
+
+<p>
 This is non-confrontational and durable.
+</p>
 
+<p>
 You’re not controlling them.  
 You’re choosing how you participate.
+</p>
 
 ---
 
-## **5. Responsibility Is About Your Actions — Not Other People’s Feelings**
+<h3>5. Responsibility Is About Your Actions — Not Other People’s Feelings</h3>
 
-Healthy responsibility sounds like:
-- “This was my choice.”  
-- “I see my part.”  
-- “I made a mistake.”  
-- “I need to repair this.”  
+<p>Healthy responsibility sounds like:</p>
+<ul>
+  <li>“This was my choice.”</li>
+  <li>“I see my part.”</li>
+  <li>“I made a mistake.”</li>
+  <li>“I need to repair this.”</li>
+</ul>
 
-Unhealthy responsibility sounds like:
-- “They’re upset, so I must be wrong.”  
-- “I ruined everything.”  
-- “It’s my job to fix how they feel.”  
+<p>Unhealthy responsibility sounds like:</p>
+<ul>
+  <li>“They’re upset, so I must be wrong.”</li>
+  <li>“I ruined everything.”</li>
+  <li>“It’s my job to fix how they feel.”</li>
+</ul>
 
-You are responsible for:
-- your behaviour  
-- your honesty  
-- your boundaries  
-- your integrity  
+<p>You are responsible for:</p>
+<ul>
+  <li>your behaviour</li>
+  <li>your honesty</li>
+  <li>your boundaries</li>
+  <li>your integrity</li>
+</ul>
 
-You are not responsible for:
-- how others regulate themselves  
-- whether they like your boundary  
-- what their history projects onto your clarity  
+<p>You are not responsible for:</p>
+<ul>
+  <li>how others regulate themselves</li>
+  <li>whether they like your boundary</li>
+  <li>what their history projects onto your clarity</li>
+</ul>
 
+<p>
 Adult responsibility does not include absorbing emotional fallout that isn’t yours.
+</p>
 
 ---
 
-## **6. Guilt Is Not Accountability**
+<h3>6. Guilt Is Not Accountability</h3>
 
-Guilt collapses inward.  
-Accountability stands upright.
+<p>Guilt collapses inward.  
+Accountability stands upright.</p>
 
-Guilt says:
-- “I am bad.”  
-- “I deserve punishment.”  
-- “I should carry this forever.”  
+<p>Guilt says:</p>
+<ul>
+  <li>“I am bad.”</li>
+  <li>“I deserve punishment.”</li>
+  <li>“I should carry this forever.”</li>
+</ul>
 
-Accountability says:
-- “Something went wrong.”  
-- “I see what I did.”  
-- “I can repair or adjust.”  
-- “I can move forward.”  
+<p>Accountability says:</p>
+<ul>
+  <li>“Something went wrong.”</li>
+  <li>“I see what I did.”</li>
+  <li>“I can repair or adjust.”</li>
+  <li>“I can move forward.”</li>
+</ul>
 
-If “responsibility” makes you feel smaller, heavier, or ashamed, you’ve slipped into self-blame.
+<p><em>If “responsibility” makes you feel smaller, heavier, or ashamed, you’ve slipped into self-blame.</em></p>
 
 ---
 
-## **7. Over-Functioning Is Not Maturity**
+<h3>7. Over-Functioning Is Not Maturity</h3>
 
+<p>
 Some people learned early:
-> “If I don’t carry this, everything will fall apart.”
+</p>
 
-So they manage:
-- emotions  
-- outcomes  
-- conflict  
-- everyone’s comfort  
+<blockquote><p><strong>“If I don’t carry this, everything will fall apart.”</strong></p></blockquote>
 
+<p>So they manage:</p>
+<ul>
+  <li>emotions</li>
+  <li>outcomes</li>
+  <li>conflict</li>
+  <li>everyone’s comfort</li>
+</ul>
+
+<p>
 This looks like strength, but it’s fear-based control.
+</p>
 
+<p>
 Real adulthood includes the ability to say:
-> **“This isn’t mine to fix.”**
+</p>
 
+<blockquote><p><strong>“This isn’t mine to fix.”</strong></p></blockquote>
+
+<p>
 You can care without taking ownership.  
 You can support without rescuing.
+</p>
 
 ---
 
-## **8. Responsibility Ends Where Control Ends**
+<h3>8. Responsibility Ends Where Control Ends</h3>
 
-A simple rule:
+<p>A simple rule:</p>
 
-> **If you don’t control it, you don’t carry it.**
+<blockquote><p><strong>“If you don’t control it, you don’t carry it.”</strong></p></blockquote>
 
-You don’t control:
-- whether people understand you  
-- whether they forgive  
-- whether they grow  
-- whether they change  
+<p>You don’t control:</p>
+<ul>
+  <li>whether people understand you</li>
+  <li>whether they forgive</li>
+  <li>whether they grow</li>
+  <li>whether they change</li>
+</ul>
 
+<p>
 Trying to carry responsibility beyond your control creates:
-- anxiety  
-- burnout  
-- resentment  
-- loss of self-trust  
+</p>
+<ul>
+  <li>anxiety</li>
+  <li>burnout</li>
+  <li>resentment</li>
+  <li>loss of self-trust</li>
+</ul>
 
-Adult responsibility has edges.
+<p><strong>Adult responsibility has edges.</strong></p>
 
-Those edges are boundaries.
+<p>Those edges are boundaries.</p>
 
 ---
 
-## **9. Clean Responsibility Has a Time Limit**
+<h3>9. Clean Responsibility Has a Time Limit</h3>
 
-Healthy responsibility moves:
+<p>Healthy responsibility moves:</p>
+<ol>
+  <li>Awareness</li>
+  <li>Ownership</li>
+  <li>Repair (if needed)</li>
+  <li>Integration</li>
+  <li>Release</li>
+</ol>
 
-1. Awareness  
-2. Ownership  
-3. Repair (if needed)  
-4. Integration  
-5. Release  
-
-Unhealthy responsibility loops.
+<p>
+Unhealthy responsibility loops.  
 It becomes identity.
+</p>
 
+<p>
 If you’re still punishing yourself long after you learned the lesson, you’re no longer being responsible — you’re being cruel.
+</p>
 
+<p><strong>
 Growth doesn’t require lifelong self-indictment.
+</strong></p>
 
 ---
 
-## **10. Power Doesn’t Create Character — It Exposes It**
+<h3>10. Power Doesn’t Create Character — It Exposes It</h3>
 
-Power comes in many forms:
-- money  
-- authority  
-- influence  
-- being listened to  
-- having options  
+<p>Power comes in many forms:</p>
+<ul>
+  <li>money</li>
+  <li>authority</li>
+  <li>influence</li>
+  <li>being listened to</li>
+  <li>having options</li>
+</ul>
 
-Power removes friction.
+<p>
+Power removes friction.  
 It amplifies what’s already there:
-- values  
-- wounds  
-- entitlement  
-- resentment  
-- unexamined shame  
+</p>
+<ul>
+  <li>values</li>
+  <li>wounds</li>
+  <li>entitlement</li>
+  <li>resentment</li>
+  <li>unexamined shame</li>
+</ul>
 
+<p>
 Integrity begins with the question:
-> **“What parts of me would power magnify?”**
+</p>
+
+<blockquote><p><strong>“What parts of me would power magnify?”</strong></p></blockquote>
 
 ---
 
-## **11. Being Heard Is Not the Same as Being Right**
+<h3>11. Being Heard Is Not the Same as Being Right</h3>
 
-A subtle distortion of power is this:
-> “People are listening, therefore I must be correct.”
+<p>A subtle distortion of power is this:</p>
 
+<blockquote><p><strong>“People are listening, therefore I must be correct.”</strong></p></blockquote>
+
+<p>
 Influence is not wisdom.  
 Authority is not moral clarity.
+</p>
 
+<p>
 Clean power keeps asking:
-- *What am I missing?*  
-- *Who does this affect?*  
-- *Would this still feel right if no one agreed with me?*  
+</p>
+<ul>
+  <li><em>What am I missing?</em></li>
+  <li><em>Who does this affect?</em></li>
+  <li><em>Would this still feel right if no one agreed with me?</em></li>
+</ul>
 
+<p>
 Appropriate self-doubt is not weakness.  
 It’s integrity.
+</p>
 
 ---
 
-## **12. Mature Power Stays Reachable**
+<h3>12. Mature Power Stays Reachable</h3>
 
-Power gives you the option to:
-- avoid challenge  
-- insulate yourself  
-- override others  
-- surround yourself with agreement  
+<p>Power gives you the option to:</p>
+<ul>
+  <li>avoid challenge</li>
+  <li>insulate yourself</li>
+  <li>override others</li>
+  <li>surround yourself with agreement</li>
+</ul>
 
-Integrity chooses the harder path:
-- staying in dialogue  
-- remaining accountable  
-- tolerating dissent  
-- repairing when you harm  
+<p>Integrity chooses the harder path:</p>
+<ul>
+  <li>staying in dialogue</li>
+  <li>remaining accountable</li>
+  <li>tolerating dissent</li>
+  <li>repairing when you harm</li>
+</ul>
 
+<p>
 The moment you feel “above” repair, integrity has already started slipping.
+</p>
 
 ---
 
-## **The Orientation**
+<h3>The Orientation</h3>
 
-**Boundaries protect your dignity.**  
-**Responsibility keeps you honest.**  
-**Integrity keeps power clean.**
+<p>
+<strong>Boundaries protect your dignity.</strong><br>
+<strong>Responsibility keeps you honest.</strong><br>
+<strong>Integrity keeps power clean.</strong>
+</p>
 
+<p>
 Adulthood is not carrying more.  
-It is carrying *your share* — and putting the rest down.
+It is carrying <strong>your share</strong> — and putting the rest down.
+</p>
 
+<p>
 Carry:
-- what you choose  
-- what you do  
-- what you need to repair  
-- what you value  
+</p>
+<ul>
+  <li>what you choose</li>
+  <li>what you do</li>
+  <li>what you need to repair</li>
+  <li>what you value</li>
+</ul>
 
+<p>
 Release:
-- guilt that isn’t yours  
-- emotions that aren’t yours  
-- roles you never consented to  
-- outcomes you don’t control  
+</p>
+<ul>
+  <li>guilt that isn’t yours</li>
+  <li>emotions that aren’t yours</li>
+  <li>roles you never consented to</li>
+  <li>outcomes you don’t control</li>
+</ul>
 
+<p>
 That is how you stay kind without self-erasing.  
 That is how you stay responsible without collapsing.  
 That is how you stay powerful without losing your conscience.
+</p>
