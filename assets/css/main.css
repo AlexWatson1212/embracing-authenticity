@@ -1511,3 +1511,7 @@ HOME / SECTIONS — Utilities + spacing fixes
   font-style: italic;
   opacity: 0.9;
 }
+.section-title--left,
+.section-subtitle--left {
+  text-align: left;
+}
