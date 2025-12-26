@@ -4,7 +4,7 @@ title: "Being Seen Without Performance"
 date: 2025-12-24
 tags: ["connection", "authenticity"]
 description: "Trying to let myself be seen without shaping myself to be liked."
-hero_image: /assets/images/posts/being-seen.png
+hero_image: /assets/images/posts/being-seen.jpg
 emotions: ["fear", "hope"]
 ---
 
