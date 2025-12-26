@@ -4,7 +4,7 @@ title: "Finding Joy Without Risking Everything"
 date: 2025-12-25
 tags: ["poker", "authenticity"]
 description: "Learning that the thrill doesn’t need to cost my peace."
-hero_image: /assets/images/posts/finding-joy.png
+hero_image: /assets/images/posts/finding-joy.jpg
 emotions: ["joy", "acceptance"]
 ---
 

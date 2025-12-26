@@ -4,7 +4,7 @@ title: "A Place to Catch Me"
 date: 2025-12-26
 tags: ["self-compassion", "connection"]
 description: "Building a home for my own heart."
-hero_image: /assets/images/posts/a-place-to-catch-me.png
+hero_image: /assets/images/posts/a-place-to-catch-me.jpg
 emotions: ["hope", "acceptance"]
 ---
 

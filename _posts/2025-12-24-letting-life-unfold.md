@@ -4,7 +4,7 @@ title: "Letting Life Unfold Without Managing It"
 date: 2025-12-24
 tags: ["uncertainty", "growth", "self-trust"]
 description: "Learning to loosen my grip on outcomes and trust the parts of life that can't be controlled."
-hero_image: /assets/images/posts/letting-life-unfold.png
+hero_image: /assets/images/posts/letting-life-unfold.jpg
 emotions: ["fear", "hope"]
 ---
 

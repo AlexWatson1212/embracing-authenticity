@@ -4,7 +4,7 @@ title: "The Weight of a Simple Good Morning"
 date: 2025-12-26
 tags: ["connection", "uncertainty"]
 description: "A reflection, mid-journey."
-hero_image: /assets/images/posts/the-weight-of-a-simple-good-morning.png
+hero_image: /assets/images/posts/the-weight-of-a-simple-good-morning.jpg
 emotions: ["loneliness", "longing"]
 ---
 
