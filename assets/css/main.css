@@ -1677,3 +1677,89 @@ HOME / SECTIONS — Utilities + spacing fixes
     padding: 1.25rem 1.35rem;
   }
 }
+/* ---------------------------
+   About Page
+----------------------------*/
+
+/* Make the hero image consistent with blog hero height */
+.about-hero {
+  max-width: 100%;
+  max-height: 260px; /* adjust to match your blog hero */
+  overflow: hidden;
+  border-radius: 18px;
+  margin: 1.5rem auto 2.5rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.about-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Wrap about content nicely */
+.about-page .section {
+  padding-top: 0;
+}
+
+/* About card uses same aesthetic as home breathe-cards, but slightly calmer */
+.about-card {
+  background: #fdf8f2;
+  border-radius: 18px;
+  padding: 2.2rem 2.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+  max-width: 720px;
+  margin: 0 auto 2rem;
+}
+
+/* Optional: subtle top accent like other cards */
+.about-card::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-color, #c37a3c),
+    rgba(195, 122, 60, 0.15)
+  );
+  opacity: 0.9;
+}
+
+/* Make sure about-card can use ::before properly */
+.about-card {
+  position: relative;
+}
+
+/* Typography inside about */
+.about-card p {
+  margin: 0 0 0.85rem;
+  line-height: 1.7;
+  color: rgba(12, 35, 52, 0.9);
+}
+
+.about-card p strong {
+  font-weight: 600;
+}
+
+/* Title spacing */
+.about-page .section-title--left {
+  margin-bottom: 1.5rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  .about-hero {
+    max-height: 200px;
+    border-radius: 14px;
+    margin: 1rem auto 2rem;
+  }
+
+  .about-card {
+    padding: 1.7rem 1.5rem;
+    border-radius: 14px;
+  }
+}

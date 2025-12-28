@@ -3,6 +3,7 @@ layout: default
 permalink: /about/
 ---
 
+<!-- About hero -->
 <div class="hero-card about-hero">
   <img
     src="/assets/images/about-journey-optimized.jpg"
@@ -11,29 +12,79 @@ permalink: /about/
   />
 </div>
 
-<h2>About</h2>
+<main id="content" class="about-page">
 
-This site isn’t about me in the usual sense.
-It’s about what happens when someone stops abandoning themselves — and begins to live from a place of honesty, steadiness, and self-trust.
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title section-title--left">About</h2>
 
-Embracing Authenticity is a quiet space for people who feel lost in themselves, worn down by pressure, or disconnected from their own inner life. It’s for those who sense there must be another way to live — one that doesn’t require constant performance, proving, or self-erasure.
+      <div class="breathe-card about-card">
+        <p>
+          This isn’t a personal brand or a self-improvement project.
+        </p>
 
-In a world that moves fast and rewards appearances, this space is intentionally slow. It’s designed to help you calm your body, feel understood, and take one honest step at a time.
+        <p>
+          This space began as a way to catch myself when life felt overwhelming — a steady reminder that I wasn’t broken,
+          behind, or alone. Over time, I realised it could become that kind of companion for others too.
+        </p>
 
-Authenticity, as it’s explored here, isn’t about becoming someone new or “better.” It’s about releasing the need to perform, staying present with discomfort instead of escaping it, and learning to trust your own experience again. Many of us learned early on to survive by pleasing, adapting, or staying quiet. Over time, that survival strategy can turn into exhaustion, confusion, or a feeling of being unseen — even by ourselves.
+        <p>
+          <strong>Embracing Authenticity</strong> is a gentle, in-between place:
+          not therapy,
+          not social media,
+          not a self-help program —
+          but something quieter and more human.
+        </p>
 
-This site exists to support the opposite movement:
-a gradual return to yourself.
+        <p>
+          It’s designed for the moments between sessions,
+          between breakthroughs,
+          between who we were and who we’re becoming.
+        </p>
 
-You won’t find quick fixes or rigid systems here. Instead, you’ll find reflections, guides, and frameworks grounded in lived experience — offered not as answers, but as companionship. Think of this as a place to orient yourself when things feel unclear, to remember what matters when you’ve drifted, and to move at a pace that your nervous system can actually sustain.
+        <p>
+          Here, authenticity isn’t a performance or a goal.
+          It’s the slow process of returning to yourself after years of disconnecting to survive.
+          It’s learning to listen inwardly again — with softness, not judgment.
+        </p>
 
-Some people arrive here looking for healing.
-Others are rebuilding after loss or burnout.
-Some are simply trying to live more honestly.
+        <p>
+          Many of us grew up believing that to be loved, we had to stay small, agreeable, quiet.
+          We adapted. We coped. We disappeared a little.
+        </p>
 
-All of that belongs here.
+        <p>
+          This site supports the opposite movement:
+          a gradual re-emergence.
+        </p>
 
-This is not a site about having everything figured out.
-It’s about learning how to stay present, grounded, and self-respecting — even when you don’t.
+        <p>
+          You’ll find writing prompts, reflective pathways, and lived experience shared honestly — not to fix you, but to
+          help you <strong>meet yourself where you are</strong>. To give shape to feelings that rarely find language. To
+          remind you that healing can be slow and still meaningful.
+        </p>
 
-You are welcome here exactly as you are.
+        <p>
+          Therapists might recommend this space for the time between sessions.
+          You might return here when you feel lost.
+          Maybe you’ll arrive on a day you simply need to feel understood by someone who’s walked a similar road.
+        </p>
+
+        <p>
+          Whatever brings you here — it belongs.
+        </p>
+
+        <p>
+          This is not a place where you have to be okay.
+          It’s a place where you can be <strong>in progress</strong>.
+        </p>
+
+        <p>
+          You deserve room to breathe, reflect, and reconnect with the truth of who you are — and you are welcome here
+          exactly as you are.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
