@@ -60,45 +60,79 @@ title: Home
     <div class="container">
       <h2 class="section-title section-title--left">Where to Begin</h2>
       <p class="section-subtitle section-subtitle--left">
-        Choose whatever helps you come home to yourself today.
+        Pick a doorway that feels gentle today. You can’t do this wrong.
       </p>
 
       <div class="grid gap-8 home-cards">
-        <div class="breathe-card">
-          <h3>Self-Discovery Path</h3>
+        <!-- Start Here -->
+        <article class="breathe-card">
+          <p class="eyebrow">Step 1</p>
+          <h3>Start Here</h3>
           <p>
-            A gentle guide through the patterns and roles that shaped you — and how to step into who you’re becoming.
+            A simple starting point if you’re feeling overwhelmed, lost, or just a bit tired of holding it all together.
+            Learn how this space works and how to move at a pace that feels kind to your nervous system.
           </p>
-          <p><a href="/self-discovery" class="inline-link">Start the path →</a></p>
-        </div>
+          <p><a href="/start-here" class="inline-link">Begin with a gentle overview →</a></p>
+        </article>
 
-        <div class="breathe-card">
+        <!-- Music & Meaning -->
+        <article class="breathe-card">
+          <p class="eyebrow">Step 2</p>
           <h3>Music &amp; Meaning</h3>
           <p>
-            Explore the emotions and memories your favourite songs hold, and what they reveal about you.
+            Explore the emotions and memories your favourite songs hold, and what they quietly reveal about your story.
+            A softer way into self-understanding, through the music that already moves you.
           </p>
           <p><a href="/music-meaning" class="inline-link">Explore Music &amp; Meaning →</a></p>
-        </div>
+        </article>
 
-        <div class="breathe-card">
-          <h3>Personal Reflections</h3>
+        <!-- Writing Prompts -->
+        <article class="breathe-card">
+          <p class="eyebrow">Step 3</p>
+          <h3>Writing Prompts</h3>
           <p>
-            Real stories from the healing journey — because you don’t have to make sense of life alone.
+            Gentle prompts to help you put words to what you’re feeling — without forcing neat answers or tidy endings.
+            Take what resonates, leave the rest.
           </p>
-          <p><a href="/journal" class="inline-link">Read reflections →</a></p>
-        </div>
+          <p><a href="/writing-prompts" class="inline-link">Browse writing prompts →</a></p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Take a Moment -->
-  <section class="section">
+  <!-- Take a Moment + Quotes -->
+  <section class="section" aria-label="Pause and take a moment">
     <div class="container">
-      <div class="breathe-card breathe-card--center" role="note" aria-label="Pause and breathe">
+      <!-- Take a Moment card -->
+      <div class="breathe-card breathe-card--center" role="note">
         <h3>Take a Moment</h3>
         <p>
           You can slow down here. Read only what resonates. Leave the rest.
         </p>
+      </div>
+
+      <!-- Quote cards -->
+      <div class="grid gap-6 quote-grid" aria-label="Reflections from other voices">
+        <figure class="quote-card">
+          <blockquote>
+            “Owning our story and loving ourselves through that process is the bravest thing that we’ll ever do.”
+          </blockquote>
+          <figcaption>— Brené Brown</figcaption>
+        </figure>
+
+        <figure class="quote-card">
+          <blockquote>
+            “We are not what's wrong with us; we are what’s right with us that has gone through what’s wrong.”
+          </blockquote>
+          <figcaption>— Gabor Maté</figcaption>
+        </figure>
+
+        <figure class="quote-card">
+          <blockquote>
+            “The curious paradox is that when I accept myself just as I am, then I can change.”
+          </blockquote>
+          <figcaption>— Carl Rogers</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -110,7 +144,7 @@ title: Home
 
       <div class="grid gap-10">
         {% for post in site.posts limit:3 %}
-        <div class="blog-card animate-on-scroll">
+        <article class="blog-card animate-on-scroll">
           <div class="blog-card-content">
             <h3 class="blog-card-title">{{ post.title }}</h3>
             <p class="blog-card-meta">{{ post.date | date: "%B %d, %Y" }}</p>
@@ -119,7 +153,7 @@ title: Home
             </p>
             <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
           </div>
-        </div>
+        </article>
         {% endfor %}
       </div>
 
