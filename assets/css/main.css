@@ -1519,3 +1519,161 @@ HOME / SECTIONS — Utilities + spacing fixes
 #content [id] {
   scroll-margin-top: 150px;  /* tweak this number if needed */
 }
+
+/* ---------------------------
+   Home – “Where to Begin”
+----------------------------*/
+
+/* Make the grid more responsive + breathable */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+/* Base card styling */
+.breathe-card {
+  background: #fdf8f2; /* warm, paper-like */
+  border-radius: 14px;
+  padding: 1.75rem 1.8rem 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: transform 160ms ease-out, box-shadow 160ms ease-out,
+              border-color 160ms ease-out, background-color 160ms ease-out;
+}
+
+/* Subtle accent bar at the top of each card */
+.breathe-card::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-color, #c37a3c),
+    rgba(195, 122, 60, 0.15)
+  );
+  opacity: 0.85;
+}
+
+/* Hover: small lift + slightly deeper shadow */
+.breathe-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.06);
+  background-color: #fdf4ea;
+}
+
+/* Eyebrow label (“Step 1”, etc.) */
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(12, 35, 52, 0.7);
+}
+
+/* Card titles + text */
+.breathe-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.breathe-card p {
+  margin: 0.35rem 0;
+  line-height: 1.6;
+}
+
+/* Where-to-begin subtitle closer to cards */
+.section-subtitle.section-subtitle--left {
+  margin-bottom: 1.5rem;
+  max-width: 32rem;
+}
+
+/* ---------------------------
+   Take a Moment
+----------------------------*/
+
+.breathe-card--center {
+  max-width: 520px;
+  margin: 0 auto 2.4rem;
+  text-align: center;
+}
+
+.breathe-card--center h3 {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------------------------
+   Quote Cards
+----------------------------*/
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.quote-card {
+  background: #f6efe5;
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+/* Accent strip on the left */
+.quote-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.1rem;
+  bottom: 1.1rem;
+  width: 3px;
+  background: var(--accent-color, #c37a3c);
+  opacity: 0.8;
+}
+
+/* Quote text */
+.quote-card blockquote {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(12, 35, 52, 0.9);
+}
+
+/* Author */
+.quote-card figcaption {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(12, 35, 52, 0.7);
+}
+
+/* Slight hover hint (but calmer than main cards) */
+.quote-card:hover {
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.07);
+}
+
+/* ---------------------------
+   Small screens
+----------------------------*/
+
+@media (max-width: 640px) {
+  .breathe-card {
+    padding: 1.5rem 1.4rem 1.4rem;
+  }
+
+  .quote-card {
+    padding: 1.25rem 1.35rem;
+  }
+}
