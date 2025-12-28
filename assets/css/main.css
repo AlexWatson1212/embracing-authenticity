@@ -1681,14 +1681,14 @@ HOME / SECTIONS — Utilities + spacing fixes
    About Page
 ----------------------------*/
 
-/* Make the hero image consistent with blog hero height */
+/* Slimmer hero to match blog feel */
 .about-hero {
-  max-width: 100%;
-  max-height: 260px; /* adjust to match your blog hero */
-  overflow: hidden;
+  max-width: 980px;
+  max-height: 220px;
+  margin: 1.8rem auto 2.2rem;
   border-radius: 18px;
-  margin: 1.5rem auto 2.5rem;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
 }
 
 .about-hero img {
@@ -1698,68 +1698,124 @@ HOME / SECTIONS — Utilities + spacing fixes
   display: block;
 }
 
-/* Wrap about content nicely */
-.about-page .section {
-  padding-top: 0;
+/* Intro */
+.about-intro .lead {
+  max-width: 44rem;
 }
 
-/* About card uses same aesthetic as home breathe-cards, but slightly calmer */
-.about-card {
-  background: #fdf8f2;
-  border-radius: 18px;
-  padding: 2.2rem 2.3rem;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
-  max-width: 720px;
-  margin: 0 auto 2rem;
+/* Steps container – subtle “path” feel */
+.about-steps {
+  position: relative;
+  margin: 0 auto 2.5rem;
+  max-width: 50rem;
+  padding-left: 1.8rem;
+  border-left: 2px solid rgba(12, 35, 52, 0.1);
 }
 
-/* Optional: subtle top accent like other cards */
-.about-card::before {
+.about-step {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Step markers (little circles on the path) */
+.about-step::before {
   content: "";
   position: absolute;
-  inset-inline: 0;
-  top: 0;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--accent-color, #c37a3c),
-    rgba(195, 122, 60, 0.15)
-  );
-  opacity: 0.9;
+  left: -1.05rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent-color, #c37a3c);
+  box-shadow: 0 0 0 4px rgba(195, 122, 60, 0.2);
 }
 
-/* Make sure about-card can use ::before properly */
-.about-card {
-  position: relative;
+/* Step titles */
+.about-step-title {
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: rgba(12, 35, 52, 0.85);
 }
 
-/* Typography inside about */
-.about-card p {
-  margin: 0 0 0.85rem;
+/* Step body text */
+.about-step p {
+  margin: 0 0 0.7rem;
   line-height: 1.7;
   color: rgba(12, 35, 52, 0.9);
 }
 
-.about-card p strong {
-  font-weight: 600;
+/* Quote card – calm, reflective */
+.about-quote-card {
+  max-width: 40rem;
+  margin: 0 auto 2.5rem;
+  padding: 1.6rem 1.8rem;
+  background: #f6efe5;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 }
 
-/* Title spacing */
-.about-page .section-title--left {
-  margin-bottom: 1.5rem;
+.about-quote-card blockquote {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: rgba(12, 35, 52, 0.9);
+}
+
+.about-quote-card figcaption {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: rgba(12, 35, 52, 0.7);
+}
+
+/* Personal note section */
+.about-note {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.about-note h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.about-note p {
+  margin: 0 0 0.8rem;
+  line-height: 1.7;
+}
+
+.about-note .about-cta {
+  margin-top: 0.8rem;
+  font-weight: 500;
 }
 
 /* Mobile tweaks */
 @media (max-width: 640px) {
   .about-hero {
-    max-height: 200px;
+    max-height: 180px;
+    margin: 1.2rem auto 2rem;
     border-radius: 14px;
-    margin: 1rem auto 2rem;
   }
 
-  .about-card {
-    padding: 1.7rem 1.5rem;
+  .about-steps {
+    padding-left: 1.4rem;
+  }
+
+  .about-step::before {
+    left: -0.9rem;
+  }
+
+  .about-quote-card {
+    padding: 1.4rem 1.5rem;
     border-radius: 14px;
   }
 }
+

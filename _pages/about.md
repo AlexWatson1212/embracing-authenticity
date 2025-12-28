@@ -14,76 +14,102 @@ permalink: /about/
 
 <main id="content" class="about-page">
 
+  <!-- Intro -->
   <section class="section">
+    <div class="container about-intro">
+      <h2 class="section-title section-title--left">About Embracing Authenticity</h2>
+      <p class="lead">
+        This space began as a way to catch myself when life felt overwhelming — a steady reminder that I wasn’t broken,
+        behind, or alone. Over time, I realised it could become that kind of companion for others too.
+      </p>
+    </div>
+  </section>
+
+  <!-- Guided path / steps -->
+  <section class="section section--alt">
     <div class="container">
-      <h2 class="section-title section-title--left">About</h2>
 
-      <div class="breathe-card about-card">
+      <div class="about-steps" aria-label="Why this space exists and how it can support you">
+
+        <!-- Step 1 -->
+        <article class="about-step">
+          <h3 class="about-step-title">Where You Might Be</h3>
+          <p>
+            Embracing Authenticity is for people who feel worn down by pressure, unsure of who they are anymore, or
+            caught between old survival patterns and a quieter truth inside them.
+          </p>
+          <p>
+            Many of us grew up believing that to be loved, we had to stay small, agreeable, or quiet. We adapted. We
+            coped. We disappeared a little. After a while, that way of living stops working — but it’s hard to know what
+            to do instead.
+          </p>
+          <p>
+            If you’re here, you might be somewhere in that in-between: not where you were, not yet where you’re going.
+          </p>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="about-step">
+          <h3 class="about-step-title">What This Space Offers</h3>
+          <p>
+            This isn’t a personal brand or a self-improvement program. It’s a quiet, steady corner of the internet where
+            you can slow down, make sense of what you’re feeling, and remember that you’re not the only one who finds
+            life confusing.
+          </p>
+          <p>
+            You’ll find writing prompts, reflective pathways, and lived experience shared honestly — not to fix you, but
+            to help you <strong>meet yourself where you are</strong>. To give shape to feelings that rarely find language.
+            To remind you that healing can be slow and still meaningful.
+          </p>
+          <p>
+            Think of it as a gentle orientation point: somewhere to come back to when everything feels foggy.
+          </p>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="about-step">
+          <h3 class="about-step-title">A Companion in the In-Between</h3>
+          <p>
+            This space sits comfortably alongside therapy but doesn’t try to replace it. Therapists might recommend it
+            for the time between sessions. You might return here on days when you feel lost, ashamed, or simply need to
+            be reminded that someone else has walked a similar road.
+          </p>
+          <p>
+            It’s for the in-between moments: between breakthroughs, between conversations, between who you were and who
+            you’re becoming.
+          </p>
+          <p>
+            This is not a place where you have to be okay. It’s a place where you can be <strong>in progress</strong>.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- Quote card (breathing space) -->
+      <figure class="about-quote-card">
+        <blockquote>
+          “The curious paradox is that when I accept myself just as I am, then I can change.”
+        </blockquote>
+        <figcaption>— Carl Rogers</figcaption>
+      </figure>
+
+      <!-- Personal note + CTA -->
+      <section class="about-note">
+        <h3>Who’s behind this?</h3>
         <p>
-          This isn’t a personal brand or a self-improvement project.
+          I’m Alex — counsellor-in-training, father, and someone who’s learning how to trust life again after years of
+          feeling like I didn’t quite fit. This site started as a way to hold my own process more gently. Now, I’m
+          offering it in case it can hold a part of yours too.
         </p>
-
-        <p>
-          This space began as a way to catch myself when life felt overwhelming — a steady reminder that I wasn’t broken,
-          behind, or alone. Over time, I realised it could become that kind of companion for others too.
-        </p>
-
-        <p>
-          <strong>Embracing Authenticity</strong> is a gentle, in-between place:
-          not therapy,
-          not social media,
-          not a self-help program —
-          but something quieter and more human.
-        </p>
-
-        <p>
-          It’s designed for the moments between sessions,
-          between breakthroughs,
-          between who we were and who we’re becoming.
-        </p>
-
-        <p>
-          Here, authenticity isn’t a performance or a goal.
-          It’s the slow process of returning to yourself after years of disconnecting to survive.
-          It’s learning to listen inwardly again — with softness, not judgment.
-        </p>
-
-        <p>
-          Many of us grew up believing that to be loved, we had to stay small, agreeable, quiet.
-          We adapted. We coped. We disappeared a little.
-        </p>
-
-        <p>
-          This site supports the opposite movement:
-          a gradual re-emergence.
-        </p>
-
-        <p>
-          You’ll find writing prompts, reflective pathways, and lived experience shared honestly — not to fix you, but to
-          help you <strong>meet yourself where you are</strong>. To give shape to feelings that rarely find language. To
-          remind you that healing can be slow and still meaningful.
-        </p>
-
-        <p>
-          Therapists might recommend this space for the time between sessions.
-          You might return here when you feel lost.
-          Maybe you’ll arrive on a day you simply need to feel understood by someone who’s walked a similar road.
-        </p>
-
-        <p>
-          Whatever brings you here — it belongs.
-        </p>
-
-        <p>
-          This is not a place where you have to be okay.
-          It’s a place where you can be <strong>in progress</strong>.
-        </p>
-
         <p>
           You deserve room to breathe, reflect, and reconnect with the truth of who you are — and you are welcome here
           exactly as you are.
         </p>
-      </div>
+        <p class="about-cta">
+          Not sure where to start? <a href="/start-here" class="inline-link">Begin with a gentle overview →</a>
+        </p>
+      </section>
+
     </div>
   </section>
 
