@@ -1818,4 +1818,133 @@ HOME / SECTIONS — Utilities + spacing fixes
     border-radius: 14px;
   }
 }
+/* Force left-align for homepage "Where to Begin" subtitle (in case a global rule centers it) */
+.section-subtitle.section-subtitle--left {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* -----------------------------
+   Quote Carousel (Homepage)
+------------------------------ */
+
+.quote-carousel {
+  margin-top: 0.5rem;
+}
+
+.quote-carousel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.quote-carousel-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.quote-nav {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.85);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.quote-nav:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.95);
+  border-color: rgba(0,0,0,0.18);
+}
+
+.quote-viewport {
+  position: relative;
+}
+
+.quote-track {
+  position: relative;
+  min-height: 170px; /* keeps layout stable as quotes change */
+}
+
+.quote-slide {
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  transition: opacity 260ms ease, transform 260ms ease;
+  
+  /* Match your card style (safe defaults if quote-card existed) */
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  padding: 1.25rem 1.25rem 1.05rem;
+}
+
+.quote-slide.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  position: relative;
+}
+
+.quote-slide blockquote {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.quote-slide figcaption {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.quote-dots {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.18);
+  background: rgba(255,255,255,0.55);
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.quote-dot.is-active {
+  background: rgba(0,0,0,0.35);
+  transform: scale(1.15);
+}
+
+/* Mobile spacing tweaks */
+@media (max-width: 640px) {
+  .quote-carousel-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .quote-track {
+    min-height: 210px;
+  }
+
+  .quote-slide {
+    padding: 1.05rem 1.05rem 0.95rem;
+  }
+}
 

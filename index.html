@@ -59,6 +59,8 @@ title: Home
   <section class="section section--alt" aria-label="Where to begin">
     <div class="container">
       <h2 class="section-title section-title--left">Where to Begin</h2>
+
+      <!-- Force-left aligned subtitle -->
       <p class="section-subtitle section-subtitle--left">
         Pick a doorway that feels gentle today. You can’t do this wrong.
       </p>
@@ -100,40 +102,68 @@ title: Home
     </div>
   </section>
 
-  <!-- Take a Moment + Quotes -->
-  <section class="section" aria-label="Pause and take a moment">
+  <!-- Quotes Slideshow -->
+  <section class="section" aria-label="Reflections from other voices">
     <div class="container">
-      <!-- Take a Moment card -->
-      <div class="breathe-card breathe-card--center" role="note">
-        <h3>Take a Moment</h3>
-        <p>
-          You can slow down here. Read only what resonates. Leave the rest.
-        </p>
+
+      <div class="quote-carousel" data-carousel>
+        <div class="quote-carousel-top">
+          <h2 class="section-title section-title--left">A Few Words Worth Keeping</h2>
+
+          <div class="quote-carousel-controls" aria-label="Quote controls">
+            <button class="quote-nav" type="button" data-prev aria-label="Previous quote">‹</button>
+            <button class="quote-nav" type="button" data-next aria-label="Next quote">›</button>
+          </div>
+        </div>
+
+        <div class="quote-viewport" role="region" aria-roledescription="carousel" aria-label="Quote slideshow">
+          <div class="quote-track" data-track>
+            <figure class="quote-slide is-active" data-slide>
+              <blockquote>
+                “Owning our story and loving ourselves through that process is the bravest thing that we’ll ever do.”
+              </blockquote>
+              <figcaption>— Brené Brown</figcaption>
+            </figure>
+
+            <figure class="quote-slide" data-slide>
+              <blockquote>
+                “We are not what’s wrong with us; we are what’s right with us that has gone through what’s wrong.”
+              </blockquote>
+              <figcaption>— Gabor Maté</figcaption>
+            </figure>
+
+            <figure class="quote-slide" data-slide>
+              <blockquote>
+                “The curious paradox is that when I accept myself just as I am, then I can change.”
+              </blockquote>
+              <figcaption>— Carl Rogers</figcaption>
+            </figure>
+
+            <figure class="quote-slide" data-slide>
+              <blockquote>
+                “Until you make the unconscious conscious, it will direct your life and you will call it fate.”
+              </blockquote>
+              <figcaption>— Carl Jung</figcaption>
+            </figure>
+
+            <figure class="quote-slide" data-slide>
+              <blockquote>
+                “Between stimulus and response there is a space. In that space is our power to choose our response.”
+              </blockquote>
+              <figcaption>— Viktor E. Frankl</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="quote-dots" role="tablist" aria-label="Choose a quote">
+          <button class="quote-dot is-active" type="button" data-dot aria-label="Quote 1" aria-current="true"></button>
+          <button class="quote-dot" type="button" data-dot aria-label="Quote 2"></button>
+          <button class="quote-dot" type="button" data-dot aria-label="Quote 3"></button>
+          <button class="quote-dot" type="button" data-dot aria-label="Quote 4"></button>
+          <button class="quote-dot" type="button" data-dot aria-label="Quote 5"></button>
+        </div>
       </div>
 
-      <!-- Quote cards -->
-      <div class="grid gap-6 quote-grid" aria-label="Reflections from other voices">
-        <figure class="quote-card">
-          <blockquote>
-            “Owning our story and loving ourselves through that process is the bravest thing that we’ll ever do.”
-          </blockquote>
-          <figcaption>— Brené Brown</figcaption>
-        </figure>
-
-        <figure class="quote-card">
-          <blockquote>
-            “We are not what's wrong with us; we are what’s right with us that has gone through what’s wrong.”
-          </blockquote>
-          <figcaption>— Gabor Maté</figcaption>
-        </figure>
-
-        <figure class="quote-card">
-          <blockquote>
-            “The curious paradox is that when I accept myself just as I am, then I can change.”
-          </blockquote>
-          <figcaption>— Carl Rogers</figcaption>
-        </figure>
-      </div>
     </div>
   </section>
 
@@ -164,3 +194,57 @@ title: Home
   </section>
 
 </main>
+
+<script>
+  (function () {
+    const carousel = document.querySelector("[data-carousel]");
+    if (!carousel) return;
+
+    const slides = Array.from(carousel.querySelectorAll("[data-slide]"));
+    const dots = Array.from(carousel.querySelectorAll("[data-dot]"));
+    const prevBtn = carousel.querySelector("[data-prev]");
+    const nextBtn = carousel.querySelector("[data-next]");
+
+    let index = 0;
+    let timer = null;
+
+    function setActive(i) {
+      index = (i + slides.length) % slides.length;
+
+      slides.forEach((s, n) => s.classList.toggle("is-active", n === index));
+      dots.forEach((d, n) => {
+        const active = n === index;
+        d.classList.toggle("is-active", active);
+        d.setAttribute("aria-current", active ? "true" : "false");
+      });
+    }
+
+    function next() { setActive(index + 1); }
+    function prev() { setActive(index - 1); }
+
+    function startAuto() {
+      stopAuto();
+      timer = setInterval(next, 6500);
+    }
+
+    function stopAuto() {
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+
+    prevBtn && prevBtn.addEventListener("click", () => { prev(); startAuto(); });
+    nextBtn && nextBtn.addEventListener("click", () => { next(); startAuto(); });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => { setActive(i); startAuto(); });
+    });
+
+    carousel.addEventListener("mouseenter", stopAuto);
+    carousel.addEventListener("mouseleave", startAuto);
+    carousel.addEventListener("focusin", stopAuto);
+    carousel.addEventListener("focusout", startAuto);
+
+    setActive(0);
+    startAuto();
+  })();
+</script>
