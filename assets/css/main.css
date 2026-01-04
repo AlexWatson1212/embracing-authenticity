@@ -1596,3 +1596,41 @@ PART 14 — Optional animation utility (used by scroll scripts)
   transition: opacity .6s ease-out, transform .6s ease-out;
 }
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
+/* -------------------------------------------------
+   Quote carousel — controls underneath (homepage)
+-------------------------------------------------- */
+
+.quote-carousel-controls--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+/* Soften arrows — make them feel secondary */
+.quote-nav {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  opacity: 0.75;
+  background: rgba(255,255,255,0.7);
+  box-shadow: none;
+}
+
+.quote-nav:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* Ensure dots sit neatly between arrows */
+.quote-carousel-controls--bottom .quote-dots {
+  margin: 0;
+}
+
+/* Mobile: slightly tighter spacing */
+@media (max-width: 640px) {
+  .quote-carousel-controls--bottom {
+    gap: 0.6rem;
+  }
+}

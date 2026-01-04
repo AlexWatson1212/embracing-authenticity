@@ -60,7 +60,7 @@ title: Home
     <div class="container">
       <h2 class="section-title section-title--left">Where to Begin</h2>
 
-      <!-- Force-left aligned subtitle -->
+      <!-- Left aligned subtitle -->
       <p class="section-subtitle section-subtitle--left">
         Pick a doorway that feels gentle today. You can’t do this wrong.
       </p>
@@ -109,11 +109,6 @@ title: Home
       <div class="quote-carousel" data-carousel>
         <div class="quote-carousel-top">
           <h2 class="section-title section-title--left">A Few Words Worth Keeping</h2>
-
-          <div class="quote-carousel-controls" aria-label="Quote controls">
-            <button class="quote-nav" type="button" data-prev aria-label="Previous quote">‹</button>
-            <button class="quote-nav" type="button" data-next aria-label="Next quote">›</button>
-          </div>
         </div>
 
         <div class="quote-viewport" role="region" aria-roledescription="carousel" aria-label="Quote slideshow">
@@ -155,12 +150,19 @@ title: Home
           </div>
         </div>
 
-        <div class="quote-dots" role="tablist" aria-label="Choose a quote">
-          <button class="quote-dot is-active" type="button" data-dot aria-label="Quote 1" aria-current="true"></button>
-          <button class="quote-dot" type="button" data-dot aria-label="Quote 2"></button>
-          <button class="quote-dot" type="button" data-dot aria-label="Quote 3"></button>
-          <button class="quote-dot" type="button" data-dot aria-label="Quote 4"></button>
-          <button class="quote-dot" type="button" data-dot aria-label="Quote 5"></button>
+        <!-- Controls moved underneath (arrows + dots grouped) -->
+        <div class="quote-carousel-controls quote-carousel-controls--bottom" aria-label="Quote controls">
+          <button class="quote-nav" type="button" data-prev aria-label="Previous quote">‹</button>
+
+          <div class="quote-dots" role="tablist" aria-label="Choose a quote">
+            <button class="quote-dot is-active" type="button" data-dot aria-label="Quote 1" aria-current="true"></button>
+            <button class="quote-dot" type="button" data-dot aria-label="Quote 2" aria-current="false"></button>
+            <button class="quote-dot" type="button" data-dot aria-label="Quote 3" aria-current="false"></button>
+            <button class="quote-dot" type="button" data-dot aria-label="Quote 4" aria-current="false"></button>
+            <button class="quote-dot" type="button" data-dot aria-label="Quote 5" aria-current="false"></button>
+          </div>
+
+          <button class="quote-nav" type="button" data-next aria-label="Next quote">›</button>
         </div>
       </div>
 
