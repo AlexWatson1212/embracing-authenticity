@@ -1,15 +1,17 @@
 /*
 ====================================================================
-Embracing Authenticity — Consolidated CSS (Operational Clean)
+Embracing Authenticity — Consolidated CSS (Tidied + Functional)
 --------------------------------------------------------------------
-Kept: base, header/nav (legacy + new), blog, hero, accordion,
-music therapy grid, tags/emotions, footer, utilities.
-Removed: true duplicates + conflicting re-definitions.
+Goals:
+- Remove true duplicates + conflicting re-definitions
+- Keep BOTH nav systems (.site-header and .nav) working
+- Keep blog, post hero, page hero, cards, tags/emotions, footer, accordion
+- Keep new Quote Carousel (single source of truth)
 ====================================================================
 */
 
 /* ==================================================================
-PART 1 — Base, Variables, Resets, Layout, Typography
+PART 1 — Variables, Resets, Base, Layout, Typography
 ================================================================== */
 
 :root {
@@ -73,20 +75,19 @@ PART 1 — Base, Variables, Resets, Layout, Typography
   }
 }
 
-/* Reset & Box Model */
+/* Reset & base */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
 body {
+  margin: 0;
   font-family: var(--font-body);
+  color: var(--color-primary);
+  line-height: 1.65;
+  text-align: left;
   background-color: var(--color-bg);
   background-image: url('/assets/images/bg-texture.png');
   background-repeat: repeat;
   background-size: auto;
-  color: var(--color-primary);
-  line-height: 1.65;
-  text-align: left;
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -114,7 +115,6 @@ img { max-width: 100%; height: auto; display: block; }
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--container-pad-x);
-  box-sizing: border-box;
 }
 
 :where(p, ul, ol, blockquote) { margin-bottom: 1.6rem; }
@@ -122,22 +122,18 @@ img { max-width: 100%; height: auto; display: block; }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--color-primary);
   margin: 2rem 0 1rem;
   line-height: 1.2;
+  color: var(--color-primary);
 }
 
-.post-content h2,
+/* Accent headings used across site */
 .section-title,
-.page-hero__title {
-  color: var(--color-accent);
-}
-
-/* Page section headings (e.g. Writing Prompts, Principles) */
+.page-hero__title,
+.post-content h2,
 .prose h2 {
   color: var(--color-accent);
 }
-
 
 p { color: var(--color-primary); }
 small, .muted { color: var(--color-muted); }
@@ -151,16 +147,16 @@ a {
 a:hover { color: var(--color-accent); }
 
 /* Only underline content links (not buttons/tags/etc.) */
-main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social) {
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button) {
   text-decoration-line: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 2px;
   text-decoration-color: var(--color-accent);
 }
-main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):hover {
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button):hover {
   color: var(--color-accent);
 }
-main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):focus-visible {
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button):focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
   border-radius: 2px;
@@ -175,76 +171,12 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
   white-space: nowrap; border: 0;
 }
 
+/* Offset in-page jump links so sticky header doesn't cover headings */
+#content [id] { scroll-margin-top: 150px; }
+
 @media (min-width: 860px) {
   :root { --section-pad-y: 2.5rem; }
 }
-
-.post-nav{
-  margin: 2.25rem auto 0;
-  padding: 1.25rem 1rem 0;
-  max-width: 760px;
-  border-top: 1px solid var(--color-mid);
-}
-
-.post-nav-back{
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: var(--color-muted);
-  text-decoration: none;
-}
-
-.post-nav-back:hover{ text-decoration: underline; }
-
-.post-nav-links{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: .9rem;
-}
-
-.post-nav-prev, .post-nav-next{
-  text-decoration: none;
-  background: var(--color-highlight);
-  border: 1px solid var(--color-mid);
-  border-radius: 16px;
-  padding: .9rem 1rem;
-}
-
-.post-nav-kicker{
-  display: block;
-  font-size: .85rem;
-  color: var(--color-muted);
-  margin-bottom: .25rem;
-}
-
-.post-nav-title{
-  display: block;
-  color: var(--color-primary);
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-@media (max-width: 640px){
-  .post-nav-links{ grid-template-columns: 1fr; }
-}
-.post-content h2{
-  margin: 2rem 0 .75rem;
-  font-size: 1.25rem;          /* calmer */
-  line-height: 1.25;
-  font-weight: 700;
-  color: var(--color-primary);  /* less shouty than accent */
-  letter-spacing: .15px;
-}
-
-.post-content h3{
-  margin: 1.5rem 0 .6rem;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  font-weight: 700;
-  color: var(--color-muted);
-}
-
-.post-meta, .post-date, .post-emotions { display: none !important; }
-
 
 /* ==================================================================
 PART 2 — Header / Navigation (supports BOTH systems)
@@ -253,7 +185,7 @@ PART 2 — Header / Navigation (supports BOTH systems)
 .top-accent { display: none; }
 .masthead, .site-title, header .site-title { display: none !important; }
 
-/* Shared nav link styling helpers (prevents duplication) */
+/* Shared nav link style */
 .site-nav a,
 .nav__links a {
   color: var(--ea-text);
@@ -272,7 +204,6 @@ PART 2 — Header / Navigation (supports BOTH systems)
 /* ------------------------------
 A) .site-header system
 ------------------------------ */
-
 .site-header {
   position: sticky;
   top: 0;
@@ -282,7 +213,6 @@ A) .site-header system
   box-shadow: var(--ea-shadow);
   width: 100%;
 }
-
 .site-header .shell {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -292,12 +222,10 @@ A) .site-header system
   justify-content: space-between;
   gap: 1rem;
 }
-
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; }
 .brand-mark { height: var(--logo-h-mobile); width: auto; max-width: 100%; object-fit: contain; }
 .brand-text { display: none; }
 
-.site-nav { width: auto; }
 .site-nav ul {
   display: flex;
   align-items: center;
@@ -307,7 +235,6 @@ A) .site-header system
   padding: 0;
   flex-wrap: wrap;
 }
-
 .site-nav a.is-active { border-bottom-color: var(--ea-accent); }
 
 .nav-toggle {
@@ -340,7 +267,6 @@ A) .site-header system
     gap: .75rem;
   }
 }
-
 @media (min-width: 861px) {
   .nav-toggle { display: none; }
   .site-nav { max-height: none !important; }
@@ -349,10 +275,8 @@ A) .site-header system
 }
 
 /* ------------------------------
-B) <nav class="nav"> system
-(kept for templates that still use it)
+B) <nav class="nav"> system (legacy templates)
 ------------------------------ */
-
 .nav {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -362,14 +286,12 @@ B) <nav class="nav"> system
   justify-content: space-between;
   gap: 1rem;
 }
-
 .nav__brand {
   color: var(--ea-text);
   text-decoration: none;
   font-weight: 800;
   letter-spacing: .2px;
 }
-
 .nav__toggle {
   display: inline-flex;
   align-items: center;
@@ -383,7 +305,6 @@ B) <nav class="nav"> system
   transition: background-color var(--transition), border-color var(--transition);
 }
 .nav__toggle:hover { background: rgba(255,255,255,.06); }
-
 .nav__icon {
   width: 20px;
   height: 2px;
@@ -409,7 +330,6 @@ B) <nav class="nav"> system
   margin: 0;
   padding: 0;
 }
-
 @media (max-width: 860px) {
   .nav { flex-wrap: wrap; }
   .nav__toggle { display: inline-flex; }
@@ -422,520 +342,127 @@ B) <nav class="nav"> system
     gap: .75rem;
   }
 }
-
 @media (min-width: 861px) { .nav__toggle { display: none; } }
 
 /* ==================================================================
-PART 3 — Posts, Page Hero, Blog, Hero, Quotes, Utilities, Accordion
+PART 3 — Sections, Utilities, Home cards
 ================================================================== */
 
-/* =========================================================
-POST PAGE — Hero + Card + Readability (CLEAN / SINGLE SOURCE)
-(Updated: lighter overlays so images show through more)
-========================================================= */
+.grid { display: grid; }
+.center { text-align: center; }
+.gap-6 { gap: 1rem; }
+.gap-8 { gap: 1.25rem; }
+.gap-10 { gap: 1.75rem; }
 
-/* Hero card */
-.post-hero{
-  position: relative;
-  width: 100%;
-  min-height: 240px;
-
-  max-width: 980px;
-  margin: 1.25rem auto 0;
-  border-radius: 18px;
-  overflow: hidden;
-
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-}
-
-.post-hero-bg{
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  filter: saturate(.95) contrast(1.02);
-  transform: scale(1.02);
-}
-
-/* ✅ LIGHTER OVERLAY (was .55 -> .78). Now breathable but still readable */
-.post-hero-overlay{
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(15,42,58,.58), /* +.15 */
-    rgba(15,42,58,.75)  /* +.15 */
-  );
-}
-
-.post-hero-inner{
-  position: relative;
-  z-index: 1;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 4rem 1.25rem 3rem;
-  color: var(--color-light);
-  text-align: left;
-}
-
-.post-hero-title{
-  margin: 0;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: .2px;
-  color: #F7F3EE;
-  text-shadow: 0 14px 36px rgba(0,0,0,.35);
-  font-size: clamp(1.75rem, 3vw, 2.6rem);
-}
-
-.post-hero-subtitle{
-  display: block;
-  margin-top: .65rem;
-  max-width: 820px;
-  color: rgba(247,243,238,.92);
-  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  line-height: 1.55;
-  font-weight: 400;
-  opacity: .95;
-}
-
-/* Post body container */
-.post-wrap{
-  width: min(1120px, calc(100% - 2rem));
-  margin: 1.25rem auto 3rem;
-}
-
-.post-card{
-  background: rgba(255,255,255,.82);
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-  padding: clamp(1.25rem, 2.2vw, 2rem);
-}
-
-/* Main readability */
-.post-content{
-  width: 100%;
-  max-width: 980px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.75;
-  text-rendering: optimizeLegibility;
-}
-
-/* Section headings (match your “Final Words” vibe) */
-.post-content h2{
-  margin: 2.1rem 0 .75rem;
-  font-size: 1.55rem;
-  line-height: 1.2;
-  font-weight: 700;
-  color: var(--color-accent);
-  letter-spacing: .2px;
-}
-
-.post-content h3{
-  margin: 1.7rem 0 .65rem;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  font-weight: 700;
-  color: var(--color-primary);
-}
-
-/* Paragraph rhythm */
-.post-content p{
-  margin: 0 0 1rem;
-  max-width: 72ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.post-content li{
-  font-weight: 400;
-  line-height: 1.75;
-}
-
-/* Lists + quotes align with paragraph width */
-.post-content ul,
-.post-content ol,
-.post-content blockquote{
-  max-width: 72ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.post-content ul,
-.post-content ol{
-  margin-top: .25rem;
-  margin-bottom: 1.25rem;
-  padding-left: 1.25rem;
-}
-
-.post-content li{ margin: .35rem 0; }
-
-/* Quotes */
-.post-content blockquote{
-  margin: 1.25rem auto;
-  padding: 1.05rem 1.2rem;
-  border-left: 4px solid rgba(199,119,63,.55);
-  background: rgba(17,34,52,.04);
-  border-radius: 12px;
-}
-
-.post-content blockquote p{ margin: 0; }
-
-/* Lead paragraph */
-.post-content > p:first-of-type{
-  font-size: 1.12rem;
-  line-height: 1.85;
-  margin-bottom: 1.6rem;
-}
-
-/* Mobile */
-@media (max-width: 640px){
-  .post-hero-inner{ padding: 3.1rem 1rem 2.3rem; }
-  .post-wrap{ width: calc(100% - 1.5rem); }
-  .post-card{ padding: 1.25rem 1rem; }
-  .post-content{ font-size: 1.02rem; }
-  .post-content > p:first-of-type{ font-size: 1.06rem; line-height: 1.8; }
-
-  /* Hero overlay (mobile) */
-  .post-hero-overlay{
-    background: linear-gradient(
-      to bottom,
-      rgba(15,42,58,.54), /* increased opacity */
-      rgba(15,42,58,.70)  /* increased opacity */
-    );
-  }
-}
-
-/* ================================================================
-PAGE HERO (Blog / internal pages)
-(Updated: lighter overlay so the hero image reads more clearly)
-================================================================ */
-
-.page-hero {
-  position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
-  max-width: 980px;
-  margin: 1.25rem auto 1.25rem;
-  min-height: 220px;
-  background: #111;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid var(--line);
-}
-
-.page-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: var(--hero-image);
-  background-size: cover;
-  background-position: center;
-  filter: saturate(1.05) contrast(1.05);
-  transform: scale(1.02);
-}
-
-/* ✅ LIGHTER OVERLAY (was .55 -> .78). Now more transparent */
-.page-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(15, 42, 58, 0.35),
-    rgba(15, 42, 58, 0.52)
-  );
-}
-
-.page-hero__inner {
-  position: relative;
-  z-index: 1;
-  padding: 1.7rem 1.6rem;
-  max-width: 820px;
-}
-
-.page-hero__title {
-  margin: 0 0 .45rem;
-  color: var(--color-light);
-  letter-spacing: .2px;
-}
-
-.page-hero__page {
-  font-weight: 700;
-  opacity: .9;
-  margin-left: .25rem;
-  font-size: .95em;
-}
-
-.page-hero__subtitle {
-  margin: 0;
-  max-width: 720px;
-  color: rgba(255,255,255,.92);
-  line-height: 1.55;
-}
-
-@media (max-width: 768px) {
-  .page-hero { margin: 1rem auto 1rem; min-height: 200px; }
-  .page-hero__inner { padding: 1.35rem 1.1rem; }
-
-  /* ✅ Slightly lighter overlay on small screens too */
-  .page-hero::after {
-    background: linear-gradient(
-      to bottom,
-      rgba(15, 42, 58, 0.30),
-      rgba(15, 42, 58, 0.48)
-    );
-  }
-}
-
-/* ================================================================
-BLOG — Search + Results + Cards + Pagination
-================================================================ */
-
-/* Top area wrapper */
-.blog-top {
-  max-width: 980px;
-  margin: 0 auto 1.25rem;
-  padding: 0 1rem;
-}
-
-/* Search */
-.blog-search {
-  display: flex;
-  gap: .6rem;
-  align-items: center;
-  max-width: 980px;
-  margin: 0 auto 1rem;
-}
-
-.blog-search input[type="search"] {
-  flex: 1;
-  padding: .65rem .9rem;
-  border: 1px solid var(--color-mid);
-  border-radius: 10px;
-  background: rgba(255,255,255,.78);
-  box-shadow: 0 8px 22px rgba(0,0,0,.05);
-  outline: none;
-}
-
-.blog-search input[type="search"]:focus {
-  border-color: rgba(199,119,63,.55);
-  box-shadow: 0 0 0 4px rgba(199,119,63,.14);
-}
-
-.blog-search button {
-  padding: .65rem 1.05rem;
-  border: 2px solid var(--color-accent);
-  color: var(--color-accent);
-  background: transparent;
-  border-radius: 10px;
-  font-weight: 800;
-  cursor: pointer;
-  transition: transform .18s ease, background-color var(--transition), color var(--transition);
-}
-
-.blog-search button:hover {
-  background: var(--color-accent);
-  color: var(--color-light);
-  transform: translateY(-1px);
-}
-
-.search-count {
+.small-note {
   color: var(--color-muted);
-  font-size: .95rem;
-  margin-left: .1rem;
-  min-width: 3ch;
+  font-size: 0.98rem;
+  line-height: 1.65;
 }
 
-/* Live results list */
-.blog-search-results {
-  list-style: none;
-  margin: 0 auto 1.5rem;
-  padding: 0;
-  max-width: 980px;
-  display: grid;
-  gap: 1rem;
+/* Let sections control vertical rhythm (not container padding) */
+#content .section .container,
+#content .section--alt .container,
+#content .latest-posts .container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.search-result {
-  background: rgba(255,255,255,.82);
-  border-radius: var(--radius);
-  padding: 1.25rem 1.4rem;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid var(--line);
+/* Section spacing */
+#content .section { padding: 3.25rem 0; }
+@media (max-width: 768px) {
+  #content .section { padding: 2.5rem 0; }
 }
 
-.search-title { font-weight: 800; text-decoration: none; color: var(--color-primary); }
-.search-title:hover { color: var(--color-accent); }
-
-.search-snippet { margin: .55rem 0 .35rem; color: var(--color-primary); }
-.search-meta { color: var(--color-muted); font-size: .9rem; }
-
-/* Chips in search */
-.chip {
-  display: inline-block;
-  margin-left: .35rem;
-  padding: .1rem .55rem;
-  background: var(--color-highlight);
+/* Titles + subtitles */
+.section-title {
+  margin: 0 0 0.75rem;
+  text-align: center;
   color: var(--color-accent);
-  border-radius: 999px;
-  font-size: .75rem;
-  font-weight: 700;
 }
-.chip.emo { background: rgba(17,34,52,.10); color: var(--color-primary); }
+.section-subtitle {
+  max-width: 760px;
+  margin: 0 auto 0.9rem;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
 
-/* Empty state */
-.empty-state {
-  max-width: 980px;
-  margin: 0 auto 1.75rem;
-  padding: 1.4rem 1.5rem;
-  background: rgba(255,255,255,.72);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
+.section-title--left,
+.section-subtitle--left {
   text-align: left;
 }
-.empty-state h3 { margin: 0 0 .5rem; }
-.empty-state p { margin: .35rem 0; }
-.empty-state code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: .95em;
+
+/* Force-left align (defensive) */
+.section-subtitle.section-subtitle--left {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
-/* Blog card list */
-.blog-list,
-.latest-posts .blog-list {
+/* Home – “Where to Begin” */
+.home-cards {
   display: grid;
-  gap: 1.6rem;
-  max-width: 980px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+  margin-top: 1.6rem;
 }
 
-.blog-card,
-.latest-posts .blog-card {
-  background: rgba(255,255,255,.82);
-  border-radius: var(--radius);
-  padding: 1.75rem;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid var(--line);
-  transition: transform var(--transition), box-shadow var(--transition);
+/* Base card */
+.breathe-card {
+  background: #fdf8f2;
+  border-radius: 14px;
+  padding: 1.75rem 1.8rem 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: transform 160ms ease-out, box-shadow 160ms ease-out, border-color 160ms ease-out, background-color 160ms ease-out;
 }
-
-.blog-card:hover,
-.latest-posts .blog-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+.breathe-card::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), rgba(199,119,63, 0.15));
+  opacity: 0.85;
 }
-
-.blog-card-content h3 { margin: 0 0 .35rem; }
-.blog-card-content h3 a { text-decoration: none; color: var(--color-primary); }
-.blog-card-content h3 a:hover { color: var(--color-accent); }
-
-.blog-card .excerpt { margin: .65rem 0 1rem; color: var(--color-primary); }
-
-/* Hide dates in blog cards only */
-.blog-card .post-date,
-.latest-posts .blog-card .post-date { display: none !important; }
-
-.read-more,
-.latest-posts .read-more {
+.breathe-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.06);
+  background-color: #fdf4ea;
+}
+.eyebrow {
   display: inline-block;
-  padding: 0.45rem 1rem;
-  border: 2px solid var(--color-accent);
-  color: var(--color-accent);
-  background: transparent;
-  border-radius: 10px;
-  font-weight: 800;
-  text-decoration: none;
-  transition: transform .18s ease, background-color var(--transition), color var(--transition);
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(12, 35, 52, 0.7);
+}
+.breathe-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+.breathe-card p { margin: 0.35rem 0; line-height: 1.6; }
+
+/* Where-to-begin subtitle closer to cards */
+.section-subtitle.section-subtitle--left {
+  margin-bottom: 1.5rem;
+  max-width: 32rem;
 }
 
-.read-more:hover,
-.latest-posts .read-more:hover {
-  background-color: var(--color-accent);
-  color: var(--color-light);
-  transform: translateY(-1px);
-}
-
-/* Tag pills within cards */
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  margin: 0 0 1rem;
-}
-
-.tag {
-  display: inline-flex;
-  align-items: center;
-  padding: .25rem .6rem;
-  border-radius: 999px;
-  font-size: .75rem;
-  font-weight: 800;
-  letter-spacing: .3px;
-  background: var(--color-highlight);
-  color: var(--color-accent);
-  border: 1px solid rgba(199,119,63,.22);
-}
-
-/* Pagination */
-.pagination {
-  display: flex;
-  justify-content: center;
-  gap: .8rem;
-  margin: 1.75rem auto 0;
-  max-width: 980px;
-}
-
-.pagination-link {
-  display: inline-block;
-  padding: .55rem 1rem;
-  border-radius: 10px;
-  border: 1px solid var(--color-mid);
-  background: rgba(255,255,255,.62);
-  color: var(--color-primary);
-  font-weight: 800;
-  text-decoration: none;
-  transition: transform .18s ease, background-color var(--transition), border-color var(--transition);
-}
-
-.pagination-link:hover {
-  transform: translateY(-1px);
-  background: rgba(255,255,255,.85);
-  border-color: rgba(199,119,63,.45);
-}
-
-/* Back to top */
-.back-to-top { text-align: center; margin: 1.5rem 0 0; }
-.back-to-top a {
-  color: var(--color-accent);
-  font-weight: 800;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color var(--transition), color var(--transition);
-}
-.back-to-top a:hover { border-bottom-color: var(--color-accent); }
-
-/* Prevent accidental highlight blocks inside cards */
-.blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) {
-  background: transparent !important;
-}
-
-@media (max-width: 768px) {
-  .page-hero { margin: 1rem auto 1rem; min-height: 200px; }
-  .page-hero__inner { padding: 1.35rem 1.1rem; }
-
-  .blog-search { flex-direction: column; align-items: stretch; }
-  .blog-search button { width: 100%; }
-
-  .blog-card { padding: 1.35rem; }
+@media (max-width: 640px) {
+  .breathe-card { padding: 1.5rem 1.4rem 1.4rem; }
 }
 
 /* ==================================================================
-HERO — Unified (Homepage + Internal hero-card + About match)
+PART 4 — Hero (Homepage + internal hero card)
 ================================================================== */
 
 .hero-banner { position: relative; width: 100%; }
@@ -1022,7 +549,6 @@ HERO — Unified (Homepage + Internal hero-card + About match)
 }
 .hero-button--ghost:hover { background: rgba(247,243,238,.18); }
 
-/* Mobile hero proportions */
 @media (max-width: 768px) {
   .hero-image-wrapper { aspect-ratio: 4 / 5; }
   .hero-overlay {
@@ -1036,10 +562,7 @@ HERO — Unified (Homepage + Internal hero-card + About match)
   }
 }
 
-/* “Hero contained” helper */
-.hero-contained .shell { padding-top: 1.25rem; }
-
-/* Internal hero card (About etc.) */
+/* Hero card (used on homepage + internal pages like About hero) */
 .hero-card {
   position: relative;
   overflow: hidden;
@@ -1049,13 +572,6 @@ HERO — Unified (Homepage + Internal hero-card + About match)
   border: 1px solid var(--line);
   width: 100%;
 }
-
-.hero-card.about-hero {
-  width: 100%;
-  max-width: 100%;
-  aspect-ratio: 16 / 7;
-}
-
 .hero-card img {
   width: 100%;
   height: 100%;
@@ -1064,56 +580,639 @@ HERO — Unified (Homepage + Internal hero-card + About match)
   object-position: center;
 }
 
-.hero-card.about-hero img { filter: saturate(.95) contrast(1.02); }
-
+/* About hero sizing */
+.hero-card.about-hero {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 7;
+}
 @media (max-width: 768px) {
   .hero-card.about-hero { aspect-ratio: 4 / 5; }
 }
 
-/* Quote carousel */
-.quote-carousel {
-  margin: 3rem auto;
-  max-width: 800px;
-  background-color: var(--color-highlight);
-  padding: 2rem;
-  border-radius: var(--radius);
+/* ==================================================================
+PART 5 — Quote Carousel (Homepage) — SINGLE SOURCE OF TRUTH
+================================================================== */
+
+.quote-carousel { margin-top: 0.5rem; }
+.quote-carousel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.quote-carousel-controls { display: flex; gap: 0.5rem; }
+
+.quote-nav {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.85);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+.quote-nav:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.95);
+  border-color: rgba(0,0,0,0.18);
+}
+
+.quote-viewport { position: relative; }
+.quote-track { position: relative; min-height: 170px; }
+
+.quote-slide {
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  transition: opacity 260ms ease, transform 260ms ease;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  padding: 1.25rem 1.25rem 1.05rem;
+}
+.quote-slide.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
   position: relative;
 }
-.quote-carousel blockquote {
-  font-size: 1.2rem;
+
+.quote-slide blockquote {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
   font-style: italic;
-  margin: 0 0 1rem;
-  border-left: 4px solid var(--color-accent);
-  padding-left: 1rem;
-  color: var(--color-primary);
-  display: none;
-  background-color: transparent;
 }
-.quote-carousel blockquote.active { display: block; }
-.quote-dots { display: flex; justify-content: center; gap: .75rem; margin-top: 1rem; }
-.quote-dots .dot {
-  width: 12px;
-  height: 12px;
-  background: #ccc;
-  border-radius: 50%;
+.quote-slide figcaption {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  letter-spacing: .06em;
+}
+
+.quote-dots {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+  align-items: center;
+  justify-content: center;
+}
+.quote-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.18);
+  background: rgba(255,255,255,0.55);
   cursor: pointer;
-  transition: background-color var(--transition);
+  transition: transform 160ms ease, background 160ms ease;
 }
-.quote-dots .dot.active { background: var(--color-accent); }
+.quote-dot.is-active {
+  background: rgba(0,0,0,0.35);
+  transform: scale(1.15);
+}
 
-/* Fade-in utility */
-@keyframes fadeIn {
-  from { opacity:0; transform: translateY(-10px); }
-  to   { opacity:1; transform: translateY(0); }
+@media (max-width: 640px) {
+  .quote-carousel-top { align-items: flex-start; flex-direction: column; }
+  .quote-track { min-height: 210px; }
+  .quote-slide { padding: 1.05rem 1.05rem 0.95rem; }
 }
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .6s ease-out, transform .6s ease-out;
-}
-.fade-in.in-view { opacity: 1; transform: translateY(0); }
 
-/* Accordion */
+/* (Optional legacy quote cards — kept for any page still using .quote-card) */
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+.quote-card {
+  background: #f6efe5;
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+.quote-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.1rem;
+  bottom: 1.1rem;
+  width: 3px;
+  background: var(--color-accent);
+  opacity: 0.8;
+}
+.quote-card blockquote {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(12, 35, 52, 0.9);
+}
+.quote-card figcaption {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(12, 35, 52, 0.7);
+}
+.quote-card:hover { box-shadow: 0 14px 32px rgba(0, 0, 0, 0.07); }
+
+/* ==================================================================
+PART 6 — Page Hero (Blog / internal pages)
+================================================================== */
+
+.page-hero {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 980px;
+  margin: 1.25rem auto 1.25rem;
+  min-height: 220px;
+  background: #111;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--line);
+}
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05) contrast(1.05);
+  transform: scale(1.02);
+}
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 42, 58, 0.35),
+    rgba(15, 42, 58, 0.52)
+  );
+}
+.page-hero__inner {
+  position: relative;
+  z-index: 1;
+  padding: 1.7rem 1.6rem;
+  max-width: 820px;
+}
+.page-hero__title { margin: 0 0 .45rem; color: var(--color-light); letter-spacing: .2px; }
+.page-hero__page { font-weight: 700; opacity: .9; margin-left: .25rem; font-size: .95em; }
+.page-hero__subtitle {
+  margin: 0;
+  max-width: 720px;
+  color: rgba(255,255,255,.92);
+  line-height: 1.55;
+}
+@media (max-width: 768px) {
+  .page-hero { margin: 1rem auto 1rem; min-height: 200px; }
+  .page-hero__inner { padding: 1.35rem 1.1rem; }
+  .page-hero::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(15, 42, 58, 0.30),
+      rgba(15, 42, 58, 0.48)
+    );
+  }
+}
+
+/* ==================================================================
+PART 7 — Blog (Search + Results + Cards + Pagination)
+================================================================== */
+
+.blog-top {
+  max-width: 980px;
+  margin: 0 auto 1.25rem;
+  padding: 0 1rem;
+}
+
+.blog-search {
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+  max-width: 980px;
+  margin: 0 auto 1rem;
+}
+.blog-search input[type="search"] {
+  flex: 1;
+  padding: .65rem .9rem;
+  border: 1px solid var(--color-mid);
+  border-radius: 10px;
+  background: rgba(255,255,255,.78);
+  box-shadow: 0 8px 22px rgba(0,0,0,.05);
+  outline: none;
+}
+.blog-search input[type="search"]:focus {
+  border-color: rgba(199,119,63,.55);
+  box-shadow: 0 0 0 4px rgba(199,119,63,.14);
+}
+.blog-search button {
+  padding: .65rem 1.05rem;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .18s ease, background-color var(--transition), color var(--transition);
+}
+.blog-search button:hover {
+  background: var(--color-accent);
+  color: var(--color-light);
+  transform: translateY(-1px);
+}
+.search-count {
+  color: var(--color-muted);
+  font-size: .95rem;
+  margin-left: .1rem;
+  min-width: 3ch;
+}
+
+.blog-search-results {
+  list-style: none;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+  max-width: 980px;
+  display: grid;
+  gap: 1rem;
+}
+.search-result {
+  background: rgba(255,255,255,.82);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.4rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--line);
+}
+.search-title { font-weight: 800; text-decoration: none; color: var(--color-primary); }
+.search-title:hover { color: var(--color-accent); }
+.search-snippet { margin: .55rem 0 .35rem; color: var(--color-primary); }
+.search-meta { color: var(--color-muted); font-size: .9rem; }
+
+/* Chips in search */
+.chip {
+  display: inline-block;
+  margin-left: .35rem;
+  padding: .1rem .55rem;
+  background: var(--color-highlight);
+  color: var(--color-accent);
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 700;
+}
+.chip.emo { background: rgba(17,34,52,.10); color: var(--color-primary); }
+
+/* Empty state */
+.empty-state {
+  max-width: 980px;
+  margin: 0 auto 1.75rem;
+  padding: 1.4rem 1.5rem;
+  background: rgba(255,255,255,.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+}
+.empty-state h3 { margin: 0 0 .5rem; }
+.empty-state p { margin: .35rem 0; }
+.empty-state code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: .95em;
+}
+
+/* Blog card list */
+.blog-list,
+.latest-posts .blog-list {
+  display: grid;
+  gap: 1.6rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.blog-card,
+.latest-posts .blog-card {
+  background: rgba(255,255,255,.82);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--line);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.blog-card:hover,
+.latest-posts .blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.blog-card-content h3 { margin: 0 0 .35rem; }
+.blog-card-content h3 a { text-decoration: none; color: var(--color-primary); }
+.blog-card-content h3 a:hover { color: var(--color-accent); }
+
+.blog-card .excerpt { margin: .65rem 0 1rem; color: var(--color-primary); }
+
+/* Hide dates in blog cards only */
+.blog-card .post-date,
+.latest-posts .blog-card .post-date { display: none !important; }
+
+.read-more,
+.latest-posts .read-more {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+  border-radius: 10px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .18s ease, background-color var(--transition), color var(--transition);
+}
+.read-more:hover,
+.latest-posts .read-more:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  transform: translateY(-1px);
+}
+
+/* Tag pills within cards */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0 0 1rem;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .3px;
+  background: var(--color-highlight);
+  color: var(--color-accent);
+  border: 1px solid rgba(199,119,63,.22);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: .8rem;
+  margin: 1.75rem auto 0;
+  max-width: 980px;
+}
+.pagination-link {
+  display: inline-block;
+  padding: .55rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-mid);
+  background: rgba(255,255,255,.62);
+  color: var(--color-primary);
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .18s ease, background-color var(--transition), border-color var(--transition);
+}
+.pagination-link:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.85);
+  border-color: rgba(199,119,63,.45);
+}
+
+/* Back to top */
+.back-to-top { text-align: center; margin: 1.5rem 0 0; }
+.back-to-top a {
+  color: var(--color-accent);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition), color var(--transition);
+}
+.back-to-top a:hover { border-bottom-color: var(--color-accent); }
+
+/* Prevent accidental highlight blocks inside cards */
+.blog-card :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,span,strong,em,small,code) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .blog-search { flex-direction: column; align-items: stretch; }
+  .blog-search button { width: 100%; }
+  .blog-card { padding: 1.35rem; }
+}
+
+/* ==================================================================
+PART 8 — Post Page (Hero + Card + Readability) + Post Nav
+================================================================== */
+
+/* Hide meta blocks you don’t want shown */
+.post-meta, .post-date, .post-emotions { display: none !important; }
+
+/* Post hero card */
+.post-hero{
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+  max-width: 980px;
+  margin: 1.25rem auto 0;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+}
+.post-hero-bg{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(.95) contrast(1.02);
+  transform: scale(1.02);
+}
+.post-hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15,42,58,.58),
+    rgba(15,42,58,.75)
+  );
+}
+.post-hero-inner{
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem 3rem;
+  color: var(--color-light);
+  text-align: left;
+}
+.post-hero-title{
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: .2px;
+  color: #F7F3EE;
+  text-shadow: 0 14px 36px rgba(0,0,0,.35);
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
+}
+.post-hero-subtitle{
+  display: block;
+  margin-top: .65rem;
+  max-width: 820px;
+  color: rgba(247,243,238,.92);
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  line-height: 1.55;
+  font-weight: 400;
+  opacity: .95;
+}
+
+/* Post body container */
+.post-wrap{
+  width: min(1120px, calc(100% - 2rem));
+  margin: 1.25rem auto 3rem;
+}
+.post-card{
+  background: rgba(255,255,255,.82);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(1.25rem, 2.2vw, 2rem);
+}
+.post-content{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings inside post content */
+.post-content h2{
+  margin: 2.1rem 0 .75rem;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+.post-content h3{
+  margin: 1.7rem 0 .65rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Paragraph rhythm */
+.post-content p{
+  margin: 0 0 1rem;
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post-content > p:first-of-type{
+  font-size: 1.12rem;
+  line-height: 1.85;
+  margin-bottom: 1.6rem;
+}
+
+/* Lists + quotes align with paragraph width */
+.post-content ul,
+.post-content ol,
+.post-content blockquote{
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post-content ul,
+.post-content ol{
+  margin-top: .25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.25rem;
+}
+.post-content li{ margin: .35rem 0; line-height: 1.75; }
+
+/* Quotes */
+.post-content blockquote{
+  margin: 1.25rem auto;
+  padding: 1.05rem 1.2rem;
+  border-left: 4px solid rgba(199,119,63,.55);
+  background: rgba(17,34,52,.04);
+  border-radius: 12px;
+}
+.post-content blockquote p{ margin: 0; }
+
+/* Post nav */
+.post-nav{
+  margin: 2.25rem auto 0;
+  padding: 1.25rem 1rem 0;
+  max-width: 760px;
+  border-top: 1px solid var(--color-mid);
+}
+.post-nav-back{
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+.post-nav-back:hover{ text-decoration: underline; }
+.post-nav-links{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .9rem;
+}
+.post-nav-prev, .post-nav-next{
+  text-decoration: none;
+  background: var(--color-highlight);
+  border: 1px solid var(--color-mid);
+  border-radius: 16px;
+  padding: .9rem 1rem;
+}
+.post-nav-kicker{
+  display: block;
+  font-size: .85rem;
+  color: var(--color-muted);
+  margin-bottom: .25rem;
+}
+.post-nav-title{
+  display: block;
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1.25;
+}
+@media (max-width: 640px){
+  .post-nav-links{ grid-template-columns: 1fr; }
+}
+
+/* Mobile */
+@media (max-width: 640px){
+  .post-hero-inner{ padding: 3.1rem 1rem 2.3rem; }
+  .post-wrap{ width: calc(100% - 1.5rem); }
+  .post-card{ padding: 1.25rem 1rem; }
+  .post-content{ font-size: 1.02rem; }
+  .post-content > p:first-of-type{ font-size: 1.06rem; line-height: 1.8; }
+  .post-hero-overlay{
+    background: linear-gradient(
+      to bottom,
+      rgba(15,42,58,.54),
+      rgba(15,42,58,.70)
+    );
+  }
+}
+
+/* ==================================================================
+PART 9 — Accordion
+================================================================== */
+
 .accordion-list { list-style: none; padding-left: 0; margin: 0.6rem 0 1rem; }
 .accordion-item { border-bottom: 1px solid var(--color-mid); }
 .accordion-button {
@@ -1142,10 +1241,9 @@ HERO — Unified (Homepage + Internal hero-card + About match)
 .accordion-content.open { display: block; }
 
 /* ==================================================================
-PART 4 — Music Therapy + Tags/Emotions
+PART 10 — Music Therapy + Tags/Emotions
 ================================================================== */
 
-/* Music Therapy */
 .music-therapy-main { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
 
 .music-posts-grid {
@@ -1153,7 +1251,6 @@ PART 4 — Music Therapy + Tags/Emotions
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
-
 .post {
   background: var(--color-light);
   padding: 1rem;
@@ -1162,11 +1259,10 @@ PART 4 — Music Therapy + Tags/Emotions
   transition: transform var(--transition);
 }
 .post:hover { transform: translateY(-4px); }
-
 .post-thumbnail { width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; }
 .post-description { font-size: 1rem; }
 
-/* Tags & Emotion Filters */
+/* Tag + emotion filters */
 .tag-filter { text-align: center; margin: 2rem 0; }
 
 .post-tag,
@@ -1185,7 +1281,6 @@ PART 4 — Music Therapy + Tags/Emotions
   color: var(--color-accent);
   transition: background-color var(--transition), color var(--transition), transform .2s ease;
 }
-
 .post-tag:hover,
 .post-tag.active,
 .emotion-button.active {
@@ -1193,7 +1288,6 @@ PART 4 — Music Therapy + Tags/Emotions
   color: #fff;
   transform: scale(1.05);
 }
-
 .emotion-button {
   background: #dbe5ea;
   color: var(--color-primary);
@@ -1228,8 +1322,175 @@ PART 4 — Music Therapy + Tags/Emotions
 }
 .emotion-list p { font-size: 1rem; color: #444; margin-top: .5rem; }
 
+/* Music & Meaning – Emotion Grid */
+.emotion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 2.5rem;
+  padding: 0;
+}
+.emotion-grid li {
+  list-style: none;
+  padding: 1rem 1.25rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.02);
+}
+.emotion-grid li strong { display: block; margin-bottom: 0.25rem; }
+.emotion-grid li a {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  text-decoration: none;
+}
+.emotion-grid li a:hover { opacity: 1; text-decoration: underline; }
+
+/* Music & Meaning – intro card */
+.breathe-card--info {
+  margin: 2rem 0;
+  padding: 1.5rem 1.75rem;
+  border-radius: 1rem;
+  background-color: #fdfaf6;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.breathe-card--info strong { display: block; margin-bottom: 0.5rem; }
+.breathe-card--info ol { margin: 0.5rem 0 0.75rem; padding-left: 1.25rem; }
+.breathe-card--info p:last-child { margin: 0; font-style: italic; opacity: 0.9; }
+
 /* ==================================================================
-PART 5 — Accent Band + Footer + Home/Sections Utilities
+PART 11 — Principles Navigation
+================================================================== */
+
+.principle-nav { margin-top: 3rem; padding-top: 1rem; font-size: 0.95rem; }
+.principle-nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.principle-step-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.principle-step-links a,
+.principle-nav-back {
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+.principle-step-links a:hover,
+.principle-nav-back:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.section-divider {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ==================================================================
+PART 12 — About Page
+================================================================== */
+
+/* Slimmer hero */
+.about-hero {
+  max-width: 980px;
+  max-height: 220px;
+  margin: 1.8rem auto 2.2rem;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+}
+.about-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Intro */
+.about-intro .lead { max-width: 44rem; }
+
+/* Steps container */
+.about-steps {
+  position: relative;
+  margin: 0 auto 2.5rem;
+  max-width: 50rem;
+  padding-left: 1.8rem;
+  border-left: 2px solid rgba(12, 35, 52, 0.1);
+}
+.about-step { position: relative; margin-bottom: 2rem; }
+.about-step::before {
+  content: "";
+  position: absolute;
+  left: -1.05rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(199, 119, 63, 0.2);
+}
+.about-step-title {
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: rgba(12, 35, 52, 0.85);
+}
+.about-step p {
+  margin: 0 0 0.7rem;
+  line-height: 1.7;
+  color: rgba(12, 35, 52, 0.9);
+}
+
+/* Quote card */
+.about-quote-card {
+  max-width: 40rem;
+  margin: 0 auto 2.5rem;
+  padding: 1.6rem 1.8rem;
+  background: #f6efe5;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+.about-quote-card blockquote {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: rgba(12, 35, 52, 0.9);
+}
+.about-quote-card figcaption {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: rgba(12, 35, 52, 0.7);
+}
+
+/* Personal note */
+.about-note { max-width: 44rem; margin: 0 auto; }
+.about-note h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.about-note p { margin: 0 0 0.8rem; line-height: 1.7; }
+.about-note .about-cta { margin-top: 0.8rem; font-weight: 500; }
+
+@media (max-width: 640px) {
+  .about-hero { max-height: 180px; margin: 1.2rem auto 2rem; border-radius: 14px; }
+  .about-steps { padding-left: 1.4rem; }
+  .about-step::before { left: -0.9rem; }
+  .about-quote-card { padding: 1.4rem 1.5rem; border-radius: 14px; }
+}
+
+/* ==================================================================
+PART 13 — Footer + Accent Band + Print
 ================================================================== */
 
 .accent-band {
@@ -1321,630 +1582,17 @@ PART 5 — Accent Band + Footer + Home/Sections Utilities
   .footer-nav a, .footer-note a { color: #000 !important; border: 0 !important; }
 }
 
-/* =========================================================
-HOME / SECTIONS — Utilities + spacing fixes
-========================================================= */
-
-.grid { display: grid; }
-.center { text-align: center; }
-
-.gap-8 { gap: 1.25rem; }
-.gap-10 { gap: 1.75rem; }
-
-.small-note {
-  color: var(--color-muted);
-  font-size: 0.98rem;
-  line-height: 1.65;
-}
-
-/* Let sections control vertical rhythm (not container padding) */
-#content .section .container,
-#content .section--alt .container,
-#content .latest-posts .container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/* Section spacing */
-#content .section { padding: 3.25rem 0; }
-
-@media (max-width: 768px) {
-  #content .section { padding: 2.5rem 0; }
-}
-
-/* Titles + subtitles */
-.section-title {
-  margin: 0 0 0.75rem;
-  text-align: center;
-  color: var(--color-accent);
-}
-
-.section-subtitle {
-  max-width: 760px;
-  margin: 0 auto 0.9rem;
-  text-align: center;
-  color: var(--color-primary);
-  font-size: 1.05rem;
-  line-height: 1.65;
-}
-
-#content .section .small-note {
-  max-width: 760px;
-  margin: 0.2rem auto 0;
-  text-align: center;
-}
-
-/* Start Here cards */
-.home-cards { margin-top: 1.6rem; }
-.home-cards .breathe-card h3 { margin: 0 0 0.55rem; }
-
-/* Recent reflections */
-.latest-posts .grid {
-  max-width: 860px;
-  margin: 1.25rem auto 0;
-}
-
-.latest-posts .blog-card { margin: 0; }
-
-.latest-posts .blog-card-title { margin: 0 0 0.35rem; }
-
-.latest-posts .blog-card-meta {
-  margin: 0 0 0.75rem;
-  color: var(--color-muted);
-  font-size: 0.95rem;
-}
-
-.latest-posts .blog-card-excerpt {
-  margin: 0 0 1rem;
-  color: var(--color-primary);
-}
-
-.latest-posts .small-note.center { margin-top: 1.35rem; }
-/* ===============================
-   Principles Navigation
-   =============================== */
-
-.principle-nav {
-  margin-top: 3rem;
-  padding-top: 1rem;
-  font-size: 0.95rem;
-}
-
-.principle-nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* Keeps layout clean on mobile */
-  gap: 1rem;
-}
-
-.principle-step-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.principle-step-links a,
-.principle-nav-back {
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
-  white-space: nowrap;
-}
-
-.principle-step-links a:hover,
-.principle-nav-back:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-.section-divider {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  border: none;
-  height: 1px;
-  background-color: var(--border-color, rgba(255, 255, 255, 0.2));
-}
-/* ===============================
-   Music & Meaning – Emotion Grid
-   =============================== */
-
-.emotion-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0 2.5rem;
-  padding: 0;
-}
-
-.emotion-grid li {
-  list-style: none;
-  padding: 1rem 1.25rem;
-  border-radius: 0.9rem;
-  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12));
-  background: var(--card-bg, rgba(255, 255, 255, 0.02));
-}
-
-.emotion-grid li strong {
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.emotion-grid li a {
-  display: inline-block;
-  margin-top: 0.25rem;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  text-decoration: none;
-}
-
-.emotion-grid li a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-/* ===============================
-   Music & Meaning – intro card
-   =============================== */
-
-.breathe-card--info {
-  margin: 2rem 0;
-  padding: 1.5rem 1.75rem;
-  border-radius: 1rem;
-  background-color: #fdfaf6; /* soft, warm off-white */
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.breathe-card--info strong {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.breathe-card--info ol {
-  margin: 0.5rem 0 0.75rem;
-  padding-left: 1.25rem;
-}
-
-.breathe-card--info p:last-child {
-  margin: 0;
-  font-style: italic;
-  opacity: 0.9;
-}
-.section-title--left,
-.section-subtitle--left {
-  text-align: left;
-}
-/* Offset in-page jump links so the sticky header doesn't cover headings */
-#content [id] {
-  scroll-margin-top: 150px;  /* tweak this number if needed */
-}
-
-/* ---------------------------
-   Home – “Where to Begin”
-----------------------------*/
-
-/* Make the grid more responsive + breathable */
-.home-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.75rem;
-}
-
-/* Base card styling */
-.breathe-card {
-  background: #fdf8f2; /* warm, paper-like */
-  border-radius: 14px;
-  padding: 1.75rem 1.8rem 1.6rem;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
-  position: relative;
-  overflow: hidden;
-  transition: transform 160ms ease-out, box-shadow 160ms ease-out,
-              border-color 160ms ease-out, background-color 160ms ease-out;
-}
-
-/* Subtle accent bar at the top of each card */
-.breathe-card::before {
-  content: "";
-  position: absolute;
-  inset-inline: 0;
-  top: 0;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--accent-color, #c37a3c),
-    rgba(195, 122, 60, 0.15)
-  );
-  opacity: 0.85;
-}
-
-/* Hover: small lift + slightly deeper shadow */
-.breathe-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
-  border-color: rgba(0, 0, 0, 0.06);
-  background-color: #fdf4ea;
-}
-
-/* Eyebrow label (“Step 1”, etc.) */
-.eyebrow {
-  display: inline-block;
-  margin-bottom: 0.25rem;
-  font-size: 0.7rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: rgba(12, 35, 52, 0.7);
-}
-
-/* Card titles + text */
-.breathe-card h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
-}
-
-.breathe-card p {
-  margin: 0.35rem 0;
-  line-height: 1.6;
-}
-
-/* Where-to-begin subtitle closer to cards */
-.section-subtitle.section-subtitle--left {
-  margin-bottom: 1.5rem;
-  max-width: 32rem;
-}
-
-/* ---------------------------
-   Take a Moment
-----------------------------*/
-
-.breathe-card--center {
-  max-width: 520px;
-  margin: 0 auto 2.4rem;
-  text-align: center;
-}
-
-.breathe-card--center h3 {
-  margin-bottom: 0.4rem;
-}
-
-/* ---------------------------
-   Quote Cards
-----------------------------*/
-
-.quote-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.25rem;
-}
-
-.quote-card {
-  background: #f6efe5;
-  border-radius: 14px;
-  padding: 1.4rem 1.6rem;
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
-  position: relative;
-}
-
-/* Accent strip on the left */
-.quote-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 1.1rem;
-  bottom: 1.1rem;
-  width: 3px;
-  background: var(--accent-color, #c37a3c);
-  opacity: 0.8;
-}
-
-/* Quote text */
-.quote-card blockquote {
-  margin: 0 0 0.75rem;
-  font-style: italic;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: rgba(12, 35, 52, 0.9);
-}
-
-/* Author */
-.quote-card figcaption {
-  font-size: 0.8rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: rgba(12, 35, 52, 0.7);
-}
-
-/* Slight hover hint (but calmer than main cards) */
-.quote-card:hover {
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.07);
-}
-
-/* ---------------------------
-   Small screens
-----------------------------*/
-
-@media (max-width: 640px) {
-  .breathe-card {
-    padding: 1.5rem 1.4rem 1.4rem;
-  }
-
-  .quote-card {
-    padding: 1.25rem 1.35rem;
-  }
-}
-/* ---------------------------
-   About Page
-----------------------------*/
-
-/* Slimmer hero to match blog feel */
-.about-hero {
-  max-width: 980px;
-  max-height: 220px;
-  margin: 1.8rem auto 2.2rem;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
-}
-
-.about-hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Intro */
-.about-intro .lead {
-  max-width: 44rem;
-}
-
-/* Steps container – subtle “path” feel */
-.about-steps {
-  position: relative;
-  margin: 0 auto 2.5rem;
-  max-width: 50rem;
-  padding-left: 1.8rem;
-  border-left: 2px solid rgba(12, 35, 52, 0.1);
-}
-
-.about-step {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-/* Step markers (little circles on the path) */
-.about-step::before {
-  content: "";
-  position: absolute;
-  left: -1.05rem;
-  top: 0.35rem;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--accent-color, #c37a3c);
-  box-shadow: 0 0 0 4px rgba(195, 122, 60, 0.2);
-}
-
-/* Step titles */
-.about-step-title {
-  font-size: 1.05rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-  color: rgba(12, 35, 52, 0.85);
-}
-
-/* Step body text */
-.about-step p {
-  margin: 0 0 0.7rem;
-  line-height: 1.7;
-  color: rgba(12, 35, 52, 0.9);
-}
-
-/* Quote card – calm, reflective */
-.about-quote-card {
-  max-width: 40rem;
-  margin: 0 auto 2.5rem;
-  padding: 1.6rem 1.8rem;
-  background: #f6efe5;
-  border-radius: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
-}
-
-.about-quote-card blockquote {
-  margin: 0 0 0.75rem;
-  font-style: italic;
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: rgba(12, 35, 52, 0.9);
-}
-
-.about-quote-card figcaption {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-weight: 600;
-  color: rgba(12, 35, 52, 0.7);
-}
-
-/* Personal note section */
-.about-note {
-  max-width: 44rem;
-  margin: 0 auto;
-}
-
-.about-note h3 {
-  margin-bottom: 0.4rem;
-  font-size: 1.05rem;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-.about-note p {
-  margin: 0 0 0.8rem;
-  line-height: 1.7;
-}
-
-.about-note .about-cta {
-  margin-top: 0.8rem;
-  font-weight: 500;
-}
-
-/* Mobile tweaks */
-@media (max-width: 640px) {
-  .about-hero {
-    max-height: 180px;
-    margin: 1.2rem auto 2rem;
-    border-radius: 14px;
-  }
-
-  .about-steps {
-    padding-left: 1.4rem;
-  }
-
-  .about-step::before {
-    left: -0.9rem;
-  }
-
-  .about-quote-card {
-    padding: 1.4rem 1.5rem;
-    border-radius: 14px;
-  }
-}
-/* Force left-align for homepage "Where to Begin" subtitle (in case a global rule centers it) */
-.section-subtitle.section-subtitle--left {
-  text-align: left !important;
-  margin-left: 0 !important;
-  margin-right: auto !important;
-}
-
-/* -----------------------------
-   Quote Carousel (Homepage)
------------------------------- */
-
-.quote-carousel {
-  margin-top: 0.5rem;
-}
-
-.quote-carousel-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.quote-carousel-controls {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.quote-nav {
-  width: 42px;
-  height: 42px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,0.12);
-  background: rgba(255,255,255,0.85);
-  cursor: pointer;
-  font-size: 22px;
-  line-height: 1;
-  display: grid;
-  place-items: center;
-  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
-}
-
-.quote-nav:hover {
-  transform: translateY(-1px);
-  background: rgba(255,255,255,0.95);
-  border-color: rgba(0,0,0,0.18);
-}
-
-.quote-viewport {
-  position: relative;
-}
-
-.quote-track {
-  position: relative;
-  min-height: 170px; /* keeps layout stable as quotes change */
-}
-
-.quote-slide {
+/* ==================================================================
+PART 14 — Optional animation utility (used by scroll scripts)
+================================================================== */
+
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(-10px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+.fade-in {
   opacity: 0;
-  transform: translateY(6px);
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  transition: opacity 260ms ease, transform 260ms ease;
-  
-  /* Match your card style (safe defaults if quote-card existed) */
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-  padding: 1.25rem 1.25rem 1.05rem;
+  transform: translateY(20px);
+  transition: opacity .6s ease-out, transform .6s ease-out;
 }
-
-.quote-slide.is-active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  position: relative;
-}
-
-.quote-slide blockquote {
-  margin: 0 0 0.75rem 0;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-.quote-slide figcaption {
-  font-size: 0.95rem;
-  opacity: 0.8;
-}
-
-.quote-dots {
-  display: flex;
-  gap: 0.45rem;
-  margin-top: 0.9rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.quote-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,0.18);
-  background: rgba(255,255,255,0.55);
-  cursor: pointer;
-  transition: transform 160ms ease, background 160ms ease;
-}
-
-.quote-dot.is-active {
-  background: rgba(0,0,0,0.35);
-  transform: scale(1.15);
-}
-
-/* Mobile spacing tweaks */
-@media (max-width: 640px) {
-  .quote-carousel-top {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .quote-track {
-    min-height: 210px;
-  }
-
-  .quote-slide {
-    padding: 1.05rem 1.05rem 0.95rem;
-  }
-}
-
+.fade-in.in-view { opacity: 1; transform: translateY(0); }
