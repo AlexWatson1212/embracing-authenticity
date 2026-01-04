@@ -10,32 +10,63 @@
     </button>
 
     <ul id="primary-nav" class="nav__links" hidden>
-      {% comment %}
-      Render links from site.nav with active-state.
-      {% endcomment %}
-      {% for item in site.nav %}
-        {% assign is_active = page.url == item.url or page.url == item.url | append: '/' %}
+      {%- comment -%}
+      MAIN NAV:
+      - Keep top nav to the 4 “doorways”
+      - Replace Principles with Self-Discovery
+      - Keep Neurodivergent Lens visible (as before)
+      - Principles should live in the footer / contextual links (not in header)
+      {%- endcomment -%}
+
+      {%- assign nav_items = site.nav -%}
+
+      {%- comment -%}
+      1) Render everything EXCEPT Principles (we'll inject Self-Discovery instead)
+      {%- endcomment -%}
+      {%- for item in nav_items -%}
+        {%- assign item_url = item.url | append: '' -%}
+        {%- if item_url == '/principles' or item_url == '/principles/' -%}
+          {%- continue -%}
+        {%- endif -%}
+
+        {%- assign is_active = page.url == item.url or page.url == item.url | append: '/' -%}
         <li>
           <a href="{{ item.url | relative_url }}"
              {% if is_active %}aria-current="page" class="is-active"{% endif %}>
             {{ item.text }}
           </a>
         </li>
-      {% endfor %}
+      {%- endfor -%}
 
-      {% comment %}
-      Ensure "Neurodivergent Lens" appears even if not in site.nav.
-      {% endcomment %}
-      {% assign lens_matches = site.nav | where: 'url', '/neurodivergent-lens' | size %}
-      {% if lens_matches == 0 %}
-        {% assign lens_active = page.url == '/neurodivergent-lens' or page.url == '/neurodivergent-lens/' %}
+      {%- comment -%}
+      2) Inject Self-Discovery (only if it's not already in site.nav)
+      Change the URL below to whatever your Self-Discovery page will be.
+      I’m assuming /self-discovery — adjust if yours is /journey or /discover etc.
+      {%- endcomment -%}
+      {%- assign sd_matches = site.nav | where: 'url', '/self-discovery' | size -%}
+      {%- if sd_matches == 0 -%}
+        {%- assign sd_active = page.url == '/self-discovery' or page.url == '/self-discovery/' -%}
+        <li>
+          <a href="{{ '/self-discovery' | relative_url }}"
+             {% if sd_active %}aria-current="page" class="is-active"{% endif %}>
+            Self-Discovery
+          </a>
+        </li>
+      {%- endif -%}
+
+      {%- comment -%}
+      3) Ensure "Neurodivergent Lens" appears even if not in site.nav (unchanged)
+      {%- endcomment -%}
+      {%- assign lens_matches = site.nav | where: 'url', '/neurodivergent-lens' | size -%}
+      {%- if lens_matches == 0 -%}
+        {%- assign lens_active = page.url == '/neurodivergent-lens' or page.url == '/neurodivergent-lens/' -%}
         <li>
           <a href="{{ '/neurodivergent-lens' | relative_url }}"
              {% if lens_active %}aria-current="page" class="is-active"{% endif %}>
             Neurodivergent Lens
           </a>
         </li>
-      {% endif %}
+      {%- endif -%}
     </ul>
   </nav>
 </header>

@@ -1658,3 +1658,7 @@ PART 14 — Optional animation utility (used by scroll scripts)
   transition: opacity .6s ease-out, transform .6s ease-out;
 }
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
+/* Active link highlight for legacy <nav class="nav"> system */
+.nav__links a.is-active {
+  border-bottom-color: var(--ea-accent);
+}
