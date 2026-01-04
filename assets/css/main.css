@@ -7,6 +7,7 @@ Goals:
 - Keep BOTH nav systems (.site-header and .nav) working
 - Keep blog, post hero, page hero, cards, tags/emotions, footer, accordion
 - Keep new Quote Carousel (single source of truth)
+- Integrate homepage “less boxy” refinements (alt sections, cards, quotes, latest)
 ====================================================================
 */
 
@@ -401,6 +402,13 @@ PART 3 — Sections, Utilities, Home cards
   margin-right: auto !important;
 }
 
+/* Alternating section background (warm blush) */
+.section--alt {
+  background: rgba(243,231,220,.65);
+  border-top: 1px solid rgba(17,34,52,.06);
+  border-bottom: 1px solid rgba(17,34,52,.06);
+}
+
 /* Home – “Where to Begin” */
 .home-cards {
   display: grid;
@@ -409,9 +417,9 @@ PART 3 — Sections, Utilities, Home cards
   margin-top: 1.6rem;
 }
 
-/* Base card */
+/* Base card (softened) */
 .breathe-card {
-  background: #fdf8f2;
+  background: rgba(255,255,255,.68);
   border-radius: 14px;
   padding: 1.75rem 1.8rem 1.6rem;
   border: 1px solid rgba(0, 0, 0, 0.04);
@@ -419,6 +427,7 @@ PART 3 — Sections, Utilities, Home cards
   position: relative;
   overflow: hidden;
   transition: transform 160ms ease-out, box-shadow 160ms ease-out, border-color 160ms ease-out, background-color 160ms ease-out;
+  backdrop-filter: blur(2px);
 }
 .breathe-card::before {
   content: "";
@@ -433,7 +442,7 @@ PART 3 — Sections, Utilities, Home cards
   transform: translateY(-3px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
   border-color: rgba(0, 0, 0, 0.06);
-  background-color: #fdf4ea;
+  background-color: rgba(255,255,255,.78);
 }
 .eyebrow {
   display: inline-block;
@@ -594,33 +603,22 @@ PART 4 — Hero (Homepage + internal hero card)
 PART 5 — Quote Carousel (Homepage) — SINGLE SOURCE OF TRUTH
 ================================================================== */
 
-.quote-carousel { margin-top: 0.5rem; }
+/* Feature-like wrapper (less “another white box”) */
+.quote-carousel {
+  margin-top: 0.5rem;
+  padding: 1.25rem 1.25rem 1.1rem;
+  border-radius: 18px;
+  background: rgba(243,231,220,.45);
+  border: 1px solid rgba(17,34,52,.06);
+  box-shadow: 0 10px 26px rgba(0,0,0,.05);
+}
+
 .quote-carousel-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1rem;
-}
-.quote-carousel-controls { display: flex; gap: 0.5rem; }
-
-.quote-nav {
-  width: 42px;
-  height: 42px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,0.12);
-  background: rgba(255,255,255,0.85);
-  cursor: pointer;
-  font-size: 22px;
-  line-height: 1;
-  display: grid;
-  place-items: center;
-  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
-}
-.quote-nav:hover {
-  transform: translateY(-1px);
-  background: rgba(255,255,255,0.95);
-  border-color: rgba(0,0,0,0.18);
 }
 
 .quote-viewport { position: relative; }
@@ -634,7 +632,7 @@ PART 5 — Quote Carousel (Homepage) — SINGLE SOURCE OF TRUTH
   inset: 0;
   transition: opacity 260ms ease, transform 260ms ease;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255,255,255,.70);
   border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 10px 24px rgba(0,0,0,0.08);
   padding: 1.25rem 1.25rem 1.05rem;
@@ -661,10 +659,10 @@ PART 5 — Quote Carousel (Homepage) — SINGLE SOURCE OF TRUTH
 .quote-dots {
   display: flex;
   gap: 0.45rem;
-  margin-top: 0.9rem;
   align-items: center;
   justify-content: center;
 }
+
 .quote-dot {
   width: 9px;
   height: 9px;
@@ -679,10 +677,57 @@ PART 5 — Quote Carousel (Homepage) — SINGLE SOURCE OF TRUTH
   transform: scale(1.15);
 }
 
+/* Controls underneath (homepage) */
+.quote-carousel-controls--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+/* Base quote nav (kept, but neutral) */
+.quote-nav {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.85);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, opacity 160ms ease;
+}
+.quote-nav:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.95);
+  border-color: rgba(0,0,0,0.18);
+}
+
+/* Make arrows secondary ONLY in bottom bar */
+.quote-carousel-controls--bottom .quote-nav {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  opacity: 0.75;
+  background: rgba(255,255,255,0.7);
+  box-shadow: none;
+}
+.quote-carousel-controls--bottom .quote-nav:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* Ensure dots sit neatly between arrows */
+.quote-carousel-controls--bottom .quote-dots { margin: 0; }
+
 @media (max-width: 640px) {
   .quote-carousel-top { align-items: flex-start; flex-direction: column; }
   .quote-track { min-height: 210px; }
   .quote-slide { padding: 1.05rem 1.05rem 0.95rem; }
+  .quote-carousel-controls--bottom { gap: 0.6rem; }
 }
 
 /* (Optional legacy quote cards — kept for any page still using .quote-card) */
@@ -898,6 +943,7 @@ PART 7 — Blog (Search + Results + Cards + Pagination)
   margin: 0 auto;
 }
 
+/* Cards */
 .blog-card,
 .latest-posts .blog-card {
   background: rgba(255,255,255,.82);
@@ -911,6 +957,22 @@ PART 7 — Blog (Search + Results + Cards + Pagination)
 .latest-posts .blog-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
+}
+
+/* Latest posts — less slabby, more crafted */
+.latest-posts .blog-card {
+  background: rgba(255,255,255,.72);
+  position: relative;
+  overflow: hidden;
+}
+.latest-posts .blog-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: rgba(199,119,63,.55);
 }
 
 .blog-card-content h3 { margin: 0 0 .35rem; }
@@ -1596,41 +1658,3 @@ PART 14 — Optional animation utility (used by scroll scripts)
   transition: opacity .6s ease-out, transform .6s ease-out;
 }
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
-/* -------------------------------------------------
-   Quote carousel — controls underneath (homepage)
--------------------------------------------------- */
-
-.quote-carousel-controls--bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-top: 0.9rem;
-}
-
-/* Soften arrows — make them feel secondary */
-.quote-nav {
-  width: 36px;
-  height: 36px;
-  font-size: 18px;
-  opacity: 0.75;
-  background: rgba(255,255,255,0.7);
-  box-shadow: none;
-}
-
-.quote-nav:hover {
-  opacity: 1;
-  transform: translateY(-1px);
-}
-
-/* Ensure dots sit neatly between arrows */
-.quote-carousel-controls--bottom .quote-dots {
-  margin: 0;
-}
-
-/* Mobile: slightly tighter spacing */
-@media (max-width: 640px) {
-  .quote-carousel-controls--bottom {
-    gap: 0.6rem;
-  }
-}
