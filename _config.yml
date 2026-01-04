@@ -39,7 +39,7 @@ collections:
     output: true
     permalink: /principles/:name/
 
-  # Remove this block if you don't have a /_tag folder
+  # Tag pages live in /_tag and publish to /tag/<filename>/
   tag:
     output: true
     permalink: /tag/:name/
@@ -61,6 +61,8 @@ defaults:
       sitemap: true
 
 # ---- Navigation for _includes/header.html
+# We are removing "Principles" from the top nav and replacing it with "Self-Discovery".
+# Principles stays accessible via footer links and anywhere else you link it.
 nav:
   - text: Start Here
     url: /start-here
@@ -68,8 +70,8 @@ nav:
     url: /music-meaning
   - text: Writing Prompts
     url: /writing-prompts
-  - text: Principles
-    url: /principles
+  - text: Self-Discovery
+    url: /self-discovery
 
 # ---- Misc
 image: /images/default-social.jpg
