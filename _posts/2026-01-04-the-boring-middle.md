@@ -4,7 +4,7 @@ title: "The Boring Middle"
 date: 2026-01-04
 tags: ["connection", "uncertainty"]
 description: "Learning where control ends and connection begins."
-hero_image: /assets/images/posts/example.jpg
+hero_image: /assets/images/posts/the-boring-middle.jpg
 emotions: ["acceptance"]
 ---
 
