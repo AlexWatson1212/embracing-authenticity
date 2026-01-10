@@ -3,6 +3,7 @@ layout: page
 title: "Writing Prompts"
 permalink: /writing-prompts/
 description: "Soft, low-pressure invitations to reflect — no performance, no publishing, just small honest check-ins with yourself."
+hero_image: "/assets/images/heroes/writing-prompts.jpg"
 ---
 
 <p class="lead">
