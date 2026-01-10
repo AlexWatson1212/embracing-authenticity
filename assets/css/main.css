@@ -1662,3 +1662,32 @@ PART 14 — Optional animation utility (used by scroll scripts)
 .nav__links a.is-active {
   border-bottom-color: var(--ea-accent);
 }
+.page-hero {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  background: rgba(15, 30, 40, 0.55);
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 720px;
+  border-radius: 12px;
+}
+
+.hero-overlay h1 {
+  color: #f5f3ef;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-overlay p {
+  color: #e0ddd6;
+  font-size: 1.05rem;
+}
