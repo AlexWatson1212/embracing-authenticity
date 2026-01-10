@@ -492,7 +492,8 @@ PART 4 — Hero (Homepage + internal hero card)
   filter: saturate(.95) contrast(1.02);
 }
 
-.hero-overlay {
+/* ✅ RENAMED: Homepage overlay only (prevents collisions) */
+.home-hero-overlay {
   position: absolute;
   inset: 0;
   display: grid;
@@ -560,7 +561,7 @@ PART 4 — Hero (Homepage + internal hero card)
 
 @media (max-width: 768px) {
   .hero-image-wrapper { aspect-ratio: 4 / 5; }
-  .hero-overlay {
+  .home-hero-overlay {
     padding: 1.25rem;
     background: linear-gradient(
       to top,
@@ -771,7 +772,7 @@ PART 5 — Quote Carousel (Homepage) — SINGLE SOURCE OF TRUTH
 .quote-card:hover { box-shadow: 0 14px 32px rgba(0, 0, 0, 0.07); }
 
 /* ==================================================================
-PART 6 — Page Hero (Blog / internal pages)
+PART 6 — Page Hero (Blog / internal pages) — SINGLE SOURCE OF TRUTH
 ================================================================== */
 
 .page-hero {
@@ -1658,36 +1659,8 @@ PART 14 — Optional animation utility (used by scroll scripts)
   transition: opacity .6s ease-out, transform .6s ease-out;
 }
 .fade-in.in-view { opacity: 1; transform: translateY(0); }
+
 /* Active link highlight for legacy <nav class="nav"> system */
 .nav__links a.is-active {
   border-bottom-color: var(--ea-accent);
-}
-.page-hero {
-  position: relative;
-  width: 100%;
-  min-height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-overlay {
-  background: rgba(15, 30, 40, 0.55);
-  padding: 3rem 2rem;
-  text-align: center;
-  max-width: 720px;
-  border-radius: 12px;
-}
-
-.hero-overlay h1 {
-  color: #f5f3ef;
-  font-size: 2.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-overlay p {
-  color: #e0ddd6;
-  font-size: 1.05rem;
 }
