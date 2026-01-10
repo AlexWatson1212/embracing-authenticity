@@ -6,14 +6,6 @@ description: "A gentle starting point if you're feeling overwhelmed and want sma
 hero_image: "/assets/images/heroes/start-here.jpg"
 ---
 
-<!-- HERO HEADER -->
-<section class="page-hero start-hero" style="background-image: url('{{ page.hero_image | relative_url }}');">
-  <div class="hero-overlay">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
-  </div>
-</section>
-
 <p class="lead">
 You don’t have to “sort your life out” to be here.
 You just have to be willing to take one small, honest step toward yourself.
