@@ -1,13 +1,15 @@
 /*
 ====================================================================
-Embracing Authenticity — Consolidated CSS (Tidied + Functional)
+Embracing Authenticity — Consolidated CSS (Updated)
 --------------------------------------------------------------------
-Goals:
-- Remove true duplicates + conflicting re-definitions
-- Keep BOTH nav systems (.site-header and .nav) working
-- Keep blog, post hero, page hero, cards, tags/emotions, footer, accordion
-- Keep new Quote Carousel (single source of truth)
-- Integrate homepage “less boxy” refinements (alt sections, cards, quotes, latest)
+Updates based on what we've been doing across pages:
+- Add missing “page layout” + prose system so ALL pages match
+- Add consistent Lead + HR styling
+- Make Music & Meaning emotion grid match site card style (not dark/transparent)
+- Add Self-Discovery (sd-*) + Mood Meter styles so that page looks finished
+- Add a consistent CTA link style used across Self-Discovery + elsewhere
+- Keep BOTH nav systems working
+- Keep blog, heroes, cards, tags/emotions, footer, accordion intact
 ====================================================================
 */
 
@@ -148,16 +150,16 @@ a {
 a:hover { color: var(--color-accent); }
 
 /* Only underline content links (not buttons/tags/etc.) */
-main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button) {
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button):not(.cta-link) {
   text-decoration-line: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 2px;
   text-decoration-color: var(--color-accent);
 }
-main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button):hover {
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button):not(.cta-link):hover {
   color: var(--color-accent);
 }
-main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button):focus-visible {
+main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.emotion-button):not(.social):not(.hero-button):not(.cta-link):focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
   border-radius: 2px;
@@ -177,6 +179,60 @@ main :where(p, li, blockquote) a:not(.btn):not(.read-more):not(.post-tag):not(.e
 
 @media (min-width: 860px) {
   :root { --section-pad-y: 2.5rem; }
+}
+
+/* ==================================================================
+NEW — Page Layout + Prose (so all “layout: page” pages match)
+================================================================== */
+
+.page-layout {
+  width: 100%;
+  padding: 0; /* default layout already provides container padding */
+}
+
+/* A “prose” wrapper that keeps reading width consistent site-wide */
+.prose {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Prevent double-padding when you have .container inside default layout */
+.page-layout .container.prose {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Reading width for text blocks */
+.prose :where(p, ul, ol, blockquote) {
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.prose :where(h1, h2, h3, h4) {
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Lead paragraph (used across Start Here / Writing Prompts / etc.) */
+.lead {
+  font-size: 1.12rem;
+  line-height: 1.85;
+  color: rgba(17,34,52,.92);
+  margin-top: 0.25rem;
+}
+@media (max-width: 640px) {
+  .lead { font-size: 1.06rem; }
+}
+
+/* HR (site-wide, softer and consistent) */
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(17,34,52,.14);
+  margin: 2.25rem auto;
+  max-width: 980px;
+  opacity: .85;
 }
 
 /* ==================================================================
@@ -1385,45 +1441,175 @@ PART 10 — Music Therapy + Tags/Emotions
 }
 .emotion-list p { font-size: 1rem; color: #444; margin-top: .5rem; }
 
-/* Music & Meaning – Emotion Grid */
+/* Music & Meaning – Emotion Grid (UPDATED to match site cards) */
 .emotion-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0 2.5rem;
+  gap: 1.25rem;
+  margin: 2rem auto 2.25rem;
   padding: 0;
+  max-width: 980px;
 }
 .emotion-grid li {
   list-style: none;
-  padding: 1rem 1.25rem;
-  border-radius: 0.9rem;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.02);
+  padding: 1.15rem 1.25rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,.68);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,.05);
+  transition: transform 160ms ease-out, box-shadow 160ms ease-out, background-color 160ms ease-out;
+}
+.emotion-grid li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(0,0,0,.07);
+  background: rgba(255,255,255,.78);
 }
 .emotion-grid li strong { display: block; margin-bottom: 0.25rem; }
 .emotion-grid li a {
   display: inline-block;
-  margin-top: 0.25rem;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  text-decoration: none;
+  margin-top: 0.45rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition), color var(--transition);
 }
-.emotion-grid li a:hover { opacity: 1; text-decoration: underline; }
+.emotion-grid li a:hover { border-bottom-color: rgba(199,119,63,.55); }
 
 /* Music & Meaning – intro card */
 .breathe-card--info {
-  margin: 2rem 0;
+  margin: 2rem auto;
+  max-width: 980px;
   padding: 1.5rem 1.75rem;
   border-radius: 1rem;
-  background-color: #fdfaf6;
+  background-color: rgba(255,255,255,.78);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
   font-size: 0.95rem;
   line-height: 1.5;
 }
 .breathe-card--info strong { display: block; margin-bottom: 0.5rem; }
 .breathe-card--info ol { margin: 0.5rem 0 0.75rem; padding-left: 1.25rem; }
 .breathe-card--info p:last-child { margin: 0; font-style: italic; opacity: 0.9; }
+
+/* ==================================================================
+NEW — Self-Discovery styles (sd-* + Mood Meter)
+================================================================== */
+
+.sd-mini { font-size: .96rem; color: rgba(17,34,52,.82); }
+
+/* Self-discovery blocks */
+.sd-card,
+.sd-soft,
+.sd-warning {
+  max-width: 980px;
+  margin: 1.25rem auto;
+  border-radius: 14px;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 12px 28px rgba(0,0,0,.05);
+  background: rgba(255,255,255,.74);
+}
+
+.sd-soft {
+  background: rgba(243,231,220,.45);
+}
+
+.sd-warning {
+  background: rgba(255,255,255,.72);
+  border-color: rgba(199,119,63,.22);
+  box-shadow: 0 14px 32px rgba(0,0,0,.06);
+}
+.sd-warning strong { color: var(--color-accent); }
+
+.sd-bullets { margin: .75rem 0 0; padding-left: 1.25rem; }
+.sd-bullets li { margin: .45rem 0; }
+
+.sd-steps { margin: .75rem 0 0; padding-left: 1.25rem; }
+.sd-steps li { margin: .5rem 0; }
+
+/* Jump links */
+.sd-jump {
+  max-width: 980px;
+  margin: 1.25rem auto 0;
+  padding: .9rem 1.1rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,.62);
+  border: 1px solid rgba(17,34,52,.08);
+  box-shadow: 0 10px 22px rgba(0,0,0,.04);
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem .85rem;
+  align-items: center;
+}
+.sd-jump strong {
+  margin-right: .35rem;
+  color: rgba(17,34,52,.85);
+}
+.sd-jump a {
+  font-weight: 800;
+  color: var(--color-accent);
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition);
+}
+.sd-jump a:hover { border-bottom-color: rgba(199,119,63,.55); }
+
+/* Mood Meter */
+.mood-meter {
+  max-width: 980px;
+  margin: 1.75rem auto;
+}
+
+.mm-head {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  color: rgba(17,34,52,.75);
+  font-size: .92rem;
+  letter-spacing: .03em;
+  margin-bottom: .6rem;
+}
+.mm-head--y {
+  margin-top: .85rem;
+  margin-bottom: .6rem;
+  justify-content: space-between;
+}
+.mm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.mm-cell {
+  border-radius: 14px;
+  padding: 1.1rem 1.15rem;
+  border: 1px solid rgba(0,0,0,.06);
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 12px 26px rgba(0,0,0,.05);
+}
+.mm-cell h3 { margin: 0 0 .35rem; color: var(--color-accent); }
+.mm-mini { margin: .4rem 0; font-size: .92rem; color: rgba(17,34,52,.82); }
+
+.mm-red    { background: rgba(255,255,255,.72); }
+.mm-yellow { background: rgba(255,255,255,.72); }
+.mm-blue   { background: rgba(255,255,255,.72); }
+.mm-green  { background: rgba(255,255,255,.72); }
+
+@media (max-width: 640px) {
+  .mm-grid { grid-template-columns: 1fr; }
+}
+
+/* CTA link */
+.cta-link {
+  display: inline-block;
+  font-weight: 900;
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 2px solid rgba(199,119,63,.35);
+  transition: border-color var(--transition), transform 160ms ease;
+}
+.cta-link:hover {
+  border-bottom-color: rgba(199,119,63,.75);
+  transform: translateY(-1px);
+}
 
 /* ==================================================================
 PART 11 — Principles Navigation
