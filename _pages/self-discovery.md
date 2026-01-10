@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: page
+title: "Self-Discovery"
 permalink: /self-discovery/
+description: "A quiet journey back to yourself — practical, gentle, and grounded."
+hero_image: "/assets/images/heroes/self-discovery.jpg"
 ---
 
 <main id="content">
