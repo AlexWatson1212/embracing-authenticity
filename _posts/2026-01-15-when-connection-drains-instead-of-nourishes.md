@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When Connection Drains Instead of Nourishes"
-date: 2024-10-02
+date: 2026-01-15
 tags: ["boundaries", "nervous-system", "relationships", "authenticity"]
 description: "A reflection on learning to trust when connection dysregulates rather than nourishes — and why walking away can be an act of self-respect."
 hero_image: /assets/images/posts/when-connection-drains-instead-of-nourishes.jpg
