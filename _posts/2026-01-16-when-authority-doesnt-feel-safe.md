@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "When Connection Drains Instead of Nourishes"
-date: 2026-01-15
-tags: ["boundaries", "nervous-system", "relationships", "authenticity"]
-description: "A reflection on learning to trust when connection dysregulates rather than nourishes — and why walking away can be an act of self-respect."
-hero_image: /assets/images/posts/when-connection-drains-instead-of-nourishes.jpg
-emotions: ["loneliness", "acceptance"]
+title: "When Authority Doesn’t Feel Safe"
+date: 2026-01-16
+tags: [therapy-training, authority, boundaries, vulnerability, self-trust]
+description: "What happens when authority touches an old wound — and how losing a secure base showed me that my right to exist and become a therapist was never actually theirs to give."
+hero_image: /assets/images/posts/When-Authority-Doesn’t-Feel-Safe.jpg
+emotions: [grief, fear]
 ---
 
 There is a particular kind of pain that doesn’t come from conflict itself, but from disappointment.
