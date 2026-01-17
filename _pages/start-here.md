@@ -3,7 +3,7 @@ layout: page
 title: "Start Here"
 permalink: /start-here/
 description: "A gentle starting point if you're feeling overwhelmed and want small, honest steps toward yourself."
-hero_image: "/assets/images/heroes/start-here.jpg"
+hero_image: "/assets/images/heroes/start-here.webp"
 ---
 
 <p class="lead">

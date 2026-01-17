@@ -3,6 +3,18 @@
 <head>
   <!-- DEFAULT layout -->
   {% include head.html %}
+
+  {%- comment -%}
+    Performance: allow pages (like index.html) to inject resource preloads.
+    In index.html we set: {% assign preload = '<link rel="preload" ...>' %}
+    This outputs it safely inside <head>.
+  {%- endcomment -%}
+  {% if preload %}{{ preload }}{% endif %}
+
+  {%- comment -%}
+    Optional improvement (fonts): if you use Google Fonts via <link> in head.html,
+    consider ensuring display=swap and/or self-hosting later.
+  {%- endcomment -%}
 </head>
 
 <body>
@@ -20,10 +32,11 @@
     {% include analytics.html %}
   {% endif %}
 
+  <!-- Defer site JS (already good) -->
   <script src="{{ '/assets/js/nav.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) - async is correct -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1G5FKYL0R4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
