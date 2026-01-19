@@ -3,6 +3,7 @@ layout: page
 title: "Boundaries, Responsibility & Integrity"
 permalink: /principles/boundaries-responsibility-and-integrity/
 description: "A grounded framework for adult self-respect: how to hold boundaries kindly, take clean responsibility, and handle power without losing yourself."
+hero_image: "/assets/images/heroes/Boundaries-Responsibility-&-Integrity.webp"
 order: 3
 ---
 
