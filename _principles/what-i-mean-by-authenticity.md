@@ -6,7 +6,7 @@ description: "How I understand authenticity in practice — less about performan
 order: 1
 ---
 
-<p class="principle-progress">Principle 1 of 6</p>
+<p class="principle-progress">Principle 1 of 7</p>
 
 <p>
 When I talk about “authenticity” on this site, I don’t mean saying everything you think, sharing every feeling in public,

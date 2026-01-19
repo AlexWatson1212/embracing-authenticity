@@ -7,7 +7,7 @@ emotions: ["love", "acceptance"]
 order: 6
 ---
 
-<p class="principle-progress">Principle 6 of 6</p>
+<p class="principle-progress">Principle 6 of 7</p>
 
 <p><em>A grounded framework for adult relating.</em></p>
 

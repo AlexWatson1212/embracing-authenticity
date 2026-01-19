@@ -7,7 +7,7 @@ emotions: ["acceptance", "hope"]
 order: 4
 ---
 
-<p class="principle-progress">Principle 4 of 6</p>
+<p class="principle-progress">Principle 4 of 7</p>
 
 <p><em>A grounded framework for emotional adulthood.</em></p>
 

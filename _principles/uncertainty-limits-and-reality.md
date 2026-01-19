@@ -7,7 +7,7 @@ emotions: ["acceptance", "fear"]
 order: 5
 ---
 
-<p class="principle-progress">Principle 5 of 6</p>
+<p class="principle-progress">Principle 5 of 7</p>
 
 <p><em>A grounded framework for adult steadiness.</em></p>
 

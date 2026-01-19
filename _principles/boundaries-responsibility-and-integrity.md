@@ -6,7 +6,7 @@ description: "A grounded framework for adult self-respect: how to hold boundarie
 order: 3
 ---
 
-<p class="principle-progress">Principle 3 of 6</p>
+<p class="principle-progress">Principle 3 of 7</p>
 
 <p><em>A grounded framework for adult self-respect.</em></p>
 

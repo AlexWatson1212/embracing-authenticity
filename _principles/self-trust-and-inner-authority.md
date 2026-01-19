@@ -6,7 +6,7 @@ description: "A grounded orientation to adulthood built on self-trust, inner aut
 order: 2
 ---
 
-<p class="principle-progress">Principle 2 of 6</p>
+<p class="principle-progress">Principle 2 of 7</p>
 
 <p><em>A grounded orientation to adulthood.</em></p>
 
