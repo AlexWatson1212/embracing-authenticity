@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Choosing Singleness With Self-Respect"
-date: 2026-01-17
+date: 2026-01-19
 tags: [relationships, self-respect, boundaries, desire, integration]
 description: "A reflection on choosing singleness not from fear or avoidance, but from a deepening respect for my own life, energy, and limits."
 hero_image: /assets/images/posts/Choosing-Singleness-With-Self-Respect.webp
