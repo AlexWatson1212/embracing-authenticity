@@ -5,8 +5,8 @@ url: "https://embracingauthenticity.co.uk"
 baseurl: ""          # keep empty on Netlify
 markdown: kramdown
 
-# All posts in _posts will now live at /journal/:title/
-permalink: /journal/:title/
+# All posts in _posts will now live at /blog/:title/
+permalink: /blog/:title/
 future: true
 
 # ---- Plugins (make sure these are also in your Gemfile)
@@ -17,11 +17,11 @@ plugins:
   - jekyll-paginate-v2
 
 # ---- Pagination (jekyll-paginate-v2)
-# This paginates over your _posts, now under /journal/
+# This paginates over your _posts, now under /blog/
 pagination:
   enabled: true
   per_page: 12
-  permalink: /journal/page/:num/
+  permalink: /blog/page/:num/
   title: ":title - Page :num"
   limit: 0
   sort_field: "date"
@@ -52,6 +52,8 @@ defaults:
     values:
       layout: post
       tags: []
+      # Optional but recommended: force posts into /blog/ even if permalink changes elsewhere
+      permalink: /blog/:title/
 
   - scope:
       path: ""
