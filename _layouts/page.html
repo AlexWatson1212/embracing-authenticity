@@ -53,32 +53,63 @@ layout: default
     {{ content }}
   </div>
 
-  <!-- Principles Navigation (only shows if "order" exists) -->
-  {% if page.order %}
-    <nav class="principle-nav container">
-      <hr class="section-divider" />
+  {%- comment -%}
+  ==========================================================
+  PRINCIPLES NAVIGATION (Principle pages only)
+  - Shows if page has `order` AND is under /principles/
+  - Sorted list prevents wrong prev/next if site.pages order changes
+  ==========================================================
+  {%- endcomment -%}
 
-      <div class="principle-nav-links">
-        <!-- Back to Principles -->
-        <a class="principle-nav-back" href="/principles/">← Back to Principles</a>
+  {% if page.order and page.permalink and page.permalink contains '/principles/' %}
+    {% assign principles = site.pages
+      | where_exp: "p", "p.permalink and p.permalink contains '/principles/'"
+      | where_exp: "p", "p.order"
+      | sort: "order" %}
 
-        <div class="principle-step-links">
-          <!-- Previous Principle -->
-          {% for p in site.pages %}
-            {% if p.order == page.order | minus: 1 %}
-              <a class="principle-nav-prev" href="{{ p.url }}">← Previous Principle</a>
+    {% assign current_index = nil %}
+    {% for p in principles %}
+      {% if p.url == page.url %}
+        {% assign current_index = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if current_index != nil %}
+      {% assign prev_index = current_index | minus: 1 %}
+      {% assign next_index = current_index | plus: 1 %}
+
+      {% assign prev = nil %}
+      {% assign next = nil %}
+
+      {% if prev_index >= 0 %}
+        {% assign prev = principles[prev_index] %}
+      {% endif %}
+
+      {% if next_index < principles.size %}
+        {% assign next = principles[next_index] %}
+      {% endif %}
+
+      <nav class="principle-nav container" aria-label="Principle navigation">
+        <hr class="section-divider" />
+
+        <div class="principle-nav-links">
+          <!-- Back to Principles -->
+          <a class="principle-nav-back" href="/principles/">← Back to Principles</a>
+
+          <div class="principle-step-links">
+            <!-- Previous Principle -->
+            {% if prev %}
+              <a class="principle-nav-prev" href="{{ prev.url }}">← Previous Principle</a>
             {% endif %}
-          {% endfor %}
 
-          <!-- Next Principle -->
-          {% for p in site.pages %}
-            {% if p.order == page.order | plus: 1 %}
-              <a class="principle-nav-next" href="{{ p.url }}">Next Principle →</a>
+            <!-- Next Principle -->
+            {% if next %}
+              <a class="principle-nav-next" href="{{ next.url }}">Next Principle →</a>
             {% endif %}
-          {% endfor %}
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    {% endif %}
   {% endif %}
 
 </article>

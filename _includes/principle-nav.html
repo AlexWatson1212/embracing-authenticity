@@ -1,0 +1,52 @@
+{% comment %}
+Principle navigation: Back to Principles + Previous/Next principle
+Requires: principles pages have `order:` in front matter and permalinks under /principles/
+{% endcomment %}
+
+{% assign principles = site.pages
+  | where_exp: "p", "p.permalink and p.permalink contains '/principles/'"
+  | where_exp: "p", "p.order"
+  | sort: "order" %}
+
+{% assign current_index = nil %}
+{% for p in principles %}
+  {% if p.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index != nil %}
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+
+  {% assign prev = nil %}
+  {% assign next = nil %}
+
+  {% if prev_index >= 0 %}
+    {% assign prev = principles[prev_index] %}
+  {% endif %}
+
+  {% if next_index < principles.size %}
+    {% assign next = principles[next_index] %}
+  {% endif %}
+
+  <nav class="principle-nav" aria-label="Principle navigation">
+    <a class="nav-btn nav-secondary" href="/principles/">
+      ← Back to Principles
+    </a>
+
+    <div class="nav-btn-group">
+      {% if prev %}
+        <a class="nav-btn nav-primary" href="{{ prev.url }}">
+          ← Previous principle
+        </a>
+      {% endif %}
+
+      {% if next %}
+        <a class="nav-btn nav-primary" href="{{ next.url }}">
+          Next principle →
+        </a>
+      {% endif %}
+    </div>
+  </nav>
+{% endif %}
