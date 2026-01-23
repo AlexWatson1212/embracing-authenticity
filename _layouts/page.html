@@ -55,16 +55,14 @@ layout: default
 
   {%- comment -%}
   ==========================================================
-  PRINCIPLES NAVIGATION
-  - Shows if page has `order`
-  - Uses `order` to build prev/next (no permalink assumptions)
+  PRINCIPLES NAVIGATION (Collection items in _principles/)
+  - Only shows on principles collection items
+  - Uses `order` for prev/next
   ==========================================================
   {%- endcomment -%}
 
-  {% if page.order %}
-    {% assign principles = site.pages
-      | where_exp: "p", "p.order"
-      | sort: "order" %}
+  {% if page.collection == "principles" and page.order %}
+    {% assign principles = site.principles | sort: "order" %}
 
     {% assign current_index = nil %}
     {% for p in principles %}
@@ -92,7 +90,7 @@ layout: default
         <hr class="section-divider" />
 
         <div class="principle-nav-links">
-          <!-- Back to Principles -->
+          <!-- Back to Principles index page -->
           <a class="principle-nav-back" href="/principles/">← Back to Principles</a>
 
           <div class="principle-step-links">
