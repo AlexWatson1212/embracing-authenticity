@@ -55,15 +55,14 @@ layout: default
 
   {%- comment -%}
   ==========================================================
-  PRINCIPLES NAVIGATION (Principle pages only)
-  - Shows if page has `order` AND is under /principles/
-  - Sorted list prevents wrong prev/next if site.pages order changes
+  PRINCIPLES NAVIGATION
+  - Shows if page has `order`
+  - Uses `order` to build prev/next (no permalink assumptions)
   ==========================================================
   {%- endcomment -%}
 
-  {% if page.order and page.permalink and page.permalink contains '/principles/' %}
+  {% if page.order %}
     {% assign principles = site.pages
-      | where_exp: "p", "p.permalink and p.permalink contains '/principles/'"
       | where_exp: "p", "p.order"
       | sort: "order" %}
 
