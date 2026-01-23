@@ -3,6 +3,7 @@ layout: page
 title: "Self-Trust & Inner Authority"
 permalink: /principles/self-trust-and-inner-authority/
 description: "A grounded orientation to adulthood built on self-trust, inner authority, and quiet integrity."
+hero_image: "/assets/images/heroes/self-trust-and-inner-authority.webp"
 order: 2
 ---
 

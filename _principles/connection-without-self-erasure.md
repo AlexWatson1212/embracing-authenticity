@@ -4,7 +4,7 @@ title: "Connection Without Self-Erasure"
 permalink: /principles/connection-without-self-erasure/
 description: "A grounded framework for adult relating: how to be alone without isolation, stay soft without naïveté, and walk away without collapse when something costs your dignity."
 emotions: ["love", "acceptance"]
-hero_image: "/assets/images/heroes/Connection-Without-Self-ErasureConnection-Without-Self-Erasure.webp"
+hero_image: "/assets/images/heroes/Connection-Without-Self-Erasure.webp"
 order: 6
 ---
 

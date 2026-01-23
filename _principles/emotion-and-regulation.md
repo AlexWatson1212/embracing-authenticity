@@ -4,6 +4,7 @@ title: "Emotion & Regulation"
 permalink: /principles/emotion-and-regulation/
 description: "A grounded framework for emotional adulthood: how to stay with hard emotions, recover from shame, and repair after harm without collapsing or hardening."
 emotions: ["acceptance", "hope"]
+hero_image: "/assets/images/heroes/emotion-and-regulation.webp"
 order: 4
 ---
 

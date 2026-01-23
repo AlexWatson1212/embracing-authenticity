@@ -4,6 +4,7 @@ title: "Uncertainty, Limits & Reality"
 permalink: /principles/uncertainty-limits-and-reality/
 description: "A grounded framework for adult steadiness: how to stay present with uncertainty, accept limits without resentment, and live through chapters that don’t resolve into meaning."
 emotions: ["acceptance", "fear"]
+hero_image: "/assets/images/heroes/uncertainty-limits-and-reality.webp"
 order: 5
 ---
 
