@@ -18,7 +18,7 @@ My sense of purpose — particularly around counselling — isn’t something th
 
 ---
 
-### Anxiety without collapse
+## Anxiety without collapse
 
 Take placement, for example.
 
@@ -34,7 +34,7 @@ Comparing myself to people who operate very differently doesn’t help anyone. I
 
 ---
 
-### Alone — but by choice
+## Alone — but by choice
 
 One of the biggest internal shifts has been realising that I’m alone right now *by choice*, not because I’m avoiding connection or failing at it.
 
@@ -46,7 +46,7 @@ There *are* relationships slowly deepening — ones that feel mutual and alive �
 
 ---
 
-### Not needing — without closing off
+## Not needing — without closing off
 
 As an adult, I don’t really *need* anything in the way I once did. I can’t be abandoned in the same way anymore.
 
@@ -59,7 +59,7 @@ That distinction matters.
 
 ---
 
-### Being seen — and mis-seen
+## Being seen — and mis-seen
 
 I’m also aware of how I land with people now.
 
@@ -71,7 +71,7 @@ I’m no longer shrinking, explaining, or softening myself to manage other peopl
 
 ---
 
-### Groundedness, not escape
+## Groundedness, not escape
 
 There’s a quiet fear that sometimes surfaces — a worry about slipping into something ungrounded or unstable, given my history. But when I look at my life realistically, that fear doesn’t hold up.
 
@@ -88,7 +88,7 @@ That feels like a quiet form of freedom.
 
 ---
 
-### Coming into my own
+## Coming into my own
 
 I’m not claiming this will last forever. Life will change, stress will return in different forms, and I’ll meet new edges.
 
