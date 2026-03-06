@@ -4,7 +4,7 @@ title: "Solitude Is Not Loneliness"
 date: 2026-02-17
 tags: ["solitude", "connection"]
 description: "Understanding the difference between being alone and feeling alone."
-hero_image: /assets/images/posts/example.jpg
+hero_image: /assets/images/posts/Solitude-Is-Not-Loneliness.webp
 emotions: ["loneliness", "acceptance"]
 ---
 

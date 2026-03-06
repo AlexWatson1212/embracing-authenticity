@@ -4,7 +4,7 @@ title: "A Quiet Plan for a Regulated Life"
 date: 2026-03-06
 tags: ["life design", "therapy career", "self-trust"]
 description: "A reflection on building a calm, sustainable life through therapy, creative work, and learning to allow hope."
-hero_image: /assets/images/posts/example.jpg
+hero_image: /assets/images/posts/A-Quiet-Plan-for-a-Regulated-Life.webp
 emotions: ["hope", "fear"]
 ---
 
