@@ -4,7 +4,7 @@ title: "Boundaries Are Clarity"
 date: 2026-02-12
 tags: ["boundaries", "maturity"]
 description: "On learning that saying less can mean standing stronger."
-hero_image: /assets/images/posts/example.jpg
+hero_image: /assets/images/posts/Boundaries-Are-Clarity.webp
 emotions: ["acceptance", "love"]
 ---
 
