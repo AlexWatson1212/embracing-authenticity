@@ -4,7 +4,7 @@ title: "Steady Is Enough"
 date: 2026-02-05
 tags: ["growth", "discipline"]
 description: "On learning to respect gradual progress."
-hero_image: /assets/images/posts/examplsteady-is-enough.webp
+hero_image: /assets/images/posts/steady-is-enough.webp
 emotions: ["acceptance", "hope"]
 ---
 
