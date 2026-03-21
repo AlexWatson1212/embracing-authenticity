@@ -1,213 +1,138 @@
 ---
 layout: post
-title: "When Therapy Becomes Co-Regulation, Not Dependence"
-date: 2026-03-19
-tags: [therapy, self-awareness, connection, emotional-growth]
-description: "I thought I was becoming too reliant on therapy, but I realised I was actually learning what healthy co-regulation feels like."
-hero_image: /assets/images/posts/when-therapy-becomes-co-regulation.webp
-emotions: [hope, acceptance]
+title: "The Grief of Not Being Everything"
+date: 2026-03-21
+tags: [self-discovery, inner-child, regulation, identity]
+description: "Letting go of the need to prove my worth, and learning to live within my limits without shame."
+hero_image: /assets/images/posts/the-grief-of-not-being-everything.webp
+emotions: [grief, acceptance]
 ---
 
-Recently I had a thought that caught me off guard.
+Recently, I’ve started to notice a quiet grief.
 
-I started wondering if I was relying too much on my therapist.
+It’s not loud.  
+It doesn’t shout.  
+It sits underneath everything.
 
-There was a subtle pressure behind it — like I should be able to handle everything on my own by now. Like leaning on someone, even a little, might mean I wasn’t doing the work properly.
+It’s the grief of realising:
 
-But when I looked a bit closer, something didn’t quite add up.
-
-Most of my day-to-day interactions are actually steady.  
-Grounded.  
-Adult-led.
-
-I can talk to people, reflect on situations, and move through the world without feeling overwhelmed or dependent.
-
-So if that’s true… what exactly was happening in therapy?
+**I’m not going to be able to do everything I once thought I could.**
 
 ---
 
-## The Fear of “Relying Too Much”
+## The Pressure to Prove Myself
 
-I think a lot of people who go to therapy hit this point.
+For a long time, I’ve carried this feeling that I need to prove myself.
 
-There’s a quiet question that appears somewhere along the way:
+That if I just do enough…  
+achieve enough…  
+push enough…
 
-> *Am I growing… or am I just becoming dependent on this space?*
+Then I’ll finally feel like I’m allowed to be here.
 
-It can feel uncomfortable to need someone.
-
-Especially if part of your identity is built around being self-sufficient, capable, and independent.
-
-For me, it showed up as a kind of self-checking:
-
-- Am I outsourcing my emotional regulation?  
-- Am I expecting my therapist to “hold” things I should be holding myself?  
-- Should I be further along than this by now?  
-
-On the surface, those questions sound responsible.
-
-But underneath, there was something else.
+Like I’ve earned my place.
 
 ---
 
-## What I Was Missing
+## What Happens When I Push Too Far
 
-When I stepped back, I noticed something important.
+But there’s a cost to that.
 
-It wasn’t that I was overly dependent on therapy.
+When I try to live like that, something happens in my body.
 
-It was that therapy was one of the **only places where I consistently experienced co-regulation.**
+I become overwhelmed.
 
-A place where I could:
+Everything feels like too much.
 
-- soften  
-- be fully met  
-- not hold everything alone  
+My head starts to pound.  
+I feel irritated.  
+I don’t want to be around anyone.
 
-That’s a very different thing.
+And the strangest part is…
 
----
+**I feel like a child again.**
 
-## Reparenting vs Co-Regulation
-
-Part of the confusion came from mixing two experiences together.
-
-**Reparenting** is about receiving something you didn’t get before —  
-guidance, safety, emotional holding.
-
-**Co-regulation** is something else.
-
-It’s what happens when two adults share emotional space in a balanced way.
-
-No fixing.  
-No rescuing.  
-Just being with each other.
-
-The two can feel similar in the body.
-
-But they come from different places.
+Small.  
+Helpless.  
+Like I can’t cope with the world in front of me.
 
 ---
 
-## The Subtle Harshness of “I Should Be Fine On My Own”
+## The Moment Everything Shuts Down
 
-There’s a version of growth that can become quite harsh.
+In those moments, the only thing that helps is to lie down.
 
-It sounds like:
+To step away.  
+To do nothing.
 
-> *I should be able to handle this myself.*
+And a part of me hates that.
 
-> *I shouldn’t need this anymore.*
-
-> *I should be further along.*
-
-But taken too far, that becomes another form of pressure.
-
-Another way of abandoning yourself.
-
-Because the truth is:
-
-> **Humans don’t outgrow the need for co-regulation.**
-
-We don’t reach a point where we become completely self-contained and no longer need others.
-
-That’s not maturity.
-
-That’s isolation.
+It feels like failure.  
+It feels like I’m falling behind.
 
 ---
 
-## What Healthy Dependence Actually Looks Like
+## The Truth I’m Starting to See
 
-There’s a middle ground that doesn’t get talked about enough.
+But I’m starting to see something differently.
 
-It’s not:
+That state doesn’t come from doing too little.
 
-- total independence  
-- or emotional reliance on others  
-
-It’s something quieter.
-
-You can:
-
-- take responsibility for your life  
-- regulate yourself most of the time  
-- and still have places where you can soften and be supported  
-
-That’s not regression.
-
-That’s balance.
+It comes from trying to be too much.
 
 ---
 
-## The Realisation
+## Two Parts Pulling in Different Directions
 
-When I looked honestly at my life, something became clear.
+There are two parts of me.
 
-I’m not stuck in a child state.  
-I’m not outsourcing everything.  
+One that wants a steady, simple life.  
+One that wants to prove I’m worthy of existence.
 
-If anything, I’ve learned how to stand on my own.
+And when the second one takes over, I pay for it.
 
-And therapy isn’t replacing that.
-
-It’s supporting it.
-
-What I was experiencing wasn’t dependence.
-
-It was **relief.**
+Every time.
 
 ---
 
-## The Next Step Isn’t Less Therapy
+## Grieving What I Thought I Had to Be
 
-If anything, the insight points somewhere else.
+So maybe the real work isn’t pushing harder.
 
-Not toward reducing support.
+Maybe it’s grieving.
 
-But toward expanding it.
-
-Letting more moments of co-regulation happen outside therapy, in ordinary life:
-
-- a relaxed conversation at the gym  
-- a simple interaction at college  
-- a moment of ease walking the dog  
-
-Nothing intense.  
-Nothing forced.
-
-Just small, shared moments where you don’t have to hold everything alone.
+Letting go of the idea that I have to become everything  
+to be enough.
 
 ---
 
-## A Small Correction to Myself
+## What Actually Works
 
-I think I was being a bit harsh.
+Because the truth is…
 
-I was treating my need for support as something to fix.
+When I slow down,  
+when I take one step at a time,  
+when I look after myself properly…
 
-But maybe it’s not a problem.
+Life actually works.
 
-Maybe it’s something I’m only just learning how to receive.
+Not perfectly.
 
-And instead of pulling away from it, the real work is to:
+But well enough.
 
-- trust it  
-- understand it  
-- and slowly allow it into more areas of my life  
+---
+
+## A Small Shift
+
+I don’t need to prove anything today.
+
+I don’t need to catch up.  
+I don’t need to become a different person.
 
 ---
 
 ## Final Thought
 
-I thought I was becoming dependent on therapy.
+I just need to take the next step.
 
-But what I was actually experiencing was something much simpler.
-
-I was learning what it feels like to be regulated with another person.
-
-And once you feel that…
-
-you don’t need to run from it.
-
-You just learn how to carry a little more of it into the rest of your life.
+And let that be enough.
