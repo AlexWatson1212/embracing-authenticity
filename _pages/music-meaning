@@ -6,151 +6,105 @@ description: "Use the music that moves you to gently connect with your inner wor
 hero_image: "/assets/images/heroes/music-meaning.webp"
 ---
 
-<p class="lead">
-  Music carries emotion. Emotion carries truth.<br />
-  This space helps you use the songs you already love to stay in gentle, honest contact with yourself — at a pace your body can hold.
-</p>
+<section class="music-page">
 
-<div class="breathe-card breathe-card--info">
-  <strong>New here? Start small:</strong>
-  <ol>
-    <li>Pick any song that moves you.</li>
-    <li>Place a hand on your chest or belly.</li>
-    <li>Notice one thing you <em>feel</em> while it plays.</li>
-    <li>Take one slow exhale when it ends.</li>
-  </ol>
-  <p>You’re done. That’s enough for today.</p>
-</div>
+  <div class="music-intro">
+    <p class="lead">
+      Music carries emotion. Emotion carries truth.
+    </p>
 
-<hr />
+    <p>
+      This space helps you use the songs you already love to stay in gentle,
+      honest contact with yourself — at a pace your body can hold.
+    </p>
+  </div>
 
-<h2>A Simple Way to Use This Page</h2>
+  <div class="breathe-card breathe-card--info">
+    <p class="home-kicker">New here?</p>
+    <h2>Start small.</h2>
 
-<p>
-  You don’t need to analyse lyrics or “do it right”. Think of it as a gentle arc:
-</p>
+    <ol>
+      <li>Pick any song that moves you.</li>
+      <li>Place a hand on your chest or belly.</li>
+      <li>Notice one thing you <em>feel</em> while it plays.</li>
+      <li>Take one slow exhale when it ends.</li>
+    </ol>
 
-<ol>
-  <li><strong>Ground</strong> — arrive in your body</li>
-  <li><strong>Choose a theme</strong> — pick the emotion that’s closest</li>
-  <li><strong>Pick a song</strong> that fits (any genre, any decade)</li>
-  <li><strong>Listen</strong> — notice what happens inside</li>
-  <li><strong>Reflect &amp; close</strong> — one or two questions, then come back to the room</li>
-</ol>
+    <p>You’re done. That’s enough for today.</p>
+  </div>
 
-<p>Use as much or as little of this as you like.</p>
+  <div class="music-steps">
 
-<hr />
+    <h2>A simple way to use this page</h2>
 
-<h2>Step&nbsp;1 — Ground (Before You Press Play)</h2>
+    <p>
+      You don’t need to analyse lyrics or do it right. Think of it as a gentle arc:
+    </p>
 
-<p>Choose one small grounding move:</p>
+    <ol>
+      <li><strong>Ground</strong> — arrive in your body</li>
+      <li><strong>Choose a theme</strong> — pick the emotion that’s closest</li>
+      <li><strong>Pick a song</strong> that fits</li>
+      <li><strong>Listen</strong> — notice what happens inside</li>
+      <li><strong>Reflect &amp; close</strong> — one or two questions, then come back to the room</li>
+    </ol>
 
-<ul>
-  <li>Hand on chest + belly — <strong>exhale longer than you inhale</strong></li>
-  <li>Feel your <strong>feet</strong> against the floor</li>
-  <li>Notice <strong>three sounds</strong> around you</li>
-  <li>Slowly roll your shoulders down and back</li>
-</ul>
+    <h2>Step 1 — Ground</h2>
 
-<blockquote>
-  <p>You don’t have to calm everything — just enough to stay here with yourself.</p>
-</blockquote>
+    <ul>
+      <li>Hand on chest and belly — exhale longer than you inhale</li>
+      <li>Feel your feet against the floor</li>
+      <li>Notice three sounds around you</li>
+      <li>Slowly roll your shoulders down and back</li>
+    </ul>
 
-<hr />
+    <blockquote>
+      <p>You don’t have to calm everything — just enough to stay here with yourself.</p>
+    </blockquote>
 
-<h2>Step&nbsp;2 — Choose a Theme</h2>
+    <h2>Step 2 — Choose a theme</h2>
 
-<p>
-  Which emotion feels <strong>closest</strong> right now? A whisper counts.
-</p>
+    <p>Which emotion feels closest right now? A whisper counts.</p>
 
-<ul class="emotion-grid">
-  <li>
-    <strong>Shame</strong><br />
-    When you want to disappear or hide who you are.<br />
-    <a href="#shame">Explore &rarr;</a>
-  </li>
-  <li>
-    <strong>Fear</strong><br />
-    When not knowing feels like danger.<br />
-    <a href="#fear">Explore &rarr;</a>
-  </li>
-  <li>
-    <strong>Anger</strong><br />
-    When something in you wants protection or change.<br />
-    <a href="#anger">Explore &rarr;</a>
-  </li>
-  <li>
-    <strong>Grief</strong><br />
-    When you’re carrying absence, endings, or what can’t be fixed.<br />
-    <a href="#grief">Explore &rarr;</a>
-  </li>
-  <li>
-    <strong>Longing</strong><br />
-    When you ache for connection, belonging, or being met.<br />
-    <a href="#longing">Explore &rarr;</a>
-  </li>
-  <li>
-    <strong>Love &amp; Safety</strong><br />
-    When something inside settles and softens.<br />
-    <a href="#love-safety">Explore &rarr;</a>
-  </li>
-  <li>
-    <strong>Joy</strong><br />
-    When life expands, even a little.<br />
-    <a href="#joy">Explore &rarr;</a>
-  </li>
-  <li>
-    <strong>Boundaries / Self-Protection</strong><br />
-    When “no” feels important but difficult.<br />
-    <a href="#boundaries-self-protection">Explore &rarr;</a>
-  </li>
-</ul>
+    <ul class="emotion-grid">
+      <li><strong>Shame</strong><br>When you want to disappear or hide who you are.<br><a href="#shame">Explore →</a></li>
+      <li><strong>Fear</strong><br>When not knowing feels like danger.<br><a href="#fear">Explore →</a></li>
+      <li><strong>Anger</strong><br>When something in you wants protection or change.<br><a href="#anger">Explore →</a></li>
+      <li><strong>Grief</strong><br>When you’re carrying absence, endings, or what can’t be fixed.<br><a href="#grief">Explore →</a></li>
+      <li><strong>Longing</strong><br>When you ache for connection, belonging, or being met.<br><a href="#longing">Explore →</a></li>
+      <li><strong>Love &amp; Safety</strong><br>When something inside settles and softens.<br><a href="#love-safety">Explore →</a></li>
+      <li><strong>Joy</strong><br>When life expands, even a little.<br><a href="#joy">Explore →</a></li>
+      <li><strong>Boundaries</strong><br>When no feels important but difficult.<br><a href="#boundaries-self-protection">Explore →</a></li>
+    </ul>
 
-<p>Pick <strong>any song</strong> that fits your theme — even if you’re not sure why. Then move on.</p>
+    <h2>Step 3 — Listen</h2>
 
-<hr />
+    <ul>
+      <li>where your body tightens or softens</li>
+      <li>what memories appear</li>
+      <li>what you want to do: lean in, turn away, move, cry, or go quiet</li>
+    </ul>
 
-<h2>Step&nbsp;3 — Listen</h2>
+    <h2>Step 4 — Reflect</h2>
 
-<p>While the song plays, gently notice:</p>
+    <p>
+      Pick one reflection question. Let it land. See what appears — on the page,
+      in your body, or just in your awareness.
+    </p>
 
-<ul>
-  <li>where your body <strong>tightens</strong> or <strong>softens</strong></li>
-  <li>what memories appear</li>
-  <li>what you want to do (lean in, turn away, move, cry, go quiet)</li>
-</ul>
+    <h2>Step 5 — Close gently</h2>
 
-<p>You’re not fixing anything. You’re just observing.</p>
+    <ul>
+      <li>Name one thing you noticed.</li>
+      <li>Put a hand on your heart or over your ribs.</li>
+      <li>Take one slow, grounding exhale.</li>
+      <li>Look around and find three steadying things in the room.</li>
+    </ul>
 
-<hr />
+    <blockquote>
+      <p><em>Enoughness is a pace.</em><br>You’re already meeting yourself.</p>
+    </blockquote>
 
-<h2>Step&nbsp;4 — Reflect (1–2 Questions Only)</h2>
+  </div>
 
-<p>
-  From the theme you chose, pick <strong>one</strong> reflection question (two at most).
-  Let it land. See what appears — on the page, in your body, or just in your awareness.
-</p>
-
-<hr />
-
-<h2>Step&nbsp;5 — Close Gently</h2>
-
-<p>When the song ends:</p>
-
-<ul>
-  <li>Name <strong>one</strong> thing you noticed.</li>
-  <li>Put a hand on your heart or over your ribs.</li>
-  <li>Take one slow, grounding exhale.</li>
-  <li>Look around and find <strong>three</strong> steadying things in the room.</li>
-</ul>
-
-<blockquote>
-  <p><em>Enoughness is a pace.</em><br />You’re already meeting yourself.</p>
-</blockquote>
-
-<hr />
-
-<!-- (rest of the page continues unchanged) -->
-
+</section>

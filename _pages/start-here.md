@@ -14,7 +14,7 @@ hero_image: "/assets/images/heroes/start-here.webp"
     </p>
 
     <p>
-      This page is a calm starting point if you feel overwhelmed, disconnected, unsure what you feel,
+      This is a calm starting point if you feel overwhelmed, disconnected, unsure what you feel,
       or tired of trying to fix yourself.
     </p>
 
@@ -26,45 +26,35 @@ hero_image: "/assets/images/heroes/start-here.webp"
   <div class="start-feature">
     <p class="home-kicker">Begin gently</p>
     <h2>Choose what supports you right now.</h2>
-    <p>
-      You do not need to follow everything in order. Pick the doorway that feels most useful today.
-    </p>
+    <p>You do not need to follow everything in order. Pick the doorway that feels most useful today.</p>
   </div>
 
   <div class="start-grid">
     <article class="start-card start-card--primary">
       <p class="home-card-step">If you feel overwhelmed</p>
       <h3>Start with regulation</h3>
-      <p>
-        Learn how to stay with hard feelings without collapsing, escaping, or turning on yourself.
-      </p>
+      <p>Learn how to stay with hard feelings without collapsing, escaping, or turning on yourself.</p>
       <a href="/principles/emotion-and-regulation/">Read Emotion &amp; Regulation →</a>
     </article>
 
     <article class="start-card">
       <p class="home-card-step">If you doubt yourself</p>
       <h3>Build self-trust</h3>
-      <p>
-        Explore how to listen inwardly, trust your own experience, and stop outsourcing your sense of reality.
-      </p>
+      <p>Explore how to listen inwardly, trust your own experience, and stop outsourcing your sense of reality.</p>
       <a href="/principles/self-trust-and-inner-authority/">Start with Self-Trust →</a>
     </article>
 
     <article class="start-card">
       <p class="home-card-step">If you need boundaries</p>
       <h3>Return to self-respect</h3>
-      <p>
-        Understand boundaries as a way of staying connected to yourself, not as punishment or rejection.
-      </p>
+      <p>Understand boundaries as a way of staying connected to yourself, not as punishment or rejection.</p>
       <a href="/principles/boundaries-responsibility-and-integrity/">Explore Boundaries →</a>
     </article>
 
     <article class="start-card">
       <p class="home-card-step">If you do not know what you feel</p>
       <h3>Use music as a doorway</h3>
-      <p>
-        Choose a song that moves you and notice what memories, emotions, or longings begin to surface.
-      </p>
+      <p>Choose a song that moves you and notice what memories, emotions, or longings begin to surface.</p>
       <a href="/music-meaning/">Go to Music &amp; Meaning →</a>
     </article>
   </div>

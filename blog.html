@@ -6,8 +6,7 @@ pagination:
   collection: posts
 ---
 
-<!-- HERO (matches Home/About vibe) -->
-<section class="page-hero page-hero--blog fade-in" style="--hero-image: url('/assets/images/about-journey-optimized.jpg');">
+<section class="page-hero page-hero--blog" style="--hero-image: url('/assets/images/about-journey-optimized.jpg');">
   <div class="page-hero__inner">
     <h1 class="page-hero__title">
       {{ page.title }}
@@ -22,44 +21,27 @@ pagination:
   </div>
 </section>
 
-<!-- SEARCH UI -->
-<section class="blog-top fade-in">
+<section class="blog-top">
   <form class="blog-search" role="search" aria-label="Blog Search" onsubmit="return false;">
-    <input id="blog-search-input" type="search" placeholder="Search for what's on your mind…" autocomplete="off" />
+    <input id="blog-search-input" type="search" placeholder="Search for what's on your mind…" autocomplete="off">
     <button id="blog-search-button" type="button">Search</button>
     <span id="blog-search-count" class="search-count" aria-live="polite"></span>
   </form>
 
-  <!-- Live results (populated by /assets/js/search.js) -->
   <ul id="blog-search-results" class="blog-search-results" aria-live="polite"></ul>
 </section>
 
 <section class="blog-list" id="blogPosts">
 
-  {%- assign posts_to_show = nil -%}
-  {%- if paginator and paginator.posts and paginator.posts.size > 0 -%}
-    {%- assign posts_to_show = paginator.posts -%}
-  {%- else -%}
-    {%- assign posts_to_show = site.posts -%}
-  {%- endif -%}
-
-  {% if posts_to_show == nil or posts_to_show.size == 0 %}
-    <div class="empty-state fade-in">
-      <h3>No posts are showing yet.</h3>
-      <p>
-        This usually means Jekyll isn’t recognising the files in <code>_posts</code>.
-        Your post filenames must start with a date like:
-        <code>YYYY-MM-DD-title.md</code>
-      </p>
-      <p class="muted">
-        Example: <code>2025-01-28-being-alone-vs-being-lonely.md</code>
-      </p>
-    </div>
+  {% if paginator and paginator.posts and paginator.posts.size > 0 %}
+    {% assign posts_to_show = paginator.posts %}
+  {% else %}
+    {% assign posts_to_show = site.posts %}
   {% endif %}
 
   {% for post in posts_to_show %}
     <article
-      class="blog-card fade-in"
+      class="blog-card"
       data-tags="{{ post.tags | join: ',' }}"
       data-emotions="{{ post.emotions | join: ',' }}"
     >
@@ -68,9 +50,7 @@ pagination:
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h3>
 
-        <p class="post-date">
-          {{ post.date | date: "%B %d, %Y" }}
-        </p>
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
 
         <p class="excerpt">
           {{ post.description | default: post.excerpt | strip_html | truncatewords: 26 }}
@@ -82,10 +62,6 @@ pagination:
             {% for emotion in shown_emotions %}
               <span class="tag">{{ emotion | capitalize }}</span>
             {% endfor %}
-
-            {% if post.emotions.size > 2 %}
-              <span class="tag">+{{ post.emotions.size | minus: 2 }} more</span>
-            {% endif %}
           </div>
         {% endif %}
 
@@ -95,61 +71,31 @@ pagination:
   {% endfor %}
 
   {% if paginator and paginator.total_pages and paginator.total_pages > 1 %}
-    <div class="pagination fade-in">
+    <div class="pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link">
-          &larr; Previous
-        </a>
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link">← Previous</a>
       {% endif %}
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link">
-          Next &rarr;
-        </a>
+        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link">Next →</a>
       {% endif %}
     </div>
   {% endif %}
 
-  <div class="back-to-top fade-in">
+  <div class="back-to-top">
     <a href="#" class="scroll-link">Back to Top ↑</a>
   </div>
+
 </section>
 
 <script>
-  // Smooth scroll (Back to Top + any scroll links)
   document.querySelectorAll('.scroll-link').forEach(link => {
     link.addEventListener('click', e => {
-      const href = link.getAttribute('href');
-      if (href === '#') {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        return;
-      }
-
-      if (href && href.startsWith('#')) {
-        e.preventDefault();
-        const el = document.querySelector(href);
-        if (!el) return;
-        const offset = 80;
-        const top = el.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
-      }
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
 
-  // Fade-in observer
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOnScroll = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("in-view");
-      obs.unobserve(entry.target);
-    });
-  }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-
-  faders.forEach(el => appearOnScroll.observe(el));
-
-  // Hide the static list when a query is present (search.js drives results)
   (function(){
     var input = document.querySelector('#blog-search-input');
     var list  = document.querySelector('.blog-list');
