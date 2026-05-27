@@ -3,32 +3,27 @@ layout: default
 title: Home
 ---
 
-<main id="content">
+<main id="content" class="home-premium">
 
   <!-- Hero -->
-  <section class="hero-banner hero-contained" aria-label="Intro">
-    <div class="container">
-      <div class="hero-card">
-        <div class="hero-image-wrapper" aria-hidden="true">
-          <img src="/assets/images/heroes/home-forest.webp" alt="slow down hero image">
-        </div>
+  <section class="home-hero" aria-label="Intro">
+    <div class="container home-hero__container">
+      <div class="home-hero__card">
+        <img src="/assets/images/heroes/home-forest.webp" alt="A quiet misty forest path">
 
-        <div class="home-hero-overlay">
-          <div class="hero-text">
-            <h1 class="hero-title">Slow Down. Feel More. Find Your Way.</h1>
-            <p class="hero-subtitle">
-              A quiet corner for people who think deeply, feel a lot, and want to live more honestly.
-            </p>
-          </div>
+        <div class="home-hero__overlay">
+          <p class="home-eyebrow">A quiet space for self-understanding</p>
 
-          <div class="hero-buttons">
-            <a href="/start-here" class="hero-button" aria-label="Begin with a gentle starting point">
-              Begin the journey
-            </a>
-            <a href="/principles/what-i-mean-by-authenticity/" class="hero-button hero-button--ghost"
-               aria-label="Read what I mean by authenticity">
-              What I mean by authenticity
-            </a>
+          <h1>Slow Down. Feel More. Find Your Way.</h1>
+
+          <p>
+            A grounded corner of the internet for people who feel deeply, think honestly,
+            and want to come home to themselves.
+          </p>
+
+          <div class="home-hero__actions">
+            <a href="/start-here" class="home-btn home-btn--primary">Start gently</a>
+            <a href="/self-discovery" class="home-btn home-btn--ghost">Explore self-discovery</a>
           </div>
         </div>
       </div>
@@ -36,162 +31,184 @@ title: Home
   </section>
 
   <!-- Welcome -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title section-title--left">Welcome</h2>
+  <section class="home-section home-intro">
+    <div class="container home-narrow">
+      <p class="home-kicker">Welcome</p>
+
+      <h2>This site is here to help you understand yourself more kindly.</h2>
 
       <p class="lead">
-        I’m Alex — counsellor-in-training, father, and someone who’s spent years learning how to live more honestly.
+        I’m Alex — counsellor-in-training, father, writer, and someone who has spent years
+        learning how to live with more honesty, self-respect, and emotional clarity.
       </p>
 
       <p>
-        <em>Embracing Authenticity</em> is a quiet space to help you reconnect with yourself — not by fixing or improving,
-        but by unlearning who you never were and remembering who you are.
-      </p>
-
-      <p>
-        If something in you is tired of performing… you’re in the right place.
+        <em>Embracing Authenticity</em> began as a place to put my own thoughts, feelings,
+        and healing somewhere outside of me. Over time, it has started becoming something else:
+        a calm, practical space for people who want to feel less alone and more connected to who they really are.
       </p>
     </div>
   </section>
 
-  <!-- Where to Begin -->
-  <section class="section section--alt" aria-label="Where to begin">
+  <!-- Start points -->
+  <section class="home-section home-section--warm" aria-label="Where to begin">
     <div class="container">
-      <h2 class="section-title section-title--left">Where to Begin</h2>
+      <div class="home-section-head">
+        <p class="home-kicker">Where to begin</p>
+        <h2>Choose the doorway that fits today.</h2>
+        <p>
+          You do not need to understand the whole site. Start with the part that meets you where you are.
+        </p>
+      </div>
 
-      <!-- Left aligned subtitle -->
-      <p class="section-subtitle section-subtitle--left">
-        Pick a doorway that feels gentle today. You can’t do this wrong.
-      </p>
-
-      <div class="grid gap-8 home-cards">
-        <!-- Start Here -->
-        <article class="breathe-card">
-          <p class="eyebrow">Step 1</p>
-          <h3>Start Here</h3>
+      <div class="home-pathways">
+        <article class="home-path-card home-path-card--featured">
+          <p class="home-card-step">Start here</p>
+          <h3>If you feel overwhelmed</h3>
           <p>
-            A simple starting point if you’re feeling overwhelmed, lost, or just a bit tired of holding it all together.
-            Learn how this space works and how to move at a pace that feels kind to your nervous system.
+            A gentle introduction to the site, the ideas behind it, and how to move through it without pressure.
           </p>
-          <p><a href="/start-here" class="inline-link">Begin with a gentle overview →</a></p>
+          <a href="/start-here">Begin with a calm overview →</a>
         </article>
 
-        <!-- Music & Meaning -->
-        <article class="breathe-card">
-          <p class="eyebrow">Step 2</p>
-          <h3>Music &amp; Meaning</h3>
+        <article class="home-path-card">
+          <p class="home-card-step">Self-discovery</p>
+          <h3>If you want to understand yourself</h3>
           <p>
-            Explore the emotions and memories your favourite songs hold, and what they quietly reveal about your story.
-            A softer way into self-understanding, through the music that already moves you.
+            Explore emotions, patterns, inner parts, values, and the slow work of becoming more fully yourself.
           </p>
-          <p><a href="/music-meaning" class="inline-link">Explore Music &amp; Meaning →</a></p>
+          <a href="/self-discovery">Explore the guide →</a>
         </article>
 
-        <!-- Writing Prompts -->
-        <article class="breathe-card">
-          <p class="eyebrow">Step 3</p>
-          <h3>Writing Prompts</h3>
+        <article class="home-path-card">
+          <p class="home-card-step">Music & meaning</p>
+          <h3>If music helps you feel</h3>
           <p>
-            Gentle prompts to help you put words to what you’re feeling — without forcing neat answers or tidy endings.
-            Take what resonates, leave the rest.
+            Use songs as doorways into memory, grief, hope, longing, identity, and emotional honesty.
           </p>
-          <p><a href="/writing-prompts" class="inline-link">Browse writing prompts →</a></p>
+          <a href="/music-meaning">Explore music therapy →</a>
+        </article>
+
+        <article class="home-path-card">
+          <p class="home-card-step">Writing prompts</p>
+          <h3>If you need words</h3>
+          <p>
+            Gentle prompts to help you notice what is happening inside without forcing neat answers.
+          </p>
+          <a href="/writing-prompts">Browse prompts →</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Quotes Slideshow -->
-  <section class="section" aria-label="Reflections from other voices">
-    <div class="container">
-
-      <div class="quote-carousel" data-carousel>
-        <div class="quote-carousel-top">
-          <h2 class="section-title section-title--left">A Few Words Worth Keeping</h2>
-        </div>
-
-        <div class="quote-viewport" role="region" aria-roledescription="carousel" aria-label="Quote slideshow">
-          <div class="quote-track" data-track>
-            <figure class="quote-slide is-active" data-slide>
-              <blockquote>
-                “Owning our story and loving ourselves through that process is the bravest thing that we’ll ever do.”
-              </blockquote>
-              <figcaption>— Brené Brown</figcaption>
-            </figure>
-
-            <figure class="quote-slide" data-slide>
-              <blockquote>
-                “We are not what’s wrong with us; we are what’s right with us that has gone through what’s wrong.”
-              </blockquote>
-              <figcaption>— Gabor Maté</figcaption>
-            </figure>
-
-            <figure class="quote-slide" data-slide>
-              <blockquote>
-                “The curious paradox is that when I accept myself just as I am, then I can change.”
-              </blockquote>
-              <figcaption>— Carl Rogers</figcaption>
-            </figure>
-
-            <figure class="quote-slide" data-slide>
-              <blockquote>
-                “Until you make the unconscious conscious, it will direct your life and you will call it fate.”
-              </blockquote>
-              <figcaption>— Carl Jung</figcaption>
-            </figure>
-
-            <figure class="quote-slide" data-slide>
-              <blockquote>
-                “Between stimulus and response there is a space. In that space is our power to choose our response.”
-              </blockquote>
-              <figcaption>— Viktor E. Frankl</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <!-- Controls moved underneath (arrows + dots grouped) -->
-        <div class="quote-carousel-controls quote-carousel-controls--bottom" aria-label="Quote controls">
-          <button class="quote-nav" type="button" data-prev aria-label="Previous quote">‹</button>
-
-          <div class="quote-dots" role="tablist" aria-label="Choose a quote">
-            <button class="quote-dot is-active" type="button" data-dot aria-label="Quote 1" aria-current="true"></button>
-            <button class="quote-dot" type="button" data-dot aria-label="Quote 2" aria-current="false"></button>
-            <button class="quote-dot" type="button" data-dot aria-label="Quote 3" aria-current="false"></button>
-            <button class="quote-dot" type="button" data-dot aria-label="Quote 4" aria-current="false"></button>
-            <button class="quote-dot" type="button" data-dot aria-label="Quote 5" aria-current="false"></button>
-          </div>
-
-          <button class="quote-nav" type="button" data-next aria-label="Next quote">›</button>
-        </div>
+  <!-- Purpose -->
+  <section class="home-section">
+    <div class="container home-purpose-grid">
+      <div>
+        <p class="home-kicker">The heart of the site</p>
+        <h2>Not fixing yourself. Returning to yourself.</h2>
       </div>
 
+      <div class="home-purpose-copy">
+        <p>
+          This is not a place built around quick answers, perfect healing, or becoming someone more impressive.
+        </p>
+
+        <p>
+          It is about learning to slow down, listen inwardly, notice what hurts, understand what matters,
+          and build a life that feels more honest from the inside.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="home-section home-quote-section" aria-label="Reflection">
+    <div class="container">
+      <div class="home-quote-card">
+        <p class="home-kicker">A few words worth keeping</p>
+
+        <div class="quote-carousel" data-carousel>
+          <div class="quote-viewport" role="region" aria-roledescription="carousel" aria-label="Quote slideshow">
+            <div class="quote-track" data-track>
+              <figure class="quote-slide is-active" data-slide>
+                <blockquote>
+                  “Owning our story and loving ourselves through that process is the bravest thing that we’ll ever do.”
+                </blockquote>
+                <figcaption>— Brené Brown</figcaption>
+              </figure>
+
+              <figure class="quote-slide" data-slide>
+                <blockquote>
+                  “We are not what’s wrong with us; we are what’s right with us that has gone through what’s wrong.”
+                </blockquote>
+                <figcaption>— Gabor Maté</figcaption>
+              </figure>
+
+              <figure class="quote-slide" data-slide>
+                <blockquote>
+                  “The curious paradox is that when I accept myself just as I am, then I can change.”
+                </blockquote>
+                <figcaption>— Carl Rogers</figcaption>
+              </figure>
+
+              <figure class="quote-slide" data-slide>
+                <blockquote>
+                  “Until you make the unconscious conscious, it will direct your life and you will call it fate.”
+                </blockquote>
+                <figcaption>— Carl Jung</figcaption>
+              </figure>
+
+              <figure class="quote-slide" data-slide>
+                <blockquote>
+                  “Between stimulus and response there is a space. In that space is our power to choose our response.”
+                </blockquote>
+                <figcaption>— Viktor E. Frankl</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="quote-carousel-controls quote-carousel-controls--bottom" aria-label="Quote controls">
+            <button class="quote-nav" type="button" data-prev aria-label="Previous quote">‹</button>
+
+            <div class="quote-dots" role="tablist" aria-label="Choose a quote">
+              <button class="quote-dot is-active" type="button" data-dot aria-label="Quote 1" aria-current="true"></button>
+              <button class="quote-dot" type="button" data-dot aria-label="Quote 2" aria-current="false"></button>
+              <button class="quote-dot" type="button" data-dot aria-label="Quote 3" aria-current="false"></button>
+              <button class="quote-dot" type="button" data-dot aria-label="Quote 4" aria-current="false"></button>
+              <button class="quote-dot" type="button" data-dot aria-label="Quote 5" aria-current="false"></button>
+            </div>
+
+            <button class="quote-nav" type="button" data-next aria-label="Next quote">›</button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Latest -->
-  <section class="section section--alt latest-posts">
+  <section class="home-section home-section--warm latest-posts">
     <div class="container">
-      <h2 class="section-title section-title--left">Recent Reflections from the Journey</h2>
+      <div class="home-section-head">
+        <p class="home-kicker">Recent reflections</p>
+        <h2>Honest notes from the journey.</h2>
+        <p>
+          Personal reflections shared as small lanterns — not instructions, not answers, just something that may help you feel less alone.
+        </p>
+      </div>
 
-      <div class="grid gap-10">
+      <div class="home-latest-grid">
         {% for post in site.posts limit:3 %}
-        <article class="blog-card animate-on-scroll">
-          <div class="blog-card-content">
-            <h3 class="blog-card-title">{{ post.title }}</h3>
-            <p class="blog-card-meta">{{ post.date | date: "%B %d, %Y" }}</p>
-            <p class="blog-card-excerpt">
-              {{ post.description | default: post.excerpt | strip_html | truncatewords: 26 }}
-            </p>
-            <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
-          </div>
+        <article class="home-post-card">
+          <p class="blog-card-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+          <h3>{{ post.title }}</h3>
+          <p>
+            {{ post.description | default: post.excerpt | strip_html | truncatewords: 24 }}
+          </p>
+          <a href="{{ post.url | relative_url }}">Read reflection →</a>
         </article>
         {% endfor %}
       </div>
-
-      <p class="small-note">
-        These reflections are shared so you feel less alone. Take what helps.
-      </p>
     </div>
   </section>
 
@@ -214,6 +231,7 @@ title: Home
       index = (i + slides.length) % slides.length;
 
       slides.forEach((s, n) => s.classList.toggle("is-active", n === index));
+
       dots.forEach((d, n) => {
         const active = n === index;
         d.classList.toggle("is-active", active);
@@ -234,11 +252,11 @@ title: Home
       timer = null;
     }
 
-    prevBtn && prevBtn.addEventListener("click", () => { prev(); startAuto(); });
-    nextBtn && nextBtn.addEventListener("click", () => { next(); startAuto(); });
+    prevBtn && prevBtn.addEventListener("click", function () { prev(); startAuto(); });
+    nextBtn && nextBtn.addEventListener("click", function () { next(); startAuto(); });
 
-    dots.forEach((dot, i) => {
-      dot.addEventListener("click", () => { setActive(i); startAuto(); });
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () { setActive(i); startAuto(); });
     });
 
     carousel.addEventListener("mouseenter", stopAuto);
