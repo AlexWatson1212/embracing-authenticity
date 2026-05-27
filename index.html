@@ -7,24 +7,28 @@ title: Home
 
   <section class="home-hero" aria-label="Intro">
     <div class="home-hero__container">
-      <div class="home-hero__card">
-        <img src="/assets/images/heroes/home-forest.webp" alt="A quiet forest path in soft light">
+      <div class="home-hero__layout">
 
-        <div class="home-hero__overlay">
-          <p class="home-eyebrow">A calm companion for self-discovery</p>
+        <div class="home-hero__copy">
+          <p class="home-eyebrow">A guided space for self-discovery</p>
 
           <h1>Slow down. Come back to yourself.</h1>
 
           <p>
-            A gentle place to begin understanding your inner world — alongside therapy,
-            between sessions, or at your own pace.
+            A calm, structured companion for understanding your inner world —
+            alongside therapy, between sessions, or at your own pace.
           </p>
 
           <div class="home-hero__actions">
             <a href="/start-here/" class="home-btn home-btn--primary">Start gently</a>
-            <a href="/self-discovery/" class="home-btn home-btn--ghost">View the path</a>
+            <a href="/self-discovery/" class="home-btn home-btn--secondary">View the path</a>
           </div>
         </div>
+
+        <div class="home-hero__image">
+          <img src="/assets/images/heroes/home-forest.webp" alt="A quiet forest path in soft light">
+        </div>
+
       </div>
     </div>
   </section>
@@ -41,19 +45,20 @@ title: Home
       </p>
 
       <p>
-        It began as a place for my own healing and reflection. Now it is becoming something more useful:
-        a calm self-discovery companion that can sit alongside therapy, journaling, music, and everyday life.
+        This site began as a place for my own healing and reflection. Now it is becoming
+        something more useful: a calm self-discovery companion that can sit alongside therapy,
+        journaling, music, and everyday life.
       </p>
     </div>
   </section>
 
-  <section class="home-section home-section--soft" aria-label="Where to begin">
+  <section class="home-section home-section--navy" aria-label="Where to begin">
     <div class="home-container">
-      <div class="home-section-head">
+      <div class="home-section-head home-section-head--light">
         <p class="home-kicker">Where to begin</p>
         <h2>Choose one doorway. Leave the rest for later.</h2>
         <p>
-          You do not need to understand the whole site today. Begin with what feels supportive.
+          You do not need to understand everything today. Begin with the part that feels supportive.
         </p>
       </div>
 
@@ -157,7 +162,7 @@ title: Home
     </div>
   </section>
 
-  <section class="home-section home-section--soft latest-posts">
+  <section class="home-section latest-posts">
     <div class="home-container">
       <div class="home-section-head">
         <p class="home-kicker">Recent reflections</p>
@@ -201,9 +206,7 @@ title: Home
 
     function setActive(i) {
       index = (i + slides.length) % slides.length;
-
       slides.forEach((s, n) => s.classList.toggle("is-active", n === index));
-
       dots.forEach((d, n) => {
         const active = n === index;
         d.classList.toggle("is-active", active);
