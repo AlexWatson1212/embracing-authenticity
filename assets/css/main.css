@@ -604,6 +604,15 @@ h4 {
   margin-top: 1.5rem;
 }
 
+.page-content {
+  width: 100%;
+}
+
+.page-content > .prose {
+  width: min(840px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
 /* FOOTER */
 
 .site-footer {
