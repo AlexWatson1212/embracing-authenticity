@@ -25,64 +25,12 @@
 
     <nav id="site-menu" class="site-nav" role="navigation" aria-label="Main navigation">
       <ul>
-        <li>
-          <a href="{{ '/start-here' | relative_url }}"
-             {% if page.url == '/start-here/' %}aria-current="page" class="is-active"{% endif %}>
-            Start Here
-          </a>
-        </li>
-
-        <li>
-          <a href="{{ '/music-meaning' | relative_url }}"
-             {% if page.url contains '/music-meaning' %}aria-current="page" class="is-active"{% endif %}>
-            Music &amp; Meaning
-          </a>
-        </li>
-
-        <li>
-          <a href="{{ '/writing-prompts' | relative_url }}"
-             {% if page.url contains '/writing-prompts' %}aria-current="page" class="is-active"{% endif %}>
-            Writing Prompts
-          </a>
-        </li>
-
-        <li>
-          <a href="{{ '/self-discovery' | relative_url }}"
-             {% if page.url contains '/self-discovery' %}aria-current="page" class="is-active"{% endif %}>
-            Self-Discovery
-          </a>
-        </li>
+        <li><a href="{{ '/start-here' | relative_url }}" {% if page.url contains '/start-here' %}aria-current="page" class="is-active"{% endif %}>Start Here</a></li>
+        <li><a href="{{ '/self-discovery' | relative_url }}" {% if page.url contains '/self-discovery' %}aria-current="page" class="is-active"{% endif %}>Self-Discovery</a></li>
+        <li><a href="{{ '/music-meaning' | relative_url }}" {% if page.url contains '/music-meaning' %}aria-current="page" class="is-active"{% endif %}>Music &amp; Meaning</a></li>
+        <li><a href="{{ '/blog' | relative_url }}" {% if page.url contains '/blog' or page.layout == 'post' %}aria-current="page" class="is-active"{% endif %}>Reflections</a></li>
       </ul>
     </nav>
 
   </div>
 </header>
-
-<script>
-  (function () {
-    const header = document.querySelector('.site-header');
-    const button = document.querySelector('.nav-toggle');
-    const menu = document.querySelector('#site-menu');
-
-    if (!header || !button || !menu) return;
-
-    function setMenu(open) {
-      header.classList.toggle('is-open', open);
-      button.setAttribute('aria-expanded', open ? 'true' : 'false');
-      button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    }
-
-    button.addEventListener('click', function () {
-      const isOpen = button.getAttribute('aria-expanded') === 'true';
-      setMenu(!isOpen);
-    });
-
-    menu.addEventListener('click', function (event) {
-      if (event.target.tagName === 'A') setMenu(false);
-    });
-
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') setMenu(false);
-    });
-  })();
-</script>
