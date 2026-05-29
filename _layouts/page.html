@@ -20,71 +20,78 @@ layout: default
         {% endif %}
       </div>
     </section>
-  {% endif %}
 
-  {% if page.hero_image %}
     <h1 class="sr-only">{{ page.title }}</h1>
   {% endif %}
 
-  <div class="page-content">
-    {% unless page.hero_image %}
-      <div class="prose">
-        <h1>{{ page.title }}</h1>
+  <main class="page-wrap">
+    <div class="page-card">
+      <div class="prose page-content">
 
-        {% if page.subtitle %}
-          <p class="lead">{{ page.subtitle }}</p>
-        {% endif %}
+        {% unless page.hero_image %}
+          <h1>{{ page.title }}</h1>
 
-        {% if page.description %}
-          <p class="lead">{{ page.description }}</p>
-        {% endif %}
+          {% if page.subtitle %}
+            <p class="lead">{{ page.subtitle }}</p>
+          {% endif %}
+
+          {% if page.description %}
+            <p class="lead">{{ page.description }}</p>
+          {% endif %}
+        {% endunless %}
+
+        {{ content }}
+
       </div>
-    {% endunless %}
 
-    {{ content }}
-  </div>
+      {% if page.collection == "principles" and page.order %}
+        {% assign principles = site.principles | sort: "order" %}
 
-  {% if page.collection == "principles" and page.order %}
-    {% assign principles = site.principles | sort: "order" %}
+        {% assign current_index = nil %}
+        {% for p in principles %}
+          {% if p.url == page.url %}
+            {% assign current_index = forloop.index0 %}
+          {% endif %}
+        {% endfor %}
 
-    {% assign current_index = nil %}
-    {% for p in principles %}
-      {% if p.url == page.url %}
-        {% assign current_index = forloop.index0 %}
+        {% if current_index != nil %}
+          {% assign prev_index = current_index | minus: 1 %}
+          {% assign next_index = current_index | plus: 1 %}
+
+          {% assign prev = nil %}
+          {% assign next = nil %}
+
+          {% if prev_index >= 0 %}
+            {% assign prev = principles[prev_index] %}
+          {% endif %}
+
+          {% if next_index < principles.size %}
+            {% assign next = principles[next_index] %}
+          {% endif %}
+
+          <nav class="post-nav principle-nav" aria-label="Principle navigation">
+            <a class="post-nav-back" href="{{ '/principles/' | relative_url }}">← Back to Principles</a>
+
+            <div class="post-nav-links">
+              {% if prev %}
+                <a class="post-nav-prev" href="{{ prev.url | relative_url }}">
+                  <span class="post-nav-kicker">Previous</span>
+                  <span class="post-nav-title">{{ prev.title }}</span>
+                </a>
+              {% endif %}
+
+              {% if next %}
+                <a class="post-nav-next" href="{{ next.url | relative_url }}">
+                  <span class="post-nav-kicker">Next</span>
+                  <span class="post-nav-title">{{ next.title }}</span>
+                </a>
+              {% endif %}
+            </div>
+          </nav>
+        {% endif %}
       {% endif %}
-    {% endfor %}
 
-    {% if current_index != nil %}
-      {% assign prev_index = current_index | minus: 1 %}
-      {% assign next_index = current_index | plus: 1 %}
-
-      {% assign prev = nil %}
-      {% assign next = nil %}
-
-      {% if prev_index >= 0 %}
-        {% assign prev = principles[prev_index] %}
-      {% endif %}
-
-      {% if next_index < principles.size %}
-        {% assign next = principles[next_index] %}
-      {% endif %}
-
-      <nav class="principle-nav" aria-label="Principle navigation">
-        <div class="principle-nav-links">
-          <a class="principle-nav-back" href="/principles/">← Back to Principles</a>
-
-          <div class="principle-step-links">
-            {% if prev %}
-              <a class="principle-nav-prev" href="{{ prev.url }}">← Previous Principle</a>
-            {% endif %}
-
-            {% if next %}
-              <a class="principle-nav-next" href="{{ next.url }}">Next Principle →</a>
-            {% endif %}
-          </div>
-        </div>
-      </nav>
-    {% endif %}
-  {% endif %}
+    </div>
+  </main>
 
 </article>
