@@ -1,59 +1,40 @@
-<header class="site-header" role="banner">
-  <div class="shell site-header__inner">
+(function () {
+  const header = document.querySelector(".site-header");
+  const btn = document.querySelector(".nav-toggle");
+  const menu = document.getElementById("site-menu");
 
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Embracing Authenticity home">
-      <img
-        src="{{ '/assets/images/logo.webp' | relative_url }}"
-        alt="Embracing Authenticity"
-        class="brand-mark"
-      >
-    </a>
+  if (!header || !btn || !menu) return;
 
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="site-menu"
-      aria-label="Open menu"
-    >
-      <span class="nav-toggle__icon" aria-hidden="true"></span>
-    </button>
+  function setMenu(open) {
+    header.classList.toggle("is-open", open);
+    menu.classList.toggle("is-open", open);
 
-    <nav id="site-menu" class="site-nav" role="navigation" aria-label="Main navigation">
-      <ul>
-        <li>
-          <a href="{{ '/start-here' | relative_url }}"
-             {% if page.url contains '/start-here' %}aria-current="page" class="is-active"{% endif %}>
-            Start Here
-          </a>
-        </li>
+    document.body.classList.toggle("menu-open", open);
 
-        <li>
-          <a href="{{ '/self-discovery' | relative_url }}"
-             {% if page.url contains '/self-discovery' %}aria-current="page" class="is-active"{% endif %}>
-            Self-Discovery
-          </a>
-        </li>
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
 
-        <li>
-          <a href="{{ '/music-meaning' | relative_url }}"
-             {% if page.url contains '/music-meaning' %}aria-current="page" class="is-active"{% endif %}>
-            Music &amp; Meaning
-          </a>
-        </li>
+  btn.addEventListener("click", function () {
+    const isOpen = btn.getAttribute("aria-expanded") === "true";
+    setMenu(!isOpen);
+  });
 
-        <li>
-          <a href="{{ '/blog' | relative_url }}"
-             {% if page.url contains '/blog' or page.layout == 'post' %}aria-current="page" class="is-active"{% endif %}>
-            Reflections
-          </a>
-        </li>
-      </ul>
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest("a")) {
+      setMenu(false);
+    }
+  });
 
-      <a class="mobile-nav-cta" href="{{ '/start-here' | relative_url }}">
-        Start gently
-      </a>
-    </nav>
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      setMenu(false);
+    }
+  });
 
-  </div>
-</header>
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 860) {
+      setMenu(false);
+    }
+  });
+})();

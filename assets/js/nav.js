@@ -7,7 +7,7 @@
 
   function setMenu(open) {
     header.classList.toggle("is-open", open);
-    menu.classList.toggle("is-open", open);
+    document.body.classList.toggle("menu-open", open);
 
     btn.setAttribute("aria-expanded", open ? "true" : "false");
     btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
@@ -19,14 +19,20 @@
   });
 
   menu.addEventListener("click", function (event) {
-    if (event.target.closest("a")) setMenu(false);
+    if (event.target.closest("a")) {
+      setMenu(false);
+    }
   });
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") setMenu(false);
+    if (event.key === "Escape") {
+      setMenu(false);
+    }
   });
 
   window.addEventListener("resize", function () {
-    if (window.innerWidth > 860) setMenu(false);
+    if (window.innerWidth > 860) {
+      setMenu(false);
+    }
   });
 })();
