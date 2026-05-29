@@ -4,7 +4,7 @@ title: "Desire Without Self-Betrayal"
 permalink: /principles/desire-without-self-betrayal/
 description: "A grounded orientation to desire: learning to want honestly, without shrinking, rescuing, or abandoning yourself to be loved."
 emotions: ["longing", "acceptance"]
-hero_image: "/assets/images/heroes/Desire-Without-Self-Betrayal.webp"
+hero_image: "/assets/images/heroes/desire-without-self-betrayal.webp"
 order: 7
 ---
 
