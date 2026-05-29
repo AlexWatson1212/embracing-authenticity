@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Blog
+title: Reflections
 pagination:
   enabled: true
   collection: posts
 ---
 
-<section class="page-hero page-hero--blog" style="--hero-image: url('/assets/images/about-journey-optimized.jpg');">
+<section class="page-hero page-hero--blog" style="--hero-image: url('/assets/images/heroes/blog-reflections.webp');">
   <div class="page-hero__inner">
     <h1 class="page-hero__title">
       {{ page.title }}
@@ -16,14 +16,19 @@ pagination:
     </h1>
 
     <p class="page-hero__subtitle">
-      Browse reflections, search by topic, or follow what you’re feeling.
+      Honest notes from the process of living, healing, parenting, creating, and becoming.
     </p>
   </div>
 </section>
 
 <section class="blog-top">
-  <form class="blog-search" role="search" aria-label="Blog Search" onsubmit="return false;">
-    <input id="blog-search-input" type="search" placeholder="Search for what's on your mind…" autocomplete="off">
+  <form class="blog-search" role="search" aria-label="Reflection Search" onsubmit="return false;">
+    <input
+      id="blog-search-input"
+      type="search"
+      placeholder="Search for what's on your mind…"
+      autocomplete="off"
+    >
     <button id="blog-search-button" type="button">Search</button>
     <span id="blog-search-count" class="search-count" aria-live="polite"></span>
   </form>
@@ -46,14 +51,14 @@ pagination:
       data-emotions="{{ post.emotions | join: ',' }}"
     >
       <div class="blog-card-content">
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+
         <h3>
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h3>
 
-        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-
         <p class="excerpt">
-          {{ post.description | default: post.excerpt | strip_html | truncatewords: 26 }}
+          {{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}
         </p>
 
         {% if post.emotions and post.emotions.size > 0 %}
@@ -65,7 +70,7 @@ pagination:
           </div>
         {% endif %}
 
-        <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read reflection →</a>
       </div>
     </article>
   {% endfor %}
