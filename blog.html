@@ -6,7 +6,11 @@ pagination:
   collection: posts
 ---
 
-<section class="page-hero page-hero--blog" style="--hero-image: url('/assets/images/heroes/blog-reflections.webp');">
+<section
+  class="page-hero page-hero--blog"
+ style="--hero-image: url('{{ '/assets/images/heroes/blog-reflections.webp' | relative_url }}');"
+  aria-label="Reflections"
+>
   <div class="page-hero__inner">
     <h1 class="page-hero__title">
       {{ page.title }}
@@ -21,94 +25,110 @@ pagination:
   </div>
 </section>
 
-<section class="blog-top">
-  <form class="blog-search" role="search" aria-label="Reflection Search" onsubmit="return false;">
-    <input
-      id="blog-search-input"
-      type="search"
-      placeholder="Search for what's on your mind…"
-      autocomplete="off"
-    >
-    <button id="blog-search-button" type="button">Search</button>
-    <span id="blog-search-count" class="search-count" aria-live="polite"></span>
-  </form>
+<main id="content" class="blog-page">
 
-  <ul id="blog-search-results" class="blog-search-results" aria-live="polite"></ul>
-</section>
+  <section class="blog-top" aria-label="Search reflections">
+    <form class="blog-search" role="search" aria-label="Reflection search" onsubmit="return false;">
+      <input
+        id="blog-search-input"
+        type="search"
+        placeholder="Search for what's on your mind…"
+        autocomplete="off"
+      >
 
-<section class="blog-list container" id="blogPosts">
+      <button id="blog-search-button" type="button">
+        Search
+      </button>
 
-  {% if paginator and paginator.posts and paginator.posts.size > 0 %}
-    {% assign posts_to_show = paginator.posts %}
-  {% else %}
-    {% assign posts_to_show = site.posts %}
-  {% endif %}
+      <span id="blog-search-count" class="search-count" aria-live="polite"></span>
+    </form>
 
-  {% for post in posts_to_show %}
-    <article
-      class="blog-card"
-      data-tags="{{ post.tags | join: ',' }}"
-      data-emotions="{{ post.emotions | join: ',' }}"
-    >
-      <div class="blog-card-content">
-        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+    <ul id="blog-search-results" class="blog-search-results" aria-live="polite"></ul>
+  </section>
 
-        <h3>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h3>
+  <h2 class="blog-section-title">Recent Reflections</h2>
 
-        <p class="excerpt">
-          {{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}
-        </p>
+  <section class="blog-list" id="blogPosts" aria-label="Recent reflections">
 
-        {% if post.emotions and post.emotions.size > 0 %}
-          <div class="tag-list">
-            {% assign shown_emotions = post.emotions | slice: 0, 2 %}
-            {% for emotion in shown_emotions %}
-              <span class="tag">{{ emotion | capitalize }}</span>
-            {% endfor %}
-          </div>
-        {% endif %}
+    {% if paginator and paginator.posts and paginator.posts.size > 0 %}
+      {% assign posts_to_show = paginator.posts %}
+    {% else %}
+      {% assign posts_to_show = site.posts %}
+    {% endif %}
 
-        <a href="{{ post.url | relative_url }}" class="read-more">Read reflection →</a>
-      </div>
-    </article>
-  {% endfor %}
+    {% for post in posts_to_show %}
+      <article
+        class="blog-card"
+        data-tags="{{ post.tags | join: ',' }}"
+        data-emotions="{{ post.emotions | join: ',' }}"
+      >
+        <div class="blog-card-content">
+          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+
+          <h3>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+
+          <p class="excerpt">
+            {{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}
+          </p>
+
+          {% if post.emotions and post.emotions.size > 0 %}
+            <div class="tag-list" aria-label="Post emotions">
+              {% assign shown_emotions = post.emotions | slice: 0, 2 %}
+              {% for emotion in shown_emotions %}
+                <span class="tag">{{ emotion | capitalize }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <a href="{{ post.url | relative_url }}" class="read-more">
+            Read reflection →
+          </a>
+        </div>
+      </article>
+    {% endfor %}
+
+  </section>
 
   {% if paginator and paginator.total_pages and paginator.total_pages > 1 %}
-    <div class="pagination">
+    <nav class="pagination" aria-label="Pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link">← Previous</a>
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link">
+          ← Previous
+        </a>
       {% endif %}
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link">Next →</a>
+        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link">
+          Next →
+        </a>
       {% endif %}
-    </div>
+    </nav>
   {% endif %}
 
   <div class="back-to-top">
     <a href="#" class="scroll-link">Back to Top ↑</a>
   </div>
 
-</section>
+</main>
 
 <script>
   document.querySelectorAll('.scroll-link').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
+    link.addEventListener('click', event => {
+      event.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
 
-  (function(){
-    var input = document.querySelector('#blog-search-input');
-    var list  = document.querySelector('.blog-list');
+  (function () {
+    const input = document.querySelector('#blog-search-input');
+    const list = document.querySelector('#blogPosts');
+
     if (!input || !list) return;
 
-    input.addEventListener('input', function(){
+    input.addEventListener('input', function () {
       list.style.display = this.value.trim() ? 'none' : '';
     });
   })();
 </script>
-
