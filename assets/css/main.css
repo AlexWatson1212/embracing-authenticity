@@ -237,69 +237,88 @@ ol {
 /* MOBILE NAV BUTTON */
 
 .nav-toggle {
-display: none;
-width: 44px;
-height: 44px;
-border-radius: 14px;
-border: 1px solid rgba(255,255,255,.18);
-background: rgba(255,255,255,.94);
-color: var(--color-navy);
-cursor: pointer;
-position: relative;
-z-index: 1003;
-place-items: center;
-box-shadow: var(--shadow-soft);
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.94);
+  color: var(--color-navy);
+  cursor: pointer;
+  position: relative;
+  z-index: 10003;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: var(--shadow-soft);
 }
 
+/* Supports new single-span icon */
 .nav-toggle__icon,
 .nav-toggle__icon::before,
-.nav-toggle__icon::after {
-width: 18px;
-height: 2px;
-border-radius: 999px;
-background: currentColor;
-transition:
-transform 200ms ease,
-opacity 200ms ease;
+.nav-toggle__icon::after,
+.nav-toggle__line {
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease,
+    background 200ms ease;
 }
 
 .nav-toggle__icon {
-position: relative;
-display: block;
+  position: relative;
+  display: block;
 }
 
 .nav-toggle__icon::before,
 .nav-toggle__icon::after {
-content: "";
-position: absolute;
-left: 0;
+  content: "";
+  position: absolute;
+  left: 0;
 }
 
 .nav-toggle__icon::before {
-top: -6px;
+  top: -6px;
 }
 
 .nav-toggle__icon::after {
-top: 6px;
+  top: 6px;
 }
 
+/* New icon open state */
 .site-header.is-open .nav-toggle__icon {
-background: transparent;
+  background: transparent;
 }
 
 .site-header.is-open .nav-toggle__icon::before {
-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 
 .site-header.is-open .nav-toggle__icon::after {
-transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Old three-line fallback open state */
+.site-header.is-open .nav-toggle__line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.site-header.is-open .nav-toggle__line:nth-child(2) {
+  opacity: 0;
+}
+
+.site-header.is-open .nav-toggle__line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .mobile-menu-cta,
 .site-nav > .mobile-menu-cta {
-display: none;
+  display: none;
 }
-
 
 /* BUTTONS / LINKS */
 
@@ -1336,9 +1355,9 @@ display: none;
     height: 58px;
   }
 
-  .nav-toggle {
-    display: inline-grid;
-  }
+ .nav-toggle {
+  display: inline-flex;
+}
 
   .site-nav {
     position: fixed;
