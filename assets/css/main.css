@@ -1294,6 +1294,66 @@ ol {
 
 @media (max-width: 768px) {
 
+  .site-header__inner,
+  .site-header .shell {
+    min-height: 72px;
+  }
+
+  .brand-mark {
+    height: 58px;
+  }
+
+  .nav-toggle {
+    display: grid;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+    background: rgba(16, 45, 59, .98);
+    border-top: 1px solid rgba(255,255,255,.08);
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      transform 220ms ease,
+      opacity 220ms ease;
+  }
+
+  .site-header.is-open .site-nav {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .site-nav ul {
+    width: min(420px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 1.25rem 0 1.5rem;
+    display: grid;
+    gap: .25rem;
+  }
+
+  .site-nav li {
+    width: 100%;
+  }
+
+  .site-nav a {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    padding: .75rem 0;
+    font-size: .82rem;
+  }
+
+  .site-nav a::after {
+    bottom: .35rem;
+  }
+
   .start-grid,
   .emotion-grid,
   .home-pathways,
@@ -1313,6 +1373,10 @@ ol {
 
   .blog-search {
     flex-direction: column;
+  }
+
+  .journey-step {
+    gap: 1rem;
   }
 
   .journey-marker {
@@ -1337,6 +1401,27 @@ ol {
   .container,
   .shell {
     width: min(calc(100% - 1rem), 1200px);
+  }
+
+  .home-hero {
+    padding: 1.25rem 0 3rem;
+  }
+
+  .home-hero__layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .home-hero__copy {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-hero__copy h1 {
+    font-size: clamp(2.7rem, 14vw, 4rem);
+  }
+
+  .home-hero__image {
+    min-height: 260px;
   }
 
   .home-path-card,

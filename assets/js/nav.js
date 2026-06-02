@@ -2,6 +2,7 @@
   const header = document.querySelector(".site-header");
   const btn = document.querySelector(".nav-toggle");
   const menu = document.getElementById("site-menu");
+  const mobileQuery = window.matchMedia("(max-width: 768px)");
 
   if (!header || !btn || !menu) return;
 
@@ -13,6 +14,10 @@
     btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   }
 
+  function closeMenu() {
+    setMenu(false);
+  }
+
   btn.addEventListener("click", function () {
     const isOpen = btn.getAttribute("aria-expanded") === "true";
     setMenu(!isOpen);
@@ -20,19 +25,19 @@
 
   menu.addEventListener("click", function (event) {
     if (event.target.closest("a")) {
-      setMenu(false);
+      closeMenu();
     }
   });
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-      setMenu(false);
+      closeMenu();
     }
   });
 
-  window.addEventListener("resize", function () {
-    if (window.innerWidth > 860) {
-      setMenu(false);
+  mobileQuery.addEventListener("change", function (event) {
+    if (!event.matches) {
+      closeMenu();
     }
   });
 })();
