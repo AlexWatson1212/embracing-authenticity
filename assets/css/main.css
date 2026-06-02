@@ -237,46 +237,69 @@ ol {
 /* MOBILE NAV BUTTON */
 
 .nav-toggle {
-  display: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.18);
-  background: rgba(255,255,255,.94);
-  color: var(--color-navy);
-  cursor: pointer;
-  position: relative;
-  z-index: 1003;
-  place-items: center;
-  box-shadow: var(--shadow-soft);
+display: none;
+width: 44px;
+height: 44px;
+border-radius: 14px;
+border: 1px solid rgba(255,255,255,.18);
+background: rgba(255,255,255,.94);
+color: var(--color-navy);
+cursor: pointer;
+position: relative;
+z-index: 1003;
+place-items: center;
+box-shadow: var(--shadow-soft);
 }
 
-.nav-toggle__line {
-  display: block;
-  width: 18px;
-  height: 2px;
-  margin: 2px 0;
-  border-radius: 999px;
-  background: currentColor;
-  transition: transform 200ms ease, opacity 200ms ease;
+.nav-toggle__icon,
+.nav-toggle__icon::before,
+.nav-toggle__icon::after {
+width: 18px;
+height: 2px;
+border-radius: 999px;
+background: currentColor;
+transition:
+transform 200ms ease,
+opacity 200ms ease;
 }
 
-.site-header.is-open .nav-toggle__line:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
+.nav-toggle__icon {
+position: relative;
+display: block;
 }
 
-.site-header.is-open .nav-toggle__line:nth-child(2) {
-  opacity: 0;
+.nav-toggle__icon::before,
+.nav-toggle__icon::after {
+content: "";
+position: absolute;
+left: 0;
 }
 
-.site-header.is-open .nav-toggle__line:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
+.nav-toggle__icon::before {
+top: -6px;
 }
 
-.mobile-nav-cta,
-.site-nav > .mobile-nav-cta {
-  display: none !important;
+.nav-toggle__icon::after {
+top: 6px;
 }
+
+.site-header.is-open .nav-toggle__icon {
+background: transparent;
+}
+
+.site-header.is-open .nav-toggle__icon::before {
+transform: translateY(6px) rotate(45deg);
+}
+
+.site-header.is-open .nav-toggle__icon::after {
+transform: translateY(-6px) rotate(-45deg);
+}
+
+.mobile-menu-cta,
+.site-nav > .mobile-menu-cta {
+display: none;
+}
+
 
 /* BUTTONS / LINKS */
 
@@ -905,6 +928,10 @@ ol {
   padding-left: 1.5rem;
   border-left: 4px solid var(--color-accent-light);
 } 
+
+They appear in your mobile media block. Replace **Part 3** in full with this clean version. :contentReference[oaicite:0]{index=0}
+
+```css
 /* ======================================
    PART 3 / 3
    PAGES, BLOG, FOOTER, RESPONSIVE
@@ -1374,6 +1401,55 @@ ol {
     display: none;
   }
 
+  .mobile-menu-cta {
+    display: block;
+    border-bottom: 0 !important;
+    padding-top: 1.5rem;
+  }
+
+  .mobile-menu-cta a {
+    min-height: 58px;
+    border-radius: 999px;
+    background: var(--color-navy);
+    color: #fff !important;
+    font-weight: 900;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .mobile-menu-cta a:hover {
+    background: var(--color-accent);
+    color: #fff !important;
+  }
+
+  .home-hero {
+    padding: 1.25rem 0 3rem;
+  }
+
+  .home-hero__layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .home-hero__image {
+    display: none;
+  }
+
+  .home-hero__copy {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-hero__copy h1 {
+    font-size: clamp(2.5rem, 12vw, 3.6rem);
+  }
+
+  .home-hero__actions {
+    flex-direction: column;
+  }
+
+  .home-hero__actions .home-btn {
+    width: 100%;
+  }
+
   .start-grid,
   .emotion-grid,
   .home-pathways,
@@ -1429,35 +1505,6 @@ ol {
   .container,
   .shell {
     width: min(calc(100% - 1rem), 1200px);
-  }
-
-  .home-hero {
-    padding: 1.25rem 0 3rem;
-  }
-
-  .home-hero__layout {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .home-hero__image {
-    display: none;
-  }
-
-  .home-hero__copy {
-    padding: 2rem 1.5rem;
-  }
-
-  .home-hero__copy h1 {
-    font-size: clamp(2.5rem, 12vw, 3.6rem);
-  }
-
-  .home-hero__actions {
-    flex-direction: column;
-  }
-
-  .home-hero__actions .home-btn {
-    width: 100%;
   }
 
   .home-path-card,
