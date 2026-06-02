@@ -36,7 +36,7 @@ pagination:
   <ul id="blog-search-results" class="blog-search-results" aria-live="polite"></ul>
 </section>
 
-<section class="blog-list" id="blogPosts">
+<section class="blog-list container" id="blogPosts">
 
   {% if paginator and paginator.posts and paginator.posts.size > 0 %}
     {% assign posts_to_show = paginator.posts %}
@@ -112,4 +112,3 @@ pagination:
   })();
 </script>
 
-<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
