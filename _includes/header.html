@@ -16,36 +16,45 @@
       aria-controls="site-menu"
       aria-label="Open menu"
     >
-      <span class="nav-toggle__bar"></span>
-      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__line"></span>
     </button>
 
     <nav id="site-menu" class="site-nav" role="navigation" aria-label="Main navigation">
       <ul>
         <li>
-          <a href="{{ '/start-here' | relative_url }}"
-             {% if page.url contains '/start-here' %}aria-current="page" class="is-active"{% endif %}>
+          <a
+            href="{{ '/start-here' | relative_url }}"
+            {% if page.url contains '/start-here' %}aria-current="page" class="is-active"{% endif %}
+          >
             Start Here
           </a>
         </li>
 
         <li>
-          <a href="{{ '/self-discovery' | relative_url }}"
-             {% if page.url contains '/self-discovery' %}aria-current="page" class="is-active"{% endif %}>
+          <a
+            href="{{ '/self-discovery' | relative_url }}"
+            {% if page.url contains '/self-discovery' %}aria-current="page" class="is-active"{% endif %}
+          >
             Self-Discovery
           </a>
         </li>
 
         <li>
-          <a href="{{ '/music-meaning' | relative_url }}"
-             {% if page.url contains '/music-meaning' %}aria-current="page" class="is-active"{% endif %}>
+          <a
+            href="{{ '/music-meaning' | relative_url }}"
+            {% if page.url contains '/music-meaning' %}aria-current="page" class="is-active"{% endif %}
+          >
             Music &amp; Meaning
           </a>
         </li>
 
         <li>
-          <a href="{{ '/blog' | relative_url }}"
-             {% if page.url contains '/blog' or page.layout == 'post' %}aria-current="page" class="is-active"{% endif %}>
+          <a
+            href="{{ '/blog' | relative_url }}"
+            {% if page.url contains '/blog' or page.layout == 'post' %}aria-current="page" class="is-active"{% endif %}
+          >
             Reflections
           </a>
         </li>
