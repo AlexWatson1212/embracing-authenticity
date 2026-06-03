@@ -16,9 +16,7 @@
       aria-controls="site-menu"
       aria-label="Open menu"
     >
-      <span class="nav-toggle__line"></span>
-      <span class="nav-toggle__line"></span>
-      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__icon" aria-hidden="true"></span>
     </button>
 
     <nav id="site-menu" class="site-nav" role="navigation" aria-label="Main navigation">
@@ -56,6 +54,14 @@
             {% if page.url contains '/blog' or page.layout == 'post' %}aria-current="page" class="is-active"{% endif %}
           >
             Reflections
+          </a>
+        </li>
+
+        <li class="mobile-menu-divider" aria-hidden="true"></li>
+
+        <li class="mobile-menu-cta">
+          <a href="{{ '/principles/' | relative_url }}">
+            Explore the Principles
           </a>
         </li>
       </ul>
