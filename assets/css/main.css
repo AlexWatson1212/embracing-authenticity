@@ -1265,7 +1265,7 @@ ol {
 }
 
 .footer-logo img {
-  width: clamp(165px, 16vw, 210px);
+  width: clamp(210px, 20vw, 270px);
   height: auto;
 }
 
@@ -1513,6 +1513,31 @@ ol {
     flex-direction: column;
     gap: .75rem;
   }
+}
+.mobile-menu-divider {
+  margin: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  list-style: none;
+}
+
+.mobile-menu-cta {
+  display: block;
+  border-bottom: 0 !important;
+  padding-top: 0;
+}
+
+.mobile-menu-cta a {
+  min-height: 60px;
+  border-radius: 999px;
+  background: var(--color-navy);
+  color: #fff !important;
+  font-weight: 900;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.mobile-menu-cta a:hover {
+  background: var(--color-accent);
 }
 
 @media (max-width: 480px) {
