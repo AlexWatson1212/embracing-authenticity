@@ -1,10 +1,7 @@
 ```html
 <header class="site-header" role="banner">
   <nav class="nav" role="navigation" aria-label="Main">
-
-    <a class="nav__brand" href="{{ '/' | relative_url }}">
-      {{ site.title }}
-    </a>
+    <a class="nav__brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
 
     <button class="nav__toggle" type="button"
             aria-label="Open menu"
@@ -14,15 +11,19 @@
     </button>
 
     <ul id="primary-nav" class="nav__links" hidden>
-
-      <li class="nav__mobile-logo">
-        <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
-        </a>
-      </li>
+      {%- comment -%}
+      MAIN NAV:
+      - Keep top nav to the 4 “doorways”
+      - Replace Principles with Self-Discovery
+      - Keep Neurodivergent Lens visible (as before)
+      - Principles should live in the footer / contextual links (not in header)
+      {%- endcomment -%}
 
       {%- assign nav_items = site.nav -%}
 
+      {%- comment -%}
+      1) Render everything EXCEPT Principles (we'll inject Self-Discovery instead)
+      {%- endcomment -%}
       {%- for item in nav_items -%}
         {%- assign item_url = item.url | append: '' -%}
         {%- if item_url == '/principles' or item_url == '/principles/' -%}
@@ -38,6 +39,11 @@
         </li>
       {%- endfor -%}
 
+      {%- comment -%}
+      2) Inject Self-Discovery (only if it's not already in site.nav)
+      Change the URL below to whatever your Self-Discovery page will be.
+      I’m assuming /self-discovery — adjust if yours is /journey or /discover etc.
+      {%- endcomment -%}
       {%- assign sd_matches = site.nav | where: 'url', '/self-discovery' | size -%}
       {%- if sd_matches == 0 -%}
         {%- assign sd_active = page.url == '/self-discovery' or page.url == '/self-discovery/' -%}
@@ -49,6 +55,9 @@
         </li>
       {%- endif -%}
 
+      {%- comment -%}
+      3) Ensure "Neurodivergent Lens" appears even if not in site.nav (unchanged)
+      {%- endcomment -%}
       {%- assign lens_matches = site.nav | where: 'url', '/neurodivergent-lens' | size -%}
       {%- if lens_matches == 0 -%}
         {%- assign lens_active = page.url == '/neurodivergent-lens' or page.url == '/neurodivergent-lens/' -%}
@@ -59,47 +68,38 @@
           </a>
         </li>
       {%- endif -%}
-
     </ul>
   </nav>
 </header>
 
 <script>
   (function () {
-    const header = document.querySelector('.site-header');
-    const btn = document.querySelector('.nav__toggle');
-    const list = document.querySelector('#primary-nav');
+    const headerEl = document.currentScript.previousElementSibling; // <header>
+    const btn = headerEl.querySelector('.nav__toggle');
+    const list = headerEl.querySelector('#primary-nav');
 
-    if (!header || !btn || !list) return;
+    if (!btn || !list) return;
 
     function toggle(open) {
-      header.classList.toggle('is-open', open);
-      document.body.classList.toggle('menu-open', open);
-
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-expanded', open);
       btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
 
-      if (open) {
-        list.removeAttribute('hidden');
-      } else {
-        list.setAttribute('hidden', '');
-      }
+      if (open) list.removeAttribute('hidden');
+      else list.setAttribute('hidden', '');
     }
 
-    btn.addEventListener('click', function () {
-      toggle(btn.getAttribute('aria-expanded') !== 'true');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      toggle(open);
     });
 
-    list.addEventListener('click', function (e) {
-      if (e.target.closest('a')) toggle(false);
+    // Close on Escape & when a link is chosen (mobile UX)
+    list.addEventListener('click', e => {
+      if (e.target.tagName === 'A') toggle(false);
     });
 
-    document.addEventListener('keydown', function (e) {
+    document.addEventListener('keydown', e => {
       if (e.key === 'Escape') toggle(false);
-    });
-
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 768) toggle(false);
     });
   })();
 </script>
