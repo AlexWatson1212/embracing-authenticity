@@ -1,5 +1,6 @@
 <header class="site-header" role="banner">
   <nav class="nav" role="navigation" aria-label="Main">
+
     <a class="nav__brand" href="{{ '/' | relative_url }}">
       {{ site.title }}
     </a>
@@ -11,7 +12,7 @@
       <span aria-hidden="true" class="nav__icon"></span>
     </button>
 
-    <ul id="primary-nav" class="nav__links" hidden>
+    <ul id="primary-nav" class="nav__links">
 
       <li class="nav__mobile-logo">
         <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
@@ -57,36 +58,66 @@
           </a>
         </li>
       {%- endif -%}
+
     </ul>
   </nav>
 </header>
 
 <script>
   (function () {
-    const headerEl = document.currentScript.previousElementSibling;
-    const btn = headerEl.querySelector('.nav__toggle');
-    const list = headerEl.querySelector('#primary-nav');
+    const header = document.querySelector('.site-header');
+    const btn = document.querySelector('.nav__toggle');
+    const list = document.querySelector('#primary-nav');
 
-    if (!btn || !list) return;
+    if (!header || !btn || !list) return;
 
     function toggle(open) {
-      btn.setAttribute('aria-expanded', open);
-      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-      if (open) list.removeAttribute('hidden');
-      else list.setAttribute('hidden', '');
+      header.classList.toggle('is-open', open);
+      document.body.classList.toggle('menu-open', open);
+
+      btn.setAttribute(
+        'aria-expanded',
+        open ? 'true' : 'false'
+      );
+
+      btn.setAttribute(
+        'aria-label',
+        open ? 'Close menu' : 'Open menu'
+      );
     }
 
     btn.addEventListener('click', () => {
-      const open = btn.getAttribute('aria-expanded') !== 'true';
-      toggle(open);
+      const isOpen =
+        btn.getAttribute('aria-expanded') === 'true';
+
+      toggle(!isOpen);
     });
 
-    list.addEventListener('click', e => {
-      if (e.target.tagName === 'A') toggle(false);
+    list.addEventListener('click', (e) => {
+      if (
+        e.target.closest('a') &&
+        header.classList.contains('is-open')
+      ) {
+        toggle(false);
+      }
     });
 
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') toggle(false);
+    document.addEventListener('keydown', (e) => {
+      if (
+        e.key === 'Escape' &&
+        header.classList.contains('is-open')
+      ) {
+        toggle(false);
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (
+        window.innerWidth > 768 &&
+        header.classList.contains('is-open')
+      ) {
+        toggle(false);
+      }
     });
   })();
 </script>
