@@ -161,6 +161,7 @@ ol {
 .nav__brand {
   position: relative;
   z-index: 10003;
+  flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
   color: #fff;
@@ -176,7 +177,9 @@ ol {
 .nav__links {
   display: flex;
   align-items: center;
-  gap: clamp(1rem, 2vw, 1.8rem);
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: clamp(.75rem, 1.6vw, 1.5rem);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -187,10 +190,11 @@ ol {
   display: inline-flex;
   padding: .35rem 0;
   color: rgba(255,255,255,.74);
-  font-size: .76rem;
+  font-size: .74rem;
   font-weight: 850;
-  letter-spacing: .075em;
+  letter-spacing: .07em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav__links a::after {
@@ -339,7 +343,7 @@ ol {
       var(--color-navy-soft) 52%,
       transparent 52%
     );
-}
+}a
 /* ======================================
    PART 2 / 3
    HOME SECTIONS, HEROES, PAGE CONTENT
