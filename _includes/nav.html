@@ -1,9 +1,7 @@
 <header class="site-header" role="banner">
   <nav class="nav" role="navigation" aria-label="Main">
-
-    <a class="nav__brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-      <img class="nav__logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
-      <span class="nav__brand-text">{{ site.title }}</span>
+    <a class="nav__brand" href="{{ '/' | relative_url }}">
+      {{ site.title }}
     </a>
 
     <button class="nav__toggle" type="button"
@@ -14,6 +12,7 @@
     </button>
 
     <ul id="primary-nav" class="nav__links" hidden>
+
       <li class="nav__mobile-logo">
         <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
           <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
@@ -58,76 +57,36 @@
           </a>
         </li>
       {%- endif -%}
-
-      <li class="mobile-menu-divider"></li>
-
-      <li class="mobile-menu-cta">
-        <a href="{{ '/principles' | relative_url }}">Explore the Principles</a>
-      </li>
-
-      <li class="mobile-menu-social">
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-        <a href="mailto:{{ site.email }}">Email</a>
-      </li>
     </ul>
   </nav>
 </header>
 
 <script>
   (function () {
-    const header = document.querySelector('.site-header');
-    const btn = document.querySelector('.nav__toggle');
-    const list = document.querySelector('#primary-nav');
+    const headerEl = document.currentScript.previousElementSibling;
+    const btn = headerEl.querySelector('.nav__toggle');
+    const list = headerEl.querySelector('#primary-nav');
 
-    if (!header || !btn || !list) return;
+    if (!btn || !list) return;
 
-    function openMenu() {
-      header.classList.add('is-open');
-      document.body.classList.add('menu-open');
-      list.removeAttribute('hidden');
-      btn.setAttribute('aria-expanded', 'true');
-      btn.setAttribute('aria-label', 'Close menu');
+    function toggle(open) {
+      btn.setAttribute('aria-expanded', open);
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      if (open) list.removeAttribute('hidden');
+      else list.setAttribute('hidden', '');
     }
 
-    function closeMenu() {
-      header.classList.remove('is-open');
-      document.body.classList.remove('menu-open');
-      list.setAttribute('hidden', '');
-      btn.setAttribute('aria-expanded', 'false');
-      btn.setAttribute('aria-label', 'Open menu');
-    }
-
-    function toggleMenu() {
-      header.classList.contains('is-open') ? closeMenu() : openMenu();
-    }
-
-    btn.addEventListener('click', toggleMenu);
-
-    list.addEventListener('click', function (e) {
-      if (e.target.closest('a')) closeMenu();
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      toggle(open);
     });
 
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeMenu();
+    list.addEventListener('click', e => {
+      if (e.target.tagName === 'A') toggle(false);
     });
 
-    let startX = 0;
-    let startY = 0;
-
-    document.addEventListener('touchstart', function (e) {
-      startX = e.changedTouches[0].screenX;
-      startY = e.changedTouches[0].screenY;
-    }, { passive: true });
-
-    document.addEventListener('touchend', function (e) {
-      const endX = e.changedTouches[0].screenX;
-      const endY = e.changedTouches[0].screenY;
-      const diffX = endX - startX;
-      const diffY = Math.abs(endY - startY);
-
-      if (startX < 45 && diffX > 80 && diffY < 70) openMenu();
-      if (diffX < -80 && diffY < 70 && header.classList.contains('is-open')) closeMenu();
-    }, { passive: true });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') toggle(false);
+    });
   })();
 </script>
