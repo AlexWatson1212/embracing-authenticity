@@ -1,6 +1,10 @@
 <header class="site-header" role="banner">
   <nav class="nav" role="navigation" aria-label="Main">
-    <a class="nav__brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+    <a class="nav__brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+      <img class="nav__logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
+      <span class="nav__brand-text">{{ site.title }}</span>
+    </a>
 
     <button class="nav__toggle" type="button"
             aria-label="Open menu"
@@ -10,19 +14,14 @@
     </button>
 
     <ul id="primary-nav" class="nav__links" hidden>
-      {%- comment -%}
-      MAIN NAV:
-      - Keep top nav to the 4 “doorways”
-      - Replace Principles with Self-Discovery
-      - Keep Neurodivergent Lens visible (as before)
-      - Principles should live in the footer / contextual links (not in header)
-      {%- endcomment -%}
+      <li class="nav__mobile-logo">
+        <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
+        </a>
+      </li>
 
       {%- assign nav_items = site.nav -%}
 
-      {%- comment -%}
-      1) Render everything EXCEPT Principles (we'll inject Self-Discovery instead)
-      {%- endcomment -%}
       {%- for item in nav_items -%}
         {%- assign item_url = item.url | append: '' -%}
         {%- if item_url == '/principles' or item_url == '/principles/' -%}
@@ -38,11 +37,6 @@
         </li>
       {%- endfor -%}
 
-      {%- comment -%}
-      2) Inject Self-Discovery (only if it's not already in site.nav)
-      Change the URL below to whatever your Self-Discovery page will be.
-      I’m assuming /self-discovery — adjust if yours is /journey or /discover etc.
-      {%- endcomment -%}
       {%- assign sd_matches = site.nav | where: 'url', '/self-discovery' | size -%}
       {%- if sd_matches == 0 -%}
         {%- assign sd_active = page.url == '/self-discovery' or page.url == '/self-discovery/' -%}
@@ -54,9 +48,6 @@
         </li>
       {%- endif -%}
 
-      {%- comment -%}
-      3) Ensure "Neurodivergent Lens" appears even if not in site.nav (unchanged)
-      {%- endcomment -%}
       {%- assign lens_matches = site.nav | where: 'url', '/neurodivergent-lens' | size -%}
       {%- if lens_matches == 0 -%}
         {%- assign lens_active = page.url == '/neurodivergent-lens' or page.url == '/neurodivergent-lens/' -%}
@@ -67,30 +58,76 @@
           </a>
         </li>
       {%- endif -%}
+
+      <li class="mobile-menu-divider"></li>
+
+      <li class="mobile-menu-cta">
+        <a href="{{ '/principles' | relative_url }}">Explore the Principles</a>
+      </li>
+
+      <li class="mobile-menu-social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="mailto:{{ site.email }}">Email</a>
+      </li>
     </ul>
   </nav>
 </header>
 
 <script>
   (function () {
-    const headerEl = document.currentScript.previousElementSibling; // <header>
-    const btn = headerEl.querySelector('.nav__toggle');
-    const list = headerEl.querySelector('#primary-nav');
-    if (!btn || !list) return;
+    const header = document.querySelector('.site-header');
+    const btn = document.querySelector('.nav__toggle');
+    const list = document.querySelector('#primary-nav');
 
-    function toggle(open) {
-      btn.setAttribute('aria-expanded', open);
-      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-      if (open) list.removeAttribute('hidden'); else list.setAttribute('hidden', '');
+    if (!header || !btn || !list) return;
+
+    function openMenu() {
+      header.classList.add('is-open');
+      document.body.classList.add('menu-open');
+      list.removeAttribute('hidden');
+      btn.setAttribute('aria-expanded', 'true');
+      btn.setAttribute('aria-label', 'Close menu');
     }
 
-    btn.addEventListener('click', () => {
-      const open = btn.getAttribute('aria-expanded') !== 'true';
-      toggle(open);
+    function closeMenu() {
+      header.classList.remove('is-open');
+      document.body.classList.remove('menu-open');
+      list.setAttribute('hidden', '');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Open menu');
+    }
+
+    function toggleMenu() {
+      header.classList.contains('is-open') ? closeMenu() : openMenu();
+    }
+
+    btn.addEventListener('click', toggleMenu);
+
+    list.addEventListener('click', function (e) {
+      if (e.target.closest('a')) closeMenu();
     });
 
-    // Close on Escape & when a link is chosen (mobile UX)
-    list.addEventListener('click', e => { if (e.target.tagName === 'A') toggle(false); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') toggle(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    let startX = 0;
+    let startY = 0;
+
+    document.addEventListener('touchstart', function (e) {
+      startX = e.changedTouches[0].screenX;
+      startY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    document.addEventListener('touchend', function (e) {
+      const endX = e.changedTouches[0].screenX;
+      const endY = e.changedTouches[0].screenY;
+      const diffX = endX - startX;
+      const diffY = Math.abs(endY - startY);
+
+      if (startX < 45 && diffX > 80 && diffY < 70) openMenu();
+      if (diffX < -80 && diffY < 70 && header.classList.contains('is-open')) closeMenu();
+    }, { passive: true });
   })();
 </script>
