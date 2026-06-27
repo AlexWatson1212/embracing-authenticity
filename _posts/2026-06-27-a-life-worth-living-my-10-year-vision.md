@@ -1,3 +1,4 @@
+```markdown
 ---
 layout: post
 title: "A Life Worth Living: My 10-Year Vision (2026–2036)"
@@ -8,11 +9,11 @@ hero_image: /assets/images/posts/a-life-worth-living.webp
 emotions: [hope, purpose]
 ---
 
-A Life Worth Living: My 10-Year Vision (2026–2036)
+# A Life Worth Living: My 10-Year Vision (2026–2036)
 
 Every now and then I find it helpful to stop thinking about the next week, the next project, or even the next year, and instead ask a much bigger question.
 
-What kind of life am I actually trying to build?
+**What kind of life am I actually trying to build?**
 
 Not what career I want.
 
@@ -28,7 +29,9 @@ It is something we practise.
 
 One decision at a time.
 
-My North Star
+---
+
+## My North Star
 
 Over the next decade I want to build a calm, meaningful life through counselling, thoughtful work, good health, strong relationships, creativity, and being the father Victor deserves.
 
@@ -46,7 +49,9 @@ Not chasing success.
 
 Building a life worth living.
 
-Living By Values Instead Of Outcomes
+---
+
+## Living By Values Instead Of Outcomes
 
 For much of my life I measured myself through outcomes.
 
@@ -82,7 +87,9 @@ Whether I continue showing up as the person I hope to become.
 
 That feels like a far steadier foundation.
 
-The Shift I Didn't Expect
+---
+
+## The Shift I Didn't Expect
 
 Looking back, I can see that I spent years trying to earn belonging.
 
@@ -110,7 +117,9 @@ Not becoming someone different.
 
 Becoming more fully myself.
 
-What Matters Most
+---
+
+## What Matters Most
 
 If someone asked what I hope my life revolves around, my answer would be surprisingly simple.
 
@@ -134,7 +143,9 @@ None of those things require an extraordinary life.
 
 Only an intentional one.
 
-Becoming An Exceptional Counsellor
+---
+
+## Becoming An Exceptional Counsellor
 
 Counselling sits at the centre of the life I hope to build.
 
@@ -156,7 +167,9 @@ Not because people think I'm clever.
 
 Because they genuinely feel understood.
 
-Building Work That Helps People
+---
+
+## Building Work That Helps People
 
 Alongside counselling, I hope to continue building websites and brands for therapists and other helping professionals.
 
@@ -176,7 +189,9 @@ But clarity will always matter.
 
 If I can combine counselling, psychology, design, writing and technology into work that genuinely helps people, then that feels like meaningful work.
 
-Continuing To Write
+---
+
+## Continuing To Write
 
 Writing has quietly become one of the most important parts of my life.
 
@@ -192,7 +207,9 @@ Not because I have all the answers.
 
 Because writing keeps teaching me better questions.
 
-The Father I Hope To Be
+---
+
+## The Father I Hope To Be
 
 When I imagine looking back on my life, I doubt I'll be thinking about websites, income or qualifications.
 
@@ -210,11 +227,13 @@ Whether he knew he could always come to me.
 
 If, many years from now, he can honestly say:
 
-Dad always made me feel safe to be myself.
+> Dad always made me feel safe to be myself.
 
 Then very little else will matter by comparison.
 
-Freedom Rather Than Wealth
+---
+
+## Freedom Rather Than Wealth
 
 Money matters.
 
@@ -234,7 +253,9 @@ Enough security to keep learning and creating.
 
 There is a quiet kind of wealth in simply having enough.
 
-Relationships Built On Honesty
+---
+
+## Relationships Built On Honesty
 
 I no longer want relationships built on trying to impress each other.
 
@@ -248,7 +269,9 @@ Where both people continue growing without asking the other person to become som
 
 That feels far more sustainable than chasing excitement alone.
 
-Looking After The Body That Carries Me
+---
+
+## Looking After The Body That Carries Me
 
 Every part of my future depends on my health.
 
@@ -270,7 +293,9 @@ These aren't separate from my work.
 
 They make the rest of my life possible.
 
-Character Compounds
+---
+
+## Character Compounds
 
 Every year I hope to ask myself the same simple questions.
 
@@ -290,7 +315,9 @@ Achievements come and go.
 
 Character stays.
 
-Staying Curious
+---
+
+## Staying Curious
 
 The older I become, the less interested I am in certainty.
 
@@ -302,7 +329,9 @@ To become a more understanding one.
 
 Because every new perspective makes it a little easier to understand another human being.
 
-A Quiet, Beautiful Life
+---
+
+## A Quiet, Beautiful Life
 
 The life I imagine isn't particularly glamorous.
 
@@ -336,7 +365,9 @@ Nothing dramatic.
 
 Just a life that feels deeply aligned.
 
-What Success Means To Me
+---
+
+## What Success Means To Me
 
 If everything goes well over the next ten years, I hope to have built a respected counselling practice.
 
@@ -367,3 +398,4 @@ With self-respect.
 Someone whose life gradually becomes a reflection of his values rather than his fears.
 
 If I can do that—one ordinary day at a time—I think I'll have built exactly the life I was hoping for.
+```
