@@ -8,245 +8,189 @@ hero_image: /assets/images/posts/not-escaping-my-life.webp
 emotions: [fear, acceptance]
 ---
 
-There’s a quiet truth I’ve been circling lately.
+---
+
+layout: post
+title: "Not Escaping My Life"
+date: 2026-05-24
+tags: [presence, self-discovery, awareness, authenticity]
+description: "A reflection on discovering that the biggest change wasn't changing my life, but learning to be more present within it."
+hero_image: /assets/images/posts/not-escaping-my-life.webp
+emotions: [acceptance, presence]
+--------------------------------
+
+There's a quiet truth I've been circling lately.
 
 Not something dramatic.
 
-Just something simple… and a bit confronting.
+Just something simple.
+
+I don't think my life needs to change very much.
+
+I think the way I meet it does.
 
 ---
 
-## I Don’t Think My Life Needs to Change
+## A Thought That Stayed With Me
 
-I’ve spent a lot of time thinking I needed to adjust things.
+Recently I came across a sentence that stopped me.
 
-Fix things.  
-Improve things.  
-Optimise things.
+> *"You're not tired, you're escaping your life."*
 
-But when I really sit with it, I don’t think that’s the main issue.
+I don't think it's always true.
 
-**I don’t think my life needs to change that much.**
+Sometimes we're genuinely tired.
 
-I think *how I show up to it* does.
+Sometimes we need rest.
 
----
+But it made me wonder how often I reach for distraction when what I actually need is presence.
 
-## The Idea That Landed
-
-I came across this line:
-
-> *“You’re not tired, you’re escaping your life.”*
-
-And something in me recognised it immediately.
-
-Not as criticism.
-
-Not as pressure.
-
-But as something quietly true.
+That question has stayed with me.
 
 ---
 
-## The Part of Me That’s Been Protecting
+## Before I Opened It
 
-If I’m honest, there’s a part of me that’s been protecting an idealised version of myself.
+This morning I found myself wanting to do almost anything else.
 
-The version that:
-- *could* do things properly  
-- *would* get it right  
-- *just hasn’t quite started yet*  
+Tidy something.
 
-Because as long as I stay in that space…
+Read one more article.
 
-I don’t have to fully face where I actually am.
+Improve one more idea.
 
-And the moment I do fully try…
+Anything that delayed opening my website.
 
-That protection disappears.
+Because as long as it stayed closed, it could still become whatever I imagined it might be.
 
----
+Opening it meant meeting what was actually there.
 
-## Why That’s Scary
+Not perfect.
 
-It’s not scary because it’s bad.
+Not finished.
 
-It’s scary because it’s real.
-
-Because then I see:
-- what I avoid  
-- where I hesitate  
-- what I don’t yet know  
-
-And I can’t hide behind potential anymore.
-
----
-
-## What Not Escaping Actually Looks Like
-
-I used to imagine it would look like a perfect day.
-
-Disciplined.  
-Clear.  
-Productive.
-
-But it doesn’t.
-
-It looks almost identical to any other day.
-
-Just… lived honestly.
+Just real.
 
 ---
 
 ## This Morning
 
-I woke up at 4am.
+I woke just after four.
 
-A bit off.
+I'd slept for around six hours.
 
-Probably ate slightly too much last night.  
-About six hours sleep. Not ideal — but workable.
+Not ideal.
 
-So I didn’t rush into anything.
+But enough.
 
-I sat on the sofa.
+I made a coffee and sat quietly on the sofa.
 
-Not to distract myself.  
-Not to scroll.  
+I wasn't trying to achieve anything.
 
-Just… sat.
+I wasn't trying to optimise my morning.
 
----
+I was simply there.
 
-## Moving With the Day
-
-As the sun came up, I felt that natural drop in energy.
-
-Instead of pushing through it, I let it be.
-
-A coffee.  
-A slower start.  
-A bit of space.
-
-No forcing.
+Watching the day begin.
 
 ---
 
-## The Moment That Matters
+## Opening The Website
 
-This is where it becomes real.
+Later, I opened my website.
 
-Opening my website.
+Not because inspiration had arrived.
 
-Not when I feel ready.  
-Not when it feels perfect.  
+Not because I suddenly felt confident.
 
-Just… opening it.
+Just because opening it was the next honest thing to do.
 
-Letting it be:
-- a bit messy  
-- a bit uncertain  
-- not quite finished  
+It wasn't perfect.
 
-And noticing the thoughts that come with it:
+Parts of it still felt unfinished.
 
-> *“What if this isn’t good enough?”*
+The familiar thoughts appeared almost immediately.
 
-And instead of avoiding that…
+> *"This isn't good enough."*
 
-Staying with it.
+Normally I might have looked for something else to do.
 
----
+Something easier.
 
-## The Rest of the Day
+Something that made me feel more capable.
 
-The rest isn’t dramatic.
+Instead, I stayed.
 
-Walking the dog.  
-Going to the gym.  
-Doing a few things around the house.
+Not because the discomfort disappeared.
 
-Not to prove anything.
+Because it didn't.
 
-Not to fill a gap.
-
-Just because they belong in the day.
+But because I realised I didn't need to escape it.
 
 ---
 
-## Being With Victor
+## An Ordinary Day
 
-Later, I’ll have Victor.
+The rest of the day looked unremarkable.
 
-And not escaping there doesn’t mean being perfect.
+Walking the dog.
 
-It means something simpler.
+Going to the gym.
 
-Not performing.  
-Not trying to be the ideal version of a dad.
+Doing a few jobs around the house.
 
-Just being with him.
+Later, spending time with Victor.
 
-Letting that be enough.
+None of those moments were extraordinary.
 
----
+That was the point.
 
-## The Real Shift
+Life wasn't waiting somewhere else.
 
-From the outside, nothing changes.
-
-But internally, everything does.
-
-Because instead of protecting who I *could be*…
-
-I start meeting who I *am*.
+It was already happening.
 
 ---
 
-## A Simple Check-In
+## Meeting My Actual Life
 
-When things feel unclear, I come back to this:
+I've spent years thinking growth would feel dramatic.
 
-> **Am I doing this to live… or to avoid?**
+Like becoming someone new.
 
-Not as pressure.
+More often, it feels much quieter than that.
 
-Just as awareness.
+It looks like answering the email.
 
----
+Opening the document.
 
-## Maybe I Wasn’t Hiding
+Making the coffee.
 
-For a long time, I thought I’d been hiding from life.
+Playing with my son.
 
-But that doesn’t feel fully true anymore.
+Walking the dog.
 
-Maybe I was:
-- building safety  
-- learning how to regulate  
-- understanding myself  
-
-And now…
-
-I’m just beginning to outgrow the need to stay there.
+Staying with the life that's already here instead of searching for a different one.
 
 ---
 
-## Today
+## What I'm Learning
 
-Today doesn’t need to be impressive.
+I'm beginning to think the opposite of escaping isn't productivity.
 
-It doesn’t need to be perfect.
+It's presence.
 
-It just needs to be real.
+Not forcing myself to do more.
 
-- Sit when I’m sitting  
-- Work when I’m working  
-- Rest when I’m tired  
-- Show up where it matters  
+Not becoming a better version of myself overnight.
 
-Nothing extra.
+Simply meeting this day as honestly as I can.
 
-Nothing forced.
+Some days that will look like working.
 
-Just this.
+Some days it will look like resting.
+
+Some days it will look like admitting I don't have much to give.
+
+Perhaps that's enough.
+
+Perhaps that's what it means to stop escaping my life.
