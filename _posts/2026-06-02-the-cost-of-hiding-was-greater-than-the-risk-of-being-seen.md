@@ -8,6 +8,17 @@ hero_image: /assets/images/posts/the-cost-of-hiding-was-greater-than-the-risk-of
 emotions: [fear, hope]
 ---
 
+---
+
+layout: post
+title: "The Cost Of Hiding Was Greater Than The Risk Of Being Seen"
+date: 2026-06-02
+tags: [authenticity, vulnerability, connection, self-discovery]
+description: "A reflection on discovering that hiding can protect us from rejection, but it also keeps us from being truly known."
+hero_image: /assets/images/posts/the-cost-of-hiding-was-greater-than-the-risk-of-being-seen.webp
+emotions: [fear, hope]
+----------------------
+
 For much of my life, I believed being seen was dangerous.
 
 Not physically dangerous.
@@ -20,21 +31,23 @@ Misunderstand me.
 
 Judge me.
 
-Leave.
+Or quietly decide I wasn't for them.
 
 So I learned to reveal myself carefully.
-
-A little at a time.
 
 Enough to connect.
 
 Not enough to feel exposed.
 
-I thought this protected me.
+For a long time, I thought that was wisdom.
 
-In some ways it did.
+In some ways, it was.
 
-But it came with a cost.
+It protected me.
+
+But eventually I realised it was protecting me from more than rejection.
+
+It was protecting me from being fully known.
 
 ---
 
@@ -44,101 +57,59 @@ When we hide parts of ourselves, life becomes more predictable.
 
 We avoid embarrassment.
 
-We avoid rejection.
-
 We avoid disappointment.
 
 We avoid vulnerability.
 
-The problem is that we also avoid being fully known.
+But we also make genuine connection almost impossible.
 
-People can only connect with what we allow them to see.
+People can only build a relationship with the version of us they actually meet.
 
-And if we are always managing our image, they never truly meet us.
+If we spend our lives carefully managing how we're perceived, they never really meet us at all.
 
 ---
 
 ## What I Thought Would Happen
 
-For years, I carried assumptions about visibility.
+For years, I carried quiet assumptions about visibility.
 
 If I showed enthusiasm, people would think I was too much.
 
-If I showed longing, people would think I was needy.
+If I admitted longing, people would think I was needy.
 
-If I showed uncertainty, people would think I was weak.
+If I shared uncertainty, people would think I was weak.
 
-If I showed excitement, people would think I was strange.
+If I became fully myself, people would leave.
 
-If I showed my true self, people would leave.
+I didn't choose those beliefs consciously.
 
-Many of these beliefs were never consciously chosen.
-
-They simply became part of how I moved through the world.
+They slowly became part of how I moved through the world.
 
 ---
 
-## A Small Experiment In Visibility
+## Becoming Slightly More Visible
 
-Recently I found myself being slightly more open than usual.
+Nothing changed overnight.
 
-Nothing dramatic.
+There wasn't a dramatic moment of courage.
 
-Just small moments.
+There were simply small moments.
 
-Being playful.
+Speaking a little more honestly.
 
-Being curious.
+Being a little more playful.
 
-Sharing honestly.
+Sharing something I might once have kept to myself.
 
-Allowing myself to be a little less managed.
+Writing words I wasn't completely certain about publishing.
 
-A little less controlled.
+And something surprised me.
 
-A little more visible.
+The world didn't collapse.
 
-And something surprising happened.
+Some people weren't interested.
 
-The world did not collapse.
-
----
-
-## What Being Seen Taught Me
-
-Being seen does not guarantee connection.
-
-It does not guarantee acceptance.
-
-It does not guarantee that people will stay.
-
-But it creates the possibility of something real.
-
-Real connection requires something real to connect with.
-
-If I hide everything that matters, I may avoid rejection.
-
-But I also make genuine connection impossible.
-
----
-
-## The Link To Self-Respect
-
-For a long time, I believed self-protection and self-respect were the same thing.
-
-They are not.
-
-Sometimes self-protection asks us to hide.
-
-Self-respect asks us to be honest.
-
-Not reckless.
-
-Not unboundaried.
-
-Simply honest.
-
-To allow ourselves to exist without constantly editing who we are.
+Others seemed to move a little closer.
 
 ---
 
@@ -148,114 +119,98 @@ Recently I wrote my own obituary.
 
 Not because I expect to die anytime soon.
 
-Because I wanted clarity about how I hope to live.
+Because I wanted to understand how I hoped to live.
 
-What stood out was that the person I wanted to become was not someone who had mastered life.
+What struck me wasn't the work I wanted to be remembered for.
 
-He was someone who had lived honestly.
+Or the achievements.
+
+Or the qualifications.
+
+It was the kind of person I hoped people would describe.
 
 Someone who cared deeply.
 
+Someone who stayed curious.
+
+Someone who loved well.
+
 Someone who remained open despite disappointment.
 
-Someone who chose courage over self-erasure.
+Someone who lived honestly.
 
-That version of me was not hiding.
+That version of me wasn't hiding.
 
 ---
 
 ## The Real Cost
 
-For years I focused on the risks of being seen.
+For years I focused almost entirely on the risks of being seen.
 
-I rarely considered the risks of remaining unseen.
-
-The loneliness.
-
-The distance.
-
-The missed opportunities.
-
-The relationships that never had a chance to develop.
+I rarely stopped to consider the risks of remaining unseen.
 
 The conversations that never happened.
+
+The friendships that never deepened.
+
+The opportunities that quietly passed by because I stayed silent.
 
 The parts of myself that never had room to breathe.
 
 Hiding protected me from pain.
 
-But it also protected me from life.
+But it also kept me at a distance from my own life.
 
 ---
 
-## What I Am Learning
+## What I'm Learning
 
-I am learning that visibility is not something to conquer.
+I'm beginning to think visibility isn't something we conquer.
 
-It is something to practise.
+It's something we practise.
 
-A conversation.
+A conversation where we speak honestly.
 
-A smile.
+An opinion we stop editing.
 
-A voice note.
+A boundary we finally express.
 
-An honest opinion.
+A piece of writing we publish despite our doubts.
 
-A boundary.
+Small moments.
 
-A piece of writing.
-
-A small act of authenticity.
-
-Repeated over time.
+Repeated often enough that honesty begins to feel more natural than performance.
 
 ---
 
 ## Staying Open
 
-I do not need everyone to understand me.
+I don't need everyone to understand me.
 
-I do not need everyone to like me.
+I don't need everyone to approve of me.
 
-I do not need guarantees before showing up honestly.
+I don't need certainty before showing up honestly.
 
-I only need enough courage to be a little more visible than yesterday.
+I only need enough courage to be a little more visible than I was yesterday.
 
 ---
 
 ## What I Know Now
 
-Being seen still feels uncomfortable sometimes.
+Being seen still feels uncomfortable.
 
 Vulnerability still carries risk.
 
 Rejection is still possible.
 
-But I am beginning to see something I missed for many years.
+But I've started to realise something I missed for many years.
 
 The greatest danger was never being seen.
 
 The greatest danger was building a life where nobody ever had the chance to know who I really was.
 
----
+Perhaps that is what authenticity has been teaching me all along.
 
-## The Way Forward
+Not to become someone different.
 
-Not through performance.
-
-Not through perfection.
-
-Not through carefully managing every interaction.
-
-But through:
-
-- one honest conversation
-- one genuine expression
-- one moment of courage
-- one act of self-respect
-- one opportunity to be seen
-
-One small step at a time.
-
-Because the cost of hiding was greater than the risk of being seen.
+Simply to stop hiding the person who was already there.

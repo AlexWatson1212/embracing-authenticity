@@ -8,247 +8,186 @@ hero_image: /assets/images/posts/the-life-i-want.webp
 emotions: [hope, acceptance]
 ---
 
-Lately, I’ve been noticing something.
+For a long time I believed the life I wanted was waiting somewhere ahead of me.
 
-Not dramatically.  
+If I became more disciplined.
+
+More productive.
+
+More confident.
+
+More impressive.
+
+Eventually I'd arrive at the person I was supposed to be.
+
+Looking back, I can see how much energy I spent trying to become someone else.
+
+Lately I've started wondering whether I was looking in the wrong direction.
+
+---
+
+## Becoming Or Remembering?
+
+The older I get, the less convinced I am that growth is about reinvention.
+
+More often, it feels like recognition.
+
+Not building a completely new person.
+
+Slowly uncovering the one who has been there all along.
+
+That shift has changed how I think about almost everything.
+
+Especially my work.
+
+---
+
+## Paying Attention To What Pulls Me
+
+When I stop asking what I *should* want and start noticing what naturally holds my attention, a pattern begins to emerge.
+
+I'm drawn to emotional honesty.
+
+Calm environments.
+
+Meaningful conversations.
+
+Psychology.
+
+Writing.
+
+Beauty.
+
+Clarity.
+
+Helping people feel safe enough to be themselves.
+
+At first those interests seemed unrelated.
+
+Now they feel like different expressions of the same thing.
+
+---
+
+## What Websites Taught Me
+
+When I first started building websites, I thought I was learning design.
+
+Over time I realised I wasn't especially interested in websites themselves.
+
+I don't really care about websites in isolation.
+
+I care about what they feel like.
+
+A calm website.
+
+A welcoming counselling room.
+
+A thoughtfully written page.
+
+A conversation where someone feels genuinely heard.
+
+They all create the same experience.
+
+They quietly communicate,
+
+> *"You can breathe here."*
+
+That is the work that interests me.
+
+Not making things look impressive.
+
+Helping people feel safe enough to arrive as themselves.
+
+---
+
+## The Thread Running Through It All
+
+The more I look at the different parts of my life, the less separate they seem.
+
+Counselling.
+
+Writing.
+
+Branding.
+
+Design.
+
+Psychology.
+
+Meaningful conversations.
+
+Even the books I hope to write.
+
+They all seem to ask the same question.
+
+How can we create spaces where people feel a little less overwhelmed, a little more understood, and a little more themselves?
+
+Perhaps that's the thread I've been following all along without fully recognising it.
+
+---
+
+## A Different Kind Of Ambition
+
+For years I worried that wanting a quieter life meant I lacked ambition.
+
+That perhaps I should want more.
+
+A bigger business.
+
+More recognition.
+
+More status.
+
+But I've started to realise my ambition was never small.
+
+It was simply pointed in a different direction.
+
+I want to build work that feels deeply human.
+
+Work that leaves people calmer than it found them.
+
+Work that helps someone breathe a little more easily.
+
+That feels like ambition worth having.
+
+---
+
+## Coming Home To Myself
+
+Perhaps purpose isn't something we manufacture.
+
+Perhaps it's something we recognise.
+
 Not all at once.
 
-Just quietly.
+Slowly.
+
+By paying attention to what continues calling us back.
+
+The things we would still care about even if nobody applauded.
+
+The things that make us feel quietly alive.
+
+For me, that seems to be the common thread.
+
+Not becoming someone different.
+
+Creating spaces—through counselling, writing, conversation and design—where people feel safe enough to become more fully themselves.
+
+Including me.
 
 ---
 
-## Maybe I’ve Been Looking In The Wrong Direction
+## The Life That Fits
 
-For a long time, I thought the answer was becoming “more.”
+I still don't know exactly what the next ten years will look like.
 
-More disciplined.  
-More productive.  
-More impressive.  
-More certain.
+But I know they don't need to look like somebody else's version of success.
 
-And maybe parts of that matter.
+They only need to look increasingly like me.
 
-But the deeper truth feels different.
+Perhaps that has been the real work all along.
 
----
+Not creating a life that appears impressive from the outside.
 
-## What If The Goal Isn’t Reinvention?
-
-What if the life I want isn’t built by turning myself into someone else?
-
-What if it’s built by becoming more honest about who I already am?
-
----
-
-## The Interesting Part
-
-Because when I really look at what energises me…
-
-It’s rarely the things I *thought* I should care about.
-
-It’s not endless hustle.  
-Not constant networking.  
-Not building some huge business empire.
-
-It’s simpler than that.
-
----
-
-## What Actually Pulls Me Forward
-
-I seem to care deeply about:
-
-- emotional honesty  
-- calm environments  
-- meaningful conversations  
-- aesthetics  
-- atmosphere  
-- psychology  
-- helping people feel safe  
-- writing  
-- clarity  
-- authenticity  
-
-And strangely…
-
-A lot of the things I’m drawn toward all connect back to that.
-
----
-
-## Even The Website Work
-
-At first, I thought:
-
-> “Maybe I should become a web designer.”
-
-But the deeper truth feels more nuanced.
-
-I don’t really care about websites in isolation.
-
-I care about what they *feel like.*
-
----
-
-## The Feeling Beneath It
-
-A calm website.  
-A grounded room.  
-A meaningful conversation.  
-A warm home.
-
-They all seem connected somehow.
-
-They all say something similar:
-
-> *“You can breathe here.”*
-
----
-
-## Maybe That’s The Real Work
-
-Not just building websites.
-
-Building spaces.
-
-Emotionally intelligent spaces.
-
-Places that reduce overwhelm instead of increasing it.
-
----
-
-## The Part I Keep Forgetting
-
-I don’t actually want a life built entirely around pressure.
-
-I want:
-
-- peace  
-- purpose  
-- enough money to breathe  
-- meaningful work  
-- emotional stability  
-- love  
-- creativity  
-- freedom  
-- and connection  
-
-Not perfection.
-
-Not status.
-
----
-
-## The Fear
-
-Part of me still worries:
-
-> “What if this isn’t enough?”  
-> “What if I should want more?”  
-> “What if this path is too soft?”  
-
-But honestly…
-
-I think I’ve already experienced what happens when I abandon myself trying to become who I think I’m supposed to be.
-
----
-
-## The Shift
-
-The shift has been subtle.
-
-Less forcing.
-
-More listening.
-
-Less trying to become impressive.
-
-More trying to become aligned.
-
----
-
-## What Alignment Actually Feels Like
-
-Not excitement all the time.
-
-Not certainty.
-
-More like:
-
-> quiet energy
-
-The kind where I naturally move toward things instead of dragging myself there.
-
----
-
-## The Bigger Realisation
-
-Maybe my future isn’t one single identity.
-
-Maybe it’s an ecosystem.
-
-Counselling.  
-Writing.  
-Poker.  
-Websites.  
-Music therapy.  
-Self-discovery work.  
-Creating grounded spaces.
-
-Not random pieces.
-
-Connected ones.
-
----
-
-## The Common Thread
-
-The common thread seems to be this:
-
-Helping people — including myself — feel more connected to who they really are.
-
----
-
-## And Maybe That Includes Me Too
-
-Because for a long time, I thought purpose was something I had to force into existence.
-
-Now I’m wondering if purpose might feel more like recognition.
-
-Like slowly uncovering what was already there.
-
----
-
-## So Right Now
-
-I’m not trying to map out the next twenty years.
-
-I’m just paying attention to what feels:
-- meaningful  
-- alive  
-- grounded  
-- sustainable  
-- and true  
-
-And following that a little more honestly.
-
----
-
-## A Different Kind Of Question
-
-Not:
-
-> *“What should I become?”*
-
-But:
-
-> **“What kind of life allows me to remain connected to myself?”**
-
----
-
-## Maybe That’s The Real Direction
-
-Not becoming somebody else.
-
-Not building a life that looks impressive from the outside.
-
-But building one that actually feels like home when I’m inside it.
+Creating one that finally feels like home from the inside.
