@@ -11,17 +11,6 @@ hero_image: /assets/images/posts/what-if-i-can-cope.webp
 emotions: [acceptance, hope]
 ---
 
----
-
-layout: post
-title: "The Evidence Was Already There"
-date: 2026-06-12
-tags: [self-discovery, anxiety, growth]
-description: "Many of my worries weren't really about what might happen. They were about whether I'd be able to cope if they did."
-hero_image: /assets/images/posts/the-evidence-was-already-there.webp
-emotions: [acceptance, hope]
-----------------------------
-
 Recently I caught myself worrying about something that hadn't even happened yet.
 
 My mind was trying to prepare for every possible outcome.
@@ -40,9 +29,7 @@ I was afraid that, if it did happen, I wouldn't be able to cope.
 
 Once I saw that, I started noticing the same question hiding underneath many of my worries.
 
----
-
-## Anxiety Isn't Always Predicting Disaster
+Anxiety Isn't Always Predicting Disaster
 
 For a long time I believed anxiety was trying to protect me from bad outcomes.
 
@@ -56,7 +43,7 @@ But most of the time my anxiety wasn't really asking me to solve a problem.
 
 It was questioning something much more personal.
 
-**Can I trust myself?**
+Can I trust myself?
 
 Could I cope with rejection?
 
@@ -68,9 +55,7 @@ Could I cope if work became difficult?
 
 Could I cope if I disappointed someone?
 
----
-
-## Looking Back Instead Of Forward
+Looking Back Instead Of Forward
 
 One day I realised something strange.
 
@@ -110,9 +95,7 @@ Anxiety was acting as though these challenges were still waiting somewhere in th
 
 In reality, many of them had already become part of my history.
 
----
-
-## Trust Feels Different From Certainty
+Trust Feels Different From Certainty
 
 For years I thought the answer to anxiety was certainty.
 
@@ -130,9 +113,7 @@ One depends on controlling the future.
 
 The other grows from remembering the past.
 
----
-
-## A Different Question
+A Different Question
 
 I still don't know what the future holds.
 
@@ -148,9 +129,9 @@ Perhaps that's the evidence I've been overlooking all along.
 
 So maybe the real question isn't,
 
-> *What if I can't cope?*
+What if I can't cope?
 
 Maybe it's this.
 
-> *What if I've been underestimating my ability to cope all along?*
+What if I've been underestimating my ability to cope all along?
 
