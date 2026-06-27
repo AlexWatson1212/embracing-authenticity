@@ -11,17 +11,6 @@ hero_image: /assets/images/posts/what-if-i-can-cope.webp
 emotions: [acceptance, hope]
 ---
 
-R---
-
-layout: post
-title: "The Evidence Was Already There"
-date: 2026-06-12
-tags: [self-discovery, anxiety, growth]
-description: "Many of my worries weren't really about what might happen. They were about whether I'd be able to cope if they did."
-hero_image: /assets/images/posts/the-evidence-was-already-there.webp
-emotions: [acceptance, hope]
-----------------------------
-
 Recently I caught myself worrying about something that hadn't even happened yet.
 
 My mind was trying to prepare for every possible outcome.
