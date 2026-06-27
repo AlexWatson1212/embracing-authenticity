@@ -8,284 +8,146 @@ hero_image: /assets/images/posts/agency-vs-compulsion.webp
 emotions: [fear, hope]
 ---
 
-There’s something I’ve been noticing lately.
+Lately I've been noticing something that feels both uncomfortable and strangely freeing.
 
-Not judging.  
-Not trying to fix.
+There are moments when I think I'm making a choice.
 
-Just… seeing it more clearly.
+But if I slow down enough to look closely, it doesn't always feel like a choice at all.
 
----
+It feels like being pulled.
 
-## Am I Actually Choosing?
+The Pull
 
-Or am I being pulled?
+It usually begins with a feeling.
 
-Because sometimes it feels like a decision.
-
-Logical.  
-Reasoned.  
-Even intelligent.
-
-But when I slow it down…
-
-It doesn’t feel like a choice at all.
-
----
-
-## The Pattern
-
-It usually starts the same way.
-
-A feeling.  
-A slight restlessness.  
-A sense that something is missing.
-
-And then, almost automatically:
-
-- I reach for something familiar  
-- something stimulating  
-- something that has worked before  
-
-It doesn’t really matter what it is.
-
-It just needs to shift how I feel.
-
----
-
-## The Justification
-
-This is where it gets interesting.
-
-Because my mind doesn’t say:
-
-> *“I want stimulation.”*
-
-It says something far more convincing.
-
-> *“This is useful.”*  
-> *“This might matter.”*  
-> *“I should understand this.”*
-
-It builds a case.
-
-A good one.
-
-One that makes it feel like I’m choosing.
-
----
-
-## But Underneath That…
-
-There’s something else.
-
-Quieter.
-
-Faster.
-
-More automatic.
-
-> *“We know this works.”*
-
-Not because it’s good.
-
-Not because it moves my life forward.
-
-But because it’s familiar.
-
----
-
-## Familiar Doesn’t Mean Helpful
-
-That’s been the biggest shift.
-
-Realising that my system isn’t trying to do what’s best for me.
-
-It’s trying to do what it knows.
-
-What it’s practiced.
-
-What it’s relied on before.
-
-Even if that thing:
-
-- drains my energy  
-- keeps me stuck  
-- or pulls me away from what actually matters  
-
----
-
-## The Illusion of No Choice
-
-At times, it genuinely feels like:
-
-> *“I have to do this.”*
-
-Watch it.  
-Click it.  
-Follow it.
-
-As if not doing it would be… uncomfortable.
-
-Or even wrong.
-
-And that’s the moment I’m starting to pay attention to.
-
----
-
-## The Real Function
-
-When I strip everything back, it’s rarely about the thing itself.
-
-Not really.
-
-It’s about:
-
-- changing my state  
-- avoiding something quieter  
-- or stepping back into something familiar  
-
-Even if that “familiar” is:
-
-- uncertainty  
-- intensity  
-- or low-level stress  
-
----
-
-## Why That’s So Compelling
-
-Because part of me is used to that.
-
-Used to:
-
-- stimulation  
-- unpredictability  
-- needing to stay alert  
-
-So when things are calm…
-
-There’s a subtle discomfort.
+A slight restlessness.
 
 A sense that something is missing.
 
----
+Before I've really noticed what's happening, I'm reaching for something familiar.
 
-## The Cost
+A video.
 
-It doesn’t feel like a big deal in the moment.
+A new idea.
 
-But over time, it adds up.
+A distraction.
 
-Time goes.  
-Energy goes.  
-Focus goes.
+Something stimulating.
 
-And slowly, without noticing:
+Something that promises to change how I feel.
 
-> I step away from the life I could actually be building.
+The object itself isn't the important part.
 
----
+The movement towards it is.
 
-## The Shift
+A Convincing Story
 
-The change hasn’t been dramatic.
+What's interesting is that my mind rarely says,
 
-It’s been simple.
+"I want stimulation."
 
-Just noticing:
+Instead, it offers something much more persuasive.
 
-> *“This feels like a choice… but it isn’t.”*
+"This could be useful."
 
-And then asking:
+"You should understand this."
 
-> **“Is this expanding my life or shrinking it?”**
+"This might help."
 
----
+It builds a convincing argument.
 
-## Sitting In That Moment
+One that makes the pull feel like a thoughtful decision.
 
-That pause is uncomfortable.
+Familiar Feels Safe
 
-There’s still a pull.
+The more I pay attention, the more I realise my nervous system isn't necessarily choosing what's best.
 
-Still a voice saying:
+It's choosing what's familiar.
 
-> *“Just do it. It’s fine.”*
+The familiar isn't always healthy.
 
-But there’s also something else now.
+Sometimes it's distraction.
 
-A bit of space.
+Sometimes it's urgency.
 
-A bit of awareness.
+Sometimes it's low-level stress.
 
----
+Not because those things improve my life.
 
-## What I’m Starting to See
+Because they're well rehearsed.
 
-That I’m not as in control as I thought.
+When Calm Feels Uncomfortable
 
-But also…
+That has been one of the strangest discoveries.
 
-That I have far more agency than I’ve been using.
+Part of me has become so accustomed to stimulation that calm can feel unfamiliar.
 
----
+When nothing demands my attention, there's a subtle feeling that something is missing.
 
-## Why That’s Both Scary and Empowering
+Not excitement.
 
-Because if I’m not choosing…
+Not purpose.
 
-Then something else has been.
+Just movement.
 
-Habits.  
-Patterns.  
-Conditioning.
+Almost as though stillness itself needs explaining.
 
-But if I *can* choose…
+The Cost
 
-Then things can change.
+The pull rarely steals hours.
 
----
+It steals beginnings.
 
-## A Different Way Forward
+The beginning of writing something that matters.
 
-Not forcing anything.
+The beginning of a difficult conversation.
 
-Not trying to eliminate every urge.
+The beginning of simply staying with myself for a little longer.
 
-Just becoming more honest in the moment.
+Instead, I end up somewhere familiar.
 
----
+Not because that's where I wanted to go.
 
-## Today
+Because that's where the pull was leading.
 
-Today, I’m not trying to be perfect.
+What I've started to notice is that the cost isn't just lost time.
 
-Not trying to control everything.
+It's slowly becoming someone who spends more of life reacting than choosing.
 
-Just noticing when I’m being pulled…
+A Small Gap
 
-And seeing if I can stay with that,  
-even for a few seconds longer.
+The biggest change hasn't been learning to resist every urge.
 
----
+It's been noticing them a little sooner.
 
-## A Simple Question
+There is now a brief moment where I can ask myself,
 
-When something feels urgent, I come back to this:
+Am I choosing this, or am I being pulled?
 
-> **Am I choosing this… or being pulled into it?**
+Sometimes I still follow the pull.
 
----
+Sometimes I don't.
 
-## Maybe That’s Enough
+The important thing is that they no longer feel identical.
 
-Not a full answer.
+Living With The Question
 
-Not a complete solution.
+I don't think this is a problem to solve once and for all.
 
-Just a clearer way of seeing.
+The pull is still there.
 
-And maybe…
+Some days it's stronger than others.
 
-That’s where real change begins.
+But the moment I notice it, something changes.
+
+Awareness creates a small amount of space.
+
+Sometimes only a few seconds.
+
+Sometimes that's enough to remember that I have more agency than I first believed.
+
+Not complete control.
+
+Just enough freedom to choose my next step a little more consciously.
+
+For now, that's enough.
