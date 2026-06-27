@@ -11,96 +11,138 @@ hero_image: /assets/images/posts/what-if-i-can-cope.webp
 emotions: [acceptance, hope]
 ---
 
-Recently, I’ve been noticing something underneath a lot of my anxiety.
+Recently I caught myself worrying about something that hadn't even happened yet.
 
-Not fear that something bad will happen.
+My mind was trying to prepare for every possible outcome.
 
-Fear that if it does happen, I won’t be be able to cope.
+How I'd cope.
 
-That belief seems to appear almost everywhere when I look closely.
+What I'd do.
 
----
+Whether I'd be enough.
 
-## What I’m Noticing
+Then I noticed something.
 
-For a long time, my mind has been running variations of the same question.
+I wasn't really afraid of what might happen.
 
-What if I burn out?
+I was afraid that, if it did happen, I wouldn't be able to cope.
 
-What if I get overwhelmed?
-
-What if I’m too tired?
-
-What if I can’t manage on my own?
-
-It shows up in parenting.
-
-Dating.
-
-Work.
-
-Money.
-
-Even things I enjoy.
-
-But recently I’ve started seeing something else.
-
-I already have evidence.
-
-I’ve coped with difficult relationships.
-
-I’ve coped with rejection.
-
-I’ve coped with uncertainty.
-
-I’ve coped with raising my son.
-
-I’ve coped with periods of poor mental health.
-
-I’ve coped with loneliness.
-
-The fear often speaks as if these challenges are still ahead of me.
-
-The reality is that many of them are already behind me.
+Once I saw that, I started noticing the same question hiding underneath many of my worries.
 
 ---
 
-## Why I Think It Matters
+## Anxiety Isn't Always Predicting Disaster
 
-The shift isn’t that life suddenly feels easy.
+For a long time I believed anxiety was trying to protect me from bad outcomes.
 
-It’s that I’m starting to trust myself more.
+If I worried enough, perhaps I could avoid making mistakes.
 
-When something uncertain appears, I don’t need to immediately solve it.
+Perhaps I could prepare for every possibility.
 
-I don’t need guarantees.
+Perhaps I could finally feel safe.
 
-I don’t need to know exactly how everything will work out.
+But most of the time my anxiety wasn't really asking me to solve a problem.
 
-I only need enough confidence that I’ll respond when the time comes.
+It was questioning something much more personal.
 
-That feels very different.
+**Can I trust myself?**
 
-Less like control.
+Could I cope with rejection?
 
-More like trust.
+Could I cope with illness?
 
-And strangely, that trust has reduced anxiety in lots of areas of my life at once.
+Could I cope if a relationship ended?
 
-I’m less worried about my son.
+Could I cope if work became difficult?
 
-Less worried about money.
+Could I cope if I disappointed someone?
 
-Less worried about dating.
+The situations changed.
 
-Less worried about whether I’m doing enough.
-
-Not because those things have disappeared, but because I’m beginning to believe that whatever happens, I’ll probably find a way through it.
-
-I usually do.
+The question underneath rarely did.
 
 ---
 
-## The Open Question
+## Looking Back Instead Of Forward
 
-> What changes when I stop asking "What if I can't cope?" and start asking "What if I can?"
+One day I realised something strange.
+
+Whenever anxiety asked whether I could cope, it was asking as though there were no evidence.
+
+As though my entire life had yet to happen.
+
+But that isn't true.
+
+I've already lived through difficult relationships.
+
+I've experienced rejection.
+
+I've navigated uncertainty.
+
+I've raised my son through seasons that felt overwhelming.
+
+I've lived through periods of poor mental health.
+
+I've experienced loneliness.
+
+None of those experiences were easy.
+
+I wouldn't choose to repeat them.
+
+But I did survive them.
+
+More than that, I adapted.
+
+I learned.
+
+I asked for help when I needed it.
+
+I kept going.
+
+Anxiety was acting as though these challenges were still waiting somewhere in the future.
+
+In reality, many of them had already become part of my history.
+
+---
+
+## Trust Feels Different From Certainty
+
+For years I thought the answer to anxiety was certainty.
+
+If I could just know everything would work out, perhaps I could finally relax.
+
+But life doesn't offer certainty.
+
+What it can offer is trust.
+
+Not trust that nothing difficult will happen.
+
+Trust that when something difficult does happen, I'll probably find a way through.
+
+One depends on controlling the future.
+
+The other grows from remembering the past.
+
+---
+
+## A Different Question
+
+I still don't know what the future holds.
+
+None of us do.
+
+But I'm beginning to realise that peace of mind doesn't come from predicting the future.
+
+It comes from trusting the person who will meet it.
+
+I've already survived days I once believed would break me.
+
+Perhaps that's the evidence I've been overlooking all along.
+
+So maybe the real question isn't,
+
+> *What if I can't cope?*
+
+Maybe it's this.
+
+> *What if I've been underestimating my ability to cope all along?*
