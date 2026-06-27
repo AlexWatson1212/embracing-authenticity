@@ -8,17 +8,6 @@ hero_image: /assets/images/posts/not-escaping-my-life.webp
 emotions: [fear, acceptance]
 ---
 
----
-
-layout: post
-title: "Not Escaping My Life"
-date: 2026-05-24
-tags: [presence, self-discovery, awareness, authenticity]
-description: "A reflection on discovering that the biggest change wasn't changing my life, but learning to be more present within it."
-hero_image: /assets/images/posts/not-escaping-my-life.webp
-emotions: [acceptance, presence]
---------------------------------
-
 There's a quiet truth I've been circling lately.
 
 Not something dramatic.
