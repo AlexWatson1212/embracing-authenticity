@@ -397,4 +397,4 @@ With self-respect.
 Someone whose life gradually becomes a reflection of his values rather than his fears.
 
 If I can do that—one ordinary day at a time—I think I'll have built exactly the life I was hoping for.
-```
+
