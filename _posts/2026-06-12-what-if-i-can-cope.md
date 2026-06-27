@@ -11,6 +11,17 @@ hero_image: /assets/images/posts/what-if-i-can-cope.webp
 emotions: [acceptance, hope]
 ---
 
+---
+
+layout: post
+title: "The Evidence Was Already There"
+date: 2026-06-12
+tags: [self-discovery, anxiety, growth]
+description: "Many of my worries weren't really about what might happen. They were about whether I'd be able to cope if they did."
+hero_image: /assets/images/posts/the-evidence-was-already-there.webp
+emotions: [acceptance, hope]
+----------------------------
+
 Recently I caught myself worrying about something that hadn't even happened yet.
 
 My mind was trying to prepare for every possible outcome.
@@ -57,10 +68,6 @@ Could I cope if work became difficult?
 
 Could I cope if I disappointed someone?
 
-The situations changed.
-
-The question underneath rarely did.
-
 ---
 
 ## Looking Back Instead Of Forward
@@ -79,7 +86,7 @@ I've experienced rejection.
 
 I've navigated uncertainty.
 
-I've raised my son through seasons that felt overwhelming.
+I've raised my son through days I didn't know how to carry.
 
 I've lived through periods of poor mental health.
 
@@ -146,3 +153,4 @@ So maybe the real question isn't,
 Maybe it's this.
 
 > *What if I've been underestimating my ability to cope all along?*
+
