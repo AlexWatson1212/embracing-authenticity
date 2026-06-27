@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: "A Life Worth Living: My 10-Year Vision (2026–2036)"
