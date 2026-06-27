@@ -8,255 +8,204 @@ hero_image: /assets/images/posts/connection-without-earning.webp
 emotions: [fear, hope]
 ---
 
-There’s a question I’ve been sitting with lately.
+Lately I've been sitting with a question that feels both unsettling and strangely freeing.
 
-Not trying to answer.
+Not because I know the answer.
 
-Just… letting it be there.
+Because I'm no longer sure the answer I've lived by was ever true.
 
----
+For much of my life, I think I believed love had to be earned.
 
-## Can I Live Without Earning Love?
+Not consciously.
 
-Not chasing it.  
-Not proving for it.  
-Not shaping myself around it.  
+It simply felt like the way relationships worked.
 
-Just… living.
+The Quiet Bargain
 
-And trusting that connection will still find me.
+It rarely sounded as obvious as,
 
----
+"I have to earn love."
 
-## The Old Way
+Instead, it appeared in much quieter ways.
 
-For a long time, I didn’t realise I was trying to earn love.
+If I was thoughtful enough.
 
-It didn’t feel like that.
+Helpful enough.
 
-It felt like:
-- effort  
-- care  
-- showing up  
-- trying my best  
+Interesting enough.
 
-But underneath it…
+Successful enough.
 
-There was something quieter.
+Patient enough.
 
-> *“If I show I’m valuable… maybe I’ll be chosen.”*
+Perhaps people would stay.
 
----
+Perhaps I would finally feel chosen.
 
-## How That Played Out
+I wasn't trying to manipulate anyone.
 
-It showed up everywhere.
+I was trying to feel safe.
 
-In relationships.  
-In work.  
-Even in environments where connection wasn’t really available.
+What It Looked Like
 
-Trying harder.  
-Giving more.  
-Pushing through.  
+That belief found its way into almost every part of my life.
 
-Believing that sacrifice was part of the deal.
+Relationships.
 
----
+Friendships.
 
-## The Moment It Stopped Making Sense
+Work.
 
-At some point, something shifted.
+Even conversations with strangers.
 
-Not dramatically.
+I found myself trying a little harder.
 
-Just… clearly.
+Giving a little more.
 
-I started noticing that no matter how much I gave:
+Listening carefully.
 
-- it didn’t create the connection I wanted  
-- it didn’t make me feel settled  
-- it didn’t actually bring people closer  
+Avoiding conflict.
 
-If anything, it left me more tired.
+Trying not to disappoint people.
 
----
+From the outside, it looked like kindness.
 
-## The Hard Truth
+Sometimes it was.
 
-It wasn’t that I wasn’t doing enough.
+But underneath it was another question.
 
-It was that I was doing it for the wrong reason.
+"Have I done enough to deserve connection?"
 
-Not to connect…
+When It Stopped Working
 
-But to be accepted.
+Eventually something became impossible to ignore.
 
----
+No amount of effort created the kind of connection I was looking for.
 
-## Letting That Go
+I could be thoughtful.
 
-That’s where things get uncomfortable.
+Reliable.
 
-Because if I stop earning it…
+Generous.
 
-Then what’s left?
+Available.
 
-No strategy.  
-No guarantee.  
-No clear outcome.  
+And still feel lonely.
 
-Just me — as I am.
+Not because I wasn't giving enough.
 
----
+Because giving and belonging are not the same thing.
 
-## Why That Feels So Uncertain
+That was difficult to admit.
 
-There’s a part of me that still believes:
+I'd spent years believing the next act of generosity might finally make me feel secure.
 
-> *“If I don’t try… nothing will happen.”*
+It never did.
 
-And another part that’s beginning to see:
+The Difference Between Connecting And Being Chosen
 
-> *“Trying hasn’t been working anyway.”*
+One question has stayed with me ever since.
 
-So I’m somewhere in between.
+When I'm with someone, what am I actually trying to do?
 
----
+Am I trying to connect?
 
-## The Space In-Between
+Or am I trying to be chosen?
 
-Not forcing connection.  
-Not fully trusting it either.  
+Those sound similar.
 
-Just… allowing things to unfold a bit more naturally.
+They're not.
 
-Letting interactions be:
-- a bit quieter  
-- a bit slower  
-- less effortful  
+Connection asks,
 
-And noticing what happens.
+"Can we meet each other honestly?"
 
----
+Trying to be chosen asks,
 
-## What I’m Learning About Connection
+"What do I need to become so you won't leave?"
 
-Connection doesn’t seem to come from:
+Only one of those allows me to remain myself.
 
-- being impressive  
-- being perfect  
-- being constantly “on”  
+What's Left When I Stop Performing?
 
-It comes from something simpler.
+This is where the uncertainty begins.
 
-Being there.  
-As I am.  
-Without trying to tip the scales.
+If I stop earning...
 
----
+What happens?
 
-## The Subtle Shift
+If I stop carefully shaping myself around other people's expectations...
 
-Instead of asking:
+Who am I then?
 
-> *“How do I get this person to like me?”*
+There are no guarantees waiting on the other side.
 
-It becomes:
+No promise that people will stay.
 
-> **“Do I feel okay here?”**
+Only the possibility that the people who do stay are responding to someone real.
 
-That changes everything.
+Not someone carefully constructed.
 
----
+A Different Kind Of Trust
 
-## The Fear That Remains
+I'm beginning to think healthy relationships require a different kind of courage.
 
-There’s still a fear underneath it all.
+Not the courage to impress.
 
-> *“What if nothing comes?”*
+The courage to remain visible.
 
-What if I let go of the effort…
+To say what I think.
 
-And I’m just left on my own?
+To express a need.
 
-That part doesn’t disappear overnight.
+To disappoint someone occasionally.
 
----
+To stop believing every interaction has to end in approval.
 
-## But There’s Also This
+That feels much less dramatic than earning love.
 
-A quieter knowing.
+And much more difficult.
 
-That the kind of connection I actually want…
+Letting Connection Find Me
 
-Would never come from performance anyway.
+I'm still learning what this looks like.
 
----
+It means explaining myself a little less.
 
-## Letting Life Be Less Effortful
+Listening without trying to be the perfect listener.
 
-This is showing up in small ways.
+Allowing silence.
 
-Not over-explaining myself.  
-Not trying to get every interaction “right.”  
-Not forcing energy when it’s not there.  
+Letting conversations end naturally instead of trying to make them memorable.
 
-Letting things be:
-- imperfect  
-- unfinished  
-- ongoing  
+Showing up without constantly wondering whether I've said enough, done enough or been enough.
 
----
+Some interactions become deeper.
 
-## Trusting Something New
+Some don't.
 
-Not blind trust.
+Both are okay.
 
-Not certainty.
+What I'm Beginning To Believe
 
-Just a willingness to see what happens if I stop trying so hard.
+Perhaps the connection I've always wanted could never be earned.
 
----
+Because anything earned through performance depends on continuing the performance.
 
-## A Different Way to Live
+The relationships I hope to build now feel different.
 
-Maybe connection isn’t something to earn.
+Not because they promise certainty.
 
-Maybe it’s something that happens when I stop trying to be someone else.
+Because they leave room for honesty.
 
----
+Perhaps that is what real belonging has always been.
 
-## Today
+Not convincing someone to choose me.
 
-Today, I’m not trying to prove anything.
+Allowing myself to be known well enough that the people who do choose me are choosing someone real.
 
-Not trying to secure anything.
+Maybe that's the beginning of love.
 
-Just showing up to what’s in front of me.
+Not earning it.
 
-And letting that be enough.
-
----
-
-## A Simple Question
-
-When I catch myself trying again, I come back to this:
-
-> **Am I trying to connect… or trying to be chosen?**
-
----
-
-## Maybe This Is It
-
-Not a breakthrough.
-
-Not an answer.
-
-Just a shift.
-
-From earning…
-
-To allowing.
-
-And seeing what meets me there.
+Allowing it.

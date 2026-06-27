@@ -8,194 +8,213 @@ hero_image: /assets/images/posts/live-while-unfinished.webp
 emotions: [fear, acceptance]
 ---
 
-Recently, something shifted.
+---
 
-Not in a dramatic way.
+layout: post
+title: "I Don't Need to Finish My Life — I Need to Live It While It's Unfinished"
+date: 2026-05-20
+tags: [presence, self-discovery, growth, authenticity]
+description: "A reflection on discovering that life doesn't begin once everything is finished. It begins while everything is still unfolding."
+hero_image: /assets/images/posts/i-dont-need-to-finish-my-life.webp
+emotions: [acceptance, hope]
+----------------------------
 
-Just a quiet realisation that felt… relieving.
+Recently something shifted.
+
+Not dramatically.
+
+Just a quiet realisation that brought an unexpected sense of relief.
+
+For a long time I'd been living as though there was a version of my life I needed to complete before I could properly begin.
 
 ---
 
-## I’ve Been Trying to Finish My Life
+## Waiting Until Everything Was Finished
 
-For a long time, I’ve been operating as if there’s a version of life I need to complete first.
+The thinking sounded sensible.
 
-Finish the house.  
-Finish the garden.  
-Finish my body.  
-Finish my direction.  
+Finish the house.
 
-And then…
+Finish the garden.
 
-I can relax.  
-I can connect.  
-I can be seen.  
+Improve my body.
 
-But when I really look at it, that version never arrives.
+Clarify my direction.
 
-There’s always something else.
+Then I could relax.
+
+Then I could connect.
+
+Then I could put myself out into the world.
+
+The problem was that the list never ended.
+
+Every completed project quietly made room for another one.
+
+I was always almost ready.
 
 ---
 
-## The Illusion of “Almost Ready”
+## The Finish Line That Never Arrives
 
-I often feel close.
+For years I carried the feeling that I was close.
 
-Like I’m nearly there.
+Just one more improvement.
 
-Just one more project.  
-One more push.  
-One more improvement.
+One more decision.
 
-But the finish line keeps moving.
+One more project.
 
-Because it was never real.
+Then life would finally settle down.
 
-**There isn’t a point where everything is done — and then life begins.**
+But I've started to realise the finish line keeps moving because it was never really there.
+
+Life was never waiting on the other side of completion.
+
+It was happening while I was trying to complete it.
 
 ---
 
 ## What I Was Really Doing
 
-It looked like productivity.
+From the outside it looked like productivity.
 
-But it was something else.
+Inside, it felt more complicated.
 
-I was choosing things that gave me:
+I was drawn towards things that offered certainty.
 
-- control  
-- visible progress  
-- a sense of competence  
+Projects with clear beginnings and endings.
 
-And avoiding things that came with:
+Things I could fix.
 
-- uncertainty  
-- emotional exposure  
-- the risk of being seen  
+Improve.
 
-It’s easier to fix something physical than to step into something uncertain.
+Complete.
 
----
+They gave me visible progress.
 
-## The Cost of Staying Here
+A sense of competence.
 
-From the outside, it looks like progress.
+A feeling of control.
 
-I’m doing things.  
-Improving things.  
-Keeping busy.
+The things that mattered most didn't offer any of that.
 
-But underneath, something feels slightly stuck.
+Relationships.
 
-Because the areas that actually move my life forward:
+Writing.
 
-- connection  
-- career  
-- creativity  
+Building a counselling practice.
 
-Require me to show up before everything feels ready.
+Creating meaningful work.
+
+Those things ask something different.
+
+They ask me to begin before I feel ready.
+
+To remain visible while everything is still unfinished.
 
 ---
 
-## The Shift
+## Permission Instead Of Pressure
 
-The realisation was simple.
+The shift wasn't dramatic.
 
-> *I don’t need to finish my life — I need to live it while it’s unfinished.*
+It was a single sentence.
 
-Nothing externally changed.
+> *I don't need to finish my life. I need to live it while it's unfinished.*
 
-But internally, something softened.
+Nothing outside me changed.
 
-Permission replaced pressure.
+But something inside me softened.
 
----
-
-## What That Looks Like in Practice
-
-It’s not about letting everything go.
-
-It’s about being intentional.
-
-It looks like:
-
-- letting my house be “good enough”  
-- focusing on one meaningful task instead of many distractions  
-- reaching out to someone without needing my life to be sorted first  
-- creating without pressure for it to become anything  
-
-It’s quieter than I expected.
-
-But more honest.
+The pressure to arrive gave way to permission to participate.
 
 ---
 
-## The Pull to Go Back
+## Living Before Everything Is Ready
 
-There’s still a part of me that wants to fix everything.
+I've started noticing how often life can be lived now instead of later.
 
-That says:
+The house doesn't need to be perfect before I invite someone over.
 
-> *“Just sort this one thing… then you can relax.”*
+My work doesn't need to be flawless before I share it.
 
-And sometimes I listen.
+I don't need complete certainty before reaching out to someone or beginning something meaningful.
 
-But now I can see it.
+Good enough is often enough to begin.
+
+---
+
+## The Pull To Keep Fixing
+
+That doesn't mean the old habit has disappeared.
+
+There's still a part of me that whispers,
+
+> *"Just sort this one thing first."*
+
+Sometimes I still listen.
+
+But now I recognise it.
 
 Not as truth.
 
-Just as protection.
+As protection.
+
+A way of postponing the uncertainty that comes with actually living.
 
 ---
 
-## A Different Way to Measure Progress
+## A Different Measure Of Progress
 
 I used to measure progress by what I completed.
 
-Now it’s something else:
+Now I find myself asking different questions.
 
-- Did I take a step toward being seen?  
-- Did I choose something meaningful over something comfortable?  
-- Did I respect my energy instead of overriding it?  
+Did I move towards something meaningful today?
 
-Some days that’s small.
+Did I choose honesty over comfort?
 
-But it still counts.
+Did I allow myself to be seen before I felt completely ready?
 
----
-
-## If You’re Waiting Too
-
-Maybe you’re waiting as well.
-
-Waiting until things feel:
-
-- more stable  
-- more certain  
-- more “together”  
-
-Before you fully step into your life.
-
-But maybe the question is:
-
-**What if that version of ready never comes?**
+Those answers matter more to me than another finished project ever could.
 
 ---
 
-## Final Thought
+## Living While It's Unfinished
 
-I don’t need to fix everything.
+Perhaps you're waiting too.
 
-I don’t need to complete my life before I start living it.
+Waiting until life feels more organised.
 
-I just need to participate in it.
+More certain.
+
+More together.
+
+Before you allow yourself to fully step into it.
+
+I wonder if that version of ready ever arrives.
+
+Perhaps life has been asking something simpler all along.
+
+Not that we complete it.
+
+Only that we participate in it.
+
+---
+
+## What I'm Learning
+
+I don't need to fix everything.
+
+I don't need to complete my life before I start living it.
+
+I only need to keep showing up to it.
 
 As it is.
 
 Unfinished.
 
----
+I'm not behind.
 
-I’m not behind.
-
-I’m just learning how to live it… properly.
+I'm just learning how to live it.
