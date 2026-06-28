@@ -80,9 +80,10 @@ hero_image: "/assets/images/heroes/start-here.webp"
     </ul>
 
     <p>
-      You do not have to become a different person to be doing the work.
-      Staying kind and honest with yourself, one small decision at a time, is enough.
+      You do not have to become a different person to begin.
+      Staying kind and honest with yourself, one small step at a time, is enough.
     </p>
   </div>
 
 </section>
+

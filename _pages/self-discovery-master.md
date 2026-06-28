@@ -18,35 +18,34 @@ hero_image: "/assets/images/heroes/self-discovery.webp"
 
       <div class="sd-card">
         <p><strong>Who this is for:</strong><br>
-          This page is for anyone who feels like they’ve been surviving, not living — whether you’re 12 or 112.
+          This page is for anyone who feels like they've been surviving, not living — whether you're 12 or 112.
           If you want a clearer path back to yourself, this will meet you where you are.
         </p>
-        <p class="sd-mini"><strong>Important:</strong> You don’t need to be “good at healing” to use this. You just need one small step at a time.</p>
+        <p class="sd-mini"><strong>Important:</strong> You don't need to be "good at healing" to use this. You just need one small step at a time.</p>
       </div>
 
       <p>
-        If you’ve found your way here, part of you already knows there’s more to life than pressure, performance, and proving.
+        If you've found your way here, part of you already knows there's more to life than pressure, performance, and proving.
         This is a soft place to land — and a steady hand as you learn to come home to yourself.
       </p>
 
       <div class="sd-warning">
         <p><strong>Please read this before you begin:</strong><br>
           Self-discovery can stir up memories, emotions, or trauma that have been buried for years.
-          If you don’t have much support right now, go gently. Take your time. There’s no rush.
+          If you don't have much support right now, go gently. Take your time. There's no rush.
           If possible, consider walking this path with a therapist, guide, or trusted support.
-          You don’t have to do this alone — and I wouldn’t recommend it.
+          You don't have to do this alone — and I wouldn't recommend it.
         </p>
       </div>
 
       <div class="sd-soft">
         <p><strong>A very real note for beginners:</strong><br>
-          Sometimes you’ll feel worse before you feel better — not because you’re broken, but because you’ve stopped numbing.
+          Sometimes you'll feel worse before you feel better — not because you're broken, but because you've stopped numbing.
           If you feel overwhelmed, step back. Choose safety. Do something small and steady (food, water, sleep, a shower, a short walk, a hot tea).
-          Healing isn’t a race. <em>Healing unfolds at the speed of safety.</em>
+          Healing isn't a race. <em>Healing unfolds at the speed of safety.</em>
         </p>
       </div>
 
-      <!-- Jump links -->
       <div class="sd-jump">
         <strong>Jump to:</strong>
         <a href="#start">Start</a>
@@ -68,124 +67,18 @@ hero_image: "/assets/images/heroes/self-discovery.webp"
     <div class="container">
       <h2 class="section-title section-title--left">Start Here (the 2-minute version)</h2>
       <p class="section-subtitle section-subtitle--left sd-mini">
-        If you’re new, start here. If you’re not new, you might still want to come back here on hard days.
+        If you're new, start here. If you're not new, you might still want to come back here on hard days.
       </p>
 
       <div class="sd-card">
         <ol class="sd-steps">
-          <li><strong>Check your body:</strong> “Am I tense, tired, hungry, overstimulated?”</li>
+          <li><strong>Check your body:</strong> "Am I tense, tired, hungry, overstimulated?"</li>
           <li><strong>Name one feeling:</strong> Pick one: grief, shame, fear, anger, loneliness, hope, love, joy, longing, acceptance.</li>
           <li><strong>Do one caring action:</strong> water, food, tea, fresh air, a short walk, tidy one small area, or lie down.</li>
         </ol>
-        <p style="margin:0.75rem 0 0;"><strong>Gentle truth:</strong> A “low-demand day” can be a healthy day. You don’t need to earn rest.</p>
+        <p style="margin:0.75rem 0 0;"><strong>Gentle truth:</strong> A low-demand day can be a healthy day. You don't need to earn rest.</p>
       </div>
 
-    </div>
-  </section>
-
-  <!-- EMOTIONAL INTELLIGENCE (Yale / Mood Meter) -->
-  <section class="section" id="mood-meter" aria-label="Emotional intelligence and mood meter">
-    <div class="container">
-      <h2 class="section-title section-title--left">Emotional Intelligence (in real life)</h2>
-      <p class="section-subtitle section-subtitle--left">
-        Why feelings matter — and what we can actually do with them.
-      </p>
-
-      <p>
-        Most of us were taught that emotions are inconvenient. Something to “get over.” Something to hide.
-        But emotions are not a design flaw. They’re information. They shape our choices, our relationships, and our self-respect.
-      </p>
-
-      <div class="sd-card">
-        <p><strong>Here’s the simple truth:</strong></p>
-        <ul class="sd-bullets">
-          <li><strong>Emotions drive decisions.</strong> We think we’re rational — but feelings influence almost everything.</li>
-          <li><strong>Emotions shape connection.</strong> Relationships rise and fall on emotional awareness and repair.</li>
-          <li><strong>Emotional intelligence is a skill.</strong> It can be learned: notice → name → understand → respond.</li>
-          <li><strong>Regulation spreads.</strong> When we’re regulated, we treat people better. When we treat people better, life gets kinder.</li>
-        </ul>
-        <p style="margin:0.75rem 0 0;"><strong>Line worth keeping:</strong> “When we take care of our emotions, we take care of each other.”</p>
-      </div>
-
-      <p>
-        One of the simplest emotional tools I’ve ever seen is the <strong>Mood Meter</strong> idea:
-        it helps you locate what you’re feeling without judging it — and then choose a kind response.
-      </p>
-
-      <div class="sd-soft">
-        <p><strong>The Mood Meter (simple version):</strong><br>
-          You can locate your emotional state using two sliders:
-          <strong>Energy</strong> (high ↔ low) and <strong>Pleasantness</strong> (pleasant ↔ unpleasant).
-          This isn’t about “being positive.” It’s about being honest.
-        </p>
-      </div>
-
-      <!-- Mood Meter Grid -->
-      <div class="mood-meter" role="group" aria-label="Mood meter grid">
-        <div class="mm-head mm-head--x">
-          <span>Unpleasant</span>
-          <span>Pleasant</span>
-        </div>
-
-        <div class="mm-head mm-head--y">
-          <span>High energy</span>
-          <span>Low energy</span>
-        </div>
-
-        <div class="mm-grid">
-          <!-- High energy + Unpleasant -->
-          <div class="mm-cell mm-red">
-            <h3>Red</h3>
-            <p class="mm-mini"><strong>High energy + unpleasant</strong></p>
-            <p>Anger, anxiety, panic, agitation, overwhelm.</p>
-            <p class="mm-mini"><strong>Need:</strong> grounding, safety, space, discharge.</p>
-            <p class="mm-mini"><strong>Try:</strong> slow breathing, a brisk walk, cold water on wrists, reduce inputs.</p>
-          </div>
-
-          <!-- High energy + Pleasant -->
-          <div class="mm-cell mm-yellow">
-            <h3>Yellow</h3>
-            <p class="mm-mini"><strong>High energy + pleasant</strong></p>
-            <p>Excitement, motivation, inspiration, play.</p>
-            <p class="mm-mini"><strong>Need:</strong> direction, focus, healthy expression.</p>
-            <p class="mm-mini"><strong>Try:</strong> create something, move your body, set one clear goal.</p>
-          </div>
-
-          <!-- Low energy + Unpleasant -->
-          <div class="mm-cell mm-blue">
-            <h3>Blue</h3>
-            <p class="mm-mini"><strong>Low energy + unpleasant</strong></p>
-            <p>Sadness, loneliness, heaviness, shame, depletion.</p>
-            <p class="mm-mini"><strong>Need:</strong> comfort, gentleness, connection, rest.</p>
-            <p class="mm-mini"><strong>Try:</strong> tea + warmth, early night, one supportive message, tiny tidy.</p>
-          </div>
-
-          <!-- Low energy + Pleasant -->
-          <div class="mm-cell mm-green">
-            <h3>Green</h3>
-            <p class="mm-mini"><strong>Low energy + pleasant</strong></p>
-            <p>Calm, safety, steadiness, acceptance, relief.</p>
-            <p class="mm-mini"><strong>Need:</strong> protect the calm, keep it simple.</p>
-            <p class="mm-mini"><strong>Try:</strong> slow walk, quiet music, read, do less on purpose.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="sd-card">
-        <p><strong>Quick check-in (30 seconds):</strong></p>
-        <ol class="sd-steps">
-          <li><strong>Where am I?</strong> Red / Yellow / Blue / Green</li>
-          <li><strong>What’s the feeling?</strong> Pick one of the 10: grief, shame, fear, anger, loneliness, hope, love, joy, longing, acceptance.</li>
-          <li><strong>What’s the need?</strong> safety, rest, expression, connection, boundaries, play, clarity…</li>
-          <li><strong>What’s one kind response?</strong> one small act that meets the need.</li>
-        </ol>
-        <p style="margin:0.75rem 0 0;"><strong>Reminder:</strong> Every emotion has a purpose. Our job is to listen — not judge.</p>
-      </div>
-
-      <p class="sd-mini">
-        If you want, you can use this Mood Meter moment as a “start point” before any doorway below.
-        Calm first. Insight second.
-      </p>
     </div>
   </section>
 
@@ -194,450 +87,662 @@ hero_image: "/assets/images/heroes/self-discovery.webp"
     <div class="container">
       <h2 class="section-title section-title--left">Doorways</h2>
       <p class="section-subtitle section-subtitle--left">
-        You don’t need to do this in order. Pick what feels gentle today.
+        You don't need to do this in order. Pick what feels gentle today.
       </p>
 
       <div class="blog-list">
 
         <!-- Doorway 0 -->
         <article class="post" id="doorway0">
+
           <h3>Doorway 0: Safety – Calm First, Insight Second</h3>
+
           <p><em>If your nervous system feels threatened, everything feels harder — even good advice.</em></p>
 
+          <p>
+            For a long time I thought the answer was more insight.
+            More understanding.
+            More effort.
+          </p>
+
+          <p>
+            Gradually I realised none of those things could really land until I felt safe enough to receive them.
+            Calm isn't the reward for healing.
+            It's often where healing begins.
+          </p>
+
           <ul class="accordion-list">
+
             <li class="accordion-item">
               <button class="accordion-button">
-                What “safety” actually means (and what it doesn’t)
+                What "safety" actually means (and what it doesn't)
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Safety isn’t pretending everything is fine. It’s your body learning: “I’m not in danger right now.”
-                Sometimes safety is a locked door. Sometimes it’s saying no. Sometimes it’s a quiet home.
-                Safety is the base layer that makes healing possible.
+                Safety isn't pretending everything is fine.
+                It's your body learning:
+                "I'm not in danger right now."
+
+                Sometimes safety is a locked door.
+                Sometimes it's saying no.
+                Sometimes it's a quiet home.
+
+                Safety is the foundation that allows everything else to grow.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                The “low-demand day” (a real tool, not a failure)
+                The low-demand day
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Some days your job is to do less. Eat. Rest. Walk the dog. Keep things simple.
-                A low-demand day can be a wise day — especially if you’ve lived in pressure for years.
+                Some days your work is simply to do less.
+
+                Eat.
+                Drink.
+                Rest.
+                Walk the dog.
+
+                A low-demand day isn't failure.
+
+                Sometimes it's wisdom.
+              </div>
+            </li>
+            <li class="accordion-item">
+              <button class="accordion-button">
+                Build safety before insight
+                <span class="accordion-arrow">▶</span>
+              </button>
+              <div class="accordion-content">
+                Before asking:
+
+                "Why am I like this?"
+
+                ask:
+
+                "What would help me feel five percent safer right now?"
+
+                A drink.
+                A blanket.
+                Music.
+                Fresh air.
+                A trusted person.
+                A slower evening.
+
+                Small acts of safety teach your nervous system that life is becoming more predictable.
               </div>
             </li>
 
-            <li class="accordion-item">
-              <button class="accordion-button">
-                When you feel stuck: the 3-part reset
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                1) Body: water + food + a few deep breaths.<br>
-                2) Space: one tiny tidy (a surface, a sink, a corner).<br>
-                3) Contact: a short message to someone safe, or a kind sentence to yourself.<br>
-                Small resets beat big plans.
-              </div>
-            </li>
-
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Boundaries as safety (not aggression)
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Boundaries are the fence around your peace. They reduce resentment and make love safer.
-                A boundary can be quiet and kind: “That doesn’t work for me.” No speech needed.
-              </div>
-            </li>
           </ul>
 
-          <p><strong>Gentle action:</strong> Ask: “What would make today 10% easier?” Then do that one thing.</p>
+          <p style="margin-top:1rem;">
+            <a href="/self-discovery/safety/" class="button">Explore Safety →</a>
+          </p>
+
         </article>
 
         <!-- Doorway 1 -->
         <article class="post" id="doorway1">
-          <h3>Doorway 1: Reparenting – Laying the Foundation</h3>
-          <p><em>Before anything else, we learn to become a safe place for ourselves.</em></p>
+
+          <h3>Doorway 1: Reparenting – Becoming the Adult You Needed</h3>
+
+          <p><em>Healing often begins when you stop asking your younger self to carry adult responsibilities.</em></p>
+
+          <p>
+            Most of us learned to survive before we learned how to care for ourselves.
+            We adapted to the environments we grew up in, often in ways that made perfect sense at the time.
+          </p>
+
+          <p>
+            Reparenting isn't about blaming your parents.
+            It's about noticing what was missing, and gradually learning to offer those things to yourself now.
+          </p>
 
           <ul class="accordion-list">
+
             <li class="accordion-item">
               <button class="accordion-button">
                 What is reparenting?
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Reparenting is learning to meet your own emotional needs with steadiness and care.
-                It means becoming the adult you needed — the one who listens, soothes, and guides without cruelty.
+                Reparenting means becoming the kind of adult your younger self needed.
+
+                Someone who notices.
+
+                Someone who protects.
+
+                Someone who listens.
+
+                Someone who doesn't disappear when life becomes difficult.
+
+                You can't change your childhood.
+
+                But you can change the relationship you have with yourself today.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                The difference between “discipline” and “care”
+                Ask a different question
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Discipline without care becomes self-bullying.
-                Care without any structure can drift.
-                Reparenting is kind structure: small habits, gentle standards, and repair when you fall off.
+                Instead of asking:
+
+                "What's wrong with me?"
+
+                Try asking:
+
+                "What happened to me?"
+
+                And then:
+
+                "What do I need now?"
+
+                Those questions tend to produce much kinder answers.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                The inner child (simple version)
+                Small moments matter
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Your inner child is the part of you that still feels old pain and old needs.
-                When that part feels unseen, urges often show up (food, scrolling, porn, spending, numbing).
-                The goal isn’t shame — it’s understanding and care.
+                Reparenting rarely happens through one dramatic breakthrough.
+
+                It happens through hundreds of ordinary moments.
+
+                Going to bed earlier.
+
+                Cooking yourself dinner.
+
+                Speaking kindly after a mistake.
+
+                Leaving relationships that repeatedly ask you to abandon yourself.
+
+                Over time, those moments become a new experience of home.
               </div>
             </li>
 
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Tiny rituals that build trust (the real secret)
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Trust is built through repetition, not intensity.
-                Two minutes of checking in every day beats a big “breakthrough” once a month.
-                Tea. A short walk. A shower. A calm playlist. Small acts count.
-              </div>
-            </li>
-
-            <li class="accordion-item">
-              <button class="accordion-button">
-                “When the urges return” (how to respond)
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Instead of “What’s wrong with me?” try: “What’s unmet in me?”
-                Urges are often signals, not sins. Respond with curiosity and one caring choice.
-              </div>
-            </li>
           </ul>
 
-          <p><strong>Gentle action:</strong> Two-minute check-in: “What do I need today — and what’s one small way I can meet it?”</p>
-          <p><strong>Linked posts:</strong><br>
-            <a href="/blog/reparenting-when-no-one-ever-did">Reparenting When No One Ever Did</a><br>
-            <a href="/blog/building-the-wise-adult">Building the Wise Adult</a><br>
-            <a href="/blog/when-the-urges-return">When the Urges Return: A Gentle Map</a>
+          <p style="margin-top:1rem;">
+            <a href="/self-discovery/reparenting/" class="button">Explore Reparenting →</a>
           </p>
-          <p><a href="/reparenting" class="cta-link">→ Explore Reparenting in depth</a></p>
+
         </article>
 
         <!-- Doorway 2 -->
+
         <article class="post" id="doorway2">
-          <h3>Doorway 2: Feeling Your Feelings – Learning to Feel Again</h3>
-          <p><em>We slow down and start to feel what’s been underneath.</em></p>
 
-          <ul class="accordion-list">
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Start with the body (not the story)
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Start with sensation: tight chest, heavy eyes, clenched jaw, fluttering stomach.
-                When you start with the story, you often spiral. When you start with the body, you stay present.
-              </div>
-            </li>
+          <h3>Doorway 2: Feeling Your Emotions</h3>
 
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Letting feelings move without fixing them
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Feelings are waves. If you stop bracing, they crest and pass.
-                Allowing doesn’t mean liking — it means not fighting what’s already here.
-              </div>
-            </li>
+          <p><em>The emotions you've been avoiding are often carrying the information you've been looking for.</em></p>
 
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Expression without performance
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Cry if you need to. Move. Write two honest sentences. Sit quietly.
-                Expression doesn’t have to be pretty. It just needs to be real.
-              </div>
-            </li>
-
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Meaning without overanalysis
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                After the wave, ask one simple question: “What do I need?”
-                You don’t need a perfect explanation. You need a kind response.
-              </div>
-            </li>
-          </ul>
-
-          <p><strong>Gentle action:</strong> Pause once today and ask: “What’s the strongest sensation in my body right now?”</p>
-        </article>
-
-        <!-- Doorway 3 -->
-        <article class="post" id="doorway3">
-          <h3>Doorway 3: Creative Openings – Letting the Feelings Move</h3>
-          <p><em>Sometimes words aren’t enough. Creativity helps feelings move.</em></p>
-
-          <ul class="accordion-list">
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Music as emotional attunement
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                The right song tunes your nervous system like a compass.
-                Let music meet you where words can’t — then notice what shifts inside.
-              </div>
-            </li>
-
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Make marks, not masterpieces
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Scribble. Free-write. Walk and voice-note.
-                Output matters more than outcome — this is about movement, not display.
-              </div>
-            </li>
-
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Art unlocks frozen places
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                A lyric, photo, or scene can touch a memory you couldn’t “think” your way into.
-                Art bypasses the gatekeeper and melts things gently over time.
-              </div>
-            </li>
-
-            <li class="accordion-item">
-              <button class="accordion-button">
-                A simple “music mirror” practice
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Pick one track. Ask: “What emotion is this touching?”
-                Write 5 honest lines. Name the feeling. Close the notebook. Done.
-              </div>
-            </li>
-          </ul>
-
-          <p><strong>Gentle action:</strong> Choose one song, lyric, or image today. Sit with it, and notice what it stirs.</p>
-          <p><strong>Linked posts:</strong><br>
-            <a href="/blog/cleaning-out-my-closet">Cleaning Out My Closet – Music Therapy</a><br>
-            <a href="/blog/intentional">Intentional – Lauryn Hill Reflection</a>
+          <p>
+            For years I believed difficult feelings were problems to solve.
+            The more I tried to get rid of them, the louder they seemed to become.
           </p>
-          <p><a href="/music-therapy" class="cta-link">→ Explore the Creative Openings space</a></p>
+
+          <p>
+            Eventually I realised that emotions aren't interruptions to life.
+            They're part of how life speaks.
+          </p>
+
+          <ul class="accordion-list">
+
+            <li class="accordion-item">
+              <button class="accordion-button">
+                Emotions are movements
+                <span class="accordion-arrow">▶</span>
+              </button>
+              <div class="accordion-content">
+                Emotions rise.
+
+                They peak.
+
+                They soften.
+
+                They pass.
+
+                You don't have to stop the wave.
+
+                You only have to avoid making permanent decisions while you're standing inside it.
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-button">
+                Name before you explain
+                <span class="accordion-arrow">▶</span>
+              </button>
+              <div class="accordion-content">
+                Before analysing the story, try naming the feeling.
+
+                Fear.
+
+                Shame.
+
+                Anger.
+
+                Grief.
+
+                Loneliness.
+
+                Relief.
+
+                Naming creates space between you and the emotion.
+
+                It reminds you:
+
+                "This is something I'm experiencing.
+                It isn't who I am."
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-button">
+                Feel first. Understand later.
+                <span class="accordion-arrow">▶</span>
+              </button>
+              <div class="accordion-content">
+                We often try to think our way through emotions before we've allowed ourselves to feel them.
+
+                Usually the opposite works better.
+
+                Let your body settle.
+
+                Breathe.
+
+                Walk.
+
+                Rest.
+
+                Then ask what the feeling might be trying to show you.
+
+                Insight lands more gently when your nervous system feels safe.
+              </div>
+            </li>
+
+          </ul>
+
+          <p style="margin-top:1rem;">
+            <a href="/self-discovery/feeling-emotions/" class="button">Explore Emotions →</a>
+          </p>
+
+        </article>
+            <!-- Doorway 3 -->
+
+        <article class="post" id="doorway3">
+
+          <h3>Doorway 3: Understanding Your Patterns</h3>
+
+          <p><em>The patterns that frustrate you today were often the strategies that protected you yesterday.</em></p>
+
+          <p>
+            It's easy to judge ourselves for repeating the same behaviours.
+            Choosing unavailable people.
+            Avoiding conflict.
+            Overworking.
+            Pleasing everyone except ourselves.
+          </p>
+
+          <p>
+            But most patterns didn't begin as flaws.
+            They began as intelligent adaptations.
+          </p>
+
+          <ul class="accordion-list">
+
+            <li class="accordion-item">
+              <button class="accordion-button">
+                Every pattern has a purpose
+                <span class="accordion-arrow">▶</span>
+              </button>
+              <div class="accordion-content">
+                Before asking how to stop a behaviour, ask what it has been trying to do for you.
+
+                Anxiety may be trying to create certainty.
+
+                People-pleasing may be protecting connection.
+
+                Perfectionism may be protecting you from criticism.
+
+                Avoidance may be protecting you from overwhelm.
+
+                Patterns usually make more sense than they first appear.
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-button">
+                Curiosity changes everything
+                <span class="accordion-arrow">▶</span>
+              </button>
+              <div class="accordion-content">
+                Shame asks:
+
+                "What's wrong with me?"
+
+                Curiosity asks:
+
+                "When did I first learn this?"
+
+                That small shift often turns self-criticism into understanding.
+
+                Understanding creates room for change.
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-button">
+                Keep what still serves you
+                <span class="accordion-arrow">▶</span>
+              </button>
+              <div class="accordion-content">
+                Growth isn't about becoming a different person.
+
+                It's about noticing which strategies still belong in your life and which ones have quietly outlived their usefulness.
+
+                You don't have to reject your past.
+
+                You simply don't have to keep living by rules that no longer protect you.
+              </div>
+            </li>
+
+          </ul>
+
+          <p style="margin-top:1rem;">
+            <a href="/self-discovery/patterns/" class="button">Explore Patterns →</a>
+          </p>
+
         </article>
 
         <!-- Doorway 4 -->
+
         <article class="post" id="doorway4">
-          <h3>Doorway 4: Identity – The Real You Beneath the Performance</h3>
-          <p><em>You can be “mature” and still feel lost. That’s more common than people admit.</em></p>
+
+          <h3>Doorway 4: Values & Direction</h3>
+
+          <p><em>Clarity rarely comes from finding the perfect answer. It grows from repeatedly choosing what matters.</em></p>
+
+          <p>
+            There are long periods of life where certainty never arrives.
+            You don't know the right career.
+            The right relationship.
+            The right decision.
+          </p>
+
+          <p>
+            During those times, values become more reliable than certainty.
+          </p>
 
           <ul class="accordion-list">
+
             <li class="accordion-item">
               <button class="accordion-button">
-                The “Maturity Trap”
+                Values are directions, not destinations
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                You can sound wise and still be disconnected.
-                Real maturity includes felt truth — not just ideas about truth.
+                You never finish living a value.
+
+                You keep returning to it.
+
+                Honesty.
+
+                Kindness.
+
+                Courage.
+
+                Curiosity.
+
+                Integrity.
+
+                They aren't goals to achieve.
+
+                They're directions you continue walking towards.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                Performing insight vs living it
+                Let values decide when certainty can't
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Performing drains you and keeps you lonely.
-                Living it is quieter: you tell the truth, keep your boundaries, and stop abandoning yourself.
+                When you don't know what the outcome will be, ask:
+
+                Which choice feels more honest?
+
+                Which choice respects both me and the other person?
+
+                Which version of myself do I want to strengthen?
+
+                Those questions usually lead somewhere steadier than fear.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                How identity becomes clear (the grounded way)
+                A meaningful life is built slowly
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Identity grows when you notice what you feel, say what you mean, and honour what you need —
-                especially when it’s inconvenient.
+                Most meaningful lives don't arrive through dramatic transformation.
+
+                They are built through ordinary decisions made repeatedly.
+
+                One conversation.
+
+                One boundary.
+
+                One act of courage.
+
+                One honest day after another.
+
+                Eventually those small choices become a life that feels recognisably your own.
               </div>
             </li>
 
-            <li class="accordion-item">
-              <button class="accordion-button">
-                A simple question that cuts through the noise
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                “Am I doing this to be accepted, or because it’s true for me?”
-                That one question can change a life.
-              </div>
-            </li>
           </ul>
 
-          <p><strong>Gentle action:</strong> Ask: “Am I sharing what I truly feel, or what I think sounds wise?”</p>
-        </article>
+          <p style="margin-top:1rem;">
+            <a href="/self-discovery/values/" class="button">Explore Values →</a>
+          </p>
 
+        </article>    
         <!-- Doorway 5 -->
+
         <article class="post" id="doorway5">
-          <h3>Doorway 5: Being Seen – Grief, Anger, Longing (and the Fear of Closeness)</h3>
-          <p><em>The hardest feelings are often the ones that lead us back to real connection.</em></p>
+
+          <h3>Doorway 5: Living Authentically</h3>
+
+          <p><em>Authenticity isn't becoming someone new. It's slowly returning to the person you stop pretending not to be.</em></p>
+
+          <p>
+            Many of us spend years becoming who we think we need to be.
+            Capable.
+            Agreeable.
+            Successful.
+            Easy to love.
+          </p>
+
+          <p>
+            Living authentically isn't rejecting those parts.
+            It's gently asking whether they still belong to you.
+          </p>
 
           <ul class="accordion-list">
+
             <li class="accordion-item">
               <button class="accordion-button">
-                Why connection can feel scary
+                Authenticity is quieter than honesty
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                If being seen used to cost you, closeness will spark alarm.
-                Going slowly with safe people retrains your body to expect care, not pain.
+                Authenticity isn't saying everything you think.
+
+                It isn't dramatic self-expression.
+
+                It isn't refusing compromise.
+
+                It is staying in honest relationship with yourself while remaining thoughtful about other people.
+
+                Sometimes authenticity speaks.
+
+                Sometimes it stays silent.
+
+                The difference is whether the silence is chosen — or driven by fear.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                Reciprocity over chasing
+                Your nervous system is part of your truth
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Healthy relationships don’t require you to perform for love.
-                Look for mutual effort. Look for ease. Look for someone who meets you in the middle.
+                Living authentically isn't only about ideas.
+
+                It is also about paying attention to your body.
+
+                Where do you consistently feel settled?
+
+                Where do you repeatedly tighten, shrink or override yourself?
+
+                Your body often notices misalignment long before your mind explains it.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                Boundaries without guilt
+                Build a life you don't need to escape from
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Boundaries are not punishment; they are structure for love.
-                The right people respect clarity. The wrong people call it “cold.”
+                Authenticity isn't measured by how unusual your life looks.
+
+                It's measured by whether your daily life feels increasingly compatible with who you are.
+
+                Less performance.
+
+                Less pretending.
+
+                More honesty.
+
+                More rest.
+
+                More choices you can quietly respect.
               </div>
             </li>
 
-            <li class="accordion-item">
-              <button class="accordion-button">
-                The “in-between” (where you stop rushing)
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                The in-between is where new life starts.
-                Don’t rush the void. Let the old end and the new begin without forcing either.
-              </div>
-            </li>
           </ul>
 
-          <p><strong>Gentle action:</strong> Share one small truth with someone safe — even if it’s tiny.</p>
+          <p style="margin-top:1rem;">
+            <a href="/self-discovery/authenticity/" class="button">Explore Authenticity →</a>
+          </p>
+
         </article>
 
         <!-- Doorway 6 -->
+
         <article class="post" id="doorway6">
-          <h3>Doorway 6: Integration – Becoming Who You Always Were</h3>
-          <p><em>You don’t have to become someone new. You’re remembering.</em></p>
+
+          <h3>Doorway 6: Continuing the Journey</h3>
+
+          <p><em>There isn't a finish line. There is only the quiet practice of returning to yourself, again and again.</em></p>
+
+          <p>
+            It's tempting to believe there will come a day when everything finally feels resolved.
+          </p>
+
+          <p>
+            In my experience, life doesn't work like that.
+          </p>
+
+          <p>
+            What changes is not that uncertainty disappears.
+            It's that you become better at meeting it.
+          </p>
 
           <ul class="accordion-list">
+
             <li class="accordion-item">
               <button class="accordion-button">
-                Trusting the slow unfolding
+                Growth is rarely dramatic
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Real change is seasonal. Measure in months and years, not days.
-                Roots first, branches later.
+                Most meaningful change is almost invisible while it's happening.
+
+                A healthier conversation.
+
+                A boundary you finally keep.
+
+                Recovering more quickly after a difficult day.
+
+                Trusting yourself a little sooner than you used to.
+
+                These quiet moments are often where real growth lives.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                Noticing glimmers (small proof your system is healing)
+                Keep returning, not perfecting
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Glimmers are tiny signals of safety and aliveness.
-                Collect them. They help your body learn: “This is the new normal.”
+                You will forget what you've learned.
+
+                You will repeat old patterns.
+
+                You will have days where clarity disappears.
+
+                None of that means you've failed.
+
+                Growth is less about never leaving the path, and more about learning how to return without attacking yourself.
               </div>
             </li>
 
             <li class="accordion-item">
               <button class="accordion-button">
-                Solitude vs isolation
+                One honest step is enough
                 <span class="accordion-arrow">▶</span>
               </button>
               <div class="accordion-content">
-                Solitude isn’t isolation when it nourishes you.
-                The question is simple: “Do I feel more like myself after this time alone?”
+                You don't need to solve your whole life today.
+
+                You don't need every answer.
+
+                You don't need to become a different person.
+
+                Often the next honest conversation, the next small boundary, or the next quiet act of self-respect is enough.
+
+                Keep returning there.
+
+                That's how a life slowly changes.
               </div>
             </li>
 
-            <li class="accordion-item">
-              <button class="accordion-button">
-                Giving from a full cup
-                <span class="accordion-arrow">▶</span>
-              </button>
-              <div class="accordion-content">
-                Service without self-care breeds resentment.
-                Fill your cup first — then let the overflow be your offering.
-              </div>
-            </li>
           </ul>
 
-          <p><strong>Gentle action:</strong> Write down one glimmer you noticed this week — a moment you felt real or alive.</p>
-        </article>
-
-        <!-- End notes -->
-        <article class="post">
-          <h3>Bookmarking Your Place</h3>
-          <p>This page is long on purpose. Healing takes time, and you don’t need to rush.</p>
-          <p><em>Healing unfolds at the speed of safety.</em></p>
-          <p>Tip: You can bookmark a section by clicking any headline and copying its link. Or just return when you feel ready.</p>
-        </article>
-
-        <article class="post">
-          <h3>Final Message</h3>
-          <p>
-            You’re not broken. You’re not behind.
-            If you’re learning to stop abandoning yourself, you’re already doing something brave.
-            Start small. Stay kind. Keep coming back.
+          <p style="margin-top:1rem;">
+            <a href="/principles/" class="button">Explore the Principles →</a>
           </p>
-        </article>
 
-      </div>
+        </article>
+              </div>
     </div>
   </section>
 
 </main>
 
 <script>
-  // Tiny accordion script (no dependencies)
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".accordion-button");
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const content = btn.nextElementSibling;
-        btn.classList.toggle("active");
-        content.classList.toggle("open");
-      });
-    });
-  });
+...
 </script>
