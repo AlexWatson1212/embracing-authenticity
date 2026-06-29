@@ -7,16 +7,6 @@ hero_image: "/assets/images/heroes/what-i-mean-by-authenticity.webp"
 order: 1
 ---
 
----
-
-layout: page
-title: "What I Mean by Authenticity"
-permalink: /principles/what-i-mean-by-authenticity/
-description: "How I understand authenticity in practice — less about performance, more about honest, sustainable alignment with yourself."
-hero_image: "/assets/images/heroes/what-i-mean-by-authenticity.webp"
-order: 1
---------
-
 <p class="principle-progress">Principle 1 of 7</p>
 
 <p><em>A practical orientation to living honestly.</em></p>
