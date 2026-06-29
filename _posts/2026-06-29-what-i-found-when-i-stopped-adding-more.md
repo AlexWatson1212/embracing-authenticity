@@ -31,17 +31,7 @@ Almost every meaningful improvement in my life came from removing something rath
 
 That wasn't the lesson I expected.
 
-Like many people, my instinct whenever life felt uncertain was to add.
-
-Another productivity system.
-
-Another piece of advice.
-
-Another YouTube video.
-
-Another document.
-
-Another way of organising my thoughts before I finally felt ready to act.
+Like many people, whenever life felt uncertain, my instinct was to add. Another system. Another idea. Another video. Another document. Another way of organising my thoughts before I finally felt ready to act.
 
 It felt responsible.
 
@@ -49,9 +39,9 @@ It looked like progress.
 
 But when I looked honestly at the changes that genuinely improved my work, my relationships and my day-to-day life, very few of them arrived because I found another answer.
 
-Most of them arrived because I stopped carrying something I didn't need.
+They arrived because I stopped carrying something I didn't need.
 
----
+The Website Was Never the Problem
 
 For a long time I thought I built websites.
 
@@ -69,7 +59,7 @@ They're struggling because they aren't yet clear about what they offer, who they
 
 The website simply becomes the place where that confusion becomes visible.
 
-Once I stopped leading with websites and started leading with clarity, everything became easier.
+Once I stopped leading with clarity instead of websites, everything became easier.
 
 The conversations became better.
 
@@ -81,7 +71,7 @@ I hadn't discovered a new service.
 
 I'd simply removed the wrong starting point.
 
----
+One Question Changed My Relationships
 
 Something similar happened with my relationships.
 
@@ -97,7 +87,7 @@ I spent more time managing the system than I did thinking about the people it wa
 
 Eventually I replaced the whole thing with one simple question.
 
-**What's one thing I can do today that strengthens a relationship?**
+What's one thing I can do today that strengthens a relationship?
 
 That's it.
 
@@ -109,25 +99,17 @@ Sometimes it's arranging a walk.
 
 Sometimes it's simply putting my phone away and being fully present with the person already sitting opposite me.
 
-That one question achieved more than every spreadsheet ever did.
+That one question achieved more than every spreadsheet I ever built.
 
 Not because it was clever.
 
 Because it kept my attention where it belonged.
 
----
+Health Didn't Need Optimising
 
-The same thing happened with my health.
+For years I approached my health like an optimisation project.
 
-For years I approached it like an optimisation project.
-
-I was always looking for the perfect routine.
-
-The best training programme.
-
-The ideal diet.
-
-The next improvement that would finally make me feel like I'd cracked it.
+I was always looking for the perfect routine. The best training programme. The ideal diet.
 
 Eventually I noticed something obvious.
 
@@ -135,15 +117,13 @@ The weeks I felt best weren't the weeks I'd optimised everything.
 
 They were simply the weeks I'd consistently looked after myself.
 
-Enough sleep.
+The foundations were surprisingly ordinary:
 
-Enough movement.
-
-Reasonable food.
-
-Time outside.
-
-Moments of rest.
+Enough sleep
+Enough movement
+Reasonable food
+Time outside
+Moments of rest
 
 Nothing extraordinary.
 
@@ -155,11 +135,11 @@ Relationships felt easier.
 
 Small problems stayed small.
 
-I realised I didn't need the perfect health system.
+I didn't need the perfect health system.
 
-I simply needed to take care of myself consistently.
+I simply needed to look after myself consistently.
 
----
+The Interview I Didn't Get
 
 A recent counselling placement interview taught me something similar.
 
@@ -181,7 +161,7 @@ Knowing where my responsibility ends.
 
 Being willing to say:
 
-*"I'd ask my supervisor."*
+"I'd ask my supervisor."
 
 That sentence stayed with me.
 
@@ -197,11 +177,11 @@ Again, the lesson wasn't to become more.
 
 It was to become clearer.
 
----
+Good Design Removes More Than It Adds
 
 Even my design work follows the same pattern.
 
-When I first design a website, I often want to improve it by adding.
+When I first design a website, my instinct is usually to improve it by adding something.
 
 Another graphic.
 
@@ -225,13 +205,11 @@ Good design isn't about decoration.
 
 It's about removing distraction until the important thing becomes obvious.
 
-I've started to think people aren't very different.
+The more I work, the more I think people aren't very different.
 
----
+Even My Garden Taught Me
 
-Even my garden taught me this.
-
-For months it felt overwhelming.
+For months my garden felt overwhelming.
 
 Every time I looked outside I saw everything that still needed doing.
 
@@ -249,7 +227,7 @@ The problem wasn't the garden.
 
 It was the word I'd attached to it.
 
-**Finish.**
+Finish.
 
 So I stopped trying to finish it.
 
@@ -269,7 +247,7 @@ Not because I worked harder.
 
 Because I stopped carrying the whole project every time I walked outside.
 
----
+Borrowing Wisdom
 
 When I step back, I can see the same pattern everywhere.
 
@@ -286,10 +264,6 @@ There's a difference.
 Simple isn't the absence of thought.
 
 Simple is what remains after unnecessary thought has been removed.
-
----
-
-There's another part of this that's slightly harder to admit.
 
 Over the years I've spent thousands of pounds trying to improve myself.
 
@@ -313,13 +287,13 @@ They gave me language for experiences I couldn't previously explain.
 
 But something has quietly shifted.
 
-When I look at the ideas that have changed my life most recently, many of them didn't come from someone else's framework.
+The ideas that have changed my life most recently didn't come from someone else's framework.
 
 They came from my own experience.
 
 The question I ask about relationships.
 
-Leading my business with clarity instead of websites.
+Leading my business with clarity.
 
 Working in the garden for one hour instead of trying to finish everything.
 
@@ -327,15 +301,9 @@ These weren't ideas I bought.
 
 They were observations I earned.
 
-Not because I'm clever.
+Experience eventually earns the right to become wisdom too.
 
-Because eventually your own life becomes a legitimate source of wisdom.
-
-For years I assumed wisdom always arrived from outside me.
-
-Lately I've realised experience eventually earns the right to become wisdom too.
-
----
+What Authenticity Really Means
 
 I think this has changed how I understand authenticity.
 
@@ -355,7 +323,7 @@ We all need mentors.
 
 We all need people who have travelled further than we have.
 
-But there comes a point where continuing to borrow becomes a way of avoiding responsibility.
+But eventually there comes a point where continuing to borrow becomes a way of avoiding responsibility.
 
 Because creating your own answer is riskier than following someone else's.
 
@@ -365,7 +333,7 @@ If you trust your own experience, you have to own the outcome.
 
 Perhaps that's why borrowing feels safer.
 
----
+The Next Honest Step
 
 I still read books.
 
@@ -375,7 +343,7 @@ I hope I always will.
 
 But I've stopped assuming the next answer is always somewhere else.
 
-Sometimes the answer is already here.
+Sometimes it's already here.
 
 Hidden beneath another unnecessary system.
 
@@ -383,7 +351,19 @@ Another layer of complexity.
 
 Another attempt to earn certainty before taking the next step.
 
-Maybe clarity isn't something we build after all.
+Looking back, I don't think the biggest changes in my life came from finding better answers.
+
+I think they came from asking simpler questions.
+
+Not:
+
+What else do I need?
+
+But:
+
+What can I let go of?
+
+Because maybe clarity isn't something we build.
 
 Maybe it's something we uncover.
 
